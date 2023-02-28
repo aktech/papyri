@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.signal.html'>signal</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.signal._ltisys.html'>_ltisys</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.signal._arraytools.html">_arraytools</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._bsplines.html">_bsplines</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._czt.html">_czt</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._filter_design.html">_filter_design</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._fir_filter_design.html">_fir_filter_design</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._lti_conversion.html">_lti_conversion</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.html">_ltisys</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._max_len_seq.html">_max_len_seq</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._max_len_seq_inner.html">_max_len_seq_inner</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._peak_finding.html">_peak_finding</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._peak_finding_utils.html">_peak_finding_utils</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._savitzky_golay.html">_savitzky_golay</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.html">_signaltools</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._sigtools.html">_sigtools</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._sosfilt.html">_sosfilt</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spectral.html">_spectral</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spectral_py.html">_spectral_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spline.html">_spline</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._upfirdn.html">_upfirdn</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._upfirdn_apply.html">_upfirdn_apply</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._waveforms.html">_waveforms</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._wavelets.html">_wavelets</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.barthann.html">barthann</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.bartlett.html">bartlett</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.blackman.html">blackman</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.blackmanharris.html">blackmanharris</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.bohman.html">bohman</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.boxcar.html">boxcar</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.bsplines.html">bsplines</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.chebwin.html">chebwin</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.cosine.html">cosine</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.exponential.html">exponential</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.filter_design.html">filter_design</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.fir_filter_design.html">fir_filter_design</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.flattop.html">flattop</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.gaussian.html">gaussian</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.general_gaussian.html">general_gaussian</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.hamming.html">hamming</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.hann.html">hann</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.kaiser.html">kaiser</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.lti_conversion.html">lti_conversion</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.ltisys.html">ltisys</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.nuttall.html">nuttall</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.parzen.html">parzen</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.signaltools.html">signaltools</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.spectral.html">spectral</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.spline.html">spline</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.triang.html">triang</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.tukey.html">tukey</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.waveforms.html">waveforms</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.wavelets.html">wavelets</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.windows.html">windows</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.signal._ltisys.ZerosPolesGainDiscrete.html'>ZerosPolesGainDiscrete</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.Bunch.html">Bunch</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.LinearTimeInvariant.html">LinearTimeInvariant</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.StateSpace.html">StateSpace</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.StateSpaceContinuous.html">StateSpaceContinuous</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.StateSpaceDiscrete.html">StateSpaceDiscrete</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.TransferFunction.html">TransferFunction</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.TransferFunctionContinuous.html">TransferFunctionContinuous</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.TransferFunctionDiscrete.html">TransferFunctionDiscrete</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.ZerosPolesGain.html">ZerosPolesGain</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.ZerosPolesGainContinuous.html">ZerosPolesGainContinuous</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.ZerosPolesGainDiscrete.html">ZerosPolesGainDiscrete</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys._KNV0.html">_KNV0</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys._KNV0_loop.html">_KNV0_loop</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys._YT_complex.html">_YT_complex</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys._YT_loop.html">_YT_loop</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys._YT_real.html">_YT_real</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys._atleast_2d_or_none.html">_atleast_2d_or_none</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys._cast_to_array_dtype.html">_cast_to_array_dtype</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys._default_response_times.html">_default_response_times</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys._order_complex_poles.html">_order_complex_poles</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys._valid_inputs.html">_valid_inputs</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.bode.html">bode</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.dbode.html">dbode</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.dfreqresp.html">dfreqresp</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.dimpulse.html">dimpulse</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.dlsim.html">dlsim</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.dlti.html">dlti</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.dstep.html">dstep</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.freqresp.html">freqresp</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.impulse.html">impulse</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.impulse2.html">impulse2</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.lsim.html">lsim</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.lsim2.html">lsim2</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.lti.html">lti</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.place_poles.html">place_poles</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.step.html">step</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.step2.html">step2</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a>    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<!-- rendering Extended Summary -->
+                                       <div id="f459876557cc42ec84e21ebb0201176b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Represents the system as the discrete-time transfer function "}, {"type": "Math", "value": "H(z)=k \\prod_i (z - q[i]) / \\prod_j (z - p[j])"}, {"type": "text", "value": ", where "}, {"type": "Math", "value": "k"}, {"type": "text", "value": " is the "}, {"domain": null, "role": null, "type": "Directive", "value": "gain"}, {"type": "text", "value": ", "}, {"type": "Math", "value": "q"}, {"type": "text", "value": " are the "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.optimize.zeros", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "zeros"}, {"type": "text", "value": " and "}, {"type": "Math", "value": "p"}, {"type": "text", "value": " are the "}, {"domain": null, "role": null, "type": "Directive", "value": "poles"}, {"type": "text", "value": ". Discrete-time "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.signal._ltisys.ZerosPolesGain", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "ZerosPolesGain"}, {"type": "text", "value": " systems inherit additional functionality from the "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.signal._ltisys.dlti", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "dlti"}, {"type": "text", "value": " class."}], "type": "paragraph"});
+            document.getElementById("f459876557cc42ec84e21ebb0201176b").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="edf33869282145d086256106e3f171a6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Changing the value of properties that are not part of the "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.signal._ltisys.ZerosPolesGain", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "ZerosPolesGain"}, {"type": "text", "value": " system representation (such as the "}, {"domain": null, "role": null, "type": "Directive", "value": "A"}, {"type": "text", "value": ", "}, {"domain": null, "role": null, "type": "Directive", "value": "B"}, {"type": "text", "value": ", "}, {"domain": null, "role": null, "type": "Directive", "value": "C"}, {"type": "text", "value": ", "}, {"domain": null, "role": null, "type": "Directive", "value": "D"}, {"type": "text", "value": " state-space matrices) is very inefficient and may lead to numerical inaccuracies.  It is better to convert to the specific system representation first. For example, call "}, {"type": "inlineCode", "value": "sys = sys.to_ss()"}, {"type": "text", "value": " before accessing/changing the A, B, C, D system matrices."}], "type": "paragraph"});
+            document.getElementById("edf33869282145d086256106e3f171a6").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="*system">*system</a> : arguments</dt>
+<dd>
+                <div id="ae158d7665c04bd9a25a4d0856acc67d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.signal._ltisys.ZerosPolesGain", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "ZerosPolesGain"}, {"type": "text", "value": " class can be instantiated with 1 or 3 arguments. The following gives the number of input arguments and their interpretation:"}], "type": "paragraph"});
+            document.getElementById("ae158d7665c04bd9a25a4d0856acc67d").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <blockquote>           <ul>               <li>                               <div id="fb98ae082c9f4303ab1d3abac22d415b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "1: "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.signal._ltisys.dlti", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "dlti"}, {"type": "text", "value": " system: ("}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.signal._ltisys.StateSpace", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "StateSpace"}, {"type": "text", "value": ", "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.signal._ltisys.TransferFunction", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "TransferFunction"}, {"type": "text", "value": " or       "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.signal._ltisys.ZerosPolesGain", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "ZerosPolesGain"}, {"type": "text", "value": ")"}], "type": "paragraph"});
+            document.getElementById("fb98ae082c9f4303ab1d3abac22d415b").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="4e79e74988c942c3b071c4179ce03458"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "3: array_like: (zeros, poles, gain)"}], "type": "paragraph"});
+            document.getElementById("4e79e74988c942c3b071c4179ce03458").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+</blockquote>
+
+</dd>
+<dt><a id="dt: float, optional">dt: float, optional</a> : </dt>
+<dd>
+                <div id="503e3043078f4514b26fca81eff1aa8d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Sampling time [s] of the discrete-time systems. Defaults to "}, {"domain": null, "role": null, "type": "Directive", "value": "True"}, {"type": "text", "value": " (unspecified sampling time). Must be specified as a keyword argument, for example, "}, {"type": "inlineCode", "value": "dt=0.1"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("503e3043078f4514b26fca81eff1aa8d").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="802bf51eea2a47798ba39dc2b8c0943a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Discrete-time Linear Time Invariant system in zeros, poles, gain form."}], "type": "paragraph"});
+            document.getElementById("802bf51eea2a47798ba39dc2b8c0943a").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.StateSpace.html" class='exists'>StateSpace</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.TransferFunction.html" class='exists'>TransferFunction</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.dlti.html" class='exists'>dlti</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.signal._filter_design.zpk2sos.html" class='exists'>zpk2sos</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.signal._lti_conversion.zpk2ss.html" class='exists'>zpk2ss</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.signal._filter_design.zpk2tf.html" class='exists'>zpk2tf</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+                           Construct the transfer function
+:math:`H(s) = \frac{5(s - 1)(s - 2)}{(s - 3)(s - 4)}`:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">signal</span>
+</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">signal</span><span class="o">.</span><span class="">ZerosPolesGain</span><span class="">(</span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="mi">5</span><span class="">)</span>
+ZerosPolesGainContinuous(
+array([1, 2]),
+array([3, 4]),
+5,
+dt: None
+)</pre>
+            
+                           Construct the transfer function
+:math:`H(z) = \frac{5(z - 1)(z - 2)}{(z - 3)(z - 4)}` with a sampling time
+of 0.1 seconds:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">signal</span><span class="o">.</span><span class="">ZerosPolesGain</span><span class="">(</span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="mi">5</span><span class="">,</span><span class=""> </span><span class="">dt</span><span class="o">=</span><span class="mf">0.1</span><span class="">)</span>
+ZerosPolesGainDiscrete(
+array([1, 2]),
+array([3, 4]),
+5,
+dt: 0.1
+)</pre>
+            
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/signal/_ltisys.py#L1152'>/scipy/signal/_ltisys.py#1152</a>
+<br/>
+
+type: &lt;class &#39;type&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 12.123105625617661, "label": "scipy.signal._ltisys.ZerosPolesGain", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._ltisys.ZerosPolesGain"}, {"id": 2, "val": 12.47213595499958, "label": "scipy.signal._ltisys.StateSpace", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._ltisys.StateSpace"}, {"id": 3, "val": 9.732050807568877, "label": "scipy.signal._lti_conversion.zpk2ss", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._lti_conversion.zpk2ss"}, {"id": 4, "val": 11.16227766016838, "label": "scipy.signal._filter_design.zpk2sos", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._filter_design.zpk2sos"}, {"id": 5, "val": 11.0, "label": "scipy.optimize.zeros", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.optimize.zeros"}, {"id": 6, "val": 9.732050807568877, "label": "scipy.signal._filter_design.zpk2tf", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._filter_design.zpk2tf"}, {"id": 7, "val": 12.0, "label": "scipy.signal._ltisys.dlti", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._ltisys.dlti"}, {"id": 8, "val": 12.123105625617661, "label": "scipy.signal._ltisys.TransferFunction", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._ltisys.TransferFunction"}], "links": [{"source": 7, "target": 1, "id": 3}, {"source": 7, "target": 2, "id": 7}, {"source": 7, "target": 8, "id": 9}, {"source": 3, "target": 1, "id": 18}, {"source": 4, "target": 1, "id": 20}, {"source": 4, "target": 2, "id": 22}, {"source": 1, "target": 7, "id": 32}, {"source": 1, "target": 2, "id": 35}, {"source": 1, "target": 8, "id": 37}, {"source": 6, "target": 1, "id": 48}, {"source": 2, "target": 1, "id": 50}, {"source": 2, "target": 7, "id": 52}, {"source": 2, "target": 8, "id": 57}, {"source": 5, "target": 1, "id": 72}, {"source": 5, "target": 7, "id": 73}, {"source": 5, "target": 2, "id": 74}, {"source": 8, "target": 1, "id": 81}, {"source": 8, "target": 7, "id": 82}, {"source": 8, "target": 2, "id": 87}]};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

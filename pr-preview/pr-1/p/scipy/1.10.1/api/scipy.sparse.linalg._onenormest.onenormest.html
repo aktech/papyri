@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.sparse.html'>sparse</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.sparse.linalg.html'>linalg</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.sparse._arrays.html">_arrays</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._base.html">_base</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._bsr.html">_bsr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._compressed.html">_compressed</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._construct.html">_construct</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._coo.html">_coo</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._csc.html">_csc</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._csparsetools.html">_csparsetools</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._csr.html">_csr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._data.html">_data</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._dia.html">_dia</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._dok.html">_dok</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._extract.html">_extract</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._index.html">_index</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._lil.html">_lil</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._matrix_io.html">_matrix_io</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._sparsetools.html">_sparsetools</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._sputils.html">_sputils</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.base.html">base</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.bsr.html">bsr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.compressed.html">compressed</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.construct.html">construct</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.coo.html">coo</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csc.html">csc</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csgraph.html">csgraph</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csr.html">csr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.data.html">data</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.dia.html">dia</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.dok.html">dok</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.extract.html">extract</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.lil.html">lil</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.sparsetools.html">sparsetools</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.sputils.html">sputils</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.sparse.linalg._onenormest.html'>_onenormest</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._dsolve.html">_dsolve</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._eigen.html">_eigen</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._expm_multiply.html">_expm_multiply</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.html">_interface</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._isolve.html">_isolve</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._matfuncs.html">_matfuncs</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._norm.html">_norm</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._onenormest.html">_onenormest</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg.dsolve.html">dsolve</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg.eigen.html">eigen</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg.interface.html">interface</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg.isolve.html">isolve</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg.matfuncs.html">matfuncs</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.sparse.linalg._onenormest.onenormest.html'>onenormest</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._onenormest._algorithm_2_2.html">_algorithm_2_2</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._onenormest._blocked_elementwise.html">_blocked_elementwise</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._onenormest._onenormest_core.html">_onenormest_core</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._onenormest._sum_abs_axis0.html">_sum_abs_axis0</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._onenormest.column_needs_resampling.html">column_needs_resampling</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._onenormest.elementary_vector.html">elementary_vector</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._onenormest.every_col_of_X_is_parallel_to_a_col_of_Y.html">every_col_of_X_is_parallel_to_a_col_of_Y</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._onenormest.less_than_or_close.html">less_than_or_close</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._onenormest.onenormest.html">onenormest</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._onenormest.resample_column.html">resample_column</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._onenormest.vectors_are_parallel.html">vectors_are_parallel</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a>    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>onenormest(A, t=2, itmax=5, compute_v=False, compute_w=False)</code><!-- rendering Extended Summary -->
+        <h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="dc1d141ef48c41f89b63bf80caaf34b9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This is algorithm 2.4 of [1]."}], "type": "paragraph"});
+            document.getElementById("dc1d141ef48c41f89b63bf80caaf34b9").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="91fba02a7bff4bf9a6a10f2e0fcab31c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "In [2] it is described as follows. \"This algorithm typically requires the evaluation of about 4t matrix-vector products and almost invariably produces a norm estimate (which is, in fact, a lower bound on the norm) correct to within a factor 3.\""}], "type": "paragraph"});
+            document.getElementById("91fba02a7bff4bf9a6a10f2e0fcab31c").innerHTML = html;
+        }
+        init();
+    </script>
+
+                           <div class='admonition'>
+    <div>versionadded 0.13.0</div>
+</div>
+
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="A">A</a> : ndarray or other linear operator</dt>
+<dd>
+                <div id="ada1583ddce04a33893bcff6e9fdc122"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A linear operator that can be transposed and that can produce matrix products."}], "type": "paragraph"});
+            document.getElementById("ada1583ddce04a33893bcff6e9fdc122").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="t">t</a> : int, optional</dt>
+<dd>
+                <div id="fe20fe6426414f62b344f46650b7c907"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A positive parameter controlling the tradeoff between accuracy versus time and memory usage. Larger values take longer and use more memory but give more accurate output."}], "type": "paragraph"});
+            document.getElementById("fe20fe6426414f62b344f46650b7c907").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="itmax">itmax</a> : int, optional</dt>
+<dd>
+                <div id="325367809f4c40aabc21b932a000a2ee"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Use at most this many iterations."}], "type": "paragraph"});
+            document.getElementById("325367809f4c40aabc21b932a000a2ee").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="compute_v">compute_v</a> : bool, optional</dt>
+<dd>
+                <div id="ee2e3360a76347caaee0e7b3e418df86"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Request a norm-maximizing linear operator input vector if True."}], "type": "paragraph"});
+            document.getElementById("ee2e3360a76347caaee0e7b3e418df86").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="compute_w">compute_w</a> : bool, optional</dt>
+<dd>
+                <div id="00854d6ddba14cdda1982bc208691c93"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Request a norm-maximizing linear operator output vector if True."}], "type": "paragraph"});
+            document.getElementById("00854d6ddba14cdda1982bc208691c93").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="est">est</a> : float</dt>
+<dd>
+                <div id="5af5480f7763425d9e3b120a4933c079"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "An underestimate of the 1-norm of the sparse matrix."}], "type": "paragraph"});
+            document.getElementById("5af5480f7763425d9e3b120a4933c079").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="v">v</a> : ndarray, optional</dt>
+<dd>
+                <div id="efa1f1e0bc7e4f7b92fa26024d63ff98"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The vector such that ||Av||_1 == est*||v||_1. It can be thought of as an input to the linear operator that gives an output with particularly large norm."}], "type": "paragraph"});
+            document.getElementById("efa1f1e0bc7e4f7b92fa26024d63ff98").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="w">w</a> : ndarray, optional</dt>
+<dd>
+                <div id="032785b098674435b3041a3fd3126037"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The vector Av which has relatively large 1-norm. It can be thought of as an output of the linear operator that is relatively large in norm compared to the input."}], "type": "paragraph"});
+            document.getElementById("032785b098674435b3041a3fd3126037").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="294ecec01e8c4b16b00bcc326516d1f7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Compute a lower bound of the 1-norm of a sparse matrix."}], "type": "paragraph"});
+            document.getElementById("294ecec01e8c4b16b00bcc326516d1f7").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">sparse</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">csc_matrix</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">sparse</span><span class="nn">.</span><span class="nn">linalg</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">onenormest</span><br><span class='nsl'>...&nbsp;</span><span class="">A</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">csc_matrix</span><span class="">(</span><span class="">[</span><span class="">[</span><span class="mf">1.</span><span class="">,</span><span class=""> </span><span class="mf">0.</span><span class="">,</span><span class=""> </span><span class="mf">0.</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mf">5.</span><span class="">,</span><span class=""> </span><span class="mf">8.</span><span class="">,</span><span class=""> </span><span class="mf">2.</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mf">0.</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mf">1.</span><span class="">,</span><span class=""> </span><span class="mf">0.</span><span class="">]</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">dtype</span><span class="o">=</span><span class="nb">float</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">A</span><span class="o">.</span><span class="">toarray</span><span class="">(</span><span class="">)</span>
+array([[ 1.,  0.,  0.],
+       [ 5.,  8.,  2.],
+       [ 0., -1.,  0.]])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">onenormest</span><span class="">(</span><span class="">A</span><span class="">)</span>
+9.0</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">np</span><span class="o">.</span><span class="">linalg</span><span class="o">.</span><span class="">norm</span><span class="">(</span><span class="">A</span><span class="o">.</span><span class="">toarray</span><span class="">(</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="nb">ord</span><span class="o">=</span><span class="mi">1</span><span class="">)</span>
+9.0</pre>
+            
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/sparse/linalg/_onenormest.py#L11'>/scipy/sparse/linalg/_onenormest.py#11</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

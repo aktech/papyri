@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.linalg.html'>linalg</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.linalg._decomp_cossin.html'>_decomp_cossin</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.linalg._basic.html">_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._cythonized_array_utils.html">_cythonized_array_utils</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp.html">_decomp</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_cholesky.html">_decomp_cholesky</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_cossin.html">_decomp_cossin</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_ldl.html">_decomp_ldl</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_lu.html">_decomp_lu</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_polar.html">_decomp_polar</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_qr.html">_decomp_qr</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_qz.html">_decomp_qz</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_schur.html">_decomp_schur</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_svd.html">_decomp_svd</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_update.html">_decomp_update</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._expm_frechet.html">_expm_frechet</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._fblas.html">_fblas</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._flapack.html">_flapack</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._flinalg.html">_flinalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._flinalg_py.html">_flinalg_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative.html">_interpolative</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.html">_interpolative_backend</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs.html">_matfuncs</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs_expm.html">_matfuncs_expm</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs_sqrtm.html">_matfuncs_sqrtm</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs_sqrtm_triu.html">_matfuncs_sqrtm_triu</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._misc.html">_misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._procrustes.html">_procrustes</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._sketches.html">_sketches</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._solve_toeplitz.html">_solve_toeplitz</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._solvers.html">_solvers</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._special_matrices.html">_special_matrices</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.basic.html">basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.blas.html">blas</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.cython_blas.html">cython_blas</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.cython_lapack.html">cython_lapack</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp.html">decomp</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_cholesky.html">decomp_cholesky</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_lu.html">decomp_lu</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_qr.html">decomp_qr</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_schur.html">decomp_schur</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_svd.html">decomp_svd</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.flinalg.html">flinalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.interpolative.html">interpolative</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.lapack.html">lapack</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.matfuncs.html">matfuncs</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.special_matrices.html">special_matrices</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.linalg._decomp_cossin.cossin.html'>cossin</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_cossin.cossin.html">cossin</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a>    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>cossin(X, p=None, q=None, separate=False, swap_sign=False, compute_u=True, compute_vh=True)</code><!-- rendering Extended Summary -->
+                                       <div id="9df5de48dcbc4b55892f34aedee92273"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "X is an "}, {"type": "inlineCode", "value": "(m, m)"}, {"type": "text", "value": " orthogonal/unitary matrix, partitioned as the following where upper left block has the shape of "}, {"type": "inlineCode", "value": "(p, q)"}, {"type": "text", "value": "                                 "}], "type": "paragraph"});
+            document.getElementById("9df5de48dcbc4b55892f34aedee92273").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="a98ee7176de64237a84fb602f2f6acd4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "                           \u250c                   \u2510\n                           \u2502 I  0  0 \u2502 0  0  0 \u2502\n\u250c           \u2510   \u250c         \u2510\u2502 0  C  0 \u2502 0 -S  0 \u2502\u250c         \u2510*\n\u2502 X11 \u2502 X12 \u2502   \u2502 U1 \u2502    \u2502\u2502 0  0  0 \u2502 0  0 -I \u2502\u2502 V1 \u2502    \u2502\n\u2502 \u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500 \u2502 = \u2502\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u2502\u2502\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2502\u2502\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u2502\n\u2502 X21 \u2502 X22 \u2502   \u2502    \u2502 U2 \u2502\u2502 0  0  0 \u2502 I  0  0 \u2502\u2502    \u2502 V2 \u2502\n\u2514           \u2518   \u2514         \u2518\u2502 0  S  0 \u2502 0  C  0 \u2502\u2514         \u2518\n                           \u2502 0  0  I \u2502 0  0  0 \u2502\n                           \u2514                   \u2518"});
+            document.getElementById("a98ee7176de64237a84fb602f2f6acd4").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="daaef831108741df8190f73f687d8a9d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "U1"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "U2"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "V1"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "V2"}, {"type": "text", "value": " are square orthogonal/unitary matrices of dimensions "}, {"type": "inlineCode", "value": "(p,p)"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "(m-p,m-p)"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "(q,q)"}, {"type": "text", "value": ", and "}, {"type": "inlineCode", "value": "(m-q,m-q)"}, {"type": "text", "value": " respectively, and "}, {"type": "inlineCode", "value": "C"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "S"}, {"type": "text", "value": " are "}, {"type": "inlineCode", "value": "(r, r)"}, {"type": "text", "value": " nonnegative diagonal matrices satisfying "}, {"type": "inlineCode", "value": "C^2 + S^2 = I"}, {"type": "text", "value": " where "}, {"type": "inlineCode", "value": "r = min(p, m-p, q, m-q)"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("daaef831108741df8190f73f687d8a9d").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="85f9e76d69704e9cbc8c561c13e1e802"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Moreover, the rank of the identity matrices are "}, {"type": "inlineCode", "value": "min(p, q) - r"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "min(p, m - q) - r"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "min(m - p, q) - r"}, {"type": "text", "value": ", and "}, {"type": "inlineCode", "value": "min(m - p, m - q) - r"}, {"type": "text", "value": " respectively."}], "type": "paragraph"});
+            document.getElementById("85f9e76d69704e9cbc8c561c13e1e802").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="b462f84b53ae4a008c88991b1e9c2af3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "X can be supplied either by itself and block specifications p, q or its subblocks in an iterable from which the shapes would be derived. See the examples below."}], "type": "paragraph"});
+            document.getElementById("b462f84b53ae4a008c88991b1e9c2af3").innerHTML = html;
+        }
+        init();
+    </script>
+
+<!-- rendering Notes -->
+        <h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="X">X</a> : array_like, iterable</dt>
+<dd>
+                <div id="bbcfab74435649169b71905904b15c85"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "complex unitary or real orthogonal matrix to be decomposed, or iterable of subblocks "}, {"type": "inlineCode", "value": "X11"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "X12"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "X21"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "X22"}, {"type": "text", "value": ", when "}, {"type": "inlineCode", "value": "p"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "q"}, {"type": "text", "value": " are omitted."}], "type": "paragraph"});
+            document.getElementById("bbcfab74435649169b71905904b15c85").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="p">p</a> : int, optional</dt>
+<dd>
+                <div id="9e527d28e4de459e97ae136ffd266705"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Number of rows of the upper left block "}, {"type": "inlineCode", "value": "X11"}, {"type": "text", "value": ", used only when X is given as an array."}], "type": "paragraph"});
+            document.getElementById("9e527d28e4de459e97ae136ffd266705").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="q">q</a> : int, optional</dt>
+<dd>
+                <div id="3a355729a414422ebbf4f83a1c956fe9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Number of columns of the upper left block "}, {"type": "inlineCode", "value": "X11"}, {"type": "text", "value": ", used only when X is given as an array."}], "type": "paragraph"});
+            document.getElementById("3a355729a414422ebbf4f83a1c956fe9").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="separate">separate</a> : bool, optional</dt>
+<dd>
+                <div id="0875d697feec4b539841742bb3fd520a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "if "}, {"type": "inlineCode", "value": "True"}, {"type": "text", "value": ", the low level components are returned instead of the matrix factors, i.e. "}, {"type": "inlineCode", "value": "(u1,u2)"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "theta"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "(v1h,v2h)"}, {"type": "text", "value": " instead of "}, {"type": "inlineCode", "value": "u"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "cs"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "vh"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("0875d697feec4b539841742bb3fd520a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="swap_sign">swap_sign</a> : bool, optional</dt>
+<dd>
+                <div id="4a22fabaa6484f47b578ece56b6beec6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "if "}, {"type": "inlineCode", "value": "True"}, {"type": "text", "value": ", the "}, {"type": "inlineCode", "value": "-S"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "-I"}, {"type": "text", "value": " block will be the bottom left, otherwise (by default) they will be in the upper right block."}], "type": "paragraph"});
+            document.getElementById("4a22fabaa6484f47b578ece56b6beec6").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="compute_u">compute_u</a> : bool, optional</dt>
+<dd>
+                <div id="b7230bf093cf42e2b05adcb32d922cb1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "if "}, {"type": "inlineCode", "value": "False"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "u"}, {"type": "text", "value": " won\u0027t be computed and an empty array is returned."}], "type": "paragraph"});
+            document.getElementById("b7230bf093cf42e2b05adcb32d922cb1").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="compute_vh">compute_vh</a> : bool, optional</dt>
+<dd>
+                <div id="dd7f6b463633496caca4ee4215bfa1ae"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "if "}, {"type": "inlineCode", "value": "False"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "vh"}, {"type": "text", "value": " won\u0027t be computed and an empty array is returned."}], "type": "paragraph"});
+            document.getElementById("dd7f6b463633496caca4ee4215bfa1ae").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="u">u</a> : ndarray</dt>
+<dd>
+                <div id="aef163eabdf24b92a980747da14664d2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "When "}, {"type": "inlineCode", "value": "compute_u=True"}, {"type": "text", "value": ", contains the block diagonal orthogonal/unitary matrix consisting of the blocks "}, {"type": "inlineCode", "value": "U1"}, {"type": "text", "value": " ("}, {"type": "inlineCode", "value": "p"}, {"type": "text", "value": " x "}, {"type": "inlineCode", "value": "p"}, {"type": "text", "value": ") and "}, {"type": "inlineCode", "value": "U2"}, {"type": "text", "value": " ("}, {"type": "inlineCode", "value": "m-p"}, {"type": "text", "value": " x "}, {"type": "inlineCode", "value": "m-p"}, {"type": "text", "value": ") orthogonal/unitary matrices. If "}, {"type": "inlineCode", "value": "separate=True"}, {"type": "text", "value": ", this contains the tuple of "}, {"type": "inlineCode", "value": "(U1, U2)"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("aef163eabdf24b92a980747da14664d2").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="cs">cs</a> : ndarray</dt>
+<dd>
+<!-- deflist -->
+           <dl>
+               <dt>                <div id="424d4077bcd14226b2569755c1486f7a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The cosine-sine factor with the structure described above."}], "type": "paragraph"});
+            document.getElementById("424d4077bcd14226b2569755c1486f7a").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="b47bf0ad2d3c4458add75056a26d854b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"type": "inlineCode", "value": "separate=True"}, {"type": "text", "value": ", this contains the "}, {"type": "inlineCode", "value": "theta"}, {"type": "text", "value": " array containing the  angles in radians."}], "type": "paragraph"});
+            document.getElementById("b47bf0ad2d3c4458add75056a26d854b").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</dd>
+<dt><a id="vh">vh</a> : ndarray</dt>
+<dd>
+                <div id="5bf9a2a21ac74c23879b4b05e2d20ddf"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "When "}, {"type": "inlineCode", "value": "compute_vh=True`, contains the block diagonal orthogonal/unitary\nmatrix consisting of the blocks ``V1H"}, {"type": "text", "value": " ("}, {"type": "inlineCode", "value": "q"}, {"type": "text", "value": " x "}, {"type": "inlineCode", "value": "q"}, {"type": "text", "value": ") and "}, {"type": "inlineCode", "value": "V2H"}, {"type": "text", "value": " ("}, {"type": "inlineCode", "value": "m-q"}, {"type": "text", "value": " x "}, {"type": "inlineCode", "value": "m-q"}, {"type": "text", "value": ") orthogonal/unitary matrices. If "}, {"type": "inlineCode", "value": "separate=True"}, {"type": "text", "value": ", this contains the tuple of "}, {"type": "inlineCode", "value": "(V1H, V2H)"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("5bf9a2a21ac74c23879b4b05e2d20ddf").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="c5562ea63c1d4881ab28ed23545d13e4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Compute the cosine-sine (CS) decomposition of an orthogonal/unitary matrix."}], "type": "paragraph"});
+            document.getElementById("c5562ea63c1d4881ab28ed23545d13e4").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">linalg</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">cossin</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">stats</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">unitary_group</span><br><span class='nsl'>...&nbsp;</span><span class="">x</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">unitary_group</span><span class="o">.</span><span class="">rvs</span><span class="">(</span><span class="mi">4</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">u</span><span class="">,</span><span class=""> </span><span class="">cs</span><span class="">,</span><span class=""> </span><span class="">vdh</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">cossin</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">p</span><span class="o">=</span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="">q</span><span class="o">=</span><span class="mi">2</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">np</span><span class="o">.</span><span class="">allclose</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">u</span><span class=""> </span><span class="o">@</span><span class=""> </span><span class="">cs</span><span class=""> </span><span class="o">@</span><span class=""> </span><span class="">vdh</span><span class="">)</span>
+True</pre>
+            
+                           Same can be entered via subblocks without the need of ``p`` and ``q``. Also
+let&#39;s skip the computation of ``u``  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">ue</span><span class="">,</span><span class=""> </span><span class="">cs</span><span class="">,</span><span class=""> </span><span class="">vdh</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">cossin</span><span class="">(</span><span class="">(</span><span class="">x</span><span class="">[</span><span class="">:</span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="">:</span><span class="mi">2</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">x</span><span class="">[</span><span class="">:</span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">:</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">x</span><span class="">[</span><span class="mi">2</span><span class="">:</span><span class="">,</span><span class=""> </span><span class="">:</span><span class="mi">2</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">x</span><span class="">[</span><span class="mi">2</span><span class="">:</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">:</span><span class="">]</span><span class="">)</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                     </span><span class="">compute_u</span><span class="o">=</span><span class="kc">False</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="nb">print</span><span class="">(</span><span class="">ue</span><span class="">)</span>
+[]</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">np</span><span class="o">.</span><span class="">allclose</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">u</span><span class=""> </span><span class="o">@</span><span class=""> </span><span class="">cs</span><span class=""> </span><span class="o">@</span><span class=""> </span><span class="">vdh</span><span class="">)</span>
+True</pre>
+            
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/linalg/_decomp_cossin.py#L12'>/scipy/linalg/_decomp_cossin.py#12</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

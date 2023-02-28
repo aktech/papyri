@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats.html'>stats</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats._resampling.html'>_resampling</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.stats._axis_nan_policy.html">_axis_nan_policy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._biasedurn.html">_biasedurn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binned_statistic.html">_binned_statistic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binomtest.html">_binomtest</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._boost.html">_boost</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._common.html">_common</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._constants.html">_constants</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._continuous_distns.html">_continuous_distns</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._covariance.html">_covariance</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._crosstab.html">_crosstab</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._discrete_distns.html">_discrete_distns</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._distn_infrastructure.html">_distn_infrastructure</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._distr_params.html">_distr_params</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._entropy.html">_entropy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._fit.html">_fit</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.html">_hypotests</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._kde.html">_kde</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._ksstats.html">_ksstats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable.html">_levy_stable</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mannwhitneyu.html">_mannwhitneyu</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._morestats.html">_morestats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mstats_basic.html">_mstats_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mstats_extras.html">_mstats_extras</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._multivariate.html">_multivariate</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mvn.html">_mvn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._odds_ratio.html">_odds_ratio</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._page_trend_test.html">_page_trend_test</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.html">_qmc</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc_cy.html">_qmc_cy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._rcont.html">_rcont</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._relative_risk.html">_relative_risk</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling.html">_resampling</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._rvs_sampling.html">_rvs_sampling</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._sobol.html">_sobol</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._statlib.html">_statlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats.html">_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_mstats_common.html">_stats_mstats_common</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.html">_stats_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_pythran.html">_stats_pythran</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._tukeylambda_stats.html">_tukeylambda_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._variation.html">_variation</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._warnings_errors.html">_warnings_errors</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.biasedurn.html">biasedurn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.contingency.html">contingency</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.distributions.html">distributions</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.kde.html">kde</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.morestats.html">morestats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats.html">mstats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats_basic.html">mstats_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats_extras.html">mstats_extras</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mvn.html">mvn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.qmc.html">qmc</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.statlib.html">statlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats._resampling.monte_carlo_test.html'>monte_carlo_test</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling._all_partitions_concatenated.html">_all_partitions_concatenated</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling._batch_generator.html">_batch_generator</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling._bca_interval.html">_bca_interval</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling._bootstrap_iv.html">_bootstrap_iv</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling._bootstrap_resample.html">_bootstrap_resample</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling._calculate_null_both.html">_calculate_null_both</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling._calculate_null_pairings.html">_calculate_null_pairings</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling._calculate_null_samples.html">_calculate_null_samples</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling._jackknife_resample.html">_jackknife_resample</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling._monte_carlo_test_iv.html">_monte_carlo_test_iv</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling._pairings_permutations_gen.html">_pairings_permutations_gen</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling._percentile_along_axis.html">_percentile_along_axis</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling._percentile_of_score.html">_percentile_of_score</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling._permutation_test_iv.html">_permutation_test_iv</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling._vectorize_statistic.html">_vectorize_statistic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling.monte_carlo_test.html">monte_carlo_test</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling.permutation_test.html">permutation_test</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>monte_carlo_test(sample, rvs, statistic, *, vectorized=None, n_resamples=9999, batch=None, alternative=&#39;two-sided&#39;, axis=0)</code><!-- rendering Extended Summary -->
+                                       <div id="9475df75d41143bb92ae9d465e2794d4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The null hypothesis is that the provided "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "sample", "type": "RefInfo", "version": null}, "type": "Link", "value": "sample"}, {"type": "text", "value": " was drawn at random from the distribution for which "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "rvs", "type": "RefInfo", "version": null}, "type": "Link", "value": "rvs"}, {"type": "text", "value": " generates random variates. The value of the "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "statistic", "type": "RefInfo", "version": null}, "type": "Link", "value": "statistic"}, {"type": "text", "value": " for the given sample is compared against a Monte Carlo null distribution: the value of the statistic for each of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "n_resamples", "type": "RefInfo", "version": null}, "type": "Link", "value": "n_resamples"}, {"type": "text", "value": " samples generated by "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "rvs", "type": "RefInfo", "version": null}, "type": "Link", "value": "rvs"}, {"type": "text", "value": ". This gives the p-value, the probability of observing such an extreme value of the test statistic under the null hypothesis."}], "type": "paragraph"});
+            document.getElementById("9475df75d41143bb92ae9d465e2794d4").innerHTML = html;
+        }
+        init();
+    </script>
+
+<!-- rendering Notes -->
+        <h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="sample">sample</a> : array-like</dt>
+<dd>
+                <div id="48f6e92b0ff8465ab19ef5c022efb658"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "An array of observations."}], "type": "paragraph"});
+            document.getElementById("48f6e92b0ff8465ab19ef5c022efb658").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="rvs">rvs</a> : callable</dt>
+<dd>
+                <div id="37c409d6383745bcb0d6608bca712bf3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Generates random variates from the distribution against which "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "sample", "type": "RefInfo", "version": null}, "type": "Link", "value": "sample"}, {"type": "text", "value": " will be tested. "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "rvs", "type": "RefInfo", "version": null}, "type": "Link", "value": "rvs"}, {"type": "text", "value": " must be a callable that accepts keyword argument "}, {"type": "inlineCode", "value": "size"}, {"type": "text", "value": " (e.g. "}, {"type": "inlineCode", "value": "rvs(size=(m, n))"}, {"type": "text", "value": ") and returns an N-d array sample of that shape."}], "type": "paragraph"});
+            document.getElementById("37c409d6383745bcb0d6608bca712bf3").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="statistic">statistic</a> : callable</dt>
+<dd>
+                <div id="9d272910e3e3435eb09712d48d935e5a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Statistic for which the p-value of the hypothesis test is to be calculated. "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "statistic", "type": "RefInfo", "version": null}, "type": "Link", "value": "statistic"}, {"type": "text", "value": " must be a callable that accepts a sample (e.g. "}, {"type": "inlineCode", "value": "statistic(sample)"}, {"type": "text", "value": ") and returns the resulting statistic. If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "vectorized", "type": "RefInfo", "version": null}, "type": "Link", "value": "vectorized"}, {"type": "text", "value": " is set "}, {"type": "inlineCode", "value": "True"}, {"type": "text", "value": ", "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "statistic", "type": "RefInfo", "version": null}, "type": "Link", "value": "statistic"}, {"type": "text", "value": " must also accept a keyword argument "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "axis", "type": "RefInfo", "version": null}, "type": "Link", "value": "axis"}, {"type": "text", "value": " and be vectorized to compute the statistic along the provided "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "axis", "type": "RefInfo", "version": null}, "type": "Link", "value": "axis"}, {"type": "text", "value": " of the sample array."}], "type": "paragraph"});
+            document.getElementById("9d272910e3e3435eb09712d48d935e5a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="vectorized">vectorized</a> : bool, optional</dt>
+<dd>
+                <div id="430d4f75fc3c4fff855c99deb0ac1561"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "vectorized", "type": "RefInfo", "version": null}, "type": "Link", "value": "vectorized"}, {"type": "text", "value": " is set "}, {"type": "inlineCode", "value": "False"}, {"type": "text", "value": ", "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "statistic", "type": "RefInfo", "version": null}, "type": "Link", "value": "statistic"}, {"type": "text", "value": " will not be passed keyword argument "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "axis", "type": "RefInfo", "version": null}, "type": "Link", "value": "axis"}, {"type": "text", "value": " and is expected to calculate the statistic only for 1D samples. If "}, {"type": "inlineCode", "value": "True"}, {"type": "text", "value": ", "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "statistic", "type": "RefInfo", "version": null}, "type": "Link", "value": "statistic"}, {"type": "text", "value": " will be passed keyword argument "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "axis", "type": "RefInfo", "version": null}, "type": "Link", "value": "axis"}, {"type": "text", "value": " and is expected to calculate the statistic along "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "axis", "type": "RefInfo", "version": null}, "type": "Link", "value": "axis"}, {"type": "text", "value": " when passed an ND sample array. If "}, {"type": "inlineCode", "value": "None"}, {"type": "text", "value": " (default), "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "vectorized", "type": "RefInfo", "version": null}, "type": "Link", "value": "vectorized"}, {"type": "text", "value": " will be set "}, {"type": "inlineCode", "value": "True"}, {"type": "text", "value": " if "}, {"type": "inlineCode", "value": "axis"}, {"type": "text", "value": " is a parameter of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "statistic", "type": "RefInfo", "version": null}, "type": "Link", "value": "statistic"}, {"type": "text", "value": ". Use of a vectorized statistic typically reduces computation time."}], "type": "paragraph"});
+            document.getElementById("430d4f75fc3c4fff855c99deb0ac1561").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="n_resamples">n_resamples</a> : int, default: 9999</dt>
+<dd>
+                <div id="a70dd7c675fa488993947e3782b7162e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Number of random permutations used to approximate the Monte Carlo null distribution."}], "type": "paragraph"});
+            document.getElementById("a70dd7c675fa488993947e3782b7162e").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="batch">batch</a> : int, optional</dt>
+<dd>
+                <div id="ce1b1e7cdf49420996a21db2a3efe533"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The number of permutations to process in each call to "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "statistic", "type": "RefInfo", "version": null}, "type": "Link", "value": "statistic"}, {"type": "text", "value": ". Memory usage is O("}, {"domain": null, "role": null, "type": "Directive", "value": "batch\u0027*\u0027\u0027sample.size[axis]\u0027"}, {"type": "text", "value": "). Default is "}, {"type": "inlineCode", "value": "None"}, {"type": "text", "value": ", in which case "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "batch", "type": "RefInfo", "version": null}, "type": "Link", "value": "batch"}, {"type": "text", "value": " equals "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "n_resamples", "type": "RefInfo", "version": null}, "type": "Link", "value": "n_resamples"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("ce1b1e7cdf49420996a21db2a3efe533").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="alternative">alternative</a> : {&#39;two-sided&#39;, &#39;less&#39;, &#39;greater&#39;}</dt>
+<dd>
+                <div id="91cf8e5fdf68421c92dd8a3f93d883a5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The alternative hypothesis for which the p-value is calculated. For each alternative, the p-value is defined as follows."}], "type": "paragraph"});
+            document.getElementById("91cf8e5fdf68421c92dd8a3f93d883a5").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="axis">axis</a> : int, default: 0</dt>
+<dd>
+                <div id="466a5a0575aa4db393f264d27ea9c86c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The axis of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "sample", "type": "RefInfo", "version": null}, "type": "Link", "value": "sample"}, {"type": "text", "value": " over which to calculate the statistic."}], "type": "paragraph"});
+            document.getElementById("466a5a0575aa4db393f264d27ea9c86c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="statistic">statistic</a> : float or ndarray</dt>
+<dd>
+                <div id="7735f1792133437498bf29cf9390f45c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The observed test statistic of the sample."}], "type": "paragraph"});
+            document.getElementById("7735f1792133437498bf29cf9390f45c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="pvalue">pvalue</a> : float or ndarray</dt>
+<dd>
+                <div id="f698834b98924f1f9654a2e859214fc8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The p-value for the given alternative."}], "type": "paragraph"});
+            document.getElementById("f698834b98924f1f9654a2e859214fc8").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="null_distribution">null_distribution</a> : ndarray</dt>
+<dd>
+                <div id="e2ddb53bc1534b86a9246b0f0a5a811a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The values of the test statistic generated under the null hypothesis."}], "type": "paragraph"});
+            document.getElementById("e2ddb53bc1534b86a9246b0f0a5a811a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="3393dd7324244c789c5b4e25409c5db4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Monte Carlo test that a sample is drawn from a given distribution."}], "type": "paragraph"});
+            document.getElementById("3393dd7324244c789c5b4e25409c5db4").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+                           Suppose we wish to test whether a small sample has been drawn from a normal
+distribution. We decide that we will use the skew of the sample as a
+test statistic, and we will consider a p-value of 0.05 to be statistically
+significant.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">stats</span><br><span class='nsl'>...&nbsp;</span><span class="k">def</span><span class=""> </span><span class="nf">statistic</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">axis</span><span class="">)</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="k">return</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">skew</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">axis</span><span class="">)</span>
+</pre>
+            
+                           After collecting our data, we calculate the observed value of the test
+statistic.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">rng</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">random</span><span class="o">.</span><span class="">default_rng</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">x</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">skewnorm</span><span class="o">.</span><span class="">rvs</span><span class="">(</span><span class="">a</span><span class="o">=</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="">size</span><span class="o">=</span><span class="mi">50</span><span class="">,</span><span class=""> </span><span class="">random_state</span><span class="o">=</span><span class="">rng</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">statistic</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">axis</span><span class="o">=</span><span class="mi">0</span><span class="">)</span>
+0.12457412450240658</pre>
+            
+                           To determine the probability of observing such an extreme value of the
+skewness by chance if the sample were drawn from the normal distribution,
+we can perform a Monte Carlo hypothesis test. The test will draw many
+samples at random from their normal distribution, calculate the skewness
+of each sample, and compare our original skewness against this
+distribution to determine an approximate p-value.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">stats</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">monte_carlo_test</span><br><span class='nsl'>...&nbsp;</span><span class="c1"># because our statistic is vectorized, we pass `vectorized=True`</span><br><span class='nsl'>...&nbsp;</span><span class="">rvs</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="k">lambda</span><span class=""> </span><span class="">size</span><span class="">:</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">norm</span><span class="o">.</span><span class="">rvs</span><span class="">(</span><span class="">size</span><span class="o">=</span><span class="">size</span><span class="">,</span><span class=""> </span><span class="">random_state</span><span class="o">=</span><span class="">rng</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">monte_carlo_test</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">rvs</span><span class="">,</span><span class=""> </span><span class="">statistic</span><span class="">,</span><span class=""> </span><span class="">vectorized</span><span class="o">=</span><span class="kc">True</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="nb">print</span><span class="">(</span><span class="">res</span><span class="o">.</span><span class="">statistic</span><span class="">)</span>
+0.12457412450240658</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="nb">print</span><span class="">(</span><span class="">res</span><span class="o">.</span><span class="">pvalue</span><span class="">)</span>
+0.7012</pre>
+            
+                           The probability of obtaining a test statistic less than or equal to the
+observed value under the null hypothesis is ~70%. This is greater than
+our chosen threshold of 5%, so we cannot consider this to be significant
+evidence against the null hypothesis.  
+            
+                           Note that this p-value essentially matches that of
+`scipy.stats.skewtest`, which relies on an asymptotic distribution of a
+test statistic based on the sample skewness.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">stats</span><span class="o">.</span><span class="">skewtest</span><span class="">(</span><span class="">x</span><span class="">)</span><span class="o">.</span><span class="">pvalue</span>
+0.6892046027110614</pre>
+            
+                           This asymptotic approximation is not valid for small sample sizes, but
+`monte_carlo_test` can be used with samples of any size.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">x</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">skewnorm</span><span class="o">.</span><span class="">rvs</span><span class="">(</span><span class="">a</span><span class="o">=</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="">size</span><span class="o">=</span><span class="mi">7</span><span class="">,</span><span class=""> </span><span class="">random_state</span><span class="o">=</span><span class="">rng</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="c1"># stats.skewtest(x) would produce an error due to small sample</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">monte_carlo_test</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">rvs</span><span class="">,</span><span class=""> </span><span class="">statistic</span><span class="">,</span><span class=""> </span><span class="">vectorized</span><span class="o">=</span><span class="kc">True</span><span class="">)</span>
+</pre>
+            
+                           The Monte Carlo distribution of the test statistic is provided for
+further investigation.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">matplotlib</span><span class="nn">.</span><span class="nn">pyplot</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">plt</span><br><span class='nsl'>...&nbsp;</span><span class="">fig</span><span class="">,</span><span class=""> </span><span class="">ax</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">plt</span><span class="o">.</span><span class="">subplots</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class="o">.</span><span class="">hist</span><span class="">(</span><span class="">res</span><span class="o">.</span><span class="">null_distribution</span><span class="">,</span><span class=""> </span><span class="">bins</span><span class="o">=</span><span class="mi">50</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class="o">.</span><span class="">set_title</span><span class="">(</span><span class="s2">&#34;</span><span class="s2">Monte Carlo distribution of test statistic</span><span class="s2">&#34;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class="o">.</span><span class="">set_xlabel</span><span class="">(</span><span class="s2">&#34;</span><span class="s2">Value of Statistic</span><span class="s2">&#34;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class="o">.</span><span class="">set_ylabel</span><span class="">(</span><span class="s2">&#34;</span><span class="s2">Frequency</span><span class="s2">&#34;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">show</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.stats._resampling._monte_carlo_test_iv.html" class='exists'>scipy.stats._resampling._monte_carlo_test_iv</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/stats/_resampling.py#L669'>/scipy/stats/_resampling.py#669</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 8.0, "label": "scipy.stats._resampling._monte_carlo_test_iv", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.stats._resampling._monte_carlo_test_iv"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

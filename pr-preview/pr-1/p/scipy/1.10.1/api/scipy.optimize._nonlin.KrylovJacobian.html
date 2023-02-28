@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize.html'>optimize</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize._nonlin.html'>_nonlin</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.optimize.__nnls.html">__nnls</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._basinhopping.html">_basinhopping</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._bglu_dense.html">_bglu_dense</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._cobyla.html">_cobyla</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._cobyla_py.html">_cobyla_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._constraints.html">_constraints</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentiable_functions.html">_differentiable_functions</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentialevolution.html">_differentialevolution</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._direct.html">_direct</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._direct_py.html">_direct_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._dual_annealing.html">_dual_annealing</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._group_columns.html">_group_columns</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._hessian_update_strategy.html">_hessian_update_strategy</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._highs.html">_highs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lbfgsb.html">_lbfgsb</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lbfgsb_py.html">_lbfgsb_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linesearch.html">_linesearch</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog.html">_linprog</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_doc.html">_linprog_doc</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_highs.html">_linprog_highs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_ip.html">_linprog_ip</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_rs.html">_linprog_rs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_simplex.html">_linprog_simplex</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_util.html">_linprog_util</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lsap.html">_lsap</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lsq.html">_lsq</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._milp.html">_milp</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minimize.html">_minimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minpack.html">_minpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minpack2.html">_minpack2</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minpack_py.html">_minpack_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._moduleTNC.html">_moduleTNC</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nnls.html">_nnls</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.html">_nonlin</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._numdiff.html">_numdiff</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.html">_optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._qap.html">_qap</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._remove_redundancy.html">_remove_redundancy</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._root.html">_root</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._root_scalar.html">_root_scalar</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._shgo.html">_shgo</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._shgo_lib.html">_shgo_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._slsqp.html">_slsqp</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._slsqp_py.html">_slsqp_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._spectral.html">_spectral</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._tnc.html">_tnc</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trlib.html">_trlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion.html">_trustregion</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_constr.html">_trustregion_constr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_dogleg.html">_trustregion_dogleg</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_exact.html">_trustregion_exact</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_krylov.html">_trustregion_krylov</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_ncg.html">_trustregion_ncg</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros.html">_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros_py.html">_zeros_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.cobyla.html">cobyla</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.lbfgsb.html">lbfgsb</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.linesearch.html">linesearch</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.minpack.html">minpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.minpack2.html">minpack2</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.moduleTNC.html">moduleTNC</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.nonlin.html">nonlin</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.slsqp.html">slsqp</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.tnc.html">tnc</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.zeros.html">zeros</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize._nonlin.KrylovJacobian.html'>KrylovJacobian</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.optimize._nonlin.Anderson.html.html">Anderson</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.BroydenFirst.html">BroydenFirst</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.BroydenSecond.html">BroydenSecond</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.DiagBroyden.html">DiagBroyden</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.ExcitingMixing.html">ExcitingMixing</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.GenericBroyden.html">GenericBroyden</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.InverseJacobian.html">InverseJacobian</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.Jacobian.html">Jacobian</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.KrylovJacobian.html">KrylovJacobian</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.LinearMixing.html">LinearMixing</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.LowRankMatrix.html">LowRankMatrix</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.NoConvergence.html">NoConvergence</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.TerminationCondition.html">TerminationCondition</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin._array_like.html">_array_like</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin._as_inexact.html">_as_inexact</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin._nonlin_line_search.html">_nonlin_line_search</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin._nonlin_wrapper.html">_nonlin_wrapper</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin._safe_norm.html">_safe_norm</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin._set_doc.html">_set_doc</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.asjacobian.html">asjacobian</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.broyden1.html">broyden1</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.broyden2.html">broyden2</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.diagbroyden.html">diagbroyden</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.excitingmixing.html">excitingmixing</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.linearmixing.html">linearmixing</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.maxnorm.html">maxnorm</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.newton_krylov.html">newton_krylov</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.nonlin_solve.html">nonlin_solve</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" >+</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.KrylovJacobian.__init__.html">__init__</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.KrylovJacobian._update_diff_step.html">_update_diff_step</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.KrylovJacobian.matvec.html">matvec</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.KrylovJacobian.setup.html">setup</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.KrylovJacobian.solve.html">solve</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.KrylovJacobian.update.html">update</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a>    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<!-- rendering Extended Summary -->
+                                       <div id="68ecc0cbefa042a3b04808180ae7e10e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This method is suitable for solving large-scale problems."}], "type": "paragraph"});
+            document.getElementById("68ecc0cbefa042a3b04808180ae7e10e").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="10535c57d45c431db31dd05abfb77022"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This function implements a Newton-Krylov solver. The basic idea is to compute the inverse of the Jacobian with an iterative Krylov method. These methods require only evaluating the Jacobian-vector products, which are conveniently approximated by a finite difference:"}], "type": "paragraph"});
+            document.getElementById("10535c57d45c431db31dd05abfb77022").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$J v \approx (f(x + \omega*v/|v|) - f(x)) / \omega$$</span>
+
+                               <div id="ca077cdaae034f54bdc44f1d1c368add"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Due to the use of iterative matrix inverses, these methods can deal with large nonlinear problems."}], "type": "paragraph"});
+            document.getElementById("ca077cdaae034f54bdc44f1d1c368add").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="0a0a5854f6054346a7091167b1da346e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "SciPy\u0027s "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.sparse.linalg", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "scipy.sparse.linalg"}, {"type": "text", "value": " module offers a selection of Krylov solvers to choose from. The default here is "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.sparse.linalg._isolve.lgmres.lgmres", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "lgmres"}, {"type": "text", "value": ", which is a variant of restarted GMRES iteration that reuses some of the information obtained in the previous Newton steps to invert Jacobians in subsequent steps."}], "type": "paragraph"});
+            document.getElementById("0a0a5854f6054346a7091167b1da346e").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="c1d9f46523c743cbb44b177cdbdadfe8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For a review on Newton-Krylov methods, see for example , and for the LGMRES sparse inverse method, see ."}], "type": "paragraph"});
+            document.getElementById("c1d9f46523c743cbb44b177cdbdadfe8").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="%(params_basic)s">%(params_basic)s</a> : </dt>
+<dd>
+</dd>
+<dt><a id="rdiff">rdiff</a> : float, optional</dt>
+<dd>
+                <div id="6b45f6c0c0e04ad993e14d19bf5f6f0d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Relative step size to use in numerical differentiation."}], "type": "paragraph"});
+            document.getElementById("6b45f6c0c0e04ad993e14d19bf5f6f0d").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="method">method</a> : str or callable, optional</dt>
+<dd>
+                <div id="9852bcb68e724bc9b8134a86583d0a50"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Krylov method to use to approximate the Jacobian.  Can be a string, or a function implementing the same interface as the iterative solvers in "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.sparse.linalg", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "scipy.sparse.linalg"}, {"type": "text", "value": ". If a string, needs to be one of: "}, {"type": "inlineCode", "value": "\u0027lgmres\u0027"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "\u0027gmres\u0027"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "\u0027bicgstab\u0027"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "\u0027cgs\u0027"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "\u0027minres\u0027"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "\u0027tfqmr\u0027"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("9852bcb68e724bc9b8134a86583d0a50").innerHTML = html;
+        }
+        init();
+    </script>
+
+                <div id="679cd877b00c451687994ed2ea9850c8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The default is "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "scipy", "path": "scipy.sparse.linalg._isolve.lgmres.lgmres", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "scipy.sparse.linalg.lgmres"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("679cd877b00c451687994ed2ea9850c8").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="inner_maxiter">inner_maxiter</a> : int, optional</dt>
+<dd>
+                <div id="cc22775e155241d89ac48b9bc7f52dca"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Parameter to pass to the \"inner\" Krylov solver: maximum number of iterations. Iteration will stop after maxiter steps even if the specified tolerance has not been achieved."}], "type": "paragraph"});
+            document.getElementById("cc22775e155241d89ac48b9bc7f52dca").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="inner_M">inner_M</a> : LinearOperator or InverseJacobian</dt>
+<dd>
+                <div id="dccccd0db55d485c90b41378b76c21f8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Preconditioner for the inner Krylov iteration. Note that you can use also inverse Jacobians as (adaptive) preconditioners. For example,"}], "type": "paragraph"});
+            document.getElementById("dccccd0db55d485c90b41378b76c21f8").innerHTML = html;
+        }
+        init();
+    </script>
+
+                <div id="bdf3ebce5c1c49dd8746de752944ee18"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e from scipy.optimize import BroydenFirst, KrylovJacobian\n\u003e\u003e\u003e from scipy.optimize import InverseJacobian\n\u003e\u003e\u003e jac = BroydenFirst()\n\u003e\u003e\u003e kjac = KrylovJacobian(inner_M=InverseJacobian(jac))"});
+            document.getElementById("bdf3ebce5c1c49dd8746de752944ee18").innerHTML = html;
+        }
+        init();
+    </script>
+
+                <div id="a2cf6cc6402744fda5188f127577e4cb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If the preconditioner has a method named \u0027update\u0027, it will be called as "}, {"type": "inlineCode", "value": "update(x, f)"}, {"type": "text", "value": " after each nonlinear step, with "}, {"type": "inlineCode", "value": "x"}, {"type": "text", "value": " giving the current point, and "}, {"type": "inlineCode", "value": "f"}, {"type": "text", "value": " the current function value."}], "type": "paragraph"});
+            document.getElementById("a2cf6cc6402744fda5188f127577e4cb").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="outer_k">outer_k</a> : int, optional</dt>
+<dd>
+                <div id="c9312203f9cf4c169f3d785074dd42aa"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Size of the subspace kept across LGMRES nonlinear iterations. See "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "scipy", "path": "scipy.sparse.linalg._isolve.lgmres.lgmres", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "scipy.sparse.linalg.lgmres"}, {"type": "text", "value": " for details."}], "type": "paragraph"});
+            document.getElementById("c9312203f9cf4c169f3d785074dd42aa").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="inner_kwargs">inner_kwargs</a> : kwargs</dt>
+<dd>
+                <div id="7603e303c1ce4c52a9c8cca5f07c367b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Keyword parameters for the \"inner\" Krylov solver (defined with "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "method", "type": "RefInfo", "version": null}, "type": "Link", "value": "method"}, {"type": "text", "value": "). Parameter names must start with the "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.stats._morestats._mood_inner_lc", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "inner_"}, {"type": "text", "value": " prefix which will be stripped before passing on the inner method. See, e.g., "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "scipy", "path": "scipy.sparse.linalg._isolve.iterative.gmres", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "scipy.sparse.linalg.gmres"}, {"type": "text", "value": " for details."}], "type": "paragraph"});
+            document.getElementById("7603e303c1ce4c52a9c8cca5f07c367b").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="%(params_extra)s">%(params_extra)s</a> : </dt>
+<dd>
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="53a240a37e1a4bf5a3f43690e22ecc2d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Find a root of a function, using Krylov approximation for inverse Jacobian."}], "type": "paragraph"});
+            document.getElementById("53a240a37e1a4bf5a3f43690e22ecc2d").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.optimize._root.root.html" class='exists'>root</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="48f89d1666d146ea83311a3b2d2fc7ce"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "Interface to root finding algorithms for multivariate functions. See "});
+            document.getElementById("48f89d1666d146ea83311a3b2d2fc7ce").innerHTML = html;
+        }
+        init();
+    </script>             <div id="8e6dccbb44c448a48c052166db51b3a0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "inlineCode", "value": "method=\u0027krylov\u0027"});
+            document.getElementById("8e6dccbb44c448a48c052166db51b3a0").innerHTML = html;
+        }
+        init();
+    </script>             <div id="99978498f2f44367924c573c9edd98dd"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": " in particular."});
+            document.getElementById("99978498f2f44367924c573c9edd98dd").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._isolve.iterative.gmres.html" class='exists'>scipy.sparse.linalg.gmres</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._isolve.lgmres.lgmres.html" class='exists'>scipy.sparse.linalg.lgmres</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+                           The following functions define a system of nonlinear equations  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="k">def</span><span class=""> </span><span class="nf">fun</span><span class="">(</span><span class="">x</span><span class="">)</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="k">return</span><span class=""> </span><span class="">[</span><span class="">x</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="mf">0.5</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">x</span><span class="">[</span><span class="mi">1</span><span class="">]</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="mf">1.0</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">            </span><span class="mf">0.5</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">(</span><span class="">x</span><span class="">[</span><span class="mi">1</span><span class="">]</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="">x</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class="">)</span><span class=""> </span><span class="o">*</span><span class="o">*</span><span class=""> </span><span class="mi">2</span><span class="">]</span>
+</pre>
+            
+                           A solution can be obtained as follows.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">optimize</span><br><span class='nsl'>...&nbsp;</span><span class="">sol</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">optimize</span><span class="o">.</span><span class="">newton_krylov</span><span class="">(</span><span class="">fun</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">sol</span>
+array([0.66731771, 0.66536458])</pre>
+            
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/optimize/_nonlin.py#L1314'>/scipy/optimize/_nonlin.py#1314</a>
+<br/>
+
+type: &lt;class &#39;type&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 12.123105625617661, "label": "scipy.optimize._root.root", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.optimize._root.root"}, {"id": 2, "val": 9.732050807568877, "label": "scipy.sparse.linalg._isolve.iterative.gmres", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.sparse.linalg._isolve.iterative.gmres"}, {"id": 3, "val": 9.732050807568877, "label": "scipy.sparse.linalg._isolve.lgmres.lgmres", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.sparse.linalg._isolve.lgmres.lgmres"}, {"id": 4, "val": 9.414213562373096, "label": "scipy.sparse.linalg", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.sparse.linalg"}, {"id": 5, "val": 9.414213562373096, "label": "scipy.stats._morestats._mood_inner_lc", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.stats._morestats._mood_inner_lc"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

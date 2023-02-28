@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.integrate.html'>integrate</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.integrate._quadrature.html'>_quadrature</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.integrate._bvp.html">_bvp</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._dop.html">_dop</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._ivp.html">_ivp</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._lsoda.html">_lsoda</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._ode.html">_ode</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._odepack.html">_odepack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._odepack_py.html">_odepack_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quad_vec.html">_quad_vec</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadpack.html">_quadpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadpack_py.html">_quadpack_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.html">_quadrature</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._vode.html">_vode</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.dop.html">dop</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.lsoda.html">lsoda</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.odepack.html">odepack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.quadpack.html">quadpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.vode.html">vode</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.integrate._quadrature.trapezoid.html'>trapezoid</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.AccuracyWarning.html">AccuracyWarning</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.QMCQuadResult.html">QMCQuadResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature._basic_simpson.html">_basic_simpson</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature._cached_roots_legendre.html">_cached_roots_legendre</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature._difftrap.html">_difftrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature._printresmat.html">_printresmat</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature._qmc_quad.html">_qmc_quad</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature._qmc_quad_iv.html">_qmc_quad_iv</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature._romberg_diff.html">_romberg_diff</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.cache_decorator.html">cache_decorator</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.cumtrapz.html">cumtrapz</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.cumulative_trapezoid.html">cumulative_trapezoid</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.fixed_quad.html">fixed_quad</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.newton_cotes.html">newton_cotes</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.quadrature.html">quadrature</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.romb.html">romb</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.romberg.html">romberg</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.simps.html">simps</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.simpson.html">simpson</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.trapezoid.html">trapezoid</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.trapz.html">trapz</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.tupleset.html">tupleset</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.vectorize1.html">vectorize1</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>trapezoid(y, x=None, dx=1.0, axis=-1)</code><!-- rendering Extended Summary -->
+                                       <div id="037af90eec364a04a530e6007c4ce8b6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": " is provided, the integration happens in sequence along its elements - they are not sorted."}], "type": "paragraph"});
+            document.getElementById("037af90eec364a04a530e6007c4ce8b6").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="a82d273efa6946c9b5bfa3d76a4aaa94"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Integrate "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "y", "type": "RefInfo", "version": null}, "type": "Link", "value": "y"}, {"type": "text", "value": " ("}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": ") along each 1d slice on the given axis, compute "}, {"type": "Math", "value": "\\int y(x) dx"}, {"type": "text", "value": ". When "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": " is specified, this integrates along the parametric curve, computing "}, {"type": "Math", "value": "\\int_t y(t) dt =\n\\int_t y(t) \\left.\\frac{dx}{dt}\\right|_{x=x(t)} dt"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("a82d273efa6946c9b5bfa3d76a4aaa94").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="c46220066dca49b08082ed68a2c3792f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Image  illustrates trapezoidal rule -- y-axis locations of points will be taken from "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "y", "type": "RefInfo", "version": null}, "type": "Link", "value": "y"}, {"type": "text", "value": " array, by default x-axis distances between points will be 1.0, alternatively they can be provided with "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": " array or with "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "dx", "type": "RefInfo", "version": null}, "type": "Link", "value": "dx"}, {"type": "text", "value": " scalar.  Return value will be equal to combined area under the red lines."}], "type": "paragraph"});
+            document.getElementById("c46220066dca49b08082ed68a2c3792f").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="y">y</a> : array_like</dt>
+<dd>
+                <div id="22098bae6f6441bf9b056c34421420a7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Input array to integrate."}], "type": "paragraph"});
+            document.getElementById("22098bae6f6441bf9b056c34421420a7").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="x">x</a> : array_like, optional</dt>
+<dd>
+                <div id="ebd6cc1c3c5c4103a230deb0424b03aa"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The sample points corresponding to the "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "y", "type": "RefInfo", "version": null}, "type": "Link", "value": "y"}, {"type": "text", "value": " values. If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": " is None, the sample points are assumed to be evenly spaced "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "dx", "type": "RefInfo", "version": null}, "type": "Link", "value": "dx"}, {"type": "text", "value": " apart. The default is None."}], "type": "paragraph"});
+            document.getElementById("ebd6cc1c3c5c4103a230deb0424b03aa").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="dx">dx</a> : scalar, optional</dt>
+<dd>
+                <div id="4601308522744e08ac3dd15835ccf3fb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The spacing between sample points when "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": " is None. The default is 1."}], "type": "paragraph"});
+            document.getElementById("4601308522744e08ac3dd15835ccf3fb").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="axis">axis</a> : int, optional</dt>
+<dd>
+                <div id="427d5aed1d044aeba6e7cbb59f890e42"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The axis along which to integrate."}], "type": "paragraph"});
+            document.getElementById("427d5aed1d044aeba6e7cbb59f890e42").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="trapezoid">trapezoid</a> : float or ndarray</dt>
+<dd>
+                <div id="58fe8c6f2ea0415a8493bd760274f7ef"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Definite integral of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "y", "type": "RefInfo", "version": null}, "type": "Link", "value": "y"}, {"type": "text", "value": " = n-dimensional array as approximated along a single axis by the trapezoidal rule. If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "y", "type": "RefInfo", "version": null}, "type": "Link", "value": "y"}, {"type": "text", "value": " is a 1-dimensional array, then the result is a float. If "}, {"domain": null, "role": null, "type": "Directive", "value": "n"}, {"type": "text", "value": " is greater than 1, then the result is an "}, {"domain": null, "role": null, "type": "Directive", "value": "n"}, {"type": "text", "value": "-1 dimensional array."}], "type": "paragraph"});
+            document.getElementById("58fe8c6f2ea0415a8493bd760274f7ef").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="05d85825d6ee4da5a0b1032be34b5419"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Integrate along the given axis using the composite trapezoidal rule."}], "type": "paragraph"});
+            document.getElementById("05d85825d6ee4da5a0b1032be34b5419").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.cumulative_trapezoid.html" class='exists'>cumulative_trapezoid</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.romb.html" class='exists'>romb</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.simpson.html" class='exists'>simpson</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+                           Use the trapezoidal rule on evenly spaced points:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">integrate</span><br><span class='nsl'>...&nbsp;</span><span class="">integrate</span><span class="o">.</span><span class="">trapezoid</span><span class="">(</span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">]</span><span class="">)</span>
+4.0</pre>
+            
+                           The spacing between sample points can be selected by either the
+``x`` or ``dx`` arguments:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">integrate</span><span class="o">.</span><span class="">trapezoid</span><span class="">(</span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">x</span><span class="o">=</span><span class="">[</span><span class="mi">4</span><span class="">,</span><span class=""> </span><span class="mi">6</span><span class="">,</span><span class=""> </span><span class="mi">8</span><span class="">]</span><span class="">)</span>
+8.0</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">integrate</span><span class="o">.</span><span class="">trapezoid</span><span class="">(</span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">dx</span><span class="o">=</span><span class="mi">2</span><span class="">)</span>
+8.0</pre>
+            
+                           Using a decreasing ``x`` corresponds to integrating in reverse:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">integrate</span><span class="o">.</span><span class="">trapezoid</span><span class="">(</span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">x</span><span class="o">=</span><span class="">[</span><span class="mi">8</span><span class="">,</span><span class=""> </span><span class="mi">6</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">]</span><span class="">)</span>
+-8.0</pre>
+            
+                           More generally ``x`` is used to integrate along a parametric curve. We can
+estimate the integral :math:`\int_0^1 x^2 = 1/3` using:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">x</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">linspace</span><span class="">(</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="">num</span><span class="o">=</span><span class="mi">50</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">y</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">x</span><span class="o">*</span><span class="o">*</span><span class="mi">2</span><br><span class='nsl'>...&nbsp;</span><span class="">integrate</span><span class="o">.</span><span class="">trapezoid</span><span class="">(</span><span class="">y</span><span class="">,</span><span class=""> </span><span class="">x</span><span class="">)</span>
+0.33340274885464394</pre>
+            
+                           Or estimate the area of a circle, noting we repeat the sample which closes
+the curve:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">theta</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">linspace</span><span class="">(</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">pi</span><span class="">,</span><span class=""> </span><span class="">num</span><span class="o">=</span><span class="mi">1000</span><span class="">,</span><span class=""> </span><span class="">endpoint</span><span class="o">=</span><span class="kc">True</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">integrate</span><span class="o">.</span><span class="">trapezoid</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">cos</span><span class="">(</span><span class="">theta</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">x</span><span class="o">=</span><span class="">np</span><span class="o">.</span><span class="">sin</span><span class="">(</span><span class="">theta</span><span class="">)</span><span class="">)</span>
+3.141571941375841</pre>
+            
+                           ``trapezoid`` can be applied along a specified axis to do multiple
+computations in one call:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">a</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">arange</span><span class="">(</span><span class="mi">6</span><span class="">)</span><span class="o">.</span><span class="">reshape</span><span class="">(</span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">a</span>
+array([[0, 1, 2],
+       [3, 4, 5]])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">integrate</span><span class="o">.</span><span class="">trapezoid</span><span class="">(</span><span class="">a</span><span class="">,</span><span class=""> </span><span class="">axis</span><span class="o">=</span><span class="mi">0</span><span class="">)</span>
+array([1.5, 2.5, 3.5])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">integrate</span><span class="o">.</span><span class="">trapezoid</span><span class="">(</span><span class="">a</span><span class="">,</span><span class=""> </span><span class="">axis</span><span class="o">=</span><span class="mi">1</span><span class="">)</span>
+array([2.,  8.])</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.trapz.html" class='exists'>scipy.integrate._quadrature.trapz</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.stats._continuous_distns.trapezoid_gen.html" class='exists'>scipy.stats._continuous_distns.trapezoid_gen</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/integrate/_quadrature.py#L21'>/scipy/integrate/_quadrature.py#21</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 11.0, "label": "scipy.integrate._quadrature.simpson", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.integrate._quadrature.simpson"}, {"id": 2, "val": 10.64575131106459, "label": "scipy.integrate._quadrature.cumulative_trapezoid", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.integrate._quadrature.cumulative_trapezoid"}, {"id": 3, "val": 11.0, "label": "scipy.integrate._quadrature.romb", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.integrate._quadrature.romb"}, {"id": 4, "val": 9.0, "label": "scipy.integrate._quadrature.trapz", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.integrate._quadrature.trapz"}, {"id": 5, "val": 8.0, "label": "scipy.stats._continuous_distns.trapezoid_gen", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.stats._continuous_distns.trapezoid_gen"}], "links": [{"source": 2, "target": 3, "id": 1}, {"source": 2, "target": 1, "id": 5}, {"source": 1, "target": 3, "id": 11}, {"source": 3, "target": 2, "id": 19}, {"source": 3, "target": 1, "id": 24}]};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

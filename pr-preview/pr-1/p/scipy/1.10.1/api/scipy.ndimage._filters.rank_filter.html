@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.ndimage.html'>ndimage</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.ndimage._filters.html'>_filters</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.html">_filters</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._fourier.html">_fourier</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._interpolation.html">_interpolation</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.html">_measurements</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._morphology.html">_morphology</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._nd_image.html">_nd_image</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._ni_docstrings.html">_ni_docstrings</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._ni_label.html">_ni_label</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._ni_support.html">_ni_support</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.filters.html">filters</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.fourier.html">fourier</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.interpolation.html">interpolation</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.measurements.html">measurements</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.morphology.html">morphology</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.ndimage._filters.rank_filter.html'>rank_filter</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters._complex_via_real_components.html">_complex_via_real_components</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters._correlate_or_convolve.html">_correlate_or_convolve</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters._gaussian_kernel1d.html">_gaussian_kernel1d</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters._invalid_origin.html">_invalid_origin</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters._min_or_max_filter.html">_min_or_max_filter</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters._rank_filter.html">_rank_filter</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.convolve.html">convolve</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.convolve1d.html">convolve1d</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.correlate.html">correlate</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.correlate1d.html">correlate1d</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.gaussian_filter.html">gaussian_filter</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.gaussian_filter1d.html">gaussian_filter1d</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.gaussian_gradient_magnitude.html">gaussian_gradient_magnitude</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.gaussian_laplace.html">gaussian_laplace</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.generic_filter.html">generic_filter</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.generic_filter1d.html">generic_filter1d</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.generic_gradient_magnitude.html">generic_gradient_magnitude</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.generic_laplace.html">generic_laplace</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.laplace.html">laplace</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.maximum_filter.html">maximum_filter</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.maximum_filter1d.html">maximum_filter1d</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.median_filter.html">median_filter</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.minimum_filter.html">minimum_filter</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.minimum_filter1d.html">minimum_filter1d</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.percentile_filter.html">percentile_filter</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.prewitt.html">prewitt</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.rank_filter.html">rank_filter</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.sobel.html">sobel</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.uniform_filter.html">uniform_filter</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.uniform_filter1d.html">uniform_filter1d</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a>    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>rank_filter(input, rank, size=None, footprint=None, output=None, mode=&#39;reflect&#39;, cval=0.0, origin=0)</code><!-- rendering Extended Summary -->
+        <!-- rendering Notes -->
+        <h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="input">input</a> : array_like</dt>
+<dd>
+                <div id="5f2d3ad6ff17474b8a283a9ab37a62d2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The input array."}], "type": "paragraph"});
+            document.getElementById("5f2d3ad6ff17474b8a283a9ab37a62d2").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="rank">rank</a> : int</dt>
+<dd>
+                <div id="5ae20512c3d54676a5890c9e5ec910ad"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The rank parameter may be less than zero, i.e., rank = -1 indicates the largest element."}], "type": "paragraph"});
+            document.getElementById("5ae20512c3d54676a5890c9e5ec910ad").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="size">size</a> : scalar or tuple, optional</dt>
+<dd>
+                <div id="251ca5bf88a04565852a855501bd885a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "See footprint, below. Ignored if footprint is given."}], "type": "paragraph"});
+            document.getElementById("251ca5bf88a04565852a855501bd885a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="footprint">footprint</a> : array, optional</dt>
+<dd>
+                <div id="60ef36e842b9402e9929776b64f3b52f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Either "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "size", "type": "RefInfo", "version": null}, "type": "Link", "value": "size"}, {"type": "text", "value": " or "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "footprint", "type": "RefInfo", "version": null}, "type": "Link", "value": "footprint"}, {"type": "text", "value": " must be defined. "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "size", "type": "RefInfo", "version": null}, "type": "Link", "value": "size"}, {"type": "text", "value": " gives the shape that is taken from the input array, at every element position, to define the input to the filter function. "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "footprint", "type": "RefInfo", "version": null}, "type": "Link", "value": "footprint"}, {"type": "text", "value": " is a boolean array that specifies (implicitly) a shape, but also which of the elements within this shape will get passed to the filter function. Thus "}, {"type": "inlineCode", "value": "size=(n,m)"}, {"type": "text", "value": " is equivalent to "}, {"type": "inlineCode", "value": "footprint=np.ones((n,m))"}, {"type": "text", "value": ".  We adjust "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "size", "type": "RefInfo", "version": null}, "type": "Link", "value": "size"}, {"type": "text", "value": " to the number of dimensions of the input array, so that, if the input array is shape (10,10,10), and "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "size", "type": "RefInfo", "version": null}, "type": "Link", "value": "size"}, {"type": "text", "value": " is 2, then the actual size used is (2,2,2). When "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "footprint", "type": "RefInfo", "version": null}, "type": "Link", "value": "footprint"}, {"type": "text", "value": " is given, "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "size", "type": "RefInfo", "version": null}, "type": "Link", "value": "size"}, {"type": "text", "value": " is ignored."}], "type": "paragraph"});
+            document.getElementById("60ef36e842b9402e9929776b64f3b52f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="output">output</a> : array or dtype, optional</dt>
+<dd>
+                <div id="a0560c5ce3d446a49b19ce593686e2da"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The array in which to place the output, or the dtype of the returned array. By default an array of the same dtype as input will be created."}], "type": "paragraph"});
+            document.getElementById("a0560c5ce3d446a49b19ce593686e2da").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="mode">mode</a> : {&#39;reflect&#39;, &#39;constant&#39;, &#39;nearest&#39;, &#39;mirror&#39;, &#39;wrap&#39;}, optional</dt>
+<dd>
+                <div id="1dbd296b690f4f03a49284bd409a9e06"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "mode", "type": "RefInfo", "version": null}, "type": "Link", "value": "mode"}, {"type": "text", "value": " parameter determines how the input array is extended beyond its boundaries. Default is \u0027reflect\u0027. Behavior for each valid value is as follows:"}], "type": "paragraph"});
+            document.getElementById("1dbd296b690f4f03a49284bd409a9e06").innerHTML = html;
+        }
+        init();
+    </script>
+
+<!-- deflist -->
+           <dl>
+               <dt>                <div id="6502c50f2d4948b4b885731dad1518f1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027reflect\u0027 ("}, {"domain": null, "role": null, "type": "Directive", "value": "d c b a | a b c d | d c b a"}, {"type": "text", "value": ")"}], "type": "paragraph"});
+            document.getElementById("6502c50f2d4948b4b885731dad1518f1").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="6be7f12519d04c2093aac7b40b02daf2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The input is extended by reflecting about the edge of the last     pixel. This mode is also sometimes referred to as half-sample     symmetric."}], "type": "paragraph"});
+            document.getElementById("6be7f12519d04c2093aac7b40b02daf2").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="18d1232e14b14326bf2fbec5ddd07515"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027constant\u0027 ("}, {"domain": null, "role": null, "type": "Directive", "value": "k k k k | a b c d | k k k k"}, {"type": "text", "value": ")"}], "type": "paragraph"});
+            document.getElementById("18d1232e14b14326bf2fbec5ddd07515").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="a3a1c38fd89b4e94aa895e5a96d9c0e1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The input is extended by filling all values beyond the edge with     the same constant value, defined by the "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "cval", "type": "RefInfo", "version": null}, "type": "Link", "value": "cval"}, {"type": "text", "value": " parameter."}], "type": "paragraph"});
+            document.getElementById("a3a1c38fd89b4e94aa895e5a96d9c0e1").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="c9d8eacee9744b798454e8cc3ad8cc07"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027nearest\u0027 ("}, {"domain": null, "role": null, "type": "Directive", "value": "a a a a | a b c d | d d d d"}, {"type": "text", "value": ")"}], "type": "paragraph"});
+            document.getElementById("c9d8eacee9744b798454e8cc3ad8cc07").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="8093c7ffe329478aa234487f2783b907"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The input is extended by replicating the last pixel."}], "type": "paragraph"});
+            document.getElementById("8093c7ffe329478aa234487f2783b907").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="2e131022f01a48da93c9c6de643f7cf1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027mirror\u0027 ("}, {"domain": null, "role": null, "type": "Directive", "value": "d c b | a b c d | c b a"}, {"type": "text", "value": ")"}], "type": "paragraph"});
+            document.getElementById("2e131022f01a48da93c9c6de643f7cf1").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="3a162d2ffa4a43f59fdae89fd3f63f19"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The input is extended by reflecting about the center of the last     pixel. This mode is also sometimes referred to as whole-sample     symmetric."}], "type": "paragraph"});
+            document.getElementById("3a162d2ffa4a43f59fdae89fd3f63f19").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="8f36746979cc498d83438a1a089e2ce4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027wrap\u0027 ("}, {"domain": null, "role": null, "type": "Directive", "value": "a b c d | a b c d | a b c d"}, {"type": "text", "value": ")"}], "type": "paragraph"});
+            document.getElementById("8f36746979cc498d83438a1a089e2ce4").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="61e4d93f9ea84b58927e4e485bb7caad"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The input is extended by wrapping around to the opposite edge."}], "type": "paragraph"});
+            document.getElementById("61e4d93f9ea84b58927e4e485bb7caad").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+                <div id="9769c5730e5c4ec18f9d37c0fd701672"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For consistency with the interpolation functions, the following mode names can also be used:"}], "type": "paragraph"});
+            document.getElementById("9769c5730e5c4ec18f9d37c0fd701672").innerHTML = html;
+        }
+        init();
+    </script>
+
+<!-- deflist -->
+           <dl>
+               <dt>                <div id="351096aea12f4ba78e1bc365f1e80809"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027grid-mirror\u0027"}], "type": "paragraph"});
+            document.getElementById("351096aea12f4ba78e1bc365f1e80809").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="1a4c9a5de31848bfab21b8c14cc97ba0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This is a synonym for \u0027reflect\u0027."}], "type": "paragraph"});
+            document.getElementById("1a4c9a5de31848bfab21b8c14cc97ba0").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="0f935e9025794172a41d3d3fe11761fb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027grid-constant\u0027"}], "type": "paragraph"});
+            document.getElementById("0f935e9025794172a41d3d3fe11761fb").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="39096783f6e04a2d888d81f76887303c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This is a synonym for \u0027constant\u0027."}], "type": "paragraph"});
+            document.getElementById("39096783f6e04a2d888d81f76887303c").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="3a4691da49364fe295d23beb51aebcc9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027grid-wrap\u0027"}], "type": "paragraph"});
+            document.getElementById("3a4691da49364fe295d23beb51aebcc9").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="b079e581e45349f3aea409e45ffc819c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This is a synonym for \u0027wrap\u0027."}], "type": "paragraph"});
+            document.getElementById("b079e581e45349f3aea409e45ffc819c").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</dd>
+<dt><a id="cval">cval</a> : scalar, optional</dt>
+<dd>
+                <div id="a8ccab7a21af479a9418e9efce47fd86"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Value to fill past edges of input if "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "mode", "type": "RefInfo", "version": null}, "type": "Link", "value": "mode"}, {"type": "text", "value": " is \u0027constant\u0027. Default is 0.0."}], "type": "paragraph"});
+            document.getElementById("a8ccab7a21af479a9418e9efce47fd86").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="origin">origin</a> : int or sequence, optional</dt>
+<dd>
+                <div id="0282900cc6574a1b9154c4107a82f78b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Controls the placement of the filter on the input array\u0027s pixels. A value of 0 (the default) centers the filter over the pixel, with positive values shifting the filter to the left, and negative ones to the right. By passing a sequence of origins with length equal to the number of dimensions of the input array, different shifts can be specified along each axis."}], "type": "paragraph"});
+            document.getElementById("0282900cc6574a1b9154c4107a82f78b").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="rank_filter">rank_filter</a> : ndarray</dt>
+<dd>
+                <div id="5ae254560a43428c9b2e7b353a115dcf"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Filtered array. Has the same shape as "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "input", "type": "RefInfo", "version": null}, "type": "Link", "value": "input"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("5ae254560a43428c9b2e7b353a115dcf").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="e5920821e120446f8e02f54e3ec1e1ab"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Calculate a multidimensional rank filter."}], "type": "paragraph"});
+            document.getElementById("e5920821e120446f8e02f54e3ec1e1ab").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">ndimage</span><span class="">,</span><span class=""> </span><span class="">datasets</span><br><span class='nsl'>...&nbsp;</span><span class="kn">import</span><span class=""> </span><span class="nn">matplotlib</span><span class="nn">.</span><span class="nn">pyplot</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">plt</span><br><span class='nsl'>...&nbsp;</span><span class="">fig</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">plt</span><span class="o">.</span><span class="">figure</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">gray</span><span class="">(</span><span class="">)</span><span class="">  </span><span class="c1"># show the filtered result in grayscale</span><br><span class='nsl'>...&nbsp;</span><span class="">ax1</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">fig</span><span class="o">.</span><span class="">add_subplot</span><span class="">(</span><span class="mi">121</span><span class="">)</span><span class="">  </span><span class="c1"># left side</span><br><span class='nsl'>...&nbsp;</span><span class="">ax2</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">fig</span><span class="o">.</span><span class="">add_subplot</span><span class="">(</span><span class="mi">122</span><span class="">)</span><span class="">  </span><span class="c1"># right side</span><br><span class='nsl'>...&nbsp;</span><span class="">ascent</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">datasets</span><span class="o">.</span><span class="">ascent</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">result</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">ndimage</span><span class="o">.</span><span class="">rank_filter</span><span class="">(</span><span class="">ascent</span><span class="">,</span><span class=""> </span><span class="">rank</span><span class="o">=</span><span class="mi">42</span><span class="">,</span><span class=""> </span><span class="">size</span><span class="o">=</span><span class="mi">20</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax1</span><span class="o">.</span><span class="">imshow</span><span class="">(</span><span class="">ascent</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax2</span><span class="o">.</span><span class="">imshow</span><span class="">(</span><span class="">result</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">show</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/ndimage/_filters.py#L1342'>/scipy/ndimage/_filters.py#1342</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

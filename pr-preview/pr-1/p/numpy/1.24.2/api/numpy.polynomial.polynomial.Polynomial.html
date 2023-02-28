@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=numpy>numpy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/numpy/1.24.2/api/numpy.html'>1.24.2</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">1.24.2</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/numpy/1.24.2/api/numpy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/numpy/1.24.2/api/numpy.html">API</a>
+                        <a href="/p/numpy/1.24.2/gallery">Gallery</a>
+                        <a href="/p/numpy/1.24.2/examples">Examples</a>
+                        <a href="/p/numpy/1.24.2/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='numpy.html'>numpy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='numpy.polynomial.html'>polynomial</a>.                            <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.polynomial._polybase.html">_polybase</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.chebyshev.html">chebyshev</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.hermite.html">hermite</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.hermite_e.html">hermite_e</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.laguerre.html">laguerre</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.legendre.html">legendre</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.html">polynomial</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polyutils.html">polyutils</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.set_default_printstyle.html">set_default_printstyle</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='numpy.polynomial.Polynomial.html'>Polynomial</a>                            <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.Polynomial.html">Polynomial</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyadd.html">polyadd</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polycompanion.html">polycompanion</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyder.html">polyder</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polydiv.html">polydiv</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyfit.html">polyfit</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyfromroots.html">polyfromroots</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polygrid2d.html">polygrid2d</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polygrid3d.html">polygrid3d</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyint.html">polyint</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyline.html">polyline</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polymul.html">polymul</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polymulx.html">polymulx</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polypow.html">polypow</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyroots.html">polyroots</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polysub.html">polysub</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyval.html">polyval</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyval2d.html">polyval2d</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyval3d.html">polyval3d</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyvalfromroots.html">polyvalfromroots</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyvander.html">polyvander</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyvander2d.html">polyvander2d</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyvander3d.html">polyvander3d</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/numpy/1.24.2/img/numpy_logo.png"/>
+    <a href="#">numpy</a>
+    <a href="#">1.24.2</a>
+        <a class='external'  href="https://pypi.org/project/numpy">Pypi</a>
+        <a class='external' href="https://github.com/numpy/numpy">GitHub</a>
+        <a class='external' href="https://numpy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://numpy.org/doc/1.22/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Parameters">Parameters</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<!-- rendering Extended Summary -->
+                                       <div id="8df19aa8aecf4fc5b16d5d17197a2940"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The Polynomial class provides the standard Python numerical methods \u0027+\u0027, \u0027-\u0027, \u0027"}, {"children": [{"type": "text", "value": "\u0027, \u0027//\u0027, \u0027%\u0027, \u0027divmod\u0027, \u0027*"}], "type": "emphasis"}, {"type": "text", "value": "\u0027, and \u0027()\u0027 as well as the attributes and methods listed in the "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "numpy", "path": "numpy.polynomial._polybase.ABCPolyBase", "type": "RefInfo", "version": "1.24.2"}, "type": "Link", "value": "ABCPolyBase"}, {"type": "text", "value": " documentation."}], "type": "paragraph"});
+            document.getElementById("8df19aa8aecf4fc5b16d5d17197a2940").innerHTML = html;
+        }
+        init();
+    </script>
+
+<!-- rendering Notes -->
+        <h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="coef">coef</a> : array_like</dt>
+<dd>
+                <div id="baed07a7f54b45a3ba1fcc75bcb04e64"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Polynomial coefficients in order of increasing degree, i.e., "}, {"type": "inlineCode", "value": "(1, 2, 3)"}, {"type": "text", "value": " give "}, {"type": "inlineCode", "value": "1 + 2*x + 3*x**2"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("baed07a7f54b45a3ba1fcc75bcb04e64").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="domain">domain</a> : (2,) array_like, optional</dt>
+<dd>
+                <div id="e99c44d8b9024ae18398a8237c6794f3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Domain to use. The interval "}, {"type": "inlineCode", "value": "[domain[0], domain[1]]"}, {"type": "text", "value": " is mapped to the interval "}, {"type": "inlineCode", "value": "[window[0], window[1]]"}, {"type": "text", "value": " by shifting and scaling. The default value is [-1, 1]."}], "type": "paragraph"});
+            document.getElementById("e99c44d8b9024ae18398a8237c6794f3").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="window">window</a> : (2,) array_like, optional</dt>
+<dd>
+                <div id="cc325506a025471badebafb18ae4046d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Window, see "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "domain", "type": "RefInfo", "version": null}, "type": "Link", "value": "domain"}, {"type": "text", "value": " for its use. The default value is [-1, 1]."}], "type": "paragraph"});
+            document.getElementById("cc325506a025471badebafb18ae4046d").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <div class='admonition'>
+    <div>versionadded 1.6.0</div>
+</div>
+
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="1b36ad5593fe42abaf80811b20c04843"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A power series class."}], "type": "paragraph"});
+            document.getElementById("1b36ad5593fe42abaf80811b20c04843").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.html" class='exists'>numpy.polynomial.polynomial</a></code>
+        <code><a link href="/p/numpy/1.24.2/api/numpy.polynomial.html" class='exists'>numpy.polynomial</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/numpy/numpy/blob/v1.24.2//numpy/polynomial/polynomial.py#L1472'>/numpy/polynomial/polynomial.py#1472</a>
+<br/>
+
+type: &lt;class &#39;abc.ABCMeta&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 8.0, "label": "numpy.polynomial.polynomial", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.polynomial.polynomial"}, {"id": 2, "val": 10.82842712474619, "label": "numpy.polynomial", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.polynomial"}, {"id": 3, "val": 10.23606797749979, "label": "numpy.polynomial._polybase.ABCPolyBase", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.polynomial._polybase.ABCPolyBase"}], "links": [{"source": 2, "target": 1, "id": 8}]};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

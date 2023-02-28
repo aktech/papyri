@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.odr.html'>odr</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.odr._odrpack.html'>_odrpack</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.odr._add_newdocs.html">_add_newdocs</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr._models.html">_models</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr._odrpack.html">_odrpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.models.html">models</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.odrpack.html">odrpack</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.odr._odrpack.Output.html'>Output</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.odr._odrpack.Data.html">Data</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr._odrpack.Model.html">Model</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr._odrpack.ODR.html">ODR</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr._odrpack.OdrError.html">OdrError</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr._odrpack.OdrStop.html">OdrStop</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr._odrpack.OdrWarning.html">OdrWarning</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr._odrpack.Output.html">Output</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr._odrpack.RealData.html">RealData</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr._odrpack._conv.html">_conv</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr._odrpack._report_error.html">_report_error</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" >+</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.odr._odrpack.Output.__init__.html">__init__</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr._odrpack.Output.pprint.html">pprint</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Attributes">Attributes</a><a href="#section-Notes">Notes</a>    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<h3 id="section-Attributes">Attributes</h3>
+<dl>
+<dt><a id="beta">beta</a> : ndarray</dt>
+<dd>
+                <div id="f7bb3feb68f14142bb65b4ffddbaa184"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Estimated parameter values, of shape (q,)."}], "type": "paragraph"});
+            document.getElementById("f7bb3feb68f14142bb65b4ffddbaa184").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="sd_beta">sd_beta</a> : ndarray</dt>
+<dd>
+                <div id="f1c56f03bc99458799df4028f36ee3c1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Standard deviations of the estimated parameters, of shape (p,)."}], "type": "paragraph"});
+            document.getElementById("f1c56f03bc99458799df4028f36ee3c1").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="cov_beta">cov_beta</a> : ndarray</dt>
+<dd>
+                <div id="260b31761b50488b9e7baba629342104"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Covariance matrix of the estimated parameters, of shape (p,p)."}], "type": "paragraph"});
+            document.getElementById("260b31761b50488b9e7baba629342104").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="delta">delta</a> : ndarray, optional</dt>
+<dd>
+                <div id="253999cc067e49bcbd5abfad98e64781"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Array of estimated errors in input variables, of same shape as "}, {"domain": null, "role": null, "type": "Directive", "value": "x"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("253999cc067e49bcbd5abfad98e64781").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="eps">eps</a> : ndarray, optional</dt>
+<dd>
+                <div id="79457aee6d2b4e96bacc0f94f63e961e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Array of estimated errors in response variables, of same shape as "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "y", "type": "RefInfo", "version": null}, "type": "Link", "value": "y"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("79457aee6d2b4e96bacc0f94f63e961e").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="xplus">xplus</a> : ndarray, optional</dt>
+<dd>
+                <div id="f4716971506a4bc6a06dab7adcc56b6d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Array of "}, {"type": "inlineCode", "value": "x + delta"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("f4716971506a4bc6a06dab7adcc56b6d").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="y">y</a> : ndarray, optional</dt>
+<dd>
+                <div id="ceb3aedce85f4773b17ed0f49f5e9375"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Array "}, {"type": "inlineCode", "value": "y = fcn(x + delta)"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("ceb3aedce85f4773b17ed0f49f5e9375").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="res_var">res_var</a> : float, optional</dt>
+<dd>
+                <div id="c8cdb865926041dd8dbf17817283080d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Residual variance."}], "type": "paragraph"});
+            document.getElementById("c8cdb865926041dd8dbf17817283080d").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="sum_square">sum_square</a> : float, optional</dt>
+<dd>
+                <div id="ff89d023169c4beabca15a6443d3fe03"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Sum of squares error."}], "type": "paragraph"});
+            document.getElementById("ff89d023169c4beabca15a6443d3fe03").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="sum_square_delta">sum_square_delta</a> : float, optional</dt>
+<dd>
+                <div id="8171491b21794de2b10e62b4cb301754"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Sum of squares of delta error."}], "type": "paragraph"});
+            document.getElementById("8171491b21794de2b10e62b4cb301754").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="sum_square_eps">sum_square_eps</a> : float, optional</dt>
+<dd>
+                <div id="1366b660c3f84ca9a6d4d3f744ff5d4a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Sum of squares of eps error."}], "type": "paragraph"});
+            document.getElementById("1366b660c3f84ca9a6d4d3f744ff5d4a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="inv_condnum">inv_condnum</a> : float, optional</dt>
+<dd>
+                <div id="22c562539652420f9926e8cbcd753670"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Inverse condition number (cf. ODRPACK UG p. 77)."}], "type": "paragraph"});
+            document.getElementById("22c562539652420f9926e8cbcd753670").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="rel_error">rel_error</a> : float, optional</dt>
+<dd>
+                <div id="5470f1332d98462ba24bf4d82ecab345"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Relative error in function values computed within fcn."}], "type": "paragraph"});
+            document.getElementById("5470f1332d98462ba24bf4d82ecab345").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="work">work</a> : ndarray, optional</dt>
+<dd>
+                <div id="3b938052f41c492da60d48eab6846e4b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Final work array."}], "type": "paragraph"});
+            document.getElementById("3b938052f41c492da60d48eab6846e4b").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="work_ind">work_ind</a> : dict, optional</dt>
+<dd>
+                <div id="099658a23dab422aaeee5bf72e633fda"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Indices into work for drawing out values (cf. ODRPACK UG p. 83)."}], "type": "paragraph"});
+            document.getElementById("099658a23dab422aaeee5bf72e633fda").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="info">info</a> : int, optional</dt>
+<dd>
+                <div id="f0dd9db18b7c4d129a18082b6b084635"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Reason for returning, as output by ODRPACK (cf. ODRPACK UG p. 38)."}], "type": "paragraph"});
+            document.getElementById("f0dd9db18b7c4d129a18082b6b084635").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="stopreason">stopreason</a> : list of str, optional</dt>
+<dd>
+                <div id="0efae650925b420290e9d4ecf2b90d0b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "info", "type": "RefInfo", "version": null}, "type": "Link", "value": "info"}, {"type": "text", "value": " interpreted into English."}], "type": "paragraph"});
+            document.getElementById("0efae650925b420290e9d4ecf2b90d0b").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Extended Summary -->
+        <h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="87813b7813f444b5a612994f86dbaeca"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Takes one argument for initialization, the return value from the function "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.odr.odrpack", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "~scipy.odr.odr"}, {"type": "text", "value": ". The attributes listed as \"optional\" above are only present if "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.odr.odrpack", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "~scipy.odr.odr"}, {"type": "text", "value": " was run with "}, {"type": "inlineCode", "value": "full_output=1"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("87813b7813f444b5a612994f86dbaeca").innerHTML = html;
+        }
+        init();
+    </script>
+
+<!-- rendering Summary -->
+                                       <div id="88bd2db963054406848bdb3a106e6bd6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The Output class stores the output of an ODR run."}], "type": "paragraph"});
+            document.getElementById("88bd2db963054406848bdb3a106e6bd6").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/odr/_odrpack.py#L544'>/scipy/odr/_odrpack.py#544</a>
+<br/>
+
+type: &lt;class &#39;type&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 10.0, "label": "scipy.odr.odrpack", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.odr.odrpack"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

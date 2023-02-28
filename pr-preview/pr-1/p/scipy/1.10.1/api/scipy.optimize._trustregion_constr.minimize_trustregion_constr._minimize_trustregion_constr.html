@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize.html'>optimize</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize._trustregion_constr.html'>_trustregion_constr</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.optimize.__nnls.html">__nnls</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._basinhopping.html">_basinhopping</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._bglu_dense.html">_bglu_dense</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._cobyla.html">_cobyla</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._cobyla_py.html">_cobyla_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._constraints.html">_constraints</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentiable_functions.html">_differentiable_functions</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentialevolution.html">_differentialevolution</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._direct.html">_direct</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._direct_py.html">_direct_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._dual_annealing.html">_dual_annealing</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._group_columns.html">_group_columns</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._hessian_update_strategy.html">_hessian_update_strategy</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._highs.html">_highs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lbfgsb.html">_lbfgsb</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lbfgsb_py.html">_lbfgsb_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linesearch.html">_linesearch</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog.html">_linprog</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_doc.html">_linprog_doc</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_highs.html">_linprog_highs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_ip.html">_linprog_ip</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_rs.html">_linprog_rs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_simplex.html">_linprog_simplex</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_util.html">_linprog_util</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lsap.html">_lsap</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lsq.html">_lsq</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._milp.html">_milp</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minimize.html">_minimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minpack.html">_minpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minpack2.html">_minpack2</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minpack_py.html">_minpack_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._moduleTNC.html">_moduleTNC</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nnls.html">_nnls</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.html">_nonlin</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._numdiff.html">_numdiff</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.html">_optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._qap.html">_qap</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._remove_redundancy.html">_remove_redundancy</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._root.html">_root</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._root_scalar.html">_root_scalar</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._shgo.html">_shgo</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._shgo_lib.html">_shgo_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._slsqp.html">_slsqp</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._slsqp_py.html">_slsqp_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._spectral.html">_spectral</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._tnc.html">_tnc</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trlib.html">_trlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion.html">_trustregion</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_constr.html">_trustregion_constr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_dogleg.html">_trustregion_dogleg</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_exact.html">_trustregion_exact</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_krylov.html">_trustregion_krylov</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_ncg.html">_trustregion_ncg</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros.html">_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros_py.html">_zeros_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.cobyla.html">cobyla</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.lbfgsb.html">lbfgsb</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.linesearch.html">linesearch</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.minpack.html">minpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.minpack2.html">minpack2</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.moduleTNC.html">moduleTNC</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.nonlin.html">nonlin</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.slsqp.html">slsqp</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.tnc.html">tnc</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.zeros.html">zeros</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize._trustregion_constr.minimize_trustregion_constr.html'>minimize_trustregion_constr</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_constr.canonical_constraint.html">canonical_constraint</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_constr.equality_constrained_sqp.html">equality_constrained_sqp</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_constr.minimize_trustregion_constr.html">minimize_trustregion_constr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_constr.projections.html">projections</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_constr.qp_subproblem.html">qp_subproblem</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_constr.report.html">report</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_constr.tr_interior_point.html">tr_interior_point</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize._trustregion_constr.minimize_trustregion_constr._minimize_trustregion_constr.html'>_minimize_trustregion_constr</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_constr.minimize_trustregion_constr.HessianLinearOperator.html">HessianLinearOperator</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_constr.minimize_trustregion_constr.LagrangianHessian.html">LagrangianHessian</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_constr.minimize_trustregion_constr._minimize_trustregion_constr.html">_minimize_trustregion_constr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_constr.minimize_trustregion_constr.update_state_ip.html">update_state_ip</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_constr.minimize_trustregion_constr.update_state_sqp.html">update_state_sqp</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a>    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>_minimize_trustregion_constr(fun, x0, args, grad, hess, hessp, bounds, constraints, xtol=1e-08, gtol=1e-08, barrier_tol=1e-08, sparse_jacobian=None, callback=None, maxiter=1000, verbose=0, finite_diff_rel_step=None, initial_constr_penalty=1.0, initial_tr_radius=1.0, initial_barrier_parameter=0.1, initial_barrier_tolerance=0.1, factorization_method=None, disp=False)</code><!-- rendering Extended Summary -->
+        <!-- rendering Notes -->
+        <h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="gtol">gtol</a> : float, optional</dt>
+<dd>
+                <div id="60c875db6c7242c18d4f68f4f9128517"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Tolerance for termination by the norm of the Lagrangian gradient. The algorithm will terminate when both the infinity norm (i.e., max abs value) of the Lagrangian gradient and the constraint violation are smaller than "}, {"type": "inlineCode", "value": "gtol"}, {"type": "text", "value": ". Default is 1e-8."}], "type": "paragraph"});
+            document.getElementById("60c875db6c7242c18d4f68f4f9128517").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="xtol">xtol</a> : float, optional</dt>
+<dd>
+                <div id="2a6d3330c205444dbb09db684eb82eb1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Tolerance for termination by the change of the independent variable. The algorithm will terminate when "}, {"type": "inlineCode", "value": "tr_radius \u003c xtol"}, {"type": "text", "value": ", where "}, {"type": "inlineCode", "value": "tr_radius"}, {"type": "text", "value": " is the radius of the trust region used in the algorithm. Default is 1e-8."}], "type": "paragraph"});
+            document.getElementById("2a6d3330c205444dbb09db684eb82eb1").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="barrier_tol">barrier_tol</a> : float, optional</dt>
+<dd>
+                <div id="241a2e59165a4ed3be010067311cc251"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Threshold on the barrier parameter for the algorithm termination. When inequality constraints are present, the algorithm will terminate only when the barrier parameter is less than "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "barrier_tol", "type": "RefInfo", "version": null}, "type": "Link", "value": "barrier_tol"}, {"type": "text", "value": ". Default is 1e-8."}], "type": "paragraph"});
+            document.getElementById("241a2e59165a4ed3be010067311cc251").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="sparse_jacobian">sparse_jacobian</a> : {bool, None}, optional</dt>
+<dd>
+                <div id="9e56a7f693f24046aca150a2d768c61f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Determines how to represent Jacobians of the constraints. If bool, then Jacobians of all the constraints will be converted to the corresponding format. If None (default), then Jacobians won\u0027t be converted, but the algorithm can proceed only if they all have the same format."}], "type": "paragraph"});
+            document.getElementById("9e56a7f693f24046aca150a2d768c61f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="initial_tr_radius: float, optional">initial_tr_radius: float, optional</a> : </dt>
+<dd>
+                <div id="d7e3b9eefe0b4c5a99d8e96f43d7769d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Initial trust radius. The trust radius gives the maximum distance between solution points in consecutive iterations. It reflects the trust the algorithm puts in the local approximation of the optimization problem. For an accurate local approximation the trust-region should be large and for an  approximation valid only close to the current point it should be a small one. The trust radius is automatically updated throughout the optimization process, with "}, {"type": "inlineCode", "value": "initial_tr_radius"}, {"type": "text", "value": " being its initial value. Default is 1 (recommended in , p. 19)."}], "type": "paragraph"});
+            document.getElementById("d7e3b9eefe0b4c5a99d8e96f43d7769d").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="initial_constr_penalty">initial_constr_penalty</a> : float, optional</dt>
+<dd>
+                <div id="e178fbd6ef3a4483b696b3591063f1eb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Initial constraints penalty parameter. The penalty parameter is used for balancing the requirements of decreasing the objective function and satisfying the constraints. It is used for defining the merit function: "}, {"type": "inlineCode", "value": "merit_function(x) = fun(x) + constr_penalty * constr_norm_l2(x)"}, {"type": "text", "value": ", where "}, {"type": "inlineCode", "value": "constr_norm_l2(x)"}, {"type": "text", "value": " is the l2 norm of a vector containing all the constraints. The merit function is used for accepting or rejecting trial points and "}, {"type": "inlineCode", "value": "constr_penalty"}, {"type": "text", "value": " weights the two conflicting goals of reducing objective function and constraints. The penalty is automatically updated throughout the optimization  process, with "}, {"type": "inlineCode", "value": "initial_constr_penalty"}, {"type": "text", "value": " being its  initial value. Default is 1 (recommended in , p 19)."}], "type": "paragraph"});
+            document.getElementById("e178fbd6ef3a4483b696b3591063f1eb").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="initial_barrier_parameter, initial_barrier_tolerance: float, optional">initial_barrier_parameter, initial_barrier_tolerance: float, optional</a> : </dt>
+<dd>
+                <div id="f8c20e0951eb4ddbaad465e9cc322920"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Initial barrier parameter and initial tolerance for the barrier subproblem. Both are used only when inequality constraints are present. For dealing with optimization problems "}, {"type": "inlineCode", "value": "min_x f(x)"}, {"type": "text", "value": " subject to inequality constraints "}, {"type": "inlineCode", "value": "c(x) \u003c= 0"}, {"type": "text", "value": " the algorithm introduces slack variables, solving the problem "}, {"type": "inlineCode", "value": "min_(x,s) f(x) + barrier_parameter*sum(ln(s))"}, {"type": "text", "value": " subject to the equality constraints  "}, {"type": "inlineCode", "value": "c(x) + s = 0"}, {"type": "text", "value": " instead of the original problem. This subproblem is solved for decreasing values of "}, {"type": "inlineCode", "value": "barrier_parameter"}, {"type": "text", "value": " and with decreasing tolerances for the termination, starting with "}, {"type": "inlineCode", "value": "initial_barrier_parameter"}, {"type": "text", "value": " for the barrier parameter and "}, {"type": "inlineCode", "value": "initial_barrier_tolerance"}, {"type": "text", "value": " for the barrier tolerance. Default is 0.1 for both values (recommended in  p. 19). Also note that "}, {"type": "inlineCode", "value": "barrier_parameter"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "barrier_tolerance"}, {"type": "text", "value": " are updated with the same prefactor."}], "type": "paragraph"});
+            document.getElementById("f8c20e0951eb4ddbaad465e9cc322920").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="factorization_method">factorization_method</a> : string or None, optional</dt>
+<dd>
+                <div id="20af5a9b6611429b97174e5b99fc0d3a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Method to factorize the Jacobian of the constraints. Use None (default) for the auto selection or one of:"}], "type": "paragraph"});
+            document.getElementById("20af5a9b6611429b97174e5b99fc0d3a").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <blockquote>           <ul>               <li>                               <div id="7c4c50e875b64e85ae472a108efd89b2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027NormalEquation\u0027 (requires scikit-sparse)"}], "type": "paragraph"});
+            document.getElementById("7c4c50e875b64e85ae472a108efd89b2").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="0514b123fd5547658e17f41cd2f37386"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027AugmentedSystem\u0027"}], "type": "paragraph"});
+            document.getElementById("0514b123fd5547658e17f41cd2f37386").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="2765a27ba14a4c86b558dd69f2282e11"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027QRFactorization\u0027"}], "type": "paragraph"});
+            document.getElementById("2765a27ba14a4c86b558dd69f2282e11").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="54a2bfaab50a47a9b9835078d1c3b349"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027SVDFactorization\u0027"}], "type": "paragraph"});
+            document.getElementById("54a2bfaab50a47a9b9835078d1c3b349").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+</blockquote>
+
+                <div id="2451db1be4b444b6a5ce6ce7ae38f595"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The methods \u0027NormalEquation\u0027 and \u0027AugmentedSystem\u0027 can be used only with sparse constraints. The projections required by the algorithm will be computed using, respectively, the normal equation  and the augmented system approaches explained in . \u0027NormalEquation\u0027 computes the Cholesky factorization of "}, {"type": "inlineCode", "value": "A A.T"}, {"type": "text", "value": " and \u0027AugmentedSystem\u0027 performs the LU factorization of an augmented system. They usually provide similar results. \u0027AugmentedSystem\u0027 is used by default for sparse matrices."}], "type": "paragraph"});
+            document.getElementById("2451db1be4b444b6a5ce6ce7ae38f595").innerHTML = html;
+        }
+        init();
+    </script>
+
+                <div id="aa9480a4ab674f1f85cb3e3c32947f1c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The methods \u0027QRFactorization\u0027 and \u0027SVDFactorization\u0027 can be used only with dense constraints. They compute the required projections using, respectively, QR and SVD factorizations. The \u0027SVDFactorization\u0027 method can cope with Jacobian matrices with deficient row rank and will be used whenever other factorization methods fail (which may imply the conversion of sparse matrices to a dense format when required). By default, \u0027QRFactorization\u0027 is used for dense matrices."}], "type": "paragraph"});
+            document.getElementById("aa9480a4ab674f1f85cb3e3c32947f1c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="finite_diff_rel_step">finite_diff_rel_step</a> : None or array_like, optional</dt>
+<dd>
+                <div id="6fdf05437c5946f0a611819ee095c26c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Relative step size for the finite difference approximation."}], "type": "paragraph"});
+            document.getElementById("6fdf05437c5946f0a611819ee095c26c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="maxiter">maxiter</a> : int, optional</dt>
+<dd>
+                <div id="225a798a894a4f7e9542ba33139ecdf9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Maximum number of algorithm iterations. Default is 1000."}], "type": "paragraph"});
+            document.getElementById("225a798a894a4f7e9542ba33139ecdf9").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="verbose">verbose</a> : {0, 1, 2}, optional</dt>
+<dd>
+                <div id="a2b14f57f6ed41a59ad2762f02ea5702"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Level of algorithm\u0027s verbosity:"}], "type": "paragraph"});
+            document.getElementById("a2b14f57f6ed41a59ad2762f02ea5702").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="disp">disp</a> : bool, optional</dt>
+<dd>
+                <div id="001dea4fd40d41c09f4e3f1cac11ac48"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If True (default), then "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "verbose", "type": "RefInfo", "version": null}, "type": "Link", "value": "verbose"}, {"type": "text", "value": " will be set to 1 if it was 0."}], "type": "paragraph"});
+            document.getElementById("001dea4fd40d41c09f4e3f1cac11ac48").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt>`OptimizeResult` with the fields documented below. Note the following:</dt>
+<dd>
+           <ol>               <li>                               <div id="db7b678e2bae45d3951225c99cc87a70"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "All values corresponding to the constraints are ordered as they    were passed to the solver. And values corresponding to "}, {"domain": null, "role": null, "type": "Directive", "value": "bounds"}, {"type": "text", "value": "    constraints are put "}, {"children": [{"type": "text", "value": "after"}], "type": "emphasis"}, {"type": "text", "value": " other constraints."}], "type": "paragraph"});
+            document.getElementById("db7b678e2bae45d3951225c99cc87a70").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="3ffe727e45ad45ddb67faa6e2a8aae86"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "All numbers of function, Jacobian or Hessian evaluations correspond    to numbers of actual Python function calls. It means, for example,    that if a Jacobian is estimated by finite differences, then the    number of Jacobian evaluations will be zero and the number of    function evaluations will be incremented by all calls during the    finite difference estimation."}], "type": "paragraph"});
+            document.getElementById("3ffe727e45ad45ddb67faa6e2a8aae86").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ol>
+
+</dd>
+<dt><a id="x">x</a> : ndarray, shape (n,)</dt>
+<dd>
+                <div id="637050ba2c1e4c9b9d54af64ac00bc14"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Solution found."}], "type": "paragraph"});
+            document.getElementById("637050ba2c1e4c9b9d54af64ac00bc14").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="optimality">optimality</a> : float</dt>
+<dd>
+                <div id="eceee1f9af6c42a08c741eb7b7462cae"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Infinity norm of the Lagrangian gradient at the solution."}], "type": "paragraph"});
+            document.getElementById("eceee1f9af6c42a08c741eb7b7462cae").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="constr_violation">constr_violation</a> : float</dt>
+<dd>
+                <div id="f996f7bc855145918c6cbc6806c1a034"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Maximum constraint violation at the solution."}], "type": "paragraph"});
+            document.getElementById("f996f7bc855145918c6cbc6806c1a034").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="fun">fun</a> : float</dt>
+<dd>
+                <div id="262bf97a20d54260b6a3d2025a4e0606"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Objective function at the solution."}], "type": "paragraph"});
+            document.getElementById("262bf97a20d54260b6a3d2025a4e0606").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="grad">grad</a> : ndarray, shape (n,)</dt>
+<dd>
+                <div id="21c3dfdcfa10497595f01a67e684404f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Gradient of the objective function at the solution."}], "type": "paragraph"});
+            document.getElementById("21c3dfdcfa10497595f01a67e684404f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="lagrangian_grad">lagrangian_grad</a> : ndarray, shape (n,)</dt>
+<dd>
+                <div id="3cb9197a25d04840abf0e25e1775d80d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Gradient of the Lagrangian function at the solution."}], "type": "paragraph"});
+            document.getElementById("3cb9197a25d04840abf0e25e1775d80d").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="nit">nit</a> : int</dt>
+<dd>
+                <div id="085334d6368841b29d40a00e17843fae"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Total number of iterations."}], "type": "paragraph"});
+            document.getElementById("085334d6368841b29d40a00e17843fae").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="nfev">nfev</a> : integer</dt>
+<dd>
+                <div id="5c832992e4ae42899dca4f6159f099bd"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Number of the objective function evaluations."}], "type": "paragraph"});
+            document.getElementById("5c832992e4ae42899dca4f6159f099bd").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="njev">njev</a> : integer</dt>
+<dd>
+                <div id="f05a62f834bd4111a023af336c6221e2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Number of the objective function gradient evaluations."}], "type": "paragraph"});
+            document.getElementById("f05a62f834bd4111a023af336c6221e2").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="nhev">nhev</a> : integer</dt>
+<dd>
+                <div id="3d14b47d1b3d4edeb32e13253c8c37b9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Number of the objective function Hessian evaluations."}], "type": "paragraph"});
+            document.getElementById("3d14b47d1b3d4edeb32e13253c8c37b9").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="cg_niter">cg_niter</a> : int</dt>
+<dd>
+                <div id="60ec9ed1591942a685ed5e025d0d0f46"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Total number of the conjugate gradient method iterations."}], "type": "paragraph"});
+            document.getElementById("60ec9ed1591942a685ed5e025d0d0f46").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="method">method</a> : {&#39;equality_constrained_sqp&#39;, &#39;tr_interior_point&#39;}</dt>
+<dd>
+                <div id="df72ad95a814484385e6722e01bb8b15"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Optimization method used."}], "type": "paragraph"});
+            document.getElementById("df72ad95a814484385e6722e01bb8b15").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="constr">constr</a> : list of ndarray</dt>
+<dd>
+                <div id="792e59b1056d42d2b158b48d44355905"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "List of constraint values at the solution."}], "type": "paragraph"});
+            document.getElementById("792e59b1056d42d2b158b48d44355905").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="jac">jac</a> : list of {ndarray, sparse matrix}</dt>
+<dd>
+                <div id="a106551a17914a90bd07c6ebd6f20bbc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "List of the Jacobian matrices of the constraints at the solution."}], "type": "paragraph"});
+            document.getElementById("a106551a17914a90bd07c6ebd6f20bbc").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="v">v</a> : list of ndarray</dt>
+<dd>
+                <div id="c1f7ae53f2b246a3b2e3e9e956667bc4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "List of the Lagrange multipliers for the constraints at the solution. For an inequality constraint a positive multiplier means that the upper bound is active, a negative multiplier means that the lower bound is active and if a multiplier is zero it means the constraint is not active."}], "type": "paragraph"});
+            document.getElementById("c1f7ae53f2b246a3b2e3e9e956667bc4").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="constr_nfev">constr_nfev</a> : list of int</dt>
+<dd>
+                <div id="09d003fc36554bf1ae5d8a47f4792da1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Number of constraint evaluations for each of the constraints."}], "type": "paragraph"});
+            document.getElementById("09d003fc36554bf1ae5d8a47f4792da1").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="constr_njev">constr_njev</a> : list of int</dt>
+<dd>
+                <div id="b9d316e3f9a14d3a87cc9aefde8b1434"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Number of Jacobian matrix evaluations for each of the constraints."}], "type": "paragraph"});
+            document.getElementById("b9d316e3f9a14d3a87cc9aefde8b1434").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="constr_nhev">constr_nhev</a> : list of int</dt>
+<dd>
+                <div id="dfc497c1bb5b4f84ace655810883145d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Number of Hessian evaluations for each of the constraints."}], "type": "paragraph"});
+            document.getElementById("dfc497c1bb5b4f84ace655810883145d").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="tr_radius">tr_radius</a> : float</dt>
+<dd>
+                <div id="19931f0f9a5141479ddc63a6c2b62d08"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Radius of the trust region at the last iteration."}], "type": "paragraph"});
+            document.getElementById("19931f0f9a5141479ddc63a6c2b62d08").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="constr_penalty">constr_penalty</a> : float</dt>
+<dd>
+                <div id="b5c0d7295a0a4262b6551c195c97cc04"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Penalty parameter at the last iteration, see "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "initial_constr_penalty", "type": "RefInfo", "version": null}, "type": "Link", "value": "initial_constr_penalty"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("b5c0d7295a0a4262b6551c195c97cc04").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="barrier_tolerance">barrier_tolerance</a> : float</dt>
+<dd>
+                <div id="cf409067932140f5be4299391408a468"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Tolerance for the barrier subproblem at the last iteration. Only for problems with inequality constraints."}], "type": "paragraph"});
+            document.getElementById("cf409067932140f5be4299391408a468").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="barrier_parameter">barrier_parameter</a> : float</dt>
+<dd>
+                <div id="b49ec3343c3d4f84b548945f985d4bcc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Barrier parameter at the last iteration. Only for problems with inequality constraints."}], "type": "paragraph"});
+            document.getElementById("b49ec3343c3d4f84b548945f985d4bcc").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="execution_time">execution_time</a> : float</dt>
+<dd>
+                <div id="b8c417e9e5304379b714f2f4fdf244ff"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Total execution time."}], "type": "paragraph"});
+            document.getElementById("b8c417e9e5304379b714f2f4fdf244ff").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="message">message</a> : str</dt>
+<dd>
+                <div id="49fc6ee99e2c4c5bace7fccadbc2b74f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Termination message."}], "type": "paragraph"});
+            document.getElementById("49fc6ee99e2c4c5bace7fccadbc2b74f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="status">status</a> : {0, 1, 2, 3}</dt>
+<dd>
+                <div id="7fce0a1cba834491b9fc321931b974e2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Termination status:"}], "type": "paragraph"});
+            document.getElementById("7fce0a1cba834491b9fc321931b974e2").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="cg_stop_cond">cg_stop_cond</a> : int</dt>
+<dd>
+                <div id="f28f64644c61404b80d6634cfc3fc939"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Reason for CG subproblem termination at the last iteration:"}], "type": "paragraph"});
+            document.getElementById("f28f64644c61404b80d6634cfc3fc939").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="d5e9e4db770f428a84e6ccc5de986859"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Minimize a scalar function subject to constraints."}], "type": "paragraph"});
+            document.getElementById("d5e9e4db770f428a84e6ccc5de986859").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/optimize/_trustregion_constr/minimize_trustregion_constr.py#L114'>/scipy/optimize/_trustregion_constr/minimize_trustregion_constr.py#114</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

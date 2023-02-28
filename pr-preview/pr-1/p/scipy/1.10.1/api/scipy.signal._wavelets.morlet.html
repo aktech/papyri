@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.signal.html'>signal</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.signal._wavelets.html'>_wavelets</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.signal._arraytools.html">_arraytools</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._bsplines.html">_bsplines</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._czt.html">_czt</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._filter_design.html">_filter_design</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._fir_filter_design.html">_fir_filter_design</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._lti_conversion.html">_lti_conversion</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.html">_ltisys</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._max_len_seq.html">_max_len_seq</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._max_len_seq_inner.html">_max_len_seq_inner</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._peak_finding.html">_peak_finding</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._peak_finding_utils.html">_peak_finding_utils</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._savitzky_golay.html">_savitzky_golay</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.html">_signaltools</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._sigtools.html">_sigtools</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._sosfilt.html">_sosfilt</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spectral.html">_spectral</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spectral_py.html">_spectral_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spline.html">_spline</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._upfirdn.html">_upfirdn</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._upfirdn_apply.html">_upfirdn_apply</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._waveforms.html">_waveforms</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._wavelets.html">_wavelets</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.barthann.html">barthann</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.bartlett.html">bartlett</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.blackman.html">blackman</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.blackmanharris.html">blackmanharris</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.bohman.html">bohman</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.boxcar.html">boxcar</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.bsplines.html">bsplines</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.chebwin.html">chebwin</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.cosine.html">cosine</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.exponential.html">exponential</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.filter_design.html">filter_design</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.fir_filter_design.html">fir_filter_design</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.flattop.html">flattop</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.gaussian.html">gaussian</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.general_gaussian.html">general_gaussian</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.hamming.html">hamming</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.hann.html">hann</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.kaiser.html">kaiser</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.lti_conversion.html">lti_conversion</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.ltisys.html">ltisys</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.nuttall.html">nuttall</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.parzen.html">parzen</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.signaltools.html">signaltools</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.spectral.html">spectral</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.spline.html">spline</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.triang.html">triang</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.tukey.html">tukey</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.waveforms.html">waveforms</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.wavelets.html">wavelets</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.windows.html">windows</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.signal._wavelets.morlet.html'>morlet</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.signal._wavelets.cascade.html">cascade</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._wavelets.cwt.html">cwt</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._wavelets.daub.html">daub</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._wavelets.morlet.html">morlet</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._wavelets.morlet2.html">morlet2</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._wavelets.qmf.html">qmf</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._wavelets.ricker.html">ricker</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>morlet(M, w=5.0, s=1.0, complete=True)</code><!-- rendering Extended Summary -->
+        <h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="32bb8d10514e463ba4e511b6182e4ab9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The standard version      "}], "type": "paragraph"});
+            document.getElementById("32bb8d10514e463ba4e511b6182e4ab9").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="8814bc0b97d741fca9423b558dbc286f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "pi**-0.25 * exp(1j*w*x) * exp(-0.5*(x**2))"});
+            document.getElementById("8814bc0b97d741fca9423b558dbc286f").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="f4796b648996492d9a859be7076e5bd2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This commonly used wavelet is often referred to simply as the Morlet wavelet.  Note that this simplified version can cause admissibility problems at low values of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "w", "type": "RefInfo", "version": null}, "type": "Link", "value": "w"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("f4796b648996492d9a859be7076e5bd2").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="87d12c37110d44878c3bf6bd032d2587"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The complete version      "}], "type": "paragraph"});
+            document.getElementById("87d12c37110d44878c3bf6bd032d2587").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="c3935c42ae1249a4bfd4ee28c1190303"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "pi**-0.25 * (exp(1j*w*x) - exp(-0.5*(w**2))) * exp(-0.5*(x**2))"});
+            document.getElementById("c3935c42ae1249a4bfd4ee28c1190303").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="9ffdb8529bde408b95296febb20f2179"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This version has a correction term to improve admissibility. For "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "w", "type": "RefInfo", "version": null}, "type": "Link", "value": "w"}, {"type": "text", "value": " greater than 5, the correction term is negligible."}], "type": "paragraph"});
+            document.getElementById("9ffdb8529bde408b95296febb20f2179").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="8db5be2d3d0f4e0faf66b73b41329de8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Note that the energy of the return wavelet is not normalised according to "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "s", "type": "RefInfo", "version": null}, "type": "Link", "value": "s"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("8db5be2d3d0f4e0faf66b73b41329de8").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="b2916460877642779f6a59540fa95532"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The fundamental frequency of this wavelet in Hz is given by "}, {"type": "inlineCode", "value": "f = 2*s*w*r / M"}, {"type": "text", "value": " where "}, {"domain": null, "role": null, "type": "Directive", "value": "r"}, {"type": "text", "value": " is the sampling rate."}], "type": "paragraph"});
+            document.getElementById("b2916460877642779f6a59540fa95532").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="6416fe2a2e1d4f6da53dc763368c7625"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Note: This function was created before "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.signal._wavelets.cwt", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "cwt"}, {"type": "text", "value": " and is not compatible with it."}], "type": "paragraph"});
+            document.getElementById("6416fe2a2e1d4f6da53dc763368c7625").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="M">M</a> : int</dt>
+<dd>
+                <div id="b196b927ae434cb4949d04e337484ae4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Length of the wavelet."}], "type": "paragraph"});
+            document.getElementById("b196b927ae434cb4949d04e337484ae4").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="w">w</a> : float, optional</dt>
+<dd>
+                <div id="1caaae40f27b433f9402e2f6122a12a6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Omega0. Default is 5"}], "type": "paragraph"});
+            document.getElementById("1caaae40f27b433f9402e2f6122a12a6").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="s">s</a> : float, optional</dt>
+<dd>
+                <div id="9a6aee6e8dc9488293cd91cc25e1234e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Scaling factor, windowed from "}, {"type": "inlineCode", "value": "-s*2*pi"}, {"type": "text", "value": " to "}, {"type": "inlineCode", "value": "+s*2*pi"}, {"type": "text", "value": ". Default is 1."}], "type": "paragraph"});
+            document.getElementById("9a6aee6e8dc9488293cd91cc25e1234e").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="complete">complete</a> : bool, optional</dt>
+<dd>
+                <div id="09658d355d594436b9c3582d23cde07c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Whether to use the complete or the standard version."}], "type": "paragraph"});
+            document.getElementById("09658d355d594436b9c3582d23cde07c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="morlet">morlet</a> : (M,) ndarray</dt>
+<dd>
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="e35dcb2e4f3c4a85a6cabd9db06e603e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Complex Morlet wavelet."}], "type": "paragraph"});
+            document.getElementById("e35dcb2e4f3c4a85a6cabd9db06e603e").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.signal._wavelets.morlet2.html" class='exists'>morlet2</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="f4c1c2078bc6462d8f9999d3184ed23e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "Implementation of Morlet wavelet, compatible with "});
+            document.getElementById("f4c1c2078bc6462d8f9999d3184ed23e").innerHTML = html;
+        }
+        init();
+    </script><code class='not-implemented'>:None:None:`cwt`</code>             <div id="82e3e43a342d4019aa020befb4fc3827"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "."});
+            document.getElementById("82e3e43a342d4019aa020befb4fc3827").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.signal._waveforms.gausspulse.html" class='exists'>scipy.signal.gausspulse</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">signal</span><br><span class='nsl'>...&nbsp;</span><span class="kn">import</span><span class=""> </span><span class="nn">matplotlib</span><span class="nn">.</span><span class="nn">pyplot</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">plt</span>
+</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">M</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="mi">100</span><br><span class='nsl'>...&nbsp;</span><span class="">s</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="mf">4.0</span><br><span class='nsl'>...&nbsp;</span><span class="">w</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="mf">2.0</span><br><span class='nsl'>...&nbsp;</span><span class="">wavelet</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">signal</span><span class="o">.</span><span class="">morlet</span><span class="">(</span><span class="">M</span><span class="">,</span><span class=""> </span><span class="">s</span><span class="">,</span><span class=""> </span><span class="">w</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">wavelet</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">show</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.signal._waveforms.gausspulse.html" class='exists'>scipy.signal._waveforms.gausspulse</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.signal._wavelets.morlet2.html" class='exists'>scipy.signal._wavelets.morlet2</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/signal/_wavelets.py#L204'>/scipy/signal/_wavelets.py#204</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 9.732050807568877, "label": "scipy.signal._wavelets.cwt", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._wavelets.cwt"}, {"id": 2, "val": 9.0, "label": "scipy.signal._waveforms.gausspulse", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._waveforms.gausspulse"}, {"id": 3, "val": 9.414213562373096, "label": "scipy.signal._wavelets.morlet2", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._wavelets.morlet2"}], "links": [{"source": 1, "target": 3, "id": 2}]};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

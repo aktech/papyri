@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats.html'>stats</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats._crosstab.html'>_crosstab</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.stats._axis_nan_policy.html">_axis_nan_policy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._biasedurn.html">_biasedurn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binned_statistic.html">_binned_statistic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binomtest.html">_binomtest</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._boost.html">_boost</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._common.html">_common</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._constants.html">_constants</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._continuous_distns.html">_continuous_distns</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._covariance.html">_covariance</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._crosstab.html">_crosstab</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._discrete_distns.html">_discrete_distns</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._distn_infrastructure.html">_distn_infrastructure</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._distr_params.html">_distr_params</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._entropy.html">_entropy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._fit.html">_fit</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.html">_hypotests</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._kde.html">_kde</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._ksstats.html">_ksstats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable.html">_levy_stable</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mannwhitneyu.html">_mannwhitneyu</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._morestats.html">_morestats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mstats_basic.html">_mstats_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mstats_extras.html">_mstats_extras</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._multivariate.html">_multivariate</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mvn.html">_mvn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._odds_ratio.html">_odds_ratio</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._page_trend_test.html">_page_trend_test</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.html">_qmc</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc_cy.html">_qmc_cy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._rcont.html">_rcont</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._relative_risk.html">_relative_risk</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling.html">_resampling</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._rvs_sampling.html">_rvs_sampling</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._sobol.html">_sobol</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._statlib.html">_statlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats.html">_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_mstats_common.html">_stats_mstats_common</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.html">_stats_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_pythran.html">_stats_pythran</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._tukeylambda_stats.html">_tukeylambda_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._variation.html">_variation</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._warnings_errors.html">_warnings_errors</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.biasedurn.html">biasedurn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.contingency.html">contingency</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.distributions.html">distributions</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.kde.html">kde</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.morestats.html">morestats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats.html">mstats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats_basic.html">mstats_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats_extras.html">mstats_extras</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mvn.html">mvn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.qmc.html">qmc</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.statlib.html">statlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats._crosstab.crosstab.html'>crosstab</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.stats._crosstab.CrosstabResult.html">CrosstabResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._crosstab.crosstab.html">crosstab</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a>    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>crosstab(*args, levels=None, sparse=False)</code><!-- rendering Extended Summary -->
+                                       <div id="ff4a8873fd5742edaa53252d8c067352"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "When "}, {"type": "inlineCode", "value": "len(args) \u003e 1"}, {"type": "text", "value": ", the array computed by this function is often referred to as a "}, {"children": [{"type": "text", "value": "contingency table"}], "type": "emphasis"}, {"type": "text", "value": " ."}], "type": "paragraph"});
+            document.getElementById("ff4a8873fd5742edaa53252d8c067352").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="585a1d6984364da3acc2b61b7dab9f51"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The arguments must be sequences with the same length.  The second return value, "}, {"domain": null, "role": null, "type": "Directive", "value": "count"}, {"type": "text", "value": ", is an integer array with "}, {"type": "inlineCode", "value": "len(args)"}, {"type": "text", "value": " dimensions.  If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "levels", "type": "RefInfo", "version": null}, "type": "Link", "value": "levels"}, {"type": "text", "value": " is None, the shape of "}, {"domain": null, "role": null, "type": "Directive", "value": "count"}, {"type": "text", "value": " is "}, {"type": "inlineCode", "value": "(n0, n1, ...)"}, {"type": "text", "value": ", where "}, {"type": "inlineCode", "value": "nk"}, {"type": "text", "value": " is the number of unique elements in "}, {"type": "inlineCode", "value": "args[k]"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("585a1d6984364da3acc2b61b7dab9f51").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                   <div class='admonition'>
+    <div>versionadded 1.7.0</div>
+</div>
+
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="*args">*args</a> : sequences</dt>
+<dd>
+                <div id="92679726f9484e82a6485a8d0875592a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A sequence of sequences whose unique aligned elements are to be counted.  The sequences in args must all be the same length."}], "type": "paragraph"});
+            document.getElementById("92679726f9484e82a6485a8d0875592a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="levels">levels</a> : sequence, optional</dt>
+<dd>
+                <div id="255d5ac4c72946aebf9ce4481b55967c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "levels", "type": "RefInfo", "version": null}, "type": "Link", "value": "levels"}, {"type": "text", "value": " is given, it must be a sequence that is the same length as "}, {"domain": null, "role": null, "type": "Directive", "value": "args"}, {"type": "text", "value": ".  Each element in "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "levels", "type": "RefInfo", "version": null}, "type": "Link", "value": "levels"}, {"type": "text", "value": " is either a sequence or None.  If it is a sequence, it gives the values in the corresponding sequence in "}, {"domain": null, "role": null, "type": "Directive", "value": "args"}, {"type": "text", "value": " that are to be counted.  If any value in the sequences in "}, {"domain": null, "role": null, "type": "Directive", "value": "args"}, {"type": "text", "value": " does not occur in the corresponding sequence in "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "levels", "type": "RefInfo", "version": null}, "type": "Link", "value": "levels"}, {"type": "text", "value": ", that value is ignored and not counted in the returned array "}, {"domain": null, "role": null, "type": "Directive", "value": "count"}, {"type": "text", "value": ".  The default value of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "levels", "type": "RefInfo", "version": null}, "type": "Link", "value": "levels"}, {"type": "text", "value": " for "}, {"type": "inlineCode", "value": "args[i]"}, {"type": "text", "value": " is "}, {"type": "inlineCode", "value": "np.unique(args[i])"}], "type": "paragraph"});
+            document.getElementById("255d5ac4c72946aebf9ce4481b55967c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="sparse">sparse</a> : bool, optional</dt>
+<dd>
+                <div id="5c61bba5504f44e185ea011e70d8324c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If True, return a sparse matrix.  The matrix will be an instance of the "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "scipy", "path": "scipy.sparse._coo.coo_matrix", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "scipy.sparse.coo_matrix"}, {"type": "text", "value": " class.  Because SciPy\u0027s sparse matrices must be 2-d, only two input sequences are allowed when "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "sparse", "type": "RefInfo", "version": null}, "type": "Link", "value": "sparse"}, {"type": "text", "value": " is True.  Default is False."}], "type": "paragraph"});
+            document.getElementById("5c61bba5504f44e185ea011e70d8324c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="res">res</a> : CrosstabResult</dt>
+<dd>
+                <div id="33329ed581d949e193e8861c88303140"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "An object containing the following attributes:"}], "type": "paragraph"});
+            document.getElementById("33329ed581d949e193e8861c88303140").innerHTML = html;
+        }
+        init();
+    </script>
+
+<!-- deflist -->
+           <dl>
+               <dt>                <div id="2d768dee3fa04c9ca77da751ab962a18"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "elements"}], "type": "paragraph"});
+            document.getElementById("2d768dee3fa04c9ca77da751ab962a18").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="3c6b70d0019444cab05196d0bfe86067"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "elements"}], "type": "paragraph"});
+            document.getElementById("3c6b70d0019444cab05196d0bfe86067").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="e5c56f9564134d7ab0740fcba401b775"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "count"}], "type": "paragraph"});
+            document.getElementById("e5c56f9564134d7ab0740fcba401b775").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="5fd5671f315e4c0cbe37d8fc461855ae"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "count"}], "type": "paragraph"});
+            document.getElementById("5fd5671f315e4c0cbe37d8fc461855ae").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="dc92799882de4498beab0b405b926763"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Return table of counts for each possible unique combination in "}, {"type": "inlineCode", "value": "*args"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("dc92799882de4498beab0b405b926763").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/current-module/current-version/to-resolve/numpy.unique.html.html" class='exists'>numpy.unique</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">stats</span><span class="nn">.</span><span class="nn">contingency</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">crosstab</span>
+</pre>
+            
+                           Given the lists `a` and `x`, create a contingency table that counts the
+frequencies of the corresponding pairs.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">a</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">[</span><span class="s1">&#39;</span><span class="s1">A</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">B</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">A</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">A</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">B</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">B</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">A</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">A</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">B</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">B</span><span class="s1">&#39;</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">x</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">[</span><span class="s1">&#39;</span><span class="s1">X</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">X</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">X</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">Y</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">Z</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">Z</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">Y</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">Y</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">Z</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">Z</span><span class="s1">&#39;</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">crosstab</span><span class="">(</span><span class="">a</span><span class="">,</span><span class=""> </span><span class="">x</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">avals</span><span class="">,</span><span class=""> </span><span class="">xvals</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">res</span><span class="o">.</span><span class="">elements</span><br><span class='nsl'>...&nbsp;</span><span class="">avals</span>
+array([&#39;A&#39;, &#39;B&#39;], dtype=&#39;&lt;U1&#39;)</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">xvals</span>
+array([&#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;], dtype=&#39;&lt;U1&#39;)</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">res</span><span class="o">.</span><span class="">count</span>
+array([[2, 3, 0],
+       [1, 0, 4]])</pre>
+            
+                           So `(&#39;A&#39;, &#39;X&#39;)` occurs twice, `(&#39;A&#39;, &#39;Y&#39;)` occurs three times, etc.  
+            
+                           Higher dimensional contingency tables can be created.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">p</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">crosstab</span><span class="">(</span><span class="">a</span><span class="">,</span><span class=""> </span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">p</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class="o">.</span><span class="">count</span>
+array([[[2, 0],
+        [2, 1],
+        [0, 0]],
+       [[1, 0],
+        [0, 0],
+        [1, 3]]])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">res</span><span class="o">.</span><span class="">count</span><span class="o">.</span><span class="">shape</span>
+(2, 3, 2)</pre>
+            
+                           The values to be counted can be set by using the `levels` argument.
+It allows the elements of interest in each input sequence to be
+given explicitly instead finding the unique elements of the sequence.  
+            
+                           For example, suppose one of the arguments is an array containing the
+answers to a survey question, with integer values 1 to 4.  Even if the
+value 1 does not occur in the data, we want an entry for it in the table.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">q1</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">[</span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">]</span><span class="">  </span><span class="c1"># 1 does not occur.</span><br><span class='nsl'>...&nbsp;</span><span class="">q2</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">[</span><span class="mi">4</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">]</span><span class="">  </span><span class="c1"># 3 does not occur.</span><br><span class='nsl'>...&nbsp;</span><span class="">options</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">crosstab</span><span class="">(</span><span class="">q1</span><span class="">,</span><span class=""> </span><span class="">q2</span><span class="">,</span><span class=""> </span><span class="">levels</span><span class="o">=</span><span class="">(</span><span class="">options</span><span class="">,</span><span class=""> </span><span class="">options</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class="o">.</span><span class="">count</span>
+array([[0, 0, 0, 0],
+       [1, 1, 0, 1],
+       [1, 4, 0, 1],
+       [0, 3, 0, 3]])</pre>
+            
+                           If `levels` is given, but an element of `levels` is None, the unique values
+of the corresponding argument are used. For example,  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">crosstab</span><span class="">(</span><span class="">q1</span><span class="">,</span><span class=""> </span><span class="">q2</span><span class="">,</span><span class=""> </span><span class="">levels</span><span class="o">=</span><span class="">(</span><span class="kc">None</span><span class="">,</span><span class=""> </span><span class="">options</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class="o">.</span><span class="">elements</span>
+[array([2, 3, 4]), [1, 2, 3, 4]]</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">res</span><span class="o">.</span><span class="">count</span>
+array([[1, 1, 0, 1],
+       [1, 4, 0, 1],
+       [0, 3, 0, 3]])</pre>
+            
+                           If we want to ignore the pairs where 4 occurs in ``q2``, we can
+give just the values [1, 2] to `levels`, and the 4 will be ignored:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">crosstab</span><span class="">(</span><span class="">q1</span><span class="">,</span><span class=""> </span><span class="">q2</span><span class="">,</span><span class=""> </span><span class="">levels</span><span class="o">=</span><span class="">(</span><span class="kc">None</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">]</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class="o">.</span><span class="">elements</span>
+[array([2, 3, 4]), [1, 2]]</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">res</span><span class="o">.</span><span class="">count</span>
+array([[1, 1],
+       [1, 4],
+       [0, 3]])</pre>
+            
+                           Finally, let&#39;s repeat the first example, but return a sparse matrix:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">crosstab</span><span class="">(</span><span class="">a</span><span class="">,</span><span class=""> </span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">sparse</span><span class="o">=</span><span class="kc">True</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class="o">.</span><span class="">count</span>
+&lt;2x3 sparse matrix of type &#39;&lt;class &#39;numpy.int64&#39;&gt;&#39;
+        with 4 stored elements in COOrdinate format&gt;</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">res</span><span class="o">.</span><span class="">count</span><span class="o">.</span><span class="">A</span>
+array([[2, 3, 0],
+       [1, 0, 4]])</pre>
+            
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/stats/_crosstab.py#L10'>/scipy/stats/_crosstab.py#10</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 9.0, "label": "scipy.sparse._coo.coo_matrix", "mod": "scipy", "url": "/p/scipy/*/api/scipy.sparse._coo.coo_matrix"}, {"id": 2, "val": 11.16227766016838, "label": "numpy.unique", "mod": "numpy", "url": "/p/current-module/current-version/to-resolve/numpy.unique"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

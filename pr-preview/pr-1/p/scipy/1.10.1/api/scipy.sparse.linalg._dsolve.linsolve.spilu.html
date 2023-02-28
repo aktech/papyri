@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.sparse.html'>sparse</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.sparse.linalg.html'>linalg</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.sparse._arrays.html">_arrays</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._base.html">_base</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._bsr.html">_bsr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._compressed.html">_compressed</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._construct.html">_construct</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._coo.html">_coo</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._csc.html">_csc</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._csparsetools.html">_csparsetools</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._csr.html">_csr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._data.html">_data</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._dia.html">_dia</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._dok.html">_dok</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._extract.html">_extract</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._index.html">_index</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._lil.html">_lil</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._matrix_io.html">_matrix_io</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._sparsetools.html">_sparsetools</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._sputils.html">_sputils</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.base.html">base</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.bsr.html">bsr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.compressed.html">compressed</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.construct.html">construct</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.coo.html">coo</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csc.html">csc</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csgraph.html">csgraph</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csr.html">csr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.data.html">data</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.dia.html">dia</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.dok.html">dok</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.extract.html">extract</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.lil.html">lil</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.sparsetools.html">sparsetools</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.sputils.html">sputils</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.sparse.linalg._dsolve.html'>_dsolve</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._dsolve.html">_dsolve</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._eigen.html">_eigen</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._expm_multiply.html">_expm_multiply</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.html">_interface</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._isolve.html">_isolve</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._matfuncs.html">_matfuncs</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._norm.html">_norm</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._onenormest.html">_onenormest</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg.dsolve.html">dsolve</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg.eigen.html">eigen</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg.interface.html">interface</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg.isolve.html">isolve</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg.matfuncs.html">matfuncs</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.sparse.linalg._dsolve.linsolve.html'>linsolve</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._dsolve._add_newdocs.html">_add_newdocs</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._dsolve._superlu.html">_superlu</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._dsolve.linsolve.html">linsolve</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.sparse.linalg._dsolve.linsolve.spilu.html'>spilu</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._dsolve.linsolve.MatrixRankWarning.html">MatrixRankWarning</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._dsolve.linsolve._get_umf_family.html">_get_umf_family</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._dsolve.linsolve.factorized.html">factorized</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._dsolve.linsolve.spilu.html">spilu</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._dsolve.linsolve.splu.html">splu</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._dsolve.linsolve.spsolve.html">spsolve</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._dsolve.linsolve.spsolve_triangular.html">spsolve_triangular</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._dsolve.linsolve.use_solver.html">use_solver</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>spilu(A, drop_tol=None, fill_factor=None, drop_rule=None, permc_spec=None, diag_pivot_thresh=None, relax=None, panel_size=None, options=None)</code><!-- rendering Extended Summary -->
+                                       <div id="5526000a67244bf69eb667f1f18cbba7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The resulting object is an approximation to the inverse of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "A", "type": "RefInfo", "version": null}, "type": "Link", "value": "A"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("5526000a67244bf69eb667f1f18cbba7").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="ca7f15a61c134e0f81d6bbf16d96b9cf"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "To improve the better approximation to the inverse, you may need to increase "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "fill_factor", "type": "RefInfo", "version": null}, "type": "Link", "value": "fill_factor"}, {"type": "text", "value": " AND decrease "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "drop_tol", "type": "RefInfo", "version": null}, "type": "Link", "value": "drop_tol"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("ca7f15a61c134e0f81d6bbf16d96b9cf").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="7058ac1267314090977810ae970459de"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This function uses the SuperLU library."}], "type": "paragraph"});
+            document.getElementById("7058ac1267314090977810ae970459de").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="A">A</a> : (N, N) array_like</dt>
+<dd>
+                <div id="475d20eedf474ab78b48676008a8c8bb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Sparse matrix to factorize. Most efficient when provided in CSC format. Other formats will be converted to CSC before factorization."}], "type": "paragraph"});
+            document.getElementById("475d20eedf474ab78b48676008a8c8bb").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="drop_tol">drop_tol</a> : float, optional</dt>
+<dd>
+                <div id="53fc83d0dc2c47e28a5e233669233418"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Drop tolerance (0 \u003c= tol \u003c= 1) for an incomplete LU decomposition. (default: 1e-4)"}], "type": "paragraph"});
+            document.getElementById("53fc83d0dc2c47e28a5e233669233418").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="fill_factor">fill_factor</a> : float, optional</dt>
+<dd>
+                <div id="cb057b91a1484bc4b327a273e267807c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Specifies the fill ratio upper bound (\u003e= 1.0) for ILU. (default: 10)"}], "type": "paragraph"});
+            document.getElementById("cb057b91a1484bc4b327a273e267807c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="drop_rule">drop_rule</a> : str, optional</dt>
+<dd>
+                <div id="01784ba572d34965a740b4131e976097"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Comma-separated string of drop rules to use. Available rules: "}, {"type": "inlineCode", "value": "basic"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "prows"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "column"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "area"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "secondary"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "dynamic"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "interp"}, {"type": "text", "value": ". (Default: "}, {"type": "inlineCode", "value": "basic,area"}, {"type": "text", "value": ")"}], "type": "paragraph"});
+            document.getElementById("01784ba572d34965a740b4131e976097").innerHTML = html;
+        }
+        init();
+    </script>
+
+                <div id="7a20c57a971f4ce8b2531d636f6fa4e0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "See SuperLU documentation for details."}], "type": "paragraph"});
+            document.getElementById("7a20c57a971f4ce8b2531d636f6fa4e0").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="Remaining other options">Remaining other options</a> : </dt>
+<dd>
+                <div id="1180fa5671f042a8845c2d59c22f3425"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Same as for "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.sparse.linalg._dsolve.linsolve.splu", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "splu"}], "type": "paragraph"});
+            document.getElementById("1180fa5671f042a8845c2d59c22f3425").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="invA_approx">invA_approx</a> : scipy.sparse.linalg.SuperLU</dt>
+<dd>
+                <div id="bfb63ff35e704139a080ba3f368ef1e4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Object, which has a "}, {"type": "inlineCode", "value": "solve"}, {"type": "text", "value": " method."}], "type": "paragraph"});
+            document.getElementById("bfb63ff35e704139a080ba3f368ef1e4").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="ce2a42574e14494badad7f830c4ddb0b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Compute an incomplete LU decomposition for a sparse, square matrix."}], "type": "paragraph"});
+            document.getElementById("ce2a42574e14494badad7f830c4ddb0b").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._dsolve.linsolve.splu.html" class='exists'>splu</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="663c233ab2b94cd1bec2878b62398cb4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "complete LU decomposition"});
+            document.getElementById("663c233ab2b94cd1bec2878b62398cb4").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">sparse</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">csc_matrix</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">sparse</span><span class="nn">.</span><span class="nn">linalg</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">spilu</span><br><span class='nsl'>...&nbsp;</span><span class="">A</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">csc_matrix</span><span class="">(</span><span class="">[</span><span class="">[</span><span class="mf">1.</span><span class="">,</span><span class=""> </span><span class="mf">0.</span><span class="">,</span><span class=""> </span><span class="mf">0.</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mf">5.</span><span class="">,</span><span class=""> </span><span class="mf">0.</span><span class="">,</span><span class=""> </span><span class="mf">2.</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mf">0.</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mf">1.</span><span class="">,</span><span class=""> </span><span class="mf">0.</span><span class="">]</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">dtype</span><span class="o">=</span><span class="nb">float</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">B</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">spilu</span><span class="">(</span><span class="">A</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">x</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="mf">1.</span><span class="">,</span><span class=""> </span><span class="mf">2.</span><span class="">,</span><span class=""> </span><span class="mf">3.</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">dtype</span><span class="o">=</span><span class="nb">float</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">B</span><span class="o">.</span><span class="">solve</span><span class="">(</span><span class="">x</span><span class="">)</span>
+array([ 1. , -3. , -1.5])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">A</span><span class="o">.</span><span class="">dot</span><span class="">(</span><span class="">B</span><span class="o">.</span><span class="">solve</span><span class="">(</span><span class="">x</span><span class="">)</span><span class="">)</span>
+array([ 1.,  2.,  3.])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">B</span><span class="o">.</span><span class="">solve</span><span class="">(</span><span class="">A</span><span class="o">.</span><span class="">dot</span><span class="">(</span><span class="">x</span><span class="">)</span><span class="">)</span>
+array([ 1.,  2.,  3.])</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.sparse.linalg._dsolve.linsolve.splu.html" class='exists'>scipy.sparse.linalg._dsolve.linsolve.splu</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/sparse/linalg/_dsolve/linsolve.py#L418'>/scipy/sparse/linalg/_dsolve/linsolve.py#418</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 9.0, "label": "scipy.sparse.linalg._dsolve.linsolve.splu", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.sparse.linalg._dsolve.linsolve.splu"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

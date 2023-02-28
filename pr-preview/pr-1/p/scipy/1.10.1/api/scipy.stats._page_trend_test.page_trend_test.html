@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats.html'>stats</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats._page_trend_test.html'>_page_trend_test</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.stats._axis_nan_policy.html">_axis_nan_policy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._biasedurn.html">_biasedurn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binned_statistic.html">_binned_statistic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binomtest.html">_binomtest</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._boost.html">_boost</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._common.html">_common</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._constants.html">_constants</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._continuous_distns.html">_continuous_distns</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._covariance.html">_covariance</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._crosstab.html">_crosstab</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._discrete_distns.html">_discrete_distns</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._distn_infrastructure.html">_distn_infrastructure</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._distr_params.html">_distr_params</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._entropy.html">_entropy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._fit.html">_fit</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.html">_hypotests</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._kde.html">_kde</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._ksstats.html">_ksstats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable.html">_levy_stable</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mannwhitneyu.html">_mannwhitneyu</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._morestats.html">_morestats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mstats_basic.html">_mstats_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mstats_extras.html">_mstats_extras</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._multivariate.html">_multivariate</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mvn.html">_mvn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._odds_ratio.html">_odds_ratio</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._page_trend_test.html">_page_trend_test</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.html">_qmc</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc_cy.html">_qmc_cy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._rcont.html">_rcont</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._relative_risk.html">_relative_risk</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling.html">_resampling</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._rvs_sampling.html">_rvs_sampling</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._sobol.html">_sobol</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._statlib.html">_statlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats.html">_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_mstats_common.html">_stats_mstats_common</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.html">_stats_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_pythran.html">_stats_pythran</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._tukeylambda_stats.html">_tukeylambda_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._variation.html">_variation</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._warnings_errors.html">_warnings_errors</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.biasedurn.html">biasedurn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.contingency.html">contingency</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.distributions.html">distributions</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.kde.html">kde</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.morestats.html">morestats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats.html">mstats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats_basic.html">mstats_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats_extras.html">mstats_extras</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mvn.html">mvn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.qmc.html">qmc</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.statlib.html">statlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats._page_trend_test.page_trend_test.html'>page_trend_test</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.stats._page_trend_test._PageL.html">_PageL</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._page_trend_test._choose_method.html">_choose_method</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._page_trend_test._l_p_asymptotic.html">_l_p_asymptotic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._page_trend_test._l_p_exact.html">_l_p_exact</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._page_trend_test._l_vectorized.html">_l_vectorized</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._page_trend_test.page_trend_test.html">page_trend_test</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>page_trend_test(data, ranked=False, predicted_ranks=None, method=&#39;auto&#39;)</code><!-- rendering Extended Summary -->
+                                       <div id="e60e6ecab65348e595cc69e95fe7e0ef"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Page\u0027s Test (also known as Page\u0027s "}, {"type": "Math", "value": "L"}, {"type": "text", "value": " test) is useful when:"}], "type": "paragraph"});
+            document.getElementById("e60e6ecab65348e595cc69e95fe7e0ef").innerHTML = html;
+        }
+        init();
+    </script>
+
+                          <ul>               <li>                               <div id="d9c0854466764dbb95ffbff0266e92ad"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "there are "}, {"type": "Math", "value": "n \\geq 3"}, {"type": "text", "value": " treatments,"}], "type": "paragraph"});
+            document.getElementById("d9c0854466764dbb95ffbff0266e92ad").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="cc2888fe5d3f49c7b6189e4e05bc02d4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "Math", "value": "m \\geq 2"}, {"type": "text", "value": " subjects are observed for each treatment, and"}], "type": "paragraph"});
+            document.getElementById("cc2888fe5d3f49c7b6189e4e05bc02d4").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="ca13a21d459346b9b1baf7d6e28285f6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "the observations are hypothesized to have a particular order."}], "type": "paragraph"});
+            document.getElementById("ca13a21d459346b9b1baf7d6e28285f6").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+
+                               <div id="219a7123513c4f23aa552b1731394605"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Specifically, the test considers the null hypothesis that"}], "type": "paragraph"});
+            document.getElementById("219a7123513c4f23aa552b1731394605").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$m_1 = m_2 = m_3 \cdots = m_n,$$</span>
+
+                               <div id="f800a7287aee4398827887b0ab9df59a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "where "}, {"type": "Math", "value": "m_j"}, {"type": "text", "value": " is the mean of the observed quantity under treatment "}, {"type": "Math", "value": "j"}, {"type": "text", "value": ", against the alternative hypothesis that"}], "type": "paragraph"});
+            document.getElementById("f800a7287aee4398827887b0ab9df59a").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$m_1 \leq m_2 \leq m_3 \leq \cdots \leq m_n,$$</span>
+
+                               <div id="9872d5290991424c93ee1dd3ccccd730"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "where at least one inequality is strict."}], "type": "paragraph"});
+            document.getElementById("9872d5290991424c93ee1dd3ccccd730").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="124d9c2ff13345afa144a94d31f55b19"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "As noted by , Page\u0027s "}, {"type": "Math", "value": "L"}, {"type": "text", "value": " test has greater statistical power than the Friedman test against the alternative that there is a difference in trend, as Friedman\u0027s test only considers a difference in the means of the observations without considering their order. Whereas Spearman "}, {"type": "Math", "value": "\\rho"}, {"type": "text", "value": " considers the correlation between the ranked observations of two variables (e.g. the airspeed velocity of a swallow vs. the weight of the coconut it carries), Page\u0027s "}, {"type": "Math", "value": "L"}, {"type": "text", "value": " is concerned with a trend in an observation (e.g. the airspeed velocity of a swallow) across several distinct treatments (e.g. carrying each of five coconuts of different weight) even as the observation is repeated with multiple subjects (e.g. one European swallow and one African swallow)."}], "type": "paragraph"});
+            document.getElementById("124d9c2ff13345afa144a94d31f55b19").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="af203408e78c46079b9cb333c81cbf1a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "As noted in , \"the "}, {"type": "Math", "value": "n"}, {"type": "text", "value": " \u0027treatments\u0027 could just as well represent "}, {"type": "Math", "value": "n"}, {"type": "text", "value": " objects or events or performances or persons or trials ranked.\" Similarly, the "}, {"type": "Math", "value": "m"}, {"type": "text", "value": " \u0027subjects\u0027 could equally stand for "}, {"type": "Math", "value": "m"}, {"type": "text", "value": " \"groupings by ability or some other control variable, or judges doing the ranking, or random replications of some other sort.\""}], "type": "paragraph"});
+            document.getElementById("af203408e78c46079b9cb333c81cbf1a").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="758b8acc1cc142729930c2b731067c8e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The procedure for calculating the "}, {"type": "Math", "value": "L"}, {"type": "text", "value": " statistic, adapted from , is:"}], "type": "paragraph"});
+            document.getElementById("758b8acc1cc142729930c2b731067c8e").innerHTML = html;
+        }
+        init();
+    </script>
+
+                          <ol>               <li>                               <div id="0a43c8c3b27f4428a1ab44ebed453353"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\"Predetermine with careful logic the appropriate hypotheses    concerning the predicted ording of the experimental results.    If no reasonable basis for ordering any treatments is known, the    "}, {"type": "Math", "value": "L"}, {"type": "text", "value": " test is not appropriate.\""}], "type": "paragraph"});
+            document.getElementById("0a43c8c3b27f4428a1ab44ebed453353").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="78aeef80b40c442a9277ff4ce90fd88a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\"As in other experiments, determine at what level of confidence    you will reject the null hypothesis that there is no agreement of    experimental results with the monotonic hypothesis.\""}], "type": "paragraph"});
+            document.getElementById("78aeef80b40c442a9277ff4ce90fd88a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="e685703c2fad49bbb7b19f6a81e593e2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\"Cast the experimental material into a two-way table of "}, {"type": "Math", "value": "n"}, {"type": "text", "value": "    columns (treatments, objects ranked, conditions) and "}, {"type": "Math", "value": "m"}, {"type": "text", "value": "    rows (subjects, replication groups, levels of control variables).\""}], "type": "paragraph"});
+            document.getElementById("e685703c2fad49bbb7b19f6a81e593e2").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="0a0018558cad41b694344b64188ffc04"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\"When experimental observations are recorded, rank them across each    row\", e.g. "}, {"type": "inlineCode", "value": "ranks = scipy.stats.rankdata(data, axis=1)"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("0a0018558cad41b694344b64188ffc04").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="4f5c66cdc45748929c33b85e15525fb4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\"Add the ranks in each column\", e.g.    "}, {"type": "inlineCode", "value": "colsums = np.sum(ranks, axis=0)"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("4f5c66cdc45748929c33b85e15525fb4").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="27aa1f0f9bb44e5ca249c12264fc4f6c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\"Multiply each sum of ranks by the predicted rank for that same    column\", e.g. "}, {"type": "inlineCode", "value": "products = predicted_ranks * colsums"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("27aa1f0f9bb44e5ca249c12264fc4f6c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="74ef2f4208e64f79b3a499c2e3f3aa55"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\"Sum all such products\", e.g. "}, {"type": "inlineCode", "value": "L = products.sum()"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("74ef2f4208e64f79b3a499c2e3f3aa55").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ol>
+
+                               <div id="b36e6ee4a6dc4a5aa7900fcd1a25c7b2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": " continues by suggesting use of the standardized statistic"}], "type": "paragraph"});
+            document.getElementById("b36e6ee4a6dc4a5aa7900fcd1a25c7b2").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$\chi_L^2 = \frac{\left[12L-3mn(n+1)^2\right]^2}{mn^2(n^2-1)(n+1)}$$</span>
+
+                               <div id="9d9d804f6e064e059259eec37725f434"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\"which is distributed approximately as chi-square with 1 degree of freedom. The ordinary use of "}, {"type": "Math", "value": "\\chi^2"}, {"type": "text", "value": " tables would be equivalent to a two-sided test of agreement. If a one-sided test is desired, "}, {"children": [{"type": "text", "value": "as will almost always be the case"}], "type": "emphasis"}, {"type": "text", "value": ", the probability discovered in the chi-square table should be "}, {"children": [{"type": "text", "value": "halved"}], "type": "emphasis"}, {"type": "text", "value": ".\""}], "type": "paragraph"});
+            document.getElementById("9d9d804f6e064e059259eec37725f434").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="b5d05aa580dd4dcfbd9596bfd0c6a55b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "However, this standardized statistic does not distinguish between the observed values being well correlated with the predicted ranks and being _anti_-correlated with the predicted ranks. Instead, we follow  and calculate the standardized statistic"}], "type": "paragraph"});
+            document.getElementById("b5d05aa580dd4dcfbd9596bfd0c6a55b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$\Lambda = \frac{L - E_0}{\sqrt{V_0}},$$</span>
+
+                               <div id="55a2868ef8f74a8288a758f140acd0fa"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "where "}, {"type": "Math", "value": "E_0 = \\frac{1}{4} mn(n+1)^2"}, {"type": "text", "value": " and "}, {"type": "Math", "value": "V_0 = \\frac{1}{144} mn^2(n+1)(n^2-1)"}, {"type": "text", "value": ", \"which is asymptotically normal under the null hypothesis\"."}], "type": "paragraph"});
+            document.getElementById("55a2868ef8f74a8288a758f140acd0fa").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="bbba60218cdf49748a601a461f3dd0c8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The "}, {"children": [{"type": "text", "value": "p"}], "type": "emphasis"}, {"type": "text", "value": "-value for "}, {"type": "inlineCode", "value": "method=\u0027exact\u0027"}, {"type": "text", "value": " is generated by comparing the observed value of "}, {"type": "Math", "value": "L"}, {"type": "text", "value": " against the "}, {"type": "Math", "value": "L"}, {"type": "text", "value": " values generated for all "}, {"type": "Math", "value": "(n!)^m"}, {"type": "text", "value": " possible permutations of ranks. The calculation is performed using the recursive method of [5]."}], "type": "paragraph"});
+            document.getElementById("bbba60218cdf49748a601a461f3dd0c8").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="a94916036a214b50a027295ceb20df0a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The "}, {"children": [{"type": "text", "value": "p"}], "type": "emphasis"}, {"type": "text", "value": "-values are not adjusted for the possibility of ties. When ties are present, the reported  "}, {"type": "inlineCode", "value": "\u0027exact\u0027"}, {"type": "text", "value": " "}, {"children": [{"type": "text", "value": "p"}], "type": "emphasis"}, {"type": "text", "value": "-values may be somewhat larger (i.e. more conservative) than the true "}, {"children": [{"type": "text", "value": "p"}], "type": "emphasis"}, {"type": "text", "value": "-value . The "}, {"type": "inlineCode", "value": "\u0027asymptotic\u0027`"}, {"type": "text", "value": " "}, {"children": [{"type": "text", "value": "p"}], "type": "emphasis"}, {"type": "text", "value": "-values, however, tend to be smaller (i.e. less conservative) than the "}, {"type": "inlineCode", "value": "\u0027exact\u0027"}, {"type": "text", "value": " "}, {"children": [{"type": "text", "value": "p"}], "type": "emphasis"}, {"type": "text", "value": "-values."}], "type": "paragraph"});
+            document.getElementById("a94916036a214b50a027295ceb20df0a").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="data">data</a> : array-like</dt>
+<dd>
+                <div id="336aba3a89b24987926965c162d9adf1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A "}, {"type": "Math", "value": "m \\times n"}, {"type": "text", "value": " array; the element in row "}, {"type": "Math", "value": "i"}, {"type": "text", "value": " and column "}, {"type": "Math", "value": "j"}, {"type": "text", "value": " is the observation corresponding with subject "}, {"type": "Math", "value": "i"}, {"type": "text", "value": " and treatment "}, {"type": "Math", "value": "j"}, {"type": "text", "value": ". By default, the columns are assumed to be arranged in order of increasing predicted mean."}], "type": "paragraph"});
+            document.getElementById("336aba3a89b24987926965c162d9adf1").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="ranked">ranked</a> : boolean, optional</dt>
+<dd>
+                <div id="b9a84213cb1d4ed59929cc07c652a119"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "By default, "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "data", "type": "RefInfo", "version": null}, "type": "Link", "value": "data"}, {"type": "text", "value": " is assumed to be observations rather than ranks; it will be ranked with "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "scipy", "path": "scipy.stats._stats_py.rankdata", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "scipy.stats.rankdata"}, {"type": "text", "value": " along "}, {"type": "inlineCode", "value": "axis=1"}, {"type": "text", "value": ". If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "data", "type": "RefInfo", "version": null}, "type": "Link", "value": "data"}, {"type": "text", "value": " is provided in the form of ranks, pass argument "}, {"type": "inlineCode", "value": "True"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("b9a84213cb1d4ed59929cc07c652a119").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="predicted_ranks">predicted_ranks</a> : array-like, optional</dt>
+<dd>
+                <div id="d2d0387fc52a4bd6a8a8430ce7bafe46"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The predicted ranks of the column means. If not specified, the columns are assumed to be arranged in order of increasing predicted mean, so the default "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "predicted_ranks", "type": "RefInfo", "version": null}, "type": "Link", "value": "predicted_ranks"}, {"type": "text", "value": " are "}, {"type": "Math", "value": "[1, 2, \\dots, n-1, n]"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("d2d0387fc52a4bd6a8a8430ce7bafe46").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="method">method</a> : {&#39;auto&#39;, &#39;asymptotic&#39;, &#39;exact&#39;}, optional</dt>
+<dd>
+                <div id="05535644a55e4c07af57155f45b9db4e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Selects the method used to calculate the "}, {"children": [{"type": "text", "value": "p"}], "type": "emphasis"}, {"type": "text", "value": "-value. The following options are available."}], "type": "paragraph"});
+            document.getElementById("05535644a55e4c07af57155f45b9db4e").innerHTML = html;
+        }
+        init();
+    </script>
+
+           <ul>               <li>                               <div id="e1cd9562ccbe40f4ab60d32d8d3efb01"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027auto\u0027: selects between \u0027exact\u0027 and \u0027asymptotic\u0027 to   achieve reasonably accurate results in reasonable time (default)"}], "type": "paragraph"});
+            document.getElementById("e1cd9562ccbe40f4ab60d32d8d3efb01").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="775b2e41c3b94285aa2b8ff8c0c5fd6f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027asymptotic\u0027: compares the standardized test statistic against   the normal distribution"}], "type": "paragraph"});
+            document.getElementById("775b2e41c3b94285aa2b8ff8c0c5fd6f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="8f0f268adf2f451ab37ec789b07c7840"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027exact\u0027: computes the exact "}, {"children": [{"type": "text", "value": "p"}], "type": "emphasis"}, {"type": "text", "value": "-value by comparing the observed   "}, {"type": "Math", "value": "L"}, {"type": "text", "value": " statistic against those realized by all possible   permutations of ranks (under the null hypothesis that each   permutation is equally likely)"}], "type": "paragraph"});
+            document.getElementById("8f0f268adf2f451ab37ec789b07c7840").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="res">res</a> : PageTrendTestResult</dt>
+<dd>
+                <div id="e9cc53f14042487abefb7ca190eeec35"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "An object containing attributes:"}], "type": "paragraph"});
+            document.getElementById("e9cc53f14042487abefb7ca190eeec35").innerHTML = html;
+        }
+        init();
+    </script>
+
+<!-- deflist -->
+           <dl>
+               <dt>                <div id="e6d86538fc7142ec82a1df0728f38e57"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "statistic"}], "type": "paragraph"});
+            document.getElementById("e6d86538fc7142ec82a1df0728f38e57").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="761b8a1bd84442d6b06474effd5288b6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "statistic"}], "type": "paragraph"});
+            document.getElementById("761b8a1bd84442d6b06474effd5288b6").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="54a7070995104f5a8e19a53aae4578fb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "pvalue"}], "type": "paragraph"});
+            document.getElementById("54a7070995104f5a8e19a53aae4578fb").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="a92c944309f24baca94f7e13074a3d5a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "pvalue"}], "type": "paragraph"});
+            document.getElementById("a92c944309f24baca94f7e13074a3d5a").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="95980eb914d64e098bd3ae756527bf65"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "method"}], "type": "paragraph"});
+            document.getElementById("95980eb914d64e098bd3ae756527bf65").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="6c341b55d29d4ec98dee7143d58504e1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "method"}], "type": "paragraph"});
+            document.getElementById("6c341b55d29d4ec98dee7143d58504e1").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="03affb5d0eec47868323fcb88d99ca33"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Perform Page\u0027s Test, a measure of trend in observations between treatments."}], "type": "paragraph"});
+            document.getElementById("03affb5d0eec47868323fcb88d99ca33").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/current-module/current-version/to-resolve/friedmanchisquare.html.html" class='exists'>friedmanchisquare</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/current-module/current-version/to-resolve/rankdata.html.html" class='exists'>rankdata</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/current-module/current-version/to-resolve/spearmanr.html.html" class='exists'>spearmanr</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+                           We use the example from [3]_: 10 students are asked to rate three
+teaching methods - tutorial, lecture, and seminar - on a scale of 1-5,
+with 1 being the lowest and 5 being the highest. We have decided that
+a confidence level of 99% is required to reject the null hypothesis in
+favor of our alternative: that the seminar will have the highest ratings
+and the tutorial will have the lowest. Initially, the data have been
+tabulated with each row representing an individual student&#39;s ratings of
+the three methods in the following order: tutorial, lecture, seminar.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">table</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">[</span><span class="">[</span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">         </span><span class="">[</span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">         </span><span class="">[</span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">5</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">         </span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">         </span><span class="">[</span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">         </span><span class="">[</span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">,</span><span class=""> </span><span class="mi">5</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">         </span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">         </span><span class="">[</span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">         </span><span class="">[</span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">,</span><span class=""> </span><span class="mi">5</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">         </span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">]</span><span class="">]</span>
+</pre>
+            
+                           Because the tutorial is hypothesized to have the lowest ratings, the
+column corresponding with tutorial rankings should be first; the seminar
+is hypothesized to have the highest ratings, so its column should be last.
+Since the columns are already arranged in this order of increasing
+predicted mean, we can pass the table directly into `page_trend_test`.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">stats</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">page_trend_test</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">page_trend_test</span><span class="">(</span><span class="">table</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span>
+PageTrendTestResult(statistic=133.5, pvalue=0.0018191161948127822,
+                    method=&#39;exact&#39;)</pre>
+            
+                           This *p*-value indicates that there is a 0.1819% chance that
+the :math:`L` statistic would reach such an extreme value under the null
+hypothesis. Because 0.1819% is less than 1%, we have evidence to reject
+the null hypothesis in favor of our alternative at a 99% confidence level.  
+            
+                           The value of the :math:`L` statistic is 133.5. To check this manually,
+we rank the data such that high scores correspond with high ranks, settling
+ties with an average rank:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">stats</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">rankdata</span><br><span class='nsl'>...&nbsp;</span><span class="">ranks</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">rankdata</span><span class="">(</span><span class="">table</span><span class="">,</span><span class=""> </span><span class="">axis</span><span class="o">=</span><span class="mi">1</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ranks</span>
+array([[1.5, 3. , 1.5],
+       [1.5, 1.5, 3. ],
+       [1.5, 1.5, 3. ],
+       [1. , 3. , 2. ],
+       [1.5, 3. , 1.5],
+       [1. , 2. , 3. ],
+       [1. , 2. , 3. ],
+       [1. , 2.5, 2.5],
+       [1. , 2. , 3. ],
+       [1. , 2. , 3. ]])</pre>
+            
+                           We add the ranks within each column, multiply the sums by the
+predicted ranks, and sum the products.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="">m</span><span class="">,</span><span class=""> </span><span class="">n</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">ranks</span><span class="o">.</span><span class="">shape</span><br><span class='nsl'>...&nbsp;</span><span class="">predicted_ranks</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">arange</span><span class="">(</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="">n</span><span class="o">+</span><span class="mi">1</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">L</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">(</span><span class="">predicted_ranks</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">sum</span><span class="">(</span><span class="">ranks</span><span class="">,</span><span class=""> </span><span class="">axis</span><span class="o">=</span><span class="mi">0</span><span class="">)</span><span class="">)</span><span class="o">.</span><span class="">sum</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class="o">.</span><span class="">statistic</span><span class=""> </span><span class="o">==</span><span class=""> </span><span class="">L</span>
+True</pre>
+            
+                           As presented in [3]_, the asymptotic approximation of the *p*-value is the
+survival function of the normal distribution evaluated at the standardized
+test statistic:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">stats</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">norm</span><br><span class='nsl'>...&nbsp;</span><span class="">E0</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">(</span><span class="">m</span><span class="o">*</span><span class="">n</span><span class="o">*</span><span class="">(</span><span class="">n</span><span class="o">+</span><span class="mi">1</span><span class="">)</span><span class="o">*</span><span class="o">*</span><span class="mi">2</span><span class="">)</span><span class="o">/</span><span class="mi">4</span><br><span class='nsl'>...&nbsp;</span><span class="">V0</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">(</span><span class="">m</span><span class="o">*</span><span class="">n</span><span class="o">*</span><span class="o">*</span><span class="mi">2</span><span class="o">*</span><span class="">(</span><span class="">n</span><span class="o">+</span><span class="mi">1</span><span class="">)</span><span class="o">*</span><span class="">(</span><span class="">n</span><span class="o">*</span><span class="o">*</span><span class="mi">2</span><span class="o">-</span><span class="mi">1</span><span class="">)</span><span class="">)</span><span class="o">/</span><span class="mi">144</span><br><span class='nsl'>...&nbsp;</span><span class="">Lambda</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">(</span><span class="">L</span><span class="o">-</span><span class="">E0</span><span class="">)</span><span class="o">/</span><span class="">np</span><span class="o">.</span><span class="">sqrt</span><span class="">(</span><span class="">V0</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">p</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">norm</span><span class="o">.</span><span class="">sf</span><span class="">(</span><span class="">Lambda</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">p</span>
+0.0012693433690751756</pre>
+            
+                           This does not precisely match the *p*-value reported by `page_trend_test`
+above. The asymptotic distribution is not very accurate, nor conservative,
+for :math:`m \leq 12` and :math:`n \leq 8`, so `page_trend_test` chose to
+use ``method=&#39;exact&#39;`` based on the dimensions of the table and the
+recommendations in Page&#39;s original paper [1]_. To override
+`page_trend_test`&#39;s choice, provide the `method` argument.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">page_trend_test</span><span class="">(</span><span class="">table</span><span class="">,</span><span class=""> </span><span class="">method</span><span class="o">=</span><span class="s2">&#34;</span><span class="s2">asymptotic</span><span class="s2">&#34;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span>
+PageTrendTestResult(statistic=133.5, pvalue=0.0012693433690751756,
+                    method=&#39;asymptotic&#39;)</pre>
+            
+                           If the data are already ranked, we can pass in the ``ranks`` instead of
+the ``table`` to save computation time.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">page_trend_test</span><span class="">(</span><span class="">ranks</span><span class="">,</span><span class="">             </span><span class="c1"># ranks of data</span><br><span class='nsl'>...&nbsp;</span><span class="">                      </span><span class="">ranked</span><span class="o">=</span><span class="kc">True</span><span class="">,</span><span class="">       </span><span class="c1"># data is already ranked</span><br><span class='nsl'>...&nbsp;</span><span class="">                      </span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span>
+PageTrendTestResult(statistic=133.5, pvalue=0.0018191161948127822,
+                    method=&#39;exact&#39;)</pre>
+            
+                           Suppose the raw data had been tabulated in an order different from the
+order of predicted means, say lecture, seminar, tutorial.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">table</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">asarray</span><span class="">(</span><span class="">table</span><span class="">)</span><span class="">[</span><span class="">:</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">]</span>
+</pre>
+            
+                           Since the arrangement of this table is not consistent with the assumed
+ordering, we can either rearrange the table or provide the
+`predicted_ranks`. Remembering that the lecture is predicted
+to have the middle rank, the seminar the highest, and tutorial the lowest,
+we pass:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">page_trend_test</span><span class="">(</span><span class="">table</span><span class="">,</span><span class="">             </span><span class="c1"># data as originally tabulated</span><br><span class='nsl'>...&nbsp;</span><span class="">                      </span><span class="">predicted_ranks</span><span class="o">=</span><span class="">[</span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class="">  </span><span class="c1"># our predicted order</span><br><span class='nsl'>...&nbsp;</span><span class="">                      </span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span>
+PageTrendTestResult(statistic=133.5, pvalue=0.0018191161948127822,
+                    method=&#39;exact&#39;)</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.stats._page_trend_test._PageL.html" class='exists'>scipy.stats._page_trend_test._PageL</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/stats/_page_trend_test.py#L13'>/scipy/stats/_page_trend_test.py#13</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 9.414213562373096, "label": "spearmanr", "mod": "spearmanr", "url": "/p/current-module/current-version/to-resolve/spearmanr"}, {"id": 2, "val": 8.0, "label": "scipy.stats._page_trend_test._PageL", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.stats._page_trend_test._PageL"}, {"id": 3, "val": 9.0, "label": "friedmanchisquare", "mod": "friedmanchisquare", "url": "/p/current-module/current-version/to-resolve/friedmanchisquare"}, {"id": 4, "val": 9.732050807568877, "label": "scipy.stats._stats_py.rankdata", "mod": "scipy", "url": "/p/scipy/*/api/scipy.stats._stats_py.rankdata"}, {"id": 5, "val": 9.0, "label": "rankdata", "mod": "rankdata", "url": "/p/current-module/current-version/to-resolve/rankdata"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

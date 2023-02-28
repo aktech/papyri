@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.fft.html'>fft</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.fft._realtransforms.html'>_realtransforms</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.fft._backend.html">_backend</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft._basic.html">_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft._fftlog.html">_fftlog</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft._fftlog_multimethods.html">_fftlog_multimethods</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft._helper.html">_helper</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft._pocketfft.html">_pocketfft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft._realtransforms.html">_realtransforms</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.fft._realtransforms.idstn.html'>idstn</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.fft._realtransforms.dct.html">dct</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft._realtransforms.dctn.html">dctn</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft._realtransforms.dst.html">dst</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft._realtransforms.dstn.html">dstn</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft._realtransforms.idct.html">idct</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft._realtransforms.idctn.html">idctn</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft._realtransforms.idst.html">idst</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft._realtransforms.idstn.html">idstn</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<!-- rendering Extended Summary -->
+        <h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="3a2c110a1f4a4705bc77532d621df954"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For full details of the IDST types and normalization modes, as well as references, see "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.fft._realtransforms.idst", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "idst"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("3a2c110a1f4a4705bc77532d621df954").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="x">x</a> : array_like</dt>
+<dd>
+                <div id="6b51fae91e9b48a2ae2a9653ecdaf98b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The input array."}], "type": "paragraph"});
+            document.getElementById("6b51fae91e9b48a2ae2a9653ecdaf98b").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="type">type</a> : {1, 2, 3, 4}, optional</dt>
+<dd>
+                <div id="548e3a07a714438ea1073cb0c0bafdf7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Type of the DST (see Notes). Default type is 2."}], "type": "paragraph"});
+            document.getElementById("548e3a07a714438ea1073cb0c0bafdf7").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="s">s</a> : int or array_like of ints or None, optional</dt>
+<dd>
+                <div id="affe3b55ee4a4af0b0a061bdceab7213"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The shape of the result.  If both "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "s", "type": "RefInfo", "version": null}, "type": "Link", "value": "s"}, {"type": "text", "value": " and "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "axes", "type": "RefInfo", "version": null}, "type": "Link", "value": "axes"}, {"type": "text", "value": " (see below) are None, "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "s", "type": "RefInfo", "version": null}, "type": "Link", "value": "s"}, {"type": "text", "value": " is "}, {"type": "inlineCode", "value": "x.shape"}, {"type": "text", "value": "; if "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "s", "type": "RefInfo", "version": null}, "type": "Link", "value": "s"}, {"type": "text", "value": " is None but "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "axes", "type": "RefInfo", "version": null}, "type": "Link", "value": "axes"}, {"type": "text", "value": " is not None, then "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "s", "type": "RefInfo", "version": null}, "type": "Link", "value": "s"}, {"type": "text", "value": " is "}, {"type": "inlineCode", "value": "numpy.take(x.shape, axes, axis=0)"}, {"type": "text", "value": ". If "}, {"type": "inlineCode", "value": "s[i] \u003e x.shape[i]"}, {"type": "text", "value": ", the ith dimension is padded with zeros. If "}, {"type": "inlineCode", "value": "s[i] \u003c x.shape[i]"}, {"type": "text", "value": ", the ith dimension is truncated to length "}, {"type": "inlineCode", "value": "s[i]"}, {"type": "text", "value": ". If any element of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "s", "type": "RefInfo", "version": null}, "type": "Link", "value": "s"}, {"type": "text", "value": " is -1, the size of the corresponding dimension of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": " is used."}], "type": "paragraph"});
+            document.getElementById("affe3b55ee4a4af0b0a061bdceab7213").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="axes">axes</a> : int or array_like of ints or None, optional</dt>
+<dd>
+                <div id="af2aa2c215214abe97d0cc318a7489c4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Axes over which the IDST is computed. If not given, the last "}, {"type": "inlineCode", "value": "len(s)"}, {"type": "text", "value": " axes are used, or all axes if "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "s", "type": "RefInfo", "version": null}, "type": "Link", "value": "s"}, {"type": "text", "value": " is also not specified."}], "type": "paragraph"});
+            document.getElementById("af2aa2c215214abe97d0cc318a7489c4").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="norm">norm</a> : {&#34;backward&#34;, &#34;ortho&#34;, &#34;forward&#34;}, optional</dt>
+<dd>
+                <div id="535cf47fa92445ffb4083b22e3515200"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Normalization mode (see Notes). Default is \"backward\"."}], "type": "paragraph"});
+            document.getElementById("535cf47fa92445ffb4083b22e3515200").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="overwrite_x">overwrite_x</a> : bool, optional</dt>
+<dd>
+                <div id="12eb35587fd543dcac9bade6f30c3baa"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If True, the contents of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": " can be destroyed; the default is False."}], "type": "paragraph"});
+            document.getElementById("12eb35587fd543dcac9bade6f30c3baa").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="workers">workers</a> : int, optional</dt>
+<dd>
+                <div id="17e811ae7e7742efa0dbfa549ba71dc7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Maximum number of workers to use for parallel computation. If negative, the value wraps around from "}, {"type": "inlineCode", "value": "os.cpu_count()"}, {"type": "text", "value": ". See "}, {"type": "Verbatim", "value": ["~scipy.fft.fft"]}, {"type": "text", "value": " for more details."}], "type": "paragraph"});
+            document.getElementById("17e811ae7e7742efa0dbfa549ba71dc7").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="orthogonalize">orthogonalize</a> : bool, optional</dt>
+<dd>
+                <div id="dc7f7d8a1fbf441abf1c65328870c888"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Whether to use the orthogonalized IDST variant (see Notes). Defaults to "}, {"type": "inlineCode", "value": "True"}, {"type": "text", "value": " when "}, {"type": "inlineCode", "value": "norm=\"ortho\""}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "False"}, {"type": "text", "value": " otherwise."}], "type": "paragraph"});
+            document.getElementById("dc7f7d8a1fbf441abf1c65328870c888").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <div class='admonition'>
+    <div>versionadded 1.8.0</div>
+</div>
+
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="y">y</a> : ndarray of real</dt>
+<dd>
+                <div id="df3da680ba1d4a88bb0580d163118eb0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The transformed input array."}], "type": "paragraph"});
+            document.getElementById("df3da680ba1d4a88bb0580d163118eb0").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="da69d0266f50477b8fc80dcf4d055362"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Return multidimensional Inverse Discrete Sine Transform along the specified axes."}], "type": "paragraph"});
+            document.getElementById("da69d0266f50477b8fc80dcf4d055362").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.fft._realtransforms.dstn.html" class='exists'>dstn</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="e7a51be1a1c14199a0b3b8761146e898"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "multidimensional DST"});
+            document.getElementById("e7a51be1a1c14199a0b3b8761146e898").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">fft</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">dstn</span><span class="">,</span><span class=""> </span><span class="">idstn</span><br><span class='nsl'>...&nbsp;</span><span class="">rng</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">random</span><span class="o">.</span><span class="">default_rng</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">y</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">rng</span><span class="o">.</span><span class="">standard_normal</span><span class="">(</span><span class="">(</span><span class="mi">16</span><span class="">,</span><span class=""> </span><span class="mi">16</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">np</span><span class="o">.</span><span class="">allclose</span><span class="">(</span><span class="">y</span><span class="">,</span><span class=""> </span><span class="">idstn</span><span class="">(</span><span class="">dstn</span><span class="">(</span><span class="">y</span><span class="">)</span><span class="">)</span><span class="">)</span>
+True</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.fft._realtransforms.dstn.html" class='exists'>scipy.fft._realtransforms.dstn</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/fft/_realtransforms.py#L203'>/scipy/fft/_realtransforms.py#203</a>
+<br/>
+
+type: &lt;class &#39;uarray._Function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 9.414213562373096, "label": "scipy.fft._realtransforms.idst", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.fft._realtransforms.idst"}, {"id": 2, "val": 9.0, "label": "scipy.fft._realtransforms.dstn", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.fft._realtransforms.dstn"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

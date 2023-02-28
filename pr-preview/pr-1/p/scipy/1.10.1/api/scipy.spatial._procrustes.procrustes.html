@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.spatial.html'>spatial</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.spatial._procrustes.html'>_procrustes</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.spatial._ckdtree.html">_ckdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._distance_pybind.html">_distance_pybind</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._distance_wrap.html">_distance_wrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._geometric_slerp.html">_geometric_slerp</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._hausdorff.html">_hausdorff</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.html">_kdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._plotutils.html">_plotutils</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._procrustes.html">_procrustes</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.html">_qhull</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._spherical_voronoi.html">_spherical_voronoi</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._voronoi.html">_voronoi</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.ckdtree.html">ckdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.html">distance</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.kdtree.html">kdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.qhull.html">qhull</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.transform.html">transform</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.spatial._procrustes.procrustes.html'>procrustes</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.spatial._procrustes.procrustes.html">procrustes</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Raises">Raises</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>procrustes(data1, data2)</code><!-- rendering Extended Summary -->
+                                       <div id="000da37986504653869bfb68c4405954"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Each input matrix is a set of points or vectors (the rows of the matrix). The dimension of the space is the number of columns of each matrix. Given two identically sized matrices, procrustes standardizes both such that:"}], "type": "paragraph"});
+            document.getElementById("000da37986504653869bfb68c4405954").innerHTML = html;
+        }
+        init();
+    </script>
+
+                          <ul>               <li>                               <div id="80e3e87133c74a25bbe04037e402b27d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "Math", "value": "tr(AA^{T}) = 1"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("80e3e87133c74a25bbe04037e402b27d").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="fe2e68746356454f8c07083030e2e3a4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Both sets of points are centered around the origin."}], "type": "paragraph"});
+            document.getElementById("fe2e68746356454f8c07083030e2e3a4").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+
+                               <div id="7390e34fc67044899a1e03e931502d16"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Procrustes (, ) then applies the optimal transform to the second matrix (including scaling/dilation, rotations, and reflections) to minimize "}, {"type": "Math", "value": "M^{2}=\\sum(data1-data2)^{2}"}, {"type": "text", "value": ", or the sum of the squares of the pointwise differences between the two input datasets."}], "type": "paragraph"});
+            document.getElementById("7390e34fc67044899a1e03e931502d16").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="a29646867c154cb2b6a9f7545c2cd4d0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This function was not designed to handle datasets with different numbers of datapoints (rows).  If two data sets have different dimensionality (different number of columns), simply add columns of zeros to the smaller of the two."}], "type": "paragraph"});
+            document.getElementById("a29646867c154cb2b6a9f7545c2cd4d0").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                  <ul>               <li>                               <div id="d9d24c4a847a4f45a79999cd0e496447"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The disparity should not depend on the order of the input matrices, but   the output matrices will, as only the first output matrix is guaranteed   to be scaled such that "}, {"type": "Math", "value": "tr(AA^{T}) = 1"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("d9d24c4a847a4f45a79999cd0e496447").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="5019471a79124c5681832ba46e132c65"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Duplicate data points are generally ok, duplicating a data point will   increase its effect on the procrustes fit."}], "type": "paragraph"});
+            document.getElementById("5019471a79124c5681832ba46e132c65").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="947eb224f56f4439b81e9f7621094741"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The disparity scales as the number of points per input matrix."}], "type": "paragraph"});
+            document.getElementById("947eb224f56f4439b81e9f7621094741").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="data1">data1</a> : array_like</dt>
+<dd>
+                <div id="ac6d62260937413489d8b7dc5a4cac26"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Matrix, n rows represent points in k (columns) space "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "data1", "type": "RefInfo", "version": null}, "type": "Link", "value": "data1"}, {"type": "text", "value": " is the reference data, after it is standardised, the data from "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "data2", "type": "RefInfo", "version": null}, "type": "Link", "value": "data2"}, {"type": "text", "value": " will be transformed to fit the pattern in "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "data1", "type": "RefInfo", "version": null}, "type": "Link", "value": "data1"}, {"type": "text", "value": " (must have \u003e1 unique points)."}], "type": "paragraph"});
+            document.getElementById("ac6d62260937413489d8b7dc5a4cac26").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="data2">data2</a> : array_like</dt>
+<dd>
+                <div id="69d01804378548b9bc1d55e311c74c9c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "n rows of data in k space to be fit to "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "data1", "type": "RefInfo", "version": null}, "type": "Link", "value": "data1"}, {"type": "text", "value": ".  Must be the  same shape "}, {"type": "inlineCode", "value": "(numrows, numcols)"}, {"type": "text", "value": " as data1 (must have \u003e1 unique points)."}], "type": "paragraph"});
+            document.getElementById("69d01804378548b9bc1d55e311c74c9c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Raises">Raises</h3>
+<dl>
+<dt>ValueError</dt>
+<dd>
+                <div id="9a0866c4827a417e90233fbe1ee8b288"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If the input arrays are not two-dimensional. If the shape of the input arrays is different. If the input arrays have zero columns or zero rows."}], "type": "paragraph"});
+            document.getElementById("9a0866c4827a417e90233fbe1ee8b288").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="mtx1">mtx1</a> : array_like</dt>
+<dd>
+                <div id="30e8f85aa86241099f50efe21bd1d0ec"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A standardized version of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "data1", "type": "RefInfo", "version": null}, "type": "Link", "value": "data1"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("30e8f85aa86241099f50efe21bd1d0ec").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="mtx2">mtx2</a> : array_like</dt>
+<dd>
+                <div id="a7912db071d74b3a89cca3c2642b414f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The orientation of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "data2", "type": "RefInfo", "version": null}, "type": "Link", "value": "data2"}, {"type": "text", "value": " that best fits "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "data1", "type": "RefInfo", "version": null}, "type": "Link", "value": "data1"}, {"type": "text", "value": ". Centered, but not necessarily "}, {"type": "Math", "value": "tr(AA^{T}) = 1"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("a7912db071d74b3a89cca3c2642b414f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="disparity">disparity</a> : float</dt>
+<dd>
+                <div id="ff728cb0efd04fdb803c921896c59768"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "Math", "value": "M^{2}"}, {"type": "text", "value": " as defined above."}], "type": "paragraph"});
+            document.getElementById("ff728cb0efd04fdb803c921896c59768").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="347a1628698b4d12a29cfb0aa4f0a32a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Procrustes analysis, a similarity test for two data sets."}], "type": "paragraph"});
+            document.getElementById("347a1628698b4d12a29cfb0aa4f0a32a").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.linalg._procrustes.orthogonal_procrustes.html" class='exists'>scipy.linalg.orthogonal_procrustes</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.spatial.distance.directed_hausdorff.html" class='exists'>scipy.spatial.distance.directed_hausdorff</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="1649fa329d704180ba091b7d3b74445c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "Another similarity test for two data sets"});
+            document.getElementById("1649fa329d704180ba091b7d3b74445c").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">spatial</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">procrustes</span>
+</pre>
+            
+                           The matrix ``b`` is a rotated, shifted, scaled and mirrored version of
+``a`` here:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">a</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">d</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">b</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="">[</span><span class="mi">4</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mi">2</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">4</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mi">4</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">4</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mi">6</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mi">6</span><span class="">]</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">d</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">mtx1</span><span class="">,</span><span class=""> </span><span class="">mtx2</span><span class="">,</span><span class=""> </span><span class="">disparity</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">procrustes</span><span class="">(</span><span class="">a</span><span class="">,</span><span class=""> </span><span class="">b</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="nb">round</span><span class="">(</span><span class="">disparity</span><span class="">)</span>
+0.0</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.spatial.distance.directed_hausdorff.html" class='exists'>scipy.spatial.distance.directed_hausdorff</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/spatial/_procrustes.py#L15'>/scipy/spatial/_procrustes.py#15</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 9.0, "label": "scipy.spatial.distance.directed_hausdorff", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.spatial.distance.directed_hausdorff"}, {"id": 2, "val": 9.0, "label": "scipy.linalg._procrustes.orthogonal_procrustes", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.linalg._procrustes.orthogonal_procrustes"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

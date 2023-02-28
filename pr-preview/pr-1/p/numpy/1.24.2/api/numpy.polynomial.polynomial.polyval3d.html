@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=numpy>numpy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/numpy/1.24.2/api/numpy.html'>1.24.2</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">1.24.2</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/numpy/1.24.2/api/numpy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/numpy/1.24.2/api/numpy.html">API</a>
+                        <a href="/p/numpy/1.24.2/gallery">Gallery</a>
+                        <a href="/p/numpy/1.24.2/examples">Examples</a>
+                        <a href="/p/numpy/1.24.2/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='numpy.html'>numpy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='numpy.polynomial.html'>polynomial</a>.                            <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.polynomial._polybase.html">_polybase</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.chebyshev.html">chebyshev</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.hermite.html">hermite</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.hermite_e.html">hermite_e</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.laguerre.html">laguerre</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.legendre.html">legendre</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.html">polynomial</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polyutils.html">polyutils</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.set_default_printstyle.html">set_default_printstyle</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='numpy.polynomial.polyval3d.html'>polyval3d</a>                            <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.Polynomial.html">Polynomial</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyadd.html">polyadd</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polycompanion.html">polycompanion</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyder.html">polyder</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polydiv.html">polydiv</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyfit.html">polyfit</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyfromroots.html">polyfromroots</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polygrid2d.html">polygrid2d</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polygrid3d.html">polygrid3d</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyint.html">polyint</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyline.html">polyline</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polymul.html">polymul</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polymulx.html">polymulx</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polypow.html">polypow</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyroots.html">polyroots</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polysub.html">polysub</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyval.html">polyval</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyval2d.html">polyval2d</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyval3d.html">polyval3d</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyvalfromroots.html">polyvalfromroots</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyvander.html">polyvander</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyvander2d.html">polyvander2d</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyvander3d.html">polyvander3d</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/numpy/1.24.2/img/numpy_logo.png"/>
+    <a href="#">numpy</a>
+    <a href="#">1.24.2</a>
+        <a class='external'  href="https://pypi.org/project/numpy">Pypi</a>
+        <a class='external' href="https://github.com/numpy/numpy">GitHub</a>
+        <a class='external' href="https://numpy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://numpy.org/doc/1.22/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>polyval3d(x, y, z, c)</code><!-- rendering Extended Summary -->
+                                       <div id="344d5f15cbd544a388091c6cf1fad1d9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This function returns the values:"}], "type": "paragraph"});
+            document.getElementById("344d5f15cbd544a388091c6cf1fad1d9").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$p(x,y,z) = \sum_{i,j,k} c_{i,j,k} * x^i * y^j * z^k$$</span>
+
+                               <div id="e717b50e064944ea88eb411c278b120e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The parameters "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": ", "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "y", "type": "RefInfo", "version": null}, "type": "Link", "value": "y"}, {"type": "text", "value": ", and "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "z", "type": "RefInfo", "version": null}, "type": "Link", "value": "z"}, {"type": "text", "value": " are converted to arrays only if they are tuples or a lists, otherwise they are treated as a scalars and they must have the same shape after conversion. In either case, either "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": ", "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "y", "type": "RefInfo", "version": null}, "type": "Link", "value": "y"}, {"type": "text", "value": ", and "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "z", "type": "RefInfo", "version": null}, "type": "Link", "value": "z"}, {"type": "text", "value": " or their elements must support multiplication and addition both with themselves and with the elements of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "c", "type": "RefInfo", "version": null}, "type": "Link", "value": "c"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("e717b50e064944ea88eb411c278b120e").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="ef54b4475d7145aaa0a5d1a9fb1e0ce7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "c", "type": "RefInfo", "version": null}, "type": "Link", "value": "c"}, {"type": "text", "value": " has fewer than 3 dimensions, ones are implicitly appended to its shape to make it 3-D. The shape of the result will be c.shape[3:] + x.shape."}], "type": "paragraph"});
+            document.getElementById("ef54b4475d7145aaa0a5d1a9fb1e0ce7").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                   <div class='admonition'>
+    <div>versionadded 1.7.0</div>
+</div>
+
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="x, y, z">x, y, z</a> : array_like, compatible object</dt>
+<dd>
+                <div id="7352322b0cee451c95f3726ae0f8fa96"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The three dimensional series is evaluated at the points "}, {"domain": null, "role": null, "type": "Directive", "value": "(x, y, z)"}, {"type": "text", "value": ", where "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": ", "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "y", "type": "RefInfo", "version": null}, "type": "Link", "value": "y"}, {"type": "text", "value": ", and "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "z", "type": "RefInfo", "version": null}, "type": "Link", "value": "z"}, {"type": "text", "value": " must have the same shape.  If any of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": ", "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "y", "type": "RefInfo", "version": null}, "type": "Link", "value": "y"}, {"type": "text", "value": ", or "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "z", "type": "RefInfo", "version": null}, "type": "Link", "value": "z"}, {"type": "text", "value": " is a list or tuple, it is first converted to an ndarray, otherwise it is left unchanged and if it isn\u0027t an ndarray it is  treated as a scalar."}], "type": "paragraph"});
+            document.getElementById("7352322b0cee451c95f3726ae0f8fa96").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="c">c</a> : array_like</dt>
+<dd>
+                <div id="d84123d8cbcb48a6bf6c1dbe5fc47ca0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Array of coefficients ordered so that the coefficient of the term of multi-degree i,j,k is contained in "}, {"type": "inlineCode", "value": "c[i,j,k]"}, {"type": "text", "value": ". If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "c", "type": "RefInfo", "version": null}, "type": "Link", "value": "c"}, {"type": "text", "value": " has dimension greater than 3 the remaining indices enumerate multiple sets of coefficients."}], "type": "paragraph"});
+            document.getElementById("d84123d8cbcb48a6bf6c1dbe5fc47ca0").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="values">values</a> : ndarray, compatible object</dt>
+<dd>
+                <div id="f0c308a4a15a427da709e7234828faa6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The values of the multidimensional polynomial on points formed with triples of corresponding values from "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": ", "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "y", "type": "RefInfo", "version": null}, "type": "Link", "value": "y"}, {"type": "text", "value": ", and "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "z", "type": "RefInfo", "version": null}, "type": "Link", "value": "z"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("f0c308a4a15a427da709e7234828faa6").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="8113dbe491744b148f27d6ebb22024ca"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Evaluate a 3-D polynomial at points (x, y, z)."}], "type": "paragraph"});
+            document.getElementById("8113dbe491744b148f27d6ebb22024ca").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polygrid2d.html" class='exists'>polygrid2d</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polygrid3d.html" class='exists'>polygrid3d</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/numpy/1.24.2/api/numpy.polyval.html" class='exists'>polyval</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyval2d.html" class='exists'>polyval2d</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyvander2d.html" class='exists'>numpy.polynomial.polynomial.polyvander2d</a></code>
+        <code><a link href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polygrid3d.html" class='exists'>numpy.polynomial.polynomial.polygrid3d</a></code>
+        <code><a link href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyvander3d.html" class='exists'>numpy.polynomial.polynomial.polyvander3d</a></code>
+        <code><a link href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyval2d.html" class='exists'>numpy.polynomial.polynomial.polyval2d</a></code>
+        <code><a link href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polygrid2d.html" class='exists'>numpy.polynomial.polynomial.polygrid2d</a></code>
+        <code><a link href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyval.html" class='exists'>numpy.polynomial.polynomial.polyval</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/numpy/numpy/blob/v1.24.2//numpy/polynomial/polynomial.py#L951'>/numpy/polynomial/polynomial.py#951</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 10.0, "label": "numpy.polynomial.polynomial.polygrid3d", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polygrid3d"}, {"id": 2, "val": 9.732050807568877, "label": "numpy.polynomial.polynomial.polyvander3d", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyvander3d"}, {"id": 3, "val": 11.74165738677394, "label": "numpy.polyval", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.polyval"}, {"id": 4, "val": 9.0, "label": "numpy.polynomial.polynomial.polyvander2d", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyvander2d"}, {"id": 5, "val": 10.449489742783179, "label": "numpy.polynomial.polynomial.polyval2d", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyval2d"}, {"id": 6, "val": 8.0, "label": "numpy.polynomial.polynomial.polyval", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyval"}, {"id": 7, "val": 10.0, "label": "numpy.polynomial.polynomial.polygrid2d", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polygrid2d"}], "links": [{"source": 3, "target": 1, "id": 3}, {"source": 3, "target": 5, "id": 10}, {"source": 3, "target": 7, "id": 12}, {"source": 7, "target": 6, "id": 16}, {"source": 7, "target": 5, "id": 17}, {"source": 7, "target": 1, "id": 18}, {"source": 1, "target": 6, "id": 20}, {"source": 1, "target": 7, "id": 21}, {"source": 1, "target": 5, "id": 22}, {"source": 2, "target": 4, "id": 25}, {"source": 5, "target": 4, "id": 26}, {"source": 5, "target": 1, "id": 27}, {"source": 5, "target": 2, "id": 28}, {"source": 5, "target": 7, "id": 30}, {"source": 5, "target": 6, "id": 31}]};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

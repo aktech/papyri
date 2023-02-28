@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.ndimage.html'>ndimage</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.ndimage._measurements.html'>_measurements</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.html">_filters</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._fourier.html">_fourier</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._interpolation.html">_interpolation</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.html">_measurements</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._morphology.html">_morphology</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._nd_image.html">_nd_image</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._ni_docstrings.html">_ni_docstrings</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._ni_label.html">_ni_label</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._ni_support.html">_ni_support</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.filters.html">filters</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.fourier.html">fourier</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.interpolation.html">interpolation</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.measurements.html">measurements</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.morphology.html">morphology</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.ndimage._measurements.maximum.html'>maximum</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._measurements._safely_castable_to_int.html">_safely_castable_to_int</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._measurements._select.html">_select</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._measurements._stats.html">_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.center_of_mass.html">center_of_mass</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.extrema.html">extrema</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.find_objects.html">find_objects</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.histogram.html">histogram</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.label.html">label</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.labeled_comprehension.html">labeled_comprehension</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.maximum.html">maximum</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.maximum_position.html">maximum_position</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.mean.html">mean</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.median.html">median</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.minimum.html">minimum</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.minimum_position.html">minimum_position</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.standard_deviation.html">standard_deviation</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.sum.html">sum</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.sum_labels.html">sum_labels</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.value_indices.html">value_indices</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.variance.html">variance</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.watershed_ift.html">watershed_ift</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>maximum(input, labels=None, index=None)</code><!-- rendering Extended Summary -->
+        <h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="175e946501a246519b260504c9927458"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The function returns a Python list and not a NumPy array, use "}, {"domain": null, "role": null, "type": "Directive", "value": "np.array"}, {"type": "text", "value": " to convert the list to an array."}], "type": "paragraph"});
+            document.getElementById("175e946501a246519b260504c9927458").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="input">input</a> : array_like</dt>
+<dd>
+                <div id="a9ac170d6d8d49f6bedc7b0a3121f1b6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Array_like of values. For each region specified by "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "labels", "type": "RefInfo", "version": null}, "type": "Link", "value": "labels"}, {"type": "text", "value": ", the maximal values of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "input", "type": "RefInfo", "version": null}, "type": "Link", "value": "input"}, {"type": "text", "value": " over the region is computed."}], "type": "paragraph"});
+            document.getElementById("a9ac170d6d8d49f6bedc7b0a3121f1b6").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="labels">labels</a> : array_like, optional</dt>
+<dd>
+                <div id="a205122c07974db08f11b5b8f247d621"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "An array of integers marking different regions over which the maximum value of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "input", "type": "RefInfo", "version": null}, "type": "Link", "value": "input"}, {"type": "text", "value": " is to be computed. "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "labels", "type": "RefInfo", "version": null}, "type": "Link", "value": "labels"}, {"type": "text", "value": " must have the same shape as "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "input", "type": "RefInfo", "version": null}, "type": "Link", "value": "input"}, {"type": "text", "value": ". If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "labels", "type": "RefInfo", "version": null}, "type": "Link", "value": "labels"}, {"type": "text", "value": " is not specified, the maximum over the whole array is returned."}], "type": "paragraph"});
+            document.getElementById("a205122c07974db08f11b5b8f247d621").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="index">index</a> : array_like, optional</dt>
+<dd>
+                <div id="ff7b6f0590e04590ac895a97f757dce2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A list of region labels that are taken into account for computing the maxima. If index is None, the maximum over all elements where "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "labels", "type": "RefInfo", "version": null}, "type": "Link", "value": "labels"}, {"type": "text", "value": " is non-zero is returned."}], "type": "paragraph"});
+            document.getElementById("ff7b6f0590e04590ac895a97f757dce2").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="output">output</a> : float or list of floats</dt>
+<dd>
+                <div id="1eafd9a13b684797aad1149433946275"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "List of maxima of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "input", "type": "RefInfo", "version": null}, "type": "Link", "value": "input"}, {"type": "text", "value": " over the regions determined by "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "labels", "type": "RefInfo", "version": null}, "type": "Link", "value": "labels"}, {"type": "text", "value": " and whose index is in "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "index", "type": "RefInfo", "version": null}, "type": "Link", "value": "index"}, {"type": "text", "value": ". If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "index", "type": "RefInfo", "version": null}, "type": "Link", "value": "index"}, {"type": "text", "value": " or "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "labels", "type": "RefInfo", "version": null}, "type": "Link", "value": "labels"}, {"type": "text", "value": " are not specified, a float is returned: the maximal value of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "input", "type": "RefInfo", "version": null}, "type": "Link", "value": "input"}, {"type": "text", "value": " if "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "labels", "type": "RefInfo", "version": null}, "type": "Link", "value": "labels"}, {"type": "text", "value": " is None, and the maximal value of elements where "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "labels", "type": "RefInfo", "version": null}, "type": "Link", "value": "labels"}, {"type": "text", "value": " is greater than zero if "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "index", "type": "RefInfo", "version": null}, "type": "Link", "value": "index"}, {"type": "text", "value": " is None."}], "type": "paragraph"});
+            document.getElementById("1eafd9a13b684797aad1149433946275").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="412ac69391594a36b41d337335464bbe"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Calculate the maximum of the values of an array over labeled regions."}], "type": "paragraph"});
+            document.getElementById("412ac69391594a36b41d337335464bbe").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.extrema.html" class='exists'>extrema</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.label.html" class='exists'>label</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.maximum_position.html" class='exists'>maximum_position</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.mean.html" class='exists'>mean</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.median.html" class='exists'>median</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.minimum.html" class='exists'>minimum</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.standard_deviation.html" class='exists'>standard_deviation</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.sum.html" class='exists'>sum</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.variance.html" class='exists'>variance</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="">a</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">arange</span><span class="">(</span><span class="mi">16</span><span class="">)</span><span class="o">.</span><span class="">reshape</span><span class="">(</span><span class="">(</span><span class="mi">4</span><span class="">,</span><span class="mi">4</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">a</span>
+array([[ 0,  1,  2,  3],
+       [ 4,  5,  6,  7],
+       [ 8,  9, 10, 11],
+       [12, 13, 14, 15]])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">labels</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">zeros_like</span><span class="">(</span><span class="">a</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">labels</span><span class="">[</span><span class="">:</span><span class="mi">2</span><span class="">,</span><span class="">:</span><span class="mi">2</span><span class="">]</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="mi">1</span><br><span class='nsl'>...&nbsp;</span><span class="">labels</span><span class="">[</span><span class="mi">2</span><span class="">:</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">:</span><span class="mi">3</span><span class="">]</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="mi">2</span><br><span class='nsl'>...&nbsp;</span><span class="">labels</span>
+array([[1, 1, 0, 0],
+       [1, 1, 0, 0],
+       [0, 2, 2, 0],
+       [0, 2, 2, 0]])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">ndimage</span><br><span class='nsl'>...&nbsp;</span><span class="">ndimage</span><span class="o">.</span><span class="">maximum</span><span class="">(</span><span class="">a</span><span class="">)</span>
+15.0</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">ndimage</span><span class="o">.</span><span class="">maximum</span><span class="">(</span><span class="">a</span><span class="">,</span><span class=""> </span><span class="">labels</span><span class="o">=</span><span class="">labels</span><span class="">,</span><span class=""> </span><span class="">index</span><span class="o">=</span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class="mi">2</span><span class="">]</span><span class="">)</span>
+[5.0, 14.0]</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">ndimage</span><span class="o">.</span><span class="">maximum</span><span class="">(</span><span class="">a</span><span class="">,</span><span class=""> </span><span class="">labels</span><span class="o">=</span><span class="">labels</span><span class="">)</span>
+14.0</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">b</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">              </span><span class="">[</span><span class="mi">5</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">              </span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">7</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">              </span><span class="">[</span><span class="mi">9</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">labels</span><span class="">,</span><span class=""> </span><span class="">labels_nb</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">ndimage</span><span class="o">.</span><span class="">label</span><span class="">(</span><span class="">b</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">labels</span>
+array([[1, 1, 0, 0],
+       [1, 1, 0, 2],
+       [0, 0, 0, 2],
+       [3, 3, 0, 0]])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">ndimage</span><span class="o">.</span><span class="">maximum</span><span class="">(</span><span class="">b</span><span class="">,</span><span class=""> </span><span class="">labels</span><span class="o">=</span><span class="">labels</span><span class="">,</span><span class=""> </span><span class="">index</span><span class="o">=</span><span class="">np</span><span class="o">.</span><span class="">arange</span><span class="">(</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="">labels_nb</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="mi">1</span><span class="">)</span><span class="">)</span>
+[5.0, 7.0, 9.0]</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.extrema.html" class='exists'>scipy.ndimage._measurements.extrema</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.standard_deviation.html" class='exists'>scipy.ndimage._measurements.standard_deviation</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.median.html" class='exists'>scipy.ndimage._measurements.median</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.mean.html" class='exists'>scipy.ndimage._measurements.mean</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.value_indices.html" class='exists'>scipy.ndimage._measurements.value_indices</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.minimum.html" class='exists'>scipy.ndimage._measurements.minimum</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.variance.html" class='exists'>scipy.ndimage._measurements.variance</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/ndimage/_measurements.py#L1089'>/scipy/ndimage/_measurements.py#1089</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 10.64575131106459, "label": "scipy.ndimage._measurements.sum", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.ndimage._measurements.sum"}, {"id": 2, "val": 10.64575131106459, "label": "scipy.ndimage._measurements.mean", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.ndimage._measurements.mean"}, {"id": 3, "val": 10.82842712474619, "label": "scipy.ndimage._measurements.standard_deviation", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.ndimage._measurements.standard_deviation"}, {"id": 4, "val": 10.0, "label": "scipy.ndimage._measurements.maximum_position", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.ndimage._measurements.maximum_position"}, {"id": 5, "val": 10.449489742783179, "label": "scipy.ndimage._measurements.median", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.ndimage._measurements.median"}, {"id": 6, "val": 10.82842712474619, "label": "scipy.ndimage._measurements.variance", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.ndimage._measurements.variance"}, {"id": 7, "val": 8.0, "label": "scipy.ndimage._measurements.value_indices", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.ndimage._measurements.value_indices"}, {"id": 8, "val": 11.3166247903554, "label": "scipy.ndimage._measurements.label", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.ndimage._measurements.label"}, {"id": 9, "val": 10.82842712474619, "label": "scipy.ndimage._measurements.extrema", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.ndimage._measurements.extrema"}, {"id": 10, "val": 10.82842712474619, "label": "scipy.ndimage._measurements.minimum", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.ndimage._measurements.minimum"}], "links": [{"source": 9, "target": 3, "id": 0}, {"source": 9, "target": 5, "id": 2}, {"source": 9, "target": 7, "id": 4}, {"source": 9, "target": 10, "id": 5}, {"source": 9, "target": 6, "id": 6}, {"source": 9, "target": 4, "id": 7}, {"source": 3, "target": 5, "id": 9}, {"source": 3, "target": 2, "id": 10}, {"source": 3, "target": 7, "id": 12}, {"source": 3, "target": 10, "id": 13}, {"source": 3, "target": 6, "id": 14}, {"source": 3, "target": 4, "id": 15}, {"source": 5, "target": 7, "id": 19}, {"source": 5, "target": 10, "id": 20}, {"source": 5, "target": 4, "id": 21}, {"source": 2, "target": 5, "id": 24}, {"source": 2, "target": 7, "id": 26}, {"source": 2, "target": 10, "id": 27}, {"source": 2, "target": 4, "id": 28}, {"source": 10, "target": 9, "id": 29}, {"source": 10, "target": 3, "id": 30}, {"source": 10, "target": 5, "id": 32}, {"source": 10, "target": 2, "id": 33}, {"source": 10, "target": 6, "id": 35}, {"source": 10, "target": 4, "id": 36}, {"source": 6, "target": 3, "id": 37}, {"source": 6, "target": 5, "id": 39}, {"source": 6, "target": 2, "id": 40}, {"source": 6, "target": 7, "id": 42}, {"source": 6, "target": 10, "id": 43}, {"source": 6, "target": 4, "id": 44}, {"source": 8, "target": 3, "id": 46}, {"source": 8, "target": 5, "id": 49}, {"source": 8, "target": 2, "id": 50}, {"source": 8, "target": 7, "id": 52}, {"source": 8, "target": 10, "id": 53}, {"source": 8, "target": 6, "id": 54}, {"source": 8, "target": 4, "id": 55}, {"source": 4, "target": 9, "id": 56}, {"source": 1, "target": 5, "id": 61}, {"source": 1, "target": 2, "id": 62}, {"source": 1, "target": 7, "id": 64}, {"source": 1, "target": 10, "id": 65}, {"source": 1, "target": 4, "id": 66}]};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.sparse.html'>sparse</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" >+</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.sparse._arrays.html">_arrays</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._base.html">_base</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._bsr.html">_bsr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._compressed.html">_compressed</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._construct.html">_construct</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._coo.html">_coo</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._csc.html">_csc</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._csparsetools.html">_csparsetools</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._csr.html">_csr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._data.html">_data</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._dia.html">_dia</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._dok.html">_dok</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._extract.html">_extract</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._index.html">_index</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._lil.html">_lil</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._matrix_io.html">_matrix_io</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._sparsetools.html">_sparsetools</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._sputils.html">_sputils</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.base.html">base</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.bsr.html">bsr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.compressed.html">compressed</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.construct.html">construct</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.coo.html">coo</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csc.html">csc</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csgraph.html">csgraph</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csr.html">csr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.data.html">data</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.dia.html">dia</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.dok.html">dok</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.extract.html">extract</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.lil.html">lil</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.sparsetools.html">sparsetools</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.sputils.html">sputils</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<!-- rendering Extended Summary -->
+        <!-- rendering Notes -->
+        <!-- rendering Summary -->
+                                       <div id="787305ee556548bfb0a5daa66a01fac1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "To remove in the future \u2013\u2013 scipy.sparse"}], "type": "paragraph"});
+            document.getElementById("787305ee556548bfb0a5daa66a01fac1").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h1>Sparse matrices (:mod:`scipy.sparse`)</h1>
+               <pre class='not-implemented'>
+.. currentmodule:: scipy.sparse
+    </pre>
+
+
+                               <div id="d57a198f0aab42e499f7ea20eeb0e7a8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "SciPy 2-D sparse array package for numeric data."}], "type": "paragraph"});
+            document.getElementById("d57a198f0aab42e499f7ea20eeb0e7a8").innerHTML = html;
+        }
+        init();
+    </script>
+
+                           <div class='admonition'>
+    <div>note </div>
+                        <div id="2fcd09ef05f94354bb59a5928af97f15"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This package is switching to an array interface, compatible with NumPy arrays, from the older matrix interface.  We recommend that you use the array objects ("}, {"domain": null, "role": null, "type": "Directive", "value": "bsr_array"}, {"type": "text", "value": ", "}, {"domain": null, "role": null, "type": "Directive", "value": "coo_array"}, {"type": "text", "value": ", etc.) for all new work."}], "type": "paragraph"});
+            document.getElementById("2fcd09ef05f94354bb59a5928af97f15").innerHTML = html;
+        }
+        init();
+    </script>
+
+                        <div id="e2f0000cf42244cd81b7fcbc5b3a1992"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "When using the array interface, please note that:"}], "type": "paragraph"});
+            document.getElementById("e2f0000cf42244cd81b7fcbc5b3a1992").innerHTML = html;
+        }
+        init();
+    </script>
+
+                   <ul>               <li>                               <div id="8e06c90db2ff44d286d7a6625c76332e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "x * y"}, {"type": "text", "value": " no longer performs matrix multiplication, but   element-wise multiplication (just like with NumPy arrays).  To   make code work with both arrays and matrices, use "}, {"type": "inlineCode", "value": "x @ y"}, {"type": "text", "value": " for   matrix multiplication."}], "type": "paragraph"});
+            document.getElementById("8e06c90db2ff44d286d7a6625c76332e").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="cef4f09a95ae41a083ea65860268f2e5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Operations such as "}, {"domain": null, "role": null, "type": "Directive", "value": "sum"}, {"type": "text", "value": ", that used to produce dense matrices, now   produce arrays, whose multiplication behavior differs similarly."}], "type": "paragraph"});
+            document.getElementById("cef4f09a95ae41a083ea65860268f2e5").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="604306389e9d4f80b193478366b5e8bc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Sparse arrays currently must be two-dimensional.  This also means   that all "}, {"children": [{"type": "text", "value": "slicing"}], "type": "emphasis"}, {"type": "text", "value": " operations on these objects must produce   two-dimensional results, or they will result in an error. This   will be addressed in a future version."}], "type": "paragraph"});
+            document.getElementById("604306389e9d4f80b193478366b5e8bc").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+
+                        <div id="96ebc8563b31400183a13c89df2a4b34"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The construction utilities ("}, {"domain": null, "role": null, "type": "Directive", "value": "eye"}, {"type": "text", "value": ", "}, {"domain": null, "role": null, "type": "Directive", "value": "kron"}, {"type": "text", "value": ", "}, {"domain": null, "role": null, "type": "Directive", "value": "random"}, {"type": "text", "value": ", "}, {"domain": null, "role": null, "type": "Directive", "value": "diags"}, {"type": "text", "value": ", etc.) have not yet been ported, but their results can be wrapped into arrays    "}], "type": "paragraph"});
+            document.getElementById("96ebc8563b31400183a13c89df2a4b34").innerHTML = html;
+        }
+        init();
+    </script>
+
+                        <div id="41a78f80260f439bbd5d9bb85dafcfba"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "A = csr_array(eye(3))"});
+            document.getElementById("41a78f80260f439bbd5d9bb85dafcfba").innerHTML = html;
+        }
+        init();
+    </script>
+
+</div>
+
+
+
+<h2>Contents</h2>
+
+<h3>Sparse array classes</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    bsr_array - Block Sparse Row array
+    coo_array - A sparse array in COOrdinate format
+    csc_array - Compressed Sparse Column array
+    csr_array - Compressed Sparse Row array
+    dia_array - Sparse array with DIAgonal storage
+    dok_array - Dictionary Of Keys based sparse array
+    lil_array - Row-based list of lists sparse array</pre>
+
+<h3>Sparse matrix classes</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    bsr_matrix - Block Sparse Row matrix
+    coo_matrix - A sparse matrix in COOrdinate format
+    csc_matrix - Compressed Sparse Column matrix
+    csr_matrix - Compressed Sparse Row matrix
+    dia_matrix - Sparse matrix with DIAgonal storage
+    dok_matrix - Dictionary Of Keys based sparse matrix
+    lil_matrix - Row-based list of lists sparse matrix
+    spmatrix - Sparse matrix base class</pre>
+
+<h3>Functions</h3>
+                               <div id="7cba8126ee5f407c8f002231aa4b6d10"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Building sparse matrices:"}], "type": "paragraph"});
+            document.getElementById("7cba8126ee5f407c8f002231aa4b6d10").innerHTML = html;
+        }
+        init();
+    </script>
+
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    eye - Sparse MxN matrix whose k-th diagonal is all ones
+    identity - Identity matrix in sparse format
+    kron - kronecker product of two sparse matrices
+    kronsum - kronecker sum of sparse matrices
+    diags - Return a sparse matrix from diagonals
+    spdiags - Return a sparse matrix from diagonals
+    block_diag - Build a block diagonal sparse matrix
+    tril - Lower triangular portion of a matrix in sparse format
+    triu - Upper triangular portion of a matrix in sparse format
+    bmat - Build a sparse matrix from sparse sub-blocks
+    hstack - Stack sparse matrices horizontally (column wise)
+    vstack - Stack sparse matrices vertically (row wise)
+    rand - Random values in a given shape
+    random - Random values in a given shape</pre>
+                               <div id="dc542e738391467fb5818e472ab7373e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Save and load sparse matrices:"}], "type": "paragraph"});
+            document.getElementById("dc542e738391467fb5818e472ab7373e").innerHTML = html;
+        }
+        init();
+    </script>
+
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    save_npz - Save a sparse matrix to a file using ``.npz`` format.
+    load_npz - Load a sparse matrix from a file using ``.npz`` format.</pre>
+                               <div id="27498a4863004044b3af8405894fdf5e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Sparse matrix tools:"}], "type": "paragraph"});
+            document.getElementById("27498a4863004044b3af8405894fdf5e").innerHTML = html;
+        }
+        init();
+    </script>
+
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    find</pre>
+                               <div id="7eb287e3489949b18317ba8a2543f8a2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Identifying sparse matrices:"}], "type": "paragraph"});
+            document.getElementById("7eb287e3489949b18317ba8a2543f8a2").innerHTML = html;
+        }
+        init();
+    </script>
+
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    issparse
+    isspmatrix
+    isspmatrix_csc
+    isspmatrix_csr
+    isspmatrix_bsr
+    isspmatrix_lil
+    isspmatrix_dok
+    isspmatrix_coo
+    isspmatrix_dia</pre>
+
+<h3>Submodules</h3>
+               <pre>.. autosummary:: 
+    csgraph - Compressed sparse graph routines
+    linalg - sparse linear algebra routines</pre>
+
+<h3>Exceptions</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    SparseEfficiencyWarning
+    SparseWarning</pre>
+
+<h2>Usage information</h2>
+                               <div id="9e4639b43a374c3bb5df5b25de057d44"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "There are seven available sparse matrix types:"}], "type": "paragraph"});
+            document.getElementById("9e4639b43a374c3bb5df5b25de057d44").innerHTML = html;
+        }
+        init();
+    </script>
+
+                           <blockquote>           <ol>               <li>                               <div id="a8bbc03306094106929b623dda5163bf"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "csc_matrix: Compressed Sparse Column format"}], "type": "paragraph"});
+            document.getElementById("a8bbc03306094106929b623dda5163bf").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="a86826ffe958442083f1ed649e827ebc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "csr_matrix: Compressed Sparse Row format"}], "type": "paragraph"});
+            document.getElementById("a86826ffe958442083f1ed649e827ebc").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="baa839e9048c44739e3a3b4c2e71b4c8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "bsr_matrix: Block Sparse Row format"}], "type": "paragraph"});
+            document.getElementById("baa839e9048c44739e3a3b4c2e71b4c8").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="115bdad04df0416fb1140d1bd6bd0dbf"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "lil_matrix: List of Lists format"}], "type": "paragraph"});
+            document.getElementById("115bdad04df0416fb1140d1bd6bd0dbf").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="b13d39c1fd204fb29d648abc688260f4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "dok_matrix: Dictionary of Keys format"}], "type": "paragraph"});
+            document.getElementById("b13d39c1fd204fb29d648abc688260f4").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="ad33c324b2f04b57bcb0833fdcde26c8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "coo_matrix: COOrdinate format (aka IJV, triplet format)"}], "type": "paragraph"});
+            document.getElementById("ad33c324b2f04b57bcb0833fdcde26c8").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="5fdfc0b343d645f284590999a816cac1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "dia_matrix: DIAgonal format"}], "type": "paragraph"});
+            document.getElementById("5fdfc0b343d645f284590999a816cac1").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ol>
+</blockquote>
+
+                               <div id="b748d6083f974a049fcc47113ca1ecb9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "To construct a matrix efficiently, use either dok_matrix or lil_matrix. The lil_matrix class supports basic slicing and fancy indexing with a similar syntax to NumPy arrays. As illustrated below, the COO format may also be used to efficiently construct matrices. Despite their similarity to NumPy arrays, it is "}, {"children": [{"type": "text", "value": "strongly discouraged"}], "type": "strong"}, {"type": "text", "value": " to use NumPy functions directly on these matrices because NumPy may not properly convert them for computations, leading to unexpected (and incorrect) results. If you do want to apply a NumPy function to these matrices, first check if SciPy has its own implementation for the given sparse matrix class, or "}, {"children": [{"type": "text", "value": "convert the\nsparse matrix to a NumPy array"}], "type": "strong"}, {"type": "text", "value": " (e.g., using the "}, {"domain": null, "role": null, "type": "Directive", "value": "toarray()"}, {"type": "text", "value": " method of the class) first before applying the method."}], "type": "paragraph"});
+            document.getElementById("b748d6083f974a049fcc47113ca1ecb9").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="25943b7feb344ce1a4263f47650e511e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "To perform manipulations such as multiplication or inversion, first convert the matrix to either CSC or CSR format. The lil_matrix format is row-based, so conversion to CSR is efficient, whereas conversion to CSC is less so."}], "type": "paragraph"});
+            document.getElementById("25943b7feb344ce1a4263f47650e511e").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="a059097b08c244599bfa6f00ed11bc0c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "All conversions among the CSR, CSC, and COO formats are efficient, linear-time operations."}], "type": "paragraph"});
+            document.getElementById("a059097b08c244599bfa6f00ed11bc0c").innerHTML = html;
+        }
+        init();
+    </script>
+
+
+<h3>Matrix vector product</h3>
+                               <div id="d6715b39f25643328ae2fd4f55700bc9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "To do a vector product between a sparse matrix and a vector simply use the matrix "}, {"domain": null, "role": null, "type": "Directive", "value": "dot"}, {"type": "text", "value": " method, as described in its docstring:"}], "type": "paragraph"});
+            document.getElementById("d6715b39f25643328ae2fd4f55700bc9").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="1afa776ac29847d6a24620def116b555"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e import numpy as np\n\u003e\u003e\u003e from scipy.sparse import csr_matrix\n\u003e\u003e\u003e A = csr_matrix([[1, 2, 0], [0, 0, 3], [4, 0, 5]])\n\u003e\u003e\u003e v = np.array([1, 0, -1])\n\u003e\u003e\u003e A.dot(v)\narray([ 1, -3, -1], dtype=int64)"});
+            document.getElementById("1afa776ac29847d6a24620def116b555").innerHTML = html;
+        }
+        init();
+    </script>
+
+                           <div class='admonition'>
+    <div>warning As of NumPy 1.7, `np.dot` is not aware of sparse matrices,</div>
+                        <div id="a769b665a09c4fa48d7f65ee3feb6573"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "therefore using it will result on unexpected results or errors. The corresponding dense array should be obtained first instead:"}], "type": "paragraph"});
+            document.getElementById("a769b665a09c4fa48d7f65ee3feb6573").innerHTML = html;
+        }
+        init();
+    </script>
+
+                        <div id="092b35351ece4efcb96fc7414ad97419"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e np.dot(A.toarray(), v)\narray([ 1, -3, -1], dtype=int64)"});
+            document.getElementById("092b35351ece4efcb96fc7414ad97419").innerHTML = html;
+        }
+        init();
+    </script>
+
+                        <div id="049f35618cf54b839daa8e7ebd9591f0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "but then all the performance advantages would be lost."}], "type": "paragraph"});
+            document.getElementById("049f35618cf54b839daa8e7ebd9591f0").innerHTML = html;
+        }
+        init();
+    </script>
+
+</div>
+
+
+                               <div id="e9d1e50238dd4240b3c839645e251d05"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The CSR format is specially suitable for fast matrix vector products."}], "type": "paragraph"});
+            document.getElementById("e9d1e50238dd4240b3c839645e251d05").innerHTML = html;
+        }
+        init();
+    </script>
+
+
+<h3>Example 1</h3>
+                               <div id="e713cf71a5db42128955f7b4c1c8cd6a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Construct a 1000x1000 lil_matrix and add some values to it:"}], "type": "paragraph"});
+            document.getElementById("e713cf71a5db42128955f7b4c1c8cd6a").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="498f391dda8d43ea9b5e520a2042ffa9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e from scipy.sparse import lil_matrix\n\u003e\u003e\u003e from scipy.sparse.linalg import spsolve\n\u003e\u003e\u003e from numpy.linalg import solve, norm\n\u003e\u003e\u003e from numpy.random import rand"});
+            document.getElementById("498f391dda8d43ea9b5e520a2042ffa9").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="ae4939c66d4e48d695c3eed651b7ac3a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e A = lil_matrix((1000, 1000))\n\u003e\u003e\u003e A[0, :100] = rand(100)\n\u003e\u003e\u003e A[1, 100:200] = A[0, :100]\n\u003e\u003e\u003e A.setdiag(rand(1000))"});
+            document.getElementById("ae4939c66d4e48d695c3eed651b7ac3a").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="3ee39f2f521042c08d1647e4763aa249"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Now convert it to CSR format and solve A x = b for x:"}], "type": "paragraph"});
+            document.getElementById("3ee39f2f521042c08d1647e4763aa249").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="fb417b8c9f9e47e49bc3d252ff457e65"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e A = A.tocsr()\n\u003e\u003e\u003e b = rand(1000)\n\u003e\u003e\u003e x = spsolve(A, b)"});
+            document.getElementById("fb417b8c9f9e47e49bc3d252ff457e65").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="4351b6c9fd184141a417243df5f28623"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Convert it to a dense matrix and solve, and check that the result is the same:"}], "type": "paragraph"});
+            document.getElementById("4351b6c9fd184141a417243df5f28623").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="77f0f72b02764b9795a9592a504960a9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e x_ = solve(A.toarray(), b)"});
+            document.getElementById("77f0f72b02764b9795a9592a504960a9").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="3d36ad0cf5d847c78de7609ac21b7f7c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Now we can compute norm of the error with:"}], "type": "paragraph"});
+            document.getElementById("3d36ad0cf5d847c78de7609ac21b7f7c").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="321d91cdcad445aaa3c711fa9e50bb3a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e err = norm(x-x_)\n\u003e\u003e\u003e err \u003c 1e-10\nTrue"});
+            document.getElementById("321d91cdcad445aaa3c711fa9e50bb3a").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="95f7b9f6f5334c578d2e8e275ab3f073"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "It should be small :)"}], "type": "paragraph"});
+            document.getElementById("95f7b9f6f5334c578d2e8e275ab3f073").innerHTML = html;
+        }
+        init();
+    </script>
+
+
+<h3>Example 2</h3>
+                               <div id="247723d041ae42a9a438cf340cc4ed2b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Construct a matrix in COO format:"}], "type": "paragraph"});
+            document.getElementById("247723d041ae42a9a438cf340cc4ed2b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="4dfb5c2a553e4e9abc61aad95d28b840"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e from scipy import sparse\n\u003e\u003e\u003e from numpy import array\n\u003e\u003e\u003e I = array([0,3,1,0])\n\u003e\u003e\u003e J = array([0,3,1,2])\n\u003e\u003e\u003e V = array([4,5,7,9])\n\u003e\u003e\u003e A = sparse.coo_matrix((V,(I,J)),shape=(4,4))"});
+            document.getElementById("4dfb5c2a553e4e9abc61aad95d28b840").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="d644371eb01943478c99502e73ab06c2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Notice that the indices do not need to be sorted."}], "type": "paragraph"});
+            document.getElementById("d644371eb01943478c99502e73ab06c2").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="6023454646a74f6c98f0fcd08dac0163"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Duplicate (i,j) entries are summed when converting to CSR or CSC."}], "type": "paragraph"});
+            document.getElementById("6023454646a74f6c98f0fcd08dac0163").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="6047e1c9ab7546059b011e99bcfa1d24"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e I = array([0,0,1,3,1,0,0])\n\u003e\u003e\u003e J = array([0,2,1,3,1,0,0])\n\u003e\u003e\u003e V = array([1,1,1,1,1,1,1])\n\u003e\u003e\u003e B = sparse.coo_matrix((V,(I,J)),shape=(4,4)).tocsr()"});
+            document.getElementById("6047e1c9ab7546059b011e99bcfa1d24").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="5908eb13f1204038925f2b69b1ceed6a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This is useful for constructing finite-element stiffness and mass matrices."}], "type": "paragraph"});
+            document.getElementById("5908eb13f1204038925f2b69b1ceed6a").innerHTML = html;
+        }
+        init();
+    </script>
+
+
+<h3>Further details</h3>
+                               <div id="e74897f43b8b490fba0ddb67398b9305"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "CSR column indices are not necessarily sorted. Likewise for CSC row indices. Use the .sorted_indices() and .sort_indices() methods when sorted indices are required (e.g., when passing data to other libraries)."}], "type": "paragraph"});
+            document.getElementById("e74897f43b8b490fba0ddb67398b9305").innerHTML = html;
+        }
+        init();
+    </script>
+
+
+<h3 id="section-Examples">Examples</h3>
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/sparse/__init__.py#L0'>/scipy/sparse/__init__.py#0</a>
+<br/>
+
+type: &lt;class &#39;module&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

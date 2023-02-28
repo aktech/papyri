@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats.html'>stats</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats._stats_py.html'>_stats_py</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.stats._axis_nan_policy.html">_axis_nan_policy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._biasedurn.html">_biasedurn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binned_statistic.html">_binned_statistic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binomtest.html">_binomtest</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._boost.html">_boost</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._common.html">_common</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._constants.html">_constants</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._continuous_distns.html">_continuous_distns</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._covariance.html">_covariance</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._crosstab.html">_crosstab</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._discrete_distns.html">_discrete_distns</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._distn_infrastructure.html">_distn_infrastructure</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._distr_params.html">_distr_params</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._entropy.html">_entropy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._fit.html">_fit</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.html">_hypotests</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._kde.html">_kde</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._ksstats.html">_ksstats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable.html">_levy_stable</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mannwhitneyu.html">_mannwhitneyu</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._morestats.html">_morestats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mstats_basic.html">_mstats_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mstats_extras.html">_mstats_extras</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._multivariate.html">_multivariate</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mvn.html">_mvn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._odds_ratio.html">_odds_ratio</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._page_trend_test.html">_page_trend_test</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.html">_qmc</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc_cy.html">_qmc_cy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._rcont.html">_rcont</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._relative_risk.html">_relative_risk</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling.html">_resampling</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._rvs_sampling.html">_rvs_sampling</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._sobol.html">_sobol</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._statlib.html">_statlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats.html">_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_mstats_common.html">_stats_mstats_common</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.html">_stats_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_pythran.html">_stats_pythran</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._tukeylambda_stats.html">_tukeylambda_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._variation.html">_variation</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._warnings_errors.html">_warnings_errors</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.biasedurn.html">biasedurn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.contingency.html">contingency</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.distributions.html">distributions</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.kde.html">kde</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.morestats.html">morestats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats.html">mstats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats_basic.html">mstats_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats_extras.html">mstats_extras</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mvn.html">mvn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.qmc.html">qmc</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.statlib.html">statlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats._stats_py.pearsonr.html'>pearsonr</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.BrunnerMunzelResult.html">BrunnerMunzelResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.ConfidenceInterval.html">ConfidenceInterval</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.CumfreqResult.html">CumfreqResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.DescribeResult.html">DescribeResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.F_onewayResult.html">F_onewayResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.FriedmanchisquareResult.html">FriedmanchisquareResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.HistogramResult.html">HistogramResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.KruskalResult.html">KruskalResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.KstestResult.html">KstestResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.KurtosistestResult.html">KurtosistestResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.MGCResult.html">MGCResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.ModeResult.html">ModeResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.NormaltestResult.html">NormaltestResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.PearsonRResult.html">PearsonRResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.PearsonRResultBase.html">PearsonRResultBase</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.Power_divergenceResult.html">Power_divergenceResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.RanksumsResult.html">RanksumsResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.RelfreqResult.html">RelfreqResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.RepeatedResults.html">RepeatedResults</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.SigmaclipResult.html">SigmaclipResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.SignificanceResult.html">SignificanceResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.SkewtestResult.html">SkewtestResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.TtestResult.html">TtestResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.TtestResultBase.html">TtestResultBase</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.Ttest_indResult.html">Ttest_indResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._ParallelP.html">_ParallelP</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._alexandergovern_input_validation.html">_alexandergovern_input_validation</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._attempt_exact_2kssamp.html">_attempt_exact_2kssamp</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._broadcast_shapes.html">_broadcast_shapes</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._broadcast_shapes_with_dropped_axis.html">_broadcast_shapes_with_dropped_axis</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._calc_t_stat.html">_calc_t_stat</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._calculate_winsorized_variance.html">_calculate_winsorized_variance</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._cdf_distance.html">_cdf_distance</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._chk2_asarray.html">_chk2_asarray</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._chk_asarray.html">_chk_asarray</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._compute_dminus.html">_compute_dminus</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._compute_dplus.html">_compute_dplus</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._compute_prob_outside_square.html">_compute_prob_outside_square</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._compute_qth_percentile.html">_compute_qth_percentile</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._count.html">_count</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._count_paths_outside_method.html">_count_paths_outside_method</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._create_f_oneway_nan_result.html">_create_f_oneway_nan_result</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._equal_var_ttest_denom.html">_equal_var_ttest_denom</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._euclidean_dist.html">_euclidean_dist</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._first.html">_first</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._get_len.html">_get_len</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._histogram.html">_histogram</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._isconst.html">_isconst</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._m_broadcast_to.html">_m_broadcast_to</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._mad_1d.html">_mad_1d</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._mask_to_limits.html">_mask_to_limits</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._mgc_stat.html">_mgc_stat</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._moment.html">_moment</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._moment_outputs.html">_moment_outputs</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._moment_result_object.html">_moment_result_object</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._normtest_finish.html">_normtest_finish</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._parse_kstest_args.html">_parse_kstest_args</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._pearsonr_fisher_ci.html">_pearsonr_fisher_ci</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._perm_test.html">_perm_test</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._permutation_distribution_t.html">_permutation_distribution_t</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._permutation_ttest.html">_permutation_ttest</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._quiet_nanmean.html">_quiet_nanmean</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._quiet_nanstd.html">_quiet_nanstd</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._shape_with_dropped_axis.html">_shape_with_dropped_axis</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._smooth_mgc_map.html">_smooth_mgc_map</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._square_of_sums.html">_square_of_sums</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._sum_of_squares.html">_sum_of_squares</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._t_confidence_interval.html">_t_confidence_interval</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._threshold_mgc_map.html">_threshold_mgc_map</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._ttest_finish.html">_ttest_finish</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._ttest_ind_from_stats.html">_ttest_ind_from_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._ttest_nans.html">_ttest_nans</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._ttest_trim_var_mean_len.html">_ttest_trim_var_mean_len</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._two_sample_transform.html">_two_sample_transform</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._unequal_var_ttest_denom.html">_unequal_var_ttest_denom</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._validate_distribution.html">_validate_distribution</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._var.html">_var</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.alexandergovern.html">alexandergovern</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.brunnermunzel.html">brunnermunzel</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.chisquare.html">chisquare</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.combine_pvalues.html">combine_pvalues</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.cumfreq.html">cumfreq</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.describe.html">describe</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.energy_distance.html">energy_distance</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.expectile.html">expectile</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.f_oneway.html">f_oneway</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.find_repeats.html">find_repeats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.fisher_exact.html">fisher_exact</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.friedmanchisquare.html">friedmanchisquare</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.gmean.html">gmean</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.gstd.html">gstd</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.gzscore.html">gzscore</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.hmean.html">hmean</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.iqr.html">iqr</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.jarque_bera.html">jarque_bera</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.kendalltau.html">kendalltau</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.kruskal.html">kruskal</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.ks_1samp.html">ks_1samp</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.ks_2samp.html">ks_2samp</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.kstest.html">kstest</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.kurtosis.html">kurtosis</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.kurtosistest.html">kurtosistest</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.median_abs_deviation.html">median_abs_deviation</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.mode.html">mode</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.multiscale_graphcorr.html">multiscale_graphcorr</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.normaltest.html">normaltest</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.obrientransform.html">obrientransform</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.pack_TtestResult.html">pack_TtestResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.pearsonr.html">pearsonr</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.percentileofscore.html">percentileofscore</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.pmean.html">pmean</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.pointbiserialr.html">pointbiserialr</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.power_divergence.html">power_divergence</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.rankdata.html">rankdata</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.ranksums.html">ranksums</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.relfreq.html">relfreq</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.scoreatpercentile.html">scoreatpercentile</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.sem.html">sem</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.sigmaclip.html">sigmaclip</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.skew.html">skew</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.skewtest.html">skewtest</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.spearmanr.html">spearmanr</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.tiecorrect.html">tiecorrect</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.tmax.html">tmax</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.tmean.html">tmean</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.tmin.html">tmin</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.trim1.html">trim1</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.trim_mean.html">trim_mean</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.trimboth.html">trimboth</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.tsem.html">tsem</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.tstd.html">tstd</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.ttest_1samp.html">ttest_1samp</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.ttest_ind.html">ttest_ind</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.ttest_ind_from_stats.html">ttest_ind_from_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.ttest_rel.html">ttest_rel</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.tvar.html">tvar</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.unpack_TtestResult.html">unpack_TtestResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.wasserstein_distance.html">wasserstein_distance</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.weightedtau.html">weightedtau</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.zmap.html">zmap</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.zscore.html">zscore</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-Warns">Warns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>pearsonr(x, y, *, alternative=&#39;two-sided&#39;)</code><!-- rendering Extended Summary -->
+                                       <div id="a6582e96b0934d49b486f79c10b700f1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The Pearson correlation coefficient  measures the linear relationship between two datasets. Like other correlation coefficients, this one varies between -1 and +1 with 0 implying no correlation. Correlations of -1 or +1 imply an exact linear relationship. Positive correlations imply that as x increases, so does y. Negative correlations imply that as x increases, y decreases."}], "type": "paragraph"});
+            document.getElementById("a6582e96b0934d49b486f79c10b700f1").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="8fed65b940864e79809f73cf3a875a6c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This function also performs a test of the null hypothesis that the distributions underlying the samples are uncorrelated and normally distributed. (See Kowalski  for a discussion of the effects of non-normality of the input on the distribution of the correlation coefficient.) The p-value roughly indicates the probability of an uncorrelated system producing datasets that have a Pearson correlation at least as extreme as the one computed from these datasets."}], "type": "paragraph"});
+            document.getElementById("8fed65b940864e79809f73cf3a875a6c").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="ad8ce6f897de4506a1858be458ebc19f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The correlation coefficient is calculated as follows:"}], "type": "paragraph"});
+            document.getElementById("ad8ce6f897de4506a1858be458ebc19f").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$r = \frac{\sum (x - m_x) (y - m_y)}
+         {\sqrt{\sum (x - m_x)^2 \sum (y - m_y)^2}}$$</span>
+
+                               <div id="dc9c57639a3e44c284457164bbd987df"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "where "}, {"type": "Math", "value": "m_x"}, {"type": "text", "value": " is the mean of the vector x and "}, {"type": "Math", "value": "m_y"}, {"type": "text", "value": " is the mean of the vector y."}], "type": "paragraph"});
+            document.getElementById("dc9c57639a3e44c284457164bbd987df").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="3bec4d6e1b59405cb5f68ca9548d10b5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Under the assumption that x and y are drawn from independent normal distributions (so the population correlation coefficient is 0), the probability density function of the sample correlation coefficient r is (, ):"}], "type": "paragraph"});
+            document.getElementById("3bec4d6e1b59405cb5f68ca9548d10b5").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$f(r) = \frac{{(1-r^2)}^{n/2-2}}{\mathrm{B}(\frac{1}{2},\frac{n}{2}-1)}$$</span>
+
+                               <div id="bc67302271b9459b87e6cf099b4f78fc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "where n is the number of samples, and B is the beta function.  This is sometimes referred to as the exact distribution of r.  This is the distribution that is used in "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.stats._stats_py.pearsonr", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "pearsonr"}, {"type": "text", "value": " to compute the p-value. The distribution is a beta distribution on the interval [-1, 1], with equal shape parameters a = b = n/2 - 1.  In terms of SciPy\u0027s implementation of the beta distribution, the distribution of r is      "}], "type": "paragraph"});
+            document.getElementById("bc67302271b9459b87e6cf099b4f78fc").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="97983e055a074868a737d1d6b771a4a1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "dist = scipy.stats.beta(n/2 - 1, n/2 - 1, loc=-1, scale=2)"});
+            document.getElementById("97983e055a074868a737d1d6b771a4a1").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="15afe99246934498a0b7320f3499e6e2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The default p-value returned by "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.stats._stats_py.pearsonr", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "pearsonr"}, {"type": "text", "value": " is a two-sided p-value. For a given sample with correlation coefficient r, the p-value is the probability that abs(r\u0027) of a random sample x\u0027 and y\u0027 drawn from the population with zero correlation would be greater than or equal to abs(r). In terms of the object "}, {"type": "inlineCode", "value": "dist"}, {"type": "text", "value": " shown above, the p-value for a given r and length n can be computed as      "}], "type": "paragraph"});
+            document.getElementById("15afe99246934498a0b7320f3499e6e2").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="15d7bf5c0e3342f5aa7ab72c1e6bb0cf"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "p = 2*dist.cdf(-abs(r))"});
+            document.getElementById("15d7bf5c0e3342f5aa7ab72c1e6bb0cf").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="a5d067063c08443dbd2f64326ee260f3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "When n is 2, the above continuous distribution is not well-defined. One can interpret the limit of the beta distribution as the shape parameters a and b approach a = b = 0 as a discrete distribution with equal probability masses at r = 1 and r = -1.  More directly, one can observe that, given the data x = [x1, x2] and y = [y1, y2], and assuming x1 != x2 and y1 != y2, the only possible values for r are 1 and -1.  Because abs(r\u0027) for any sample x\u0027 and y\u0027 with length 2 will be 1, the two-sided p-value for a sample of length 2 is always 1."}], "type": "paragraph"});
+            document.getElementById("a5d067063c08443dbd2f64326ee260f3").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="4d5c147fd46b4fa496211578f0f5b89f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For backwards compatibility, the object that is returned also behaves like a tuple of length two that holds the statistic and the p-value."}], "type": "paragraph"});
+            document.getElementById("4d5c147fd46b4fa496211578f0f5b89f").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="x">x</a> : (N,) array_like</dt>
+<dd>
+                <div id="7677946c79b648ab8662f333f965297b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Input array."}], "type": "paragraph"});
+            document.getElementById("7677946c79b648ab8662f333f965297b").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="y">y</a> : (N,) array_like</dt>
+<dd>
+                <div id="6848b9206b7c4242b29e03bdc314a843"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Input array."}], "type": "paragraph"});
+            document.getElementById("6848b9206b7c4242b29e03bdc314a843").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="alternative">alternative</a> : {&#39;two-sided&#39;, &#39;greater&#39;, &#39;less&#39;}, optional</dt>
+<dd>
+                <div id="3c68da689f6245faa388a07706b44e5a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Defines the alternative hypothesis. Default is \u0027two-sided\u0027. The following options are available:"}], "type": "paragraph"});
+            document.getElementById("3c68da689f6245faa388a07706b44e5a").innerHTML = html;
+        }
+        init();
+    </script>
+
+           <ul>               <li>                               <div id="870de7f91fd94e5b80b17ed36de01ca8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027two-sided\u0027: the correlation is nonzero"}], "type": "paragraph"});
+            document.getElementById("870de7f91fd94e5b80b17ed36de01ca8").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="11da03e2b2e2434ea2ab315da66b2515"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027less\u0027: the correlation is negative (less than zero)"}], "type": "paragraph"});
+            document.getElementById("11da03e2b2e2434ea2ab315da66b2515").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="6727c2bc502548d68aeba5f5d08bc2d3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027greater\u0027:  the correlation is positive (greater than zero)"}], "type": "paragraph"});
+            document.getElementById("6727c2bc502548d68aeba5f5d08bc2d3").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+
+            <div class='admonition'>
+    <div>versionadded 1.9.0</div>
+</div>
+
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="result">result</a> : `~scipy.stats._result_classes.PearsonRResult`</dt>
+<dd>
+                <div id="6167c753b40a41b491360a085f62ee0e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "An object with the following attributes:"}], "type": "paragraph"});
+            document.getElementById("6167c753b40a41b491360a085f62ee0e").innerHTML = html;
+        }
+        init();
+    </script>
+
+<!-- deflist -->
+           <dl>
+               <dt>                <div id="c95621623a2e48d3a99af1bee6322884"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "statistic"}], "type": "paragraph"});
+            document.getElementById("c95621623a2e48d3a99af1bee6322884").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="df60b1f8f1ad482d9e149d2f244d5534"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "statistic"}], "type": "paragraph"});
+            document.getElementById("df60b1f8f1ad482d9e149d2f244d5534").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="88885523ed8d4eecade4fe9d5a9ae4cd"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "pvalue"}], "type": "paragraph"});
+            document.getElementById("88885523ed8d4eecade4fe9d5a9ae4cd").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="cde49ad36cf44b839959f4d674318d27"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "pvalue"}], "type": "paragraph"});
+            document.getElementById("cde49ad36cf44b839959f4d674318d27").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+                <div id="863e8513b27b4e0d951ffde6725784ec"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The object has the following method:"}], "type": "paragraph"});
+            document.getElementById("863e8513b27b4e0d951ffde6725784ec").innerHTML = html;
+        }
+        init();
+    </script>
+
+<!-- deflist -->
+           <dl>
+               <dt>                <div id="6cffdaec73d746749e586b56d049c4ab"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "confidence_interval(confidence_level=0.95)"}], "type": "paragraph"});
+            document.getElementById("6cffdaec73d746749e586b56d049c4ab").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="355e16489d9d49728496b4405695e244"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This method computes the confidence interval of the correlation     coefficient "}, {"domain": null, "role": null, "type": "Directive", "value": "statistic"}, {"type": "text", "value": " for the given confidence level.     The confidence interval is returned in a "}, {"type": "inlineCode", "value": "namedtuple"}, {"type": "text", "value": " with     fields "}, {"domain": null, "role": null, "type": "Directive", "value": "low"}, {"type": "text", "value": " and "}, {"domain": null, "role": null, "type": "Directive", "value": "high"}, {"type": "text", "value": ".  See the Notes for more details."}], "type": "paragraph"});
+            document.getElementById("355e16489d9d49728496b4405695e244").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="d218fc02281b4a98967c4810adad61d0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Pearson correlation coefficient and p-value for testing non-correlation."}], "type": "paragraph"});
+            document.getElementById("d218fc02281b4a98967c4810adad61d0").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Warns">Warns</h3>
+<dl>
+<dt>`~scipy.stats.ConstantInputWarning`</dt>
+<dd>
+                <div id="15802a3fd52f454aadaf0d2597f6e7da"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Raised if an input is a constant array.  The correlation coefficient is not defined in this case, so "}, {"type": "inlineCode", "value": "np.nan"}, {"type": "text", "value": " is returned."}], "type": "paragraph"});
+            document.getElementById("15802a3fd52f454aadaf0d2597f6e7da").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt>`~scipy.stats.NearConstantInputWarning`</dt>
+<dd>
+                <div id="58586075196743509bc5cb3927be24fa"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Raised if an input is \"nearly\" constant.  The array "}, {"type": "inlineCode", "value": "x"}, {"type": "text", "value": " is considered nearly constant if "}, {"type": "inlineCode", "value": "norm(x - mean(x)) \u003c 1e-13 * abs(mean(x))"}, {"type": "text", "value": ". Numerical errors in the calculation "}, {"type": "inlineCode", "value": "x - mean(x)"}, {"type": "text", "value": " in this case might result in an inaccurate calculation of r."}], "type": "paragraph"});
+            document.getElementById("58586075196743509bc5cb3927be24fa").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.kendalltau.html" class='exists'>kendalltau</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="851f902505fa42608f3c0cf7a323fa34"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "Kendall\u0027s tau, a correlation measure for ordinal data."});
+            document.getElementById("851f902505fa42608f3c0cf7a323fa34").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.spearmanr.html" class='exists'>spearmanr</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="a7a635487ece41f5b6d41599b69308da"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "Spearman rank-order correlation coefficient."});
+            document.getElementById("a7a635487ece41f5b6d41599b69308da").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">stats</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">pearsonr</span><span class="">(</span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">,</span><span class=""> </span><span class="mi">5</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">10</span><span class="">,</span><span class=""> </span><span class="mi">9</span><span class="">,</span><span class=""> </span><span class="mf">2.5</span><span class="">,</span><span class=""> </span><span class="mi">6</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span>
+PearsonRResult(statistic=-0.7426106572325056, pvalue=0.15055580885344558)</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">res</span><span class="o">.</span><span class="">confidence_interval</span><span class="">(</span><span class="">)</span>
+ConfidenceInterval(low=-0.9816918044786463, high=0.40501116769030976)</pre>
+            
+                           There is a linear dependence between x and y if y = a + b*x + e, where
+a,b are constants and e is a random error term, assumed to be independent
+of x. For simplicity, assume that x is standard normal, a=0, b=1 and let
+e follow a normal distribution with mean zero and standard deviation s&gt;0.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">rng</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">random</span><span class="o">.</span><span class="">default_rng</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">s</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="mf">0.5</span><br><span class='nsl'>...&nbsp;</span><span class="">x</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">norm</span><span class="o">.</span><span class="">rvs</span><span class="">(</span><span class="">size</span><span class="o">=</span><span class="mi">500</span><span class="">,</span><span class=""> </span><span class="">random_state</span><span class="o">=</span><span class="">rng</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">e</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">norm</span><span class="o">.</span><span class="">rvs</span><span class="">(</span><span class="">scale</span><span class="o">=</span><span class="">s</span><span class="">,</span><span class=""> </span><span class="">size</span><span class="o">=</span><span class="mi">500</span><span class="">,</span><span class=""> </span><span class="">random_state</span><span class="o">=</span><span class="">rng</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">y</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">x</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="">e</span><br><span class='nsl'>...&nbsp;</span><span class="">stats</span><span class="o">.</span><span class="">pearsonr</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">y</span><span class="">)</span><span class="o">.</span><span class="">statistic</span>
+0.9001942438244763</pre>
+            
+                           This should be close to the exact value given by  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="mi">1</span><span class="o">/</span><span class="">np</span><span class="o">.</span><span class="">sqrt</span><span class="">(</span><span class="mi">1</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="">s</span><span class="o">*</span><span class="o">*</span><span class="mi">2</span><span class="">)</span>
+0.8944271909999159</pre>
+            
+                           For s=0.5, we observe a high level of correlation. In general, a large
+variance of the noise reduces the correlation, while the correlation
+approaches one as the variance of the error goes to zero.  
+            
+                           It is important to keep in mind that no correlation does not imply
+independence unless (x, y) is jointly normal. Correlation can even be zero
+when there is a very simple dependence structure: if X follows a
+standard normal distribution, let y = abs(x). Note that the correlation
+between x and y is zero. Indeed, since the expectation of x is zero,
+cov(x, y) = E[x*y]. By definition, this equals E[x*abs(x)] which is zero
+by symmetry. The following lines of code illustrate this observation:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">y</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">abs</span><span class="">(</span><span class="">x</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">stats</span><span class="o">.</span><span class="">pearsonr</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">y</span><span class="">)</span>
+PearsonRResult(statistic=-0.05444919272687482, pvalue=0.22422294836207743)</pre>
+            
+                           A non-zero correlation coefficient can be misleading. For example, if X has
+a standard normal distribution, define y = x if x &lt; 0 and y = 0 otherwise.
+A simple calculation shows that corr(x, y) = sqrt(2/Pi) = 0.797...,
+implying a high level of correlation:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">y</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">where</span><span class="">(</span><span class="">x</span><span class=""> </span><span class="o">&lt;</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="">x</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">stats</span><span class="o">.</span><span class="">pearsonr</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">y</span><span class="">)</span>
+PearsonRResult(statistic=0.861985781588, pvalue=4.813432002751103e-149)</pre>
+            
+                           This is unintuitive since there is no dependence of x and y if x is larger
+than zero which happens in about half of the cases if we sample x and y.  
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.stats._stats_py.PearsonRResult.html" class='exists'>scipy.stats._stats_py.PearsonRResult</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.stats._stats_py.pointbiserialr.html" class='exists'>scipy.stats._stats_py.pointbiserialr</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.stats._stats_py.multiscale_graphcorr.html" class='exists'>scipy.stats._stats_py.multiscale_graphcorr</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.stats._stats_py.pearsonr.html" class='exists'>scipy.stats._stats_py.pearsonr</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/stats/_stats_py.py#L4217'>/scipy/stats/_stats_py.py#4217</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 9.414213562373096, "label": "scipy.stats._stats_py.pointbiserialr", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.stats._stats_py.pointbiserialr"}, {"id": 2, "val": 8.0, "label": "scipy.stats._stats_py.multiscale_graphcorr", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.stats._stats_py.multiscale_graphcorr"}, {"id": 3, "val": 10.0, "label": "scipy.stats._stats_py.spearmanr", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.stats._stats_py.spearmanr"}, {"id": 5, "val": 9.732050807568877, "label": "scipy.stats._stats_py.kendalltau", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.stats._stats_py.kendalltau"}, {"id": 6, "val": 8.0, "label": "scipy.stats._stats_py.PearsonRResult", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.stats._stats_py.PearsonRResult"}], "links": [{"source": 3, "target": 2, "id": 3}, {"source": 3, "target": 5, "id": 5}, {"source": 5, "target": 2, "id": 11}]};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.interpolate.html'>interpolate</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.interpolate._fitpack2.html'>_fitpack2</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._bspl.html">_bspl</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._bsplines.html">_bsplines</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._cubic.html">_cubic</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack.html">_fitpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.html">_fitpack2</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack_impl.html">_fitpack_impl</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack_py.html">_fitpack_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._interpolate.html">_interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._ndgriddata.html">_ndgriddata</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._pade.html">_pade</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._polyint.html">_polyint</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._ppoly.html">_ppoly</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._rbf.html">_rbf</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._rbfinterp.html">_rbfinterp</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._rbfinterp_pythran.html">_rbfinterp_pythran</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._rgi.html">_rgi</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._rgi_cython.html">_rgi_cython</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.dfitpack.html">dfitpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.fitpack.html">fitpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.fitpack2.html">fitpack2</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.interpnd.html">interpnd</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.ndgriddata.html">ndgriddata</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.polyint.html">polyint</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.rbf.html">rbf</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.interpolate._fitpack2.RectSphereBivariateSpline.html'>RectSphereBivariateSpline</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.BivariateSpline.html">BivariateSpline</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.InterpolatedUnivariateSpline.html">InterpolatedUnivariateSpline</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.LSQBivariateSpline.html">LSQBivariateSpline</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.LSQSphereBivariateSpline.html">LSQSphereBivariateSpline</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.LSQUnivariateSpline.html">LSQUnivariateSpline</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.RectBivariateSpline.html">RectBivariateSpline</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.RectSphereBivariateSpline.html">RectSphereBivariateSpline</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.SmoothBivariateSpline.html">SmoothBivariateSpline</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.SmoothSphereBivariateSpline.html">SmoothSphereBivariateSpline</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.SphereBivariateSpline.html">SphereBivariateSpline</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.UnivariateSpline.html">UnivariateSpline</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2._BivariateSplineBase.html">_BivariateSplineBase</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2._DerivedBivariateSpline.html">_DerivedBivariateSpline</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" >+</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.RectSphereBivariateSpline.__call__.html">__call__</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.RectSphereBivariateSpline.__init__.html">__init__</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<!-- rendering Extended Summary -->
+                                       <div id="74998b5d253146bb81f8344d2ce42a75"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Can be used for smoothing data."}], "type": "paragraph"});
+            document.getElementById("74998b5d253146bb81f8344d2ce42a75").innerHTML = html;
+        }
+        init();
+    </script>
+
+                           <div class='admonition'>
+    <div>versionadded 0.11.0</div>
+</div>
+
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="e24ea995e1e3451d99aaf35c2ef68f5b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Currently, only the smoothing spline approximation ("}, {"type": "inlineCode", "value": "iopt[0] = 0"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "iopt[0] = 1"}, {"type": "text", "value": " in the FITPACK routine) is supported.  The exact least-squares spline approximation is not implemented yet."}], "type": "paragraph"});
+            document.getElementById("e24ea995e1e3451d99aaf35c2ef68f5b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="afe2245f4f874a9c8ca28aeea6b64cb9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "When actually performing the interpolation, the requested "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "v", "type": "RefInfo", "version": null}, "type": "Link", "value": "v"}, {"type": "text", "value": " values must lie within the same length 2pi interval that the original "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "v", "type": "RefInfo", "version": null}, "type": "Link", "value": "v"}, {"type": "text", "value": " values were chosen from."}], "type": "paragraph"});
+            document.getElementById("afe2245f4f874a9c8ca28aeea6b64cb9").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="c86e864d9d9e41f0918e04da9cf8b8bd"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For more information, see the "}, {"domain": null, "role": null, "type": "Directive", "value": "FITPACK_"}, {"type": "text", "value": " site about this function."}], "type": "paragraph"});
+            document.getElementById("c86e864d9d9e41f0918e04da9cf8b8bd").innerHTML = html;
+        }
+        init();
+    </script>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;target&#39; &#39;.. _FITPACK: http://www.netlib.org/dierckx/spgrid.f&#39;&gt;
+           </pre>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="u">u</a> : array_like</dt>
+<dd>
+                <div id="86538eecca664bb9aef922e91de644ba"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "1-D array of colatitude coordinates in strictly ascending order. Coordinates must be given in radians and lie within the open interval "}, {"type": "inlineCode", "value": "(0, pi)"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("86538eecca664bb9aef922e91de644ba").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="v">v</a> : array_like</dt>
+<dd>
+                <div id="4aabd25eeef54cefb3ae29406c67d833"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "1-D array of longitude coordinates in strictly ascending order. Coordinates must be given in radians. First element ("}, {"type": "inlineCode", "value": "v[0]"}, {"type": "text", "value": ") must lie within the interval "}, {"type": "inlineCode", "value": "[-pi, pi)"}, {"type": "text", "value": ". Last element ("}, {"type": "inlineCode", "value": "v[-1]"}, {"type": "text", "value": ") must satisfy "}, {"type": "inlineCode", "value": "v[-1] \u003c= v[0] + 2*pi"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("4aabd25eeef54cefb3ae29406c67d833").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="r">r</a> : array_like</dt>
+<dd>
+                <div id="3e0abe73ad5e4adfbe4ad7efab20617b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "2-D array of data with shape "}, {"type": "inlineCode", "value": "(u.size, v.size)"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("3e0abe73ad5e4adfbe4ad7efab20617b").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="s">s</a> : float, optional</dt>
+<dd>
+                <div id="a2b91de2caf44dd9acdf8e2b1757add7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Positive smoothing factor defined for estimation condition ("}, {"type": "inlineCode", "value": "s=0"}, {"type": "text", "value": " is for interpolation)."}], "type": "paragraph"});
+            document.getElementById("a2b91de2caf44dd9acdf8e2b1757add7").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="pole_continuity">pole_continuity</a> : bool or (bool, bool), optional</dt>
+<dd>
+                <div id="bf2b4004d0834e5190109e6a432c7e30"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Order of continuity at the poles "}, {"type": "inlineCode", "value": "u=0"}, {"type": "text", "value": " ("}, {"type": "inlineCode", "value": "pole_continuity[0]"}, {"type": "text", "value": ") and "}, {"type": "inlineCode", "value": "u=pi"}, {"type": "text", "value": " ("}, {"type": "inlineCode", "value": "pole_continuity[1]"}, {"type": "text", "value": ").  The order of continuity at the pole will be 1 or 0 when this is True or False, respectively. Defaults to False."}], "type": "paragraph"});
+            document.getElementById("bf2b4004d0834e5190109e6a432c7e30").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="pole_values">pole_values</a> : float or (float, float), optional</dt>
+<dd>
+                <div id="94752b39cd944457b39cfaa486208fa6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Data values at the poles "}, {"type": "inlineCode", "value": "u=0"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "u=pi"}, {"type": "text", "value": ".  Either the whole parameter or each individual element can be None.  Defaults to None."}], "type": "paragraph"});
+            document.getElementById("94752b39cd944457b39cfaa486208fa6").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="pole_exact">pole_exact</a> : bool or (bool, bool), optional</dt>
+<dd>
+                <div id="5d231611dca84236b8659ffa2d77f450"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Data value exactness at the poles "}, {"type": "inlineCode", "value": "u=0"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "u=pi"}, {"type": "text", "value": ".  If True, the value is considered to be the right function value, and it will be fitted exactly. If False, the value will be considered to be a data value just like the other data values.  Defaults to False."}], "type": "paragraph"});
+            document.getElementById("5d231611dca84236b8659ffa2d77f450").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="pole_flat">pole_flat</a> : bool or (bool, bool), optional</dt>
+<dd>
+                <div id="12282ceb751140d2a639f2d454ddee34"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For the poles at "}, {"type": "inlineCode", "value": "u=0"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "u=pi"}, {"type": "text", "value": ", specify whether or not the approximation has vanishing derivatives.  Defaults to False."}], "type": "paragraph"});
+            document.getElementById("12282ceb751140d2a639f2d454ddee34").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="bd2f8b4c37014f5a9a1ff2c316f1c09b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Bivariate spline approximation over a rectangular mesh on a sphere."}], "type": "paragraph"});
+            document.getElementById("bd2f8b4c37014f5a9a1ff2c316f1c09b").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.BivariateSpline.html" class='exists'>BivariateSpline</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="75856b1c908d4f06b474fb53276e3564"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "a base class for bivariate splines."});
+            document.getElementById("75856b1c908d4f06b474fb53276e3564").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.LSQBivariateSpline.html" class='exists'>LSQBivariateSpline</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="d18b847c18c44a74a490dea196aba38a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "a bivariate spline using weighted least-squares fitting"});
+            document.getElementById("d18b847c18c44a74a490dea196aba38a").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.LSQSphereBivariateSpline.html" class='exists'>LSQSphereBivariateSpline</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="b6917027397147f68eb0ac2851608ae3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "a bivariate spline in spherical coordinates using weighted least-squares fitting"});
+            document.getElementById("b6917027397147f68eb0ac2851608ae3").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.RectBivariateSpline.html" class='exists'>RectBivariateSpline</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="f8a1fcfce762426187c8046384d2c33f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "a bivariate spline over a rectangular mesh."});
+            document.getElementById("f8a1fcfce762426187c8046384d2c33f").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.SmoothBivariateSpline.html" class='exists'>SmoothBivariateSpline</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="afd0413312a14b5c97765642293a1696"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "a smoothing bivariate spline through the given points"});
+            document.getElementById("afd0413312a14b5c97765642293a1696").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.SmoothSphereBivariateSpline.html" class='exists'>SmoothSphereBivariateSpline</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="0d463b31d2e74c19a8937ea64cbadd14"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "a smoothing bivariate spline in spherical coordinates"});
+            document.getElementById("0d463b31d2e74c19a8937ea64cbadd14").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.UnivariateSpline.html" class='exists'>UnivariateSpline</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="2b71677ec4244d2b9181f6100f5d906c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "a smooth univariate spline to fit a given set of data points."});
+            document.getElementById("2b71677ec4244d2b9181f6100f5d906c").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack_impl.bisplev.html" class='exists'>bisplev</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="e89b8551a3b148a09a1f4109a7b2b92a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "a function to evaluate a bivariate B-spline and its derivatives"});
+            document.getElementById("e89b8551a3b148a09a1f4109a7b2b92a").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack_impl.bisplrep.html" class='exists'>bisplrep</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="2691773a11f84529b648e2b690be25b8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "a function to find a bivariate B-spline representation of a surface"});
+            document.getElementById("2691773a11f84529b648e2b690be25b8").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+                           Suppose we have global data on a coarse grid  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="">lats</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">linspace</span><span class="">(</span><span class="mi">10</span><span class="">,</span><span class=""> </span><span class="mi">170</span><span class="">,</span><span class=""> </span><span class="mi">9</span><span class="">)</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">pi</span><span class=""> </span><span class="o">/</span><span class=""> </span><span class="mf">180.</span><br><span class='nsl'>...&nbsp;</span><span class="">lons</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">linspace</span><span class="">(</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">350</span><span class="">,</span><span class=""> </span><span class="mi">18</span><span class="">)</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">pi</span><span class=""> </span><span class="o">/</span><span class=""> </span><span class="mf">180.</span><br><span class='nsl'>...&nbsp;</span><span class="">data</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">dot</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">atleast_2d</span><span class="">(</span><span class="mf">90.</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">linspace</span><span class="">(</span><span class="o">-</span><span class="mf">80.</span><span class="">,</span><span class=""> </span><span class="mf">80.</span><span class="">,</span><span class=""> </span><span class="mi">18</span><span class="">)</span><span class="">)</span><span class="o">.</span><span class="">T</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">              </span><span class="">np</span><span class="o">.</span><span class="">atleast_2d</span><span class="">(</span><span class="mf">180.</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">abs</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">linspace</span><span class="">(</span><span class="mf">0.</span><span class="">,</span><span class=""> </span><span class="mf">350.</span><span class="">,</span><span class=""> </span><span class="mi">9</span><span class="">)</span><span class="">)</span><span class="">)</span><span class="">)</span><span class="o">.</span><span class="">T</span>
+</pre>
+            
+                           We want to interpolate it to a global one-degree grid  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">new_lats</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">linspace</span><span class="">(</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">180</span><span class="">,</span><span class=""> </span><span class="mi">180</span><span class="">)</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">pi</span><span class=""> </span><span class="o">/</span><span class=""> </span><span class="mi">180</span><br><span class='nsl'>...&nbsp;</span><span class="">new_lons</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">linspace</span><span class="">(</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">360</span><span class="">,</span><span class=""> </span><span class="mi">360</span><span class="">)</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">pi</span><span class=""> </span><span class="o">/</span><span class=""> </span><span class="mi">180</span><br><span class='nsl'>...&nbsp;</span><span class="">new_lats</span><span class="">,</span><span class=""> </span><span class="">new_lons</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">meshgrid</span><span class="">(</span><span class="">new_lats</span><span class="">,</span><span class=""> </span><span class="">new_lons</span><span class="">)</span>
+</pre>
+            
+                           We need to set up the interpolator object  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">interpolate</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">RectSphereBivariateSpline</span><br><span class='nsl'>...&nbsp;</span><span class="">lut</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">RectSphereBivariateSpline</span><span class="">(</span><span class="">lats</span><span class="">,</span><span class=""> </span><span class="">lons</span><span class="">,</span><span class=""> </span><span class="">data</span><span class="">)</span>
+</pre>
+            
+                           Finally we interpolate the data.  The `RectSphereBivariateSpline` object
+only takes 1-D arrays as input, therefore we need to do some reshaping.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">data_interp</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">lut</span><span class="o">.</span><span class="">ev</span><span class="">(</span><span class="">new_lats</span><span class="o">.</span><span class="">ravel</span><span class="">(</span><span class="">)</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                     </span><span class="">new_lons</span><span class="o">.</span><span class="">ravel</span><span class="">(</span><span class="">)</span><span class="">)</span><span class="o">.</span><span class="">reshape</span><span class="">(</span><span class="">(</span><span class="mi">360</span><span class="">,</span><span class=""> </span><span class="mi">180</span><span class="">)</span><span class="">)</span><span class="o">.</span><span class="">T</span>
+</pre>
+            
+                           Looking at the original and the interpolated data, one can see that the
+interpolant reproduces the original data very well:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">matplotlib</span><span class="nn">.</span><span class="nn">pyplot</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">plt</span><br><span class='nsl'>...&nbsp;</span><span class="">fig</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">plt</span><span class="o">.</span><span class="">figure</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax1</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">fig</span><span class="o">.</span><span class="">add_subplot</span><span class="">(</span><span class="mi">211</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax1</span><span class="o">.</span><span class="">imshow</span><span class="">(</span><span class="">data</span><span class="">,</span><span class=""> </span><span class="">interpolation</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">nearest</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax2</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">fig</span><span class="o">.</span><span class="">add_subplot</span><span class="">(</span><span class="mi">212</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax2</span><span class="o">.</span><span class="">imshow</span><span class="">(</span><span class="">data_interp</span><span class="">,</span><span class=""> </span><span class="">interpolation</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">nearest</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">show</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+                           Choosing the optimal value of ``s`` can be a delicate task. Recommended
+values for ``s`` depend on the accuracy of the data values.  If the user
+has an idea of the statistical errors on the data, she can also find a
+proper estimate for ``s``. By assuming that, if she specifies the
+right ``s``, the interpolator will use a spline ``f(u,v)`` which exactly
+reproduces the function underlying the data, she can evaluate
+``sum((r(i,j)-s(u(i),v(j)))**2)`` to find a good estimate for this ``s``.
+For example, if she knows that the statistical errors on her
+``r(i,j)``-values are not greater than 0.1, she may expect that a good
+``s`` should have a value not larger than ``u.size * v.size * (0.1)**2``.  
+            
+                           If nothing is known about the statistical error in ``r(i,j)``, ``s`` must
+be determined by trial and error.  The best is then to start with a very
+large value of ``s`` (to determine the least-squares polynomial and the
+corresponding upper bound ``fp0`` for ``s``) and then to progressively
+decrease the value of ``s`` (say by a factor 10 in the beginning, i.e.
+``s = fp0 / 10, fp0 / 100, ...``  and more carefully as the approximation
+shows more detail) to obtain closer fits.  
+            
+                           The interpolation results for different values of ``s`` give some insight
+into this process:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">fig2</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">plt</span><span class="o">.</span><span class="">figure</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">s</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">[</span><span class="mf">3e9</span><span class="">,</span><span class=""> </span><span class="mf">2e9</span><span class="">,</span><span class=""> </span><span class="mf">1e9</span><span class="">,</span><span class=""> </span><span class="mf">1e8</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="k">for</span><span class=""> </span><span class="">idx</span><span class="">,</span><span class=""> </span><span class="">sval</span><span class=""> </span><span class="ow">in</span><span class=""> </span><span class="nb">enumerate</span><span class="">(</span><span class="">s</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">)</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="">lut</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">RectSphereBivariateSpline</span><span class="">(</span><span class="">lats</span><span class="">,</span><span class=""> </span><span class="">lons</span><span class="">,</span><span class=""> </span><span class="">data</span><span class="">,</span><span class=""> </span><span class="">s</span><span class="o">=</span><span class="">sval</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="">data_interp</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">lut</span><span class="o">.</span><span class="">ev</span><span class="">(</span><span class="">new_lats</span><span class="o">.</span><span class="">ravel</span><span class="">(</span><span class="">)</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                         </span><span class="">new_lons</span><span class="o">.</span><span class="">ravel</span><span class="">(</span><span class="">)</span><span class="">)</span><span class="o">.</span><span class="">reshape</span><span class="">(</span><span class="">(</span><span class="mi">360</span><span class="">,</span><span class=""> </span><span class="mi">180</span><span class="">)</span><span class="">)</span><span class="o">.</span><span class="">T</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="">ax</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">fig2</span><span class="o">.</span><span class="">add_subplot</span><span class="">(</span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="">idx</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="">ax</span><span class="o">.</span><span class="">imshow</span><span class="">(</span><span class="">data_interp</span><span class="">,</span><span class=""> </span><span class="">interpolation</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">nearest</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="">ax</span><span class="o">.</span><span class="">set_title</span><span class="">(</span><span class="sa">f</span><span class="s2">&#34;</span><span class="s2">s = </span><span class="si">{</span><span class="">sval</span><span class="si">:</span><span class="s2">g</span><span class="si">}</span><span class="s2">&#34;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">show</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.SmoothBivariateSpline.html" class='exists'>scipy.interpolate._fitpack2.SmoothBivariateSpline</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.BivariateSpline.html" class='exists'>scipy.interpolate._fitpack2.BivariateSpline</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.LSQBivariateSpline.html" class='exists'>scipy.interpolate._fitpack2.LSQBivariateSpline</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.SmoothSphereBivariateSpline.html" class='exists'>scipy.interpolate._fitpack2.SmoothSphereBivariateSpline</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.RectBivariateSpline.html" class='exists'>scipy.interpolate._fitpack2.RectBivariateSpline</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.LSQSphereBivariateSpline.html" class='exists'>scipy.interpolate._fitpack2.LSQSphereBivariateSpline</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.UnivariateSpline.html" class='exists'>scipy.interpolate._fitpack2.UnivariateSpline</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/interpolate/_fitpack2.py#L1954'>/scipy/interpolate/_fitpack2.py#1954</a>
+<br/>
+
+type: &lt;class &#39;type&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 11.3166247903554, "label": "scipy.interpolate._fitpack2.RectBivariateSpline", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.RectBivariateSpline"}, {"id": 2, "val": 10.82842712474619, "label": "scipy.interpolate._fitpack2.LSQBivariateSpline", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.LSQBivariateSpline"}, {"id": 3, "val": 11.0, "label": "scipy.interpolate._fitpack2.SmoothBivariateSpline", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.SmoothBivariateSpline"}, {"id": 4, "val": 10.64575131106459, "label": "scipy.interpolate._fitpack2.LSQSphereBivariateSpline", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.LSQSphereBivariateSpline"}, {"id": 5, "val": 10.64575131106459, "label": "scipy.interpolate._fitpack2.SmoothSphereBivariateSpline", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.SmoothSphereBivariateSpline"}, {"id": 6, "val": 12.47213595499958, "label": "scipy.interpolate._fitpack2.UnivariateSpline", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.UnivariateSpline"}, {"id": 7, "val": 12.69041575982343, "label": "scipy.interpolate._fitpack_impl.bisplrep", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.interpolate._fitpack_impl.bisplrep"}, {"id": 8, "val": 11.872983346207416, "label": "scipy.interpolate._fitpack2.BivariateSpline", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.BivariateSpline"}, {"id": 9, "val": 12.79583152331272, "label": "scipy.interpolate._fitpack_impl.bisplev", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.interpolate._fitpack_impl.bisplev"}], "links": [{"source": 9, "target": 5, "id": 2}, {"source": 9, "target": 6, "id": 4}, {"source": 9, "target": 7, "id": 6}, {"source": 9, "target": 3, "id": 13}, {"source": 9, "target": 1, "id": 14}, {"source": 9, "target": 4, "id": 16}, {"source": 9, "target": 8, "id": 18}, {"source": 9, "target": 2, "id": 19}, {"source": 7, "target": 5, "id": 25}, {"source": 7, "target": 6, "id": 27}, {"source": 7, "target": 3, "id": 35}, {"source": 7, "target": 1, "id": 36}, {"source": 7, "target": 4, "id": 38}, {"source": 7, "target": 8, "id": 40}, {"source": 7, "target": 2, "id": 41}, {"source": 3, "target": 8, "id": 47}, {"source": 3, "target": 2, "id": 48}, {"source": 3, "target": 5, "id": 49}, {"source": 3, "target": 1, "id": 50}, {"source": 3, "target": 4, "id": 52}, {"source": 3, "target": 6, "id": 53}, {"source": 8, "target": 7, "id": 55}, {"source": 8, "target": 3, "id": 58}, {"source": 8, "target": 2, "id": 60}, {"source": 8, "target": 5, "id": 62}, {"source": 8, "target": 1, "id": 65}, {"source": 8, "target": 4, "id": 67}, {"source": 8, "target": 6, "id": 68}, {"source": 2, "target": 3, "id": 70}, {"source": 2, "target": 8, "id": 71}, {"source": 2, "target": 5, "id": 72}, {"source": 2, "target": 1, "id": 73}, {"source": 2, "target": 4, "id": 75}, {"source": 2, "target": 6, "id": 76}, {"source": 5, "target": 3, "id": 77}, {"source": 5, "target": 8, "id": 78}, {"source": 5, "target": 2, "id": 79}, {"source": 5, "target": 1, "id": 80}, {"source": 5, "target": 4, "id": 82}, {"source": 5, "target": 6, "id": 83}, {"source": 1, "target": 3, "id": 87}, {"source": 1, "target": 8, "id": 88}, {"source": 1, "target": 2, "id": 89}, {"source": 1, "target": 5, "id": 90}, {"source": 1, "target": 4, "id": 93}, {"source": 1, "target": 6, "id": 94}, {"source": 4, "target": 3, "id": 95}, {"source": 4, "target": 8, "id": 96}, {"source": 4, "target": 2, "id": 97}, {"source": 4, "target": 5, "id": 98}, {"source": 4, "target": 1, "id": 99}, {"source": 4, "target": 6, "id": 101}, {"source": 6, "target": 5, "id": 104}, {"source": 6, "target": 7, "id": 107}, {"source": 6, "target": 3, "id": 114}, {"source": 6, "target": 1, "id": 115}, {"source": 6, "target": 4, "id": 118}, {"source": 6, "target": 8, "id": 119}, {"source": 6, "target": 2, "id": 120}]};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

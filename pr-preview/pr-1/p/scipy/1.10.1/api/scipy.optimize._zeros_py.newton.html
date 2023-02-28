@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize.html'>optimize</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize._zeros_py.html'>_zeros_py</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.optimize.__nnls.html">__nnls</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._basinhopping.html">_basinhopping</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._bglu_dense.html">_bglu_dense</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._cobyla.html">_cobyla</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._cobyla_py.html">_cobyla_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._constraints.html">_constraints</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentiable_functions.html">_differentiable_functions</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentialevolution.html">_differentialevolution</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._direct.html">_direct</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._direct_py.html">_direct_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._dual_annealing.html">_dual_annealing</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._group_columns.html">_group_columns</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._hessian_update_strategy.html">_hessian_update_strategy</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._highs.html">_highs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lbfgsb.html">_lbfgsb</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lbfgsb_py.html">_lbfgsb_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linesearch.html">_linesearch</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog.html">_linprog</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_doc.html">_linprog_doc</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_highs.html">_linprog_highs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_ip.html">_linprog_ip</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_rs.html">_linprog_rs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_simplex.html">_linprog_simplex</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_util.html">_linprog_util</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lsap.html">_lsap</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lsq.html">_lsq</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._milp.html">_milp</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minimize.html">_minimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minpack.html">_minpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minpack2.html">_minpack2</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minpack_py.html">_minpack_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._moduleTNC.html">_moduleTNC</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nnls.html">_nnls</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.html">_nonlin</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._numdiff.html">_numdiff</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.html">_optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._qap.html">_qap</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._remove_redundancy.html">_remove_redundancy</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._root.html">_root</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._root_scalar.html">_root_scalar</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._shgo.html">_shgo</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._shgo_lib.html">_shgo_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._slsqp.html">_slsqp</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._slsqp_py.html">_slsqp_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._spectral.html">_spectral</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._tnc.html">_tnc</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trlib.html">_trlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion.html">_trustregion</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_constr.html">_trustregion_constr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_dogleg.html">_trustregion_dogleg</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_exact.html">_trustregion_exact</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_krylov.html">_trustregion_krylov</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_ncg.html">_trustregion_ncg</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros.html">_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros_py.html">_zeros_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.cobyla.html">cobyla</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.lbfgsb.html">lbfgsb</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.linesearch.html">linesearch</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.minpack.html">minpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.minpack2.html">minpack2</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.moduleTNC.html">moduleTNC</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.nonlin.html">nonlin</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.slsqp.html">slsqp</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.tnc.html">tnc</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.zeros.html">zeros</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize._zeros_py.newton.html'>newton</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros_py.RootResults.html">RootResults</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros_py.TOMS748Solver.html">TOMS748Solver</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros_py._array_newton.html">_array_newton</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros_py._compute_divided_differences.html">_compute_divided_differences</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros_py._interpolated_poly.html">_interpolated_poly</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros_py._inverse_poly_zero.html">_inverse_poly_zero</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros_py._newton_quadratic.html">_newton_quadratic</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros_py._notclose.html">_notclose</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros_py._results_select.html">_results_select</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros_py._secant.html">_secant</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros_py._update_bracket.html">_update_bracket</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros_py.bisect.html">bisect</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros_py.newton.html">newton</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros_py.results_c.html">results_c</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros_py.toms748.html">toms748</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>newton(func, x0, fprime=None, args=(), tol=1.48e-08, maxiter=50, fprime2=None, x1=None, rtol=0.0, full_output=False, disp=True)</code><!-- rendering Extended Summary -->
+                                       <div id="5e6d53724f074796aec3d5c4484a0a5a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Find a zero of the scalar-valued function "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "func", "type": "RefInfo", "version": null}, "type": "Link", "value": "func"}, {"type": "text", "value": " given a nearby scalar starting point "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x0", "type": "RefInfo", "version": null}, "type": "Link", "value": "x0"}, {"type": "text", "value": ". The Newton-Raphson method is used if the derivative "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "fprime", "type": "RefInfo", "version": null}, "type": "Link", "value": "fprime"}, {"type": "text", "value": " of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "func", "type": "RefInfo", "version": null}, "type": "Link", "value": "func"}, {"type": "text", "value": " is provided, otherwise the secant method is used. If the second order derivative "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "fprime2", "type": "RefInfo", "version": null}, "type": "Link", "value": "fprime2"}, {"type": "text", "value": " of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "func", "type": "RefInfo", "version": null}, "type": "Link", "value": "func"}, {"type": "text", "value": " is also provided, then Halley\u0027s method is used."}], "type": "paragraph"});
+            document.getElementById("5e6d53724f074796aec3d5c4484a0a5a").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="2bb1077f9ae2400faff7d63763d3ddbc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x0", "type": "RefInfo", "version": null}, "type": "Link", "value": "x0"}, {"type": "text", "value": " is a sequence with more than one item, "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.optimize._zeros_py.newton", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "newton"}, {"type": "text", "value": " returns an array: the zeros of the function from each (scalar) starting point in "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x0", "type": "RefInfo", "version": null}, "type": "Link", "value": "x0"}, {"type": "text", "value": ". In this case, "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "func", "type": "RefInfo", "version": null}, "type": "Link", "value": "func"}, {"type": "text", "value": " must be vectorized to return a sequence or array of the same shape as its first argument. If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "fprime", "type": "RefInfo", "version": null}, "type": "Link", "value": "fprime"}, {"type": "text", "value": " ("}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "fprime2", "type": "RefInfo", "version": null}, "type": "Link", "value": "fprime2"}, {"type": "text", "value": ") is given, then its return must also have the same shape: each element is the first (second) derivative of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "func", "type": "RefInfo", "version": null}, "type": "Link", "value": "func"}, {"type": "text", "value": " with respect to its only variable evaluated at each element of its first argument."}], "type": "paragraph"});
+            document.getElementById("2bb1077f9ae2400faff7d63763d3ddbc").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="f880f8208c0d431881c02a385dc56de4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.optimize._zeros_py.newton", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "newton"}, {"type": "text", "value": " is for finding roots of a scalar-valued functions of a single variable. For problems involving several variables, see "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "root", "type": "RefInfo", "version": null}, "type": "Link", "value": "root"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("f880f8208c0d431881c02a385dc56de4").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="e87d1280965c42dba303680f87efcea2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The convergence rate of the Newton-Raphson method is quadratic, the Halley method is cubic, and the secant method is sub-quadratic. This means that if the function is well-behaved the actual error in the estimated zero after the nth iteration is approximately the square (cube for Halley) of the error after the (n-1)th step. However, the stopping criterion used here is the step size and there is no guarantee that a zero has been found. Consequently, the result should be verified. Safer algorithms are brentq, brenth, ridder, and bisect, but they all require that the root first be bracketed in an interval where the function changes sign. The brentq algorithm is recommended for general use in one dimensional problems when such an interval has been found."}], "type": "paragraph"});
+            document.getElementById("e87d1280965c42dba303680f87efcea2").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="78aaa8ee0a554847bee80390d40802f2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "When "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.optimize._zeros_py.newton", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "newton"}, {"type": "text", "value": " is used with arrays, it is best suited for the following types of problems:"}], "type": "paragraph"});
+            document.getElementById("78aaa8ee0a554847bee80390d40802f2").innerHTML = html;
+        }
+        init();
+    </script>
+
+                          <ul>               <li>                               <div id="99a7ae5b2e7b4c4dbd25afe93efce026"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The initial guesses, "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x0", "type": "RefInfo", "version": null}, "type": "Link", "value": "x0"}, {"type": "text", "value": ", are all relatively the same distance from   the roots."}], "type": "paragraph"});
+            document.getElementById("99a7ae5b2e7b4c4dbd25afe93efce026").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="7c98fd3592944452acfc39993fd4a477"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Some or all of the extra arguments, "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "args", "type": "RefInfo", "version": null}, "type": "Link", "value": "args"}, {"type": "text", "value": ", are also arrays so that a   class of similar problems can be solved together."}], "type": "paragraph"});
+            document.getElementById("7c98fd3592944452acfc39993fd4a477").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="c1d6f8b3d88f425184a2c1bca3edd1fa"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The size of the initial guesses, "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x0", "type": "RefInfo", "version": null}, "type": "Link", "value": "x0"}, {"type": "text", "value": ", is larger than O(100) elements.   Otherwise, a naive loop may perform as well or better than a vector."}], "type": "paragraph"});
+            document.getElementById("c1d6f8b3d88f425184a2c1bca3edd1fa").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="func">func</a> : callable</dt>
+<dd>
+                <div id="9ee97bc83b90438fa2bb6d6afb0951e2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The function whose zero is wanted. It must be a function of a single variable of the form "}, {"type": "inlineCode", "value": "f(x,a,b,c...)"}, {"type": "text", "value": ", where "}, {"type": "inlineCode", "value": "a,b,c..."}, {"type": "text", "value": " are extra arguments that can be passed in the "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "args", "type": "RefInfo", "version": null}, "type": "Link", "value": "args"}, {"type": "text", "value": " parameter."}], "type": "paragraph"});
+            document.getElementById("9ee97bc83b90438fa2bb6d6afb0951e2").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="x0">x0</a> : float, sequence, or ndarray</dt>
+<dd>
+                <div id="5db2bc2249d24011b12383af9e457b3b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "An initial estimate of the zero that should be somewhere near the actual zero. If not scalar, then "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "func", "type": "RefInfo", "version": null}, "type": "Link", "value": "func"}, {"type": "text", "value": " must be vectorized and return a sequence or array of the same shape as its first argument."}], "type": "paragraph"});
+            document.getElementById("5db2bc2249d24011b12383af9e457b3b").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="fprime">fprime</a> : callable, optional</dt>
+<dd>
+                <div id="ba0eab8f0f6b49539b5d241a5a74fa37"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The derivative of the function when available and convenient. If it is None (default), then the secant method is used."}], "type": "paragraph"});
+            document.getElementById("ba0eab8f0f6b49539b5d241a5a74fa37").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="args">args</a> : tuple, optional</dt>
+<dd>
+                <div id="e5a423779a844639b6bc841e6a28d4a9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Extra arguments to be used in the function call."}], "type": "paragraph"});
+            document.getElementById("e5a423779a844639b6bc841e6a28d4a9").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="tol">tol</a> : float, optional</dt>
+<dd>
+                <div id="f253e6e24aac4e0fb543535777ad1127"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The allowable error of the zero value. If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "func", "type": "RefInfo", "version": null}, "type": "Link", "value": "func"}, {"type": "text", "value": " is complex-valued, a larger "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "tol", "type": "RefInfo", "version": null}, "type": "Link", "value": "tol"}, {"type": "text", "value": " is recommended as both the real and imaginary parts of "}, {"domain": null, "role": null, "type": "Directive", "value": "x"}, {"type": "text", "value": " contribute to "}, {"type": "inlineCode", "value": "|x - x0|"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("f253e6e24aac4e0fb543535777ad1127").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="maxiter">maxiter</a> : int, optional</dt>
+<dd>
+                <div id="2021b3192e8842e4a98c7963bf8c3998"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Maximum number of iterations."}], "type": "paragraph"});
+            document.getElementById("2021b3192e8842e4a98c7963bf8c3998").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="fprime2">fprime2</a> : callable, optional</dt>
+<dd>
+                <div id="76dff8786ded4cc6a658f9348b209385"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The second order derivative of the function when available and convenient. If it is None (default), then the normal Newton-Raphson or the secant method is used. If it is not None, then Halley\u0027s method is used."}], "type": "paragraph"});
+            document.getElementById("76dff8786ded4cc6a658f9348b209385").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="x1">x1</a> : float, optional</dt>
+<dd>
+                <div id="84734a1cfbf54aa6997b10ef699de4e6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Another estimate of the zero that should be somewhere near the actual zero. Used if "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "fprime", "type": "RefInfo", "version": null}, "type": "Link", "value": "fprime"}, {"type": "text", "value": " is not provided."}], "type": "paragraph"});
+            document.getElementById("84734a1cfbf54aa6997b10ef699de4e6").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="rtol">rtol</a> : float, optional</dt>
+<dd>
+                <div id="98b6cd0ecce74fe0bff816b005fcbb4f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Tolerance (relative) for termination."}], "type": "paragraph"});
+            document.getElementById("98b6cd0ecce74fe0bff816b005fcbb4f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="full_output">full_output</a> : bool, optional</dt>
+<dd>
+                <div id="c24c6d9a1de64e3f8423b711713d49cb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "full_output", "type": "RefInfo", "version": null}, "type": "Link", "value": "full_output"}, {"type": "text", "value": " is False (default), the root is returned. If True and "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x0", "type": "RefInfo", "version": null}, "type": "Link", "value": "x0"}, {"type": "text", "value": " is scalar, the return value is "}, {"type": "inlineCode", "value": "(x, r)"}, {"type": "text", "value": ", where "}, {"type": "inlineCode", "value": "x"}, {"type": "text", "value": " is the root and "}, {"type": "inlineCode", "value": "r"}, {"type": "text", "value": " is a "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.optimize._zeros_py.RootResults", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "RootResults"}, {"type": "text", "value": " object. If True and "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x0", "type": "RefInfo", "version": null}, "type": "Link", "value": "x0"}, {"type": "text", "value": " is non-scalar, the return value is "}, {"type": "inlineCode", "value": "(x, converged,\nzero_der)"}, {"type": "text", "value": " (see Returns section for details)."}], "type": "paragraph"});
+            document.getElementById("c24c6d9a1de64e3f8423b711713d49cb").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="disp">disp</a> : bool, optional</dt>
+<dd>
+                <div id="d8085f48b3694d0ca74ece7f3a0f7516"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If True, raise a RuntimeError if the algorithm didn\u0027t converge, with the error message containing the number of iterations and current function value. Otherwise, the convergence status is recorded in a "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.optimize._zeros_py.RootResults", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "RootResults"}, {"type": "text", "value": " return object. Ignored if "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x0", "type": "RefInfo", "version": null}, "type": "Link", "value": "x0"}, {"type": "text", "value": " is not scalar. "}, {"children": [{"type": "text", "value": "Note: this has little to do with displaying, however,\nthe `disp` keyword cannot be renamed for backwards compatibility."}], "type": "emphasis"}], "type": "paragraph"});
+            document.getElementById("d8085f48b3694d0ca74ece7f3a0f7516").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="root">root</a> : float, sequence, or ndarray</dt>
+<dd>
+                <div id="4beb9f6a51e04c389087f0be56a6dd64"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Estimated location where function is zero."}], "type": "paragraph"});
+            document.getElementById("4beb9f6a51e04c389087f0be56a6dd64").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="r">r</a> : `RootResults`, optional</dt>
+<dd>
+                <div id="a2eba6c995894fd9b30aa78fb8ad9a0b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Present if "}, {"type": "inlineCode", "value": "full_output=True"}, {"type": "text", "value": " and "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x0", "type": "RefInfo", "version": null}, "type": "Link", "value": "x0"}, {"type": "text", "value": " is scalar. Object containing information about the convergence. In particular, "}, {"type": "inlineCode", "value": "r.converged"}, {"type": "text", "value": " is True if the routine converged."}], "type": "paragraph"});
+            document.getElementById("a2eba6c995894fd9b30aa78fb8ad9a0b").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="converged">converged</a> : ndarray of bool, optional</dt>
+<dd>
+                <div id="d1f4a5de6fd6477098cd509706ad8baf"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Present if "}, {"type": "inlineCode", "value": "full_output=True"}, {"type": "text", "value": " and "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x0", "type": "RefInfo", "version": null}, "type": "Link", "value": "x0"}, {"type": "text", "value": " is non-scalar. For vector functions, indicates which elements converged successfully."}], "type": "paragraph"});
+            document.getElementById("d1f4a5de6fd6477098cd509706ad8baf").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="zero_der">zero_der</a> : ndarray of bool, optional</dt>
+<dd>
+                <div id="7166155287574d5cbb7d71a25a3bb93b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Present if "}, {"type": "inlineCode", "value": "full_output=True"}, {"type": "text", "value": " and "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x0", "type": "RefInfo", "version": null}, "type": "Link", "value": "x0"}, {"type": "text", "value": " is non-scalar. For vector functions, indicates which elements had a zero derivative."}], "type": "paragraph"});
+            document.getElementById("7166155287574d5cbb7d71a25a3bb93b").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="7e95dbebf9264f9cbc26dfb5bcd18580"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Find a zero of a real or complex function using the Newton-Raphson (or secant or Halley\u0027s) method."}], "type": "paragraph"});
+            document.getElementById("7e95dbebf9264f9cbc26dfb5bcd18580").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.optimize._root.root.html" class='exists'>root</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="5a9cac1695dc4e129f18a7a6adb520d4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "interface to root solvers for multi-input, multi-output functions"});
+            document.getElementById("5a9cac1695dc4e129f18a7a6adb520d4").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.optimize._root_scalar.root_scalar.html" class='exists'>root_scalar</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="b8a39d91793346799022050fff77b285"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "interface to root solvers for scalar functions"});
+            document.getElementById("b8a39d91793346799022050fff77b285").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">import</span><span class=""> </span><span class="nn">matplotlib</span><span class="nn">.</span><span class="nn">pyplot</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">plt</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">optimize</span>
+</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="k">def</span><span class=""> </span><span class="nf">f</span><span class="">(</span><span class="">x</span><span class="">)</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="k">return</span><span class=""> </span><span class="">(</span><span class="">x</span><span class="o">*</span><span class="o">*</span><span class="mi">3</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="mi">1</span><span class="">)</span><span class="">  </span><span class="c1"># only one real root at x = 1</span>
+</pre>
+            
+                           ``fprime`` is not provided, use the secant method:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">root</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">optimize</span><span class="o">.</span><span class="">newton</span><span class="">(</span><span class="">f</span><span class="">,</span><span class=""> </span><span class="mf">1.5</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">root</span>
+1.0000000000000016</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">root</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">optimize</span><span class="o">.</span><span class="">newton</span><span class="">(</span><span class="">f</span><span class="">,</span><span class=""> </span><span class="mf">1.5</span><span class="">,</span><span class=""> </span><span class="">fprime2</span><span class="o">=</span><span class="k">lambda</span><span class=""> </span><span class="">x</span><span class="">:</span><span class=""> </span><span class="mi">6</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">x</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">root</span>
+1.0000000000000016</pre>
+            
+                           Only ``fprime`` is provided, use the Newton-Raphson method:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">root</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">optimize</span><span class="o">.</span><span class="">newton</span><span class="">(</span><span class="">f</span><span class="">,</span><span class=""> </span><span class="mf">1.5</span><span class="">,</span><span class=""> </span><span class="">fprime</span><span class="o">=</span><span class="k">lambda</span><span class=""> </span><span class="">x</span><span class="">:</span><span class=""> </span><span class="mi">3</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">x</span><span class="o">*</span><span class="o">*</span><span class="mi">2</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">root</span>
+1.0</pre>
+            
+                           Both ``fprime2`` and ``fprime`` are provided, use Halley&#39;s method:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">root</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">optimize</span><span class="o">.</span><span class="">newton</span><span class="">(</span><span class="">f</span><span class="">,</span><span class=""> </span><span class="mf">1.5</span><span class="">,</span><span class=""> </span><span class="">fprime</span><span class="o">=</span><span class="k">lambda</span><span class=""> </span><span class="">x</span><span class="">:</span><span class=""> </span><span class="mi">3</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">x</span><span class="o">*</span><span class="o">*</span><span class="mi">2</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                       </span><span class="">fprime2</span><span class="o">=</span><span class="k">lambda</span><span class=""> </span><span class="">x</span><span class="">:</span><span class=""> </span><span class="mi">6</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">x</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">root</span>
+1.0</pre>
+            
+                           When we want to find zeros for a set of related starting values and/or
+function parameters, we can provide both of those as an array of inputs:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">f</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="k">lambda</span><span class=""> </span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">a</span><span class="">:</span><span class=""> </span><span class="">x</span><span class="o">*</span><span class="o">*</span><span class="mi">3</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="">a</span><br><span class='nsl'>...&nbsp;</span><span class="">fder</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="k">lambda</span><span class=""> </span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">a</span><span class="">:</span><span class=""> </span><span class="mi">3</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">x</span><span class="o">*</span><span class="o">*</span><span class="mi">2</span><br><span class='nsl'>...&nbsp;</span><span class="">rng</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">random</span><span class="o">.</span><span class="">default_rng</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">x</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">rng</span><span class="o">.</span><span class="">standard_normal</span><span class="">(</span><span class="mi">100</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">a</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">arange</span><span class="">(</span><span class="o">-</span><span class="mi">50</span><span class="">,</span><span class=""> </span><span class="mi">50</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">vec_res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">optimize</span><span class="o">.</span><span class="">newton</span><span class="">(</span><span class="">f</span><span class="">,</span><span class=""> </span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">fprime</span><span class="o">=</span><span class="">fder</span><span class="">,</span><span class=""> </span><span class="">args</span><span class="o">=</span><span class="">(</span><span class="">a</span><span class="">,</span><span class=""> </span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">maxiter</span><span class="o">=</span><span class="mi">200</span><span class="">)</span>
+</pre>
+            
+                           The above is the equivalent of solving for each value in ``(x, a)``
+separately in a for-loop, just faster:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">loop_res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">[</span><span class="">optimize</span><span class="o">.</span><span class="">newton</span><span class="">(</span><span class="">f</span><span class="">,</span><span class=""> </span><span class="">x0</span><span class="">,</span><span class=""> </span><span class="">fprime</span><span class="o">=</span><span class="">fder</span><span class="">,</span><span class=""> </span><span class="">args</span><span class="o">=</span><span class="">(</span><span class="">a0</span><span class="">,</span><span class="">)</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                            </span><span class="">maxiter</span><span class="o">=</span><span class="mi">200</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">            </span><span class="k">for</span><span class=""> </span><span class="">x0</span><span class="">,</span><span class=""> </span><span class="">a0</span><span class=""> </span><span class="ow">in</span><span class=""> </span><span class="nb">zip</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">a</span><span class="">)</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">np</span><span class="o">.</span><span class="">allclose</span><span class="">(</span><span class="">vec_res</span><span class="">,</span><span class=""> </span><span class="">loop_res</span><span class="">)</span>
+True</pre>
+            
+                           Plot the results found for all values of ``a``:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">analytical_result</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">sign</span><span class="">(</span><span class="">a</span><span class="">)</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">abs</span><span class="">(</span><span class="">a</span><span class="">)</span><span class="o">*</span><span class="o">*</span><span class="">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">fig</span><span class="">,</span><span class=""> </span><span class="">ax</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">plt</span><span class="o">.</span><span class="">subplots</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">a</span><span class="">,</span><span class=""> </span><span class="">analytical_result</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">o</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">a</span><span class="">,</span><span class=""> </span><span class="">vec_res</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">.</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class="o">.</span><span class="">set_xlabel</span><span class="">(</span><span class="s1">&#39;</span><span class="s1">$a$</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class="o">.</span><span class="">set_ylabel</span><span class="">(</span><span class="s1">&#39;</span><span class="s1">$x$ where $f(x, a)=0$</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">show</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.optimize._zeros_py.newton.html" class='exists'>scipy.optimize._zeros_py.newton</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.optimize._zeros_py.toms748.html" class='exists'>scipy.optimize._zeros_py.toms748</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.optimize._zeros_py.bisect.html" class='exists'>scipy.optimize._zeros_py.bisect</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.optimize._zeros_py._array_newton.html" class='exists'>scipy.optimize._zeros_py._array_newton</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.optimize.html" class='exists'>scipy.optimize</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/optimize/_zeros_py.py#L94'>/scipy/optimize/_zeros_py.py#94</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 2, "val": 12.123105625617661, "label": "scipy.optimize._root.root", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.optimize._root.root"}, {"id": 3, "val": 9.732050807568877, "label": "scipy.optimize._root_scalar.root_scalar", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.optimize._root_scalar.root_scalar"}, {"id": 4, "val": 9.414213562373096, "label": "scipy.optimize._zeros_py.bisect", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.optimize._zeros_py.bisect"}, {"id": 5, "val": 10.0, "label": "scipy.optimize._zeros_py.RootResults", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.optimize._zeros_py.RootResults"}, {"id": 6, "val": 8.0, "label": "scipy.optimize", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.optimize"}, {"id": 7, "val": 8.0, "label": "scipy.optimize._zeros_py._array_newton", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.optimize._zeros_py._array_newton"}, {"id": 8, "val": 8.0, "label": "scipy.optimize._zeros_py.toms748", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.optimize._zeros_py.toms748"}], "links": [{"source": 3, "target": 6, "id": 2}, {"source": 4, "target": 8, "id": 9}, {"source": 5, "target": 3, "id": 10}, {"source": 5, "target": 4, "id": 12}, {"source": 5, "target": 8, "id": 13}, {"source": 2, "target": 3, "id": 19}, {"source": 2, "target": 6, "id": 28}]};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize.html'>optimize</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize._optimize.html'>_optimize</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.optimize.__nnls.html">__nnls</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._basinhopping.html">_basinhopping</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._bglu_dense.html">_bglu_dense</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._cobyla.html">_cobyla</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._cobyla_py.html">_cobyla_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._constraints.html">_constraints</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentiable_functions.html">_differentiable_functions</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentialevolution.html">_differentialevolution</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._direct.html">_direct</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._direct_py.html">_direct_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._dual_annealing.html">_dual_annealing</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._group_columns.html">_group_columns</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._hessian_update_strategy.html">_hessian_update_strategy</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._highs.html">_highs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lbfgsb.html">_lbfgsb</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lbfgsb_py.html">_lbfgsb_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linesearch.html">_linesearch</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog.html">_linprog</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_doc.html">_linprog_doc</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_highs.html">_linprog_highs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_ip.html">_linprog_ip</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_rs.html">_linprog_rs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_simplex.html">_linprog_simplex</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_util.html">_linprog_util</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lsap.html">_lsap</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lsq.html">_lsq</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._milp.html">_milp</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minimize.html">_minimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minpack.html">_minpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minpack2.html">_minpack2</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minpack_py.html">_minpack_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._moduleTNC.html">_moduleTNC</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nnls.html">_nnls</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.html">_nonlin</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._numdiff.html">_numdiff</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.html">_optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._qap.html">_qap</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._remove_redundancy.html">_remove_redundancy</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._root.html">_root</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._root_scalar.html">_root_scalar</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._shgo.html">_shgo</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._shgo_lib.html">_shgo_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._slsqp.html">_slsqp</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._slsqp_py.html">_slsqp_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._spectral.html">_spectral</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._tnc.html">_tnc</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trlib.html">_trlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion.html">_trustregion</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_constr.html">_trustregion_constr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_dogleg.html">_trustregion_dogleg</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_exact.html">_trustregion_exact</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_krylov.html">_trustregion_krylov</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_ncg.html">_trustregion_ncg</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros.html">_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros_py.html">_zeros_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.cobyla.html">cobyla</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.lbfgsb.html">lbfgsb</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.linesearch.html">linesearch</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.minpack.html">minpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.minpack2.html">minpack2</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.moduleTNC.html">moduleTNC</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.nonlin.html">nonlin</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.slsqp.html">slsqp</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.tnc.html">tnc</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.zeros.html">zeros</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize._optimize.golden.html'>golden</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.Brent.html">Brent</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.MemoizeJac.html">MemoizeJac</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.OptimizeResult.html">OptimizeResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.OptimizeWarning.html">OptimizeWarning</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize._Brute_Wrapper.html">_Brute_Wrapper</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize._LineSearchError.html">_LineSearchError</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize._MaxFuncCallError.html">_MaxFuncCallError</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize._check_clip_x.html">_check_clip_x</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize._check_unknown_options.html">_check_unknown_options</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize._clip_x_for_func.html">_clip_x_for_func</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize._dict_formatter.html">_dict_formatter</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize._endprint.html">_endprint</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize._float_formatter_10.html">_float_formatter_10</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize._indenter.html">_indenter</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize._line_for_search.html">_line_for_search</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize._line_search_wolfe12.html">_line_search_wolfe12</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize._linesearch_powell.html">_linesearch_powell</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize._minimize_bfgs.html">_minimize_bfgs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize._minimize_cg.html">_minimize_cg</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize._minimize_neldermead.html">_minimize_neldermead</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize._minimize_newtoncg.html">_minimize_newtoncg</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize._minimize_scalar_bounded.html">_minimize_scalar_bounded</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize._minimize_scalar_brent.html">_minimize_scalar_brent</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize._minimize_scalar_golden.html">_minimize_scalar_golden</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize._prepare_scalar_function.html">_prepare_scalar_function</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize._wrap_scalar_function.html">_wrap_scalar_function</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize._wrap_scalar_function_maxfun_validation.html">_wrap_scalar_function_maxfun_validation</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.approx_fhess_p.html">approx_fhess_p</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.approx_fprime.html">approx_fprime</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.bracket.html">bracket</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.brent.html">brent</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.brute.html">brute</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.check_grad.html">check_grad</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.fmin.html">fmin</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.fmin_bfgs.html">fmin_bfgs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.fmin_cg.html">fmin_cg</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.fmin_ncg.html">fmin_ncg</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.fmin_powell.html">fmin_powell</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.fminbound.html">fminbound</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.golden.html">golden</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.is_finite_scalar.html">is_finite_scalar</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.rosen.html">rosen</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.rosen_der.html">rosen_der</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.rosen_hess.html">rosen_hess</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.rosen_hess_prod.html">rosen_hess_prod</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.show_options.html">show_options</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.vecnorm.html">vecnorm</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a>    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>golden(func, args=(), brack=None, tol=1.4901161193847656e-08, full_output=0, maxiter=5000)</code><!-- rendering Extended Summary -->
+                                       <div id="df9337f9db6b4389adc37cb96fed4da5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Given a function of one variable and a possible bracketing interval, return the minimum of the function isolated to a fractional precision of tol."}], "type": "paragraph"});
+            document.getElementById("df9337f9db6b4389adc37cb96fed4da5").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="8e714f14482e4de180323c778539ae04"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Uses analog of bisection method to decrease the bracketed interval."}], "type": "paragraph"});
+            document.getElementById("8e714f14482e4de180323c778539ae04").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="func">func</a> : callable func(x,*args)</dt>
+<dd>
+                <div id="bc19dedf257549eb96233ff3cfedc97c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Objective function to minimize."}], "type": "paragraph"});
+            document.getElementById("bc19dedf257549eb96233ff3cfedc97c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="args">args</a> : tuple, optional</dt>
+<dd>
+                <div id="73baf1d6a6cd499ca3c27eea69408797"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Additional arguments (if present), passed to func."}], "type": "paragraph"});
+            document.getElementById("73baf1d6a6cd499ca3c27eea69408797").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="brack">brack</a> : tuple, optional</dt>
+<dd>
+                <div id="3015fc18a6c64b01bfd735b02b71a8a2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Triple (a,b,c), where (a\u003cb\u003cc) and func(b) \u003c func(a),func(c). If bracket consists of two numbers (a, c), then they are assumed to be a starting interval for a downhill bracket search (see "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.optimize._optimize.bracket", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "bracket"}, {"type": "text", "value": "); it doesn\u0027t always mean that obtained solution will satisfy a\u003c=x\u003c=c."}], "type": "paragraph"});
+            document.getElementById("3015fc18a6c64b01bfd735b02b71a8a2").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="tol">tol</a> : float, optional</dt>
+<dd>
+                <div id="3878c11b353a466784d0a42b085d7013"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "x tolerance stop criterion"}], "type": "paragraph"});
+            document.getElementById("3878c11b353a466784d0a42b085d7013").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="full_output">full_output</a> : bool, optional</dt>
+<dd>
+                <div id="62f3d782ba1f4fa4a913bffa87cc5ed3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If True, return optional outputs."}], "type": "paragraph"});
+            document.getElementById("62f3d782ba1f4fa4a913bffa87cc5ed3").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="maxiter">maxiter</a> : int</dt>
+<dd>
+                <div id="b1edad9d34c546caae27020da2cc10f5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Maximum number of iterations to perform."}], "type": "paragraph"});
+            document.getElementById("b1edad9d34c546caae27020da2cc10f5").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="8bab9cbe62c34fff9505f67680d714d9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Return the minimum of a function of one variable using golden section method."}], "type": "paragraph"});
+            document.getElementById("8bab9cbe62c34fff9505f67680d714d9").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.optimize._minimize.minimize_scalar.html" class='exists'>minimize_scalar</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="fae4b7c91e6449f99400cf63726984cf"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "Interface to minimization algorithms for scalar univariate functions. See the \u0027Golden\u0027 "});
+            document.getElementById("fae4b7c91e6449f99400cf63726984cf").innerHTML = html;
+        }
+        init();
+    </script><code class='not-implemented'>:None:None:`method`</code>             <div id="532022c4cc244335a06af2d74c80f53b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": " in particular."});
+            document.getElementById("532022c4cc244335a06af2d74c80f53b").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+                           We illustrate the behaviour of the function when `brack` is of
+size 2 and 3, respectively. In the case where `brack` is of the
+form (xa,xb), we can see for the given values, the output need
+not necessarily lie in the range ``(xa, xb)``.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="k">def</span><span class=""> </span><span class="nf">f</span><span class="">(</span><span class="">x</span><span class="">)</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="k">return</span><span class=""> </span><span class="">x</span><span class="o">*</span><span class="o">*</span><span class="mi">2</span>
+</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">optimize</span>
+</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">minimum</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">optimize</span><span class="o">.</span><span class="">golden</span><span class="">(</span><span class="">f</span><span class="">,</span><span class=""> </span><span class="">brack</span><span class="o">=</span><span class="">(</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">minimum</span>
+1.5717277788484873e-162</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">minimum</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">optimize</span><span class="o">.</span><span class="">golden</span><span class="">(</span><span class="">f</span><span class="">,</span><span class=""> </span><span class="">brack</span><span class="o">=</span><span class="">(</span><span class="o">-</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mf">0.5</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">minimum</span>
+-1.5717277788484873e-162</pre>
+            
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/optimize/_optimize.py#L2628'>/scipy/optimize/_optimize.py#2628</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 10.82842712474619, "label": "scipy.optimize._minimize.minimize_scalar", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.optimize._minimize.minimize_scalar"}, {"id": 2, "val": 9.414213562373096, "label": "scipy.optimize._optimize.bracket", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.optimize._optimize.bracket"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

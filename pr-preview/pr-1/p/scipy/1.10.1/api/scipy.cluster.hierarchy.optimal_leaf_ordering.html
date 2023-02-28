@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.cluster.html'>cluster</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.cluster.hierarchy.html'>hierarchy</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.cluster._hierarchy.html">_hierarchy</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster._optimal_leaf_ordering.html">_optimal_leaf_ordering</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster._vq.html">_vq</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.html">hierarchy</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.vq.html">vq</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.cluster.hierarchy.optimal_leaf_ordering.html'>optimal_leaf_ordering</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.ClusterNode.html">ClusterNode</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.ClusterWarning.html">ClusterWarning</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy._append_contraction_marks.html">_append_contraction_marks</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy._append_contraction_marks_sub.html">_append_contraction_marks_sub</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy._append_nonsingleton_leaf_node.html">_append_nonsingleton_leaf_node</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy._append_singleton_leaf_node.html">_append_singleton_leaf_node</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy._check_hierarchy_not_all_clusters_used.html">_check_hierarchy_not_all_clusters_used</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy._check_hierarchy_uses_cluster_before_formed.html">_check_hierarchy_uses_cluster_before_formed</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy._check_hierarchy_uses_cluster_more_than_once.html">_check_hierarchy_uses_cluster_more_than_once</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy._convert_to_bool.html">_convert_to_bool</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy._convert_to_double.html">_convert_to_double</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy._copy_array_if_base_present.html">_copy_array_if_base_present</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy._copy_arrays_if_base_present.html">_copy_arrays_if_base_present</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy._dendrogram_calculate_info.html">_dendrogram_calculate_info</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy._get_leaves_color_list.html">_get_leaves_color_list</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy._get_tick_rotation.html">_get_tick_rotation</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy._get_tick_text_size.html">_get_tick_text_size</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy._order_cluster_tree.html">_order_cluster_tree</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy._plot_dendrogram.html">_plot_dendrogram</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy._randdm.html">_randdm</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy._remove_dups.html">_remove_dups</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy._warning.html">_warning</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.average.html">average</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.centroid.html">centroid</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.complete.html">complete</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.cophenet.html">cophenet</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.correspond.html">correspond</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.cut_tree.html">cut_tree</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.dendrogram.html">dendrogram</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.fcluster.html">fcluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.fclusterdata.html">fclusterdata</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.from_mlab_linkage.html">from_mlab_linkage</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.inconsistent.html">inconsistent</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.is_isomorphic.html">is_isomorphic</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.is_monotonic.html">is_monotonic</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.is_valid_im.html">is_valid_im</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.is_valid_linkage.html">is_valid_linkage</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.leaders.html">leaders</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.leaves_list.html">leaves_list</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.linkage.html">linkage</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.maxRstat.html">maxRstat</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.maxdists.html">maxdists</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.maxinconsts.html">maxinconsts</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.median.html">median</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.num_obs_linkage.html">num_obs_linkage</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.optimal_leaf_ordering.html">optimal_leaf_ordering</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.set_link_color_palette.html">set_link_color_palette</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.single.html">single</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.to_mlab_linkage.html">to_mlab_linkage</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.to_tree.html">to_tree</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.ward.html">ward</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.weighted.html">weighted</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>optimal_leaf_ordering(Z, y, metric=&#39;euclidean&#39;)</code><!-- rendering Extended Summary -->
+        <!-- rendering Notes -->
+        <h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="Z">Z</a> : ndarray</dt>
+<dd>
+                <div id="f7f0d6d98b3e4c2f8b6a49bf999ff187"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The hierarchical clustering encoded as a linkage matrix. See "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.cluster.hierarchy.linkage", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "linkage"}, {"type": "text", "value": " for more information on the return structure and algorithm."}], "type": "paragraph"});
+            document.getElementById("f7f0d6d98b3e4c2f8b6a49bf999ff187").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="y">y</a> : ndarray</dt>
+<dd>
+                <div id="a2f6ba1329344080ab496711b483990c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The condensed distance matrix from which Z was generated. Alternatively, a collection of m observation vectors in n dimensions may be passed as an m by n array."}], "type": "paragraph"});
+            document.getElementById("a2f6ba1329344080ab496711b483990c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="metric">metric</a> : str or function, optional</dt>
+<dd>
+                <div id="bcd74dce02ca4f639df8b5ec04aed9b0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The distance metric to use in the case that y is a collection of observation vectors; ignored otherwise. See the "}, {"type": "inlineCode", "value": "pdist"}, {"type": "text", "value": " function for a list of valid distance metrics. A custom distance function can also be used."}], "type": "paragraph"});
+            document.getElementById("bcd74dce02ca4f639df8b5ec04aed9b0").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="Z_ordered">Z_ordered</a> : ndarray</dt>
+<dd>
+                <div id="f338a28f4b7149bd9751a70164faa5a0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A copy of the linkage matrix Z, reordered to minimize the distance between adjacent leaves."}], "type": "paragraph"});
+            document.getElementById("f338a28f4b7149bd9751a70164faa5a0").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="3bdf5bcd94134a19ab791d99a4367668"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Given a linkage matrix Z and distance, reorder the cut tree."}], "type": "paragraph"});
+            document.getElementById("3bdf5bcd94134a19ab791d99a4367668").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">cluster</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">hierarchy</span><br><span class='nsl'>...&nbsp;</span><span class="">rng</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">random</span><span class="o">.</span><span class="">default_rng</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">X</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">rng</span><span class="o">.</span><span class="">standard_normal</span><span class="">(</span><span class="">(</span><span class="mi">10</span><span class="">,</span><span class=""> </span><span class="mi">10</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">Z</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">hierarchy</span><span class="o">.</span><span class="">ward</span><span class="">(</span><span class="">X</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">hierarchy</span><span class="o">.</span><span class="">leaves_list</span><span class="">(</span><span class="">Z</span><span class="">)</span>
+array([0, 3, 1, 9, 2, 5, 7, 4, 6, 8], dtype=int32)</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">hierarchy</span><span class="o">.</span><span class="">leaves_list</span><span class="">(</span><span class="">hierarchy</span><span class="o">.</span><span class="">optimal_leaf_ordering</span><span class="">(</span><span class="">Z</span><span class="">,</span><span class=""> </span><span class="">X</span><span class="">)</span><span class="">)</span>
+array([3, 0, 2, 5, 7, 4, 8, 6, 9, 1], dtype=int32)</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.linkage.html" class='exists'>scipy.cluster.hierarchy.linkage</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/cluster/hierarchy.py#L1500'>/scipy/cluster/hierarchy.py#1500</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 13.099019513592784, "label": "scipy.cluster.hierarchy.linkage", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.cluster.hierarchy.linkage"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

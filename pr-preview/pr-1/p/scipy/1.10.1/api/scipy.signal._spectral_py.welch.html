@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.signal.html'>signal</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.signal._spectral_py.html'>_spectral_py</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.signal._arraytools.html">_arraytools</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._bsplines.html">_bsplines</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._czt.html">_czt</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._filter_design.html">_filter_design</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._fir_filter_design.html">_fir_filter_design</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._lti_conversion.html">_lti_conversion</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.html">_ltisys</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._max_len_seq.html">_max_len_seq</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._max_len_seq_inner.html">_max_len_seq_inner</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._peak_finding.html">_peak_finding</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._peak_finding_utils.html">_peak_finding_utils</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._savitzky_golay.html">_savitzky_golay</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.html">_signaltools</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._sigtools.html">_sigtools</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._sosfilt.html">_sosfilt</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spectral.html">_spectral</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spectral_py.html">_spectral_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spline.html">_spline</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._upfirdn.html">_upfirdn</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._upfirdn_apply.html">_upfirdn_apply</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._waveforms.html">_waveforms</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._wavelets.html">_wavelets</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.barthann.html">barthann</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.bartlett.html">bartlett</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.blackman.html">blackman</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.blackmanharris.html">blackmanharris</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.bohman.html">bohman</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.boxcar.html">boxcar</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.bsplines.html">bsplines</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.chebwin.html">chebwin</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.cosine.html">cosine</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.exponential.html">exponential</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.filter_design.html">filter_design</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.fir_filter_design.html">fir_filter_design</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.flattop.html">flattop</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.gaussian.html">gaussian</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.general_gaussian.html">general_gaussian</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.hamming.html">hamming</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.hann.html">hann</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.kaiser.html">kaiser</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.lti_conversion.html">lti_conversion</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.ltisys.html">ltisys</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.nuttall.html">nuttall</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.parzen.html">parzen</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.signaltools.html">signaltools</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.spectral.html">spectral</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.spline.html">spline</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.triang.html">triang</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.tukey.html">tukey</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.waveforms.html">waveforms</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.wavelets.html">wavelets</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.windows.html">windows</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.signal._spectral_py.welch.html'>welch</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.signal._spectral_py._fft_helper.html">_fft_helper</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spectral_py._median_bias.html">_median_bias</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spectral_py._spectral_helper.html">_spectral_helper</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spectral_py._triage_segments.html">_triage_segments</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spectral_py.check_COLA.html">check_COLA</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spectral_py.check_NOLA.html">check_NOLA</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spectral_py.coherence.html">coherence</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spectral_py.csd.html">csd</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spectral_py.istft.html">istft</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spectral_py.lombscargle.html">lombscargle</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spectral_py.periodogram.html">periodogram</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spectral_py.spectrogram.html">spectrogram</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spectral_py.stft.html">stft</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spectral_py.welch.html">welch</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>welch(x, fs=1.0, window=&#39;hann&#39;, nperseg=None, noverlap=None, nfft=None, detrend=&#39;constant&#39;, return_onesided=True, scaling=&#39;density&#39;, axis=-1, average=&#39;mean&#39;)</code><!-- rendering Extended Summary -->
+                                       <div id="87d78b3165dc4ec3a9ff8660b78738a6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Welch\u0027s method  computes an estimate of the power spectral density by dividing the data into overlapping segments, computing a modified periodogram for each segment and averaging the periodograms."}], "type": "paragraph"});
+            document.getElementById("87d78b3165dc4ec3a9ff8660b78738a6").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="2075da59b7d346078c00d4e46784feec"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "An appropriate amount of overlap will depend on the choice of window and on your requirements. For the default Hann window an overlap of 50% is a reasonable trade off between accurately estimating the signal power, while not over counting any of the data. Narrower windows may require a larger overlap."}], "type": "paragraph"});
+            document.getElementById("2075da59b7d346078c00d4e46784feec").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="b468b302fd4b46069a731fc8e75833c6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "noverlap", "type": "RefInfo", "version": null}, "type": "Link", "value": "noverlap"}, {"type": "text", "value": " is 0, this method is equivalent to Bartlett\u0027s method ."}], "type": "paragraph"});
+            document.getElementById("b468b302fd4b46069a731fc8e75833c6").innerHTML = html;
+        }
+        init();
+    </script>
+
+                           <div class='admonition'>
+    <div>versionadded 0.12.0</div>
+</div>
+
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="x">x</a> : array_like</dt>
+<dd>
+                <div id="f1560ff81be04dca8748ce1ff4c69e46"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Time series of measurement values"}], "type": "paragraph"});
+            document.getElementById("f1560ff81be04dca8748ce1ff4c69e46").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="fs">fs</a> : float, optional</dt>
+<dd>
+                <div id="ff3aa93ebb9b4363b7d319697e36f66e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Sampling frequency of the "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": " time series. Defaults to 1.0."}], "type": "paragraph"});
+            document.getElementById("ff3aa93ebb9b4363b7d319697e36f66e").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="window">window</a> : str or tuple or array_like, optional</dt>
+<dd>
+                <div id="6d93d301a3d84caca6a4ccac5a18f1e1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Desired window to use. If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "window", "type": "RefInfo", "version": null}, "type": "Link", "value": "window"}, {"type": "text", "value": " is a string or tuple, it is passed to "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.signal.windows._windows.get_window", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "get_window"}, {"type": "text", "value": " to generate the window values, which are DFT-even by default. See "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.signal.windows._windows.get_window", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "get_window"}, {"type": "text", "value": " for a list of windows and required parameters. If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "window", "type": "RefInfo", "version": null}, "type": "Link", "value": "window"}, {"type": "text", "value": " is array_like it will be used directly as the window and its length must be nperseg. Defaults to a Hann window."}], "type": "paragraph"});
+            document.getElementById("6d93d301a3d84caca6a4ccac5a18f1e1").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="nperseg">nperseg</a> : int, optional</dt>
+<dd>
+                <div id="82e8320b0f634fb68fb4be0fc30bb3a6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Length of each segment. Defaults to None, but if window is str or tuple, is set to 256, and if window is array_like, is set to the length of the window."}], "type": "paragraph"});
+            document.getElementById("82e8320b0f634fb68fb4be0fc30bb3a6").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="noverlap">noverlap</a> : int, optional</dt>
+<dd>
+                <div id="0a6a7f0bca9f4e15b146718b26cd8d0b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Number of points to overlap between segments. If "}, {"domain": null, "role": null, "type": "Directive", "value": "None"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "noverlap = nperseg // 2"}, {"type": "text", "value": ". Defaults to "}, {"domain": null, "role": null, "type": "Directive", "value": "None"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("0a6a7f0bca9f4e15b146718b26cd8d0b").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="nfft">nfft</a> : int, optional</dt>
+<dd>
+                <div id="1d74f29a2a6d4b238fb1885a7df9af26"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Length of the FFT used, if a zero padded FFT is desired. If "}, {"domain": null, "role": null, "type": "Directive", "value": "None"}, {"type": "text", "value": ", the FFT length is "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "nperseg", "type": "RefInfo", "version": null}, "type": "Link", "value": "nperseg"}, {"type": "text", "value": ". Defaults to "}, {"domain": null, "role": null, "type": "Directive", "value": "None"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("1d74f29a2a6d4b238fb1885a7df9af26").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="detrend">detrend</a> : str or function or `False`, optional</dt>
+<dd>
+                <div id="68f1fd0752324cb5a0c910d5d00ecb7d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Specifies how to detrend each segment. If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "detrend", "type": "RefInfo", "version": null}, "type": "Link", "value": "detrend"}, {"type": "text", "value": " is a string, it is passed as the "}, {"domain": null, "role": null, "type": "Directive", "value": "type"}, {"type": "text", "value": " argument to the "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "detrend", "type": "RefInfo", "version": null}, "type": "Link", "value": "detrend"}, {"type": "text", "value": " function. If it is a function, it takes a segment and returns a detrended segment. If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "detrend", "type": "RefInfo", "version": null}, "type": "Link", "value": "detrend"}, {"type": "text", "value": " is "}, {"domain": null, "role": null, "type": "Directive", "value": "False"}, {"type": "text", "value": ", no detrending is done. Defaults to \u0027constant\u0027."}], "type": "paragraph"});
+            document.getElementById("68f1fd0752324cb5a0c910d5d00ecb7d").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="return_onesided">return_onesided</a> : bool, optional</dt>
+<dd>
+                <div id="974cc56b5d30424db9b488b7aec33988"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"domain": null, "role": null, "type": "Directive", "value": "True"}, {"type": "text", "value": ", return a one-sided spectrum for real data. If "}, {"domain": null, "role": null, "type": "Directive", "value": "False"}, {"type": "text", "value": " return a two-sided spectrum. Defaults to "}, {"domain": null, "role": null, "type": "Directive", "value": "True"}, {"type": "text", "value": ", but for complex data, a two-sided spectrum is always returned."}], "type": "paragraph"});
+            document.getElementById("974cc56b5d30424db9b488b7aec33988").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="scaling">scaling</a> : { &#39;density&#39;, &#39;spectrum&#39; }, optional</dt>
+<dd>
+                <div id="c52275cb1a714fe580f0ad54ca88a9e4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Selects between computing the power spectral density (\u0027density\u0027) where "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "Pxx", "type": "RefInfo", "version": null}, "type": "Link", "value": "Pxx"}, {"type": "text", "value": " has units of V**2/Hz and computing the power spectrum (\u0027spectrum\u0027) where "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "Pxx", "type": "RefInfo", "version": null}, "type": "Link", "value": "Pxx"}, {"type": "text", "value": " has units of V**2, if "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": " is measured in V and "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "fs", "type": "RefInfo", "version": null}, "type": "Link", "value": "fs"}, {"type": "text", "value": " is measured in Hz. Defaults to \u0027density\u0027"}], "type": "paragraph"});
+            document.getElementById("c52275cb1a714fe580f0ad54ca88a9e4").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="axis">axis</a> : int, optional</dt>
+<dd>
+                <div id="cb06fb3550954535903b8d1c55e1f422"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Axis along which the periodogram is computed; the default is over the last axis (i.e. "}, {"type": "inlineCode", "value": "axis=-1"}, {"type": "text", "value": ")."}], "type": "paragraph"});
+            document.getElementById("cb06fb3550954535903b8d1c55e1f422").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="average">average</a> : { &#39;mean&#39;, &#39;median&#39; }, optional</dt>
+<dd>
+                <div id="f3701242b075494ea01d292ea399a5fc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Method to use when averaging periodograms. Defaults to \u0027mean\u0027."}], "type": "paragraph"});
+            document.getElementById("f3701242b075494ea01d292ea399a5fc").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <div class='admonition'>
+    <div>versionadded 1.2.0</div>
+</div>
+
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="f">f</a> : ndarray</dt>
+<dd>
+                <div id="1578e365f2f1404095749ac5b4f9ec0a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Array of sample frequencies."}], "type": "paragraph"});
+            document.getElementById("1578e365f2f1404095749ac5b4f9ec0a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="Pxx">Pxx</a> : ndarray</dt>
+<dd>
+                <div id="58351dab804f434c87405cea33bbd0bb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Power spectral density or power spectrum of x."}], "type": "paragraph"});
+            document.getElementById("58351dab804f434c87405cea33bbd0bb").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="3fb9d6aec30444b4b83517830a25be07"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Estimate power spectral density using Welch\u0027s method."}], "type": "paragraph"});
+            document.getElementById("3fb9d6aec30444b4b83517830a25be07").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.signal._spectral_py.lombscargle.html" class='exists'>lombscargle</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="2a509c6871f8493abe6e2b6ea0db8316"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "Lomb-Scargle periodogram for unevenly sampled data"});
+            document.getElementById("2a509c6871f8493abe6e2b6ea0db8316").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.signal._spectral_py.periodogram.html" class='exists'>periodogram</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="c6bc66cc75064a8dbea44fbfe5bd9154"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "Simple, optionally modified periodogram"});
+            document.getElementById("c6bc66cc75064a8dbea44fbfe5bd9154").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">signal</span><br><span class='nsl'>...&nbsp;</span><span class="kn">import</span><span class=""> </span><span class="nn">matplotlib</span><span class="nn">.</span><span class="nn">pyplot</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">plt</span><br><span class='nsl'>...&nbsp;</span><span class="">rng</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">random</span><span class="o">.</span><span class="">default_rng</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+                           Generate a test signal, a 2 Vrms sine wave at 1234 Hz, corrupted by
+0.001 V**2/Hz of white noise sampled at 10 kHz.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">fs</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="mf">10e3</span><br><span class='nsl'>...&nbsp;</span><span class="">N</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="mf">1e5</span><br><span class='nsl'>...&nbsp;</span><span class="">amp</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="mi">2</span><span class="o">*</span><span class="">np</span><span class="o">.</span><span class="">sqrt</span><span class="">(</span><span class="mi">2</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">freq</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="mf">1234.0</span><br><span class='nsl'>...&nbsp;</span><span class="">noise_power</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="mf">0.001</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">fs</span><span class=""> </span><span class="o">/</span><span class=""> </span><span class="mi">2</span><br><span class='nsl'>...&nbsp;</span><span class="">time</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">arange</span><span class="">(</span><span class="">N</span><span class="">)</span><span class=""> </span><span class="o">/</span><span class=""> </span><span class="">fs</span><br><span class='nsl'>...&nbsp;</span><span class="">x</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">amp</span><span class="o">*</span><span class="">np</span><span class="o">.</span><span class="">sin</span><span class="">(</span><span class="mi">2</span><span class="o">*</span><span class="">np</span><span class="o">.</span><span class="">pi</span><span class="o">*</span><span class="">freq</span><span class="o">*</span><span class="">time</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">x</span><span class=""> </span><span class="o">+</span><span class="o">=</span><span class=""> </span><span class="">rng</span><span class="o">.</span><span class="">normal</span><span class="">(</span><span class="">scale</span><span class="o">=</span><span class="">np</span><span class="o">.</span><span class="">sqrt</span><span class="">(</span><span class="">noise_power</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">size</span><span class="o">=</span><span class="">time</span><span class="o">.</span><span class="">shape</span><span class="">)</span>
+</pre>
+            
+                           Compute and plot the power spectral density.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">f</span><span class="">,</span><span class=""> </span><span class="">Pxx_den</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">signal</span><span class="o">.</span><span class="">welch</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">fs</span><span class="">,</span><span class=""> </span><span class="">nperseg</span><span class="o">=</span><span class="mi">1024</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">semilogy</span><span class="">(</span><span class="">f</span><span class="">,</span><span class=""> </span><span class="">Pxx_den</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">ylim</span><span class="">(</span><span class="">[</span><span class="mf">0.5e-3</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">xlabel</span><span class="">(</span><span class="s1">&#39;</span><span class="s1">frequency [Hz]</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">ylabel</span><span class="">(</span><span class="s1">&#39;</span><span class="s1">PSD [V**2/Hz]</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">show</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+                           If we average the last half of the spectral density, to exclude the
+peak, we can recover the noise power on the signal.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">np</span><span class="o">.</span><span class="">mean</span><span class="">(</span><span class="">Pxx_den</span><span class="">[</span><span class="mi">256</span><span class="">:</span><span class="">]</span><span class="">)</span>
+0.0009924865443739191</pre>
+            
+                           Now compute and plot the power spectrum.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">f</span><span class="">,</span><span class=""> </span><span class="">Pxx_spec</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">signal</span><span class="o">.</span><span class="">welch</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">fs</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">flattop</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="mi">1024</span><span class="">,</span><span class=""> </span><span class="">scaling</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">spectrum</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">figure</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">semilogy</span><span class="">(</span><span class="">f</span><span class="">,</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">sqrt</span><span class="">(</span><span class="">Pxx_spec</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">xlabel</span><span class="">(</span><span class="s1">&#39;</span><span class="s1">frequency [Hz]</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">ylabel</span><span class="">(</span><span class="s1">&#39;</span><span class="s1">Linear spectrum [V RMS]</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">show</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+                           The peak height in the power spectrum is an estimate of the RMS
+amplitude.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">np</span><span class="o">.</span><span class="">sqrt</span><span class="">(</span><span class="">Pxx_spec</span><span class="o">.</span><span class="">max</span><span class="">(</span><span class="">)</span><span class="">)</span>
+2.0077340678640727</pre>
+            
+                           If we now introduce a discontinuity in the signal, by increasing the
+amplitude of a small portion of the signal by 50, we can see the
+corruption of the mean average power spectral density, but using a
+median average better estimates the normal behaviour.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">x</span><span class="">[</span><span class="nb">int</span><span class="">(</span><span class="">N</span><span class="o">/</span><span class="o">/</span><span class="mi">2</span><span class="">)</span><span class="">:</span><span class="nb">int</span><span class="">(</span><span class="">N</span><span class="o">/</span><span class="o">/</span><span class="mi">2</span><span class="">)</span><span class="o">+</span><span class="mi">10</span><span class="">]</span><span class=""> </span><span class="o">*</span><span class="o">=</span><span class=""> </span><span class="mf">50.</span><br><span class='nsl'>...&nbsp;</span><span class="">f</span><span class="">,</span><span class=""> </span><span class="">Pxx_den</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">signal</span><span class="o">.</span><span class="">welch</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">fs</span><span class="">,</span><span class=""> </span><span class="">nperseg</span><span class="o">=</span><span class="mi">1024</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">f_med</span><span class="">,</span><span class=""> </span><span class="">Pxx_den_med</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">signal</span><span class="o">.</span><span class="">welch</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">fs</span><span class="">,</span><span class=""> </span><span class="">nperseg</span><span class="o">=</span><span class="mi">1024</span><span class="">,</span><span class=""> </span><span class="">average</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">median</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">semilogy</span><span class="">(</span><span class="">f</span><span class="">,</span><span class=""> </span><span class="">Pxx_den</span><span class="">,</span><span class=""> </span><span class="">label</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">mean</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">semilogy</span><span class="">(</span><span class="">f_med</span><span class="">,</span><span class=""> </span><span class="">Pxx_den_med</span><span class="">,</span><span class=""> </span><span class="">label</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">median</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">ylim</span><span class="">(</span><span class="">[</span><span class="mf">0.5e-3</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">xlabel</span><span class="">(</span><span class="s1">&#39;</span><span class="s1">frequency [Hz]</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">ylabel</span><span class="">(</span><span class="s1">&#39;</span><span class="s1">PSD [V**2/Hz]</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">legend</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">show</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.signal._spectral_py.stft.html" class='exists'>scipy.signal._spectral_py.stft</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.signal._spectral_py.csd.html" class='exists'>scipy.signal._spectral_py.csd</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.signal._spectral_py.spectrogram.html" class='exists'>scipy.signal._spectral_py.spectrogram</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.signal._spectral_py.periodogram.html" class='exists'>scipy.signal._spectral_py.periodogram</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.signal._spectral_py.lombscargle.html" class='exists'>scipy.signal._spectral_py.lombscargle</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.signal._spectral_py.coherence.html" class='exists'>scipy.signal._spectral_py.coherence</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/signal/_spectral_py.py#L297'>/scipy/signal/_spectral_py.py#297</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 10.0, "label": "scipy.signal._spectral_py.periodogram", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._spectral_py.periodogram"}, {"id": 2, "val": 10.64575131106459, "label": "scipy.signal._spectral_py.lombscargle", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._spectral_py.lombscargle"}, {"id": 3, "val": 10.0, "label": "scipy.signal._spectral_py.stft", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._spectral_py.stft"}, {"id": 4, "val": 9.0, "label": "scipy.signal._spectral_py.coherence", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._spectral_py.coherence"}, {"id": 5, "val": 10.0, "label": "scipy.signal._spectral_py.csd", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._spectral_py.csd"}, {"id": 6, "val": 9.414213562373096, "label": "scipy.signal._spectral_py.spectrogram", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._spectral_py.spectrogram"}, {"id": 7, "val": 11.872983346207416, "label": "scipy.signal.windows._windows.get_window", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal.windows._windows.get_window"}], "links": [{"source": 1, "target": 6, "id": 0}, {"source": 1, "target": 4, "id": 1}, {"source": 1, "target": 5, "id": 2}, {"source": 3, "target": 6, "id": 5}, {"source": 5, "target": 3, "id": 8}, {"source": 5, "target": 6, "id": 9}, {"source": 5, "target": 2, "id": 10}, {"source": 5, "target": 4, "id": 11}, {"source": 6, "target": 2, "id": 12}, {"source": 6, "target": 3, "id": 13}, {"source": 7, "target": 3, "id": 14}, {"source": 7, "target": 5, "id": 15}, {"source": 7, "target": 6, "id": 19}, {"source": 7, "target": 1, "id": 21}, {"source": 7, "target": 4, "id": 27}, {"source": 4, "target": 5, "id": 29}, {"source": 2, "target": 3, "id": 30}, {"source": 2, "target": 5, "id": 31}, {"source": 2, "target": 6, "id": 33}, {"source": 2, "target": 1, "id": 34}, {"source": 2, "target": 4, "id": 35}]};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.interpolate.html'>interpolate</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.interpolate._bsplines.html'>_bsplines</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._bspl.html">_bspl</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._bsplines.html">_bsplines</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._cubic.html">_cubic</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack.html">_fitpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.html">_fitpack2</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack_impl.html">_fitpack_impl</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack_py.html">_fitpack_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._interpolate.html">_interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._ndgriddata.html">_ndgriddata</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._pade.html">_pade</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._polyint.html">_polyint</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._ppoly.html">_ppoly</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._rbf.html">_rbf</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._rbfinterp.html">_rbfinterp</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._rbfinterp_pythran.html">_rbfinterp_pythran</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._rgi.html">_rgi</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._rgi_cython.html">_rgi_cython</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.dfitpack.html">dfitpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.fitpack.html">fitpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.fitpack2.html">fitpack2</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.interpnd.html">interpnd</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.ndgriddata.html">ndgriddata</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.polyint.html">polyint</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.rbf.html">rbf</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.interpolate._bsplines._woodbury_algorithm.html'>_woodbury_algorithm</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._bsplines.BSpline.html">BSpline</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._bsplines._as_float_array.html">_as_float_array</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._bsplines._augknt.html">_augknt</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._bsplines._coeff_of_divided_diff.html">_coeff_of_divided_diff</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._bsplines._compute_optimal_gcv_parameter.html">_compute_optimal_gcv_parameter</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._bsplines._convert_string_aliases.html">_convert_string_aliases</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._bsplines._diff_dual_poly.html">_diff_dual_poly</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._bsplines._dual_poly.html">_dual_poly</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._bsplines._get_dtype.html">_get_dtype</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._bsplines._make_interp_per_full_matr.html">_make_interp_per_full_matr</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._bsplines._make_periodic_spline.html">_make_periodic_spline</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._bsplines._not_a_knot.html">_not_a_knot</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._bsplines._periodic_knots.html">_periodic_knots</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._bsplines._process_deriv_spec.html">_process_deriv_spec</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._bsplines._woodbury_algorithm.html">_woodbury_algorithm</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._bsplines.make_interp_spline.html">make_interp_spline</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._bsplines.make_lsq_spline.html">make_lsq_spline</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._bsplines.make_smoothing_spline.html">make_smoothing_spline</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a>    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>_woodbury_algorithm(A, ur, ll, b, k)</code><!-- rendering Extended Summary -->
+        <h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="7ff5e6f7d71340bea786f3e6b04a4251"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This algorithm works only for systems with banded matrix A plus a correction term U @ V.T, where the matrix U @ V.T gives upper right and lower left block of A The system is solved with the following steps:     1.  New systems of linear equations are constructed:         A @ z_i = u_i,         u_i - columnn vector of U,         i = 1, ..., k - 1     2.  Matrix Z is formed from vectors z_i:         Z = [ z_1 | z_2 | ... | z_{k - 1} ]     3.  Matrix H = (1 + V.T @ Z)^{-1}     4.  The system A\u0027 @ y = b is solved     5.  x = y - Z @ (H @ V.T @ y) Also, "}, {"type": "inlineCode", "value": "n"}, {"type": "text", "value": " should be greater than "}, {"type": "inlineCode", "value": "k"}, {"type": "text", "value": ", otherwise corner block elements will intersect with diagonals."}], "type": "paragraph"});
+            document.getElementById("7ff5e6f7d71340bea786f3e6b04a4251").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="A">A</a> : 2-D array, shape(k, n)</dt>
+<dd>
+                <div id="3d331dfeb9d143e18113f530034ad0ba"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Matrix of diagonals of original matrix(see "}, {"type": "inlineCode", "value": "solve_banded"}, {"type": "text", "value": " documentation)."}], "type": "paragraph"});
+            document.getElementById("3d331dfeb9d143e18113f530034ad0ba").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="ur">ur</a> : 2-D array, shape(bs, bs)</dt>
+<dd>
+                <div id="d8a9bcc6e28e46c8ab25b54e79835e6d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Upper right block matrix."}], "type": "paragraph"});
+            document.getElementById("d8a9bcc6e28e46c8ab25b54e79835e6d").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="ll">ll</a> : 2-D array, shape(bs, bs)</dt>
+<dd>
+                <div id="bf6c026894dc4742b8e56fb2d556d0c9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Lower left block matrix."}], "type": "paragraph"});
+            document.getElementById("bf6c026894dc4742b8e56fb2d556d0c9").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="b">b</a> : 1-D array, shape(n,)</dt>
+<dd>
+                <div id="71ff4e03e4d14289b0e38d8752f08c7a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Vector of constant terms of the system of linear equations."}], "type": "paragraph"});
+            document.getElementById("71ff4e03e4d14289b0e38d8752f08c7a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="k">k</a> : int</dt>
+<dd>
+                <div id="cda03dcb27e741d38d042e607fee7aba"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "B-spline degree."}], "type": "paragraph"});
+            document.getElementById("cda03dcb27e741d38d042e607fee7aba").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="c">c</a> : 1-D array, shape(n,)</dt>
+<dd>
+                <div id="813eb1c39a4649c3938e78c668047015"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Solution of the original system of linear equations."}], "type": "paragraph"});
+            document.getElementById("813eb1c39a4649c3938e78c668047015").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="0958986157ad42db969a764575e77aca"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Solve a cyclic banded linear system with upper right and lower blocks of size "}, {"type": "inlineCode", "value": "(k-1) / 2"}, {"type": "text", "value": " using the Woodbury formula"}], "type": "paragraph"});
+            document.getElementById("0958986157ad42db969a764575e77aca").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+                           Consider the case of n = 8, k = 5 (size of blocks - 2 x 2).
+The matrix of a system:       U:          V:
+  x  x  x  *  *  a  b         a b 0 0     0 0 1 0
+  x  x  x  x  *  *  c         0 c 0 0     0 0 0 1
+  x  x  x  x  x  *  *         0 0 0 0     0 0 0 0
+  *  x  x  x  x  x  *         0 0 0 0     0 0 0 0
+  *  *  x  x  x  x  x         0 0 0 0     0 0 0 0
+  d  *  *  x  x  x  x         0 0 d 0     1 0 0 0
+  e  f  *  *  x  x  x         0 0 e f     0 1 0 0  
+            
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/interpolate/_bsplines.py#L879'>/scipy/interpolate/_bsplines.py#879</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

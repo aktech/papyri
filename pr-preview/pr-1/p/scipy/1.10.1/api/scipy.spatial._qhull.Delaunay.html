@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.spatial.html'>spatial</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.spatial._qhull.html'>_qhull</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.spatial._ckdtree.html">_ckdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._distance_pybind.html">_distance_pybind</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._distance_wrap.html">_distance_wrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._geometric_slerp.html">_geometric_slerp</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._hausdorff.html">_hausdorff</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.html">_kdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._plotutils.html">_plotutils</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._procrustes.html">_procrustes</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.html">_qhull</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._spherical_voronoi.html">_spherical_voronoi</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._voronoi.html">_voronoi</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.ckdtree.html">ckdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.html">distance</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.kdtree.html">kdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.qhull.html">qhull</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.transform.html">transform</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.spatial._qhull.Delaunay.html'>Delaunay</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.ConvexHull.html">ConvexHull</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.Delaunay.html">Delaunay</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.HalfspaceIntersection.html">HalfspaceIntersection</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.QhullError.html">QhullError</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.Voronoi.html">Voronoi</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull._Qhull.html">_Qhull</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull._QhullUser.html">_QhullUser</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull._copy_docstr.html">_copy_docstr</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull._get_barycentric_transforms.html">_get_barycentric_transforms</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.tsearch.html">tsearch</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" >+</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.Delaunay.__init__.html">__init__</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.Delaunay._update.html">_update</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.Delaunay.add_points.html">add_points</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.Delaunay.find_simplex.html">find_simplex</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.Delaunay.lift_points.html">lift_points</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.Delaunay.plane_distance.html">plane_distance</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Attributes">Attributes</a><a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Raises">Raises</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>Delaunay(points, furthest_site=False, incremental=False, qhull_options=None)</code><h3 id="section-Attributes">Attributes</h3>
+<dl>
+<dt><a id="points">points</a> : ndarray of double, shape (npoints, ndim)</dt>
+<dd>
+                <div id="100599c6ed2c4cc6a970ead14a6654e6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Coordinates of input points."}], "type": "paragraph"});
+            document.getElementById("100599c6ed2c4cc6a970ead14a6654e6").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="simplices">simplices</a> : ndarray of ints, shape (nsimplex, ndim+1)</dt>
+<dd>
+                <div id="f7d3ae0d473146ecbac253808e54d816"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Indices of the points forming the simplices in the triangulation. For 2-D, the points are oriented counterclockwise."}], "type": "paragraph"});
+            document.getElementById("f7d3ae0d473146ecbac253808e54d816").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="neighbors">neighbors</a> : ndarray of ints, shape (nsimplex, ndim+1)</dt>
+<dd>
+                <div id="d5f46050ce82428598ba5cfe5427298b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Indices of neighbor simplices for each simplex. The kth neighbor is opposite to the kth vertex. For simplices at the boundary, -1 denotes no neighbor."}], "type": "paragraph"});
+            document.getElementById("d5f46050ce82428598ba5cfe5427298b").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="equations">equations</a> : ndarray of double, shape (nsimplex, ndim+2)</dt>
+<dd>
+                <div id="e0be6f1db60f4f88af35e45f2e6fe36f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "[normal, offset] forming the hyperplane equation of the facet on the paraboloid (see "}, {"target": "http://www.qhull.org/", "type": "ExternalLink", "value": "Qhull documentation"}, {"type": "text", "value": " for more)."}], "type": "paragraph"});
+            document.getElementById("e0be6f1db60f4f88af35e45f2e6fe36f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="paraboloid_scale, paraboloid_shift">paraboloid_scale, paraboloid_shift</a> : float</dt>
+<dd>
+                <div id="e5755f2b3af94dbf9007da235c017663"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Scale and shift for the extra paraboloid dimension (see "}, {"target": "http://www.qhull.org/", "type": "ExternalLink", "value": "Qhull documentation"}, {"type": "text", "value": " for more)."}], "type": "paragraph"});
+            document.getElementById("e5755f2b3af94dbf9007da235c017663").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="transform">transform</a> : ndarray of double, shape (nsimplex, ndim+1, ndim)</dt>
+<dd>
+                <div id="7083afd21b3e40f6b40ef3e2dce1ee04"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Affine transform from "}, {"type": "inlineCode", "value": "x"}, {"type": "text", "value": " to the barycentric coordinates "}, {"type": "inlineCode", "value": "c"}, {"type": "text", "value": ". This is defined by      "}], "type": "paragraph"});
+            document.getElementById("7083afd21b3e40f6b40ef3e2dce1ee04").innerHTML = html;
+        }
+        init();
+    </script>
+
+                <div id="c54182581245475aa2819d41c99c2ce6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "T c = x - r"});
+            document.getElementById("c54182581245475aa2819d41c99c2ce6").innerHTML = html;
+        }
+        init();
+    </script>
+
+                <div id="fe55baca8d5349f98b0ff23198ec2048"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "At vertex "}, {"type": "inlineCode", "value": "j"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "c_j = 1"}, {"type": "text", "value": " and the other coordinates zero."}], "type": "paragraph"});
+            document.getElementById("fe55baca8d5349f98b0ff23198ec2048").innerHTML = html;
+        }
+        init();
+    </script>
+
+                <div id="586cb4d1b4e14e89a47391afe9f7956d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For simplex "}, {"type": "inlineCode", "value": "i"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "transform[i,:ndim,:ndim]"}, {"type": "text", "value": " contains inverse of the matrix "}, {"type": "inlineCode", "value": "T"}, {"type": "text", "value": ", and "}, {"type": "inlineCode", "value": "transform[i,ndim,:]"}, {"type": "text", "value": " contains the vector "}, {"type": "inlineCode", "value": "r"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("586cb4d1b4e14e89a47391afe9f7956d").innerHTML = html;
+        }
+        init();
+    </script>
+
+                <div id="d9c0c307a70142b5ae51b63b608aef43"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If the simplex is degenerate or nearly degenerate, its barycentric transform contains NaNs."}], "type": "paragraph"});
+            document.getElementById("d9c0c307a70142b5ae51b63b608aef43").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="vertex_to_simplex">vertex_to_simplex</a> : ndarray of int, shape (npoints,)</dt>
+<dd>
+                <div id="07741581429c444f97679d155859a2f9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Lookup array, from a vertex, to some simplex which it is a part of. If qhull option \"Qc\" was not specified, the list will contain -1 for points that are not vertices of the tessellation."}], "type": "paragraph"});
+            document.getElementById("07741581429c444f97679d155859a2f9").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="convex_hull">convex_hull</a> : ndarray of int, shape (nfaces, ndim)</dt>
+<dd>
+                <div id="40719c3965e840898fd20dce1bb575fe"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Vertices of facets forming the convex hull of the point set. The array contains the indices of the points belonging to the (N-1)-dimensional facets that form the convex hull of the triangulation."}], "type": "paragraph"});
+            document.getElementById("40719c3965e840898fd20dce1bb575fe").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <div class='admonition'>
+    <div>note </div>
+                        <div id="c865714e607d4f8fa3b2c116746d34e5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Computing convex hulls via the Delaunay triangulation is inefficient and subject to increased numerical instability. Use "}, {"domain": null, "role": null, "type": "Directive", "value": "ConvexHull"}, {"type": "text", "value": " instead."}], "type": "paragraph"});
+            document.getElementById("c865714e607d4f8fa3b2c116746d34e5").innerHTML = html;
+        }
+        init();
+    </script>
+
+</div>
+
+
+</dd>
+<dt><a id="coplanar">coplanar</a> : ndarray of int, shape (ncoplanar, 3)</dt>
+<dd>
+                <div id="057bd8ad05364c08afea1b692a297457"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Indices of coplanar points and the corresponding indices of the nearest facet and the nearest vertex.  Coplanar points are input points which were "}, {"children": [{"type": "text", "value": "not"}], "type": "emphasis"}, {"type": "text", "value": " included in the triangulation due to numerical precision issues."}], "type": "paragraph"});
+            document.getElementById("057bd8ad05364c08afea1b692a297457").innerHTML = html;
+        }
+        init();
+    </script>
+
+                <div id="91034a4fdd954101bbc188452e5305f7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If option \"Qc\" is not specified, this list is not computed."}], "type": "paragraph"});
+            document.getElementById("91034a4fdd954101bbc188452e5305f7").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <div class='admonition'>
+    <div>versionadded 0.12.0</div>
+</div>
+
+
+</dd>
+<dt><a id="vertices">vertices</a> : </dt>
+<dd>
+                <div id="1661ed95617e485b81d17a2bf3e5f617"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Same as "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "simplices", "type": "RefInfo", "version": null}, "type": "Link", "value": "simplices"}, {"type": "text", "value": ", but deprecated."}], "type": "paragraph"});
+            document.getElementById("1661ed95617e485b81d17a2bf3e5f617").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <div class='admonition'>
+    <div>deprecated 0.12.0</div>
+                        <div id="838dff98ab2d4a1bac61423538fb2d7a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Delaunay attribute "}, {"domain": null, "role": null, "type": "Directive", "value": "vertices"}, {"type": "text", "value": " is deprecated in favour of "}, {"domain": null, "role": null, "type": "Directive", "value": "simplices"}, {"type": "text", "value": " and will be removed in Scipy 1.11.0."}], "type": "paragraph"});
+            document.getElementById("838dff98ab2d4a1bac61423538fb2d7a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</div>
+
+
+</dd>
+<dt><a id="vertex_neighbor_vertices">vertex_neighbor_vertices</a> : tuple of two ndarrays of int; (indptr, indices)</dt>
+<dd>
+                <div id="05260276e4594ab89221d53b8d0a46c7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Neighboring vertices of vertices. The indices of neighboring vertices of vertex "}, {"domain": null, "role": null, "type": "Directive", "value": "k"}, {"type": "text", "value": " are "}, {"type": "inlineCode", "value": "indices[indptr[k]:indptr[k+1]]"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("05260276e4594ab89221d53b8d0a46c7").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="furthest_site">furthest_site</a> : </dt>
+<dd>
+                <div id="289a713f62d14b5ca6dfd7a16680b316"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "True if this was a furthest site triangulation and False if not."}], "type": "paragraph"});
+            document.getElementById("289a713f62d14b5ca6dfd7a16680b316").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <div class='admonition'>
+    <div>versionadded 1.4.0</div>
+</div>
+
+
+</dd>
+</dl>
+
+<!-- rendering Extended Summary -->
+                                   <div class='admonition'>
+    <div>versionadded 0.9</div>
+</div>
+
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="dbf1ebb67cb1400ba297344bd9b71892"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The tessellation is computed using the Qhull library "}, {"target": "http://www.qhull.org/", "type": "ExternalLink", "value": "Qhull library"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("dbf1ebb67cb1400ba297344bd9b71892").innerHTML = html;
+        }
+        init();
+    </script>
+
+                           <div class='admonition'>
+    <div>note </div>
+                        <div id="6dc4f691288745dfa2d032a71f872ff4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Unless you pass in the Qhull option \"QJ\", Qhull does not guarantee that each input point appears as a vertex in the Delaunay triangulation. Omitted points are listed in the "}, {"domain": null, "role": null, "type": "Directive", "value": "coplanar"}, {"type": "text", "value": " attribute."}], "type": "paragraph"});
+            document.getElementById("6dc4f691288745dfa2d032a71f872ff4").innerHTML = html;
+        }
+        init();
+    </script>
+
+</div>
+
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="points">points</a> : ndarray of floats, shape (npoints, ndim)</dt>
+<dd>
+                <div id="65242f4c49664ed4bbf75f445a6bb246"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Coordinates of points to triangulate"}], "type": "paragraph"});
+            document.getElementById("65242f4c49664ed4bbf75f445a6bb246").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="furthest_site">furthest_site</a> : bool, optional</dt>
+<dd>
+                <div id="4e3358afa1bc4914b014e3fcd17b220d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Whether to compute a furthest-site Delaunay triangulation. Default: False"}], "type": "paragraph"});
+            document.getElementById("4e3358afa1bc4914b014e3fcd17b220d").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <div class='admonition'>
+    <div>versionadded 0.12.0</div>
+</div>
+
+
+</dd>
+<dt><a id="incremental">incremental</a> : bool, optional</dt>
+<dd>
+                <div id="db4b68e42e1f4bcd9917b4ad5e184121"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Allow adding new points incrementally. This takes up some additional resources."}], "type": "paragraph"});
+            document.getElementById("db4b68e42e1f4bcd9917b4ad5e184121").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="qhull_options">qhull_options</a> : str, optional</dt>
+<dd>
+                <div id="1a30c12acd0b424f8f4b61286f00dcaa"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Additional options to pass to Qhull. See Qhull manual for details. Option \"Qt\" is always enabled. Default:\"Qbb Qc Qz Qx Q12\" for ndim \u003e 4 and \"Qbb Qc Qz Q12\" otherwise. Incremental mode omits \"Qz\"."}], "type": "paragraph"});
+            document.getElementById("1a30c12acd0b424f8f4b61286f00dcaa").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <div class='admonition'>
+    <div>versionadded 0.12.0</div>
+</div>
+
+
+</dd>
+</dl>
+
+<h3 id="section-Raises">Raises</h3>
+<dl>
+<dt>QhullError</dt>
+<dd>
+                <div id="e6f284fc1fbf4f44b21dca2d8acfb94a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Raised when Qhull encounters an error condition, such as geometrical degeneracy when options to resolve are not enabled."}], "type": "paragraph"});
+            document.getElementById("e6f284fc1fbf4f44b21dca2d8acfb94a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt>ValueError</dt>
+<dd>
+                <div id="0d0839e9e2d447049fc20af0fbd6da82"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Raised if an incompatible array is given as input."}], "type": "paragraph"});
+            document.getElementById("0d0839e9e2d447049fc20af0fbd6da82").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="0b5b27612d8744128199ac25752c3ce3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Delaunay tessellation in N dimensions."}], "type": "paragraph"});
+            document.getElementById("0b5b27612d8744128199ac25752c3ce3").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+                           Triangulation of a set of points:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="">points</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mf">1.1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">spatial</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">Delaunay</span><br><span class='nsl'>...&nbsp;</span><span class="">tri</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">Delaunay</span><span class="">(</span><span class="">points</span><span class="">)</span>
+</pre>
+            
+                           We can plot it:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">matplotlib</span><span class="nn">.</span><span class="nn">pyplot</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">plt</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">triplot</span><span class="">(</span><span class="">points</span><span class="">[</span><span class="">:</span><span class="">,</span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">points</span><span class="">[</span><span class="">:</span><span class="">,</span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">tri</span><span class="o">.</span><span class="">simplices</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">points</span><span class="">[</span><span class="">:</span><span class="">,</span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">points</span><span class="">[</span><span class="">:</span><span class="">,</span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">o</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">show</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+                           Point indices and coordinates for the two triangles forming the
+triangulation:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">tri</span><span class="o">.</span><span class="">simplices</span>
+array([[2, 3, 0],                 # may vary
+       [3, 1, 0]], dtype=int32)</pre>
+            
+                           Note that depending on how rounding errors go, the simplices may
+be in a different order than above.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">points</span><span class="">[</span><span class="">tri</span><span class="o">.</span><span class="">simplices</span><span class="">]</span>
+array([[[ 1. ,  0. ],            # may vary
+        [ 1. ,  1. ],
+        [ 0. ,  0. ]],
+       [[ 1. ,  1. ],
+        [ 0. ,  1.1],
+        [ 0. ,  0. ]]])</pre>
+            
+                           Triangle 0 is the only neighbor of triangle 1, and it&#39;s opposite to
+vertex 1 of triangle 1:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">tri</span><span class="o">.</span><span class="">neighbors</span><span class="">[</span><span class="mi">1</span><span class="">]</span>
+array([-1,  0, -1], dtype=int32)</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">points</span><span class="">[</span><span class="">tri</span><span class="o">.</span><span class="">simplices</span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class="mi">1</span><span class="">]</span><span class="">]</span>
+array([ 0. ,  1.1])</pre>
+            
+                           We can find out which triangle points are in:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">p</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="">(</span><span class="mf">0.1</span><span class="">,</span><span class=""> </span><span class="mf">0.2</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">(</span><span class="mf">1.5</span><span class="">,</span><span class=""> </span><span class="mf">0.5</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">(</span><span class="mf">0.5</span><span class="">,</span><span class=""> </span><span class="mf">1.05</span><span class="">)</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">tri</span><span class="o">.</span><span class="">find_simplex</span><span class="">(</span><span class="">p</span><span class="">)</span>
+array([ 1, -1, 1], dtype=int32)</pre>
+            
+                           The returned integers in the array are the indices of the simplex the
+corresponding point is in. If -1 is returned, the point is in no simplex.
+Be aware that the shortcut in the following example only works correctly
+for valid points as invalid points result in -1 which is itself a valid
+index for the last simplex in the list.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">p_valids</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="">(</span><span class="mf">0.1</span><span class="">,</span><span class=""> </span><span class="mf">0.2</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">(</span><span class="mf">0.5</span><span class="">,</span><span class=""> </span><span class="mf">1.05</span><span class="">)</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">tri</span><span class="o">.</span><span class="">simplices</span><span class="">[</span><span class="">tri</span><span class="o">.</span><span class="">find_simplex</span><span class="">(</span><span class="">p_valids</span><span class="">)</span><span class="">]</span>
+array([[3, 1, 0],                 # may vary
+       [3, 1, 0]], dtype=int32)</pre>
+            
+                           We can also compute barycentric coordinates in triangle 1 for
+these points:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">b</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">tri</span><span class="o">.</span><span class="">transform</span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class="">:</span><span class="mi">2</span><span class="">]</span><span class="o">.</span><span class="">dot</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">transpose</span><span class="">(</span><span class="">p</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="">tri</span><span class="o">.</span><span class="">transform</span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class="mi">2</span><span class="">]</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">np</span><span class="o">.</span><span class="">c_</span><span class="">[</span><span class="">np</span><span class="o">.</span><span class="">transpose</span><span class="">(</span><span class="">b</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="">b</span><span class="o">.</span><span class="">sum</span><span class="">(</span><span class="">axis</span><span class="o">=</span><span class="mi">0</span><span class="">)</span><span class="">]</span>
+array([[ 0.1       ,  0.09090909,  0.80909091],
+       [ 1.5       , -0.90909091,  0.40909091],
+       [ 0.5       ,  0.5       ,  0.        ]])</pre>
+            
+                           The coordinates for the first point are all positive, meaning it
+is indeed inside the triangle. The third point is on an edge,
+hence its null third coordinate.  
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.spatial._plotutils.delaunay_plot_2d.html" class='exists'>scipy.spatial._plotutils.delaunay_plot_2d</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/spatial/_qhull.cpython-39-x86_64-linux-gnu.so#LNone'>/scipy/spatial/_qhull.cpython-39-x86_64-linux-gnu.so#None</a>
+<br/>
+
+type: &lt;class &#39;type&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 8.0, "label": "scipy.spatial._plotutils.delaunay_plot_2d", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.spatial._plotutils.delaunay_plot_2d"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

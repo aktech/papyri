@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.linalg.html'>linalg</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.linalg._decomp_svd.html'>_decomp_svd</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.linalg._basic.html">_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._cythonized_array_utils.html">_cythonized_array_utils</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp.html">_decomp</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_cholesky.html">_decomp_cholesky</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_cossin.html">_decomp_cossin</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_ldl.html">_decomp_ldl</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_lu.html">_decomp_lu</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_polar.html">_decomp_polar</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_qr.html">_decomp_qr</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_qz.html">_decomp_qz</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_schur.html">_decomp_schur</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_svd.html">_decomp_svd</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_update.html">_decomp_update</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._expm_frechet.html">_expm_frechet</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._fblas.html">_fblas</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._flapack.html">_flapack</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._flinalg.html">_flinalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._flinalg_py.html">_flinalg_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative.html">_interpolative</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.html">_interpolative_backend</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs.html">_matfuncs</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs_expm.html">_matfuncs_expm</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs_sqrtm.html">_matfuncs_sqrtm</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs_sqrtm_triu.html">_matfuncs_sqrtm_triu</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._misc.html">_misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._procrustes.html">_procrustes</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._sketches.html">_sketches</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._solve_toeplitz.html">_solve_toeplitz</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._solvers.html">_solvers</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._special_matrices.html">_special_matrices</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.basic.html">basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.blas.html">blas</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.cython_blas.html">cython_blas</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.cython_lapack.html">cython_lapack</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp.html">decomp</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_cholesky.html">decomp_cholesky</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_lu.html">decomp_lu</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_qr.html">decomp_qr</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_schur.html">decomp_schur</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_svd.html">decomp_svd</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.flinalg.html">flinalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.interpolative.html">interpolative</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.lapack.html">lapack</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.matfuncs.html">matfuncs</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.special_matrices.html">special_matrices</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.linalg._decomp_svd.svdvals.html'>svdvals</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_svd.diagsvd.html">diagsvd</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_svd.null_space.html">null_space</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_svd.orth.html">orth</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_svd.subspace_angles.html">subspace_angles</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_svd.svd.html">svd</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_svd.svdvals.html">svdvals</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Raises">Raises</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>svdvals(a, overwrite_a=False, check_finite=True)</code><!-- rendering Extended Summary -->
+        <h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="774ccc1b16924eed90a3d2802a195628"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "svdvals(a)"}, {"type": "text", "value": " only differs from "}, {"type": "inlineCode", "value": "svd(a, compute_uv=False)"}, {"type": "text", "value": " by its handling of the edge case of empty "}, {"type": "inlineCode", "value": "a"}, {"type": "text", "value": ", where it returns an empty sequence:"}], "type": "paragraph"});
+            document.getElementById("774ccc1b16924eed90a3d2802a195628").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="97d615f959544dc29c1a0eab3822ad58"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e import numpy as np\n\u003e\u003e\u003e a = np.empty((0, 2))\n\u003e\u003e\u003e from scipy.linalg import svdvals\n\u003e\u003e\u003e svdvals(a)\narray([], dtype=float64)"});
+            document.getElementById("97d615f959544dc29c1a0eab3822ad58").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="a">a</a> : (M, N) array_like</dt>
+<dd>
+                <div id="d241517c34cd49a696d3c7a553d4182f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Matrix to decompose."}], "type": "paragraph"});
+            document.getElementById("d241517c34cd49a696d3c7a553d4182f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="overwrite_a">overwrite_a</a> : bool, optional</dt>
+<dd>
+                <div id="6bbf4d8542064fb4ac530d54dab94315"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Whether to overwrite "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "a", "type": "RefInfo", "version": null}, "type": "Link", "value": "a"}, {"type": "text", "value": "; may improve performance. Default is False."}], "type": "paragraph"});
+            document.getElementById("6bbf4d8542064fb4ac530d54dab94315").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="check_finite">check_finite</a> : bool, optional</dt>
+<dd>
+                <div id="0ff6a6718e0846e6b7bb7627bf36178f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Whether to check that the input matrix contains only finite numbers. Disabling may give a performance gain, but may result in problems (crashes, non-termination) if the inputs do contain infinities or NaNs."}], "type": "paragraph"});
+            document.getElementById("0ff6a6718e0846e6b7bb7627bf36178f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Raises">Raises</h3>
+<dl>
+<dt>LinAlgError</dt>
+<dd>
+                <div id="3d6083bd757d4a8babc47ad1050d862f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If SVD computation does not converge."}], "type": "paragraph"});
+            document.getElementById("3d6083bd757d4a8babc47ad1050d862f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="s">s</a> : (min(M, N),) ndarray</dt>
+<dd>
+                <div id="fa8f1fbd8aca4065b42b3cfb026fd4ee"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The singular values, sorted in decreasing order."}], "type": "paragraph"});
+            document.getElementById("fa8f1fbd8aca4065b42b3cfb026fd4ee").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="e4e84972f6bd45959cff2ecbde781820"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Compute singular values of a matrix."}], "type": "paragraph"});
+            document.getElementById("e4e84972f6bd45959cff2ecbde781820").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_svd.diagsvd.html" class='exists'>diagsvd</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="77fa3312d9fe4755a7c6980e46c2c9be"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "Construct the Sigma matrix, given the vector s."});
+            document.getElementById("77fa3312d9fe4755a7c6980e46c2c9be").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_svd.svd.html" class='exists'>svd</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="8552e30a79754b018b15556d90eb9482"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "Compute the full singular value decomposition of a matrix."});
+            document.getElementById("8552e30a79754b018b15556d90eb9482").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">linalg</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">svdvals</span><br><span class='nsl'>...&nbsp;</span><span class="">m</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="">[</span><span class="mf">1.0</span><span class="">,</span><span class=""> </span><span class="mf">0.0</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">              </span><span class="">[</span><span class="mf">2.0</span><span class="">,</span><span class=""> </span><span class="mf">3.0</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">              </span><span class="">[</span><span class="mf">1.0</span><span class="">,</span><span class=""> </span><span class="mf">1.0</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">              </span><span class="">[</span><span class="mf">0.0</span><span class="">,</span><span class=""> </span><span class="mf">2.0</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">              </span><span class="">[</span><span class="mf">1.0</span><span class="">,</span><span class=""> </span><span class="mf">0.0</span><span class="">]</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">svdvals</span><span class="">(</span><span class="">m</span><span class="">)</span>
+array([ 4.28091555,  1.63516424])</pre>
+            
+                           We can verify the maximum singular value of `m` by computing the maximum
+length of `m.dot(u)` over all the unit vectors `u` in the (x,y) plane.
+We approximate &#34;all&#34; the unit vectors with a large sample. Because
+of linearity, we only need the unit vectors with angles in [0, pi].  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">t</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">linspace</span><span class="">(</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">pi</span><span class="">,</span><span class=""> </span><span class="mi">2000</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">u</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="">np</span><span class="o">.</span><span class="">cos</span><span class="">(</span><span class="">t</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">sin</span><span class="">(</span><span class="">t</span><span class="">)</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">np</span><span class="o">.</span><span class="">linalg</span><span class="o">.</span><span class="">norm</span><span class="">(</span><span class="">m</span><span class="o">.</span><span class="">dot</span><span class="">(</span><span class="">u</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">axis</span><span class="o">=</span><span class="mi">0</span><span class="">)</span><span class="o">.</span><span class="">max</span><span class="">(</span><span class="">)</span>
+4.2809152422538475</pre>
+            
+                           `p` is a projection matrix with rank 1. With exact arithmetic,
+its singular values would be [1, 0, 0, 0].  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">v</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="mf">0.1</span><span class="">,</span><span class=""> </span><span class="mf">0.3</span><span class="">,</span><span class=""> </span><span class="mf">0.9</span><span class="">,</span><span class=""> </span><span class="mf">0.3</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">p</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">outer</span><span class="">(</span><span class="">v</span><span class="">,</span><span class=""> </span><span class="">v</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">svdvals</span><span class="">(</span><span class="">p</span><span class="">)</span>
+array([  1.00000000e+00,   2.02021698e-17,   1.56692500e-17,
+         8.15115104e-34])</pre>
+            
+                           The singular values of an orthogonal matrix are all 1. Here, we
+create a random orthogonal matrix by using the `rvs()` method of
+`scipy.stats.ortho_group`.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">stats</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">ortho_group</span><br><span class='nsl'>...&nbsp;</span><span class="">orth</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">ortho_group</span><span class="o">.</span><span class="">rvs</span><span class="">(</span><span class="mi">4</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">svdvals</span><span class="">(</span><span class="">orth</span><span class="">)</span>
+array([ 1.,  1.,  1.,  1.])</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.linalg._decomp_svd.diagsvd.html" class='exists'>scipy.linalg._decomp_svd.diagsvd</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.linalg._decomp_svd.svd.html" class='exists'>scipy.linalg._decomp_svd.svd</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/linalg/_decomp_svd.py#L141'>/scipy/linalg/_decomp_svd.py#141</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 9.414213562373096, "label": "scipy.linalg._decomp_svd.diagsvd", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.linalg._decomp_svd.diagsvd"}, {"id": 2, "val": 10.23606797749979, "label": "scipy.linalg._decomp_svd.svd", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.linalg._decomp_svd.svd"}], "links": [{"source": 1, "target": 2, "id": 1}, {"source": 2, "target": 1, "id": 4}]};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

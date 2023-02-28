@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.linalg.html'>linalg</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.linalg._solvers.html'>_solvers</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.linalg._basic.html">_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._cythonized_array_utils.html">_cythonized_array_utils</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp.html">_decomp</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_cholesky.html">_decomp_cholesky</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_cossin.html">_decomp_cossin</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_ldl.html">_decomp_ldl</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_lu.html">_decomp_lu</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_polar.html">_decomp_polar</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_qr.html">_decomp_qr</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_qz.html">_decomp_qz</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_schur.html">_decomp_schur</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_svd.html">_decomp_svd</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_update.html">_decomp_update</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._expm_frechet.html">_expm_frechet</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._fblas.html">_fblas</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._flapack.html">_flapack</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._flinalg.html">_flinalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._flinalg_py.html">_flinalg_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative.html">_interpolative</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.html">_interpolative_backend</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs.html">_matfuncs</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs_expm.html">_matfuncs_expm</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs_sqrtm.html">_matfuncs_sqrtm</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs_sqrtm_triu.html">_matfuncs_sqrtm_triu</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._misc.html">_misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._procrustes.html">_procrustes</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._sketches.html">_sketches</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._solve_toeplitz.html">_solve_toeplitz</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._solvers.html">_solvers</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._special_matrices.html">_special_matrices</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.basic.html">basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.blas.html">blas</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.cython_blas.html">cython_blas</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.cython_lapack.html">cython_lapack</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp.html">decomp</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_cholesky.html">decomp_cholesky</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_lu.html">decomp_lu</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_qr.html">decomp_qr</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_schur.html">decomp_schur</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_svd.html">decomp_svd</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.flinalg.html">flinalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.interpolative.html">interpolative</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.lapack.html">lapack</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.matfuncs.html">matfuncs</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.special_matrices.html">special_matrices</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.linalg._solvers.solve_discrete_are.html'>solve_discrete_are</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.linalg._solvers._are_validate_args.html">_are_validate_args</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._solvers._solve_discrete_lyapunov_bilinear.html">_solve_discrete_lyapunov_bilinear</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._solvers._solve_discrete_lyapunov_direct.html">_solve_discrete_lyapunov_direct</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._solvers.solve_continuous_are.html">solve_continuous_are</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._solvers.solve_continuous_lyapunov.html">solve_continuous_lyapunov</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._solvers.solve_discrete_are.html">solve_discrete_are</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._solvers.solve_discrete_lyapunov.html">solve_discrete_lyapunov</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._solvers.solve_sylvester.html">solve_sylvester</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Raises">Raises</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>solve_discrete_are(a, b, q, r, e=None, s=None, balanced=True)</code><!-- rendering Extended Summary -->
+                                       <div id="39dfa1f9339e4ac9ad460d6bea0cc3c4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The DARE is defined as"}], "type": "paragraph"});
+            document.getElementById("39dfa1f9339e4ac9ad460d6bea0cc3c4").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$A^HXA - X - (A^HXB) (R + B^HXB)^{-1} (B^HXA) + Q = 0$$</span>
+
+                               <div id="b5ba13d828944f0889de1065e2f00365"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The limitations for a solution to exist are :"}], "type": "paragraph"});
+            document.getElementById("b5ba13d828944f0889de1065e2f00365").innerHTML = html;
+        }
+        init();
+    </script>
+
+                           <blockquote>           <ul>               <li>                               <div id="572b0ff1a20145e0af55c69191a239dc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "All eigenvalues of "}, {"type": "Math", "value": "A"}, {"type": "text", "value": " outside the unit disc, should be       controllable."}], "type": "paragraph"});
+            document.getElementById("572b0ff1a20145e0af55c69191a239dc").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="4d3c0f0cc8a74452b37c32609887fcf6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The associated symplectic pencil (See Notes), should have       eigenvalues sufficiently away from the unit circle."}], "type": "paragraph"});
+            document.getElementById("4d3c0f0cc8a74452b37c32609887fcf6").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+</blockquote>
+
+                               <div id="645dd6a8586041ae9518772168945361"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Moreover, if "}, {"type": "inlineCode", "value": "e"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "s"}, {"type": "text", "value": " are not both precisely "}, {"type": "inlineCode", "value": "None"}, {"type": "text", "value": ", then the generalized version of DARE"}], "type": "paragraph"});
+            document.getElementById("645dd6a8586041ae9518772168945361").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$A^HXA - E^HXE - (A^HXB+S) (R+B^HXB)^{-1} (B^HXA+S^H) + Q = 0$$</span>
+
+                               <div id="5e2223669f804f81b9331d674a3f90c2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "is solved. When omitted, "}, {"type": "inlineCode", "value": "e"}, {"type": "text", "value": " is assumed to be the identity and "}, {"type": "inlineCode", "value": "s"}, {"type": "text", "value": " is assumed to be the zero matrix."}], "type": "paragraph"});
+            document.getElementById("5e2223669f804f81b9331d674a3f90c2").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="6c411349aeac4decb47ea15c322b51ae"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The equation is solved by forming the extended symplectic matrix pencil, as described in , "}, {"type": "Math", "value": "H - \\lambda J"}, {"type": "text", "value": " given by the block matrices          "}], "type": "paragraph"});
+            document.getElementById("6c411349aeac4decb47ea15c322b51ae").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="1fc1bde7e8b74ef086d198892a73d96b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "[  A   0   B ]             [ E   0   B ]\n[ -Q  E^H -S ] - \\lambda * [ 0  A^H  0 ]\n[ S^H  0   R ]             [ 0 -B^H  0 ]"});
+            document.getElementById("1fc1bde7e8b74ef086d198892a73d96b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="c7654968089244a19825cfd823f7f424"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "and using a QZ decomposition method."}], "type": "paragraph"});
+            document.getElementById("c7654968089244a19825cfd823f7f424").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="ca3b2408ae13483892b183e2579d87fc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "In this algorithm, the fail conditions are linked to the symmetry of the product "}, {"type": "Math", "value": "U_2 U_1^{-1}"}, {"type": "text", "value": " and condition number of "}, {"type": "Math", "value": "U_1"}, {"type": "text", "value": ". Here, "}, {"type": "Math", "value": "U"}, {"type": "text", "value": " is the 2m-by-m matrix that holds the eigenvectors spanning the stable subspace with 2-m rows and partitioned into two m-row matrices. See  and  for more details."}], "type": "paragraph"});
+            document.getElementById("ca3b2408ae13483892b183e2579d87fc").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="828cd6822246434ea95d0acd6c9f98fa"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "In order to improve the QZ decomposition accuracy, the pencil goes through a balancing step where the sum of absolute values of "}, {"type": "Math", "value": "H"}, {"type": "text", "value": " and "}, {"type": "Math", "value": "J"}, {"type": "text", "value": " rows/cols (after removing the diagonal entries) is balanced following the recipe given in . If the data has small numerical noise, balancing may amplify their effects and some clean up is required."}], "type": "paragraph"});
+            document.getElementById("828cd6822246434ea95d0acd6c9f98fa").innerHTML = html;
+        }
+        init();
+    </script>
+
+                           <div class='admonition'>
+    <div>versionadded 0.11.0</div>
+</div>
+
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="a">a</a> : (M, M) array_like</dt>
+<dd>
+                <div id="e4d61a04ba7f4398acc8e087c0e63e76"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Square matrix"}], "type": "paragraph"});
+            document.getElementById("e4d61a04ba7f4398acc8e087c0e63e76").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="b">b</a> : (M, N) array_like</dt>
+<dd>
+                <div id="29ef8eae09e847a585a1fcb4ba268987"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Input"}], "type": "paragraph"});
+            document.getElementById("29ef8eae09e847a585a1fcb4ba268987").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="q">q</a> : (M, M) array_like</dt>
+<dd>
+                <div id="76047b836f78415395b82aba5ebcde3d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Input"}], "type": "paragraph"});
+            document.getElementById("76047b836f78415395b82aba5ebcde3d").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="r">r</a> : (N, N) array_like</dt>
+<dd>
+                <div id="2d5a6b59edc0492bb478bc221b83ab7f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Square matrix"}], "type": "paragraph"});
+            document.getElementById("2d5a6b59edc0492bb478bc221b83ab7f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="e">e</a> : (M, M) array_like, optional</dt>
+<dd>
+                <div id="2b7644b0f1784fc5a29b45c3a72f9002"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Nonsingular square matrix"}], "type": "paragraph"});
+            document.getElementById("2b7644b0f1784fc5a29b45c3a72f9002").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="s">s</a> : (M, N) array_like, optional</dt>
+<dd>
+                <div id="5ffa2b2c9ebf4edabb3df08ae82c8581"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Input"}], "type": "paragraph"});
+            document.getElementById("5ffa2b2c9ebf4edabb3df08ae82c8581").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="balanced">balanced</a> : bool</dt>
+<dd>
+                <div id="58a40520fb144b3c84db7d14ff0c104b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The boolean that indicates whether a balancing step is performed on the data. The default is set to True."}], "type": "paragraph"});
+            document.getElementById("58a40520fb144b3c84db7d14ff0c104b").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Raises">Raises</h3>
+<dl>
+<dt>LinAlgError</dt>
+<dd>
+                <div id="0e865f45e3554a02a89b85a93e355565"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For cases where the stable subspace of the pencil could not be isolated. See Notes section and the references for details."}], "type": "paragraph"});
+            document.getElementById("0e865f45e3554a02a89b85a93e355565").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="x">x</a> : (M, M) ndarray</dt>
+<dd>
+                <div id="28f31bc796714476bcfcbe85cdcf5f53"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Solution to the discrete algebraic Riccati equation."}], "type": "paragraph"});
+            document.getElementById("28f31bc796714476bcfcbe85cdcf5f53").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="db6e33f5a2af4961abf90b8c705aee4a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Solves the discrete-time algebraic Riccati equation (DARE)."}], "type": "paragraph"});
+            document.getElementById("db6e33f5a2af4961abf90b8c705aee4a").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.linalg._solvers.solve_continuous_are.html" class='exists'>solve_continuous_are</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="fba4304ea39442189758b278c66aa2df"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "Solves the continuous algebraic Riccati equation"});
+            document.getElementById("fba4304ea39442189758b278c66aa2df").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+                           Given `a`, `b`, `q`, and `r` solve for `x`:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">linalg</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="">la</span><br><span class='nsl'>...&nbsp;</span><span class="">a</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mi">1</span><span class="">]</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">b</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">q</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="">[</span><span class="o">-</span><span class="mi">4</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mi">4</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="o">-</span><span class="mi">4</span><span class="">,</span><span class=""> </span><span class="mi">7</span><span class="">]</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">r</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="">[</span><span class="mi">9</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">x</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">la</span><span class="o">.</span><span class="">solve_discrete_are</span><span class="">(</span><span class="">a</span><span class="">,</span><span class=""> </span><span class="">b</span><span class="">,</span><span class=""> </span><span class="">q</span><span class="">,</span><span class=""> </span><span class="">r</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">x</span>
+array([[-4., -4.],
+       [-4.,  7.]])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">R</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">la</span><span class="o">.</span><span class="">solve</span><span class="">(</span><span class="">r</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="">b</span><span class="o">.</span><span class="">T</span><span class="o">.</span><span class="">dot</span><span class="">(</span><span class="">x</span><span class="">)</span><span class="o">.</span><span class="">dot</span><span class="">(</span><span class="">b</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">b</span><span class="o">.</span><span class="">T</span><span class="o">.</span><span class="">dot</span><span class="">(</span><span class="">x</span><span class="">)</span><span class="o">.</span><span class="">dot</span><span class="">(</span><span class="">a</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">np</span><span class="o">.</span><span class="">allclose</span><span class="">(</span><span class="">a</span><span class="o">.</span><span class="">T</span><span class="o">.</span><span class="">dot</span><span class="">(</span><span class="">x</span><span class="">)</span><span class="o">.</span><span class="">dot</span><span class="">(</span><span class="">a</span><span class="">)</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="">x</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="">a</span><span class="o">.</span><span class="">T</span><span class="o">.</span><span class="">dot</span><span class="">(</span><span class="">x</span><span class="">)</span><span class="o">.</span><span class="">dot</span><span class="">(</span><span class="">b</span><span class="">)</span><span class="o">.</span><span class="">dot</span><span class="">(</span><span class="">R</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="">q</span><span class="">)</span>
+True</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.linalg._solvers.solve_continuous_are.html" class='exists'>scipy.linalg._solvers.solve_continuous_are</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/linalg/_solvers.py#L533'>/scipy/linalg/_solvers.py#533</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 9.0, "label": "scipy.linalg._solvers.solve_continuous_are", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.linalg._solvers.solve_continuous_are"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

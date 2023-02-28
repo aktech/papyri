@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.sparse.html'>sparse</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.sparse._arrays.html'>_arrays</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.sparse._arrays.html">_arrays</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._base.html">_base</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._bsr.html">_bsr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._compressed.html">_compressed</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._construct.html">_construct</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._coo.html">_coo</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._csc.html">_csc</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._csparsetools.html">_csparsetools</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._csr.html">_csr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._data.html">_data</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._dia.html">_dia</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._dok.html">_dok</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._extract.html">_extract</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._index.html">_index</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._lil.html">_lil</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._matrix_io.html">_matrix_io</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._sparsetools.html">_sparsetools</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._sputils.html">_sputils</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.base.html">base</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.bsr.html">bsr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.compressed.html">compressed</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.construct.html">construct</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.coo.html">coo</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csc.html">csc</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csgraph.html">csgraph</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csr.html">csr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.data.html">data</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.dia.html">dia</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.dok.html">dok</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.extract.html">extract</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.lil.html">lil</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.sparsetools.html">sparsetools</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.sputils.html">sputils</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.sparse._arrays.csc_array.html'>csc_array</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.sparse._arrays._matrix_doc_to_array.html">_matrix_doc_to_array</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._arrays._sparray.html">_sparray</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._arrays.bsr_array.html">bsr_array</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._arrays.coo_array.html">coo_array</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._arrays.csc_array.html">csc_array</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._arrays.csr_array.html">csr_array</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._arrays.dia_array.html">dia_array</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._arrays.dok_array.html">dok_array</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._arrays.lil_array.html">lil_array</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Attributes">Attributes</a><a href="#section-Notes">Notes</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<h3 id="section-Attributes">Attributes</h3>
+<dl>
+<dt><a id="dtype">dtype</a> : dtype</dt>
+<dd>
+                <div id="86fb22de499b43b594dba87d1cc40ec4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Data type of the array"}], "type": "paragraph"});
+            document.getElementById("86fb22de499b43b594dba87d1cc40ec4").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="shape">shape</a> : 2-tuple</dt>
+<dd>
+                <div id="da07bdbd371f48a88239c00519c057db"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Shape of the array"}], "type": "paragraph"});
+            document.getElementById("da07bdbd371f48a88239c00519c057db").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="ndim">ndim</a> : int</dt>
+<dd>
+                <div id="aea2aff203a54eb5874304a13877a1b0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Number of dimensions (this is always 2)"}], "type": "paragraph"});
+            document.getElementById("aea2aff203a54eb5874304a13877a1b0").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="nnz">nnz</a> : </dt>
+<dd>
+                <div id="6d085c8ddd2d45479ac39e770593dc3c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Number of stored values, including explicit zeros"}], "type": "paragraph"});
+            document.getElementById("6d085c8ddd2d45479ac39e770593dc3c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="data">data</a> : </dt>
+<dd>
+                <div id="d02cddf94e8f4283b0603fc5103c1c6d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Data array of the array"}], "type": "paragraph"});
+            document.getElementById("d02cddf94e8f4283b0603fc5103c1c6d").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="indices">indices</a> : </dt>
+<dd>
+                <div id="87af26348ad44c76b22d684d8d8752a3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "CSC format index array"}], "type": "paragraph"});
+            document.getElementById("87af26348ad44c76b22d684d8d8752a3").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="indptr">indptr</a> : </dt>
+<dd>
+                <div id="6667b1db1c7c4396a462ddd5cda854b9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "CSC format index pointer array"}], "type": "paragraph"});
+            document.getElementById("6667b1db1c7c4396a462ddd5cda854b9").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="has_sorted_indices">has_sorted_indices</a> : </dt>
+<dd>
+                <div id="a94f13de380845689fd8690100b35ca4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Whether indices are sorted"}], "type": "paragraph"});
+            document.getElementById("a94f13de380845689fd8690100b35ca4").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Extended Summary -->
+                                       <div id="672c7892b98b4effbd4beb169584a4f3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This can be instantiated in several ways:"}], "type": "paragraph"});
+            document.getElementById("672c7892b98b4effbd4beb169584a4f3").innerHTML = html;
+        }
+        init();
+    </script>
+
+                           <blockquote><!-- deflist -->
+           <dl>
+               <dt>                <div id="929782fe2b3f4d308a899541c15ebc46"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "csc_array(D)"}], "type": "paragraph"});
+            document.getElementById("929782fe2b3f4d308a899541c15ebc46").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="51da4314af974ac49e42a7312272f72b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "with a dense array or rank-2 ndarray D"}], "type": "paragraph"});
+            document.getElementById("51da4314af974ac49e42a7312272f72b").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="b682f284204545b2a58bf8be68309022"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "csc_array(S)"}], "type": "paragraph"});
+            document.getElementById("b682f284204545b2a58bf8be68309022").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="4083478ea786407a97f4a57d2f4bfcca"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "with another sparse array S (equivalent to S.tocsc())"}], "type": "paragraph"});
+            document.getElementById("4083478ea786407a97f4a57d2f4bfcca").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="8d1c8e60f7394a968fc7b3d126c2b634"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "csc_array((M, N), [dtype])"}], "type": "paragraph"});
+            document.getElementById("8d1c8e60f7394a968fc7b3d126c2b634").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="a9374228826c466195ee7c6dc96c7e93"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "to construct an empty array with shape (M, N)         dtype is optional, defaulting to dtype=\u0027d\u0027."}], "type": "paragraph"});
+            document.getElementById("a9374228826c466195ee7c6dc96c7e93").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="c1209f6e83a341f393fb13d590ed3d69"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "csc_array((data, (row_ind, col_ind)), [shape=(M, N)])"}], "type": "paragraph"});
+            document.getElementById("c1209f6e83a341f393fb13d590ed3d69").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="bccb1a3b80e1404b8254a1784a8e4f96"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "where "}, {"type": "inlineCode", "value": "data"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "row_ind"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "col_ind"}, {"type": "text", "value": " satisfy the         relationship "}, {"type": "inlineCode", "value": "a[row_ind[k], col_ind[k]] = data[k]"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("bccb1a3b80e1404b8254a1784a8e4f96").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="2ba482610eab4cb19f568ae458a8838b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "csc_array((data, indices, indptr), [shape=(M, N)])"}], "type": "paragraph"});
+            document.getElementById("2ba482610eab4cb19f568ae458a8838b").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="5da00d86b6e24507ba98ed7dea9433b9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "is the standard CSC representation where the row indices for         column i are stored in "}, {"type": "inlineCode", "value": "indices[indptr[i]:indptr[i+1]]"}, {"type": "text", "value": "         and their corresponding values are stored in         "}, {"type": "inlineCode", "value": "data[indptr[i]:indptr[i+1]]"}, {"type": "text", "value": ".  If the shape parameter is         not supplied, the array dimensions are inferred from         the index arrays."}], "type": "paragraph"});
+            document.getElementById("5da00d86b6e24507ba98ed7dea9433b9").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+</blockquote>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="76691d370dcf40ebb1741cdde3b2cc9a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Sparse arrays can be used in arithmetic operations: they support addition, subtraction, multiplication, division, and array power."}], "type": "paragraph"});
+            document.getElementById("76691d370dcf40ebb1741cdde3b2cc9a").innerHTML = html;
+        }
+        init();
+    </script>
+
+               <!-- deflist -->
+           <dl>
+               <dt>                <div id="0dd02a4f502f4d878a3b71b0efc33837"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Advantages of the CSC format"}], "type": "paragraph"});
+            document.getElementById("0dd02a4f502f4d878a3b71b0efc33837").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>           <ul>               <li>                               <div id="f1b840558e7b4c38a40b9a52aed0ab32"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "efficient arithmetic operations CSC + CSC, CSC * CSC, etc."}], "type": "paragraph"});
+            document.getElementById("f1b840558e7b4c38a40b9a52aed0ab32").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="ddec1a66f4f94f938d622d0199f0d2fa"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "efficient column slicing"}], "type": "paragraph"});
+            document.getElementById("ddec1a66f4f94f938d622d0199f0d2fa").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="8c82ddd6b56349baabca654e9c4ff65e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "fast array vector products (CSR, BSR may be faster)"}], "type": "paragraph"});
+            document.getElementById("8c82ddd6b56349baabca654e9c4ff65e").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+</dd>
+               <dt>                <div id="79e8acba020b45658d74c0d40690c939"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Disadvantages of the CSC format"}], "type": "paragraph"});
+            document.getElementById("79e8acba020b45658d74c0d40690c939").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>           <ul>               <li>                               <div id="eb5a8a3e2dab49c286017c15ff918605"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "slow row slicing operations (consider CSR)"}], "type": "paragraph"});
+            document.getElementById("eb5a8a3e2dab49c286017c15ff918605").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="eef10fca279a4a07ad4e53867436e5a5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "changes to the sparsity structure are expensive (consider LIL or DOK)"}], "type": "paragraph"});
+            document.getElementById("eef10fca279a4a07ad4e53867436e5a5").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+</dd>
+           </dl>
+
+<!-- rendering Summary -->
+                                       <div id="9148f122e3c341e0af2d838ad7009e97"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Compressed Sparse Column array"}], "type": "paragraph"});
+            document.getElementById("9148f122e3c341e0af2d838ad7009e97").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">sparse</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">csc_array</span><br><span class='nsl'>...&nbsp;</span><span class="">csc_array</span><span class="">(</span><span class="">(</span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">dtype</span><span class="o">=</span><span class="">np</span><span class="o">.</span><span class="">int8</span><span class="">)</span><span class="o">.</span><span class="">toarray</span><span class="">(</span><span class="">)</span>
+array([[0, 0, 0, 0],
+       [0, 0, 0, 0],
+       [0, 0, 0, 0]], dtype=int8)</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">row</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">col</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">data</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">,</span><span class=""> </span><span class="mi">5</span><span class="">,</span><span class=""> </span><span class="mi">6</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">csc_array</span><span class="">(</span><span class="">(</span><span class="">data</span><span class="">,</span><span class=""> </span><span class="">(</span><span class="">row</span><span class="">,</span><span class=""> </span><span class="">col</span><span class="">)</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">shape</span><span class="o">=</span><span class="">(</span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">)</span><span class="">)</span><span class="o">.</span><span class="">toarray</span><span class="">(</span><span class="">)</span>
+array([[1, 0, 4],
+       [0, 0, 5],
+       [2, 3, 6]])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">indptr</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">6</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">indices</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">data</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">,</span><span class=""> </span><span class="mi">5</span><span class="">,</span><span class=""> </span><span class="mi">6</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">csc_array</span><span class="">(</span><span class="">(</span><span class="">data</span><span class="">,</span><span class=""> </span><span class="">indices</span><span class="">,</span><span class=""> </span><span class="">indptr</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">shape</span><span class="o">=</span><span class="">(</span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">)</span><span class="">)</span><span class="o">.</span><span class="">toarray</span><span class="">(</span><span class="">)</span>
+array([[1, 0, 4],
+       [0, 0, 5],
+       [2, 3, 6]])</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.optimize._milp.milp.html" class='exists'>scipy.optimize._milp.milp</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/sparse/_arrays.py#L72'>/scipy/sparse/_arrays.py#72</a>
+<br/>
+
+type: &lt;class &#39;type&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 9.0, "label": "scipy.optimize._milp.milp", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.optimize._milp.milp"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.signal.html'>signal</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.signal._ltisys.html'>_ltisys</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.signal._arraytools.html">_arraytools</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._bsplines.html">_bsplines</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._czt.html">_czt</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._filter_design.html">_filter_design</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._fir_filter_design.html">_fir_filter_design</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._lti_conversion.html">_lti_conversion</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.html">_ltisys</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._max_len_seq.html">_max_len_seq</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._max_len_seq_inner.html">_max_len_seq_inner</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._peak_finding.html">_peak_finding</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._peak_finding_utils.html">_peak_finding_utils</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._savitzky_golay.html">_savitzky_golay</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.html">_signaltools</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._sigtools.html">_sigtools</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._sosfilt.html">_sosfilt</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spectral.html">_spectral</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spectral_py.html">_spectral_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spline.html">_spline</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._upfirdn.html">_upfirdn</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._upfirdn_apply.html">_upfirdn_apply</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._waveforms.html">_waveforms</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._wavelets.html">_wavelets</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.barthann.html">barthann</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.bartlett.html">bartlett</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.blackman.html">blackman</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.blackmanharris.html">blackmanharris</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.bohman.html">bohman</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.boxcar.html">boxcar</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.bsplines.html">bsplines</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.chebwin.html">chebwin</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.cosine.html">cosine</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.exponential.html">exponential</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.filter_design.html">filter_design</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.fir_filter_design.html">fir_filter_design</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.flattop.html">flattop</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.gaussian.html">gaussian</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.general_gaussian.html">general_gaussian</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.hamming.html">hamming</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.hann.html">hann</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.kaiser.html">kaiser</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.lti_conversion.html">lti_conversion</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.ltisys.html">ltisys</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.nuttall.html">nuttall</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.parzen.html">parzen</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.signaltools.html">signaltools</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.spectral.html">spectral</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.spline.html">spline</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.triang.html">triang</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.tukey.html">tukey</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.waveforms.html">waveforms</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.wavelets.html">wavelets</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.windows.html">windows</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.signal._ltisys.place_poles.html'>place_poles</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.Bunch.html">Bunch</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.LinearTimeInvariant.html">LinearTimeInvariant</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.StateSpace.html">StateSpace</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.StateSpaceContinuous.html">StateSpaceContinuous</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.StateSpaceDiscrete.html">StateSpaceDiscrete</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.TransferFunction.html">TransferFunction</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.TransferFunctionContinuous.html">TransferFunctionContinuous</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.TransferFunctionDiscrete.html">TransferFunctionDiscrete</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.ZerosPolesGain.html">ZerosPolesGain</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.ZerosPolesGainContinuous.html">ZerosPolesGainContinuous</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.ZerosPolesGainDiscrete.html">ZerosPolesGainDiscrete</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys._KNV0.html">_KNV0</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys._KNV0_loop.html">_KNV0_loop</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys._YT_complex.html">_YT_complex</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys._YT_loop.html">_YT_loop</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys._YT_real.html">_YT_real</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys._atleast_2d_or_none.html">_atleast_2d_or_none</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys._cast_to_array_dtype.html">_cast_to_array_dtype</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys._default_response_times.html">_default_response_times</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys._order_complex_poles.html">_order_complex_poles</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys._valid_inputs.html">_valid_inputs</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.bode.html">bode</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.dbode.html">dbode</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.dfreqresp.html">dfreqresp</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.dimpulse.html">dimpulse</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.dlsim.html">dlsim</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.dlti.html">dlti</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.dstep.html">dstep</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.freqresp.html">freqresp</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.impulse.html">impulse</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.impulse2.html">impulse2</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.lsim.html">lsim</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.lsim2.html">lsim2</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.lti.html">lti</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.place_poles.html">place_poles</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.step.html">step</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.step2.html">step2</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a>    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>place_poles(A, B, poles, method=&#39;YT&#39;, rtol=0.001, maxiter=30)</code><!-- rendering Extended Summary -->
+                                       <div id="a61a56a633904821ad14b38d9704bb7d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "K is the gain matrix such as the plant described by the linear system "}, {"type": "inlineCode", "value": "AX+BU"}, {"type": "text", "value": " will have its closed-loop poles, i.e the eigenvalues "}, {"type": "inlineCode", "value": "A - B*K"}, {"type": "text", "value": ", as close as possible to those asked for in poles."}], "type": "paragraph"});
+            document.getElementById("a61a56a633904821ad14b38d9704bb7d").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="2f6d60a68458494683612c4366834c97"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "SISO, MISO and MIMO systems are supported."}], "type": "paragraph"});
+            document.getElementById("2f6d60a68458494683612c4366834c97").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="086efc0509904cf1bfc676b80e4c65a3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The Tits and Yang (YT),  paper is an update of the original Kautsky et al. (KNV) paper .  KNV relies on rank-1 updates to find the transfer matrix X such that "}, {"type": "inlineCode", "value": "X * diag(poles) = (A - B*K)*X"}, {"type": "text", "value": ", whereas YT uses rank-2 updates. This yields on average more robust solutions (see  pp 21-22), furthermore the YT algorithm supports complex poles whereas KNV does not in its original version.  Only update method 0 proposed by KNV has been implemented here, hence the name "}, {"type": "inlineCode", "value": "\u0027KNV0\u0027"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("086efc0509904cf1bfc676b80e4c65a3").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="7e61173d46004d7e99491ece5d00d3bb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "KNV extended to complex poles is used in Matlab\u0027s "}, {"type": "inlineCode", "value": "place"}, {"type": "text", "value": " function, YT is distributed under a non-free licence by Slicot under the name "}, {"type": "inlineCode", "value": "robpole"}, {"type": "text", "value": ". It is unclear and undocumented how KNV0 has been extended to complex poles (Tits and Yang claim on page 14 of their paper that their method can not be used to extend KNV to complex poles), therefore only YT supports them in this implementation."}], "type": "paragraph"});
+            document.getElementById("7e61173d46004d7e99491ece5d00d3bb").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="b7eeedea127b47c1acc2467692e0e302"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "As the solution to the problem of pole placement is not unique for MIMO systems, both methods start with a tentative transfer matrix which is altered in various way to increase its determinant.  Both methods have been proven to converge to a stable solution, however depending on the way the initial transfer matrix is chosen they will converge to different solutions and therefore there is absolutely no guarantee that using "}, {"type": "inlineCode", "value": "\u0027KNV0\u0027"}, {"type": "text", "value": " will yield results similar to Matlab\u0027s or any other implementation of these algorithms."}], "type": "paragraph"});
+            document.getElementById("b7eeedea127b47c1acc2467692e0e302").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="620355a16ea1417894448c0bd491f2b8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Using the default method "}, {"type": "inlineCode", "value": "\u0027YT\u0027"}, {"type": "text", "value": " should be fine in most cases; "}, {"type": "inlineCode", "value": "\u0027KNV0\u0027"}, {"type": "text", "value": " is only provided because it is needed by "}, {"type": "inlineCode", "value": "\u0027YT\u0027"}, {"type": "text", "value": " in some specific cases. Furthermore "}, {"type": "inlineCode", "value": "\u0027YT\u0027"}, {"type": "text", "value": " gives on average more robust results than "}, {"type": "inlineCode", "value": "\u0027KNV0\u0027"}, {"type": "text", "value": " when "}, {"type": "inlineCode", "value": "abs(det(X))"}, {"type": "text", "value": " is used as a robustness indicator."}], "type": "paragraph"});
+            document.getElementById("620355a16ea1417894448c0bd491f2b8").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="c995cc8f6c6843808cd3cc9151fae64e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": " is available as a technical report on the following URL: https://hdl.handle.net/1903/5598"}], "type": "paragraph"});
+            document.getElementById("c995cc8f6c6843808cd3cc9151fae64e").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="A, B">A, B</a> : ndarray</dt>
+<dd>
+                <div id="eea0a7b2a69548989cfb68c7d1f25615"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "State-space representation of linear system "}, {"type": "inlineCode", "value": "AX + BU"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("eea0a7b2a69548989cfb68c7d1f25615").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="poles">poles</a> : array_like</dt>
+<dd>
+                <div id="4abdd44c6bfb4b70910af7633c735cc3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Desired real poles and/or complex conjugates poles. Complex poles are only supported with "}, {"type": "inlineCode", "value": "method=\"YT\""}, {"type": "text", "value": " (default)."}], "type": "paragraph"});
+            document.getElementById("4abdd44c6bfb4b70910af7633c735cc3").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="method: {&#39;YT&#39;, &#39;KNV0&#39;}, optional">method: {&#39;YT&#39;, &#39;KNV0&#39;}, optional</a> : </dt>
+<dd>
+                <div id="f473a5228af64cd4a1838a02e97c903f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Which method to choose to find the gain matrix K. One of:"}], "type": "paragraph"});
+            document.getElementById("f473a5228af64cd4a1838a02e97c903f").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <blockquote>           <ul>               <li>                               <div id="9436de2f3fc749a399524fbe3be92bdf"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027YT\u0027: Yang Tits"}], "type": "paragraph"});
+            document.getElementById("9436de2f3fc749a399524fbe3be92bdf").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="1f84f43eaa664829b8411a70b2cdf7b5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027KNV0\u0027: Kautsky, Nichols, Van Dooren update method 0"}], "type": "paragraph"});
+            document.getElementById("1f84f43eaa664829b8411a70b2cdf7b5").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+</blockquote>
+
+                <div id="e5e6e377f7b446c6ae17d8d3490a82b5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "See References and Notes for details on the algorithms."}], "type": "paragraph"});
+            document.getElementById("e5e6e377f7b446c6ae17d8d3490a82b5").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="rtol: float, optional">rtol: float, optional</a> : </dt>
+<dd>
+                <div id="b67b79ff42654d80a7d63fac6061016f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "After each iteration the determinant of the eigenvectors of "}, {"type": "inlineCode", "value": "A - B*K"}, {"type": "text", "value": " is compared to its previous value, when the relative error between these two values becomes lower than "}, {"domain": null, "role": null, "type": "Directive", "value": "rtol"}, {"type": "text", "value": " the algorithm stops.  Default is 1e-3."}], "type": "paragraph"});
+            document.getElementById("b67b79ff42654d80a7d63fac6061016f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="maxiter: int, optional">maxiter: int, optional</a> : </dt>
+<dd>
+                <div id="e10910895da643b5a2c5dd0955a5c2f4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Maximum number of iterations to compute the gain matrix. Default is 30."}], "type": "paragraph"});
+            document.getElementById("e10910895da643b5a2c5dd0955a5c2f4").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="full_state_feedback">full_state_feedback</a> : Bunch object</dt>
+<dd>
+<!-- deflist -->
+           <dl>
+               <dt>                <div id="938276fb673c4bd7822708aac3ca2e09"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "full_state_feedback is composed of:"}], "type": "paragraph"});
+            document.getElementById("938276fb673c4bd7822708aac3ca2e09").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd><!-- deflist -->
+           <dl>
+               <dt>                <div id="567e104374454760b1dce8daecc15f52"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "gain_matrix"}], "type": "paragraph"});
+            document.getElementById("567e104374454760b1dce8daecc15f52").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="db9770299eb44941881514ac044ab575"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "gain_matrix"}], "type": "paragraph"});
+            document.getElementById("db9770299eb44941881514ac044ab575").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="ef6a02ab7ef24b82b99de31524c1f30c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "computed_poles"}], "type": "paragraph"});
+            document.getElementById("ef6a02ab7ef24b82b99de31524c1f30c").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="41460094ccc748da8a6d5d3bbe380b49"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "computed_poles"}], "type": "paragraph"});
+            document.getElementById("41460094ccc748da8a6d5d3bbe380b49").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="25e4b41d51764689bd3c9fd6c5f4ac6e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "requested_poles"}], "type": "paragraph"});
+            document.getElementById("25e4b41d51764689bd3c9fd6c5f4ac6e").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="000b85b0bec847429d5f2127557039c3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "requested_poles"}], "type": "paragraph"});
+            document.getElementById("000b85b0bec847429d5f2127557039c3").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="8cac61574d684379bcb3a1062bc784b1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "X"}], "type": "paragraph"});
+            document.getElementById("8cac61574d684379bcb3a1062bc784b1").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="23714824aa1c481b81ebbda1f6ee4162"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "X"}], "type": "paragraph"});
+            document.getElementById("23714824aa1c481b81ebbda1f6ee4162").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="e28d323a528141c288accde87093a4bf"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "rtol"}], "type": "paragraph"});
+            document.getElementById("e28d323a528141c288accde87093a4bf").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="063a9a894c2b4cb0ada6c068170919cd"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "rtol"}], "type": "paragraph"});
+            document.getElementById("063a9a894c2b4cb0ada6c068170919cd").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="0596b330fdf7412db04e5e11cb5bc3bc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "nb_iter"}], "type": "paragraph"});
+            document.getElementById("0596b330fdf7412db04e5e11cb5bc3bc").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="60aa9b2abf1848b58aaf44030e9282f8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "nb_iter"}], "type": "paragraph"});
+            document.getElementById("60aa9b2abf1848b58aaf44030e9282f8").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+</dd>
+           </dl>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="4eb92a4fda044cc7b9cce20b9a2e3429"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Compute K such that eigenvalues (A - dot(B, K))=poles."}], "type": "paragraph"});
+            document.getElementById("4eb92a4fda044cc7b9cce20b9a2e3429").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+                           A simple example demonstrating real pole placement using both KNV and YT
+algorithms.  This is example number 1 from section 4 of the reference KNV
+publication ([1]_):  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">signal</span><br><span class='nsl'>...&nbsp;</span><span class="kn">import</span><span class=""> </span><span class="nn">matplotlib</span><span class="nn">.</span><span class="nn">pyplot</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">plt</span>
+</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">A</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="">[</span><span class=""> </span><span class="mf">1.380</span><span class="">,</span><span class="">  </span><span class="o">-</span><span class="mf">0.2077</span><span class="">,</span><span class="">  </span><span class="mf">6.715</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mf">5.676</span><span class="">  </span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">              </span><span class="">[</span><span class="o">-</span><span class="mf">0.5814</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mf">4.290</span><span class="">,</span><span class="">   </span><span class="mi">0</span><span class="">,</span><span class="">      </span><span class="mf">0.6750</span><span class=""> </span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">              </span><span class="">[</span><span class=""> </span><span class="mf">1.067</span><span class="">,</span><span class="">   </span><span class="mf">4.273</span><span class="">,</span><span class="">  </span><span class="o">-</span><span class="mf">6.654</span><span class="">,</span><span class="">  </span><span class="mf">5.893</span><span class="">  </span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">              </span><span class="">[</span><span class=""> </span><span class="mf">0.0480</span><span class="">,</span><span class="">  </span><span class="mf">4.273</span><span class="">,</span><span class="">   </span><span class="mf">1.343</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mf">2.104</span><span class="">  </span><span class="">]</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">B</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="">[</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class="">      </span><span class="mf">5.679</span><span class=""> </span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">              </span><span class="">[</span><span class=""> </span><span class="mf">1.136</span><span class="">,</span><span class="">  </span><span class="mf">1.136</span><span class=""> </span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">              </span><span class="">[</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class="">      </span><span class="mi">0</span><span class="">,</span><span class="">    </span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">              </span><span class="">[</span><span class="o">-</span><span class="mf">3.146</span><span class="">,</span><span class="">  </span><span class="mi">0</span><span class="">     </span><span class="">]</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">P</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="o">-</span><span class="mf">0.2</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mf">0.5</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mf">5.0566</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mf">8.6659</span><span class="">]</span><span class="">)</span>
+</pre>
+            
+                           Now compute K with KNV method 0, with the default YT method and with the YT
+method while forcing 100 iterations of the algorithm and print some results
+after each call.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">fsf1</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">signal</span><span class="o">.</span><span class="">place_poles</span><span class="">(</span><span class="">A</span><span class="">,</span><span class=""> </span><span class="">B</span><span class="">,</span><span class=""> </span><span class="">P</span><span class="">,</span><span class=""> </span><span class="">method</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">KNV0</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">fsf1</span><span class="o">.</span><span class="">gain_matrix</span>
+array([[ 0.20071427, -0.96665799,  0.24066128, -0.10279785],
+       [ 0.50587268,  0.57779091,  0.51795763, -0.41991442]])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">fsf2</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">signal</span><span class="o">.</span><span class="">place_poles</span><span class="">(</span><span class="">A</span><span class="">,</span><span class=""> </span><span class="">B</span><span class="">,</span><span class=""> </span><span class="">P</span><span class="">)</span><span class="">  </span><span class="c1"># uses YT method</span><br><span class='nsl'>...&nbsp;</span><span class="">fsf2</span><span class="o">.</span><span class="">computed_poles</span>
+array([-8.6659, -5.0566, -0.5   , -0.2   ])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">fsf3</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">signal</span><span class="o">.</span><span class="">place_poles</span><span class="">(</span><span class="">A</span><span class="">,</span><span class=""> </span><span class="">B</span><span class="">,</span><span class=""> </span><span class="">P</span><span class="">,</span><span class=""> </span><span class="">rtol</span><span class="o">=</span><span class="o">-</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="">maxiter</span><span class="o">=</span><span class="mi">100</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">fsf3</span><span class="o">.</span><span class="">X</span>
+array([[ 0.52072442+0.j, -0.08409372+0.j, -0.56847937+0.j,  0.74823657+0.j],
+       [-0.04977751+0.j, -0.80872954+0.j,  0.13566234+0.j, -0.29322906+0.j],
+       [-0.82266932+0.j, -0.19168026+0.j, -0.56348322+0.j, -0.43815060+0.j],
+       [ 0.22267347+0.j,  0.54967577+0.j, -0.58387806+0.j, -0.40271926+0.j]])</pre>
+            
+                           The absolute value of the determinant of X is a good indicator to check the
+robustness of the results, both ``&#39;KNV0&#39;`` and ``&#39;YT&#39;`` aim at maximizing
+it.  Below a comparison of the robustness of the results above:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="nb">abs</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">linalg</span><span class="o">.</span><span class="">det</span><span class="">(</span><span class="">fsf1</span><span class="o">.</span><span class="">X</span><span class="">)</span><span class="">)</span><span class=""> </span><span class="o">&lt;</span><span class=""> </span><span class="nb">abs</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">linalg</span><span class="o">.</span><span class="">det</span><span class="">(</span><span class="">fsf2</span><span class="o">.</span><span class="">X</span><span class="">)</span><span class="">)</span>
+True</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="nb">abs</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">linalg</span><span class="o">.</span><span class="">det</span><span class="">(</span><span class="">fsf2</span><span class="o">.</span><span class="">X</span><span class="">)</span><span class="">)</span><span class=""> </span><span class="o">&lt;</span><span class=""> </span><span class="nb">abs</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">linalg</span><span class="o">.</span><span class="">det</span><span class="">(</span><span class="">fsf3</span><span class="o">.</span><span class="">X</span><span class="">)</span><span class="">)</span>
+True</pre>
+            
+                           Now a simple example for complex poles:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">A</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="">[</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class="">  </span><span class="mi">7</span><span class="o">/</span><span class="mf">3.</span><span class="">,</span><span class="">  </span><span class="mi">0</span><span class="">,</span><span class="">   </span><span class="mi">0</span><span class="">   </span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">              </span><span class="">[</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class="">   </span><span class="mi">0</span><span class="">,</span><span class="">    </span><span class="mi">0</span><span class="">,</span><span class="">  </span><span class="mi">7</span><span class="o">/</span><span class="mf">9.</span><span class=""> </span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">              </span><span class="">[</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class="">   </span><span class="mi">0</span><span class="">,</span><span class="">    </span><span class="mi">0</span><span class="">,</span><span class="">   </span><span class="mi">0</span><span class="">   </span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">              </span><span class="">[</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class="">   </span><span class="mi">0</span><span class="">,</span><span class="">    </span><span class="mi">0</span><span class="">,</span><span class="">   </span><span class="mi">0</span><span class="">   </span><span class="">]</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">B</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="">[</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class="">  </span><span class="mi">0</span><span class=""> </span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">              </span><span class="">[</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class="">  </span><span class="mi">0</span><span class=""> </span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">              </span><span class="">[</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class="">  </span><span class="mi">0</span><span class=""> </span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">              </span><span class="">[</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class="">  </span><span class="mi">1</span><span class=""> </span><span class="">]</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">P</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="o">-</span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mi">2</span><span class="o">-</span><span class="mi">1</span><span class="">j</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mi">2</span><span class="o">+</span><span class="mi">1</span><span class="">j</span><span class="">]</span><span class="">)</span><span class=""> </span><span class="o">/</span><span class=""> </span><span class="mf">3.</span><br><span class='nsl'>...&nbsp;</span><span class="">fsf</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">signal</span><span class="o">.</span><span class="">place_poles</span><span class="">(</span><span class="">A</span><span class="">,</span><span class=""> </span><span class="">B</span><span class="">,</span><span class=""> </span><span class="">P</span><span class="">,</span><span class=""> </span><span class="">method</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">YT</span><span class="s1">&#39;</span><span class="">)</span>
+</pre>
+            
+                           We can plot the desired and computed poles in the complex plane:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">t</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">linspace</span><span class="">(</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="o">*</span><span class="">np</span><span class="o">.</span><span class="">pi</span><span class="">,</span><span class=""> </span><span class="mi">401</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">cos</span><span class="">(</span><span class="">t</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">sin</span><span class="">(</span><span class="">t</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">k--</span><span class="s1">&#39;</span><span class="">)</span><span class="">  </span><span class="c1"># unit circle</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">fsf</span><span class="o">.</span><span class="">requested_poles</span><span class="o">.</span><span class="">real</span><span class="">,</span><span class=""> </span><span class="">fsf</span><span class="o">.</span><span class="">requested_poles</span><span class="o">.</span><span class="">imag</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">         </span><span class="s1">&#39;</span><span class="s1">wo</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">label</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">Desired</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">fsf</span><span class="o">.</span><span class="">computed_poles</span><span class="o">.</span><span class="">real</span><span class="">,</span><span class=""> </span><span class="">fsf</span><span class="o">.</span><span class="">computed_poles</span><span class="o">.</span><span class="">imag</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">bx</span><span class="s1">&#39;</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">         </span><span class="">label</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">Placed</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">grid</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">axis</span><span class="">(</span><span class="s1">&#39;</span><span class="s1">image</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">axis</span><span class="">(</span><span class="">[</span><span class="o">-</span><span class="mf">1.1</span><span class="">,</span><span class=""> </span><span class="mf">1.1</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mf">1.1</span><span class="">,</span><span class=""> </span><span class="mf">1.1</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">legend</span><span class="">(</span><span class="">bbox_to_anchor</span><span class="o">=</span><span class="">(</span><span class="mf">1.05</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">loc</span><span class="o">=</span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="">numpoints</span><span class="o">=</span><span class="mi">1</span><span class="">)</span>
+</pre>
+            
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/signal/_ltisys.py#L3058'>/scipy/signal/_ltisys.py#3058</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

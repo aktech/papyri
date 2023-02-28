@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.linalg.html'>linalg</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.linalg.interpolative.html'>interpolative</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.linalg._basic.html">_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._cythonized_array_utils.html">_cythonized_array_utils</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp.html">_decomp</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_cholesky.html">_decomp_cholesky</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_cossin.html">_decomp_cossin</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_ldl.html">_decomp_ldl</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_lu.html">_decomp_lu</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_polar.html">_decomp_polar</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_qr.html">_decomp_qr</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_qz.html">_decomp_qz</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_schur.html">_decomp_schur</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_svd.html">_decomp_svd</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_update.html">_decomp_update</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._expm_frechet.html">_expm_frechet</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._fblas.html">_fblas</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._flapack.html">_flapack</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._flinalg.html">_flinalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._flinalg_py.html">_flinalg_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative.html">_interpolative</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.html">_interpolative_backend</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs.html">_matfuncs</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs_expm.html">_matfuncs_expm</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs_sqrtm.html">_matfuncs_sqrtm</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs_sqrtm_triu.html">_matfuncs_sqrtm_triu</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._misc.html">_misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._procrustes.html">_procrustes</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._sketches.html">_sketches</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._solve_toeplitz.html">_solve_toeplitz</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._solvers.html">_solvers</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._special_matrices.html">_special_matrices</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.basic.html">basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.blas.html">blas</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.cython_blas.html">cython_blas</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.cython_lapack.html">cython_lapack</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp.html">decomp</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_cholesky.html">decomp_cholesky</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_lu.html">decomp_lu</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_qr.html">decomp_qr</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_schur.html">decomp_schur</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_svd.html">decomp_svd</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.flinalg.html">flinalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.interpolative.html">interpolative</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.lapack.html">lapack</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.matfuncs.html">matfuncs</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.special_matrices.html">special_matrices</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" >+</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.linalg.interpolative._is_real.html">_is_real</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.interpolative.estimate_rank.html">estimate_rank</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.interpolative.estimate_spectral_norm.html">estimate_spectral_norm</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.interpolative.estimate_spectral_norm_diff.html">estimate_spectral_norm_diff</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.interpolative.id_to_svd.html">id_to_svd</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.interpolative.interp_decomp.html">interp_decomp</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.interpolative.rand.html">rand</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.interpolative.reconstruct_interp_matrix.html">reconstruct_interp_matrix</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.interpolative.reconstruct_matrix_from_id.html">reconstruct_matrix_from_id</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.interpolative.reconstruct_skel_matrix.html">reconstruct_skel_matrix</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.interpolative.seed.html">seed</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.interpolative.svd.html">svd</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<!-- rendering Extended Summary -->
+        <!-- rendering Notes -->
+        <!-- rendering Summary -->
+                                       <div id="cc705307bde04e5ca4dd586f29cdd806"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "To remove in the future \u2013\u2013 scipy.linalg.interpolative"}], "type": "paragraph"});
+            document.getElementById("cc705307bde04e5ca4dd586f29cdd806").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h1>Interpolative matrix decomposition (:mod:`scipy.linalg.interpolative`)</h1>
+               <pre class='not-implemented'>
+.. moduleauthor:: Kenneth L. Ho &lt;klho@stanford.edu&gt;
+    </pre>
+
+
+                           <div class='admonition'>
+    <div>versionadded 0.13</div>
+</div>
+
+
+               <pre class='not-implemented'>
+.. currentmodule:: scipy.linalg.interpolative
+    </pre>
+
+
+                               <div id="ffe619d08c86405aa8040624f0400db1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "An interpolative decomposition (ID) of a matrix "}, {"type": "Math", "value": "A \\in\n\\mathbb{C}^{m \\times n}"}, {"type": "text", "value": " of rank "}, {"type": "Math", "value": "k \\leq \\min \\{ m, n \\}"}, {"type": "text", "value": " is a factorization"}], "type": "paragraph"});
+            document.getElementById("ffe619d08c86405aa8040624f0400db1").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$A \Pi =
+\begin{bmatrix}
+ A \Pi_{1} &amp; A \Pi_{2}
+\end{bmatrix} =
+A \Pi_{1}
+\begin{bmatrix}
+ I &amp; T
+\end{bmatrix},$$</span>
+
+                               <div id="7de3ab555dca45a79fbd0ba1b3c2ff29"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "where "}, {"type": "Math", "value": "\\Pi = [\\Pi_{1}, \\Pi_{2}]"}, {"type": "text", "value": " is a permutation matrix with "}, {"type": "Math", "value": "\\Pi_{1} \\in \\{ 0, 1 \\}^{n \\times k}"}, {"type": "text", "value": ", i.e., "}, {"type": "Math", "value": "A \\Pi_{2} =\nA \\Pi_{1} T"}, {"type": "text", "value": ". This can equivalently be written as "}, {"type": "Math", "value": "A = BP"}, {"type": "text", "value": ", where "}, {"type": "Math", "value": "B = A \\Pi_{1}"}, {"type": "text", "value": " and "}, {"type": "Math", "value": "P = [I, T] \\Pi^{\\mathsf{T}}"}, {"type": "text", "value": " are the "}, {"children": [{"type": "text", "value": "skeleton"}], "type": "emphasis"}, {"type": "text", "value": " and "}, {"children": [{"type": "text", "value": "interpolation matrices"}], "type": "emphasis"}, {"type": "text", "value": ", respectively."}], "type": "paragraph"});
+            document.getElementById("7de3ab555dca45a79fbd0ba1b3c2ff29").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="f3fcfe9cbba34815a5ec101bea5a2902"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"type": "Math", "value": "A"}, {"type": "text", "value": " does not have exact rank "}, {"type": "Math", "value": "k"}, {"type": "text", "value": ", then there exists an approximation in the form of an ID such that "}, {"type": "Math", "value": "A = BP + E"}, {"type": "text", "value": ", where "}, {"type": "Math", "value": "\\| E \\| \\sim \\sigma_{k + 1}"}, {"type": "text", "value": " is on the order of the "}, {"type": "Math", "value": "(k +\n1)"}, {"type": "text", "value": "-th largest singular value of "}, {"type": "Math", "value": "A"}, {"type": "text", "value": ". Note that "}, {"type": "Math", "value": "\\sigma_{k\n+ 1}"}, {"type": "text", "value": " is the best possible error for a rank-"}, {"type": "Math", "value": "k"}, {"type": "text", "value": " approximation and, in fact, is achieved by the singular value decomposition (SVD) "}, {"type": "Math", "value": "A \\approx U S V^{*}"}, {"type": "text", "value": ", where "}, {"type": "Math", "value": "U \\in \\mathbb{C}^{m \\times\nk}"}, {"type": "text", "value": " and "}, {"type": "Math", "value": "V \\in \\mathbb{C}^{n \\times k}"}, {"type": "text", "value": " have orthonormal columns and "}, {"type": "Math", "value": "S = \\mathop{\\mathrm{diag}} (\\sigma_{i}) \\in \\mathbb{C}^{k\n\\times k}"}, {"type": "text", "value": " is diagonal with nonnegative entries. The principal advantages of using an ID over an SVD are that:"}], "type": "paragraph"});
+            document.getElementById("f3fcfe9cbba34815a5ec101bea5a2902").innerHTML = html;
+        }
+        init();
+    </script>
+
+                          <ul>               <li>                               <div id="948166b90f1941feaba83be39a407351"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "it is cheaper to construct;"}], "type": "paragraph"});
+            document.getElementById("948166b90f1941feaba83be39a407351").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="ab38051634a2474f86ad11ece645c50d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "it preserves the structure of "}, {"type": "Math", "value": "A"}, {"type": "text", "value": "; and"}], "type": "paragraph"});
+            document.getElementById("ab38051634a2474f86ad11ece645c50d").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="93fd37fa87d246ff9a324369967d2a91"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "it is more efficient to compute with in light of the identity submatrix of "}, {"type": "Math", "value": "P"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("93fd37fa87d246ff9a324369967d2a91").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+
+
+<h2>Routines</h2>
+                               <div id="e6fabb43ae39413ea439a45c42cc7d8c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Main functionality:"}], "type": "paragraph"});
+            document.getElementById("e6fabb43ae39413ea439a45c42cc7d8c").innerHTML = html;
+        }
+        init();
+    </script>
+
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    interp_decomp
+    reconstruct_matrix_from_id
+    reconstruct_interp_matrix
+    reconstruct_skel_matrix
+    id_to_svd
+    svd
+    estimate_spectral_norm
+    estimate_spectral_norm_diff
+    estimate_rank</pre>
+                               <div id="0d6cb426cfc9499cac4907d19ffc20a2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Support functions:"}], "type": "paragraph"});
+            document.getElementById("0d6cb426cfc9499cac4907d19ffc20a2").innerHTML = html;
+        }
+        init();
+    </script>
+
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    seed
+    rand</pre>
+
+<h2>References</h2>
+                               <div id="ea02b3fb765a469babe780ea64c0e223"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This module uses the ID software package  by Martinsson, Rokhlin, Shkolnisky, and Tygert, which is a Fortran library for computing IDs using various algorithms, including the rank-revealing QR approach of  and the more recent randomized methods described in , , and . This module exposes its functionality in a way convenient for Python users. Note that this module does not add any functionality beyond that of organizing a simpler and more consistent interface."}], "type": "paragraph"});
+            document.getElementById("ea02b3fb765a469babe780ea64c0e223").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="b76c85c26cce4df1a255af9993dee947"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "We advise the user to consult also the "}, {"target": "http://tygert.com/id_doc.4.pdf", "type": "ExternalLink", "value": "documentation for the ID package"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("b76c85c26cce4df1a255af9993dee947").innerHTML = html;
+        }
+        init();
+    </script>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [1] P.G. Martinsson, V. Rokhlin, Y. Shkolnisky, M. Tygert. &#34;ID: a\n    software package for low-rank approximation of matrices via interpolative\n    decompositions, version 0.2.&#34; http://tygert.com/id_doc.4.pdf.&#39;&gt;
+           </pre>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [2] H. Cheng, Z. Gimbutas, P.G. Martinsson, V. Rokhlin. &#34;On the\n    compression of low rank matrices.&#34; *SIAM J. Sci. Comput.* 26 (4): 1389--1404,\n    2005. :doi:`10.1137/030602678`.&#39;&gt;
+           </pre>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [3] E. Liberty, F. Woolfe, P.G. Martinsson, V. Rokhlin, M.\n    Tygert. &#34;Randomized algorithms for the low-rank approximation of matrices.&#34;\n    *Proc. Natl. Acad. Sci. U.S.A.* 104 (51): 20167--20172, 2007.\n    :doi:`10.1073/pnas.0709640104`.&#39;&gt;
+           </pre>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [4] P.G. Martinsson, V. Rokhlin, M. Tygert. &#34;A randomized\n    algorithm for the decomposition of matrices.&#34; *Appl. Comput. Harmon. Anal.* 30\n    (1): 47--68,  2011. :doi:`10.1016/j.acha.2010.02.003`.&#39;&gt;
+           </pre>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [5] F. Woolfe, E. Liberty, V. Rokhlin, M. Tygert. &#34;A fast\n    randomized algorithm for the approximation of matrices.&#34; *Appl. Comput.\n    Harmon. Anal.* 25 (3): 335--366, 2008. :doi:`10.1016/j.acha.2007.12.002`.&#39;&gt;
+           </pre>
+
+
+<h2>Tutorial</h2>
+
+<h3>Initializing</h3>
+                               <div id="ee59a3f87aaf4af1acc0f8b21cc72d4f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The first step is to import "}, {"type": "Verbatim", "value": ["scipy.linalg.interpolative"]}, {"type": "text", "value": " by issuing the command:"}], "type": "paragraph"});
+            document.getElementById("ee59a3f87aaf4af1acc0f8b21cc72d4f").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="597ca8d55ba34645b892259ae0438eff"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e import scipy.linalg.interpolative as sli"});
+            document.getElementById("597ca8d55ba34645b892259ae0438eff").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="1f58e4b495104a07b7e234e412322fc1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Now let\u0027s build a matrix. For this, we consider a Hilbert matrix, which is well know to have low rank:"}], "type": "paragraph"});
+            document.getElementById("1f58e4b495104a07b7e234e412322fc1").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="6b79d0bf10a642cf9df8bdea32297964"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e from scipy.linalg import hilbert\n\u003e\u003e\u003e n = 1000\n\u003e\u003e\u003e A = hilbert(n)"});
+            document.getElementById("6b79d0bf10a642cf9df8bdea32297964").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="5623de47b67c4965af3c0482cc84e938"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "We can also do this explicitly via:"}], "type": "paragraph"});
+            document.getElementById("5623de47b67c4965af3c0482cc84e938").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="3f80fd08861d40209bf314fb663c183b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e import numpy as np\n\u003e\u003e\u003e n = 1000\n\u003e\u003e\u003e A = np.empty((n, n), order=\u0027F\u0027)\n\u003e\u003e\u003e for j in range(n):\n\u003e\u003e\u003e     for i in range(n):\n\u003e\u003e\u003e         A[i,j] = 1. / (i + j + 1)"});
+            document.getElementById("3f80fd08861d40209bf314fb663c183b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="dcb3d12eabd048d88eb4e445e3726749"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Note the use of the flag "}, {"type": "inlineCode", "value": "order=\u0027F\u0027"}, {"type": "text", "value": " in "}, {"type": "Verbatim", "value": ["numpy.empty"]}, {"type": "text", "value": ". This instantiates the matrix in Fortran-contiguous order and is important for avoiding data copying when passing to the backend."}], "type": "paragraph"});
+            document.getElementById("dcb3d12eabd048d88eb4e445e3726749").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="156e21b0fb9948dfa03245b544889169"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "We then define multiplication routines for the matrix by regarding it as a "}, {"type": "Verbatim", "value": ["scipy.sparse.linalg.LinearOperator"]}, {"type": "text", "value": ":"}], "type": "paragraph"});
+            document.getElementById("156e21b0fb9948dfa03245b544889169").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="05d877c20a7f4233852bb36cbdcb5e45"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e from scipy.sparse.linalg import aslinearoperator\n\u003e\u003e\u003e L = aslinearoperator(A)"});
+            document.getElementById("05d877c20a7f4233852bb36cbdcb5e45").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="2a56957edc31441099ce484427f071bb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This automatically sets up methods describing the action of the matrix and its adjoint on a vector."}], "type": "paragraph"});
+            document.getElementById("2a56957edc31441099ce484427f071bb").innerHTML = html;
+        }
+        init();
+    </script>
+
+
+<h3>Computing an ID</h3>
+                               <div id="498d539f6dce4b94adb9f477347f6694"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "We have several choices of algorithm to compute an ID. These fall largely according to two dichotomies:"}], "type": "paragraph"});
+            document.getElementById("498d539f6dce4b94adb9f477347f6694").innerHTML = html;
+        }
+        init();
+    </script>
+
+                          <ol>               <li>                               <div id="d2b6bb156f1949d18b5374c6a70c4fbd"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "how the matrix is represented, i.e., via its entries or via its action on a    vector; and"}], "type": "paragraph"});
+            document.getElementById("d2b6bb156f1949d18b5374c6a70c4fbd").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="a8eb43288a1942a0bf36e66742bc9f4a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "whether to approximate it to a fixed relative precision or to a fixed rank."}], "type": "paragraph"});
+            document.getElementById("a8eb43288a1942a0bf36e66742bc9f4a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ol>
+
+                               <div id="0f1c57d8cc434445b3871bb9e67cc135"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "We step through each choice in turn below."}], "type": "paragraph"});
+            document.getElementById("0f1c57d8cc434445b3871bb9e67cc135").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="388727d4ded84e46bb180aa018957742"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "In all cases, the ID is represented by three parameters:"}], "type": "paragraph"});
+            document.getElementById("388727d4ded84e46bb180aa018957742").innerHTML = html;
+        }
+        init();
+    </script>
+
+                          <ol>               <li>                               <div id="d10b18f998e4468c8be357b0ff11a9c2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "a rank "}, {"type": "inlineCode", "value": "k"}, {"type": "text", "value": ";"}], "type": "paragraph"});
+            document.getElementById("d10b18f998e4468c8be357b0ff11a9c2").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="466dae50edf543879b710e211f976f54"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "an index array "}, {"type": "inlineCode", "value": "idx"}, {"type": "text", "value": "; and"}], "type": "paragraph"});
+            document.getElementById("466dae50edf543879b710e211f976f54").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="fcaba27392e447dca5452a7d0ec6d869"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "interpolation coefficients "}, {"type": "inlineCode", "value": "proj"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("fcaba27392e447dca5452a7d0ec6d869").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ol>
+
+                               <div id="25a1ace45ad644d9811625ff328ab488"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The ID is specified by the relation "}, {"type": "inlineCode", "value": "np.dot(A[:,idx[:k]], proj) == A[:,idx[k:]]"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("25a1ace45ad644d9811625ff328ab488").innerHTML = html;
+        }
+        init();
+    </script>
+
+
+<h4>From matrix entries</h4>
+                               <div id="6216a34369604cfcb052105faa4478a3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "We first consider a matrix given in terms of its entries."}], "type": "paragraph"});
+            document.getElementById("6216a34369604cfcb052105faa4478a3").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="b1fcf50f2bfc4a52963efadb26d10072"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "To compute an ID to a fixed precision, type:"}], "type": "paragraph"});
+            document.getElementById("b1fcf50f2bfc4a52963efadb26d10072").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="5c0d713c9fdf4372a032a568b9f56f7d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e k, idx, proj = sli.interp_decomp(A, eps)"});
+            document.getElementById("5c0d713c9fdf4372a032a568b9f56f7d").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="c2223492966e4cc296f420f23126cbcf"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "where "}, {"type": "inlineCode", "value": "eps \u003c 1"}, {"type": "text", "value": " is the desired precision."}], "type": "paragraph"});
+            document.getElementById("c2223492966e4cc296f420f23126cbcf").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="69631720f3734d2ca6ea2c235cc647d3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "To compute an ID to a fixed rank, use:"}], "type": "paragraph"});
+            document.getElementById("69631720f3734d2ca6ea2c235cc647d3").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="4875dd6dac9143aa9f700fdb317db74f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e idx, proj = sli.interp_decomp(A, k)"});
+            document.getElementById("4875dd6dac9143aa9f700fdb317db74f").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="aec81e6a84ad4c7b8575cf71353d7b76"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "where "}, {"type": "inlineCode", "value": "k \u003e= 1"}, {"type": "text", "value": " is the desired rank."}], "type": "paragraph"});
+            document.getElementById("aec81e6a84ad4c7b8575cf71353d7b76").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="e4534657f4dd4026b0ffdfe07fb1bfdb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Both algorithms use random sampling and are usually faster than the corresponding older, deterministic algorithms, which can be accessed via the commands:"}], "type": "paragraph"});
+            document.getElementById("e4534657f4dd4026b0ffdfe07fb1bfdb").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="0c44659e586c4442accffbc9dde41257"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e k, idx, proj = sli.interp_decomp(A, eps, rand=False)"});
+            document.getElementById("0c44659e586c4442accffbc9dde41257").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="b9d752243cb04595b26ba94c61f3196c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "and:"}], "type": "paragraph"});
+            document.getElementById("b9d752243cb04595b26ba94c61f3196c").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="fac7f28776d140138ec740d64fb46720"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e idx, proj = sli.interp_decomp(A, k, rand=False)"});
+            document.getElementById("fac7f28776d140138ec740d64fb46720").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="f3686906904e4f448d32c3ba3a33a219"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "respectively."}], "type": "paragraph"});
+            document.getElementById("f3686906904e4f448d32c3ba3a33a219").innerHTML = html;
+        }
+        init();
+    </script>
+
+
+<h4>From matrix action</h4>
+                               <div id="1c682f80995440b1a1bc7e89877a6d8b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Now consider a matrix given in terms of its action on a vector as a "}, {"type": "Verbatim", "value": ["scipy.sparse.linalg.LinearOperator"]}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("1c682f80995440b1a1bc7e89877a6d8b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="d95f165629f440e188279c2af7b722e4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "To compute an ID to a fixed precision, type:"}], "type": "paragraph"});
+            document.getElementById("d95f165629f440e188279c2af7b722e4").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="2b651bfd7bd241578348efc4c596ebbb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e k, idx, proj = sli.interp_decomp(L, eps)"});
+            document.getElementById("2b651bfd7bd241578348efc4c596ebbb").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="e1a1d72a3a7b46a385b79a5aba13b6f0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "To compute an ID to a fixed rank, use:"}], "type": "paragraph"});
+            document.getElementById("e1a1d72a3a7b46a385b79a5aba13b6f0").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="905d91692f3543eba80adc5d8c11879b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e idx, proj = sli.interp_decomp(L, k)"});
+            document.getElementById("905d91692f3543eba80adc5d8c11879b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="870293ddbf7b491e8996198daec19ff0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "These algorithms are randomized."}], "type": "paragraph"});
+            document.getElementById("870293ddbf7b491e8996198daec19ff0").innerHTML = html;
+        }
+        init();
+    </script>
+
+
+<h3>Reconstructing an ID</h3>
+                               <div id="a34b1ab7d6c445758e5f9b7324f8e78d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The ID routines above do not output the skeleton and interpolation matrices explicitly but instead return the relevant information in a more compact (and sometimes more useful) form. To build these matrices, write:"}], "type": "paragraph"});
+            document.getElementById("a34b1ab7d6c445758e5f9b7324f8e78d").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="b10d93e880954d5e94c042696a7f81b1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e B = sli.reconstruct_skel_matrix(A, k, idx)"});
+            document.getElementById("b10d93e880954d5e94c042696a7f81b1").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="df5b0d93b5634b79b3ad5a4a03c9469a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "for the skeleton matrix and:"}], "type": "paragraph"});
+            document.getElementById("df5b0d93b5634b79b3ad5a4a03c9469a").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="649e1c97e25b4ccca23e4ef260be3ba3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e P = sli.reconstruct_interp_matrix(idx, proj)"});
+            document.getElementById("649e1c97e25b4ccca23e4ef260be3ba3").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="b88d83f2b25c4cd9b7577fc5d9242220"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "for the interpolation matrix. The ID approximation can then be computed as:"}], "type": "paragraph"});
+            document.getElementById("b88d83f2b25c4cd9b7577fc5d9242220").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="b393ca61f9934f05b366869b4ac9065c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e C = np.dot(B, P)"});
+            document.getElementById("b393ca61f9934f05b366869b4ac9065c").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="44f41e8b19e943ce8d6084e8796fc07c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This can also be constructed directly using:"}], "type": "paragraph"});
+            document.getElementById("44f41e8b19e943ce8d6084e8796fc07c").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="a8912fc68b184c81bfdb6dcc7109f0ca"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e C = sli.reconstruct_matrix_from_id(B, idx, proj)"});
+            document.getElementById("a8912fc68b184c81bfdb6dcc7109f0ca").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="663c4831bfe9429fa47e9c51f84cfe10"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "without having to first compute "}, {"type": "inlineCode", "value": "P"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("663c4831bfe9429fa47e9c51f84cfe10").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="a1edab65c9654d08af5235f1326656c9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Alternatively, this can be done explicitly as well using:"}], "type": "paragraph"});
+            document.getElementById("a1edab65c9654d08af5235f1326656c9").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="75bf878ee2a443a49913fe1a8e3e26f7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e B = A[:,idx[:k]]\n\u003e\u003e\u003e P = np.hstack([np.eye(k), proj])[:,np.argsort(idx)]\n\u003e\u003e\u003e C = np.dot(B, P)"});
+            document.getElementById("75bf878ee2a443a49913fe1a8e3e26f7").innerHTML = html;
+        }
+        init();
+    </script>
+
+
+<h3>Computing an SVD</h3>
+                               <div id="b627b5b5dfe646069e027bd03d56284e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "An ID can be converted to an SVD via the command:"}], "type": "paragraph"});
+            document.getElementById("b627b5b5dfe646069e027bd03d56284e").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="f45758d0f7624faf900d7e8035cee698"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e U, S, V = sli.id_to_svd(B, idx, proj)"});
+            document.getElementById("f45758d0f7624faf900d7e8035cee698").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="3f25380eaf4141deb75131730b0fc12a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The SVD approximation is then:"}], "type": "paragraph"});
+            document.getElementById("3f25380eaf4141deb75131730b0fc12a").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="2684fd79dbb74593b2229c412ab1cf1a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e C = np.dot(U, np.dot(np.diag(S), np.dot(V.conj().T)))"});
+            document.getElementById("2684fd79dbb74593b2229c412ab1cf1a").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="4e2329eabb4b4445b6669d74c9f12f23"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The SVD can also be computed \"fresh\" by combining both the ID and conversion steps into one command. Following the various ID algorithms above, there are correspondingly various SVD algorithms that one can employ."}], "type": "paragraph"});
+            document.getElementById("4e2329eabb4b4445b6669d74c9f12f23").innerHTML = html;
+        }
+        init();
+    </script>
+
+
+<h4>From matrix entries</h4>
+                               <div id="ca6d76769c4541aab0acd8c8005f92e0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "We consider first SVD algorithms for a matrix given in terms of its entries."}], "type": "paragraph"});
+            document.getElementById("ca6d76769c4541aab0acd8c8005f92e0").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="4d314f97415a4f5282f176806f2f48ff"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "To compute an SVD to a fixed precision, type:"}], "type": "paragraph"});
+            document.getElementById("4d314f97415a4f5282f176806f2f48ff").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="17ff1fa030bd4da49eef2b422ee634f5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e U, S, V = sli.svd(A, eps)"});
+            document.getElementById("17ff1fa030bd4da49eef2b422ee634f5").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="1f91e851691e473e87f0e8e349e74eb0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "To compute an SVD to a fixed rank, use:"}], "type": "paragraph"});
+            document.getElementById("1f91e851691e473e87f0e8e349e74eb0").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="4481ce2717ba408b8dc6e80d852bc544"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e U, S, V = sli.svd(A, k)"});
+            document.getElementById("4481ce2717ba408b8dc6e80d852bc544").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="c1aead2795354bb0ac3a5ae220626ade"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Both algorithms use random sampling; for the determinstic versions, issue the keyword "}, {"type": "inlineCode", "value": "rand=False"}, {"type": "text", "value": " as above."}], "type": "paragraph"});
+            document.getElementById("c1aead2795354bb0ac3a5ae220626ade").innerHTML = html;
+        }
+        init();
+    </script>
+
+
+<h4>From matrix action</h4>
+                               <div id="dfa0db6d96e84ae6a96fabf8c9c76a47"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Now consider a matrix given in terms of its action on a vector."}], "type": "paragraph"});
+            document.getElementById("dfa0db6d96e84ae6a96fabf8c9c76a47").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="fb70b49dea954515947d9902a8c59647"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "To compute an SVD to a fixed precision, type:"}], "type": "paragraph"});
+            document.getElementById("fb70b49dea954515947d9902a8c59647").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="00ee1f77bfce4861ba6acc9352ab1d37"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e U, S, V = sli.svd(L, eps)"});
+            document.getElementById("00ee1f77bfce4861ba6acc9352ab1d37").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="71372fb1b5d440e49f28c353e3e2acf3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "To compute an SVD to a fixed rank, use:"}], "type": "paragraph"});
+            document.getElementById("71372fb1b5d440e49f28c353e3e2acf3").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="a01e7c4ad5d4420fabc4da1e062f6599"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e U, S, V = sli.svd(L, k)"});
+            document.getElementById("a01e7c4ad5d4420fabc4da1e062f6599").innerHTML = html;
+        }
+        init();
+    </script>
+
+
+<h3>Utility routines</h3>
+                               <div id="c3f26ab1a6a4455db1986e618e470858"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Several utility routines are also available."}], "type": "paragraph"});
+            document.getElementById("c3f26ab1a6a4455db1986e618e470858").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="bac71934e8a44a2482c84d6add05da37"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "To estimate the spectral norm of a matrix, use:"}], "type": "paragraph"});
+            document.getElementById("bac71934e8a44a2482c84d6add05da37").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="db9e7629fd5045c697581a2ad8c186b0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e snorm = sli.estimate_spectral_norm(A)"});
+            document.getElementById("db9e7629fd5045c697581a2ad8c186b0").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="c489a33e8ecb47acb9f6dd8bea252be2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This algorithm is based on the randomized power method and thus requires only matrix-vector products. The number of iterations to take can be set using the keyword "}, {"type": "inlineCode", "value": "its"}, {"type": "text", "value": " (default: "}, {"type": "inlineCode", "value": "its=20"}, {"type": "text", "value": "). The matrix is interpreted as a "}, {"type": "Verbatim", "value": ["scipy.sparse.linalg.LinearOperator"]}, {"type": "text", "value": ", but it is also valid to supply it as a "}, {"type": "Verbatim", "value": ["numpy.ndarray"]}, {"type": "text", "value": ", in which case it is trivially converted using "}, {"type": "Verbatim", "value": ["scipy.sparse.linalg.aslinearoperator"]}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("c489a33e8ecb47acb9f6dd8bea252be2").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="a5c84db220314dada3f7867591034d6b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The same algorithm can also estimate the spectral norm of the difference of two matrices "}, {"type": "inlineCode", "value": "A1"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "A2"}, {"type": "text", "value": " as follows:"}], "type": "paragraph"});
+            document.getElementById("a5c84db220314dada3f7867591034d6b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="15ffc6eee3a74c36a9456a055c7fb04f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e diff = sli.estimate_spectral_norm_diff(A1, A2)"});
+            document.getElementById("15ffc6eee3a74c36a9456a055c7fb04f").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="f8447eeffe844b71b6443e235a9a3f3b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This is often useful for checking the accuracy of a matrix approximation."}], "type": "paragraph"});
+            document.getElementById("f8447eeffe844b71b6443e235a9a3f3b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="0fcaa02ab80a4beaabb5a29072d858ef"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Some routines in "}, {"type": "Verbatim", "value": ["scipy.linalg.interpolative"]}, {"type": "text", "value": " require estimating the rank of a matrix as well. This can be done with either:"}], "type": "paragraph"});
+            document.getElementById("0fcaa02ab80a4beaabb5a29072d858ef").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="cc80886f9a4b4ca7bfbd61d49022c491"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e k = sli.estimate_rank(A, eps)"});
+            document.getElementById("cc80886f9a4b4ca7bfbd61d49022c491").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="a64a8a03978547c9a7c45dcf9636eb06"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "or:"}], "type": "paragraph"});
+            document.getElementById("a64a8a03978547c9a7c45dcf9636eb06").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="3cb284a65ff7419ab8870005a3063b37"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e k = sli.estimate_rank(L, eps)"});
+            document.getElementById("3cb284a65ff7419ab8870005a3063b37").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="e4cddeb3799d4e2eb2880f85cf4cb52b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "depending on the representation. The parameter "}, {"type": "inlineCode", "value": "eps"}, {"type": "text", "value": " controls the definition of the numerical rank."}], "type": "paragraph"});
+            document.getElementById("e4cddeb3799d4e2eb2880f85cf4cb52b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="6ba88644bc46475788cbbbb149a13c1c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Finally, the random number generation required for all randomized routines can be controlled via "}, {"type": "Verbatim", "value": ["scipy.linalg.interpolative.seed"]}, {"type": "text", "value": ". To reset the seed values to their original values, use:"}], "type": "paragraph"});
+            document.getElementById("6ba88644bc46475788cbbbb149a13c1c").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="2d22f1514940468aa92a53a1479939bc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e sli.seed(\u0027default\u0027)"});
+            document.getElementById("2d22f1514940468aa92a53a1479939bc").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="c8c9b653276145c9a4f36d1688fffe43"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "To specify the seed values, use:"}], "type": "paragraph"});
+            document.getElementById("c8c9b653276145c9a4f36d1688fffe43").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="616bfac81ee04499a022d97c84fbabb2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e sli.seed(s)"});
+            document.getElementById("616bfac81ee04499a022d97c84fbabb2").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="e574be440ac74e09a0d2a98e4fbc30ab"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "where "}, {"type": "inlineCode", "value": "s"}, {"type": "text", "value": " must be an integer or array of 55 floats. If an integer, the array of floats is obtained by using "}, {"type": "inlineCode", "value": "numpy.random.rand"}, {"type": "text", "value": " with the given integer seed."}], "type": "paragraph"});
+            document.getElementById("e574be440ac74e09a0d2a98e4fbc30ab").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="776108237b6d4b3dbf3c9b9dfaeae505"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "To simply generate some random numbers, type:"}], "type": "paragraph"});
+            document.getElementById("776108237b6d4b3dbf3c9b9dfaeae505").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="e6c16b82156c4f14a14d13515882511f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e sli.rand(n)"});
+            document.getElementById("e6c16b82156c4f14a14d13515882511f").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="6381b25d439e46be90a5046363920cad"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "where "}, {"type": "inlineCode", "value": "n"}, {"type": "text", "value": " is the number of random numbers to generate."}], "type": "paragraph"});
+            document.getElementById("6381b25d439e46be90a5046363920cad").innerHTML = html;
+        }
+        init();
+    </script>
+
+
+<h3>Remarks</h3>
+                               <div id="2d06c3f951614636a8793e9567a3ea7a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The above functions all automatically detect the appropriate interface and work with both real and complex data types, passing input arguments to the proper backend routine."}], "type": "paragraph"});
+            document.getElementById("2d06c3f951614636a8793e9567a3ea7a").innerHTML = html;
+        }
+        init();
+    </script>
+
+
+<h3 id="section-Examples">Examples</h3>
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/linalg/interpolative.py#L0'>/scipy/linalg/interpolative.py#0</a>
+<br/>
+
+type: &lt;class &#39;module&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

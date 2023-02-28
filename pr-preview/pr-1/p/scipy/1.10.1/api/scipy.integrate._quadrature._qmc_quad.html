@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.integrate.html'>integrate</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.integrate._quadrature.html'>_quadrature</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.integrate._bvp.html">_bvp</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._dop.html">_dop</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._ivp.html">_ivp</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._lsoda.html">_lsoda</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._ode.html">_ode</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._odepack.html">_odepack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._odepack_py.html">_odepack_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quad_vec.html">_quad_vec</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadpack.html">_quadpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadpack_py.html">_quadpack_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.html">_quadrature</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._vode.html">_vode</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.dop.html">dop</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.lsoda.html">lsoda</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.odepack.html">odepack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.quadpack.html">quadpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.vode.html">vode</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.integrate._quadrature._qmc_quad.html'>_qmc_quad</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.AccuracyWarning.html">AccuracyWarning</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.QMCQuadResult.html">QMCQuadResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature._basic_simpson.html">_basic_simpson</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature._cached_roots_legendre.html">_cached_roots_legendre</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature._difftrap.html">_difftrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature._printresmat.html">_printresmat</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature._qmc_quad.html">_qmc_quad</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature._qmc_quad_iv.html">_qmc_quad_iv</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature._romberg_diff.html">_romberg_diff</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.cache_decorator.html">cache_decorator</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.cumtrapz.html">cumtrapz</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.cumulative_trapezoid.html">cumulative_trapezoid</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.fixed_quad.html">fixed_quad</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.newton_cotes.html">newton_cotes</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.quadrature.html">quadrature</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.romb.html">romb</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.romberg.html">romberg</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.simps.html">simps</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.simpson.html">simpson</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.trapezoid.html">trapezoid</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.trapz.html">trapz</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.tupleset.html">tupleset</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.vectorize1.html">vectorize1</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a>    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>_qmc_quad(func, a, b, *, n_points=1024, n_estimates=8, qrng=None, log=False, args=None)</code><!-- rendering Extended Summary -->
+        <h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="5589d026e79d4f42ae6e272dc0322ba2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Values of the integrand at each of the "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "n_points", "type": "RefInfo", "version": null}, "type": "Link", "value": "n_points"}, {"type": "text", "value": " points of a QMC sample are used to produce an estimate of the integral. This estimate is drawn from a population of possible estimates of the integral, the value of which we obtain depends on the particular points at which the integral was evaluated. We perform this process "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "n_estimates", "type": "RefInfo", "version": null}, "type": "Link", "value": "n_estimates"}, {"type": "text", "value": " times, each time evaluating the integrand at different scrambled QMC points, effectively drawing i.i.d. random samples from the population of integral estimates. The sample mean "}, {"type": "Math", "value": "m"}, {"type": "text", "value": " of these integral estimates is an unbiased estimator of the true value of the integral, and the standard error of the mean "}, {"type": "Math", "value": "s"}, {"type": "text", "value": " of these estimates may be used to generate confidence intervals using the t distribution with "}, {"type": "inlineCode", "value": "n_estimates - 1"}, {"type": "text", "value": " degrees of freedom. Perhaps counter-intuitively, increasing "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "n_points", "type": "RefInfo", "version": null}, "type": "Link", "value": "n_points"}, {"type": "text", "value": " while keeping the total number of function evaluation points "}, {"type": "inlineCode", "value": "n_points * n_estimates"}, {"type": "text", "value": " fixed tends to reduce the actual error, whereas increasing "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "n_estimates", "type": "RefInfo", "version": null}, "type": "Link", "value": "n_estimates"}, {"type": "text", "value": " tends to decrease the error estimate."}], "type": "paragraph"});
+            document.getElementById("5589d026e79d4f42ae6e272dc0322ba2").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="func">func</a> : callable</dt>
+<dd>
+                <div id="793c38a427c14466870e4e63d373b9e8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The integrand. Must accept a single arguments "}, {"domain": null, "role": null, "type": "Directive", "value": "x"}, {"type": "text", "value": ", an array which specifies the point at which to evaluate the integrand. For efficiency, the function should be vectorized to compute the integrand for each element an array of shape "}, {"type": "inlineCode", "value": "(n_points, n)"}, {"type": "text", "value": ", where "}, {"type": "inlineCode", "value": "n"}, {"type": "text", "value": " is number of variables."}], "type": "paragraph"});
+            document.getElementById("793c38a427c14466870e4e63d373b9e8").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="a, b">a, b</a> : array-like</dt>
+<dd>
+                <div id="b87cad9505514995b9906ceb3662aa7c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "One-dimensional arrays specifying the lower and upper integration limits, respectively, of each of the "}, {"type": "inlineCode", "value": "n"}, {"type": "text", "value": " variables."}], "type": "paragraph"});
+            document.getElementById("b87cad9505514995b9906ceb3662aa7c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="n_points, n_estimates">n_points, n_estimates</a> : int, optional</dt>
+<dd>
+                <div id="be9a7fab1949480599c4034920fe0ac9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "One QMC sample of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "n_points", "type": "RefInfo", "version": null}, "type": "Link", "value": "n_points"}, {"type": "text", "value": " (default: 256) points will be generated by "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "qrng", "type": "RefInfo", "version": null}, "type": "Link", "value": "qrng"}, {"type": "text", "value": ", and "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "n_estimates", "type": "RefInfo", "version": null}, "type": "Link", "value": "n_estimates"}, {"type": "text", "value": " (default: 8) statistically independent estimates of the integral will be produced. The total number of points at which the integrand "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "func", "type": "RefInfo", "version": null}, "type": "Link", "value": "func"}, {"type": "text", "value": " will be evaluated is "}, {"type": "inlineCode", "value": "n_points * n_estimates"}, {"type": "text", "value": ". See Notes for details."}], "type": "paragraph"});
+            document.getElementById("be9a7fab1949480599c4034920fe0ac9").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="qrng">qrng</a> : `~scipy.stats.qmc.QMCEngine`, optional</dt>
+<dd>
+                <div id="a0689567d4c74c12b6325ac481c22dfd"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "An instance of the QMCEngine from which to sample QMC points. The QMCEngine must be initialized to a number of dimensions corresponding with the number of variables "}, {"type": "inlineCode", "value": "x0, ..., xn"}, {"type": "text", "value": " passed to "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "func", "type": "RefInfo", "version": null}, "type": "Link", "value": "func"}, {"type": "text", "value": ". The provided QMCEngine is used to produce the first integral estimate. If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "n_estimates", "type": "RefInfo", "version": null}, "type": "Link", "value": "n_estimates"}, {"type": "text", "value": " is greater than one, additional QMCEngines are spawned from the first (with scrambling enabled, if it is an option.) If a QMCEngine is not provided, the default "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "scipy", "path": "scipy.stats._qmc.Halton", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "scipy.stats.qmc.Halton"}, {"type": "text", "value": " will be initialized with the number of dimensions determine from "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "a", "type": "RefInfo", "version": null}, "type": "Link", "value": "a"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("a0689567d4c74c12b6325ac481c22dfd").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="log">log</a> : boolean, default: False</dt>
+<dd>
+                <div id="b71be9337aa348e78571e4af2cb75dec"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "When set to True, "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "func", "type": "RefInfo", "version": null}, "type": "Link", "value": "func"}, {"type": "text", "value": " returns the log of the integrand, and the result object contains the log of the integral."}], "type": "paragraph"});
+            document.getElementById("b71be9337aa348e78571e4af2cb75dec").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="result">result</a> : object</dt>
+<dd>
+                <div id="4b2dbd2172ee46cfa904639bb4ac285c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A result object with attributes:"}], "type": "paragraph"});
+            document.getElementById("4b2dbd2172ee46cfa904639bb4ac285c").innerHTML = html;
+        }
+        init();
+    </script>
+
+<!-- deflist -->
+           <dl>
+               <dt>                <div id="5a8fea52e5d8478b82aa18d21ff4ea88"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "integral"}], "type": "paragraph"});
+            document.getElementById("5a8fea52e5d8478b82aa18d21ff4ea88").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="6e0115d8a3094020986c2e44250c1aee"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "integral"}], "type": "paragraph"});
+            document.getElementById("6e0115d8a3094020986c2e44250c1aee").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="98469a4dd88844dda1b333dc9bdfc649"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "standard_error :"}], "type": "paragraph"});
+            document.getElementById("98469a4dd88844dda1b333dc9bdfc649").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="29f696c6b99e467b88afa21a834861cd"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The error estimate. See Notes for interpretation."}], "type": "paragraph"});
+            document.getElementById("29f696c6b99e467b88afa21a834861cd").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="378057b86b154de3ab7a515c6a530fc4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Compute an integral in N-dimensions using Quasi-Monte Carlo quadrature."}], "type": "paragraph"});
+            document.getElementById("378057b86b154de3ab7a515c6a530fc4").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+                           QMC quadrature is particularly useful for computing integrals in higher
+dimensions. An example integrand is the probability density function
+of a multivariate normal distribution.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">stats</span><br><span class='nsl'>...&nbsp;</span><span class="">dim</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="mi">8</span><br><span class='nsl'>...&nbsp;</span><span class="">mean</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">zeros</span><span class="">(</span><span class="">dim</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">cov</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">eye</span><span class="">(</span><span class="">dim</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="k">def</span><span class=""> </span><span class="nf">func</span><span class="">(</span><span class="">x</span><span class="">)</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="k">return</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">multivariate_normal</span><span class="o">.</span><span class="">pdf</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">mean</span><span class="">,</span><span class=""> </span><span class="">cov</span><span class="">)</span>
+</pre>
+            
+                           To compute the integral over the unit hypercube:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">integrate</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">qmc_quad</span><br><span class='nsl'>...&nbsp;</span><span class="">a</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">zeros</span><span class="">(</span><span class="">dim</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">b</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">ones</span><span class="">(</span><span class="">dim</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">rng</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">random</span><span class="o">.</span><span class="">default_rng</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">qrng</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">qmc</span><span class="o">.</span><span class="">Halton</span><span class="">(</span><span class="">d</span><span class="o">=</span><span class="">dim</span><span class="">,</span><span class=""> </span><span class="">seed</span><span class="o">=</span><span class="">rng</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">n_estimates</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="mi">8</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">qmc_quad</span><span class="">(</span><span class="">func</span><span class="">,</span><span class=""> </span><span class="">a</span><span class="">,</span><span class=""> </span><span class="">b</span><span class="">,</span><span class=""> </span><span class="">n_estimates</span><span class="o">=</span><span class="">n_estimates</span><span class="">,</span><span class=""> </span><span class="">qrng</span><span class="o">=</span><span class="">qrng</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class="o">.</span><span class="">integral</span><span class="">,</span><span class=""> </span><span class="">res</span><span class="o">.</span><span class="">standard_error</span>
+(0.00018441088533413305, 1.1255608140911588e-07)</pre>
+            
+                           A two-sided, 99% confidence interval for the integral may be estimated
+as:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">t</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">t</span><span class="">(</span><span class="">df</span><span class="o">=</span><span class="">n_estimates</span><span class="o">-</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="">loc</span><span class="o">=</span><span class="">res</span><span class="o">.</span><span class="">integral</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">            </span><span class="">scale</span><span class="o">=</span><span class="">res</span><span class="o">.</span><span class="">standard_error</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">t</span><span class="o">.</span><span class="">interval</span><span class="">(</span><span class="mf">0.99</span><span class="">)</span>
+(0.00018401699720722663, 0.00018480477346103947)</pre>
+            
+                           Indeed, the value reported by `scipy.stats.multivariate_normal` is
+within this range.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">stats</span><span class="o">.</span><span class="">multivariate_normal</span><span class="o">.</span><span class="">cdf</span><span class="">(</span><span class="">b</span><span class="">,</span><span class=""> </span><span class="">mean</span><span class="">,</span><span class=""> </span><span class="">cov</span><span class="">,</span><span class=""> </span><span class="">lower_limit</span><span class="o">=</span><span class="">a</span><span class="">)</span>
+0.00018430867675187443</pre>
+            
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/integrate/_quadrature.py#L1216'>/scipy/integrate/_quadrature.py#1216</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 10.0, "label": "scipy.stats._qmc.Halton", "mod": "scipy", "url": "/p/scipy/*/api/scipy.stats._qmc.Halton"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

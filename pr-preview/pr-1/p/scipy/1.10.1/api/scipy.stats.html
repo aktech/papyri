@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats.html'>stats</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" >+</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.stats._axis_nan_policy.html">_axis_nan_policy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._biasedurn.html">_biasedurn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binned_statistic.html">_binned_statistic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binomtest.html">_binomtest</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._boost.html">_boost</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._common.html">_common</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._constants.html">_constants</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._continuous_distns.html">_continuous_distns</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._covariance.html">_covariance</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._crosstab.html">_crosstab</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._discrete_distns.html">_discrete_distns</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._distn_infrastructure.html">_distn_infrastructure</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._distr_params.html">_distr_params</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._entropy.html">_entropy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._fit.html">_fit</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.html">_hypotests</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._kde.html">_kde</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._ksstats.html">_ksstats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable.html">_levy_stable</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mannwhitneyu.html">_mannwhitneyu</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._morestats.html">_morestats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mstats_basic.html">_mstats_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mstats_extras.html">_mstats_extras</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._multivariate.html">_multivariate</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mvn.html">_mvn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._odds_ratio.html">_odds_ratio</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._page_trend_test.html">_page_trend_test</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.html">_qmc</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc_cy.html">_qmc_cy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._rcont.html">_rcont</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._relative_risk.html">_relative_risk</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling.html">_resampling</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._rvs_sampling.html">_rvs_sampling</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._sobol.html">_sobol</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._statlib.html">_statlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats.html">_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_mstats_common.html">_stats_mstats_common</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.html">_stats_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_pythran.html">_stats_pythran</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._tukeylambda_stats.html">_tukeylambda_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._variation.html">_variation</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._warnings_errors.html">_warnings_errors</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.biasedurn.html">biasedurn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.contingency.html">contingency</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.distributions.html">distributions</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.kde.html">kde</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.morestats.html">morestats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats.html">mstats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats_basic.html">mstats_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats_extras.html">mstats_extras</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mvn.html">mvn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.qmc.html">qmc</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.statlib.html">statlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<!-- rendering Extended Summary -->
+        <!-- rendering Notes -->
+        <!-- rendering Summary -->
+                                       <div id="4c019ca195da4751bec5983f947992b5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "To remove in the future \u2013\u2013 scipy.stats"}], "type": "paragraph"});
+            document.getElementById("4c019ca195da4751bec5983f947992b5").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h1>Statistical functions (:mod:`scipy.stats`)</h1>
+               <pre class='not-implemented'>
+.. currentmodule:: scipy.stats
+    </pre>
+
+
+                               <div id="ef03d5cbbfa341a89a1a6670206d2bd3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This module contains a large number of probability distributions, summary and frequency statistics, correlation functions and statistical tests, masked statistics, kernel density estimation, quasi-Monte Carlo functionality, and more."}], "type": "paragraph"});
+            document.getElementById("ef03d5cbbfa341a89a1a6670206d2bd3").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="b4741e54f97c435dba0856d27186ae0c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Statistics is a very large area, and there are topics that are out of scope for SciPy and are covered by other packages. Some of the most important ones are:"}], "type": "paragraph"});
+            document.getElementById("b4741e54f97c435dba0856d27186ae0c").innerHTML = html;
+        }
+        init();
+    </script>
+
+                          <ul>               <li>                               <div id="993a79c3686744abaf1e42d4d5fcb34a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"target": "https://www.statsmodels.org/stable/index.html", "type": "ExternalLink", "value": "statsmodels"}, {"type": "text", "value": ":   regression, linear models, time series analysis, extensions to topics   also covered by "}, {"type": "inlineCode", "value": "scipy.stats"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("993a79c3686744abaf1e42d4d5fcb34a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="c56bacbd8719482dafcd9b7316775167"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"target": "https://pandas.pydata.org/", "type": "ExternalLink", "value": "Pandas"}, {"type": "text", "value": ": tabular data, time series   functionality, interfaces to other statistical languages."}], "type": "paragraph"});
+            document.getElementById("c56bacbd8719482dafcd9b7316775167").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="9893c6b9470c49c79237d1e64320fc76"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"target": "https://docs.pymc.io/", "type": "ExternalLink", "value": "PyMC"}, {"type": "text", "value": ": Bayesian statistical   modeling, probabilistic machine learning."}], "type": "paragraph"});
+            document.getElementById("9893c6b9470c49c79237d1e64320fc76").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="04caba4ce3c948ccbc91669c43c8af59"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"target": "https://scikit-learn.org/", "type": "ExternalLink", "value": "scikit-learn"}, {"type": "text", "value": ": classification, regression,   model selection."}], "type": "paragraph"});
+            document.getElementById("04caba4ce3c948ccbc91669c43c8af59").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="a615f17153ef42e1b6b4281ade2a8217"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"target": "https://seaborn.pydata.org/", "type": "ExternalLink", "value": "Seaborn"}, {"type": "text", "value": ": statistical data visualization."}], "type": "paragraph"});
+            document.getElementById("a615f17153ef42e1b6b4281ade2a8217").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="63461ae0b4204af7a02b2a1027bb70ac"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"target": "https://rpy2.github.io/", "type": "ExternalLink", "value": "rpy2"}, {"type": "text", "value": ": Python to R bridge."}], "type": "paragraph"});
+            document.getElementById("63461ae0b4204af7a02b2a1027bb70ac").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+
+
+<h2>Probability distributions</h2>
+                               <div id="9ab5afb491124b859af0ba5ddebe9b7f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Each univariate distribution is an instance of a subclass of "}, {"domain": null, "role": null, "type": "Directive", "value": "rv_continuous"}, {"type": "text", "value": " ("}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.stats._distn_infrastructure.rv_discrete", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "rv_discrete"}, {"type": "text", "value": " for discrete distributions):"}], "type": "paragraph"});
+            document.getElementById("9ab5afb491124b859af0ba5ddebe9b7f").innerHTML = html;
+        }
+        init();
+    </script>
+
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    rv_continuous
+    rv_discrete
+    rv_histogram</pre>
+
+<h3>Continuous distributions</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    alpha             -- Alpha
+    anglit            -- Anglit
+    arcsine           -- Arcsine
+    argus             -- Argus
+    beta              -- Beta
+    betaprime         -- Beta Prime
+    bradford          -- Bradford
+    burr              -- Burr (Type III)
+    burr12            -- Burr (Type XII)
+    cauchy            -- Cauchy
+    chi               -- Chi
+    chi2              -- Chi-squared
+    cosine            -- Cosine
+    crystalball       -- Crystalball
+    dgamma            -- Double Gamma
+    dweibull          -- Double Weibull
+    erlang            -- Erlang
+    expon             -- Exponential
+    exponnorm         -- Exponentially Modified Normal
+    exponweib         -- Exponentiated Weibull
+    exponpow          -- Exponential Power
+    f                 -- F (Snecdor F)
+    fatiguelife       -- Fatigue Life (Birnbaum-Saunders)
+    fisk              -- Fisk
+    foldcauchy        -- Folded Cauchy
+    foldnorm          -- Folded Normal
+    genlogistic       -- Generalized Logistic
+    gennorm           -- Generalized normal
+    genpareto         -- Generalized Pareto
+    genexpon          -- Generalized Exponential
+    genextreme        -- Generalized Extreme Value
+    gausshyper        -- Gauss Hypergeometric
+    gamma             -- Gamma
+    gengamma          -- Generalized gamma
+    genhalflogistic   -- Generalized Half Logistic
+    genhyperbolic     -- Generalized Hyperbolic
+    geninvgauss       -- Generalized Inverse Gaussian
+    gibrat            -- Gibrat
+    gilbrat           -- Gilbrat
+    gompertz          -- Gompertz (Truncated Gumbel)
+    gumbel_r          -- Right Sided Gumbel, Log-Weibull, Fisher-Tippett, Extreme Value Type I
+    gumbel_l          -- Left Sided Gumbel, etc.
+    halfcauchy        -- Half Cauchy
+    halflogistic      -- Half Logistic
+    halfnorm          -- Half Normal
+    halfgennorm       -- Generalized Half Normal
+    hypsecant         -- Hyperbolic Secant
+    invgamma          -- Inverse Gamma
+    invgauss          -- Inverse Gaussian
+    invweibull        -- Inverse Weibull
+    johnsonsb         -- Johnson SB
+    johnsonsu         -- Johnson SU
+    kappa4            -- Kappa 4 parameter
+    kappa3            -- Kappa 3 parameter
+    ksone             -- Distribution of Kolmogorov-Smirnov one-sided test statistic
+    kstwo             -- Distribution of Kolmogorov-Smirnov two-sided test statistic
+    kstwobign         -- Limiting Distribution of scaled Kolmogorov-Smirnov two-sided test statistic.
+    laplace           -- Laplace
+    laplace_asymmetric    -- Asymmetric Laplace
+    levy              -- Levy
+    levy_l
+    levy_stable
+    logistic          -- Logistic
+    loggamma          -- Log-Gamma
+    loglaplace        -- Log-Laplace (Log Double Exponential)
+    lognorm           -- Log-Normal
+    loguniform        -- Log-Uniform
+    lomax             -- Lomax (Pareto of the second kind)
+    maxwell           -- Maxwell
+    mielke            -- Mielke&#39;s Beta-Kappa
+    moyal             -- Moyal
+    nakagami          -- Nakagami
+    ncx2              -- Non-central chi-squared
+    ncf               -- Non-central F
+    nct               -- Non-central Student&#39;s T
+    norm              -- Normal (Gaussian)
+    norminvgauss      -- Normal Inverse Gaussian
+    pareto            -- Pareto
+    pearson3          -- Pearson type III
+    powerlaw          -- Power-function
+    powerlognorm      -- Power log normal
+    powernorm         -- Power normal
+    rdist             -- R-distribution
+    rayleigh          -- Rayleigh
+    rice              -- Rice
+    recipinvgauss     -- Reciprocal Inverse Gaussian
+    semicircular      -- Semicircular
+    skewcauchy        -- Skew Cauchy
+    skewnorm          -- Skew normal
+    studentized_range    -- Studentized Range
+    t                 -- Student&#39;s T
+    trapezoid         -- Trapezoidal
+    triang            -- Triangular
+    truncexpon        -- Truncated Exponential
+    truncnorm         -- Truncated Normal
+    truncpareto       -- Truncated Pareto
+    truncweibull_min  -- Truncated minimum Weibull distribution
+    tukeylambda       -- Tukey-Lambda
+    uniform           -- Uniform
+    vonmises          -- Von-Mises (Circular)
+    vonmises_line     -- Von-Mises (Line)
+    wald              -- Wald
+    weibull_min       -- Minimum Weibull (see Frechet)
+    weibull_max       -- Maximum Weibull (see Frechet)
+    wrapcauchy        -- Wrapped Cauchy</pre>
+
+<h3>Multivariate distributions</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    multivariate_normal    -- Multivariate normal distribution
+    matrix_normal          -- Matrix normal distribution
+    dirichlet              -- Dirichlet
+    wishart                -- Wishart
+    invwishart             -- Inverse Wishart
+    multinomial            -- Multinomial distribution
+    special_ortho_group    -- SO(N) group
+    ortho_group            -- O(N) group
+    unitary_group          -- U(N) group
+    random_correlation     -- random correlation matrices
+    multivariate_t         -- Multivariate t-distribution
+    multivariate_hypergeom -- Multivariate hypergeometric distribution
+    random_table           -- Distribution of random tables with given marginals
+    uniform_direction      -- Uniform distribution on S(N-1)</pre>
+                               <div id="87c4017bc0044f5383b821b0a52832e0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"domain": null, "role": null, "type": "Directive", "value": "scipy.stats.multivariate_normal"}, {"type": "text", "value": " methods accept instances of the following class to represent the covariance."}], "type": "paragraph"});
+            document.getElementById("87c4017bc0044f5383b821b0a52832e0").innerHTML = html;
+        }
+        init();
+    </script>
+
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    Covariance             -- Representation of a covariance matrix</pre>
+
+<h3>Discrete distributions</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    bernoulli                -- Bernoulli
+    betabinom                -- Beta-Binomial
+    binom                    -- Binomial
+    boltzmann                -- Boltzmann (Truncated Discrete Exponential)
+    dlaplace                 -- Discrete Laplacian
+    geom                     -- Geometric
+    hypergeom                -- Hypergeometric
+    logser                   -- Logarithmic (Log-Series, Series)
+    nbinom                   -- Negative Binomial
+    nchypergeom_fisher       -- Fisher&#39;s Noncentral Hypergeometric
+    nchypergeom_wallenius    -- Wallenius&#39;s Noncentral Hypergeometric
+    nhypergeom               -- Negative Hypergeometric
+    planck                   -- Planck (Discrete Exponential)
+    poisson                  -- Poisson
+    randint                  -- Discrete Uniform
+    skellam                  -- Skellam
+    yulesimon                -- Yule-Simon
+    zipf                     -- Zipf (Zeta)
+    zipfian                  -- Zipfian</pre>
+                               <div id="666a0a3ff1724e41936b0dfc93976239"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "An overview of statistical functions is given below.  Many of these functions have a similar version in "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.stats.mstats", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "scipy.stats.mstats"}, {"type": "text", "value": " which work for masked arrays."}], "type": "paragraph"});
+            document.getElementById("666a0a3ff1724e41936b0dfc93976239").innerHTML = html;
+        }
+        init();
+    </script>
+
+
+<h2>Summary statistics</h2>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    describe          -- Descriptive statistics
+    gmean             -- Geometric mean
+    hmean             -- Harmonic mean
+    pmean             -- Power mean
+    kurtosis          -- Fisher or Pearson kurtosis
+    mode              -- Modal value
+    moment            -- Central moment
+    expectile         -- Expectile
+    skew              -- Skewness
+    kstat             --
+    kstatvar          --
+    tmean             -- Truncated arithmetic mean
+    tvar              -- Truncated variance
+    tmin              --
+    tmax              --
+    tstd              --
+    tsem              --
+    variation         -- Coefficient of variation
+    find_repeats
+    trim_mean
+    gstd              -- Geometric Standard Deviation
+    iqr
+    sem
+    bayes_mvs
+    mvsdist
+    entropy
+    differential_entropy
+    median_abs_deviation</pre>
+
+<h2>Frequency statistics</h2>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    cumfreq
+    percentileofscore
+    scoreatpercentile
+    relfreq</pre>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    binned_statistic     -- Compute a binned statistic for a set of data.
+    binned_statistic_2d  -- Compute a 2-D binned statistic for a set of data.
+    binned_statistic_dd  -- Compute a d-D binned statistic for a set of data.</pre>
+
+<h2>Correlation functions</h2>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    f_oneway
+    alexandergovern
+    pearsonr
+    spearmanr
+    pointbiserialr
+    kendalltau
+    weightedtau
+    somersd
+    linregress
+    siegelslopes
+    theilslopes
+    multiscale_graphcorr</pre>
+
+<h2>Statistical tests</h2>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    ttest_1samp
+    ttest_ind
+    ttest_ind_from_stats
+    ttest_rel
+    chisquare
+    cramervonmises
+    cramervonmises_2samp
+    power_divergence
+    kstest
+    ks_1samp
+    ks_2samp
+    epps_singleton_2samp
+    mannwhitneyu
+    tiecorrect
+    rankdata
+    ranksums
+    wilcoxon
+    kruskal
+    friedmanchisquare
+    brunnermunzel
+    combine_pvalues
+    jarque_bera
+    page_trend_test
+    tukey_hsd
+    poisson_means_test</pre>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    ansari
+    bartlett
+    levene
+    shapiro
+    anderson
+    anderson_ksamp
+    binom_test
+    binomtest
+    fligner
+    median_test
+    mood
+    skewtest
+    kurtosistest
+    normaltest
+    goodness_of_fit</pre>
+
+<h2>Quasi-Monte Carlo</h2>
+                          <ul>               <li>               <p><!--link-->
+<code><a href="/p///?/stats.qmc.html.html" class='exists'>stats.qmc</a></code>
+</p>
+
+</li>
+            </ul>
+
+
+<h2>Resampling Methods</h2>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    bootstrap
+    permutation_test
+    monte_carlo_test</pre>
+
+<h2>Masked statistics functions</h2>
+                          <ul>               <li>               <p><!--link-->
+<code><a href="/p///?/stats.mstats.html.html" class='exists'>stats.mstats</a></code>
+</p>
+
+</li>
+            </ul>
+
+
+<h2>Other statistical functionality</h2>
+
+<h3>Transformations</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    boxcox
+    boxcox_normmax
+    boxcox_llf
+    yeojohnson
+    yeojohnson_normmax
+    yeojohnson_llf
+    obrientransform
+    sigmaclip
+    trimboth
+    trim1
+    zmap
+    zscore
+    gzscore</pre>
+
+<h3>Statistical distances</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    wasserstein_distance
+    energy_distance</pre>
+
+<h3>Sampling</h3>
+                          <ul>               <li>               <p><!--link-->
+<code><a href="/p///?/stats.sampling.html.html" class='exists'>stats.sampling</a></code>
+</p>
+
+</li>
+            </ul>
+
+
+<h3>Random variate generation / CDF Inversion</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    rvs_ratio_uniforms</pre>
+
+<h3>Distribution Fitting</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    fit</pre>
+
+<h3>Directional statistical functions</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    directional_stats
+    circmean
+    circvar
+    circstd</pre>
+
+<h3>Contingency table functions</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    chi2_contingency
+    contingency.crosstab
+    contingency.expected_freq
+    contingency.margins
+    contingency.relative_risk
+    contingency.association
+    contingency.odds_ratio
+    fisher_exact
+    barnard_exact
+    boschloo_exact</pre>
+
+<h3>Plot-tests</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    ppcc_max
+    ppcc_plot
+    probplot
+    boxcox_normplot
+    yeojohnson_normplot</pre>
+
+<h3>Univariate and multivariate kernel density estimation</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    gaussian_kde</pre>
+
+<h3>Warnings / Errors used in :mod:`scipy.stats`</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    DegenerateDataWarning
+    ConstantInputWarning
+    NearConstantInputWarning
+    FitError</pre>
+
+<h3 id="section-Examples">Examples</h3>
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.stats.mstats.html" class='exists'>scipy.stats.mstats</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.stats._mstats_basic.ks_1samp.html" class='exists'>scipy.stats._mstats_basic.ks_1samp</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.stats._stats_py.kstest.html" class='exists'>scipy.stats._stats_py.kstest</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.stats._hypotests.cramervonmises.html" class='exists'>scipy.stats._hypotests.cramervonmises</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/stats/__init__.py#L0'>/scipy/stats/__init__.py#0</a>
+<br/>
+
+type: &lt;class &#39;module&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 9.0, "label": "scipy.stats.mstats", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.stats.mstats"}, {"id": 2, "val": 9.732050807568877, "label": "scipy.stats._distn_infrastructure.rv_discrete", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.stats._distn_infrastructure.rv_discrete"}, {"id": 3, "val": 9.0, "label": "stats.mstats", "mod": "stats", "url": "/p///?/stats.mstats"}, {"id": 4, "val": 9.0, "label": "stats.sampling", "mod": "stats", "url": "/p///?/stats.sampling"}, {"id": 5, "val": 9.0, "label": "stats.qmc", "mod": "stats", "url": "/p///?/stats.qmc"}, {"id": 6, "val": 8.0, "label": "scipy.stats._mstats_basic.ks_1samp", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.stats._mstats_basic.ks_1samp"}, {"id": 7, "val": 9.0, "label": "scipy.stats._hypotests.cramervonmises", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.stats._hypotests.cramervonmises"}, {"id": 8, "val": 9.732050807568877, "label": "scipy.stats._stats_py.kstest", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.stats._stats_py.kstest"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

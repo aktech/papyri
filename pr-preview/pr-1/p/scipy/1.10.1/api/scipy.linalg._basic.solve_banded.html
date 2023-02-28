@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.linalg.html'>linalg</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.linalg._basic.html'>_basic</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.linalg._basic.html">_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._cythonized_array_utils.html">_cythonized_array_utils</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp.html">_decomp</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_cholesky.html">_decomp_cholesky</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_cossin.html">_decomp_cossin</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_ldl.html">_decomp_ldl</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_lu.html">_decomp_lu</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_polar.html">_decomp_polar</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_qr.html">_decomp_qr</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_qz.html">_decomp_qz</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_schur.html">_decomp_schur</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_svd.html">_decomp_svd</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_update.html">_decomp_update</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._expm_frechet.html">_expm_frechet</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._fblas.html">_fblas</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._flapack.html">_flapack</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._flinalg.html">_flinalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._flinalg_py.html">_flinalg_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative.html">_interpolative</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.html">_interpolative_backend</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs.html">_matfuncs</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs_expm.html">_matfuncs_expm</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs_sqrtm.html">_matfuncs_sqrtm</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs_sqrtm_triu.html">_matfuncs_sqrtm_triu</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._misc.html">_misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._procrustes.html">_procrustes</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._sketches.html">_sketches</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._solve_toeplitz.html">_solve_toeplitz</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._solvers.html">_solvers</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._special_matrices.html">_special_matrices</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.basic.html">basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.blas.html">blas</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.cython_blas.html">cython_blas</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.cython_lapack.html">cython_lapack</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp.html">decomp</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_cholesky.html">decomp_cholesky</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_lu.html">decomp_lu</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_qr.html">decomp_qr</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_schur.html">decomp_schur</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_svd.html">decomp_svd</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.flinalg.html">flinalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.interpolative.html">interpolative</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.lapack.html">lapack</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.matfuncs.html">matfuncs</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.special_matrices.html">special_matrices</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.linalg._basic.solve_banded.html'>solve_banded</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.linalg._basic._get_axis_len.html">_get_axis_len</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._basic._solve_check.html">_solve_check</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._basic._validate_args_for_toeplitz_ops.html">_validate_args_for_toeplitz_ops</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._basic.det.html">det</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._basic.inv.html">inv</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._basic.lstsq.html">lstsq</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._basic.matmul_toeplitz.html">matmul_toeplitz</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._basic.matrix_balance.html">matrix_balance</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._basic.pinv.html">pinv</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._basic.pinvh.html">pinvh</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._basic.solve.html">solve</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._basic.solve_banded.html">solve_banded</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._basic.solve_circulant.html">solve_circulant</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._basic.solve_toeplitz.html">solve_toeplitz</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._basic.solve_triangular.html">solve_triangular</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._basic.solveh_banded.html">solveh_banded</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>solve_banded(l_and_u, ab, b, overwrite_ab=False, overwrite_b=False, check_finite=True)</code><!-- rendering Extended Summary -->
+                                       <div id="310fd913fa784fd48073f990f1d71f7b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The matrix a is stored in "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "ab", "type": "RefInfo", "version": null}, "type": "Link", "value": "ab"}, {"type": "text", "value": " using the matrix diagonal ordered form      "}], "type": "paragraph"});
+            document.getElementById("310fd913fa784fd48073f990f1d71f7b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="f8fff6bf7f494c3c88fd179f50814dc1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "ab[u + i - j, j] == a[i,j]"});
+            document.getElementById("f8fff6bf7f494c3c88fd179f50814dc1").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="20d6209be71243fd982c1007b123fa5c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Example of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "ab", "type": "RefInfo", "version": null}, "type": "Link", "value": "ab"}, {"type": "text", "value": " (shape of a is (6,6), "}, {"domain": null, "role": null, "type": "Directive", "value": "u"}, {"type": "text", "value": " =1, "}, {"domain": null, "role": null, "type": "Directive", "value": "l"}, {"type": "text", "value": " =2)      "}], "type": "paragraph"});
+            document.getElementById("20d6209be71243fd982c1007b123fa5c").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="c5e14f84c0a74211a2a33da7b5a877e7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "*    a01  a12  a23  a34  a45\na00  a11  a22  a33  a44  a55\na10  a21  a32  a43  a54   *\na20  a31  a42  a53   *    *"});
+            document.getElementById("c5e14f84c0a74211a2a33da7b5a877e7").innerHTML = html;
+        }
+        init();
+    </script>
+
+<!-- rendering Notes -->
+        <h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="(l, u)">(l, u)</a> : (integer, integer)</dt>
+<dd>
+                <div id="61fd6c887a1f4c39b9ae142aaff892db"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Number of non-zero lower and upper diagonals"}], "type": "paragraph"});
+            document.getElementById("61fd6c887a1f4c39b9ae142aaff892db").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="ab">ab</a> : (`l` + `u` + 1, M) array_like</dt>
+<dd>
+                <div id="692987c368fd450d96071621eb85690f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Banded matrix"}], "type": "paragraph"});
+            document.getElementById("692987c368fd450d96071621eb85690f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="b">b</a> : (M,) or (M, K) array_like</dt>
+<dd>
+                <div id="f68217966eda4341aaee15a05f6cd0e1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Right-hand side"}], "type": "paragraph"});
+            document.getElementById("f68217966eda4341aaee15a05f6cd0e1").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="overwrite_ab">overwrite_ab</a> : bool, optional</dt>
+<dd>
+                <div id="80350010ca454e54aee94ae2787bca15"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Discard data in "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "ab", "type": "RefInfo", "version": null}, "type": "Link", "value": "ab"}, {"type": "text", "value": " (may enhance performance)"}], "type": "paragraph"});
+            document.getElementById("80350010ca454e54aee94ae2787bca15").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="overwrite_b">overwrite_b</a> : bool, optional</dt>
+<dd>
+                <div id="752e18826e774101a6e644d6eaca7a4e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Discard data in "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "b", "type": "RefInfo", "version": null}, "type": "Link", "value": "b"}, {"type": "text", "value": " (may enhance performance)"}], "type": "paragraph"});
+            document.getElementById("752e18826e774101a6e644d6eaca7a4e").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="check_finite">check_finite</a> : bool, optional</dt>
+<dd>
+                <div id="f38aaf1d01ab495db628524b2affc86f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Whether to check that the input matrices contain only finite numbers. Disabling may give a performance gain, but may result in problems (crashes, non-termination) if the inputs do contain infinities or NaNs."}], "type": "paragraph"});
+            document.getElementById("f38aaf1d01ab495db628524b2affc86f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="x">x</a> : (M,) or (M, K) ndarray</dt>
+<dd>
+                <div id="ca234c1a88e248f0984f7f3839b1aabc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The solution to the system a x = b. Returned shape depends on the shape of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "b", "type": "RefInfo", "version": null}, "type": "Link", "value": "b"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("ca234c1a88e248f0984f7f3839b1aabc").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="6a580de252594c4b8a31942f42d469f8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Solve the equation a x = b for x, assuming a is banded matrix."}], "type": "paragraph"});
+            document.getElementById("6a580de252594c4b8a31942f42d469f8").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+                           Solve the banded system a x = b, where::  
+            
+                                   [5  2 -1  0  0]       [0]
+        [1  4  2 -1  0]       [1]
+    a = [0  1  3  2 -1]   b = [2]
+        [0  0  1  2  2]       [2]
+        [0  0  0  1  1]       [3]  
+            
+                           There is one nonzero diagonal below the main diagonal (l = 1), and
+two above (u = 2). The diagonal banded form of the matrix is::  
+            
+                                    [*  * -1 -1 -1]
+    ab = [*  2  2  2  2]
+         [5  4  3  2  1]
+         [1  1  1  1  *]  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">linalg</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">solve_banded</span><br><span class='nsl'>...&nbsp;</span><span class="">ab</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class="">  </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mi">1</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">               </span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class="">  </span><span class="mi">2</span><span class="">,</span><span class="">  </span><span class="mi">2</span><span class="">,</span><span class="">  </span><span class="mi">2</span><span class="">,</span><span class="">  </span><span class="mi">2</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">               </span><span class="">[</span><span class="mi">5</span><span class="">,</span><span class="">  </span><span class="mi">4</span><span class="">,</span><span class="">  </span><span class="mi">3</span><span class="">,</span><span class="">  </span><span class="mi">2</span><span class="">,</span><span class="">  </span><span class="mi">1</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">               </span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class="">  </span><span class="mi">1</span><span class="">,</span><span class="">  </span><span class="mi">1</span><span class="">,</span><span class="">  </span><span class="mi">1</span><span class="">,</span><span class="">  </span><span class="mi">0</span><span class="">]</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">b</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">x</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">solve_banded</span><span class="">(</span><span class="">(</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">ab</span><span class="">,</span><span class=""> </span><span class="">b</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">x</span>
+array([-2.37288136,  3.93220339, -4.        ,  4.3559322 , -1.3559322 ])</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.spatial.transform._rotation_spline._create_block_3_diagonal_matrix.html" class='exists'>scipy.spatial.transform._rotation_spline._create_block_3_diagonal_matrix</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.integrate._ivp.ivp.solve_ivp.html" class='exists'>scipy.integrate._ivp.ivp.solve_ivp</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.linalg._basic.solveh_banded.html" class='exists'>scipy.linalg._basic.solveh_banded</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.integrate._ivp.lsoda.LSODA.html" class='exists'>scipy.integrate._ivp.lsoda.LSODA</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/linalg/_basic.py#L365'>/scipy/linalg/_basic.py#365</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 8.0, "label": "scipy.spatial.transform._rotation_spline._create_block_3_diagonal_matrix", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.spatial.transform._rotation_spline._create_block_3_diagonal_matrix"}, {"id": 2, "val": 9.414213562373096, "label": "scipy.integrate._ivp.ivp.solve_ivp", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.integrate._ivp.ivp.solve_ivp"}, {"id": 3, "val": 8.0, "label": "scipy.linalg._basic.solveh_banded", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.linalg._basic.solveh_banded"}, {"id": 4, "val": 8.0, "label": "scipy.integrate._ivp.lsoda.LSODA", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.integrate._ivp.lsoda.LSODA"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.io.html'>io</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.io._fortran.html'>_fortran</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.io._fortran.html">_fortran</a>
+<a href="/p/scipy/1.10.1/api/scipy.io._harwell_boeing.html">_harwell_boeing</a>
+<a href="/p/scipy/1.10.1/api/scipy.io._idl.html">_idl</a>
+<a href="/p/scipy/1.10.1/api/scipy.io._mmio.html">_mmio</a>
+<a href="/p/scipy/1.10.1/api/scipy.io._netcdf.html">_netcdf</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.arff.html">arff</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.harwell_boeing.html">harwell_boeing</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.idl.html">idl</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.matlab.html">matlab</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.mmio.html">mmio</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.netcdf.html">netcdf</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.wavfile.html">wavfile</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.io._fortran.FortranFile.html'>FortranFile</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.io._fortran.FortranEOFError.html">FortranEOFError</a>
+<a href="/p/scipy/1.10.1/api/scipy.io._fortran.FortranFile.html">FortranFile</a>
+<a href="/p/scipy/1.10.1/api/scipy.io._fortran.FortranFormattingError.html">FortranFormattingError</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.io._fortran.FortranFile.read_record.html'>read_record</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.io._fortran.FortranFile.__enter__.html">__enter__</a>
+<a href="/p/scipy/1.10.1/api/scipy.io._fortran.FortranFile.__exit__.html">__exit__</a>
+<a href="/p/scipy/1.10.1/api/scipy.io._fortran.FortranFile.__init__.html">__init__</a>
+<a href="/p/scipy/1.10.1/api/scipy.io._fortran.FortranFile._read_size.html">_read_size</a>
+<a href="/p/scipy/1.10.1/api/scipy.io._fortran.FortranFile.close.html">close</a>
+<a href="/p/scipy/1.10.1/api/scipy.io._fortran.FortranFile.read_ints.html">read_ints</a>
+<a href="/p/scipy/1.10.1/api/scipy.io._fortran.FortranFile.read_reals.html">read_reals</a>
+<a href="/p/scipy/1.10.1/api/scipy.io._fortran.FortranFile.read_record.html">read_record</a>
+<a href="/p/scipy/1.10.1/api/scipy.io._fortran.FortranFile.write_record.html">write_record</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Raises">Raises</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>read_record(self, *dtypes, **kwargs)</code><!-- rendering Extended Summary -->
+        <h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="6db91929ead447788cf669ad05513e30"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If the record contains a multidimensional array, you can specify the size in the dtype. For example      "}], "type": "paragraph"});
+            document.getElementById("6db91929ead447788cf669ad05513e30").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="c3032cd242bf4ad8b88a9c95dd984e96"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "INTEGER var(5,4)"});
+            document.getElementById("c3032cd242bf4ad8b88a9c95dd984e96").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="5070c637988b4e1a86e21ebdaab9b409"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "can be read with      "}], "type": "paragraph"});
+            document.getElementById("5070c637988b4e1a86e21ebdaab9b409").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="81f59890b3bc41e0ad340e3045af4e75"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "read_record(\u0027(4,5)i4\u0027).T"});
+            document.getElementById("81f59890b3bc41e0ad340e3045af4e75").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="2e71ccf435af4320a32a66ef5bb706a1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Note that this function does "}, {"children": [{"type": "text", "value": "not"}], "type": "strong"}, {"type": "text", "value": " assume the file data is in Fortran column major order, so you need to (i) swap the order of dimensions when reading and (ii) transpose the resulting array."}], "type": "paragraph"});
+            document.getElementById("2e71ccf435af4320a32a66ef5bb706a1").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="617365569ada46d88ff0986ab30e7e5d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Alternatively, you can read the data as a 1-D array and handle the ordering yourself. For example      "}], "type": "paragraph"});
+            document.getElementById("617365569ada46d88ff0986ab30e7e5d").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="856b578a385a4f338811bebfe9e04ded"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "read_record(\u0027i4\u0027).reshape(5, 4, order=\u0027F\u0027)"});
+            document.getElementById("856b578a385a4f338811bebfe9e04ded").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="1c3d2bbd5d53403a93401c6210293787"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For records that contain several variables or mixed types (as opposed to single scalar or array types), give them as separate arguments      "}], "type": "paragraph"});
+            document.getElementById("1c3d2bbd5d53403a93401c6210293787").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="2cf8420e303540979e22b2e233bd09b3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "double precision :: a\ninteger :: b\nwrite(1) a, b\n\nrecord = f.read_record(\u0027\u003cf4\u0027, \u0027\u003ci4\u0027)\na = record[0]  # first number\nb = record[1]  # second number"});
+            document.getElementById("2cf8420e303540979e22b2e233bd09b3").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="06684476b75f4896b8761872fb814b43"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "and if any of the variables are arrays, the shape can be specified as the third item in the relevant dtype      "}], "type": "paragraph"});
+            document.getElementById("06684476b75f4896b8761872fb814b43").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="ed3877079cc14d2ea0b2438aa41e371d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "double precision :: a\ninteger :: b(3,4)\nwrite(1) a, b\n\nrecord = f.read_record(\u0027\u003cf4\u0027, np.dtype((\u0027\u003ci4\u0027, (4, 3))))\na = record[0]\nb = record[1].T"});
+            document.getElementById("ed3877079cc14d2ea0b2438aa41e371d").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="9216efd3537840cd8e13b6816e7647da"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "NumPy also supports a short syntax for this kind of type      "}], "type": "paragraph"});
+            document.getElementById("9216efd3537840cd8e13b6816e7647da").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="6a177168f0344dca9b1fa35f803ce3e9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "record = f.read_record(\u0027\u003cf4\u0027, \u0027(3,3)\u003ci4\u0027)"});
+            document.getElementById("6a177168f0344dca9b1fa35f803ce3e9").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="*dtypes">*dtypes</a> : dtypes, optional</dt>
+<dd>
+                <div id="b0c19ac8b82b428fbc21fa348fa81d61"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Data type(s) specifying the size and endiness of the data."}], "type": "paragraph"});
+            document.getElementById("b0c19ac8b82b428fbc21fa348fa81d61").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Raises">Raises</h3>
+<dl>
+<dt>FortranEOFError</dt>
+<dd>
+                <div id="05fc2be30be34941bb50c3abb7d01f3d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "To signal that no further records are available"}], "type": "paragraph"});
+            document.getElementById("05fc2be30be34941bb50c3abb7d01f3d").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt>FortranFormattingError</dt>
+<dd>
+                <div id="3374fe594e1a4e75b058c74be353cc5b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "To signal that the end of the file was encountered part-way through a record"}], "type": "paragraph"});
+            document.getElementById("3374fe594e1a4e75b058c74be353cc5b").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="data">data</a> : ndarray</dt>
+<dd>
+                <div id="999b90e41f1449c9bdae2485698ac686"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A 1-D array object."}], "type": "paragraph"});
+            document.getElementById("999b90e41f1449c9bdae2485698ac686").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="33743edacde74e9ea20b9788eb55c483"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Reads a record of a given type from the file."}], "type": "paragraph"});
+            document.getElementById("33743edacde74e9ea20b9788eb55c483").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.io._fortran.FortranFile.read_ints.html" class='exists'>read_ints</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.io._fortran.FortranFile.read_reals.html" class='exists'>read_reals</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.io._fortran.FortranFile.read_reals.html" class='exists'>scipy.io._fortran.FortranFile.read_reals</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.io._fortran.FortranFile.read_ints.html" class='exists'>scipy.io._fortran.FortranFile.read_ints</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/io/_fortran.py#L170'>/scipy/io/_fortran.py#170</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 9.414213562373096, "label": "scipy.io._fortran.FortranFile.read_ints", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.io._fortran.FortranFile.read_ints"}, {"id": 2, "val": 9.414213562373096, "label": "scipy.io._fortran.FortranFile.read_reals", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.io._fortran.FortranFile.read_reals"}], "links": [{"source": 2, "target": 1, "id": 1}, {"source": 1, "target": 2, "id": 3}]};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

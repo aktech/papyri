@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats.html'>stats</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats._fit.html'>_fit</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.stats._axis_nan_policy.html">_axis_nan_policy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._biasedurn.html">_biasedurn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binned_statistic.html">_binned_statistic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binomtest.html">_binomtest</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._boost.html">_boost</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._common.html">_common</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._constants.html">_constants</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._continuous_distns.html">_continuous_distns</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._covariance.html">_covariance</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._crosstab.html">_crosstab</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._discrete_distns.html">_discrete_distns</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._distn_infrastructure.html">_distn_infrastructure</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._distr_params.html">_distr_params</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._entropy.html">_entropy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._fit.html">_fit</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.html">_hypotests</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._kde.html">_kde</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._ksstats.html">_ksstats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable.html">_levy_stable</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mannwhitneyu.html">_mannwhitneyu</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._morestats.html">_morestats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mstats_basic.html">_mstats_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mstats_extras.html">_mstats_extras</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._multivariate.html">_multivariate</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mvn.html">_mvn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._odds_ratio.html">_odds_ratio</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._page_trend_test.html">_page_trend_test</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.html">_qmc</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc_cy.html">_qmc_cy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._rcont.html">_rcont</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._relative_risk.html">_relative_risk</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling.html">_resampling</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._rvs_sampling.html">_rvs_sampling</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._sobol.html">_sobol</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._statlib.html">_statlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats.html">_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_mstats_common.html">_stats_mstats_common</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.html">_stats_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_pythran.html">_stats_pythran</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._tukeylambda_stats.html">_tukeylambda_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._variation.html">_variation</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._warnings_errors.html">_warnings_errors</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.biasedurn.html">biasedurn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.contingency.html">contingency</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.distributions.html">distributions</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.kde.html">kde</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.morestats.html">morestats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats.html">mstats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats_basic.html">mstats_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats_extras.html">mstats_extras</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mvn.html">mvn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.qmc.html">qmc</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.statlib.html">statlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats._fit.goodness_of_fit.html'>goodness_of_fit</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.stats._fit.FitResult.html">FitResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._fit.GoodnessOfFitResult.html">GoodnessOfFitResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._fit._anderson_darling.html">_anderson_darling</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._fit._combine_bounds.html">_combine_bounds</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._fit._compute_dminus.html">_compute_dminus</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._fit._compute_dplus.html">_compute_dplus</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._fit._cramer_von_mises.html">_cramer_von_mises</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._fit._fit_norm.html">_fit_norm</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._fit._get_fit_fun.html">_get_fit_fun</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._fit._gof_iv.html">_gof_iv</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._fit._kolmogorov_smirnov.html">_kolmogorov_smirnov</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._fit.fit.html">fit</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._fit.goodness_of_fit.html">goodness_of_fit</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a>    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>goodness_of_fit(dist, data, *, known_params=None, fit_params=None, guessed_params=None, statistic=&#39;ad&#39;, n_mc_samples=9999, random_state=None)</code><!-- rendering Extended Summary -->
+                                       <div id="583955f1db4142c9b2dfa42388e58e46"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Given a distribution family and data, perform a test of the null hypothesis that the data were drawn from a distribution in that family. Any known parameters of the distribution may be specified. Remaining parameters of the distribution will be fit to the data, and the p-value of the test is computed accordingly. Several statistics for comparing the distribution to data are available."}], "type": "paragraph"});
+            document.getElementById("583955f1db4142c9b2dfa42388e58e46").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="1773ec7a59c24cdfb9bad15759701309"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This is a generalized Monte Carlo goodness-of-fit procedure, special cases of which correspond with various Anderson-Darling tests, Lilliefors\u0027 test, etc. The test is described in , , and  as a parametric bootstrap test. This is a Monte Carlo test in which parameters that specify the distribution from which samples are drawn have been estimated from the data. We describe the test using \"Monte Carlo\" rather than \"parametric bootstrap\" throughout to avoid confusion with the more familiar nonparametric bootstrap, and describe how the test is performed below."}], "type": "paragraph"});
+            document.getElementById("1773ec7a59c24cdfb9bad15759701309").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="a4ca04fecd4b41659693d5de27cc58a3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"children": [{"type": "text", "value": "Traditional goodness of fit tests"}], "type": "emphasis"}], "type": "paragraph"});
+            document.getElementById("a4ca04fecd4b41659693d5de27cc58a3").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="41beb24ee525479983d137101b9abe4c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Traditionally, critical values corresponding with a fixed set of significance levels are pre-calculated using Monte Carlo methods. Users perform the test by calculating the value of the test statistic only for their observed "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "data", "type": "RefInfo", "version": null}, "type": "Link", "value": "data"}, {"type": "text", "value": " and comparing this value to tabulated critical values. This practice is not very flexible, as tables are not available for all distributions and combinations of known and unknown parameter values. Also, results can be inaccurate when critical values are interpolated from limited tabulated data to correspond with the user\u0027s sample size and fitted parameter values. To overcome these shortcomings, this function allows the user to perform the Monte Carlo trials adapted to their particular data."}], "type": "paragraph"});
+            document.getElementById("41beb24ee525479983d137101b9abe4c").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="1f0f651a5051482ba3c96af67c26464b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"children": [{"type": "text", "value": "Algorithmic overview"}], "type": "emphasis"}], "type": "paragraph"});
+            document.getElementById("1f0f651a5051482ba3c96af67c26464b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="a0df76af217e46afb9a90bd75133c8a7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "In brief, this routine executes the following steps:"}], "type": "paragraph"});
+            document.getElementById("a0df76af217e46afb9a90bd75133c8a7").innerHTML = html;
+        }
+        init();
+    </script>
+
+                           <blockquote>           <ol>               <li>                               <div id="6b1f7fde2cb0466685c2984c4ea99309"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Fit unknown parameters to the given "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "data", "type": "RefInfo", "version": null}, "type": "Link", "value": "data"}, {"type": "text", "value": ", thereby forming the      \"null-hypothesized\" distribution, and compute the statistic of      this pair of data and distribution."}], "type": "paragraph"});
+            document.getElementById("6b1f7fde2cb0466685c2984c4ea99309").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="40e4e112baa340e9a1ecb006810095ac"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Draw random samples from this null-hypothesized distribution."}], "type": "paragraph"});
+            document.getElementById("40e4e112baa340e9a1ecb006810095ac").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="a5d86b46e405439e9f39fda54d6a4616"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Fit the unknown parameters to each random sample."}], "type": "paragraph"});
+            document.getElementById("a5d86b46e405439e9f39fda54d6a4616").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="b3b9361c080541de8d4a702e51c320bc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Calculate the statistic between each sample and the distribution that      has been fit to the sample."}], "type": "paragraph"});
+            document.getElementById("b3b9361c080541de8d4a702e51c320bc").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="f57c8bf7d72a4a8390c4503435351d1f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Compare the value of the statistic corresponding with "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "data", "type": "RefInfo", "version": null}, "type": "Link", "value": "data"}, {"type": "text", "value": " from (1)      against the values of the statistic corresponding with the random      samples from (4). The p-value is the proportion of samples with a      statistic value greater than or equal to the statistic of the observed      data."}], "type": "paragraph"});
+            document.getElementById("f57c8bf7d72a4a8390c4503435351d1f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ol>
+</blockquote>
+
+                               <div id="bc912420b10842fb9ef5f284ee5e4fbb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "In more detail, the steps are as follows."}], "type": "paragraph"});
+            document.getElementById("bc912420b10842fb9ef5f284ee5e4fbb").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="26a75afae28e450588a8bd01ce0dad19"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "First, any unknown parameters of the distribution family specified by "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "dist", "type": "RefInfo", "version": null}, "type": "Link", "value": "dist"}, {"type": "text", "value": " are fit to the provided "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "data", "type": "RefInfo", "version": null}, "type": "Link", "value": "data"}, {"type": "text", "value": " using maximum likelihood estimation. (One exception is the normal distribution with unknown location and scale: we use the bias-corrected standard deviation "}, {"type": "inlineCode", "value": "np.std(data, ddof=1)"}, {"type": "text", "value": " for the scale as recommended in .) These values of the parameters specify a particular member of the distribution family referred to as the \"null-hypothesized distribution\", that is, the distribution from which the data were sampled under the null hypothesis. The "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "statistic", "type": "RefInfo", "version": null}, "type": "Link", "value": "statistic"}, {"type": "text", "value": ", which compares data to a distribution, is computed between "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "data", "type": "RefInfo", "version": null}, "type": "Link", "value": "data"}, {"type": "text", "value": " and the null-hypothesized distribution."}], "type": "paragraph"});
+            document.getElementById("26a75afae28e450588a8bd01ce0dad19").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="262c0e19b4994e4eab919dce2bb9f873"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Next, many (specifically "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "n_mc_samples", "type": "RefInfo", "version": null}, "type": "Link", "value": "n_mc_samples"}, {"type": "text", "value": ") new samples, each containing the same number of observations as "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "data", "type": "RefInfo", "version": null}, "type": "Link", "value": "data"}, {"type": "text", "value": ", are drawn from the null-hypothesized distribution. All unknown parameters of the distribution family "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "dist", "type": "RefInfo", "version": null}, "type": "Link", "value": "dist"}, {"type": "text", "value": " are fit to "}, {"children": [{"type": "text", "value": "each resample"}], "type": "emphasis"}, {"type": "text", "value": ", and the "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "statistic", "type": "RefInfo", "version": null}, "type": "Link", "value": "statistic"}, {"type": "text", "value": " is computed between each sample and its corresponding fitted distribution. These values of the statistic form the Monte Carlo null distribution (not to be confused with the \"null-hypothesized distribution\" above)."}], "type": "paragraph"});
+            document.getElementById("262c0e19b4994e4eab919dce2bb9f873").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="a6bb2231ecb24bb5b9fbd2985f3d884b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The p-value of the test is the proportion of statistic values in the Monte Carlo null distribution that are at least as extreme as the statistic value of the provided "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "data", "type": "RefInfo", "version": null}, "type": "Link", "value": "data"}, {"type": "text", "value": ". More precisely, the p-value is given by"}], "type": "paragraph"});
+            document.getElementById("a6bb2231ecb24bb5b9fbd2985f3d884b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$p = \frac{b + 1}
+         {m + 1}$$</span>
+
+                               <div id="3df2f000b52b4836bd70cdd9e9fec297"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "where "}, {"type": "Math", "value": "b"}, {"type": "text", "value": " is the number of statistic values in the Monte Carlo null distribution that are greater than or equal to the the statistic value calculated for "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "data", "type": "RefInfo", "version": null}, "type": "Link", "value": "data"}, {"type": "text", "value": ", and "}, {"type": "Math", "value": "m"}, {"type": "text", "value": " is the number of elements in the Monte Carlo null distribution ("}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "n_mc_samples", "type": "RefInfo", "version": null}, "type": "Link", "value": "n_mc_samples"}, {"type": "text", "value": "). The addition of "}, {"type": "Math", "value": "1"}, {"type": "text", "value": " to the numerator and denominator can be thought of as including the value of the statistic corresponding with "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "data", "type": "RefInfo", "version": null}, "type": "Link", "value": "data"}, {"type": "text", "value": " in the null distribution, but a more formal explanation is given in ."}], "type": "paragraph"});
+            document.getElementById("3df2f000b52b4836bd70cdd9e9fec297").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="6ff5d324f3194c01bb744bcf14ab8002"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"children": [{"type": "text", "value": "Limitations"}], "type": "emphasis"}], "type": "paragraph"});
+            document.getElementById("6ff5d324f3194c01bb744bcf14ab8002").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="fb581c141964454db76d32f11994bd7f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The test can be very slow for some distribution families because unknown parameters of the distribution family must be fit to each of the Monte Carlo samples, and for most distributions in SciPy, distribution fitting performed via numerical optimization."}], "type": "paragraph"});
+            document.getElementById("fb581c141964454db76d32f11994bd7f").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="80f6c86a0598446fa4f08681fe28f8d7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"children": [{"type": "text", "value": "Anti-Pattern"}], "type": "emphasis"}], "type": "paragraph"});
+            document.getElementById("80f6c86a0598446fa4f08681fe28f8d7").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="4c4d0ebfe82b4448ac2aa4be7864f5f3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For this reason, it may be tempting to treat parameters of the distribution pre-fit to "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "data", "type": "RefInfo", "version": null}, "type": "Link", "value": "data"}, {"type": "text", "value": " (by the user) as though they were "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "known_params", "type": "RefInfo", "version": null}, "type": "Link", "value": "known_params"}, {"type": "text", "value": ", as specification of all parameters of the distribution precludes the need to fit the distribution to each Monte Carlo sample. (This is essentially how the original Kilmogorov-Smirnov test is performed.) Although such a test can provide evidence against the null hypothesis, the test is conservative in the sense that small p-values will tend to (greatly) "}, {"children": [{"type": "text", "value": "overestimate"}], "type": "emphasis"}, {"type": "text", "value": " the probability of making a type I error (that is, rejecting the null hypothesis although it is true), and the power of the test is low (that is, it is less likely to reject the null hypothesis even when the null hypothesis is false). This is because the Monte Carlo samples are less likely to agree with the null-hypothesized distribution as well as "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "data", "type": "RefInfo", "version": null}, "type": "Link", "value": "data"}, {"type": "text", "value": ". This tends to increase the values of the statistic recorded in the null distribution, so that a larger number of them exceed the value of statistic for "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "data", "type": "RefInfo", "version": null}, "type": "Link", "value": "data"}, {"type": "text", "value": ", thereby inflating the p-value."}], "type": "paragraph"});
+            document.getElementById("4c4d0ebfe82b4448ac2aa4be7864f5f3").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="dist">dist</a> : `scipy.stats.rv_continuous`</dt>
+<dd>
+                <div id="451410a943114300b1ce65190b3a1615"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The object representing the distribution family under the null hypothesis."}], "type": "paragraph"});
+            document.getElementById("451410a943114300b1ce65190b3a1615").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="data">data</a> : 1D array_like</dt>
+<dd>
+                <div id="333359fb144b46aebbf367decb3a2800"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Finite, uncensored data to be tested."}], "type": "paragraph"});
+            document.getElementById("333359fb144b46aebbf367decb3a2800").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="known_params">known_params</a> : dict, optional</dt>
+<dd>
+                <div id="1954d02a5b7c4a56bbdebb4faf374539"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A dictionary containing name-value pairs of known distribution parameters. Monte Carlo samples are randomly drawn from the null-hypothesized distribution with these values of the parameters. Before the statistic is evaluated for each Monte Carlo sample, only remaining unknown parameters of the null-hypothesized distribution family are fit to the samples; the known parameters are held fixed. If all parameters of the distribution family are known, then the step of fitting the distribution family to each sample is omitted."}], "type": "paragraph"});
+            document.getElementById("1954d02a5b7c4a56bbdebb4faf374539").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="fit_params">fit_params</a> : dict, optional</dt>
+<dd>
+                <div id="d70a887d11f54171866be1c4f0d97eab"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A dictionary containing name-value pairs of distribution parameters that have already been fit to the data, e.g. using "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "scipy", "path": "scipy.stats._fit.fit", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "scipy.stats.fit"}, {"type": "text", "value": " or the "}, {"type": "inlineCode", "value": "fit"}, {"type": "text", "value": " method of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "dist", "type": "RefInfo", "version": null}, "type": "Link", "value": "dist"}, {"type": "text", "value": ". Monte Carlo samples are drawn from the null-hypothesized distribution with these specified values of the parameter. On those Monte Carlo samples, however, these and all other unknown parameters of the null-hypothesized distribution family are fit before the statistic is evaluated."}], "type": "paragraph"});
+            document.getElementById("d70a887d11f54171866be1c4f0d97eab").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="guessed_params">guessed_params</a> : dict, optional</dt>
+<dd>
+                <div id="39d0ed3d44af4928a0214458209610e8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A dictionary containing name-value pairs of distribution parameters which have been guessed. These parameters are always considered as free parameters and are fit both to the provided "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "data", "type": "RefInfo", "version": null}, "type": "Link", "value": "data"}, {"type": "text", "value": " as well as to the Monte Carlo samples drawn from the null-hypothesized distribution. The purpose of these "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "guessed_params", "type": "RefInfo", "version": null}, "type": "Link", "value": "guessed_params"}, {"type": "text", "value": " is to be used as initial values for the numerical fitting procedure."}], "type": "paragraph"});
+            document.getElementById("39d0ed3d44af4928a0214458209610e8").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="statistic">statistic</a> : {&#34;ad&#34;, &#34;ks&#34;, &#34;cvm&#34;}, optional</dt>
+<dd>
+                <div id="bf9465436d894452aef6c1b1e2ee8a46"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The statistic used to compare data to a distribution after fitting unknown parameters of the distribution family to the data. The Anderson-Darling (\"ad\"), Kolmogorov-Smirnov (\"ks\"), and Cramer-von Mises (\"cvm\") statistics are available ."}], "type": "paragraph"});
+            document.getElementById("bf9465436d894452aef6c1b1e2ee8a46").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="n_mc_samples">n_mc_samples</a> : int, default: 9999</dt>
+<dd>
+                <div id="89841726d5ca42a5a6a19a62a213dbc4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The number of Monte Carlo samples drawn from the null hypothesized distribution to form the null distribution of the statistic. The sample size of each is the same as the given "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "data", "type": "RefInfo", "version": null}, "type": "Link", "value": "data"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("89841726d5ca42a5a6a19a62a213dbc4").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="random_state">random_state</a> : {None, int, `numpy.random.Generator`,</dt>
+<dd>
+            <blockquote>                <div id="ff01360cf1544dcbb877d552aaeaa59a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "numpy", "path": "numpy.random.mtrand.RandomState", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "numpy.random.RandomState"}, {"type": "text", "value": "}, optional"}], "type": "paragraph"});
+            document.getElementById("ff01360cf1544dcbb877d552aaeaa59a").innerHTML = html;
+        }
+        init();
+    </script>
+</blockquote>
+
+                <div id="7f6bd75ac2b248e3bf4a6540cc08afa9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Pseudorandom number generator state used to generate the Monte Carlo samples."}], "type": "paragraph"});
+            document.getElementById("7f6bd75ac2b248e3bf4a6540cc08afa9").innerHTML = html;
+        }
+        init();
+    </script>
+
+                <div id="cb2949d3868e422db25d7a028dd0cf5c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "random_state", "type": "RefInfo", "version": null}, "type": "Link", "value": "random_state"}, {"type": "text", "value": " is "}, {"type": "inlineCode", "value": "None"}, {"type": "text", "value": " (default), the "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "numpy", "path": "numpy.random.mtrand.RandomState", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "numpy.random.RandomState"}, {"type": "text", "value": " singleton is used. If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "random_state", "type": "RefInfo", "version": null}, "type": "Link", "value": "random_state"}, {"type": "text", "value": " is an int, a new "}, {"type": "inlineCode", "value": "RandomState"}, {"type": "text", "value": " instance is used, seeded with "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "random_state", "type": "RefInfo", "version": null}, "type": "Link", "value": "random_state"}, {"type": "text", "value": ". If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "random_state", "type": "RefInfo", "version": null}, "type": "Link", "value": "random_state"}, {"type": "text", "value": " is already a "}, {"type": "inlineCode", "value": "Generator"}, {"type": "text", "value": " or "}, {"type": "inlineCode", "value": "RandomState"}, {"type": "text", "value": " instance, then the provided instance is used."}], "type": "paragraph"});
+            document.getElementById("cb2949d3868e422db25d7a028dd0cf5c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="res">res</a> : GoodnessOfFitResult</dt>
+<dd>
+                <div id="645fdfaba49f4546917863f3340e1ea2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "An object with the following attributes."}], "type": "paragraph"});
+            document.getElementById("645fdfaba49f4546917863f3340e1ea2").innerHTML = html;
+        }
+        init();
+    </script>
+
+<!-- deflist -->
+           <dl>
+               <dt>                <div id="45a77780c83c4d90a75672175e3c32fe"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "fit_result"}], "type": "paragraph"});
+            document.getElementById("45a77780c83c4d90a75672175e3c32fe").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="0fbd1b57a4964d05bf9141602710db51"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "fit_result"}], "type": "paragraph"});
+            document.getElementById("0fbd1b57a4964d05bf9141602710db51").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="62c4a80e3fa84f378b4a8d7523078a24"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "statistic"}], "type": "paragraph"});
+            document.getElementById("62c4a80e3fa84f378b4a8d7523078a24").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="104bb826b09c4da099911fc41e3f9da5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "statistic"}], "type": "paragraph"});
+            document.getElementById("104bb826b09c4da099911fc41e3f9da5").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="2c348c6850994c7b9c47c24ea5704211"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "pvalue"}], "type": "paragraph"});
+            document.getElementById("2c348c6850994c7b9c47c24ea5704211").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="c8eba902a5bc4eceac0deb2dc1c7f4c8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "pvalue"}], "type": "paragraph"});
+            document.getElementById("c8eba902a5bc4eceac0deb2dc1c7f4c8").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="ed31dbe9adc44ba597b06b79b3f02703"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "null_distribution"}], "type": "paragraph"});
+            document.getElementById("ed31dbe9adc44ba597b06b79b3f02703").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="265870e7b5cf4dfbae41016fb5b46d36"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "null_distribution"}], "type": "paragraph"});
+            document.getElementById("265870e7b5cf4dfbae41016fb5b46d36").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="d410251cc7ff4f4c81ef28dd96ad2766"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Perform a goodness of fit test comparing data to a distribution family."}], "type": "paragraph"});
+            document.getElementById("d410251cc7ff4f4c81ef28dd96ad2766").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+                           A well-known test of the null hypothesis that data were drawn from a
+given distribution is the Kolmogorov-Smirnov (KS) test, available in SciPy
+as `scipy.stats.ks_1samp`. Suppose we wish to test whether the following
+data:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">stats</span><br><span class='nsl'>...&nbsp;</span><span class="">rng</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">random</span><span class="o">.</span><span class="">default_rng</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">x</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">uniform</span><span class="o">.</span><span class="">rvs</span><span class="">(</span><span class="">size</span><span class="o">=</span><span class="mi">75</span><span class="">,</span><span class=""> </span><span class="">random_state</span><span class="o">=</span><span class="">rng</span><span class="">)</span>
+</pre>
+            
+                           were sampled from a normal distribution. To perform a KS test, the
+empirical distribution function of the observed data will be compared
+against the (theoretical) cumulative distribution function of a normal
+distribution. Of course, to do this, the normal distribution under the null
+hypothesis must be fully specified. This is commonly done by first fitting
+the ``loc`` and ``scale`` parameters of the distribution to the observed
+data, then performing the test.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">loc</span><span class="">,</span><span class=""> </span><span class="">scale</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">mean</span><span class="">(</span><span class="">x</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">std</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">ddof</span><span class="o">=</span><span class="mi">1</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">cdf</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">norm</span><span class="">(</span><span class="">loc</span><span class="">,</span><span class=""> </span><span class="">scale</span><span class="">)</span><span class="o">.</span><span class="">cdf</span><br><span class='nsl'>...&nbsp;</span><span class="">stats</span><span class="o">.</span><span class="">ks_1samp</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">cdf</span><span class="">)</span>
+KstestResult(statistic=0.1119257570456813, pvalue=0.2827756409939257)</pre>
+            
+                           An advantage of the KS-test is that the p-value - the probability of
+obtaining a value of the test statistic under the null hypothesis as
+extreme as the value obtained from the observed data - can be calculated
+exactly and efficiently. `goodness_of_fit` can only approximate these
+results.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">known_params</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">{</span><span class="s1">&#39;</span><span class="s1">loc</span><span class="s1">&#39;</span><span class="">:</span><span class=""> </span><span class="">loc</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">scale</span><span class="s1">&#39;</span><span class="">:</span><span class=""> </span><span class="">scale</span><span class="">}</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">goodness_of_fit</span><span class="">(</span><span class="">stats</span><span class="o">.</span><span class="">norm</span><span class="">,</span><span class=""> </span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">known_params</span><span class="o">=</span><span class="">known_params</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                            </span><span class="">statistic</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">ks</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">random_state</span><span class="o">=</span><span class="">rng</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class="o">.</span><span class="">statistic</span><span class="">,</span><span class=""> </span><span class="">res</span><span class="o">.</span><span class="">pvalue</span>
+(0.1119257570456813, 0.2788)</pre>
+            
+                           The statistic matches exactly, but the p-value is estimated by forming
+a &#34;Monte Carlo null distribution&#34;, that is, by explicitly drawing random
+samples from `scipy.stats.norm` with the provided parameters and
+calculating the stastic for each. The fraction of these statistic values
+at least as extreme as ``res.statistic`` approximates the exact p-value
+calculated by `scipy.stats.ks_1samp`.  
+            
+                           However, in many cases, we would prefer to test only that the data were
+sampled from one of *any* member of the normal distribution family, not
+specifically from the normal distribution with the location and scale
+fitted to the observed sample. In this case, Lilliefors [6]_ argued that
+the KS test is far too conservative (that is, the p-value overstates
+the actual probability of rejecting a true null hypothesis) and thus lacks
+power - the ability to reject the null hypothesis when the null hypothesis
+is actually false.
+Indeed, our p-value above is approximately 0.28, which is far too large
+to reject the null hypothesis at any common significance level.  
+            
+                           Consider why this might be. Note that in the KS test above, the statistic
+always compares data against the CDF of a normal distribution fitted to the
+*observed data*. This tends to reduce the value of the statistic for the
+observed data, but it is &#34;unfair&#34; when computing the statistic for other
+samples, such as those we randomly draw to form the Monte Carlo null
+distribution. It is easy to correct for this: whenever we compute the KS
+statistic of a sample, we use the CDF of a normal distribution fitted
+to *that sample*. The null distribution in this case has not been
+calculated exactly and is tyically approximated using Monte Carlo methods
+as described above. This is where `goodness_of_fit` excels.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">goodness_of_fit</span><span class="">(</span><span class="">stats</span><span class="o">.</span><span class="">norm</span><span class="">,</span><span class=""> </span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">statistic</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">ks</span><span class="s1">&#39;</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                            </span><span class="">random_state</span><span class="o">=</span><span class="">rng</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class="o">.</span><span class="">statistic</span><span class="">,</span><span class=""> </span><span class="">res</span><span class="o">.</span><span class="">pvalue</span>
+(0.1119257570456813, 0.0196)</pre>
+            
+                           Indeed, this p-value is much smaller, and small enough to (correctly)
+reject the null hypothesis at common signficance levels, including 5% and
+2.5%.  
+            
+                           However, the KS statistic is not very sensitive to all deviations from
+normality. The original advantage of the KS statistic was the ability
+to compute the null distribution theoretically, but a more sensitive
+statistic - resulting in a higher test power - can be used now that we can
+approximate the null distribution
+computationally. The Anderson-Darling statistic [1]_ tends to be more
+sensitive, and critical values of the this statistic have been tabulated
+for various significance levels and sample sizes using Monte Carlo methods.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">anderson</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">norm</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="nb">print</span><span class="">(</span><span class="">res</span><span class="o">.</span><span class="">statistic</span><span class="">)</span>
+1.2139573337497467</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="nb">print</span><span class="">(</span><span class="">res</span><span class="o">.</span><span class="">critical_values</span><span class="">)</span>
+[0.549 0.625 0.75  0.875 1.041]</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="nb">print</span><span class="">(</span><span class="">res</span><span class="o">.</span><span class="">significance_level</span><span class="">)</span>
+[15.  10.   5.   2.5  1. ]</pre>
+            
+                           Here, the observed value of the statistic exceeds the critical value
+corresponding with a 1% significance level. This tells us that the p-value
+of the observed data is less than 1%, but what is it? We could interpolate
+from these (already-interpolated) values, but `goodness_of_fit` can
+estimate it directly.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">goodness_of_fit</span><span class="">(</span><span class="">stats</span><span class="o">.</span><span class="">norm</span><span class="">,</span><span class=""> </span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">statistic</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">ad</span><span class="s1">&#39;</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                            </span><span class="">random_state</span><span class="o">=</span><span class="">rng</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class="o">.</span><span class="">statistic</span><span class="">,</span><span class=""> </span><span class="">res</span><span class="o">.</span><span class="">pvalue</span>
+(1.2139573337497467, 0.0034)</pre>
+            
+                           A further advantage is that use of `goodness_of_fit` is not limited to
+a particular set of distributions or conditions on which parameters
+are known versus which must be estimated from data. Instead,
+`goodness_of_fit` can estimate p-values relatively quickly for any
+distribution with a sufficiently fast and reliable ``fit`` method. For
+instance, here we perform a goodness of fit test using the Cramer-von Mises
+statistic against the Rayleigh distribution with known location and unknown
+scale.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">rng</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">random</span><span class="o">.</span><span class="">default_rng</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">x</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">chi</span><span class="">(</span><span class="">df</span><span class="o">=</span><span class="mf">2.2</span><span class="">,</span><span class=""> </span><span class="">loc</span><span class="o">=</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="">scale</span><span class="o">=</span><span class="mi">2</span><span class="">)</span><span class="o">.</span><span class="">rvs</span><span class="">(</span><span class="">size</span><span class="o">=</span><span class="mi">1000</span><span class="">,</span><span class=""> </span><span class="">random_state</span><span class="o">=</span><span class="">rng</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">goodness_of_fit</span><span class="">(</span><span class="">stats</span><span class="o">.</span><span class="">rayleigh</span><span class="">,</span><span class=""> </span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">statistic</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">cvm</span><span class="s1">&#39;</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                            </span><span class="">known_params</span><span class="o">=</span><span class="">{</span><span class="s1">&#39;</span><span class="s1">loc</span><span class="s1">&#39;</span><span class="">:</span><span class=""> </span><span class="mi">0</span><span class="">}</span><span class="">,</span><span class=""> </span><span class="">random_state</span><span class="o">=</span><span class="">rng</span><span class="">)</span>
+</pre>
+            
+                           This executes fairly quickly, but to check the reliability of the ``fit``
+method, we should inspect the fit result.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">res</span><span class="o">.</span><span class="">fit_result</span><span class="">  </span><span class="c1"># location is as specified, and scale is reasonable</span>
+  params: FitParams(loc=0.0, scale=2.1026719844231243)
+ success: True
+ message: &#39;The fit was performed successfully.&#39;</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">matplotlib</span><span class="nn">.</span><span class="nn">pyplot</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">plt</span><span class="">  </span><span class="c1"># matplotlib must be installed to plot</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class="o">.</span><span class="">fit_result</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">show</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+                           If the distribution is not fit to the observed data as well as possible,
+the test may not control the type I error rate, that is, the chance of
+rejecting the null hypothesis even when it is true.  
+            
+                           We should also look for extreme outliers in the null distribution that
+may be caused by unreliable fitting. These do not necessarily invalidate
+the result, but they tend to reduce the test&#39;s power.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">_</span><span class="">,</span><span class=""> </span><span class="">ax</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">plt</span><span class="o">.</span><span class="">subplots</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class="o">.</span><span class="">hist</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">log10</span><span class="">(</span><span class="">res</span><span class="o">.</span><span class="">null_distribution</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class="o">.</span><span class="">set_xlabel</span><span class="">(</span><span class="s2">&#34;</span><span class="s2">log10 of CVM statistic under the null hypothesis</span><span class="s2">&#34;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class="o">.</span><span class="">set_ylabel</span><span class="">(</span><span class="s2">&#34;</span><span class="s2">Frequency</span><span class="s2">&#34;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class="o">.</span><span class="">set_title</span><span class="">(</span><span class="s2">&#34;</span><span class="s2">Histogram of the Monte Carlo null distribution</span><span class="s2">&#34;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">show</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+                           This plot seems reassuring.  
+            
+                           If ``fit`` method is working reliably, and if the distribution of the test
+statistic is not particularly sensitive to the values of the fitted
+parameters, then the p-value provided by `goodness_of_fit` is expected to
+be a good approximation.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">res</span><span class="o">.</span><span class="">statistic</span><span class="">,</span><span class=""> </span><span class="">res</span><span class="o">.</span><span class="">pvalue</span>
+(0.2231991510248692, 0.0525)</pre>
+            
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/stats/_fit.py#L722'>/scipy/stats/_fit.py#722</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 14.782329983125269, "label": "numpy.random.mtrand.RandomState", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.random.mtrand.RandomState"}, {"id": 2, "val": 9.414213562373096, "label": "scipy.stats._fit.fit", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.stats._fit.fit"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

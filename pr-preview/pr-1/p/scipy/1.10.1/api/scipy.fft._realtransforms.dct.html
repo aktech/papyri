@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.fft.html'>fft</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.fft._realtransforms.html'>_realtransforms</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.fft._backend.html">_backend</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft._basic.html">_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft._fftlog.html">_fftlog</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft._fftlog_multimethods.html">_fftlog_multimethods</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft._helper.html">_helper</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft._pocketfft.html">_pocketfft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft._realtransforms.html">_realtransforms</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.fft._realtransforms.dct.html'>dct</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.fft._realtransforms.dct.html">dct</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft._realtransforms.dctn.html">dctn</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft._realtransforms.dst.html">dst</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft._realtransforms.dstn.html">dstn</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft._realtransforms.idct.html">idct</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft._realtransforms.idctn.html">idctn</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft._realtransforms.idst.html">idst</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft._realtransforms.idstn.html">idstn</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<!-- rendering Extended Summary -->
+        <h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="6f8f9763d83247a5ad67ce2cfb3e2bfe"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For a single dimension array "}, {"type": "inlineCode", "value": "x"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "dct(x, norm=\u0027ortho\u0027)"}, {"type": "text", "value": " is equal to MATLAB "}, {"type": "inlineCode", "value": "dct(x)"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("6f8f9763d83247a5ad67ce2cfb3e2bfe").innerHTML = html;
+        }
+        init();
+    </script>
+
+                           <div class='admonition'>
+    <div>warning For ``type in {1, 2, 3}``, ``norm=&#34;ortho&#34;`` breaks the direct</div>
+                        <div id="680d51b0c37c4466b5be6393d860c1f1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "correspondence with the direct Fourier transform. To recover it you must specify "}, {"type": "inlineCode", "value": "orthogonalize=False"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("680d51b0c37c4466b5be6393d860c1f1").innerHTML = html;
+        }
+        init();
+    </script>
+
+</div>
+
+
+                               <div id="b5b33c144a874d468bc38cc55d0c9b40"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For "}, {"type": "inlineCode", "value": "norm=\"ortho\""}, {"type": "text", "value": " both the "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.fft._realtransforms.dct", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "dct"}, {"type": "text", "value": " and "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.fft._realtransforms.idct", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "idct"}, {"type": "text", "value": " are scaled by the same overall factor in both directions. By default, the transform is also orthogonalized which for types 1, 2 and 3 means the transform definition is modified to give orthogonality of the DCT matrix (see below)."}], "type": "paragraph"});
+            document.getElementById("b5b33c144a874d468bc38cc55d0c9b40").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="17771d25526843bb9a44131a613559f8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For "}, {"type": "inlineCode", "value": "norm=\"backward\""}, {"type": "text", "value": ", there is no scaling on "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.fft._realtransforms.dct", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "dct"}, {"type": "text", "value": " and the "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.fft._realtransforms.idct", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "idct"}, {"type": "text", "value": " is scaled by "}, {"type": "inlineCode", "value": "1/N"}, {"type": "text", "value": " where "}, {"type": "inlineCode", "value": "N"}, {"type": "text", "value": " is the \"logical\" size of the DCT. For "}, {"type": "inlineCode", "value": "norm=\"forward\""}, {"type": "text", "value": " the "}, {"type": "inlineCode", "value": "1/N"}, {"type": "text", "value": " normalization is applied to the forward "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.fft._realtransforms.dct", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "dct"}, {"type": "text", "value": " instead and the "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.fft._realtransforms.idct", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "idct"}, {"type": "text", "value": " is unnormalized."}], "type": "paragraph"});
+            document.getElementById("17771d25526843bb9a44131a613559f8").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="3ade2f0a2e3d4c2eab3ebfed5d562b65"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "There are, theoretically, 8 types of the DCT, only the first 4 types are implemented in SciPy.\u0027The\u0027 DCT generally refers to DCT type 2, and \u0027the\u0027 Inverse DCT generally refers to DCT type 3."}], "type": "paragraph"});
+            document.getElementById("3ade2f0a2e3d4c2eab3ebfed5d562b65").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="6a880f970aa8411aabf684455c88787a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"children": [{"type": "text", "value": "Type I"}], "type": "strong"}], "type": "paragraph"});
+            document.getElementById("6a880f970aa8411aabf684455c88787a").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="59fad562f6ab4b35883fc9a045d6eafe"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "There are several definitions of the DCT-I; we use the following (for "}, {"type": "inlineCode", "value": "norm=\"backward\""}, {"type": "text", "value": ")"}], "type": "paragraph"});
+            document.getElementById("59fad562f6ab4b35883fc9a045d6eafe").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$y_k = x_0 + (-1)^k x_{N-1} + 2 \sum_{n=1}^{N-2} x_n \cos\left(
+\frac{\pi k n}{N-1} \right)$$</span>
+
+                               <div id="74beca30113b4152bd85599a7f180407"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"type": "inlineCode", "value": "orthogonalize=True"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "x[0]"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "x[N-1]"}, {"type": "text", "value": " are multiplied by a scaling factor of "}, {"type": "Math", "value": "\\sqrt{2}"}, {"type": "text", "value": ", and "}, {"type": "inlineCode", "value": "y[0]"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "y[N-1]"}, {"type": "text", "value": " are divided by "}, {"type": "Math", "value": "\\sqrt{2}"}, {"type": "text", "value": ". When combined with "}, {"type": "inlineCode", "value": "norm=\"ortho\""}, {"type": "text", "value": ", this makes the corresponding matrix of coefficients orthonormal ("}, {"type": "inlineCode", "value": "O @ O.T = np.eye(N)"}, {"type": "text", "value": ")."}], "type": "paragraph"});
+            document.getElementById("74beca30113b4152bd85599a7f180407").innerHTML = html;
+        }
+        init();
+    </script>
+
+                           <div class='admonition'>
+    <div>note </div>
+                        <div id="4a3ee6d24ae543d5bd450a8cfffa9d97"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The DCT-I is only supported for input size \u003e 1."}], "type": "paragraph"});
+            document.getElementById("4a3ee6d24ae543d5bd450a8cfffa9d97").innerHTML = html;
+        }
+        init();
+    </script>
+
+</div>
+
+
+                               <div id="b3ecd466e197463c98a9015b665ad963"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"children": [{"type": "text", "value": "Type II"}], "type": "strong"}], "type": "paragraph"});
+            document.getElementById("b3ecd466e197463c98a9015b665ad963").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="773deb0f852d44649b1f6636c4881296"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "There are several definitions of the DCT-II; we use the following (for "}, {"type": "inlineCode", "value": "norm=\"backward\""}, {"type": "text", "value": ")"}], "type": "paragraph"});
+            document.getElementById("773deb0f852d44649b1f6636c4881296").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$y_k = 2 \sum_{n=0}^{N-1} x_n \cos\left(\frac{\pi k(2n+1)}{2N} \right)$$</span>
+
+                               <div id="27c357f226774ee8951cde1680ed9a30"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"type": "inlineCode", "value": "orthogonalize=True"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "y[0]"}, {"type": "text", "value": " is divided by "}, {"type": "Math", "value": "\\sqrt{2}"}, {"type": "text", "value": " which, when combined with "}, {"type": "inlineCode", "value": "norm=\"ortho\""}, {"type": "text", "value": ", makes the corresponding matrix of coefficients orthonormal ("}, {"type": "inlineCode", "value": "O @ O.T = np.eye(N)"}, {"type": "text", "value": ")."}], "type": "paragraph"});
+            document.getElementById("27c357f226774ee8951cde1680ed9a30").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="571dc5a48c584e289165bddcf9bcddf3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"children": [{"type": "text", "value": "Type III"}], "type": "strong"}], "type": "paragraph"});
+            document.getElementById("571dc5a48c584e289165bddcf9bcddf3").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="d9048f9fb11c45e781be31df005b4ff3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "There are several definitions, we use the following (for "}, {"type": "inlineCode", "value": "norm=\"backward\""}, {"type": "text", "value": ")"}], "type": "paragraph"});
+            document.getElementById("d9048f9fb11c45e781be31df005b4ff3").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$y_k = x_0 + 2 \sum_{n=1}^{N-1} x_n \cos\left(\frac{\pi(2k+1)n}{2N}\right)$$</span>
+
+                               <div id="c7f7f77eb1f84b75bbc2964cbc7c0db5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"type": "inlineCode", "value": "orthogonalize=True"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "x[0]"}, {"type": "text", "value": " terms are multiplied by "}, {"type": "Math", "value": "\\sqrt{2}"}, {"type": "text", "value": " which, when combined with "}, {"type": "inlineCode", "value": "norm=\"ortho\""}, {"type": "text", "value": ", makes the corresponding matrix of coefficients orthonormal ("}, {"type": "inlineCode", "value": "O @ O.T = np.eye(N)"}, {"type": "text", "value": ")."}], "type": "paragraph"});
+            document.getElementById("c7f7f77eb1f84b75bbc2964cbc7c0db5").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="a05ba909797443a0899de911735af0e4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The (unnormalized) DCT-III is the inverse of the (unnormalized) DCT-II, up to a factor "}, {"domain": null, "role": null, "type": "Directive", "value": "2N"}, {"type": "text", "value": ". The orthonormalized DCT-III is exactly the inverse of the orthonormalized DCT-II."}], "type": "paragraph"});
+            document.getElementById("a05ba909797443a0899de911735af0e4").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="08609a5684a64f30bbe8d8c2b185407d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"children": [{"type": "text", "value": "Type IV"}], "type": "strong"}], "type": "paragraph"});
+            document.getElementById("08609a5684a64f30bbe8d8c2b185407d").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="ddb430ba9fe84b1cb8c470c1b9faab39"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "There are several definitions of the DCT-IV; we use the following (for "}, {"type": "inlineCode", "value": "norm=\"backward\""}, {"type": "text", "value": ")"}], "type": "paragraph"});
+            document.getElementById("ddb430ba9fe84b1cb8c470c1b9faab39").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$y_k = 2 \sum_{n=0}^{N-1} x_n \cos\left(\frac{\pi(2k+1)(2n+1)}{4N} \right)$$</span>
+
+                               <div id="d962dc9a7d32427781dbf71c9604cf08"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "orthogonalize"}, {"type": "text", "value": " has no effect here, as the DCT-IV matrix is already orthogonal up to a scale factor of "}, {"type": "inlineCode", "value": "2N"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("d962dc9a7d32427781dbf71c9604cf08").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="x">x</a> : array_like</dt>
+<dd>
+                <div id="f275995a176940d5b81ae67232d48d2d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The input array."}], "type": "paragraph"});
+            document.getElementById("f275995a176940d5b81ae67232d48d2d").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="type">type</a> : {1, 2, 3, 4}, optional</dt>
+<dd>
+                <div id="c09858ee8a6e4813b3fbfe639e1356a7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Type of the DCT (see Notes). Default type is 2."}], "type": "paragraph"});
+            document.getElementById("c09858ee8a6e4813b3fbfe639e1356a7").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="n">n</a> : int, optional</dt>
+<dd>
+                <div id="d3a384c0f29240f39519a795c49fb9fb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Length of the transform.  If "}, {"type": "inlineCode", "value": "n \u003c x.shape[axis]"}, {"type": "text", "value": ", "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": " is truncated.  If "}, {"type": "inlineCode", "value": "n \u003e x.shape[axis]"}, {"type": "text", "value": ", "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": " is zero-padded. The default results in "}, {"type": "inlineCode", "value": "n = x.shape[axis]"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("d3a384c0f29240f39519a795c49fb9fb").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="axis">axis</a> : int, optional</dt>
+<dd>
+                <div id="f88ab2de2f4344b1bdf0a07b9ab13075"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Axis along which the dct is computed; the default is over the last axis (i.e., "}, {"type": "inlineCode", "value": "axis=-1"}, {"type": "text", "value": ")."}], "type": "paragraph"});
+            document.getElementById("f88ab2de2f4344b1bdf0a07b9ab13075").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="norm">norm</a> : {&#34;backward&#34;, &#34;ortho&#34;, &#34;forward&#34;}, optional</dt>
+<dd>
+                <div id="4c45797090e943fb9b17cfc1e79a493e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Normalization mode (see Notes). Default is \"backward\"."}], "type": "paragraph"});
+            document.getElementById("4c45797090e943fb9b17cfc1e79a493e").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="overwrite_x">overwrite_x</a> : bool, optional</dt>
+<dd>
+                <div id="e4c6e6188f0246da9978fa5215783cea"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If True, the contents of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": " can be destroyed; the default is False."}], "type": "paragraph"});
+            document.getElementById("e4c6e6188f0246da9978fa5215783cea").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="workers">workers</a> : int, optional</dt>
+<dd>
+                <div id="922c38890ebd461e997cef29f343b2f5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Maximum number of workers to use for parallel computation. If negative, the value wraps around from "}, {"type": "inlineCode", "value": "os.cpu_count()"}, {"type": "text", "value": ". See "}, {"type": "Verbatim", "value": ["~scipy.fft.fft"]}, {"type": "text", "value": " for more details."}], "type": "paragraph"});
+            document.getElementById("922c38890ebd461e997cef29f343b2f5").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="orthogonalize">orthogonalize</a> : bool, optional</dt>
+<dd>
+                <div id="ab62d19f8aa847fead4e293e0d21d6fc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Whether to use the orthogonalized DCT variant (see Notes). Defaults to "}, {"type": "inlineCode", "value": "True"}, {"type": "text", "value": " when "}, {"type": "inlineCode", "value": "norm=\"ortho\""}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "False"}, {"type": "text", "value": " otherwise."}], "type": "paragraph"});
+            document.getElementById("ab62d19f8aa847fead4e293e0d21d6fc").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <div class='admonition'>
+    <div>versionadded 1.8.0</div>
+</div>
+
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="y">y</a> : ndarray of real</dt>
+<dd>
+                <div id="0271d19a65e342de9c5fcbbafa8f582a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The transformed input array."}], "type": "paragraph"});
+            document.getElementById("0271d19a65e342de9c5fcbbafa8f582a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="6a4059480e0548e58b43feab1d2db3cd"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Return the Discrete Cosine Transform of arbitrary type sequence x."}], "type": "paragraph"});
+            document.getElementById("6a4059480e0548e58b43feab1d2db3cd").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.fft._realtransforms.idct.html" class='exists'>idct</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="406247e6b7744df9b3aef0d3d5b0b376"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "Inverse DCT"});
+            document.getElementById("406247e6b7744df9b3aef0d3d5b0b376").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+                           The Type 1 DCT is equivalent to the FFT (though faster) for real,
+even-symmetrical inputs. The output is also real and even-symmetrical.
+Half of the FFT input is used to generate half of the FFT output:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">fft</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">fft</span><span class="">,</span><span class=""> </span><span class="">dct</span><br><span class='nsl'>...&nbsp;</span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="">fft</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="mf">4.</span><span class="">,</span><span class=""> </span><span class="mf">3.</span><span class="">,</span><span class=""> </span><span class="mf">5.</span><span class="">,</span><span class=""> </span><span class="mf">10.</span><span class="">,</span><span class=""> </span><span class="mf">5.</span><span class="">,</span><span class=""> </span><span class="mf">3.</span><span class="">]</span><span class="">)</span><span class="">)</span><span class="o">.</span><span class="">real</span>
+array([ 30.,  -8.,   6.,  -2.,   6.,  -8.])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">dct</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="mf">4.</span><span class="">,</span><span class=""> </span><span class="mf">3.</span><span class="">,</span><span class=""> </span><span class="mf">5.</span><span class="">,</span><span class=""> </span><span class="mf">10.</span><span class="">]</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">)</span>
+array([ 30.,  -8.,   6.,  -2.])</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.fft._realtransforms.dct.html" class='exists'>scipy.fft._realtransforms.dct</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.fft._realtransforms.dctn.html" class='exists'>scipy.fft._realtransforms.dctn</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.fft._realtransforms.idct.html" class='exists'>scipy.fft._realtransforms.idct</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/fft/_realtransforms.py#L268'>/scipy/fft/_realtransforms.py#268</a>
+<br/>
+
+type: &lt;class &#39;uarray._Function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 9.0, "label": "scipy.fft._realtransforms.dctn", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.fft._realtransforms.dctn"}, {"id": 3, "val": 9.414213562373096, "label": "scipy.fft._realtransforms.idct", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.fft._realtransforms.idct"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

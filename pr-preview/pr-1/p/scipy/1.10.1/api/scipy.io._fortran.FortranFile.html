@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.io.html'>io</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.io._fortran.html'>_fortran</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.io._fortran.html">_fortran</a>
+<a href="/p/scipy/1.10.1/api/scipy.io._harwell_boeing.html">_harwell_boeing</a>
+<a href="/p/scipy/1.10.1/api/scipy.io._idl.html">_idl</a>
+<a href="/p/scipy/1.10.1/api/scipy.io._mmio.html">_mmio</a>
+<a href="/p/scipy/1.10.1/api/scipy.io._netcdf.html">_netcdf</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.arff.html">arff</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.harwell_boeing.html">harwell_boeing</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.idl.html">idl</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.matlab.html">matlab</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.mmio.html">mmio</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.netcdf.html">netcdf</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.wavfile.html">wavfile</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.io._fortran.FortranFile.html'>FortranFile</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.io._fortran.FortranEOFError.html">FortranEOFError</a>
+<a href="/p/scipy/1.10.1/api/scipy.io._fortran.FortranFile.html">FortranFile</a>
+<a href="/p/scipy/1.10.1/api/scipy.io._fortran.FortranFormattingError.html">FortranFormattingError</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" >+</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.io._fortran.FortranFile.__enter__.html">__enter__</a>
+<a href="/p/scipy/1.10.1/api/scipy.io._fortran.FortranFile.__exit__.html">__exit__</a>
+<a href="/p/scipy/1.10.1/api/scipy.io._fortran.FortranFile.__init__.html">__init__</a>
+<a href="/p/scipy/1.10.1/api/scipy.io._fortran.FortranFile._read_size.html">_read_size</a>
+<a href="/p/scipy/1.10.1/api/scipy.io._fortran.FortranFile.close.html">close</a>
+<a href="/p/scipy/1.10.1/api/scipy.io._fortran.FortranFile.read_ints.html">read_ints</a>
+<a href="/p/scipy/1.10.1/api/scipy.io._fortran.FortranFile.read_reals.html">read_reals</a>
+<a href="/p/scipy/1.10.1/api/scipy.io._fortran.FortranFile.read_record.html">read_record</a>
+<a href="/p/scipy/1.10.1/api/scipy.io._fortran.FortranFile.write_record.html">write_record</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a>    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<!-- rendering Extended Summary -->
+        <h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="312299dcc7ee4dfdb9d2182e78a8157b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "These files are broken up into records of unspecified types. The size of each record is given at the start (although the size of this header is not standard) and the data is written onto disk without any formatting. Fortran compilers supporting the BACKSPACE statement will write a second copy of the size to facilitate backwards seeking."}], "type": "paragraph"});
+            document.getElementById("312299dcc7ee4dfdb9d2182e78a8157b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="57402c6861874d099c796e6d6e8e5027"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This class only supports files written with both sizes for the record. It also does not support the subrecords used in Intel and gfortran compilers for records which are greater than 2GB with a 4-byte header."}], "type": "paragraph"});
+            document.getElementById("57402c6861874d099c796e6d6e8e5027").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="292d33f70a8b4b93b9197110811bc154"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "An example of an unformatted sequential file in Fortran would be written as      "}], "type": "paragraph"});
+            document.getElementById("292d33f70a8b4b93b9197110811bc154").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="3f168f58367048c09ef7602069e3538a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "OPEN(1, FILE=myfilename, FORM=\u0027unformatted\u0027)\n\nWRITE(1) myvariable"});
+            document.getElementById("3f168f58367048c09ef7602069e3538a").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="585dc612dea44dea90612eb63ff5a001"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Since this is a non-standard file format, whose contents depend on the compiler and the endianness of the machine, caution is advised. Files from gfortran 4.8.0 and gfortran 4.1.2 on x86_64 are known to work."}], "type": "paragraph"});
+            document.getElementById("585dc612dea44dea90612eb63ff5a001").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="8a8e2fd54c6a42c5b52cb0d66155c292"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Consider using Fortran direct-access files or files from the newer Stream I/O, which can be easily read by "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "numpy", "path": "numpy.fromfile", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "numpy.fromfile"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("8a8e2fd54c6a42c5b52cb0d66155c292").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="filename">filename</a> : file or str</dt>
+<dd>
+                <div id="8ce63b4702a344929987e4f43d55c402"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Open file object or filename."}], "type": "paragraph"});
+            document.getElementById("8ce63b4702a344929987e4f43d55c402").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="mode">mode</a> : {&#39;r&#39;, &#39;w&#39;}, optional</dt>
+<dd>
+                <div id="9dfe73c22f03443189cf3d8339931b86"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Read-write mode, default is \u0027r\u0027."}], "type": "paragraph"});
+            document.getElementById("9dfe73c22f03443189cf3d8339931b86").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="header_dtype">header_dtype</a> : dtype, optional</dt>
+<dd>
+                <div id="c3b6cd5799f04faab9c46b9b98f28d59"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Data type of the header. Size and endiness must match the input/output file."}], "type": "paragraph"});
+            document.getElementById("c3b6cd5799f04faab9c46b9b98f28d59").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="43ee131436fa4e05b29a184abe21f02a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A file object for unformatted sequential files from Fortran code."}], "type": "paragraph"});
+            document.getElementById("43ee131436fa4e05b29a184abe21f02a").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+                           To create an unformatted sequential Fortran file:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">io</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">FortranFile</span><br><span class='nsl'>...&nbsp;</span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="">f</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">FortranFile</span><span class="">(</span><span class="s1">&#39;</span><span class="s1">test.unf</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">w</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">f</span><span class="o">.</span><span class="">write_record</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class="mi">2</span><span class="">,</span><span class="mi">3</span><span class="">,</span><span class="mi">4</span><span class="">,</span><span class="mi">5</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">dtype</span><span class="o">=</span><span class="">np</span><span class="o">.</span><span class="">int32</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">f</span><span class="o">.</span><span class="">write_record</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">linspace</span><span class="">(</span><span class="mi">0</span><span class="">,</span><span class="mi">1</span><span class="">,</span><span class="mi">20</span><span class="">)</span><span class="o">.</span><span class="">reshape</span><span class="">(</span><span class="">(</span><span class="mi">5</span><span class="">,</span><span class="mi">4</span><span class="">)</span><span class="">)</span><span class="o">.</span><span class="">T</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">f</span><span class="o">.</span><span class="">close</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+                           To read this file:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">f</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">FortranFile</span><span class="">(</span><span class="s1">&#39;</span><span class="s1">test.unf</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">r</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="nb">print</span><span class="">(</span><span class="">f</span><span class="o">.</span><span class="">read_ints</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">int32</span><span class="">)</span><span class="">)</span>
+[1 2 3 4 5]</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="nb">print</span><span class="">(</span><span class="">f</span><span class="o">.</span><span class="">read_reals</span><span class="">(</span><span class="nb">float</span><span class="">)</span><span class="o">.</span><span class="">reshape</span><span class="">(</span><span class="">(</span><span class="mi">5</span><span class="">,</span><span class="mi">4</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">order</span><span class="o">=</span><span class="s2">&#34;</span><span class="s2">F</span><span class="s2">&#34;</span><span class="">)</span><span class="">)</span>
+[[0.         0.05263158 0.10526316 0.15789474]
+ [0.21052632 0.26315789 0.31578947 0.36842105]
+ [0.42105263 0.47368421 0.52631579 0.57894737]
+ [0.63157895 0.68421053 0.73684211 0.78947368]
+ [0.84210526 0.89473684 0.94736842 1.        ]]</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">f</span><span class="o">.</span><span class="">close</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+                           Or, in Fortran::  
+            
+                               integer :: a(5), i
+    double precision :: b(5,4)
+    open(1, file=&#39;test.unf&#39;, form=&#39;unformatted&#39;)
+    read(1) a
+    read(1) b
+    close(1)
+    write(*,*) a
+    do i = 1, 5
+        write(*,*) b(i,:)
+    end do  
+            
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/io/_fortran.py#L33'>/scipy/io/_fortran.py#33</a>
+<br/>
+
+type: &lt;class &#39;type&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 10.0, "label": "numpy.fromfile", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.fromfile"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

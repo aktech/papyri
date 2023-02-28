@@ -66,7 +66,9 @@
                 <div class="dropdown">
                 <a href=papyri>papyri</a>&nbsp;/&nbsp;
                     <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
 <a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
                      </div>
                 </div>
                 <div class="dropdown">
@@ -150,53 +152,53 @@
 
 
 <!-- rendering Extended Summary -->
-                                       <div id="13f0357b203941b7b4a94d23a5d79ba9"></div>
+                                       <div id="6f84f360e8604cbfaf8a75b8714ebf29"></div>
     <script>
         function init() {
             const myst = new MyST();
             const html = myst.renderMdast({"children": [{"type": "text", "value": "Example      "}], "type": "paragraph"});
-            document.getElementById("13f0357b203941b7b4a94d23a5d79ba9").innerHTML = html;
+            document.getElementById("6f84f360e8604cbfaf8a75b8714ebf29").innerHTML = html;
         }
         init();
     </script>
 
-                               <div id="0e251c087f994b4ea8b113fca91fad38"></div>
+                               <div id="ab33a007d9a4425f8e3d72142f104bb5"></div>
     <script>
         function init() {
             const myst = new MyST();
             const html = myst.renderMdast({"type": "code", "value": "In [14]: from dataclasses import dataclass\n    ...: from typing import Optional, Union, List\n    ...:\n\nNote that Author and Reviewer are isomorphic even if totally unrelated.\n\nIn [15]: @dataclass\n    ...: class Author:\n    ...:     first: Optional[str]\n    ...:     last: str\n    ...:\n    ...: @dataclass\n    ...: class Reviewer:\n    ...:     first: Optional[str]\n    ...:     last: str\n    ...:\n\nHere, items can be heterogenous, or of ambiguous type based only on its fields values.\n\nIn [16]: @dataclass\n    ...: class Book:\n    ...:     author: List[Union[Author, Reviewer]]\n    ...:     title: str\n    ...:\n\nIn [17]: obj = Book([Author(\"Matthias\", \"B\"), Reviewer(\"Tony\", \"Fast\")], \"pyshs\")\n    ...:\n    ...: data = serialize(obj , Book)\n    ...:\n    ...: deserialize(Book, Book, data)\n\nOut[17]: Book(author=[Author(first=\u0027Matthias\u0027, last=\u0027B\u0027), Reviewer(first=\u0027Tony\u0027, last=\u0027Fast\u0027)], title=\u0027pyshs\u0027)\n\n                      ^...................................^\n                                        .\n                                        .Note the conserved types."});
-            document.getElementById("0e251c087f994b4ea8b113fca91fad38").innerHTML = html;
+            document.getElementById("ab33a007d9a4425f8e3d72142f104bb5").innerHTML = html;
         }
         init();
     </script>
 
-                               <div id="13e63a4001af43f7aed7fce3bc226c36"></div>
+                               <div id="2506785d39034fbbaaf4ebea163c6b67"></div>
     <script>
         function init() {
             const myst = new MyST();
             const html = myst.renderMdast({"children": [{"type": "text", "value": "Unlike other similar libraries that automatically serialise/deserialise it has the following properties:"}], "type": "paragraph"});
-            document.getElementById("13e63a4001af43f7aed7fce3bc226c36").innerHTML = html;
+            document.getElementById("2506785d39034fbbaaf4ebea163c6b67").innerHTML = html;
         }
         init();
     </script>
 
-                          <ul>               <li>                               <div id="49d23660e34f447a836f934d20b6dac8"></div>
+                          <ul>               <li>                               <div id="e26eaacb7b084679b79e0b735a054bcb"></div>
     <script>
         function init() {
             const myst = new MyST();
             const html = myst.renderMdast({"children": [{"type": "text", "value": "object do not need to have a give baseclass, they need to have an __init__   or _deserialise class method that takes each parameter as kwargs."}], "type": "paragraph"});
-            document.getElementById("49d23660e34f447a836f934d20b6dac8").innerHTML = html;
+            document.getElementById("e26eaacb7b084679b79e0b735a054bcb").innerHTML = html;
         }
         init();
     </script>
 
 </li>
-               <li>                               <div id="45c6dc6b45504698a7f8ec75aceae52f"></div>
+               <li>                               <div id="203d3a1ecffd4d1ba1d2498c081016dd"></div>
     <script>
         function init() {
             const myst = new MyST();
             const html = myst.renderMdast({"children": [{"type": "text", "value": "Subclass or isomorphic classes are kept in the de-serialisation, in   particular in Union and List of Unions. That is to say it will properly   de-serialise and heterogenous list or dict, as long as those respect the   type annotation."}], "type": "paragraph"});
-            document.getElementById("45c6dc6b45504698a7f8ec75aceae52f").innerHTML = html;
+            document.getElementById("203d3a1ecffd4d1ba1d2498c081016dd").innerHTML = html;
         }
         init();
     </script>
@@ -204,34 +206,34 @@
 </li>
             </ul>
 
-                               <div id="3077a93ce0a7465f997b17951c5ddaf6"></div>
+                               <div id="430689e1cae44ca9b1bfb5800f4faa4f"></div>
     <script>
         function init() {
             const myst = new MyST();
             const html = myst.renderMdast({"children": [{"type": "text", "value": "Both Pydantic and Jetblack-serialize would have erased the types and returned either 2 Authors or 2 Reviewers."}], "type": "paragraph"});
-            document.getElementById("3077a93ce0a7465f997b17951c5ddaf6").innerHTML = html;
+            document.getElementById("430689e1cae44ca9b1bfb5800f4faa4f").innerHTML = html;
         }
         init();
     </script>
 
                           <ul>               <li>               <!-- deflist -->
            <dl>
-               <dt>                <div id="707fc3b1ec2f44afb867f5e227a349b2"></div>
+               <dt>                <div id="9e534c9c8f6a4102b4c5240edc5e7e2b"></div>
     <script>
         function init() {
             const myst = new MyST();
             const html = myst.renderMdast({"children": [{"type": "text", "value": "it is also compatible with Rust Serde with adjacently tagged Unions (not"}], "type": "paragraph"});
-            document.getElementById("707fc3b1ec2f44afb867f5e227a349b2").innerHTML = html;
+            document.getElementById("9e534c9c8f6a4102b4c5240edc5e7e2b").innerHTML = html;
         }
         init();
     </script>
 </dt>
-               <dd>                <div id="616c18a9e8064ad28d0f1f64371a21cf"></div>
+               <dd>                <div id="f48ad7d5c78e45ca9a14ffffda0cff3d"></div>
     <script>
         function init() {
             const myst = new MyST();
             const html = myst.renderMdast({"children": [{"type": "text", "value": "critical but nice to have)"}], "type": "paragraph"});
-            document.getElementById("616c18a9e8064ad28d0f1f64371a21cf").innerHTML = html;
+            document.getElementById("f48ad7d5c78e45ca9a14ffffda0cff3d").innerHTML = html;
         }
         init();
     </script>
@@ -243,73 +245,73 @@
 
 <!-- rendering Notes -->
         <!-- rendering Summary -->
-                                       <div id="93c774c49ce14f22afb1bd351f11a605"></div>
+                                       <div id="ce5d72a3158244ae82a6ddb5fabd0918"></div>
     <script>
         function init() {
             const myst = new MyST();
             const html = myst.renderMdast({"children": [{"type": "text", "value": "A mini-implementation of an automatic serialiser-deserialiser for nested dataclass like class based on type annotations."}], "type": "paragraph"});
-            document.getElementById("93c774c49ce14f22afb1bd351f11a605").innerHTML = html;
+            document.getElementById("ce5d72a3158244ae82a6ddb5fabd0918").innerHTML = html;
         }
         init();
     </script>
 
-                               <div id="d786df13a54f4e4bbece39d22bc36b52"></div>
+                               <div id="9c298373e3524bd998fcbe1f1a29ce15"></div>
     <script>
         function init() {
             const myst = new MyST();
             const html = myst.renderMdast({"children": [{"type": "text", "value": "A mini-implementation of an automatic serialiser-deserialiser for nested dataclass like class based on type annotations."}], "type": "paragraph"});
-            document.getElementById("d786df13a54f4e4bbece39d22bc36b52").innerHTML = html;
+            document.getElementById("9c298373e3524bd998fcbe1f1a29ce15").innerHTML = html;
         }
         init();
     </script>
 
-                               <div id="edbee3df186e4c1ea479a37243af7f4c"></div>
+                               <div id="a8d2421edf224f41a67fd50245e6117d"></div>
     <script>
         function init() {
             const myst = new MyST();
             const html = myst.renderMdast({"children": [{"type": "text", "value": "Example       "}], "type": "paragraph"});
-            document.getElementById("edbee3df186e4c1ea479a37243af7f4c").innerHTML = html;
+            document.getElementById("a8d2421edf224f41a67fd50245e6117d").innerHTML = html;
         }
         init();
     </script>
 
-                               <div id="cfccf5c9532d44038377cf95038f9547"></div>
+                               <div id="aa7f120d070d4ed5b4d3097797b78713"></div>
     <script>
         function init() {
             const myst = new MyST();
             const html = myst.renderMdast({"type": "code", "value": "In [14]: from dataclasses import dataclass\n    ...: from typing import Optional, Union, List\n    ...:\n\nNote that Author and Reviewer are isomorphic even if totally unrelated.\n\nIn [15]: @dataclass\n    ...: class Author:\n    ...:     first: Optional[str]\n    ...:     last: str\n    ...:\n    ...: @dataclass\n    ...: class Reviewer:\n    ...:     first: Optional[str]\n    ...:     last: str\n    ...:\n\nHere, items can be heterogenous, or of ambiguous type based only on its fields values.\n\nIn [16]: @dataclass\n    ...: class Book:\n    ...:     author: List[Union[Author, Reviewer]]\n    ...:     title: str\n    ...:\n\n\nIn [17]: obj = Book([Author(\"Matthias\", \"B\"), Reviewer(\"Tony\", \"Fast\")], \"pyshs\")\n    ...:\n    ...: data = serialize(obj , Book)\n    ...:\n    ...: deserialize(Book, Book, data)\n\nOut[17]: Book(author=[Author(first=\u0027Matthias\u0027, last=\u0027B\u0027), Reviewer(first=\u0027Tony\u0027, last=\u0027Fast\u0027)], title=\u0027pyshs\u0027)\n\n                      ^...................................^\n                                        .\n                                        .Note the conserved types."});
-            document.getElementById("cfccf5c9532d44038377cf95038f9547").innerHTML = html;
+            document.getElementById("aa7f120d070d4ed5b4d3097797b78713").innerHTML = html;
         }
         init();
     </script>
 
-                               <div id="f6a4bbe0e64d4bf8983204333f347c2f"></div>
+                               <div id="7bf4381501ae47a286e6ded094369920"></div>
     <script>
         function init() {
             const myst = new MyST();
             const html = myst.renderMdast({"children": [{"type": "text", "value": "Unlike other similar libraries that automatically serialise/deserialise it has the following properties:"}], "type": "paragraph"});
-            document.getElementById("f6a4bbe0e64d4bf8983204333f347c2f").innerHTML = html;
+            document.getElementById("7bf4381501ae47a286e6ded094369920").innerHTML = html;
         }
         init();
     </script>
 
-                          <ul>               <li>                               <div id="b41344c06ed6461a9e0a143443291801"></div>
+                          <ul>               <li>                               <div id="112828c0d48147f48fa2e7eefb3a30b4"></div>
     <script>
         function init() {
             const myst = new MyST();
             const html = myst.renderMdast({"children": [{"type": "text", "value": "object do not need to have a give baseclass, they need to have an __init__   or _deserialise class method that takes each parameter as kwargs."}], "type": "paragraph"});
-            document.getElementById("b41344c06ed6461a9e0a143443291801").innerHTML = html;
+            document.getElementById("112828c0d48147f48fa2e7eefb3a30b4").innerHTML = html;
         }
         init();
     </script>
 
 </li>
-               <li>                               <div id="d4c974f710cf4b688e0e0e074939e85f"></div>
+               <li>                               <div id="ed1803c7c2eb45dc9cfd731a987cc48b"></div>
     <script>
         function init() {
             const myst = new MyST();
             const html = myst.renderMdast({"children": [{"type": "text", "value": "Subclass or isomorphic classes are kept in the de-serialisation, in   particular in Union and List of Unions. That is to say it will properly   de-serialise and heterogenous list or dict, as long as those respect the   type annotation."}], "type": "paragraph"});
-            document.getElementById("d4c974f710cf4b688e0e0e074939e85f").innerHTML = html;
+            document.getElementById("ed1803c7c2eb45dc9cfd731a987cc48b").innerHTML = html;
         }
         init();
     </script>
@@ -317,34 +319,34 @@
 </li>
             </ul>
 
-                               <div id="cd76fc6c15254e76b8a28a26fb0f576d"></div>
+                               <div id="33912afb808949ada80181383f44e320"></div>
     <script>
         function init() {
             const myst = new MyST();
             const html = myst.renderMdast({"children": [{"type": "text", "value": "Both Pydantic and Jetblack-serialize would have erased the types and returned either 2 Authors or 2 Reviewers."}], "type": "paragraph"});
-            document.getElementById("cd76fc6c15254e76b8a28a26fb0f576d").innerHTML = html;
+            document.getElementById("33912afb808949ada80181383f44e320").innerHTML = html;
         }
         init();
     </script>
 
                           <ul>               <li>               <!-- deflist -->
            <dl>
-               <dt>                <div id="1585829919874f2c9e6d5936346660fa"></div>
+               <dt>                <div id="ff0aa093653a481d94a7d85eadc48624"></div>
     <script>
         function init() {
             const myst = new MyST();
             const html = myst.renderMdast({"children": [{"type": "text", "value": "it is also compatible with Rust Serde with adjacently tagged Unions (not"}], "type": "paragraph"});
-            document.getElementById("1585829919874f2c9e6d5936346660fa").innerHTML = html;
+            document.getElementById("ff0aa093653a481d94a7d85eadc48624").innerHTML = html;
         }
         init();
     </script>
 </dt>
-               <dd>                <div id="51b27defcd5241a6b96088ab92e93dbf"></div>
+               <dd>                <div id="6b44553e9a614aa596dd707287d7c0a4"></div>
     <script>
         function init() {
             const myst = new MyST();
             const html = myst.renderMdast({"children": [{"type": "text", "value": "critical but nice to have)"}], "type": "paragraph"});
-            document.getElementById("51b27defcd5241a6b96088ab92e93dbf").innerHTML = html;
+            document.getElementById("6b44553e9a614aa596dd707287d7c0a4").innerHTML = html;
         }
         init();
     </script>

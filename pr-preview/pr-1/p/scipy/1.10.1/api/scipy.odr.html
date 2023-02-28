@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.odr.html'>odr</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" >+</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.odr._add_newdocs.html">_add_newdocs</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr._models.html">_models</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr._odrpack.html">_odrpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.models.html">models</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.odrpack.html">odrpack</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<!-- rendering Extended Summary -->
+        <!-- rendering Notes -->
+        <!-- rendering Summary -->
+                                       <div id="fe66e21430c34d81a0aed5cc3ae71875"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "To remove in the future \u2013\u2013 scipy.odr"}], "type": "paragraph"});
+            document.getElementById("fe66e21430c34d81a0aed5cc3ae71875").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h1>Orthogonal distance regression (:mod:`scipy.odr`)</h1>
+               <pre class='not-implemented'>
+.. currentmodule:: scipy.odr
+    </pre>
+
+
+
+<h2>Package Content</h2>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    Data          -- The data to fit.
+    RealData      -- Data with weights as actual std. dev.s and/or covariances.
+    Model         -- Stores information about the function to be fit.
+    ODR           -- Gathers all info &amp; manages the main fitting routine.
+    Output        -- Result from the fit.
+    odr           -- Low-level function for ODR.
+
+    OdrWarning    -- Warning about potential problems when running ODR.
+    OdrError      -- Error exception.
+    OdrStop       -- Stop exception.
+
+    polynomial    -- Factory function for a general polynomial model.
+    exponential   -- Exponential model
+    multilinear   -- Arbitrary-dimensional linear model
+    unilinear     -- Univariate linear model
+    quadratic     -- Quadratic model</pre>
+
+<h2>Usage information</h2>
+
+<h3>Introduction</h3>
+                               <div id="f797c26744834024a8ff5aaf840f75a2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Why Orthogonal Distance Regression (ODR)? Sometimes one has measurement errors in the explanatory (a.k.a., \"independent\") variable(s), not just the response (a.k.a., \"dependent\") variable(s). Ordinary Least Squares (OLS) fitting procedures treat the data for explanatory variables as fixed, i.e., not subject to error of any kind. Furthermore, OLS procedures require that the response variables be an explicit function of the explanatory variables; sometimes making the equation explicit is impractical and/or introduces errors.  ODR can handle both of these cases with ease, and can even reduce to the OLS case if that is sufficient for the problem."}], "type": "paragraph"});
+            document.getElementById("f797c26744834024a8ff5aaf840f75a2").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="3f11b3247e744829acc616527b71a98d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "ODRPACK is a FORTRAN-77 library for performing ODR with possibly non-linear fitting functions. It uses a modified trust-region Levenberg-Marquardt-type algorithm  to estimate the function parameters.  The fitting functions are provided by Python functions operating on NumPy arrays. The required derivatives may be provided by Python functions as well, or may be estimated numerically. ODRPACK can do explicit or implicit ODR fits, or it can do OLS. Input and output variables may be multidimensional. Weights can be provided to account for different variances of the observations, and even covariances between dimensions of the variables."}], "type": "paragraph"});
+            document.getElementById("3f11b3247e744829acc616527b71a98d").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="37c0780824af4c10b669877077d528b8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.odr", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "scipy.odr"}, {"type": "text", "value": " package offers an object-oriented interface to ODRPACK, in addition to the low-level "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.odr", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "odr"}, {"type": "text", "value": " function."}], "type": "paragraph"});
+            document.getElementById("37c0780824af4c10b669877077d528b8").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="2400722997024f2da5581b1cb1b68fc9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Additional background information about ODRPACK can be found in the "}, {"target": "https://docs.scipy.org/doc/external/odrpack_guide.pdf", "type": "ExternalLink", "value": "ODRPACK User\u0027s Guide"}, {"type": "text", "value": ", reading which is recommended."}], "type": "paragraph"});
+            document.getElementById("2400722997024f2da5581b1cb1b68fc9").innerHTML = html;
+        }
+        init();
+    </script>
+
+
+<h3>Basic usage</h3>
+                          <ol>               <li>                               <div id="4fa3031b73f9490d81878bb194b4d226"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Define the function you want to fit against.         "}], "type": "paragraph"});
+            document.getElementById("4fa3031b73f9490d81878bb194b4d226").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="8598a9482b8d480194dd678b20c88849"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "def f(B, x):\n    \u0027\u0027\u0027Linear function y = m*x + b\u0027\u0027\u0027\n    # B is a vector of the parameters.\n    # x is an array of the current x values.\n    # x is in the same format as the x passed to Data or RealData.\n    #\n    # Return an array in the same format as y passed to Data or RealData.\n    return B[0]*x + B[1]"});
+            document.getElementById("8598a9482b8d480194dd678b20c88849").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="c72b3c7fc9c84dd6856e9b2516079e27"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Create a Model.         "}], "type": "paragraph"});
+            document.getElementById("c72b3c7fc9c84dd6856e9b2516079e27").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="7b41582bb4e64552bf71b5861bc3670d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "linear = Model(f)"});
+            document.getElementById("7b41582bb4e64552bf71b5861bc3670d").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="6907818cfd254abb93b48c23176b8bb8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Create a Data or RealData instance.         "}], "type": "paragraph"});
+            document.getElementById("6907818cfd254abb93b48c23176b8bb8").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="f395192887b840cfaca51e34ee956e1b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "mydata = Data(x, y, wd=1./power(sx,2), we=1./power(sy,2))"});
+            document.getElementById("f395192887b840cfaca51e34ee956e1b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="0220253f605c40ccaddae1833d8de98b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "or, when the actual covariances are known         "}], "type": "paragraph"});
+            document.getElementById("0220253f605c40ccaddae1833d8de98b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="c98f0ee914b24677a0f7e0489e6b9a07"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "mydata = RealData(x, y, sx=sx, sy=sy)"});
+            document.getElementById("c98f0ee914b24677a0f7e0489e6b9a07").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="06bafe654e0c4de688b0656c96053cfd"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Instantiate ODR with your data, model and initial parameter estimate.         "}], "type": "paragraph"});
+            document.getElementById("06bafe654e0c4de688b0656c96053cfd").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="5d2f6071f9464e3bb43cf4a1a3707d20"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "myodr = ODR(mydata, linear, beta0=[1., 2.])"});
+            document.getElementById("5d2f6071f9464e3bb43cf4a1a3707d20").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="688de8ac1aa74450b4d405225d67939b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Run the fit.         "}], "type": "paragraph"});
+            document.getElementById("688de8ac1aa74450b4d405225d67939b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="1d0bd79a703f43e2ad2f768c44d5b83e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "myoutput = myodr.run()"});
+            document.getElementById("1d0bd79a703f43e2ad2f768c44d5b83e").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="2cbe1b0fe5cb4ecc8941092c31e73450"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Examine output.         "}], "type": "paragraph"});
+            document.getElementById("2cbe1b0fe5cb4ecc8941092c31e73450").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="aee76fb265664371bb3f09470cf9af74"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "myoutput.pprint()"});
+            document.getElementById("aee76fb265664371bb3f09470cf9af74").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ol>
+
+
+<h3>References</h3>
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [1] P. T. Boggs and J. E. Rogers, &#34;Orthogonal Distance Regression,&#34;\n   in &#34;Statistical analysis of measurement error models and\n   applications: proceedings of the AMS-IMS-SIAM joint summer research\n   conference held June 10-16, 1989,&#34; Contemporary Mathematics,\n   vol. 112, pg. 186, 1990.&#39;&gt;
+           </pre>
+
+
+<h3 id="section-Examples">Examples</h3>
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.odr.html" class='exists'>scipy.odr</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/odr/__init__.py#L0'>/scipy/odr/__init__.py#0</a>
+<br/>
+
+type: &lt;class &#39;module&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

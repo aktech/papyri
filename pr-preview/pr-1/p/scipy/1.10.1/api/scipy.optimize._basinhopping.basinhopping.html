@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize.html'>optimize</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize._basinhopping.html'>_basinhopping</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.optimize.__nnls.html">__nnls</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._basinhopping.html">_basinhopping</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._bglu_dense.html">_bglu_dense</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._cobyla.html">_cobyla</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._cobyla_py.html">_cobyla_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._constraints.html">_constraints</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentiable_functions.html">_differentiable_functions</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentialevolution.html">_differentialevolution</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._direct.html">_direct</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._direct_py.html">_direct_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._dual_annealing.html">_dual_annealing</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._group_columns.html">_group_columns</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._hessian_update_strategy.html">_hessian_update_strategy</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._highs.html">_highs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lbfgsb.html">_lbfgsb</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lbfgsb_py.html">_lbfgsb_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linesearch.html">_linesearch</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog.html">_linprog</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_doc.html">_linprog_doc</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_highs.html">_linprog_highs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_ip.html">_linprog_ip</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_rs.html">_linprog_rs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_simplex.html">_linprog_simplex</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_util.html">_linprog_util</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lsap.html">_lsap</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lsq.html">_lsq</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._milp.html">_milp</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minimize.html">_minimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minpack.html">_minpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minpack2.html">_minpack2</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minpack_py.html">_minpack_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._moduleTNC.html">_moduleTNC</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nnls.html">_nnls</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.html">_nonlin</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._numdiff.html">_numdiff</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.html">_optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._qap.html">_qap</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._remove_redundancy.html">_remove_redundancy</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._root.html">_root</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._root_scalar.html">_root_scalar</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._shgo.html">_shgo</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._shgo_lib.html">_shgo_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._slsqp.html">_slsqp</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._slsqp_py.html">_slsqp_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._spectral.html">_spectral</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._tnc.html">_tnc</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trlib.html">_trlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion.html">_trustregion</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_constr.html">_trustregion_constr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_dogleg.html">_trustregion_dogleg</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_exact.html">_trustregion_exact</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_krylov.html">_trustregion_krylov</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_ncg.html">_trustregion_ncg</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros.html">_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros_py.html">_zeros_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.cobyla.html">cobyla</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.lbfgsb.html">lbfgsb</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.linesearch.html">linesearch</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.minpack.html">minpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.minpack2.html">minpack2</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.moduleTNC.html">moduleTNC</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.nonlin.html">nonlin</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.slsqp.html">slsqp</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.tnc.html">tnc</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.zeros.html">zeros</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize._basinhopping.basinhopping.html'>basinhopping</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.optimize._basinhopping.AdaptiveStepsize.html">AdaptiveStepsize</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._basinhopping.BasinHoppingRunner.html">BasinHoppingRunner</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._basinhopping.Metropolis.html">Metropolis</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._basinhopping.MinimizerWrapper.html">MinimizerWrapper</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._basinhopping.RandomDisplacement.html">RandomDisplacement</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._basinhopping.Storage.html">Storage</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._basinhopping.basinhopping.html">basinhopping</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>basinhopping(func, x0, niter=100, T=1.0, stepsize=0.5, minimizer_kwargs=None, take_step=None, accept_test=None, callback=None, interval=50, disp=False, niter_success=None, seed=None, *, target_accept_rate=0.5, stepwise_factor=0.9)</code><!-- rendering Extended Summary -->
+                                       <div id="efbf558e9da948b4a3c46547abdb375f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Basin-hopping is a two-phase method that combines a global stepping algorithm with local minimization at each step. Designed to mimic the natural process of energy minimization of clusters of atoms, it works well for similar problems with \"funnel-like, but rugged\" energy landscapes ."}], "type": "paragraph"});
+            document.getElementById("efbf558e9da948b4a3c46547abdb375f").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="09a59dc405e649c3852436cfaaa9476e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "As the step-taking, step acceptance, and minimization methods are all customizable, this function can also be used to implement other two-phase methods."}], "type": "paragraph"});
+            document.getElementById("09a59dc405e649c3852436cfaaa9476e").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="22862e71e7a647e88b4db9f8ee77fd69"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Basin-hopping is a stochastic algorithm which attempts to find the global minimum of a smooth scalar function of one or more variables    . The algorithm in its current form was described by David Wales and Jonathan Doye  http://www-wales.ch.cam.ac.uk/."}], "type": "paragraph"});
+            document.getElementById("22862e71e7a647e88b4db9f8ee77fd69").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="fb4cd395edba449ba6652ad2e1a1b667"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The algorithm is iterative with each cycle composed of the following features"}], "type": "paragraph"});
+            document.getElementById("fb4cd395edba449ba6652ad2e1a1b667").innerHTML = html;
+        }
+        init();
+    </script>
+
+                          <ol>               <li>                               <div id="82e5bb5d05104bba9c9498d0855f2e3c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "random perturbation of the coordinates"}], "type": "paragraph"});
+            document.getElementById("82e5bb5d05104bba9c9498d0855f2e3c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="cf549bbf5db04801868d260fa652ccd0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "local minimization"}], "type": "paragraph"});
+            document.getElementById("cf549bbf5db04801868d260fa652ccd0").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="db93b3ef179c4caab2cd42756892e916"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "accept or reject the new coordinates based on the minimized function    value"}], "type": "paragraph"});
+            document.getElementById("db93b3ef179c4caab2cd42756892e916").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ol>
+
+                               <div id="037741f623d044cc981b977a22be48ba"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The acceptance test used here is the Metropolis criterion of standard Monte Carlo algorithms, although there are many other possibilities ."}], "type": "paragraph"});
+            document.getElementById("037741f623d044cc981b977a22be48ba").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="f619f2b8081f4d4eb0086200f7d6e7aa"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This global minimization method has been shown to be extremely efficient for a wide variety of problems in physics and chemistry. It is particularly useful when the function has many minima separated by large barriers. See the "}, {"target": "https://www-wales.ch.cam.ac.uk/CCD.html", "type": "ExternalLink", "value": "Cambridge Cluster Database"}, {"type": "text", "value": " for databases of molecular systems that have been optimized primarily using basin-hopping. This database includes minimization problems exceeding 300 degrees of freedom."}], "type": "paragraph"});
+            document.getElementById("f619f2b8081f4d4eb0086200f7d6e7aa").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="5421f11c68e74843a35052694a67c5b7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "See the free software program "}, {"target": "https://www-wales.ch.cam.ac.uk/GMIN", "type": "ExternalLink", "value": "GMIN"}, {"type": "text", "value": " for a Fortran implementation of basin-hopping. This implementation has many variations of the procedure described above, including more advanced step taking algorithms and alternate acceptance criterion."}], "type": "paragraph"});
+            document.getElementById("5421f11c68e74843a35052694a67c5b7").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="8eb2d64c60b54d80a8945395d54fd4e4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For stochastic global optimization there is no way to determine if the true global minimum has actually been found. Instead, as a consistency check, the algorithm can be run from a number of different random starting points to ensure the lowest minimum found in each example has converged to the global minimum. For this reason, "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.optimize._basinhopping.basinhopping", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "basinhopping"}, {"type": "text", "value": " will by default simply run for the number of iterations "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "niter", "type": "RefInfo", "version": null}, "type": "Link", "value": "niter"}, {"type": "text", "value": " and return the lowest minimum found. It is left to the user to ensure that this is in fact the global minimum."}], "type": "paragraph"});
+            document.getElementById("8eb2d64c60b54d80a8945395d54fd4e4").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="16cec0fb102f4939800a8a3f5d72b604"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Choosing "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "stepsize", "type": "RefInfo", "version": null}, "type": "Link", "value": "stepsize"}, {"type": "text", "value": ":  This is a crucial parameter in "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.optimize._basinhopping.basinhopping", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "basinhopping"}, {"type": "text", "value": " and depends on the problem being solved. The step is chosen uniformly in the region from x0-stepsize to x0+stepsize, in each dimension. Ideally, it should be comparable to the typical separation (in argument values) between local minima of the function being optimized. "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.optimize._basinhopping.basinhopping", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "basinhopping"}, {"type": "text", "value": " will, by default, adjust "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "stepsize", "type": "RefInfo", "version": null}, "type": "Link", "value": "stepsize"}, {"type": "text", "value": " to find an optimal value, but this may take many iterations. You will get quicker results if you set a sensible initial value for "}, {"type": "inlineCode", "value": "stepsize"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("16cec0fb102f4939800a8a3f5d72b604").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="a78393b849ca4f89af41a3cde5a6d727"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Choosing "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "T", "type": "RefInfo", "version": null}, "type": "Link", "value": "T"}, {"type": "text", "value": ": The parameter "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "T", "type": "RefInfo", "version": null}, "type": "Link", "value": "T"}, {"type": "text", "value": " is the \"temperature\" used in the Metropolis criterion. Basinhopping steps are always accepted if "}, {"type": "inlineCode", "value": "func(xnew) \u003c func(xold)"}, {"type": "text", "value": ". Otherwise, they are accepted with probability      "}], "type": "paragraph"});
+            document.getElementById("a78393b849ca4f89af41a3cde5a6d727").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="278a813eb63d4835a33ef4d38e3f4579"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "exp( -(func(xnew) - func(xold)) / T )"});
+            document.getElementById("278a813eb63d4835a33ef4d38e3f4579").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="485e330ea85b403ab496b71a6de84540"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "So, for best results, "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "T", "type": "RefInfo", "version": null}, "type": "Link", "value": "T"}, {"type": "text", "value": " should to be comparable to the typical difference (in function values) between local minima. (The height of \"walls\" between local minima is irrelevant.)"}], "type": "paragraph"});
+            document.getElementById("485e330ea85b403ab496b71a6de84540").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="c48193ae08f54508913de0736f7adbf3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "T", "type": "RefInfo", "version": null}, "type": "Link", "value": "T"}, {"type": "text", "value": " is 0, the algorithm becomes Monotonic Basin-Hopping, in which all steps that increase energy are rejected."}], "type": "paragraph"});
+            document.getElementById("c48193ae08f54508913de0736f7adbf3").innerHTML = html;
+        }
+        init();
+    </script>
+
+                           <div class='admonition'>
+    <div>versionadded 0.12.0</div>
+</div>
+
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="func">func</a> : callable ``f(x, *args)``</dt>
+<dd>
+                <div id="ec0aa4c8f14e41bfae69aacc2f494214"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Function to be optimized.  "}, {"type": "inlineCode", "value": "args"}, {"type": "text", "value": " can be passed as an optional item in the dict "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "minimizer_kwargs", "type": "RefInfo", "version": null}, "type": "Link", "value": "minimizer_kwargs"}], "type": "paragraph"});
+            document.getElementById("ec0aa4c8f14e41bfae69aacc2f494214").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="x0">x0</a> : array_like</dt>
+<dd>
+                <div id="23807397d48f40d5957bb9719474631d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Initial guess."}], "type": "paragraph"});
+            document.getElementById("23807397d48f40d5957bb9719474631d").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="niter">niter</a> : integer, optional</dt>
+<dd>
+                <div id="3e1f919d7e294a34b2173d81b821e046"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The number of basin-hopping iterations. There will be a total of "}, {"type": "inlineCode", "value": "niter + 1"}, {"type": "text", "value": " runs of the local minimizer."}], "type": "paragraph"});
+            document.getElementById("3e1f919d7e294a34b2173d81b821e046").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="T">T</a> : float, optional</dt>
+<dd>
+                <div id="848700d9869542aa9ddcb40b15b503c4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The \"temperature\" parameter for the acceptance or rejection criterion. Higher \"temperatures\" mean that larger jumps in function value will be accepted.  For best results "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "T", "type": "RefInfo", "version": null}, "type": "Link", "value": "T"}, {"type": "text", "value": " should be comparable to the separation (in function value) between local minima."}], "type": "paragraph"});
+            document.getElementById("848700d9869542aa9ddcb40b15b503c4").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="stepsize">stepsize</a> : float, optional</dt>
+<dd>
+                <div id="87ef7127579e454b9116ee6110359df9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Maximum step size for use in the random displacement."}], "type": "paragraph"});
+            document.getElementById("87ef7127579e454b9116ee6110359df9").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="minimizer_kwargs">minimizer_kwargs</a> : dict, optional</dt>
+<dd>
+                <div id="6aa7068190c048719746ffed4babddf4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Extra keyword arguments to be passed to the local minimizer "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "scipy", "path": "scipy.optimize._minimize.minimize", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "scipy.optimize.minimize"}, {"type": "text", "value": " Some important options could be:"}], "type": "paragraph"});
+            document.getElementById("6aa7068190c048719746ffed4babddf4").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <blockquote><!-- deflist -->
+           <dl>
+               <dt>                <div id="41d6a1c127c44b9faf9c35526f095e70"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "method"}], "type": "paragraph"});
+            document.getElementById("41d6a1c127c44b9faf9c35526f095e70").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="2740355e6ea549c3b2a614b86fe29a6c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "method"}], "type": "paragraph"});
+            document.getElementById("2740355e6ea549c3b2a614b86fe29a6c").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="68b1dcda27274ac68c52bf4302638749"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "args"}], "type": "paragraph"});
+            document.getElementById("68b1dcda27274ac68c52bf4302638749").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="bb460a113c68400ebce2dccf5db2c390"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "args"}], "type": "paragraph"});
+            document.getElementById("bb460a113c68400ebce2dccf5db2c390").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+</blockquote>
+
+</dd>
+<dt><a id="take_step">take_step</a> : callable ``take_step(x)``, optional</dt>
+<dd>
+                <div id="8598d32100124b3b8ff66ee0a10172cf"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Replace the default step-taking routine with this routine. The default step-taking routine is a random displacement of the coordinates, but other step-taking algorithms may be better for some systems. "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "take_step", "type": "RefInfo", "version": null}, "type": "Link", "value": "take_step"}, {"type": "text", "value": " can optionally have the attribute "}, {"type": "inlineCode", "value": "take_step.stepsize"}, {"type": "text", "value": ". If this attribute exists, then "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.optimize._basinhopping.basinhopping", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "basinhopping"}, {"type": "text", "value": " will adjust "}, {"type": "inlineCode", "value": "take_step.stepsize"}, {"type": "text", "value": " in order to try to optimize the global minimum search."}], "type": "paragraph"});
+            document.getElementById("8598d32100124b3b8ff66ee0a10172cf").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="accept_test">accept_test</a> : callable, ``accept_test(f_new=f_new, x_new=x_new, f_old=fold, x_old=x_old)``, optional</dt>
+<dd>
+                <div id="1f80b08b741640148bd2dd635b67662c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Define a test which will be used to judge whether to accept the step. This will be used in addition to the Metropolis test based on \"temperature\" "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "T", "type": "RefInfo", "version": null}, "type": "Link", "value": "T"}, {"type": "text", "value": ". The acceptable return values are True, False, or "}, {"type": "inlineCode", "value": "\"force accept\""}, {"type": "text", "value": ". If any of the tests return False then the step is rejected. If the latter, then this will override any other tests in order to accept the step. This can be used, for example, to forcefully escape from a local minimum that "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.optimize._basinhopping.basinhopping", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "basinhopping"}, {"type": "text", "value": " is trapped in."}], "type": "paragraph"});
+            document.getElementById("1f80b08b741640148bd2dd635b67662c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="callback">callback</a> : callable, ``callback(x, f, accept)``, optional</dt>
+<dd>
+                <div id="613779399d3a44579daab443d7e6ab0f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A callback function which will be called for all minima found. "}, {"type": "inlineCode", "value": "x"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "f"}, {"type": "text", "value": " are the coordinates and function value of the trial minimum, and "}, {"type": "inlineCode", "value": "accept"}, {"type": "text", "value": " is whether that minimum was accepted. This can be used, for example, to save the lowest N minima found. Also, "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "callback", "type": "RefInfo", "version": null}, "type": "Link", "value": "callback"}, {"type": "text", "value": " can be used to specify a user defined stop criterion by optionally returning True to stop the "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.optimize._basinhopping.basinhopping", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "basinhopping"}, {"type": "text", "value": " routine."}], "type": "paragraph"});
+            document.getElementById("613779399d3a44579daab443d7e6ab0f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="interval">interval</a> : integer, optional</dt>
+<dd>
+                <div id="1da50d0165924f09b09f482163dc467a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "interval for how often to update the "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "stepsize", "type": "RefInfo", "version": null}, "type": "Link", "value": "stepsize"}], "type": "paragraph"});
+            document.getElementById("1da50d0165924f09b09f482163dc467a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="disp">disp</a> : bool, optional</dt>
+<dd>
+                <div id="35adba834d9e45aba1151c05a7dfba52"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Set to True to print status messages"}], "type": "paragraph"});
+            document.getElementById("35adba834d9e45aba1151c05a7dfba52").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="niter_success">niter_success</a> : integer, optional</dt>
+<dd>
+                <div id="644cc435bced4f1e945288f3746e4fa2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Stop the run if the global minimum candidate remains the same for this number of iterations."}], "type": "paragraph"});
+            document.getElementById("644cc435bced4f1e945288f3746e4fa2").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="seed">seed</a> : {None, int, `numpy.random.Generator`, `numpy.random.RandomState`}, optional</dt>
+<dd>
+                <div id="d3c91c49c3d04eae8d82e8344c27c89f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "seed", "type": "RefInfo", "version": null}, "type": "Link", "value": "seed"}, {"type": "text", "value": " is None (or "}, {"domain": null, "role": null, "type": "Directive", "value": "np.random"}, {"type": "text", "value": "), the "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "numpy", "path": "numpy.random.mtrand.RandomState", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "numpy.random.RandomState"}, {"type": "text", "value": " singleton is used. If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "seed", "type": "RefInfo", "version": null}, "type": "Link", "value": "seed"}, {"type": "text", "value": " is an int, a new "}, {"type": "inlineCode", "value": "RandomState"}, {"type": "text", "value": " instance is used, seeded with "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "seed", "type": "RefInfo", "version": null}, "type": "Link", "value": "seed"}, {"type": "text", "value": ". If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "seed", "type": "RefInfo", "version": null}, "type": "Link", "value": "seed"}, {"type": "text", "value": " is already a "}, {"type": "inlineCode", "value": "Generator"}, {"type": "text", "value": " or "}, {"type": "inlineCode", "value": "RandomState"}, {"type": "text", "value": " instance then that instance is used. Specify "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "seed", "type": "RefInfo", "version": null}, "type": "Link", "value": "seed"}, {"type": "text", "value": " for repeatable minimizations. The random numbers generated with this seed only affect the default Metropolis "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "accept_test", "type": "RefInfo", "version": null}, "type": "Link", "value": "accept_test"}, {"type": "text", "value": " and the default "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "take_step", "type": "RefInfo", "version": null}, "type": "Link", "value": "take_step"}, {"type": "text", "value": ". If you supply your own "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "take_step", "type": "RefInfo", "version": null}, "type": "Link", "value": "take_step"}, {"type": "text", "value": " and "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "accept_test", "type": "RefInfo", "version": null}, "type": "Link", "value": "accept_test"}, {"type": "text", "value": ", and these functions use random number generation, then those functions are responsible for the state of their random number generator."}], "type": "paragraph"});
+            document.getElementById("d3c91c49c3d04eae8d82e8344c27c89f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="target_accept_rate">target_accept_rate</a> : float, optional</dt>
+<dd>
+                <div id="94b6f2e3b1a34c02bcfdf4abcbd09449"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The target acceptance rate that is used to adjust the "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "stepsize", "type": "RefInfo", "version": null}, "type": "Link", "value": "stepsize"}, {"type": "text", "value": ". If the current acceptance rate is greater than the target, then the "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "stepsize", "type": "RefInfo", "version": null}, "type": "Link", "value": "stepsize"}, {"type": "text", "value": " is increased. Otherwise, it is decreased. Range is (0, 1). Default is 0.5."}], "type": "paragraph"});
+            document.getElementById("94b6f2e3b1a34c02bcfdf4abcbd09449").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <div class='admonition'>
+    <div>versionadded 1.8.0</div>
+</div>
+
+
+</dd>
+<dt><a id="stepwise_factor">stepwise_factor</a> : float, optional</dt>
+<dd>
+                <div id="3e34adf9044144448a6a74126eed263b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "stepsize", "type": "RefInfo", "version": null}, "type": "Link", "value": "stepsize"}, {"type": "text", "value": " is multiplied or divided by this stepwise factor upon each update. Range is (0, 1). Default is 0.9."}], "type": "paragraph"});
+            document.getElementById("3e34adf9044144448a6a74126eed263b").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <div class='admonition'>
+    <div>versionadded 1.8.0</div>
+</div>
+
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="res">res</a> : OptimizeResult</dt>
+<dd>
+                <div id="7932abac4e004035aa6b7d8a1a0ca86e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The optimization result represented as a "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.optimize._optimize.OptimizeResult", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "OptimizeResult"}, {"type": "text", "value": " object. Important attributes are: "}, {"type": "inlineCode", "value": "x"}, {"type": "text", "value": " the solution array, "}, {"type": "inlineCode", "value": "fun"}, {"type": "text", "value": " the value of the function at the solution, and "}, {"type": "inlineCode", "value": "message"}, {"type": "text", "value": " which describes the cause of the termination. The "}, {"type": "inlineCode", "value": "OptimizeResult"}, {"type": "text", "value": " object returned by the selected minimizer at the lowest minimum is also contained within this object and can be accessed through the "}, {"type": "inlineCode", "value": "lowest_optimization_result"}, {"type": "text", "value": " attribute.  See "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.optimize._optimize.OptimizeResult", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "OptimizeResult"}, {"type": "text", "value": " for a description of other attributes."}], "type": "paragraph"});
+            document.getElementById("7932abac4e004035aa6b7d8a1a0ca86e").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="c942ba66b8b74c7099c90a076b07ada1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Find the global minimum of a function using the basin-hopping algorithm."}], "type": "paragraph"});
+            document.getElementById("c942ba66b8b74c7099c90a076b07ada1").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/current-module/current-version/to-resolve/minimize.html.html" class='exists'>minimize</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="9de28320ddd24288bc3939a8cbab5766"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "The local minimization function called once for each basinhopping step. "});
+            document.getElementById("9de28320ddd24288bc3939a8cbab5766").innerHTML = html;
+        }
+        init();
+    </script><code class='not-implemented'>:None:None:`minimizer_kwargs`</code>             <div id="1c981784eada4dc08b5f28b8a0fdaa72"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": " is passed to this routine."});
+            document.getElementById("1c981784eada4dc08b5f28b8a0fdaa72").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+                           The following example is a 1-D minimization problem, with many
+local minima superimposed on a parabola.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">optimize</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">basinhopping</span><br><span class='nsl'>...&nbsp;</span><span class="">func</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="k">lambda</span><span class=""> </span><span class="">x</span><span class="">:</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">cos</span><span class="">(</span><span class="mf">14.5</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">x</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="mf">0.3</span><span class="">)</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="">(</span><span class="">x</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="mf">0.2</span><span class="">)</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">x</span><br><span class='nsl'>...&nbsp;</span><span class="">x0</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">[</span><span class="mf">1.</span><span class="">]</span>
+</pre>
+            
+                           Basinhopping, internally, uses a local minimization algorithm. We will use
+the parameter `minimizer_kwargs` to tell basinhopping which algorithm to
+use and how to set up that minimizer. This parameter will be passed to
+`scipy.optimize.minimize`.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">minimizer_kwargs</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">{</span><span class="s2">&#34;</span><span class="s2">method</span><span class="s2">&#34;</span><span class="">:</span><span class=""> </span><span class="s2">&#34;</span><span class="s2">BFGS</span><span class="s2">&#34;</span><span class="">}</span><br><span class='nsl'>...&nbsp;</span><span class="">ret</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">basinhopping</span><span class="">(</span><span class="">func</span><span class="">,</span><span class=""> </span><span class="">x0</span><span class="">,</span><span class=""> </span><span class="">minimizer_kwargs</span><span class="o">=</span><span class="">minimizer_kwargs</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                   </span><span class="">niter</span><span class="o">=</span><span class="mi">200</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="nb">print</span><span class="">(</span><span class="s2">&#34;</span><span class="s2">global minimum: x = </span><span class="si">%.4f</span><span class="s2">, f(x) = </span><span class="si">%.4f</span><span class="s2">&#34;</span><span class=""> </span><span class="o">%</span><span class=""> </span><span class="">(</span><span class="">ret</span><span class="o">.</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">ret</span><span class="o">.</span><span class="">fun</span><span class="">)</span><span class="">)</span>
+global minimum: x = -0.1951, f(x) = -1.0009</pre>
+            
+                           Next consider a 2-D minimization problem. Also, this time, we
+will use gradient information to significantly speed up the search.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="k">def</span><span class=""> </span><span class="nf">func2d</span><span class="">(</span><span class="">x</span><span class="">)</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="">f</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">cos</span><span class="">(</span><span class="mf">14.5</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">x</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="mf">0.3</span><span class="">)</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="">(</span><span class="">x</span><span class="">[</span><span class="mi">1</span><span class="">]</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="mf">0.2</span><span class="">)</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">x</span><span class="">[</span><span class="mi">1</span><span class="">]</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="">(</span><span class="">x</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class=""> </span><span class="o">+</span><br><span class='nsl'>...&nbsp;</span><span class="">                                                           </span><span class="mf">0.2</span><span class="">)</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">x</span><span class="">[</span><span class="mi">0</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="">df</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">zeros</span><span class="">(</span><span class="mi">2</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="">df</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="o">-</span><span class="mf">14.5</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">sin</span><span class="">(</span><span class="mf">14.5</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">x</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="mf">0.3</span><span class="">)</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="mf">2.</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">x</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="mf">0.2</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="">df</span><span class="">[</span><span class="mi">1</span><span class="">]</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="mf">2.</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">x</span><span class="">[</span><span class="mi">1</span><span class="">]</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="mf">0.2</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="k">return</span><span class=""> </span><span class="">f</span><span class="">,</span><span class=""> </span><span class="">df</span>
+</pre>
+            
+                           We&#39;ll also use a different local minimization algorithm. Also, we must tell
+the minimizer that our function returns both energy and gradient (Jacobian).  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">minimizer_kwargs</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">{</span><span class="s2">&#34;</span><span class="s2">method</span><span class="s2">&#34;</span><span class="">:</span><span class="s2">&#34;</span><span class="s2">L-BFGS-B</span><span class="s2">&#34;</span><span class="">,</span><span class=""> </span><span class="s2">&#34;</span><span class="s2">jac</span><span class="s2">&#34;</span><span class="">:</span><span class="kc">True</span><span class="">}</span><br><span class='nsl'>...&nbsp;</span><span class="">x0</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">[</span><span class="mf">1.0</span><span class="">,</span><span class=""> </span><span class="mf">1.0</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">ret</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">basinhopping</span><span class="">(</span><span class="">func2d</span><span class="">,</span><span class=""> </span><span class="">x0</span><span class="">,</span><span class=""> </span><span class="">minimizer_kwargs</span><span class="o">=</span><span class="">minimizer_kwargs</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                   </span><span class="">niter</span><span class="o">=</span><span class="mi">200</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="nb">print</span><span class="">(</span><span class="s2">&#34;</span><span class="s2">global minimum: x = [</span><span class="si">%.4f</span><span class="s2">, </span><span class="si">%.4f</span><span class="s2">], f(x) = </span><span class="si">%.4f</span><span class="s2">&#34;</span><span class=""> </span><span class="o">%</span><span class=""> </span><span class="">(</span><span class="">ret</span><span class="o">.</span><span class="">x</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                                                          </span><span class="">ret</span><span class="o">.</span><span class="">x</span><span class="">[</span><span class="mi">1</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                                                          </span><span class="">ret</span><span class="o">.</span><span class="">fun</span><span class="">)</span><span class="">)</span>
+global minimum: x = [-0.1951, -0.1000], f(x) = -1.0109</pre>
+            
+                           Here is an example using a custom step-taking routine. Imagine you want
+the first coordinate to take larger steps than the rest of the coordinates.
+This can be implemented like so:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="k">class</span><span class=""> </span><span class="nc">MyTakeStep</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">   </span><span class="k">def</span><span class=""> </span><span class="fm">__init__</span><span class="">(</span><span class="bp">self</span><span class="">,</span><span class=""> </span><span class="">stepsize</span><span class="o">=</span><span class="mf">0.5</span><span class="">)</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">       </span><span class="bp">self</span><span class="o">.</span><span class="">stepsize</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">stepsize</span><br><span class='nsl'>...&nbsp;</span><span class="">       </span><span class="bp">self</span><span class="o">.</span><span class="">rng</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">random</span><span class="o">.</span><span class="">default_rng</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">   </span><span class="k">def</span><span class=""> </span><span class="fm">__call__</span><span class="">(</span><span class="bp">self</span><span class="">,</span><span class=""> </span><span class="">x</span><span class="">)</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">       </span><span class="">s</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="bp">self</span><span class="o">.</span><span class="">stepsize</span><br><span class='nsl'>...&nbsp;</span><span class="">       </span><span class="">x</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class=""> </span><span class="o">+</span><span class="o">=</span><span class=""> </span><span class="bp">self</span><span class="o">.</span><span class="">rng</span><span class="o">.</span><span class="">uniform</span><span class="">(</span><span class="o">-</span><span class="mf">2.</span><span class="o">*</span><span class="">s</span><span class="">,</span><span class=""> </span><span class="mf">2.</span><span class="o">*</span><span class="">s</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">       </span><span class="">x</span><span class="">[</span><span class="mi">1</span><span class="">:</span><span class="">]</span><span class=""> </span><span class="o">+</span><span class="o">=</span><span class=""> </span><span class="bp">self</span><span class="o">.</span><span class="">rng</span><span class="o">.</span><span class="">uniform</span><span class="">(</span><span class="o">-</span><span class="">s</span><span class="">,</span><span class=""> </span><span class="">s</span><span class="">,</span><span class=""> </span><span class="">x</span><span class="">[</span><span class="mi">1</span><span class="">:</span><span class="">]</span><span class="o">.</span><span class="">shape</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">       </span><span class="k">return</span><span class=""> </span><span class="">x</span>
+</pre>
+            
+                           Since ``MyTakeStep.stepsize`` exists basinhopping will adjust the magnitude
+of `stepsize` to optimize the search. We&#39;ll use the same 2-D function as
+before  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">mytakestep</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">MyTakeStep</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ret</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">basinhopping</span><span class="">(</span><span class="">func2d</span><span class="">,</span><span class=""> </span><span class="">x0</span><span class="">,</span><span class=""> </span><span class="">minimizer_kwargs</span><span class="o">=</span><span class="">minimizer_kwargs</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                   </span><span class="">niter</span><span class="o">=</span><span class="mi">200</span><span class="">,</span><span class=""> </span><span class="">take_step</span><span class="o">=</span><span class="">mytakestep</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="nb">print</span><span class="">(</span><span class="s2">&#34;</span><span class="s2">global minimum: x = [</span><span class="si">%.4f</span><span class="s2">, </span><span class="si">%.4f</span><span class="s2">], f(x) = </span><span class="si">%.4f</span><span class="s2">&#34;</span><span class=""> </span><span class="o">%</span><span class=""> </span><span class="">(</span><span class="">ret</span><span class="o">.</span><span class="">x</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                                                          </span><span class="">ret</span><span class="o">.</span><span class="">x</span><span class="">[</span><span class="mi">1</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                                                          </span><span class="">ret</span><span class="o">.</span><span class="">fun</span><span class="">)</span><span class="">)</span>
+global minimum: x = [-0.1951, -0.1000], f(x) = -1.0109</pre>
+            
+                           Now, let&#39;s do an example using a custom callback function which prints the
+value of every minimum found  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="k">def</span><span class=""> </span><span class="nf">print_fun</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">f</span><span class="">,</span><span class=""> </span><span class="">accepted</span><span class="">)</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">        </span><span class="nb">print</span><span class="">(</span><span class="s2">&#34;</span><span class="s2">at minimum </span><span class="si">%.4f</span><span class="s2"> accepted </span><span class="si">%d</span><span class="s2">&#34;</span><span class=""> </span><span class="o">%</span><span class=""> </span><span class="">(</span><span class="">f</span><span class="">,</span><span class=""> </span><span class="nb">int</span><span class="">(</span><span class="">accepted</span><span class="">)</span><span class="">)</span><span class="">)</span>
+</pre>
+            
+                           We&#39;ll run it for only 10 basinhopping steps this time.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">rng</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">random</span><span class="o">.</span><span class="">default_rng</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ret</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">basinhopping</span><span class="">(</span><span class="">func2d</span><span class="">,</span><span class=""> </span><span class="">x0</span><span class="">,</span><span class=""> </span><span class="">minimizer_kwargs</span><span class="o">=</span><span class="">minimizer_kwargs</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                   </span><span class="">niter</span><span class="o">=</span><span class="mi">10</span><span class="">,</span><span class=""> </span><span class="">callback</span><span class="o">=</span><span class="">print_fun</span><span class="">,</span><span class=""> </span><span class="">seed</span><span class="o">=</span><span class="">rng</span><span class="">)</span>
+at minimum 0.4159 accepted 1
+at minimum -0.4317 accepted 1
+at minimum -1.0109 accepted 1
+at minimum -0.9073 accepted 1
+at minimum -0.4317 accepted 0
+at minimum -0.1021 accepted 1
+at minimum -0.7425 accepted 1
+at minimum -0.9073 accepted 1
+at minimum -0.4317 accepted 0
+at minimum -0.7425 accepted 1
+at minimum -0.9073 accepted 1</pre>
+            
+                           The minimum at -1.0109 is actually the global minimum, found already on the
+8th iteration.  
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.optimize._optimize.brute.html" class='exists'>scipy.optimize._optimize.brute</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.optimize._minimize.minimize.html" class='exists'>scipy.optimize._minimize.minimize</a></code>
+        <code><a link href="/p/papyri/0.0.8/api/papyri.html" class='exists'>papyri</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.optimize._basinhopping.basinhopping.html" class='exists'>scipy.optimize._basinhopping.basinhopping</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/optimize/_basinhopping.py#L350'>/scipy/optimize/_basinhopping.py#350</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 2, "val": 8.0, "label": "papyri", "mod": "papyri", "url": "/p/papyri/0.0.8/api/papyri"}, {"id": 3, "val": 14.782329983125269, "label": "numpy.random.mtrand.RandomState", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.random.mtrand.RandomState"}, {"id": 4, "val": 9.0, "label": "scipy.optimize._optimize.brute", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.optimize._optimize.brute"}, {"id": 5, "val": 11.16227766016838, "label": "minimize", "mod": "minimize", "url": "/p/current-module/current-version/to-resolve/minimize"}, {"id": 6, "val": 12.242640687119284, "label": "scipy.optimize._optimize.OptimizeResult", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.optimize._optimize.OptimizeResult"}, {"id": 7, "val": 11.0, "label": "scipy.optimize._minimize.minimize", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.optimize._minimize.minimize"}], "links": [{"source": 7, "target": 2, "id": 6}, {"source": 6, "target": 7, "id": 25}, {"source": 6, "target": 4, "id": 26}, {"source": 7, "target": 2, "id": 47}]};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

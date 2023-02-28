@@ -1,0 +1,1903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize.html'>optimize</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize._highs.html'>_highs</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.optimize.__nnls.html">__nnls</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._basinhopping.html">_basinhopping</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._bglu_dense.html">_bglu_dense</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._cobyla.html">_cobyla</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._cobyla_py.html">_cobyla_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._constraints.html">_constraints</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentiable_functions.html">_differentiable_functions</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentialevolution.html">_differentialevolution</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._direct.html">_direct</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._direct_py.html">_direct_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._dual_annealing.html">_dual_annealing</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._group_columns.html">_group_columns</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._hessian_update_strategy.html">_hessian_update_strategy</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._highs.html">_highs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lbfgsb.html">_lbfgsb</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lbfgsb_py.html">_lbfgsb_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linesearch.html">_linesearch</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog.html">_linprog</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_doc.html">_linprog_doc</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_highs.html">_linprog_highs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_ip.html">_linprog_ip</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_rs.html">_linprog_rs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_simplex.html">_linprog_simplex</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_util.html">_linprog_util</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lsap.html">_lsap</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lsq.html">_lsq</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._milp.html">_milp</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minimize.html">_minimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minpack.html">_minpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minpack2.html">_minpack2</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minpack_py.html">_minpack_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._moduleTNC.html">_moduleTNC</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nnls.html">_nnls</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.html">_nonlin</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._numdiff.html">_numdiff</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.html">_optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._qap.html">_qap</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._remove_redundancy.html">_remove_redundancy</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._root.html">_root</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._root_scalar.html">_root_scalar</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._shgo.html">_shgo</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._shgo_lib.html">_shgo_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._slsqp.html">_slsqp</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._slsqp_py.html">_slsqp_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._spectral.html">_spectral</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._tnc.html">_tnc</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trlib.html">_trlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion.html">_trustregion</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_constr.html">_trustregion_constr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_dogleg.html">_trustregion_dogleg</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_exact.html">_trustregion_exact</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_krylov.html">_trustregion_krylov</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_ncg.html">_trustregion_ncg</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros.html">_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros_py.html">_zeros_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.cobyla.html">cobyla</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.lbfgsb.html">lbfgsb</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.linesearch.html">linesearch</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.minpack.html">minpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.minpack2.html">minpack2</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.moduleTNC.html">moduleTNC</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.nonlin.html">nonlin</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.slsqp.html">slsqp</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.tnc.html">tnc</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.zeros.html">zeros</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize._highs.cython.html'>cython</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.optimize._highs._highs_constants.html">_highs_constants</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._highs._highs_wrapper.html">_highs_wrapper</a>
+<a href="/p/?/?/?/scipy.optimize._highs.cython.html.html">cython</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize._highs.cython.src.html'>src</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.optimize._highs.cython.src.html.html">src</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize._highs.cython.src._highs_wrapper.html'>_highs_wrapper</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.optimize._highs.cython.src._highs_wrapper._highs_wrapper.html">_highs_wrapper</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a>    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<!-- rendering Extended Summary -->
+                                       <div id="d6d570ebe7be4159b4010f733b4d17bc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Assume problems of the form:"}], "type": "paragraph"});
+            document.getElementById("d6d570ebe7be4159b4010f733b4d17bc").innerHTML = html;
+        }
+        init();
+    </script>
+
+                           <blockquote>                <div id="5da22d846d5d4db28ec76d0ce37ae321"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "MIN c.T @ x     s.t. lhs \u003c= A @ x \u003c= rhs          lb \u003c= x \u003c= ub"}], "type": "paragraph"});
+            document.getElementById("5da22d846d5d4db28ec76d0ce37ae321").innerHTML = html;
+        }
+        init();
+    </script>
+</blockquote>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="5138ee909fc04467835bc24296645c38"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"type": "inlineCode", "value": "options[\u0027write_solution_to_file\u0027]"}, {"type": "text", "value": " is "}, {"type": "inlineCode", "value": "True"}, {"type": "text", "value": " but "}, {"type": "inlineCode", "value": "options[\u0027solution_file\u0027]"}, {"type": "text", "value": " is unset or "}, {"type": "inlineCode", "value": "\u0027\u0027"}, {"type": "text", "value": ", then the solution will be printed to "}, {"type": "inlineCode", "value": "stdout"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("5138ee909fc04467835bc24296645c38").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="fa7cb61c5a854b54945a0e04e121e728"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If any iteration limit is reached, no solution will be available."}], "type": "paragraph"});
+            document.getElementById("fa7cb61c5a854b54945a0e04e121e728").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="c69d6dc0590747e3bb92ce14a16ea419"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "OptimizeWarning"}, {"type": "text", "value": " will be raised if any option value set by the user is found to be incorrect."}], "type": "paragraph"});
+            document.getElementById("c69d6dc0590747e3bb92ce14a16ea419").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="c">c</a> : 1-D array, (n,)</dt>
+<dd>
+                <div id="0c0ed84c0f7d4d4d9ed5b2a3409446cb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Array of objective value coefficients."}], "type": "paragraph"});
+            document.getElementById("0c0ed84c0f7d4d4d9ed5b2a3409446cb").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="astart">astart</a> : 1-D array</dt>
+<dd>
+                <div id="3e2e30c460054451bed5666109c36df1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "CSC format index array."}], "type": "paragraph"});
+            document.getElementById("3e2e30c460054451bed5666109c36df1").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="aindex">aindex</a> : 1-D array</dt>
+<dd>
+                <div id="1b9de3e2c97d4521bd46294e8eddf3d0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "CSC format index array."}], "type": "paragraph"});
+            document.getElementById("1b9de3e2c97d4521bd46294e8eddf3d0").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="avalue">avalue</a> : 1-D array</dt>
+<dd>
+                <div id="eb4197cf72644324a2b195cc7c058bd1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Data array of the matrix."}], "type": "paragraph"});
+            document.getElementById("eb4197cf72644324a2b195cc7c058bd1").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="lhs">lhs</a> : 1-D array (or None), (m,)</dt>
+<dd>
+                <div id="3d5c6d1d92ee42c2a6c0f88aa29d079e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Array of left hand side values of the inequality constraints. If "}, {"type": "inlineCode", "value": "lhs=None"}, {"type": "text", "value": ", then an array of "}, {"type": "inlineCode", "value": "-inf"}, {"type": "text", "value": " is assumed."}], "type": "paragraph"});
+            document.getElementById("3d5c6d1d92ee42c2a6c0f88aa29d079e").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="rhs">rhs</a> : 1-D array, (m,)</dt>
+<dd>
+                <div id="bb898bf1363e4174a777ff1cd7bc9253"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Array of right hand side values of the inequality constraints."}], "type": "paragraph"});
+            document.getElementById("bb898bf1363e4174a777ff1cd7bc9253").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="lb">lb</a> : 1-D array (or None), (n,)</dt>
+<dd>
+                <div id="7e7d2d716f52470d91bbf255c80af929"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Lower bounds on solution variables x.  If "}, {"type": "inlineCode", "value": "lb=None"}, {"type": "text", "value": ", then an array of all "}, {"domain": null, "role": null, "type": "Directive", "value": "0"}, {"type": "text", "value": " is assumed."}], "type": "paragraph"});
+            document.getElementById("7e7d2d716f52470d91bbf255c80af929").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="ub">ub</a> : 1-D array (or None), (n,)</dt>
+<dd>
+                <div id="e62a448cddaf45b78bbf3dbf27c9e32d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Upper bounds on solution variables x.  If "}, {"type": "inlineCode", "value": "ub=None"}, {"type": "text", "value": ", then an array of "}, {"type": "inlineCode", "value": "inf"}, {"type": "text", "value": " is assumed."}], "type": "paragraph"});
+            document.getElementById("e62a448cddaf45b78bbf3dbf27c9e32d").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="options">options</a> : dict</dt>
+<dd>
+                <div id="a3397f2bdcf34842b03ed033f4913fbc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A dictionary of solver options with the following fields:"}], "type": "paragraph"});
+            document.getElementById("a3397f2bdcf34842b03ed033f4913fbc").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <blockquote>           <ul>               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="0cc6451dce53462c9b4de9bcd74eb462"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "allowed_simplex_cost_scale_factor"}], "type": "paragraph"});
+            document.getElementById("0cc6451dce53462c9b4de9bcd74eb462").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="70e33420cb9f43ca988885293424daff"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "allowed_simplex_cost_scale_factor"}], "type": "paragraph"});
+            document.getElementById("70e33420cb9f43ca988885293424daff").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="dcdfd7e32af642fcbc9954c5cd959b45"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "allowed_simplex_matrix_scale_factor"}], "type": "paragraph"});
+            document.getElementById("dcdfd7e32af642fcbc9954c5cd959b45").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="6e2050d2eddf4636a38378c59e7ee66e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "allowed_simplex_matrix_scale_factor"}], "type": "paragraph"});
+            document.getElementById("6e2050d2eddf4636a38378c59e7ee66e").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="77c035bea2394a2eac425fb051cccd11"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "dual_feasibility_tolerance"}], "type": "paragraph"});
+            document.getElementById("77c035bea2394a2eac425fb051cccd11").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="c502758428b049879c2e8deaeea00f99"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "dual_feasibility_tolerance"}], "type": "paragraph"});
+            document.getElementById("c502758428b049879c2e8deaeea00f99").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="701b0275709e4bc4a786983d50cef6f9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "dual_objective_value_upper_bound"}], "type": "paragraph"});
+            document.getElementById("701b0275709e4bc4a786983d50cef6f9").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="28eeab26a8c64cdab8450153f6585230"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "dual_objective_value_upper_bound"}], "type": "paragraph"});
+            document.getElementById("28eeab26a8c64cdab8450153f6585230").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="ee22445197b8489ba478fdff99a19f68"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "dual_simplex_cleanup_strategy"}], "type": "paragraph"});
+            document.getElementById("ee22445197b8489ba478fdff99a19f68").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="d8b05fc780c8470ba3f63093da3ef831"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "dual_simplex_cleanup_strategy"}], "type": "paragraph"});
+            document.getElementById("d8b05fc780c8470ba3f63093da3ef831").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="62a12632bda8429399901b7617013dda"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "dual_simplex_cost_perturbation_multiplier"}], "type": "paragraph"});
+            document.getElementById("62a12632bda8429399901b7617013dda").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="26430296a1b74ccba3bea2d904a1465a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "dual_simplex_cost_perturbation_multiplier"}], "type": "paragraph"});
+            document.getElementById("26430296a1b74ccba3bea2d904a1465a").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="0b743932bd394cebbf74f438907d919a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "dual_steepest_edge_weight_log_error_threshhold"}], "type": "paragraph"});
+            document.getElementById("0b743932bd394cebbf74f438907d919a").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="41e8f281e33b41f0814c59f15b8d9ab6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "dual_steepest_edge_weight_log_error_threshhold"}], "type": "paragraph"});
+            document.getElementById("41e8f281e33b41f0814c59f15b8d9ab6").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="1f4236a0809b4442a8f13877ecfd5f39"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "infinite_bound"}], "type": "paragraph"});
+            document.getElementById("1f4236a0809b4442a8f13877ecfd5f39").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="f8e4e463fd644433bebe69b63ff1cc4f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "infinite_bound"}], "type": "paragraph"});
+            document.getElementById("f8e4e463fd644433bebe69b63ff1cc4f").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="5ff46cf784ce499b8ee5f448d053e6d3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "infinite_cost"}], "type": "paragraph"});
+            document.getElementById("5ff46cf784ce499b8ee5f448d053e6d3").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="b077d35be7da43f58334539502006e89"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "infinite_cost"}], "type": "paragraph"});
+            document.getElementById("b077d35be7da43f58334539502006e89").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="b9e5446a1fbb4aa0b8bb8343487af4a0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "ipm_iteration_limit"}], "type": "paragraph"});
+            document.getElementById("b9e5446a1fbb4aa0b8bb8343487af4a0").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="9787783231864c82a6687f4a6cd9a516"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "ipm_iteration_limit"}], "type": "paragraph"});
+            document.getElementById("9787783231864c82a6687f4a6cd9a516").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="8f23aac3d5c24c6ba48bc8970395eb7c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "ipm_optimality_tolerance"}], "type": "paragraph"});
+            document.getElementById("8f23aac3d5c24c6ba48bc8970395eb7c").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="b6c69bc28bb0421abe560fae0e9dc3d7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "ipm_optimality_tolerance"}], "type": "paragraph"});
+            document.getElementById("b6c69bc28bb0421abe560fae0e9dc3d7").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="c5e98a177141477e9b6026fdac4366a5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "keep_n_rows"}], "type": "paragraph"});
+            document.getElementById("c5e98a177141477e9b6026fdac4366a5").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="0272f2e77abb436b9314d6c625fbae4b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "keep_n_rows"}], "type": "paragraph"});
+            document.getElementById("0272f2e77abb436b9314d6c625fbae4b").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="72ec0f58164e4232976ac20010eef9fe"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "large_matrix_value"}], "type": "paragraph"});
+            document.getElementById("72ec0f58164e4232976ac20010eef9fe").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="a600aab08f0a44f2b7b1ec3825f8b9da"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "large_matrix_value"}], "type": "paragraph"});
+            document.getElementById("a600aab08f0a44f2b7b1ec3825f8b9da").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="0f76a8f6d9bb40fb9001b9e45ec05d43"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "less_infeasible_DSE_check"}], "type": "paragraph"});
+            document.getElementById("0f76a8f6d9bb40fb9001b9e45ec05d43").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="cdf102f0143f4711a79fc6e464bd2adc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "less_infeasible_DSE_check"}], "type": "paragraph"});
+            document.getElementById("cdf102f0143f4711a79fc6e464bd2adc").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="27b73ff44d1442f0ae538cfbff2aa9d1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "less_infeasible_DSE_choose_row"}], "type": "paragraph"});
+            document.getElementById("27b73ff44d1442f0ae538cfbff2aa9d1").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="af06309a6c354887b69ab08db9bdd50e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "less_infeasible_DSE_choose_row"}], "type": "paragraph"});
+            document.getElementById("af06309a6c354887b69ab08db9bdd50e").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="99f170b0a73a400b961a005b164ee29d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "max_threads"}], "type": "paragraph"});
+            document.getElementById("99f170b0a73a400b961a005b164ee29d").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="12c6076992724aeaab7e2d4d2efcc68b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "max_threads"}], "type": "paragraph"});
+            document.getElementById("12c6076992724aeaab7e2d4d2efcc68b").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="d1c771fc9acc470bbd9f746d6c97b83d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "message_level"}], "type": "paragraph"});
+            document.getElementById("d1c771fc9acc470bbd9f746d6c97b83d").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="7baa2a97af1e40a1a673a29082bbbe87"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "message_level"}], "type": "paragraph"});
+            document.getElementById("7baa2a97af1e40a1a673a29082bbbe87").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="7532ac586dba4250a9f62243bfea2510"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "min_threads"}], "type": "paragraph"});
+            document.getElementById("7532ac586dba4250a9f62243bfea2510").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="27b851390e4b4562948ef99abdf05f17"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "min_threads"}], "type": "paragraph"});
+            document.getElementById("27b851390e4b4562948ef99abdf05f17").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="c1ded79b1cd74062915dbe1e8e0c6a90"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "mps_parser_type_free"}], "type": "paragraph"});
+            document.getElementById("c1ded79b1cd74062915dbe1e8e0c6a90").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="0404e605d970497ab594e4d87f303d28"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "mps_parser_type_free"}], "type": "paragraph"});
+            document.getElementById("0404e605d970497ab594e4d87f303d28").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="1510356d30b74df6a8858f6425a0e33c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "parallel"}], "type": "paragraph"});
+            document.getElementById("1510356d30b74df6a8858f6425a0e33c").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="3135795770ed41258d61e954abc611d7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "parallel"}], "type": "paragraph"});
+            document.getElementById("3135795770ed41258d61e954abc611d7").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="099fe658c22947b3a710d9a8180f3044"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "presolve"}], "type": "paragraph"});
+            document.getElementById("099fe658c22947b3a710d9a8180f3044").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="c9cceaf111b54dd8ac1a18b0f882f3cd"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "presolve"}], "type": "paragraph"});
+            document.getElementById("c9cceaf111b54dd8ac1a18b0f882f3cd").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="1e10fc587d4b4a3cb2426a49582b8b1b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "primal_feasibility_tolerance"}], "type": "paragraph"});
+            document.getElementById("1e10fc587d4b4a3cb2426a49582b8b1b").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="ba3a07c5ba874eb78256c8be3b57146f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "primal_feasibility_tolerance"}], "type": "paragraph"});
+            document.getElementById("ba3a07c5ba874eb78256c8be3b57146f").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="5b3fae2ff1fc45e0b75347efb725cff9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "run_as_hsol"}], "type": "paragraph"});
+            document.getElementById("5b3fae2ff1fc45e0b75347efb725cff9").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="563d8754b2f2443aada007e6205167c9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "run_as_hsol"}], "type": "paragraph"});
+            document.getElementById("563d8754b2f2443aada007e6205167c9").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="71918e38f05f4e468c361f3f2dc0d326"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "run_crossover"}], "type": "paragraph"});
+            document.getElementById("71918e38f05f4e468c361f3f2dc0d326").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="52a08462db32443191789bd694234158"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "run_crossover"}], "type": "paragraph"});
+            document.getElementById("52a08462db32443191789bd694234158").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="7eef34daf79048e4a0e558de86d09d35"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "sense"}], "type": "paragraph"});
+            document.getElementById("7eef34daf79048e4a0e558de86d09d35").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="b427b0503cf246678025e53296c2c9b5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "sense"}], "type": "paragraph"});
+            document.getElementById("b427b0503cf246678025e53296c2c9b5").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="65384e82f80345d18a24480489197ade"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "simplex_crash_strategy"}], "type": "paragraph"});
+            document.getElementById("65384e82f80345d18a24480489197ade").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="d87114af42db494b942ad92e016c3bf7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "simplex_crash_strategy"}], "type": "paragraph"});
+            document.getElementById("d87114af42db494b942ad92e016c3bf7").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="4579c67d920f4acca694387f21833a9c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "simplex_dualise_strategy"}], "type": "paragraph"});
+            document.getElementById("4579c67d920f4acca694387f21833a9c").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="31b8a1c4e5994493b27065635ecece6a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "simplex_dualise_strategy"}], "type": "paragraph"});
+            document.getElementById("31b8a1c4e5994493b27065635ecece6a").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="7b42c7d9ff4d45a7b49070f28d372eae"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "simplex_dual_edge_weight_strategy"}], "type": "paragraph"});
+            document.getElementById("7b42c7d9ff4d45a7b49070f28d372eae").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="a280caaeae7c46f99e8f537c693bb2c3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "simplex_dual_edge_weight_strategy"}], "type": "paragraph"});
+            document.getElementById("a280caaeae7c46f99e8f537c693bb2c3").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="95ddb0995b8b4169b7614563fb383f02"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "simplex_initial_condition_check"}], "type": "paragraph"});
+            document.getElementById("95ddb0995b8b4169b7614563fb383f02").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="63e4469ce1b141ecb3389918f1a94b23"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "simplex_initial_condition_check"}], "type": "paragraph"});
+            document.getElementById("63e4469ce1b141ecb3389918f1a94b23").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="ef5c585fe84746418fd323b08668b841"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "simplex_initial_condition_tolerance"}], "type": "paragraph"});
+            document.getElementById("ef5c585fe84746418fd323b08668b841").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="981a124edc8b42798589f7b01dde7046"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "simplex_initial_condition_tolerance"}], "type": "paragraph"});
+            document.getElementById("981a124edc8b42798589f7b01dde7046").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="d86c1f2e50bb42c6867f54d0220ccbc9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "simplex_iteration_limit"}], "type": "paragraph"});
+            document.getElementById("d86c1f2e50bb42c6867f54d0220ccbc9").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="a7260f95aecb47a08d2bd572cdbf6e66"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "simplex_iteration_limit"}], "type": "paragraph"});
+            document.getElementById("a7260f95aecb47a08d2bd572cdbf6e66").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="6f83f84f524d420f811fdbd52edf6f3d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "simplex_permute_strategy"}], "type": "paragraph"});
+            document.getElementById("6f83f84f524d420f811fdbd52edf6f3d").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="6119eb5300a74771a0ca0bca9d2e40f4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "simplex_permute_strategy"}], "type": "paragraph"});
+            document.getElementById("6119eb5300a74771a0ca0bca9d2e40f4").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="24b7df180f8042ddbb313d4c50fc4592"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "simplex_price_strategy"}], "type": "paragraph"});
+            document.getElementById("24b7df180f8042ddbb313d4c50fc4592").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="d9539d4fb69749638b37253d4fcd658d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "simplex_price_strategy"}], "type": "paragraph"});
+            document.getElementById("d9539d4fb69749638b37253d4fcd658d").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="499692f2f4ca4065ab6fa65aea7ca4b4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "simplex_primal_edge_weight_strategy"}], "type": "paragraph"});
+            document.getElementById("499692f2f4ca4065ab6fa65aea7ca4b4").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="896ab5717e094dd093f2c0109883d556"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "simplex_primal_edge_weight_strategy"}], "type": "paragraph"});
+            document.getElementById("896ab5717e094dd093f2c0109883d556").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="3237ec0d456f41368afff8ca38ff50a6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "simplex_scale_strategy"}], "type": "paragraph"});
+            document.getElementById("3237ec0d456f41368afff8ca38ff50a6").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="712fa53596d742ee8c75afaa73d2d729"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "simplex_scale_strategy"}], "type": "paragraph"});
+            document.getElementById("712fa53596d742ee8c75afaa73d2d729").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="e3cd6717108b4487b5dda8ba7beee2af"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "simplex_strategy"}], "type": "paragraph"});
+            document.getElementById("e3cd6717108b4487b5dda8ba7beee2af").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="8faf8ecad87d487ebe8cda2d5cce1a2d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "simplex_strategy"}], "type": "paragraph"});
+            document.getElementById("8faf8ecad87d487ebe8cda2d5cce1a2d").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="7f5f024869bc47808714a0be8193bdf9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "simplex_update_limit"}], "type": "paragraph"});
+            document.getElementById("7f5f024869bc47808714a0be8193bdf9").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="e1354db326ea411aada9e94561c1f53d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "simplex_update_limit"}], "type": "paragraph"});
+            document.getElementById("e1354db326ea411aada9e94561c1f53d").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="81305d869fab447aaa0760dc3b03cce6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "small_matrix_value"}], "type": "paragraph"});
+            document.getElementById("81305d869fab447aaa0760dc3b03cce6").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="01093679c0964f19baefa9895fcd53e1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "small_matrix_value"}], "type": "paragraph"});
+            document.getElementById("01093679c0964f19baefa9895fcd53e1").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="72dc60aad88e4e7cb1057f9fb3e401c0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "solution_file"}], "type": "paragraph"});
+            document.getElementById("72dc60aad88e4e7cb1057f9fb3e401c0").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="56eec6006cb94d4ba4ac0727869e1df5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "solution_file"}], "type": "paragraph"});
+            document.getElementById("56eec6006cb94d4ba4ac0727869e1df5").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="5e05344ee81d4019855be3ea70aca2a5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "solver"}], "type": "paragraph"});
+            document.getElementById("5e05344ee81d4019855be3ea70aca2a5").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="d9546b1101314791a8c1e5e8c70b9a9c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "solver"}], "type": "paragraph"});
+            document.getElementById("d9546b1101314791a8c1e5e8c70b9a9c").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="223f2f4676554737a605fd291a091053"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "start_crossover_tolerance"}], "type": "paragraph"});
+            document.getElementById("223f2f4676554737a605fd291a091053").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="befe5fb4a2f64d3aacd2298ea7c0259a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "start_crossover_tolerance"}], "type": "paragraph"});
+            document.getElementById("befe5fb4a2f64d3aacd2298ea7c0259a").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="ac4e376600784a2ba9ef86f3e99786a1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "time_limit"}], "type": "paragraph"});
+            document.getElementById("ac4e376600784a2ba9ef86f3e99786a1").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="a01ef218323d4c6c9aaa7ca1807b141b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "time_limit"}], "type": "paragraph"});
+            document.getElementById("a01ef218323d4c6c9aaa7ca1807b141b").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="c529f2d1b7404363926eb5ca448a7a7e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "use_original_HFactor_logic"}], "type": "paragraph"});
+            document.getElementById("c529f2d1b7404363926eb5ca448a7a7e").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="464b1c427b084f6782129fb2db99e264"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "use_original_HFactor_logic"}], "type": "paragraph"});
+            document.getElementById("464b1c427b084f6782129fb2db99e264").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="86bad2c3c0dd4e179e8aa54099728076"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "write_solution_to_file"}], "type": "paragraph"});
+            document.getElementById("86bad2c3c0dd4e179e8aa54099728076").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="ca8b91154f4449eca4b35823213ed135"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "write_solution_to_file"}], "type": "paragraph"});
+            document.getElementById("ca8b91154f4449eca4b35823213ed135").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="b9bf72605b8c43a0b39b9b15bdf0084e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "write_solution_pretty"}], "type": "paragraph"});
+            document.getElementById("b9bf72605b8c43a0b39b9b15bdf0084e").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="582329e1a6c348b5bf34b28dd18d5b2f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "write_solution_pretty"}], "type": "paragraph"});
+            document.getElementById("582329e1a6c348b5bf34b28dd18d5b2f").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+            </ul>
+</blockquote>
+
+                <div id="f7b57e328cd8452cb00e644a091cc6ca"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "See  for a list of all non-advanced options."}], "type": "paragraph"});
+            document.getElementById("f7b57e328cd8452cb00e644a091cc6ca").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="res">res</a> : dict</dt>
+<dd>
+                <div id="1af1a78c2cc3467ca319393dba90a0ed"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If model_status is one of OPTIMAL, REACHED_DUAL_OBJECTIVE_VALUE_UPPER_BOUND, REACHED_TIME_LIMIT, REACHED_ITERATION_LIMIT:"}], "type": "paragraph"});
+            document.getElementById("1af1a78c2cc3467ca319393dba90a0ed").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <blockquote>           <ul>               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="eabc771d5f8c4813ba487d8d06e0fcf0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "status"}], "type": "paragraph"});
+            document.getElementById("eabc771d5f8c4813ba487d8d06e0fcf0").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="8e13cade1e964b3cb2ff7f0b54ad6249"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "status"}], "type": "paragraph"});
+            document.getElementById("8e13cade1e964b3cb2ff7f0b54ad6249").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="ff210f56b1444b68a4934ceb37f2784f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "message"}], "type": "paragraph"});
+            document.getElementById("ff210f56b1444b68a4934ceb37f2784f").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="55f4d5a61d264884baca8c4a3499bd9f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "message"}], "type": "paragraph"});
+            document.getElementById("55f4d5a61d264884baca8c4a3499bd9f").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="c005f7e320494f8e84869ed4e8e95ced"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "x"}], "type": "paragraph"});
+            document.getElementById("c005f7e320494f8e84869ed4e8e95ced").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="c8532cb9b47b493487ed1d3d3d93d50c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "x"}], "type": "paragraph"});
+            document.getElementById("c8532cb9b47b493487ed1d3d3d93d50c").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="01ccaa3ee4d9452fb65a3c1d7ce1f627"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "slack"}], "type": "paragraph"});
+            document.getElementById("01ccaa3ee4d9452fb65a3c1d7ce1f627").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="9e85f8cda8ee49889968d66ffe5fa243"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "slack"}], "type": "paragraph"});
+            document.getElementById("9e85f8cda8ee49889968d66ffe5fa243").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="e39ccf24edff4fd09a5e5b8cba2a4ff2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "lambda"}], "type": "paragraph"});
+            document.getElementById("e39ccf24edff4fd09a5e5b8cba2a4ff2").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="63232e95cc444162a752500dfbb441fe"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "lambda"}], "type": "paragraph"});
+            document.getElementById("63232e95cc444162a752500dfbb441fe").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="87cde40a363b4ac5abd7525594cb8eef"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "s"}], "type": "paragraph"});
+            document.getElementById("87cde40a363b4ac5abd7525594cb8eef").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="6278f1f9674c40c3aebe439ada104495"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "s"}], "type": "paragraph"});
+            document.getElementById("6278f1f9674c40c3aebe439ada104495").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="d41afca32d954e0681913a08254920f2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "fun"}], "type": "paragraph"});
+            document.getElementById("d41afca32d954e0681913a08254920f2").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="6701bce90c3f4320bd1c0452aa21a15f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Final objective value."}], "type": "paragraph"});
+            document.getElementById("6701bce90c3f4320bd1c0452aa21a15f").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="2bdaf54236454e6cb336af735327ac51"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "simplex_nit"}], "type": "paragraph"});
+            document.getElementById("2bdaf54236454e6cb336af735327ac51").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="9d03e8fd08d446f3985a5dde5135317d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "simplex_nit"}], "type": "paragraph"});
+            document.getElementById("9d03e8fd08d446f3985a5dde5135317d").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="f45db36ffb274999b1cef6fa458596f7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "ipm_nit"}], "type": "paragraph"});
+            document.getElementById("f45db36ffb274999b1cef6fa458596f7").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="31afb74c0a474f578479825c31bfda62"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "ipm_nit"}], "type": "paragraph"});
+            document.getElementById("31afb74c0a474f578479825c31bfda62").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+            </ul>
+</blockquote>
+
+                <div id="df27964bf6ce42cb891e3d0fe6d598f1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If model_status is not one of the above:"}], "type": "paragraph"});
+            document.getElementById("df27964bf6ce42cb891e3d0fe6d598f1").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <blockquote>           <ul>               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="c719a451b7ae4dc9a9a7097b4a488a81"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "status"}], "type": "paragraph"});
+            document.getElementById("c719a451b7ae4dc9a9a7097b4a488a81").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="2c8bd285a39b4b4ab12906b3c0a03323"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "status"}], "type": "paragraph"});
+            document.getElementById("2c8bd285a39b4b4ab12906b3c0a03323").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="f467f86c9ae74428ad90382b0514a3ca"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "message"}], "type": "paragraph"});
+            document.getElementById("f467f86c9ae74428ad90382b0514a3ca").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="735ccba0a3914de3956ca6dd37fd103d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "message"}], "type": "paragraph"});
+            document.getElementById("735ccba0a3914de3956ca6dd37fd103d").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+            </ul>
+</blockquote>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="4317eef0311544618c9d3f451cb62ac6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Solve linear programs using HiGHS ."}], "type": "paragraph"});
+            document.getElementById("4317eef0311544618c9d3f451cb62ac6").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0/None#LNone'>None#None</a>
+<br/>
+
+type: &lt;class &#39;builtin_function_or_method&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

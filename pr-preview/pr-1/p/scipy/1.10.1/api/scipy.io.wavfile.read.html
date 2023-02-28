@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.io.html'>io</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.io.wavfile.html'>wavfile</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.io._fortran.html">_fortran</a>
+<a href="/p/scipy/1.10.1/api/scipy.io._harwell_boeing.html">_harwell_boeing</a>
+<a href="/p/scipy/1.10.1/api/scipy.io._idl.html">_idl</a>
+<a href="/p/scipy/1.10.1/api/scipy.io._mmio.html">_mmio</a>
+<a href="/p/scipy/1.10.1/api/scipy.io._netcdf.html">_netcdf</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.arff.html">arff</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.harwell_boeing.html">harwell_boeing</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.idl.html">idl</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.matlab.html">matlab</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.mmio.html">mmio</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.netcdf.html">netcdf</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.wavfile.html">wavfile</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.io.wavfile.read.html'>read</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.io.wavfile.WAVE_FORMAT.html">WAVE_FORMAT</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.wavfile.WavFileWarning.html">WavFileWarning</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.wavfile._array_tofile.html">_array_tofile</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.wavfile._handle_pad_byte.html">_handle_pad_byte</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.wavfile._raise_bad_format.html">_raise_bad_format</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.wavfile._read_data_chunk.html">_read_data_chunk</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.wavfile._read_fmt_chunk.html">_read_fmt_chunk</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.wavfile._read_riff_chunk.html">_read_riff_chunk</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.wavfile._skip_unknown_chunk.html">_skip_unknown_chunk</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.wavfile.read.html">read</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.wavfile.write.html">write</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a>    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>read(filename, mmap=False)</code><!-- rendering Extended Summary -->
+                                       <div id="0a2bcda03c0a4276a485a300c8a055f1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Return the sample rate (in samples/sec) and data from an LPCM WAV file."}], "type": "paragraph"});
+            document.getElementById("0a2bcda03c0a4276a485a300c8a055f1").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="c57de69cb09b4199ba24270ffb92743b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Common data types:"}], "type": "paragraph"});
+            document.getElementById("c57de69cb09b4199ba24270ffb92743b").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="filename">filename</a> : string or open file handle</dt>
+<dd>
+                <div id="b70651c5bc1647b4a8eb258e4434c174"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Input WAV file."}], "type": "paragraph"});
+            document.getElementById("b70651c5bc1647b4a8eb258e4434c174").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="mmap">mmap</a> : bool, optional</dt>
+<dd>
+                <div id="38ffdb8062af4e18a1892dc2d8d7f5fd"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Whether to read data as memory-mapped (default: False).  Not compatible with some bit depths; see Notes.  Only to be used on real files."}], "type": "paragraph"});
+            document.getElementById("38ffdb8062af4e18a1892dc2d8d7f5fd").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <div class='admonition'>
+    <div>versionadded 0.12.0</div>
+</div>
+
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="rate">rate</a> : int</dt>
+<dd>
+                <div id="f391a8bd9c23437ab135f5cf3ee980d7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Sample rate of WAV file."}], "type": "paragraph"});
+            document.getElementById("f391a8bd9c23437ab135f5cf3ee980d7").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="data">data</a> : numpy array</dt>
+<dd>
+                <div id="f160eaa3abaf4148b035b0a0eb16b57a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Data read from WAV file. Data-type is determined from the file; see Notes.  Data is 1-D for 1-channel WAV, or 2-D of shape (Nsamples, Nchannels) otherwise. If a file-like input without a C-like file descriptor (e.g., "}, {"type": "Verbatim", "value": ["python:io.BytesIO"]}, {"type": "text", "value": ") is passed, this will not be writeable."}], "type": "paragraph"});
+            document.getElementById("f160eaa3abaf4148b035b0a0eb16b57a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="10d80244454142d398f576c1872ddceb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Open a WAV file."}], "type": "paragraph"});
+            document.getElementById("10d80244454142d398f576c1872ddceb").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">from</span><span class=""> </span><span class="nn">os</span><span class="nn">.</span><span class="nn">path</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">dirname</span><span class="">,</span><span class=""> </span><span class="">join</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="">pjoin</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">io</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">wavfile</span><br><span class='nsl'>...&nbsp;</span><span class="kn">import</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">io</span>
+</pre>
+            
+                           Get the filename for an example .wav file from the tests/data directory.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">data_dir</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">pjoin</span><span class="">(</span><span class="">dirname</span><span class="">(</span><span class="">scipy</span><span class="o">.</span><span class="">io</span><span class="o">.</span><span class="vm">__file__</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">tests</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">data</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">wav_fname</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">pjoin</span><span class="">(</span><span class="">data_dir</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">test-44100Hz-2ch-32bit-float-be.wav</span><span class="s1">&#39;</span><span class="">)</span>
+</pre>
+            
+                           Load the .wav file contents.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">samplerate</span><span class="">,</span><span class=""> </span><span class="">data</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">wavfile</span><span class="o">.</span><span class="">read</span><span class="">(</span><span class="">wav_fname</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="nb">print</span><span class="">(</span><span class="sa">f</span><span class="s2">&#34;</span><span class="s2">number of channels = </span><span class="si">{</span><span class="">data</span><span class="o">.</span><span class="">shape</span><span class="">[</span><span class="mi">1</span><span class="">]</span><span class="si">}</span><span class="s2">&#34;</span><span class="">)</span>
+number of channels = 2</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">length</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">data</span><span class="o">.</span><span class="">shape</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class=""> </span><span class="o">/</span><span class=""> </span><span class="">samplerate</span><br><span class='nsl'>...&nbsp;</span><span class="nb">print</span><span class="">(</span><span class="sa">f</span><span class="s2">&#34;</span><span class="s2">length = </span><span class="si">{</span><span class="">length</span><span class="si">}</span><span class="s2">s</span><span class="s2">&#34;</span><span class="">)</span>
+length = 0.01s</pre>
+            
+                           Plot the waveform.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">matplotlib</span><span class="nn">.</span><span class="nn">pyplot</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">plt</span><br><span class='nsl'>...&nbsp;</span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="">time</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">linspace</span><span class="">(</span><span class="mf">0.</span><span class="">,</span><span class=""> </span><span class="">length</span><span class="">,</span><span class=""> </span><span class="">data</span><span class="o">.</span><span class="">shape</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">time</span><span class="">,</span><span class=""> </span><span class="">data</span><span class="">[</span><span class="">:</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">label</span><span class="o">=</span><span class="s2">&#34;</span><span class="s2">Left channel</span><span class="s2">&#34;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">time</span><span class="">,</span><span class=""> </span><span class="">data</span><span class="">[</span><span class="">:</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">label</span><span class="o">=</span><span class="s2">&#34;</span><span class="s2">Right channel</span><span class="s2">&#34;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">legend</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">xlabel</span><span class="">(</span><span class="s2">&#34;</span><span class="s2">Time [s]</span><span class="s2">&#34;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">ylabel</span><span class="">(</span><span class="s2">&#34;</span><span class="s2">Amplitude</span><span class="s2">&#34;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">show</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/io/wavfile.py#L541'>/scipy/io/wavfile.py#541</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

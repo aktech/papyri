@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.signal.html'>signal</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.signal._savitzky_golay.html'>_savitzky_golay</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.signal._arraytools.html">_arraytools</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._bsplines.html">_bsplines</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._czt.html">_czt</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._filter_design.html">_filter_design</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._fir_filter_design.html">_fir_filter_design</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._lti_conversion.html">_lti_conversion</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.html">_ltisys</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._max_len_seq.html">_max_len_seq</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._max_len_seq_inner.html">_max_len_seq_inner</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._peak_finding.html">_peak_finding</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._peak_finding_utils.html">_peak_finding_utils</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._savitzky_golay.html">_savitzky_golay</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.html">_signaltools</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._sigtools.html">_sigtools</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._sosfilt.html">_sosfilt</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spectral.html">_spectral</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spectral_py.html">_spectral_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spline.html">_spline</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._upfirdn.html">_upfirdn</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._upfirdn_apply.html">_upfirdn_apply</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._waveforms.html">_waveforms</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._wavelets.html">_wavelets</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.barthann.html">barthann</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.bartlett.html">bartlett</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.blackman.html">blackman</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.blackmanharris.html">blackmanharris</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.bohman.html">bohman</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.boxcar.html">boxcar</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.bsplines.html">bsplines</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.chebwin.html">chebwin</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.cosine.html">cosine</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.exponential.html">exponential</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.filter_design.html">filter_design</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.fir_filter_design.html">fir_filter_design</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.flattop.html">flattop</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.gaussian.html">gaussian</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.general_gaussian.html">general_gaussian</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.hamming.html">hamming</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.hann.html">hann</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.kaiser.html">kaiser</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.lti_conversion.html">lti_conversion</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.ltisys.html">ltisys</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.nuttall.html">nuttall</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.parzen.html">parzen</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.signaltools.html">signaltools</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.spectral.html">spectral</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.spline.html">spline</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.triang.html">triang</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.tukey.html">tukey</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.waveforms.html">waveforms</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.wavelets.html">wavelets</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.windows.html">windows</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.signal._savitzky_golay.savgol_filter.html'>savgol_filter</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.signal._savitzky_golay._fit_edge.html">_fit_edge</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._savitzky_golay._fit_edges_polyfit.html">_fit_edges_polyfit</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._savitzky_golay._polyder.html">_polyder</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._savitzky_golay.savgol_coeffs.html">savgol_coeffs</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._savitzky_golay.savgol_filter.html">savgol_filter</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>savgol_filter(x, window_length, polyorder, deriv=0, delta=1.0, axis=-1, mode=&#39;interp&#39;, cval=0.0)</code><!-- rendering Extended Summary -->
+                                       <div id="c27288b5a360469885cbaad0029772aa"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This is a 1-D filter. If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": "  has dimension greater than 1, "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "axis", "type": "RefInfo", "version": null}, "type": "Link", "value": "axis"}, {"type": "text", "value": " determines the axis along which the filter is applied."}], "type": "paragraph"});
+            document.getElementById("c27288b5a360469885cbaad0029772aa").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="43d78f677ff947e681171d0b978f42bf"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Details on the "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "mode", "type": "RefInfo", "version": null}, "type": "Link", "value": "mode"}, {"type": "text", "value": " options:"}], "type": "paragraph"});
+            document.getElementById("43d78f677ff947e681171d0b978f42bf").innerHTML = html;
+        }
+        init();
+    </script>
+
+                           <blockquote><!-- deflist -->
+           <dl>
+               <dt>                <div id="c82d465319f44c89a0f74566f862651e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027mirror\u0027:"}], "type": "paragraph"});
+            document.getElementById("c82d465319f44c89a0f74566f862651e").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="4e00467a264e43559d94e0d651a3ec3c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Repeats the values at the edges in reverse order. The value         closest to the edge is not included."}], "type": "paragraph"});
+            document.getElementById("4e00467a264e43559d94e0d651a3ec3c").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="404b205894744b3f842ac22bf4b0b069"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027nearest\u0027:"}], "type": "paragraph"});
+            document.getElementById("404b205894744b3f842ac22bf4b0b069").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="e667bbd4060147ee825864312e020cd5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The extension contains the nearest input value."}], "type": "paragraph"});
+            document.getElementById("e667bbd4060147ee825864312e020cd5").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="c958946aff624d7d8b716e11e46b6964"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027constant\u0027:"}], "type": "paragraph"});
+            document.getElementById("c958946aff624d7d8b716e11e46b6964").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="3e24690aa1c34c549b9abedcceed9b39"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The extension contains the value given by the "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "cval", "type": "RefInfo", "version": null}, "type": "Link", "value": "cval"}, {"type": "text", "value": " argument."}], "type": "paragraph"});
+            document.getElementById("3e24690aa1c34c549b9abedcceed9b39").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="7d398af895a3494086da3b643675360f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027wrap\u0027:"}], "type": "paragraph"});
+            document.getElementById("7d398af895a3494086da3b643675360f").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="61c55f1ab5d24c78bcee19e8079960f0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The extension contains the values from the other end of the array."}], "type": "paragraph"});
+            document.getElementById("61c55f1ab5d24c78bcee19e8079960f0").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+</blockquote>
+
+                               <div id="0f27c50d09574ac1bff91e93fa870eb4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For example, if the input is [1, 2, 3, 4, 5, 6, 7, 8], and "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "window_length", "type": "RefInfo", "version": null}, "type": "Link", "value": "window_length"}, {"type": "text", "value": " is 7, the following shows the extended data for the various "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "mode", "type": "RefInfo", "version": null}, "type": "Link", "value": "mode"}, {"type": "text", "value": " options (assuming "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "cval", "type": "RefInfo", "version": null}, "type": "Link", "value": "cval"}, {"type": "text", "value": " is 0)      "}], "type": "paragraph"});
+            document.getElementById("0f27c50d09574ac1bff91e93fa870eb4").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="1ad84695bf8d434c9680b590c0dba83d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "mode       |   Ext   |         Input          |   Ext\n-----------+---------+------------------------+---------\n\u0027mirror\u0027   | 4  3  2 | 1  2  3  4  5  6  7  8 | 7  6  5\n\u0027nearest\u0027  | 1  1  1 | 1  2  3  4  5  6  7  8 | 8  8  8\n\u0027constant\u0027 | 0  0  0 | 1  2  3  4  5  6  7  8 | 0  0  0\n\u0027wrap\u0027     | 6  7  8 | 1  2  3  4  5  6  7  8 | 1  2  3"});
+            document.getElementById("1ad84695bf8d434c9680b590c0dba83d").innerHTML = html;
+        }
+        init();
+    </script>
+
+                           <div class='admonition'>
+    <div>versionadded 0.14.0</div>
+</div>
+
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="x">x</a> : array_like</dt>
+<dd>
+                <div id="1e75db1f745a4956aa44d172ffb664f6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The data to be filtered. If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": " is not a single or double precision floating point array, it will be converted to type "}, {"type": "inlineCode", "value": "numpy.float64"}, {"type": "text", "value": " before filtering."}], "type": "paragraph"});
+            document.getElementById("1e75db1f745a4956aa44d172ffb664f6").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="window_length">window_length</a> : int</dt>
+<dd>
+                <div id="f6a5b61f6f874f979bddb28ae8dd3e89"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The length of the filter window (i.e., the number of coefficients). If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "mode", "type": "RefInfo", "version": null}, "type": "Link", "value": "mode"}, {"type": "text", "value": " is \u0027interp\u0027, "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "window_length", "type": "RefInfo", "version": null}, "type": "Link", "value": "window_length"}, {"type": "text", "value": " must be less than or equal to the size of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("f6a5b61f6f874f979bddb28ae8dd3e89").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="polyorder">polyorder</a> : int</dt>
+<dd>
+                <div id="910777d603974c65aa8e0894e7f6377d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The order of the polynomial used to fit the samples. "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "polyorder", "type": "RefInfo", "version": null}, "type": "Link", "value": "polyorder"}, {"type": "text", "value": " must be less than "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "window_length", "type": "RefInfo", "version": null}, "type": "Link", "value": "window_length"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("910777d603974c65aa8e0894e7f6377d").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="deriv">deriv</a> : int, optional</dt>
+<dd>
+                <div id="529ea7d9cb1a4eff806a615935fece12"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The order of the derivative to compute. This must be a nonnegative integer. The default is 0, which means to filter the data without differentiating."}], "type": "paragraph"});
+            document.getElementById("529ea7d9cb1a4eff806a615935fece12").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="delta">delta</a> : float, optional</dt>
+<dd>
+                <div id="b1b61744fd0146d7b498bf4c6ed0c3d5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The spacing of the samples to which the filter will be applied. This is only used if deriv \u003e 0. Default is 1.0."}], "type": "paragraph"});
+            document.getElementById("b1b61744fd0146d7b498bf4c6ed0c3d5").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="axis">axis</a> : int, optional</dt>
+<dd>
+                <div id="c639ab23a1a4435d854a76192df3ec99"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The axis of the array "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": " along which the filter is to be applied. Default is -1."}], "type": "paragraph"});
+            document.getElementById("c639ab23a1a4435d854a76192df3ec99").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="mode">mode</a> : str, optional</dt>
+<dd>
+                <div id="7cea3433ebc0463c88aa7c2e6032fd4e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Must be \u0027mirror\u0027, \u0027constant\u0027, \u0027nearest\u0027, \u0027wrap\u0027 or \u0027interp\u0027. This determines the type of extension to use for the padded signal to which the filter is applied.  When "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "mode", "type": "RefInfo", "version": null}, "type": "Link", "value": "mode"}, {"type": "text", "value": " is \u0027constant\u0027, the padding value is given by "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "cval", "type": "RefInfo", "version": null}, "type": "Link", "value": "cval"}, {"type": "text", "value": ".  See the Notes for more details on \u0027mirror\u0027, \u0027constant\u0027, \u0027wrap\u0027, and \u0027nearest\u0027. When the \u0027interp\u0027 mode is selected (the default), no extension is used.  Instead, a degree "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "polyorder", "type": "RefInfo", "version": null}, "type": "Link", "value": "polyorder"}, {"type": "text", "value": " polynomial is fit to the last "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "window_length", "type": "RefInfo", "version": null}, "type": "Link", "value": "window_length"}, {"type": "text", "value": " values of the edges, and this polynomial is used to evaluate the last "}, {"domain": null, "role": null, "type": "Directive", "value": "window_length // 2"}, {"type": "text", "value": " output values."}], "type": "paragraph"});
+            document.getElementById("7cea3433ebc0463c88aa7c2e6032fd4e").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="cval">cval</a> : scalar, optional</dt>
+<dd>
+                <div id="e3836139133e4a75a5683aebbf16e542"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Value to fill past the edges of the input if "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "mode", "type": "RefInfo", "version": null}, "type": "Link", "value": "mode"}, {"type": "text", "value": " is \u0027constant\u0027. Default is 0.0."}], "type": "paragraph"});
+            document.getElementById("e3836139133e4a75a5683aebbf16e542").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="y">y</a> : ndarray, same shape as `x`</dt>
+<dd>
+                <div id="c6a39e6a0cef4d789e2b093765b1966b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The filtered data."}], "type": "paragraph"});
+            document.getElementById("c6a39e6a0cef4d789e2b093765b1966b").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="e9edd222a11a4c6c8373512ac1550385"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Apply a Savitzky-Golay filter to an array."}], "type": "paragraph"});
+            document.getElementById("e9edd222a11a4c6c8373512ac1550385").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.signal._savitzky_golay.savgol_coeffs.html" class='exists'>savgol_coeffs</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">signal</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">savgol_filter</span><br><span class='nsl'>...&nbsp;</span><span class="">np</span><span class="o">.</span><span class="">set_printoptions</span><span class="">(</span><span class="">precision</span><span class="o">=</span><span class="mi">2</span><span class="">)</span><span class="">  </span><span class="c1"># For compact display.</span><br><span class='nsl'>...&nbsp;</span><span class="">x</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">5</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">,</span><span class=""> </span><span class="mi">9</span><span class="">]</span><span class="">)</span>
+</pre>
+            
+                           Filter with a window length of 5 and a degree 2 polynomial.  Use
+the defaults for all other parameters.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">savgol_filter</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="mi">5</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">)</span>
+array([1.66, 3.17, 3.54, 2.86, 0.66, 0.17, 1.  , 4.  , 9.  ])</pre>
+            
+                           Note that the last five values in x are samples of a parabola, so
+when mode=&#39;interp&#39; (the default) is used with polyorder=2, the last
+three values are unchanged. Compare that to, for example,
+`mode=&#39;nearest&#39;`:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">savgol_filter</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="mi">5</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="">mode</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">nearest</span><span class="s1">&#39;</span><span class="">)</span>
+array([1.74, 3.03, 3.54, 2.86, 0.66, 0.17, 1.  , 4.6 , 7.97])</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.signal._signaltools.filtfilt.html" class='exists'>scipy.signal._signaltools.filtfilt</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.signal._signaltools.lfilter.html" class='exists'>scipy.signal._signaltools.lfilter</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.signal._savitzky_golay.savgol_coeffs.html" class='exists'>scipy.signal._savitzky_golay.savgol_coeffs</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/signal/_savitzky_golay.py#L230'>/scipy/signal/_savitzky_golay.py#230</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 10.23606797749979, "label": "scipy.signal._signaltools.filtfilt", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._signaltools.filtfilt"}, {"id": 2, "val": 9.0, "label": "scipy.signal._savitzky_golay.savgol_coeffs", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._savitzky_golay.savgol_coeffs"}, {"id": 3, "val": 10.23606797749979, "label": "scipy.signal._signaltools.lfilter", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._signaltools.lfilter"}], "links": [{"source": 1, "target": 3, "id": 4}, {"source": 3, "target": 1, "id": 7}]};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

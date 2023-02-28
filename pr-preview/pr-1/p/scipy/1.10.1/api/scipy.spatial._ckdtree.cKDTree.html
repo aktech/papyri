@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.spatial.html'>spatial</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.spatial._ckdtree.html'>_ckdtree</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.spatial._ckdtree.html">_ckdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._distance_pybind.html">_distance_pybind</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._distance_wrap.html">_distance_wrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._geometric_slerp.html">_geometric_slerp</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._hausdorff.html">_hausdorff</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.html">_kdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._plotutils.html">_plotutils</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._procrustes.html">_procrustes</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.html">_qhull</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._spherical_voronoi.html">_spherical_voronoi</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._voronoi.html">_voronoi</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.ckdtree.html">ckdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.html">distance</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.kdtree.html">kdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.qhull.html">qhull</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.transform.html">transform</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.spatial._ckdtree.cKDTree.html'>cKDTree</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.spatial._ckdtree.__pyx_unpickle_cKDTreeNode.html">__pyx_unpickle_cKDTreeNode</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._ckdtree.cKDTree.html">cKDTree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._ckdtree.cKDTreeNode.html">cKDTreeNode</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._ckdtree.coo_entries.html">coo_entries</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._ckdtree.ordered_pairs.html">ordered_pairs</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Attributes">Attributes</a><a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a>    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>cKDTree(data, leafsize=16, compact_nodes=True, copy_data=False, balanced_tree=True, boxsize=None)</code><h3 id="section-Attributes">Attributes</h3>
+<dl>
+<dt><a id="data">data</a> : ndarray, shape (n,m)</dt>
+<dd>
+                <div id="b1acbca3518a4395a0214d1e4b535f81"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The n data points of dimension m to be indexed. This array is not copied unless this is necessary to produce a contiguous array of doubles. The data are also copied if the kd-tree is built with "}, {"domain": null, "role": null, "type": "Directive", "value": "copy_data=True"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("b1acbca3518a4395a0214d1e4b535f81").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="leafsize">leafsize</a> : positive int</dt>
+<dd>
+                <div id="d5280dcad6f742d6bc4efa664992ed67"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The number of points at which the algorithm switches over to brute-force."}], "type": "paragraph"});
+            document.getElementById("d5280dcad6f742d6bc4efa664992ed67").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="m">m</a> : int</dt>
+<dd>
+                <div id="edadb53cba0d4cb3b53c80500fccb36b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The dimension of a single data-point."}], "type": "paragraph"});
+            document.getElementById("edadb53cba0d4cb3b53c80500fccb36b").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="n">n</a> : int</dt>
+<dd>
+                <div id="69190b09be7647e3b936c0fefd6c977c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The number of data points."}], "type": "paragraph"});
+            document.getElementById("69190b09be7647e3b936c0fefd6c977c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="maxes">maxes</a> : ndarray, shape (m,)</dt>
+<dd>
+                <div id="4416c033ca8b457f989ed4786ba1d95c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The maximum value in each dimension of the n data points."}], "type": "paragraph"});
+            document.getElementById("4416c033ca8b457f989ed4786ba1d95c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="mins">mins</a> : ndarray, shape (m,)</dt>
+<dd>
+                <div id="868ff754ffb54eb498023c0cfe66ea5d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The minimum value in each dimension of the n data points."}], "type": "paragraph"});
+            document.getElementById("868ff754ffb54eb498023c0cfe66ea5d").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="tree">tree</a> : object, class cKDTreeNode</dt>
+<dd>
+                <div id="9a974d75afcf44748c93a3304e906c81"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This attribute exposes a Python view of the root node in the cKDTree object. A full Python view of the kd-tree is created dynamically on the first access. This attribute allows you to create your own query functions in Python."}], "type": "paragraph"});
+            document.getElementById("9a974d75afcf44748c93a3304e906c81").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="size">size</a> : int</dt>
+<dd>
+                <div id="01a6f86fe55740b1a66475ce0d2fbb43"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The number of nodes in the tree."}], "type": "paragraph"});
+            document.getElementById("01a6f86fe55740b1a66475ce0d2fbb43").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Extended Summary -->
+                                       <div id="aa368143dc3a495d9f4920bbc66009bc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This class provides an index into a set of k-dimensional points which can be used to rapidly look up the nearest neighbors of any point."}], "type": "paragraph"});
+            document.getElementById("aa368143dc3a495d9f4920bbc66009bc").innerHTML = html;
+        }
+        init();
+    </script>
+
+                           <div class='admonition'>
+    <div>note </div>
+                        <div id="050b84c4242d4f93bfe5cea0b8a8324d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"domain": null, "role": null, "type": "Directive", "value": "cKDTree"}, {"type": "text", "value": " is functionally identical to "}, {"domain": null, "role": null, "type": "Directive", "value": "KDTree"}, {"type": "text", "value": ". Prior to SciPy v1.6.0, "}, {"domain": null, "role": null, "type": "Directive", "value": "cKDTree"}, {"type": "text", "value": " had better performance and slightly different functionality but now the two names exist only for backward-compatibility reasons. If compatibility with SciPy \u003c 1.6 is not a concern, prefer "}, {"domain": null, "role": null, "type": "Directive", "value": "KDTree"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("050b84c4242d4f93bfe5cea0b8a8324d").innerHTML = html;
+        }
+        init();
+    </script>
+
+</div>
+
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="d3d58c5559244764af8d68e7c632b535"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The algorithm used is described in Maneewongvatana and Mount 1999. The general idea is that the kd-tree is a binary tree, each of whose nodes represents an axis-aligned hyperrectangle. Each node specifies an axis and splits the set of points based on whether their coordinate along that axis is greater than or less than a particular value."}], "type": "paragraph"});
+            document.getElementById("d3d58c5559244764af8d68e7c632b535").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="c76703a636a34b0cac49ba2f42ec190b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "During construction, the axis and splitting point are chosen by the \"sliding midpoint\" rule, which ensures that the cells do not all become long and thin."}], "type": "paragraph"});
+            document.getElementById("c76703a636a34b0cac49ba2f42ec190b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="a634b86956554d3c9a93c59d54c74fde"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The tree can be queried for the r closest neighbors of any given point (optionally returning only those within some maximum distance of the point). It can also be queried, with a substantial gain in efficiency, for the r approximate closest neighbors."}], "type": "paragraph"});
+            document.getElementById("a634b86956554d3c9a93c59d54c74fde").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="87d18c0aeb0c4e72a4fb33408d6466f4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For large dimensions (20 is already large) do not expect this to run significantly faster than brute force. High-dimensional nearest-neighbor queries are a substantial open problem in computer science."}], "type": "paragraph"});
+            document.getElementById("87d18c0aeb0c4e72a4fb33408d6466f4").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="data">data</a> : array_like, shape (n,m)</dt>
+<dd>
+                <div id="085ee675e242437f9fc6a2a0210bf184"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The n data points of dimension m to be indexed. This array is not copied unless this is necessary to produce a contiguous array of doubles, and so modifying this data will result in bogus results. The data are also copied if the kd-tree is built with copy_data=True."}], "type": "paragraph"});
+            document.getElementById("085ee675e242437f9fc6a2a0210bf184").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="leafsize">leafsize</a> : positive int, optional</dt>
+<dd>
+                <div id="8dea736c611049e18be0e4146e5a0d22"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The number of points at which the algorithm switches over to brute-force. Default: 16."}], "type": "paragraph"});
+            document.getElementById("8dea736c611049e18be0e4146e5a0d22").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="compact_nodes">compact_nodes</a> : bool, optional</dt>
+<dd>
+                <div id="fbbcb866f13b4e2492c2ff20eed3e833"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If True, the kd-tree is built to shrink the hyperrectangles to the actual data range. This usually gives a more compact tree that is robust against degenerated input data and gives faster queries at the expense of longer build time. Default: True."}], "type": "paragraph"});
+            document.getElementById("fbbcb866f13b4e2492c2ff20eed3e833").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="copy_data">copy_data</a> : bool, optional</dt>
+<dd>
+                <div id="b1af7da451dc45fd9930e4c2d3f6df25"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If True the data is always copied to protect the kd-tree against data corruption. Default: False."}], "type": "paragraph"});
+            document.getElementById("b1af7da451dc45fd9930e4c2d3f6df25").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="balanced_tree">balanced_tree</a> : bool, optional</dt>
+<dd>
+                <div id="5b98a31e57584f40b7de4afc72fb0fd6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If True, the median is used to split the hyperrectangles instead of the midpoint. This usually gives a more compact tree and faster queries at the expense of longer build time. Default: True."}], "type": "paragraph"});
+            document.getElementById("5b98a31e57584f40b7de4afc72fb0fd6").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="boxsize">boxsize</a> : array_like or scalar, optional</dt>
+<dd>
+                <div id="2b877465db944153b41440b1cf9f707d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Apply a m-d toroidal topology to the KDTree.. The topology is generated by "}, {"type": "Math", "value": "x_i + n_i L_i"}, {"type": "text", "value": " where "}, {"type": "Math", "value": "n_i"}, {"type": "text", "value": " are integers and "}, {"type": "Math", "value": "L_i"}, {"type": "text", "value": " is the boxsize along i-th dimension. The input data shall be wrapped into "}, {"type": "Math", "value": "[0, L_i)"}, {"type": "text", "value": ". A ValueError is raised if any of the data is outside of this bound."}], "type": "paragraph"});
+            document.getElementById("2b877465db944153b41440b1cf9f707d").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="212d4c3bc2354da1a2f566e8618df497"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "kd-tree for quick nearest-neighbor lookup"}], "type": "paragraph"});
+            document.getElementById("212d4c3bc2354da1a2f566e8618df497").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/spatial/_ckdtree.cpython-39-x86_64-linux-gnu.so#LNone'>/scipy/spatial/_ckdtree.cpython-39-x86_64-linux-gnu.so#None</a>
+<br/>
+
+type: &lt;class &#39;type&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

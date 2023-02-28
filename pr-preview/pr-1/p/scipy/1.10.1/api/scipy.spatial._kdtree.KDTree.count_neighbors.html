@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.spatial.html'>spatial</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.spatial._kdtree.html'>_kdtree</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.spatial._ckdtree.html">_ckdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._distance_pybind.html">_distance_pybind</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._distance_wrap.html">_distance_wrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._geometric_slerp.html">_geometric_slerp</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._hausdorff.html">_hausdorff</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.html">_kdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._plotutils.html">_plotutils</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._procrustes.html">_procrustes</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.html">_qhull</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._spherical_voronoi.html">_spherical_voronoi</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._voronoi.html">_voronoi</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.ckdtree.html">ckdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.html">distance</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.kdtree.html">kdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.qhull.html">qhull</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.transform.html">transform</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.spatial._kdtree.KDTree.html'>KDTree</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.KDTree.html">KDTree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.Rectangle.html">Rectangle</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.distance_matrix.html">distance_matrix</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.minkowski_distance.html">minkowski_distance</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.minkowski_distance_p.html">minkowski_distance_p</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.spatial._kdtree.KDTree.count_neighbors.html'>count_neighbors</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.KDTree.__init__.html">__init__</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.KDTree.count_neighbors.html">count_neighbors</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.KDTree.innernode.html">innernode</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.KDTree.leafnode.html">leafnode</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.KDTree.node.html">node</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.KDTree.query.html">query</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.KDTree.query_ball_point.html">query_ball_point</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.KDTree.query_ball_tree.html">query_ball_tree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.KDTree.query_pairs.html">query_pairs</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.KDTree.sparse_distance_matrix.html">sparse_distance_matrix</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a>    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>count_neighbors(self, other, r, p=2.0, weights=None, cumulative=True)</code><!-- rendering Extended Summary -->
+                                       <div id="87399dd04aec4302ad58651ddba99eee"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Count the number of pairs "}, {"type": "inlineCode", "value": "(x1,x2)"}, {"type": "text", "value": " can be formed, with "}, {"type": "inlineCode", "value": "x1"}, {"type": "text", "value": " drawn from "}, {"type": "inlineCode", "value": "self"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "x2"}, {"type": "text", "value": " drawn from "}, {"type": "inlineCode", "value": "other"}, {"type": "text", "value": ", and where "}, {"type": "inlineCode", "value": "distance(x1, x2, p) \u003c= r"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("87399dd04aec4302ad58651ddba99eee").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="93bb29e3c1394a6380899f1e873855fe"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Data points on "}, {"type": "inlineCode", "value": "self"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "other"}, {"type": "text", "value": " are optionally weighted by the "}, {"type": "inlineCode", "value": "weights"}, {"type": "text", "value": " argument. (See below)"}], "type": "paragraph"});
+            document.getElementById("93bb29e3c1394a6380899f1e873855fe").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="b1555aafbad84949918a526e0e4fc452"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This is adapted from the \"two-point correlation\" algorithm described by Gray and Moore .  See notes for further discussion."}], "type": "paragraph"});
+            document.getElementById("b1555aafbad84949918a526e0e4fc452").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="f0b445fb1b5e476aaa10fd8f8867b0a7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Pair-counting is the basic operation used to calculate the two point correlation functions from a data set composed of position of objects."}], "type": "paragraph"});
+            document.getElementById("f0b445fb1b5e476aaa10fd8f8867b0a7").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="c255ff57235b4658b6deaa6895e5528d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Two point correlation function measures the clustering of objects and is widely used in cosmology to quantify the large scale structure in our Universe, but it may be useful for data analysis in other fields where self-similar assembly of objects also occur."}], "type": "paragraph"});
+            document.getElementById("c255ff57235b4658b6deaa6895e5528d").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="c549c8edca724936af3b358a75ad8e4b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The Landy-Szalay estimator for the two point correlation function of "}, {"type": "inlineCode", "value": "D"}, {"type": "text", "value": " measures the clustering signal in "}, {"type": "inlineCode", "value": "D"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("c549c8edca724936af3b358a75ad8e4b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="1e6ba25ad86b473b92abf67b9ef9156d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For example, given the position of two sets of objects,"}], "type": "paragraph"});
+            document.getElementById("1e6ba25ad86b473b92abf67b9ef9156d").innerHTML = html;
+        }
+        init();
+    </script>
+
+                          <ul>               <li>                               <div id="326156ea5a044de1ad5d0091f5edd699"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "objects "}, {"type": "inlineCode", "value": "D"}, {"type": "text", "value": " (data) contains the clustering signal, and"}], "type": "paragraph"});
+            document.getElementById("326156ea5a044de1ad5d0091f5edd699").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="2fc2b54b83b54ff49b971d6dcb6c6e7f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "objects "}, {"type": "inlineCode", "value": "R"}, {"type": "text", "value": " (random) that contains no signal,"}], "type": "paragraph"});
+            document.getElementById("2fc2b54b83b54ff49b971d6dcb6c6e7f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+
+                       <span class="tex2jax_process">$$\xi(r) = \frac{&lt;D, D&gt; - 2 f &lt;D, R&gt; + f^2&lt;R, R&gt;}{f^2&lt;R, R&gt;},$$</span>
+
+                               <div id="4a5bbfe17b0a4ef18a9578297a017d3d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "where the brackets represents counting pairs between two data sets in a finite bin around "}, {"type": "inlineCode", "value": "r"}, {"type": "text", "value": " (distance), corresponding to setting "}, {"domain": null, "role": null, "type": "Directive", "value": "cumulative=False"}, {"type": "text", "value": ", and "}, {"type": "inlineCode", "value": "f = float(len(D)) / float(len(R))"}, {"type": "text", "value": " is the ratio between number of objects from data and random."}], "type": "paragraph"});
+            document.getElementById("4a5bbfe17b0a4ef18a9578297a017d3d").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="a7b97fad7da14bc2819883a84aa9faba"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The algorithm implemented here is loosely based on the dual-tree algorithm described in . We switch between two different pair-cumulation scheme depending on the setting of "}, {"type": "inlineCode", "value": "cumulative"}, {"type": "text", "value": ". The computing time of the method we use when for "}, {"type": "inlineCode", "value": "cumulative == False"}, {"type": "text", "value": " does not scale with the total number of bins. The algorithm for "}, {"type": "inlineCode", "value": "cumulative == True"}, {"type": "text", "value": " scales linearly with the number of bins, though it is slightly faster when only 1 or 2 bins are used. ."}], "type": "paragraph"});
+            document.getElementById("a7b97fad7da14bc2819883a84aa9faba").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="3a942f0825bb4ebe83f8533c24282d91"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "As an extension to the naive pair-counting, weighted pair-counting counts the product of weights instead of number of pairs. Weighted pair-counting is used to estimate marked correlation functions (, section 2.2), or to properly calculate the average of data per distance bin (e.g. , section 2.1 on redshift)."}], "type": "paragraph"});
+            document.getElementById("3a942f0825bb4ebe83f8533c24282d91").innerHTML = html;
+        }
+        init();
+    </script>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [1] Gray and Moore,\n       &#34;N-body problems in statistical learning&#34;,\n       Mining the sky, 2000,\n       https://arxiv.org/abs/astro-ph/0012333&#39;&gt;
+           </pre>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [2] Landy and Szalay,\n       &#34;Bias and variance of angular correlation functions&#34;,\n       The Astrophysical Journal, 1993,\n       http://adsabs.harvard.edu/abs/1993ApJ...412...64L&#39;&gt;
+           </pre>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [3] Sheth, Connolly and Skibba,\n       &#34;Marked correlations in galaxy formation models&#34;,\n       Arxiv e-print, 2005,\n       https://arxiv.org/abs/astro-ph/0511773&#39;&gt;
+           </pre>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [4] Hawkins, et al.,\n       &#34;The 2dF Galaxy Redshift Survey: correlation functions,\n       peculiar velocities and the matter density of the Universe&#34;,\n       Monthly Notices of the Royal Astronomical Society, 2002,\n       http://adsabs.harvard.edu/abs/2003MNRAS.346...78H&#39;&gt;
+           </pre>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [5] https://github.com/scipy/scipy/pull/5647#issuecomment-168474926&#39;&gt;
+           </pre>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="other">other</a> : KDTree</dt>
+<dd>
+                <div id="6ce5bdf2b53548ea8fda872c49c24cab"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The other tree to draw points from, can be the same tree as self."}], "type": "paragraph"});
+            document.getElementById("6ce5bdf2b53548ea8fda872c49c24cab").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="r">r</a> : float or one-dimensional array of floats</dt>
+<dd>
+                <div id="295cff8597cd452cb2303e4ce7767296"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The radius to produce a count for. Multiple radii are searched with a single tree traversal. If the count is non-cumulative("}, {"type": "inlineCode", "value": "cumulative=False"}, {"type": "text", "value": "), "}, {"type": "inlineCode", "value": "r"}, {"type": "text", "value": " defines the edges of the bins, and must be non-decreasing."}], "type": "paragraph"});
+            document.getElementById("295cff8597cd452cb2303e4ce7767296").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="p">p</a> : float, optional</dt>
+<dd>
+                <div id="bec2169904514a208b501ff92a8e32fe"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "1\u003c=p\u003c=infinity. Which Minkowski p-norm to use. Default 2.0. A finite large p may cause a ValueError if overflow can occur."}], "type": "paragraph"});
+            document.getElementById("bec2169904514a208b501ff92a8e32fe").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="weights">weights</a> : tuple, array_like, or None, optional</dt>
+<dd>
+                <div id="4b149e4b4aaa440fb7d55851f2fac1de"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If None, the pair-counting is unweighted. If given as a tuple, weights[0] is the weights of points in "}, {"type": "inlineCode", "value": "self"}, {"type": "text", "value": ", and weights[1] is the weights of points in "}, {"type": "inlineCode", "value": "other"}, {"type": "text", "value": "; either can be None to indicate the points are unweighted. If given as an array_like, weights is the weights of points in "}, {"type": "inlineCode", "value": "self"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "other"}, {"type": "text", "value": ". For this to make sense, "}, {"type": "inlineCode", "value": "self"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "other"}, {"type": "text", "value": " must be the same tree. If "}, {"type": "inlineCode", "value": "self"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "other"}, {"type": "text", "value": " are two different trees, a "}, {"type": "inlineCode", "value": "ValueError"}, {"type": "text", "value": " is raised. Default: None"}], "type": "paragraph"});
+            document.getElementById("4b149e4b4aaa440fb7d55851f2fac1de").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <div class='admonition'>
+    <div>versionadded 1.6.0</div>
+</div>
+
+
+</dd>
+<dt><a id="cumulative">cumulative</a> : bool, optional</dt>
+<dd>
+                <div id="023e3e66a5ba4b0ca434f27683055fd8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Whether the returned counts are cumulative. When cumulative is set to "}, {"type": "inlineCode", "value": "False"}, {"type": "text", "value": " the algorithm is optimized to work with a large number of bins (\u003e10) specified by "}, {"type": "inlineCode", "value": "r"}, {"type": "text", "value": ". When "}, {"type": "inlineCode", "value": "cumulative"}, {"type": "text", "value": " is set to True, the algorithm is optimized to work with a small number of "}, {"type": "inlineCode", "value": "r"}, {"type": "text", "value": ". Default: True"}], "type": "paragraph"});
+            document.getElementById("023e3e66a5ba4b0ca434f27683055fd8").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <div class='admonition'>
+    <div>versionadded 1.6.0</div>
+</div>
+
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="result">result</a> : scalar or 1-D array</dt>
+<dd>
+                <div id="b29c667399404a019d09fce5bb272e3c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The number of pairs. For unweighted counts, the result is integer. For weighted counts, the result is float. If cumulative is False, "}, {"type": "inlineCode", "value": "result[i]"}, {"type": "text", "value": " contains the counts with "}, {"type": "inlineCode", "value": "(-inf if i == 0 else r[i-1]) \u003c R \u003c= r[i]"}], "type": "paragraph"});
+            document.getElementById("b29c667399404a019d09fce5bb272e3c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="e9fe9ee006284134b6149501dd2b9459"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Count how many nearby pairs can be formed."}], "type": "paragraph"});
+            document.getElementById("e9fe9ee006284134b6149501dd2b9459").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+                           You can count neighbors number between two kd-trees within a distance:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">spatial</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">KDTree</span><br><span class='nsl'>...&nbsp;</span><span class="">rng</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">random</span><span class="o">.</span><span class="">default_rng</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">points1</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">rng</span><span class="o">.</span><span class="">random</span><span class="">(</span><span class="">(</span><span class="mi">5</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">points2</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">rng</span><span class="o">.</span><span class="">random</span><span class="">(</span><span class="">(</span><span class="mi">5</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">kd_tree1</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">KDTree</span><span class="">(</span><span class="">points1</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">kd_tree2</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">KDTree</span><span class="">(</span><span class="">points2</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">kd_tree1</span><span class="o">.</span><span class="">count_neighbors</span><span class="">(</span><span class="">kd_tree2</span><span class="">,</span><span class=""> </span><span class="mf">0.2</span><span class="">)</span>
+1</pre>
+            
+                           This number is same as the total pair number calculated by
+`query_ball_tree`:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">indexes</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">kd_tree1</span><span class="o">.</span><span class="">query_ball_tree</span><span class="">(</span><span class="">kd_tree2</span><span class="">,</span><span class=""> </span><span class="">r</span><span class="o">=</span><span class="mf">0.2</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="nb">sum</span><span class="">(</span><span class="">[</span><span class="nb">len</span><span class="">(</span><span class="">i</span><span class="">)</span><span class=""> </span><span class="k">for</span><span class=""> </span><span class="">i</span><span class=""> </span><span class="ow">in</span><span class=""> </span><span class="">indexes</span><span class="">]</span><span class="">)</span>
+1</pre>
+            
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/spatial/_kdtree.py#L656'>/scipy/spatial/_kdtree.py#656</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

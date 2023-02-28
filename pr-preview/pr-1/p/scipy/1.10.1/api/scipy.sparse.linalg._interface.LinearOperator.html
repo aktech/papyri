@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.sparse.html'>sparse</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.sparse.linalg.html'>linalg</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.sparse._arrays.html">_arrays</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._base.html">_base</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._bsr.html">_bsr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._compressed.html">_compressed</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._construct.html">_construct</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._coo.html">_coo</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._csc.html">_csc</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._csparsetools.html">_csparsetools</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._csr.html">_csr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._data.html">_data</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._dia.html">_dia</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._dok.html">_dok</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._extract.html">_extract</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._index.html">_index</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._lil.html">_lil</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._matrix_io.html">_matrix_io</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._sparsetools.html">_sparsetools</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._sputils.html">_sputils</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.base.html">base</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.bsr.html">bsr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.compressed.html">compressed</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.construct.html">construct</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.coo.html">coo</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csc.html">csc</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csgraph.html">csgraph</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csr.html">csr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.data.html">data</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.dia.html">dia</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.dok.html">dok</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.extract.html">extract</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.lil.html">lil</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.sparsetools.html">sparsetools</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.sputils.html">sputils</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.sparse.linalg._interface.html'>_interface</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._dsolve.html">_dsolve</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._eigen.html">_eigen</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._expm_multiply.html">_expm_multiply</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.html">_interface</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._isolve.html">_isolve</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._matfuncs.html">_matfuncs</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._norm.html">_norm</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._onenormest.html">_onenormest</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg.dsolve.html">dsolve</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg.eigen.html">eigen</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg.interface.html">interface</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg.isolve.html">isolve</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg.matfuncs.html">matfuncs</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.sparse.linalg._interface.LinearOperator.html'>LinearOperator</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.IdentityOperator.html">IdentityOperator</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.LinearOperator.html">LinearOperator</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.MatrixLinearOperator.html">MatrixLinearOperator</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface._AdjointLinearOperator.html">_AdjointLinearOperator</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface._AdjointMatrixOperator.html">_AdjointMatrixOperator</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface._CustomLinearOperator.html">_CustomLinearOperator</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface._PowerLinearOperator.html">_PowerLinearOperator</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface._ProductLinearOperator.html">_ProductLinearOperator</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface._ScaledLinearOperator.html">_ScaledLinearOperator</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface._SumLinearOperator.html">_SumLinearOperator</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface._TransposedLinearOperator.html">_TransposedLinearOperator</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface._get_dtype.html">_get_dtype</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.aslinearoperator.html">aslinearoperator</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" >+</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.LinearOperator.__add__.html">__add__</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.LinearOperator.__call__.html">__call__</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.LinearOperator.__init__.html">__init__</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.LinearOperator.__matmul__.html">__matmul__</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.LinearOperator.__mul__.html">__mul__</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.LinearOperator.__neg__.html">__neg__</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.LinearOperator.__pow__.html">__pow__</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.LinearOperator.__repr__.html">__repr__</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.LinearOperator.__rmatmul__.html">__rmatmul__</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.LinearOperator.__rmul__.html">__rmul__</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.LinearOperator.__sub__.html">__sub__</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.LinearOperator._adjoint.html">_adjoint</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.LinearOperator._init_dtype.html">_init_dtype</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.LinearOperator._matmat.html">_matmat</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.LinearOperator._matvec.html">_matvec</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.LinearOperator._rmatmat.html">_rmatmat</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.LinearOperator._rmatvec.html">_rmatvec</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.LinearOperator._transpose.html">_transpose</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.LinearOperator.adjoint.html">adjoint</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.LinearOperator.dot.html">dot</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.LinearOperator.matmat.html">matmat</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.LinearOperator.matvec.html">matvec</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.LinearOperator.rmatmat.html">rmatmat</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.LinearOperator.rmatvec.html">rmatvec</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.LinearOperator.transpose.html">transpose</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Attributes">Attributes</a><a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<h3 id="section-Attributes">Attributes</h3>
+<dl>
+<dt><a id="args">args</a> : tuple</dt>
+<dd>
+                <div id="a437c4ec597f4115b114097ef00a1d95"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For linear operators describing products etc. of other linear operators, the operands of the binary operation."}], "type": "paragraph"});
+            document.getElementById("a437c4ec597f4115b114097ef00a1d95").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="ndim">ndim</a> : int</dt>
+<dd>
+                <div id="ff9254a557924177884bab6eb6d9ed61"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Number of dimensions (this is always 2)"}], "type": "paragraph"});
+            document.getElementById("ff9254a557924177884bab6eb6d9ed61").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Extended Summary -->
+                                       <div id="e1675a952375445ca274d374f44a2c90"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Many iterative methods (e.g. cg, gmres) do not need to know the individual entries of a matrix to solve a linear system A*x=b. Such solvers only require the computation of matrix vector products, A*v where v is a dense vector.  This class serves as an abstract interface between iterative solvers and matrix-like objects."}], "type": "paragraph"});
+            document.getElementById("e1675a952375445ca274d374f44a2c90").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="3594b9dcd528415ca0fcd2184f687e4b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "To construct a concrete LinearOperator, either pass appropriate callables to the constructor of this class, or subclass it."}], "type": "paragraph"});
+            document.getElementById("3594b9dcd528415ca0fcd2184f687e4b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="fb840cb663cb4282a50bd4764516e9b8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A subclass must implement either one of the methods "}, {"type": "inlineCode", "value": "_matvec"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "_matmat"}, {"type": "text", "value": ", and the attributes/properties "}, {"type": "inlineCode", "value": "shape"}, {"type": "text", "value": " (pair of integers) and "}, {"type": "inlineCode", "value": "dtype"}, {"type": "text", "value": " (may be None). It may call the "}, {"type": "inlineCode", "value": "__init__"}, {"type": "text", "value": " on this class to have these attributes validated. Implementing "}, {"type": "inlineCode", "value": "_matvec"}, {"type": "text", "value": " automatically implements "}, {"type": "inlineCode", "value": "_matmat"}, {"type": "text", "value": " (using a naive algorithm) and vice-versa."}], "type": "paragraph"});
+            document.getElementById("fb840cb663cb4282a50bd4764516e9b8").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="b7e0741ad47d438f9578506ec52ac8b8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Optionally, a subclass may implement "}, {"type": "inlineCode", "value": "_rmatvec"}, {"type": "text", "value": " or "}, {"type": "inlineCode", "value": "_adjoint"}, {"type": "text", "value": " to implement the Hermitian adjoint (conjugate transpose). As with "}, {"type": "inlineCode", "value": "_matvec"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "_matmat"}, {"type": "text", "value": ", implementing either "}, {"type": "inlineCode", "value": "_rmatvec"}, {"type": "text", "value": " or "}, {"type": "inlineCode", "value": "_adjoint"}, {"type": "text", "value": " implements the other automatically. Implementing "}, {"type": "inlineCode", "value": "_adjoint"}, {"type": "text", "value": " is preferable; "}, {"type": "inlineCode", "value": "_rmatvec"}, {"type": "text", "value": " is mostly there for backwards compatibility."}], "type": "paragraph"});
+            document.getElementById("b7e0741ad47d438f9578506ec52ac8b8").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="1a3e6917d2394cfbb4198314aa6d5bc6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The user-defined matvec() function must properly handle the case where v has shape (N,) as well as the (N,1) case.  The shape of the return type is handled internally by LinearOperator."}], "type": "paragraph"});
+            document.getElementById("1a3e6917d2394cfbb4198314aa6d5bc6").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="3b048247fb9348c49b90afdd9cd90512"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "LinearOperator instances can also be multiplied, added with each other and exponentiated, all lazily: the result of these operations is always a new, composite LinearOperator, that defers linear operations to the original operators and combines the results."}], "type": "paragraph"});
+            document.getElementById("3b048247fb9348c49b90afdd9cd90512").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="094f333fd7114cb5a8ce141e12cfca3c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "More details regarding how to subclass a LinearOperator and several examples of concrete LinearOperator instances can be found in the external project "}, {"target": "https://pylops.readthedocs.io", "type": "ExternalLink", "value": "PyLops"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("094f333fd7114cb5a8ce141e12cfca3c").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="shape">shape</a> : tuple</dt>
+<dd>
+                <div id="da807fc04a3644ffbe3070aa5b47e64f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Matrix dimensions (M, N)."}], "type": "paragraph"});
+            document.getElementById("da807fc04a3644ffbe3070aa5b47e64f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="matvec">matvec</a> : callable f(v)</dt>
+<dd>
+                <div id="bf37396b8d70414ea9f2e34ae3b694c7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Returns returns A * v."}], "type": "paragraph"});
+            document.getElementById("bf37396b8d70414ea9f2e34ae3b694c7").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="rmatvec">rmatvec</a> : callable f(v)</dt>
+<dd>
+                <div id="cfc2da47fda34d159c8a7e19bd7c9e34"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Returns A^H * v, where A^H is the conjugate transpose of A."}], "type": "paragraph"});
+            document.getElementById("cfc2da47fda34d159c8a7e19bd7c9e34").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="matmat">matmat</a> : callable f(V)</dt>
+<dd>
+                <div id="cdcb9b597484452e92c9a9d1ecb1e148"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Returns A * V, where V is a dense matrix with dimensions (N, K)."}], "type": "paragraph"});
+            document.getElementById("cdcb9b597484452e92c9a9d1ecb1e148").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="dtype">dtype</a> : dtype</dt>
+<dd>
+                <div id="7ddcd1e03f484c4cb3470494cc0879d7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Data type of the matrix."}], "type": "paragraph"});
+            document.getElementById("7ddcd1e03f484c4cb3470494cc0879d7").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="rmatmat">rmatmat</a> : callable f(V)</dt>
+<dd>
+                <div id="a9795f59c3914bdb9b9e4511ad73f539"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Returns A^H * V, where V is a dense matrix with dimensions (M, K)."}], "type": "paragraph"});
+            document.getElementById("a9795f59c3914bdb9b9e4511ad73f539").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="ea1bbceec1fa47f9a1c8502c2eb72dc3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Common interface for performing matrix vector products"}], "type": "paragraph"});
+            document.getElementById("ea1bbceec1fa47f9a1c8502c2eb72dc3").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.aslinearoperator.html" class='exists'>aslinearoperator</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="d142d6c5d5364640833ecdf2e145b346"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "Construct LinearOperators"});
+            document.getElementById("d142d6c5d5364640833ecdf2e145b346").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">sparse</span><span class="nn">.</span><span class="nn">linalg</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">LinearOperator</span><br><span class='nsl'>...&nbsp;</span><span class="k">def</span><span class=""> </span><span class="nf">mv</span><span class="">(</span><span class="">v</span><span class="">)</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="k">return</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="mi">2</span><span class="o">*</span><span class="">v</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="o">*</span><span class="">v</span><span class="">[</span><span class="mi">1</span><span class="">]</span><span class="">]</span><span class="">)</span>
+...</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">A</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">LinearOperator</span><span class="">(</span><span class="">(</span><span class="mi">2</span><span class="">,</span><span class="mi">2</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">matvec</span><span class="o">=</span><span class="">mv</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">A</span>
+&lt;2x2 _CustomLinearOperator with dtype=float64&gt;</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">A</span><span class="o">.</span><span class="">matvec</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">ones</span><span class="">(</span><span class="mi">2</span><span class="">)</span><span class="">)</span>
+array([ 2.,  3.])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">A</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">ones</span><span class="">(</span><span class="mi">2</span><span class="">)</span>
+array([ 2.,  3.])</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.sparse.csgraph._laplacian.laplacian.html" class='exists'>scipy.sparse.csgraph._laplacian.laplacian</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.sparse.linalg._isolve.tfqmr.tfqmr.html" class='exists'>scipy.sparse.linalg._isolve.tfqmr.tfqmr</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.sparse.linalg._isolve.iterative.qmr.html" class='exists'>scipy.sparse.linalg._isolve.iterative.qmr</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.optimize._lbfgsb_py.LbfgsInvHessProduct.todense.html" class='exists'>scipy.optimize._lbfgsb_py.LbfgsInvHessProduct.todense</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.sparse.linalg._isolve.iterative.gmres.html" class='exists'>scipy.sparse.linalg._isolve.iterative.gmres</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.optimize._numdiff.approx_derivative.html" class='exists'>scipy.optimize._numdiff.approx_derivative</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/sparse/linalg/_interface.py#L53'>/scipy/sparse/linalg/_interface.py#53</a>
+<br/>
+
+type: &lt;class &#39;type&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 9.0, "label": "scipy.optimize._numdiff.approx_derivative", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.optimize._numdiff.approx_derivative"}, {"id": 2, "val": 9.0, "label": "scipy.sparse.linalg._interface.aslinearoperator", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.aslinearoperator"}, {"id": 3, "val": 9.732050807568877, "label": "scipy.sparse.linalg._isolve.iterative.gmres", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.sparse.linalg._isolve.iterative.gmres"}, {"id": 4, "val": 8.0, "label": "scipy.sparse.linalg._isolve.iterative.qmr", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.sparse.linalg._isolve.iterative.qmr"}, {"id": 5, "val": 8.0, "label": "scipy.sparse.csgraph._laplacian.laplacian", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.sparse.csgraph._laplacian.laplacian"}, {"id": 6, "val": 8.0, "label": "scipy.sparse.linalg._isolve.tfqmr.tfqmr", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.sparse.linalg._isolve.tfqmr.tfqmr"}, {"id": 7, "val": 8.0, "label": "scipy.optimize._lbfgsb_py.LbfgsInvHessProduct.todense", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.optimize._lbfgsb_py.LbfgsInvHessProduct.todense"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

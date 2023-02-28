@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.linalg.html'>linalg</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.linalg._interpolative_backend.html'>_interpolative_backend</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.linalg._basic.html">_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._cythonized_array_utils.html">_cythonized_array_utils</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp.html">_decomp</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_cholesky.html">_decomp_cholesky</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_cossin.html">_decomp_cossin</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_ldl.html">_decomp_ldl</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_lu.html">_decomp_lu</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_polar.html">_decomp_polar</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_qr.html">_decomp_qr</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_qz.html">_decomp_qz</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_schur.html">_decomp_schur</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_svd.html">_decomp_svd</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_update.html">_decomp_update</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._expm_frechet.html">_expm_frechet</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._fblas.html">_fblas</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._flapack.html">_flapack</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._flinalg.html">_flinalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._flinalg_py.html">_flinalg_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative.html">_interpolative</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.html">_interpolative_backend</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs.html">_matfuncs</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs_expm.html">_matfuncs_expm</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs_sqrtm.html">_matfuncs_sqrtm</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs_sqrtm_triu.html">_matfuncs_sqrtm_triu</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._misc.html">_misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._procrustes.html">_procrustes</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._sketches.html">_sketches</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._solve_toeplitz.html">_solve_toeplitz</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._solvers.html">_solvers</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._special_matrices.html">_special_matrices</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.basic.html">basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.blas.html">blas</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.cython_blas.html">cython_blas</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.cython_lapack.html">cython_lapack</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp.html">decomp</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_cholesky.html">decomp_cholesky</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_lu.html">decomp_lu</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_qr.html">decomp_qr</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_schur.html">decomp_schur</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_svd.html">decomp_svd</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.flinalg.html">flinalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.interpolative.html">interpolative</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.lapack.html">lapack</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.matfuncs.html">matfuncs</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.special_matrices.html">special_matrices</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.linalg._interpolative_backend.idzp_rsvd.html'>idzp_rsvd</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend._asfortranarray_copy.html">_asfortranarray_copy</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.id_srand.html">id_srand</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.id_srandi.html">id_srandi</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.id_srando.html">id_srando</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idd_copycols.html">idd_copycols</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idd_diffsnorm.html">idd_diffsnorm</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idd_estrank.html">idd_estrank</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idd_findrank.html">idd_findrank</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idd_frm.html">idd_frm</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idd_frmi.html">idd_frmi</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idd_id2svd.html">idd_id2svd</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idd_reconid.html">idd_reconid</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idd_reconint.html">idd_reconint</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idd_sfrm.html">idd_sfrm</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idd_sfrmi.html">idd_sfrmi</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idd_snorm.html">idd_snorm</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.iddp_aid.html">iddp_aid</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.iddp_asvd.html">iddp_asvd</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.iddp_id.html">iddp_id</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.iddp_rid.html">iddp_rid</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.iddp_rsvd.html">iddp_rsvd</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.iddp_svd.html">iddp_svd</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.iddr_aid.html">iddr_aid</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.iddr_aidi.html">iddr_aidi</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.iddr_asvd.html">iddr_asvd</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.iddr_id.html">iddr_id</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.iddr_rid.html">iddr_rid</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.iddr_rsvd.html">iddr_rsvd</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.iddr_svd.html">iddr_svd</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idz_copycols.html">idz_copycols</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idz_diffsnorm.html">idz_diffsnorm</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idz_estrank.html">idz_estrank</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idz_findrank.html">idz_findrank</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idz_frm.html">idz_frm</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idz_frmi.html">idz_frmi</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idz_id2svd.html">idz_id2svd</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idz_reconid.html">idz_reconid</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idz_reconint.html">idz_reconint</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idz_sfrm.html">idz_sfrm</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idz_sfrmi.html">idz_sfrmi</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idz_snorm.html">idz_snorm</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idzp_aid.html">idzp_aid</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idzp_asvd.html">idzp_asvd</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idzp_id.html">idzp_id</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idzp_rid.html">idzp_rid</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idzp_rsvd.html">idzp_rsvd</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idzp_svd.html">idzp_svd</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idzr_aid.html">idzr_aid</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idzr_aidi.html">idzr_aidi</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idzr_asvd.html">idzr_asvd</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idzr_id.html">idzr_id</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idzr_rid.html">idzr_rid</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idzr_rsvd.html">idzr_rsvd</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.idzr_svd.html">idzr_svd</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>idzp_rsvd(eps, m, n, matveca, matvec)</code><!-- rendering Extended Summary -->
+                                  <dl>               <dt>                                <div id="0123533fd0fb44bca267408615266923"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "parameps"});
+            document.getElementById("0123533fd0fb44bca267408615266923").innerHTML = html;
+        }
+        init();
+    </script>
+
+               </dt>
+               <dd>                                <div id="1f187e4955f94927a7ebf4e2dad1bd4d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Relative precision."}], "type": "paragraph"});
+            document.getElementById("1f187e4955f94927a7ebf4e2dad1bd4d").innerHTML = html;
+        }
+        init();
+    </script>
+
+               </dd>
+               <dt>                                <div id="2b156a61abc24c98af02e76d7cfca5c2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "typeeps"});
+            document.getElementById("2b156a61abc24c98af02e76d7cfca5c2").innerHTML = html;
+        }
+        init();
+    </script>
+
+               </dt>
+               <dd>                                <div id="7da3cd0798dd49b2b5c702c1e04c6ebc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "float"}], "type": "paragraph"});
+            document.getElementById("7da3cd0798dd49b2b5c702c1e04c6ebc").innerHTML = html;
+        }
+        init();
+    </script>
+
+               </dd>
+               <dt>                                <div id="86cc7c8b17274e04bfc8babd03acd091"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "paramm"});
+            document.getElementById("86cc7c8b17274e04bfc8babd03acd091").innerHTML = html;
+        }
+        init();
+    </script>
+
+               </dt>
+               <dd>                                <div id="927c4805ab6a41adbce4da903325ddf4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Matrix row dimension."}], "type": "paragraph"});
+            document.getElementById("927c4805ab6a41adbce4da903325ddf4").innerHTML = html;
+        }
+        init();
+    </script>
+
+               </dd>
+               <dt>                                <div id="47042f7f96f04bdc8730c3a05d5f208a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "typem"});
+            document.getElementById("47042f7f96f04bdc8730c3a05d5f208a").innerHTML = html;
+        }
+        init();
+    </script>
+
+               </dt>
+               <dd>                                <div id="2d9fb81d79724c02a69061f166effb8c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "int"}], "type": "paragraph"});
+            document.getElementById("2d9fb81d79724c02a69061f166effb8c").innerHTML = html;
+        }
+        init();
+    </script>
+
+               </dd>
+               <dt>                                <div id="95de58b4f4a5449999ae418708975b91"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "paramn"});
+            document.getElementById("95de58b4f4a5449999ae418708975b91").innerHTML = html;
+        }
+        init();
+    </script>
+
+               </dt>
+               <dd>                                <div id="f51f4e0917b349e59b0eb845aa50eb4a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Matrix column dimension."}], "type": "paragraph"});
+            document.getElementById("f51f4e0917b349e59b0eb845aa50eb4a").innerHTML = html;
+        }
+        init();
+    </script>
+
+               </dd>
+               <dt>                                <div id="8f1932a0829249b8bd9326e9e51eb5f1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "typen"});
+            document.getElementById("8f1932a0829249b8bd9326e9e51eb5f1").innerHTML = html;
+        }
+        init();
+    </script>
+
+               </dt>
+               <dd>                                <div id="33feb396d889441bac2166db6e45ffd3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "int"}], "type": "paragraph"});
+            document.getElementById("33feb396d889441bac2166db6e45ffd3").innerHTML = html;
+        }
+        init();
+    </script>
+
+               </dd>
+               <dt>                                <div id="dc3b69bc711141bdb0c52b10ad321b33"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "parammatveca"});
+            document.getElementById("dc3b69bc711141bdb0c52b10ad321b33").innerHTML = html;
+        }
+        init();
+    </script>
+
+               </dt>
+               <dd>                                <div id="0d57d93a9f0a4e7884281eeae1fd36a6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Function to apply the matrix adjoint to a vector, with call signature     "}, {"domain": null, "role": null, "type": "Directive", "value": "y = matveca(x)"}, {"type": "text", "value": ", where "}, {"domain": null, "role": null, "type": "Directive", "value": "x"}, {"type": "text", "value": " and "}, {"domain": null, "role": null, "type": "Directive", "value": "y"}, {"type": "text", "value": " are the input and output vectors,     respectively."}], "type": "paragraph"});
+            document.getElementById("0d57d93a9f0a4e7884281eeae1fd36a6").innerHTML = html;
+        }
+        init();
+    </script>
+
+               </dd>
+               <dt>                                <div id="dbcd82ac3c5d4f82b73e344d3e5c205f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "typematveca"});
+            document.getElementById("dbcd82ac3c5d4f82b73e344d3e5c205f").innerHTML = html;
+        }
+        init();
+    </script>
+
+               </dt>
+               <dd>                                <div id="6c6e4f641a0e4b6b9c1c9275bd331a81"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "function"}], "type": "paragraph"});
+            document.getElementById("6c6e4f641a0e4b6b9c1c9275bd331a81").innerHTML = html;
+        }
+        init();
+    </script>
+
+               </dd>
+               <dt>                                <div id="9d9059d0a0f3470e901ebedc0ea61851"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "parammatvec"});
+            document.getElementById("9d9059d0a0f3470e901ebedc0ea61851").innerHTML = html;
+        }
+        init();
+    </script>
+
+               </dt>
+               <dd>                                <div id="ec6fb2c0dca047cab2adf1561800bc63"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Function to apply the matrix to a vector, with call signature     "}, {"domain": null, "role": null, "type": "Directive", "value": "y = matvec(x)"}, {"type": "text", "value": ", where "}, {"domain": null, "role": null, "type": "Directive", "value": "x"}, {"type": "text", "value": " and "}, {"domain": null, "role": null, "type": "Directive", "value": "y"}, {"type": "text", "value": " are the input and output vectors,     respectively."}], "type": "paragraph"});
+            document.getElementById("ec6fb2c0dca047cab2adf1561800bc63").innerHTML = html;
+        }
+        init();
+    </script>
+
+               </dd>
+               <dt>                                <div id="b26a746792644714a793216f0a054098"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "typematvec"});
+            document.getElementById("b26a746792644714a793216f0a054098").innerHTML = html;
+        }
+        init();
+    </script>
+
+               </dt>
+               <dd>                                <div id="2117d5e013444e1991dcaff795949e20"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "function"}], "type": "paragraph"});
+            document.getElementById("2117d5e013444e1991dcaff795949e20").innerHTML = html;
+        }
+        init();
+    </script>
+
+               </dd>
+               <dt>                                <div id="5f9129d6dfbe45a99259063510aec791"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "return"});
+            document.getElementById("5f9129d6dfbe45a99259063510aec791").innerHTML = html;
+        }
+        init();
+    </script>
+
+               </dt>
+               <dd>                                <div id="9ccc5ae2d9b8486e8b8171026612bcde"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Left singular vectors."}], "type": "paragraph"});
+            document.getElementById("9ccc5ae2d9b8486e8b8171026612bcde").innerHTML = html;
+        }
+        init();
+    </script>
+
+               </dd>
+               <dt>                                <div id="0f4e7f62ef594c788cba55232c8155a4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "rtype"});
+            document.getElementById("0f4e7f62ef594c788cba55232c8155a4").innerHTML = html;
+        }
+        init();
+    </script>
+
+               </dt>
+               <dd>                                <div id="7164ad48763f4c90845b16c9c1312710"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "Verbatim", "value": ["numpy.ndarray"]}], "type": "paragraph"});
+            document.getElementById("7164ad48763f4c90845b16c9c1312710").innerHTML = html;
+        }
+        init();
+    </script>
+
+               </dd>
+               <dt>                                <div id="ec5683dca76a43dbb5318fc4f000fe85"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "return"});
+            document.getElementById("ec5683dca76a43dbb5318fc4f000fe85").innerHTML = html;
+        }
+        init();
+    </script>
+
+               </dt>
+               <dd>                                <div id="c0a96faf105a4ad99e6917ff92758624"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Right singular vectors."}], "type": "paragraph"});
+            document.getElementById("c0a96faf105a4ad99e6917ff92758624").innerHTML = html;
+        }
+        init();
+    </script>
+
+               </dd>
+               <dt>                                <div id="cc851b046e414d22aacd22033aff9ba4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "rtype"});
+            document.getElementById("cc851b046e414d22aacd22033aff9ba4").innerHTML = html;
+        }
+        init();
+    </script>
+
+               </dt>
+               <dd>                                <div id="2313a17dc997401d80b8c3c8a79337d0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "Verbatim", "value": ["numpy.ndarray"]}], "type": "paragraph"});
+            document.getElementById("2313a17dc997401d80b8c3c8a79337d0").innerHTML = html;
+        }
+        init();
+    </script>
+
+               </dd>
+               <dt>                                <div id="e22f35e11f81429e9c1427ee2068a3e0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "return"});
+            document.getElementById("e22f35e11f81429e9c1427ee2068a3e0").innerHTML = html;
+        }
+        init();
+    </script>
+
+               </dt>
+               <dd>                                <div id="d9c1974db0cf4dcab76a931f866fdd87"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Singular values."}], "type": "paragraph"});
+            document.getElementById("d9c1974db0cf4dcab76a931f866fdd87").innerHTML = html;
+        }
+        init();
+    </script>
+
+               </dd>
+               <dt>                                <div id="e00bc167ff1f419ea01aa9736d4aa02c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "rtype"});
+            document.getElementById("e00bc167ff1f419ea01aa9736d4aa02c").innerHTML = html;
+        }
+        init();
+    </script>
+
+               </dt>
+               <dd>                                <div id="6eb619016bd14247bd1e50601d18cbfd"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "Verbatim", "value": ["numpy.ndarray"]}], "type": "paragraph"});
+            document.getElementById("6eb619016bd14247bd1e50601d18cbfd").innerHTML = html;
+        }
+        init();
+    </script>
+
+               </dd>
+           </dl>
+
+
+<!-- rendering Notes -->
+        <!-- rendering Summary -->
+                                       <div id="1f898cce1eca4e9790f63da59067a269"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Compute SVD of a complex matrix to a specified relative precision using random matrix-vector multiplication."}], "type": "paragraph"});
+            document.getElementById("1f898cce1eca4e9790f63da59067a269").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/linalg/_interpolative_backend.py#L1467'>/scipy/linalg/_interpolative_backend.py#1467</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

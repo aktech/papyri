@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.spatial.html'>spatial</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.spatial.distance.html'>distance</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.spatial._ckdtree.html">_ckdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._distance_pybind.html">_distance_pybind</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._distance_wrap.html">_distance_wrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._geometric_slerp.html">_geometric_slerp</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._hausdorff.html">_hausdorff</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.html">_kdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._plotutils.html">_plotutils</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._procrustes.html">_procrustes</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.html">_qhull</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._spherical_voronoi.html">_spherical_voronoi</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._voronoi.html">_voronoi</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.ckdtree.html">ckdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.html">distance</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.kdtree.html">kdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.qhull.html">qhull</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.transform.html">transform</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.spatial.distance.pdist.html'>pdist</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.CDistMetricWrapper.html">CDistMetricWrapper</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.CDistWeightedMetricWrapper.html">CDistWeightedMetricWrapper</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.MetricInfo.html">MetricInfo</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.PDistMetricWrapper.html">PDistMetricWrapper</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.PDistWeightedMetricWrapper.html">PDistWeightedMetricWrapper</a>
+<a href="/p/?/?/?/scipy.spatial.distance.__create_fn__.html.html">__create_fn__</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance._cdist_callable.html">_cdist_callable</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance._convert_to_type.html">_convert_to_type</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance._copy_array_if_base_present.html">_copy_array_if_base_present</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance._correlation_cdist_wrap.html">_correlation_cdist_wrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance._correlation_pdist_wrap.html">_correlation_pdist_wrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance._nbool_correspond_all.html">_nbool_correspond_all</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance._nbool_correspond_ft_tf.html">_nbool_correspond_ft_tf</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance._pdist_callable.html">_pdist_callable</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance._prepare_out_argument.html">_prepare_out_argument</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance._validate_cdist_input.html">_validate_cdist_input</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance._validate_hamming_kwargs.html">_validate_hamming_kwargs</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance._validate_mahalanobis_kwargs.html">_validate_mahalanobis_kwargs</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance._validate_minkowski_kwargs.html">_validate_minkowski_kwargs</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance._validate_pdist_input.html">_validate_pdist_input</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance._validate_seuclidean_kwargs.html">_validate_seuclidean_kwargs</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance._validate_vector.html">_validate_vector</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance._validate_weight_with_size.html">_validate_weight_with_size</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance._validate_weights.html">_validate_weights</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.braycurtis.html">braycurtis</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.canberra.html">canberra</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.cdist.html">cdist</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.chebyshev.html">chebyshev</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.cityblock.html">cityblock</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.correlation.html">correlation</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.cosine.html">cosine</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.dice.html">dice</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.directed_hausdorff.html">directed_hausdorff</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.euclidean.html">euclidean</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.hamming.html">hamming</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.is_valid_dm.html">is_valid_dm</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.is_valid_y.html">is_valid_y</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.jaccard.html">jaccard</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.jensenshannon.html">jensenshannon</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.kulczynski1.html">kulczynski1</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.kulsinski.html">kulsinski</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.mahalanobis.html">mahalanobis</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.minkowski.html">minkowski</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.num_obs_dm.html">num_obs_dm</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.num_obs_y.html">num_obs_y</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.pdist.html">pdist</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.rogerstanimoto.html">rogerstanimoto</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.russellrao.html">russellrao</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.seuclidean.html">seuclidean</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.sokalmichener.html">sokalmichener</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.sokalsneath.html">sokalsneath</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.sqeuclidean.html">sqeuclidean</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.squareform.html">squareform</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.yule.html">yule</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>pdist(X, metric=&#39;euclidean&#39;, *, out=None, **kwargs)</code><!-- rendering Extended Summary -->
+                                       <div id="b36382b76d6e4450b94e2d186a42193e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "See Notes for common calling conventions."}], "type": "paragraph"});
+            document.getElementById("b36382b76d6e4450b94e2d186a42193e").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="88aae9d5abcd49ae8b8b860e10c1e8e7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "See "}, {"type": "inlineCode", "value": "squareform"}, {"type": "text", "value": " for information on how to calculate the index of this entry or to convert the condensed distance matrix to a redundant square matrix."}], "type": "paragraph"});
+            document.getElementById("88aae9d5abcd49ae8b8b860e10c1e8e7").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="3cc6a391b7054a718bffdf5dc843dc58"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The following are common calling conventions."}], "type": "paragraph"});
+            document.getElementById("3cc6a391b7054a718bffdf5dc843dc58").innerHTML = html;
+        }
+        init();
+    </script>
+
+                          <ol>               <li>                               <div id="750ad509b7824aeba7420b4ddfef334e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "Y = pdist(X, \u0027euclidean\u0027)"}], "type": "paragraph"});
+            document.getElementById("750ad509b7824aeba7420b4ddfef334e").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="46a9171c4252447885484f41b7194e89"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Computes the distance between m points using Euclidean distance    (2-norm) as the distance metric between the points. The points    are arranged as m n-dimensional row vectors in the matrix X."}], "type": "paragraph"});
+            document.getElementById("46a9171c4252447885484f41b7194e89").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="929d8d2df8484955b2bfd28f790fac3e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "Y = pdist(X, \u0027minkowski\u0027, p=2.)"}], "type": "paragraph"});
+            document.getElementById("929d8d2df8484955b2bfd28f790fac3e").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="f5d8acc14ef541b5b34ad2f10213023e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Computes the distances using the Minkowski distance    "}, {"type": "Math", "value": "\\|u-v\\|_p"}, {"type": "text", "value": " ("}, {"type": "Math", "value": "p"}, {"type": "text", "value": "-norm) where "}, {"type": "Math", "value": "p \u003e 0"}, {"type": "text", "value": " (note    that this is only a quasi-metric if "}, {"type": "Math", "value": "0 \u003c p \u003c 1"}, {"type": "text", "value": ")."}], "type": "paragraph"});
+            document.getElementById("f5d8acc14ef541b5b34ad2f10213023e").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="bca0f4d2c5d74bbab0115edb46722110"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "Y = pdist(X, \u0027cityblock\u0027)"}], "type": "paragraph"});
+            document.getElementById("bca0f4d2c5d74bbab0115edb46722110").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="c3843ef6c4a54a3f81fb30303fee94d1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Computes the city block or Manhattan distance between the    points."}], "type": "paragraph"});
+            document.getElementById("c3843ef6c4a54a3f81fb30303fee94d1").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="618bda7a736a4c239bf45f940d96e86e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "Y = pdist(X, \u0027seuclidean\u0027, V=None)"}], "type": "paragraph"});
+            document.getElementById("618bda7a736a4c239bf45f940d96e86e").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="cfc4fbe09e3e45458ab9869a82ac7e0a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Computes the standardized Euclidean distance. The standardized    Euclidean distance between two n-vectors "}, {"type": "inlineCode", "value": "u"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "v"}, {"type": "text", "value": " is"}], "type": "paragraph"});
+            document.getElementById("cfc4fbe09e3e45458ab9869a82ac7e0a").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$\sqrt{\sum {(u_i-v_i)^2 / V[x_i]}}$$</span>
+
+                               <div id="581f7e9e84994a7c9a552e90dd98cfa3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "V is the variance vector; V[i] is the variance computed over all    the i\u0027th components of the points.  If not passed, it is    automatically computed."}], "type": "paragraph"});
+            document.getElementById("581f7e9e84994a7c9a552e90dd98cfa3").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="2206d14375fe42d3875324249d339e2f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "Y = pdist(X, \u0027sqeuclidean\u0027)"}], "type": "paragraph"});
+            document.getElementById("2206d14375fe42d3875324249d339e2f").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="98f919c7510944afa817c74fe3b1aa7a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Computes the squared Euclidean distance "}, {"type": "Math", "value": "\\|u-v\\|_2^2"}, {"type": "text", "value": " between    the vectors."}], "type": "paragraph"});
+            document.getElementById("98f919c7510944afa817c74fe3b1aa7a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="62983a446ec4459095b7db51d615268a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "Y = pdist(X, \u0027cosine\u0027)"}], "type": "paragraph"});
+            document.getElementById("62983a446ec4459095b7db51d615268a").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="e0e20c20c41c4ff7bf775a2f960807a6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Computes the cosine distance between vectors u and v,"}], "type": "paragraph"});
+            document.getElementById("e0e20c20c41c4ff7bf775a2f960807a6").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$1 - \frac{u \cdot v}
+            {{\|u\|}_2 {\|v\|}_2}$$</span>
+
+                               <div id="549601a10a5049d18a43a16fac246cf5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "where "}, {"type": "Math", "value": "\\|*\\|_2"}, {"type": "text", "value": " is the 2-norm of its argument "}, {"type": "inlineCode", "value": "*"}, {"type": "text", "value": ", and    "}, {"type": "Math", "value": "u \\cdot v"}, {"type": "text", "value": " is the dot product of "}, {"type": "inlineCode", "value": "u"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "v"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("549601a10a5049d18a43a16fac246cf5").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="4464bbfa0c1444bca4e8d8b7fc3032e4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "Y = pdist(X, \u0027correlation\u0027)"}], "type": "paragraph"});
+            document.getElementById("4464bbfa0c1444bca4e8d8b7fc3032e4").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="1c9ad761ede54c948ead471db5a9df73"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Computes the correlation distance between vectors u and v. This is"}], "type": "paragraph"});
+            document.getElementById("1c9ad761ede54c948ead471db5a9df73").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$1 - \frac{(u - \bar{u}) \cdot (v - \bar{v})}
+            {{\|(u - \bar{u})\|}_2 {\|(v - \bar{v})\|}_2}$$</span>
+
+                               <div id="f9714e30341c4255ac3a914a6a4818e3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "where "}, {"type": "Math", "value": "\\bar{v}"}, {"type": "text", "value": " is the mean of the elements of vector v,    and "}, {"type": "Math", "value": "x \\cdot y"}, {"type": "text", "value": " is the dot product of "}, {"type": "Math", "value": "x"}, {"type": "text", "value": " and "}, {"type": "Math", "value": "y"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("f9714e30341c4255ac3a914a6a4818e3").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="a5dc6f890091437990d0b49eb1e10810"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "Y = pdist(X, \u0027hamming\u0027)"}], "type": "paragraph"});
+            document.getElementById("a5dc6f890091437990d0b49eb1e10810").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="b130f1dab8c9451bb9955b820ec45bc0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Computes the normalized Hamming distance, or the proportion of    those vector elements between two n-vectors "}, {"type": "inlineCode", "value": "u"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "v"}, {"type": "text", "value": "    which disagree. To save memory, the matrix "}, {"type": "inlineCode", "value": "X"}, {"type": "text", "value": " can be of type    boolean."}], "type": "paragraph"});
+            document.getElementById("b130f1dab8c9451bb9955b820ec45bc0").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="9527d28cfa2e48d3b7f29ae4efd7c71b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "Y = pdist(X, \u0027jaccard\u0027)"}], "type": "paragraph"});
+            document.getElementById("9527d28cfa2e48d3b7f29ae4efd7c71b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="3251bad51d5f447496978033b3ed477a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Computes the Jaccard distance between the points. Given two    vectors, "}, {"type": "inlineCode", "value": "u"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "v"}, {"type": "text", "value": ", the Jaccard distance is the    proportion of those elements "}, {"type": "inlineCode", "value": "u[i]"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "v[i]"}, {"type": "text", "value": " that    disagree."}], "type": "paragraph"});
+            document.getElementById("3251bad51d5f447496978033b3ed477a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="4cde1a3d7c154ed59573c46bdcb731f1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "Y = pdist(X, \u0027jensenshannon\u0027)"}], "type": "paragraph"});
+            document.getElementById("4cde1a3d7c154ed59573c46bdcb731f1").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="194bba7feb62482c97091c81f4cdc20f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Computes the Jensen-Shannon distance between two probability arrays.     Given two probability vectors, "}, {"type": "Math", "value": "p"}, {"type": "text", "value": " and "}, {"type": "Math", "value": "q"}, {"type": "text", "value": ", the     Jensen-Shannon distance is"}], "type": "paragraph"});
+            document.getElementById("194bba7feb62482c97091c81f4cdc20f").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$\sqrt{\frac{D(p \parallel m) + D(q \parallel m)}{2}}$$</span>
+
+                               <div id="73dc22e43f3a499eae541cf64e65a644"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "where "}, {"type": "Math", "value": "m"}, {"type": "text", "value": " is the pointwise mean of "}, {"type": "Math", "value": "p"}, {"type": "text", "value": " and "}, {"type": "Math", "value": "q"}, {"type": "text", "value": "     and "}, {"type": "Math", "value": "D"}, {"type": "text", "value": " is the Kullback-Leibler divergence."}], "type": "paragraph"});
+            document.getElementById("73dc22e43f3a499eae541cf64e65a644").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="b5ce4347b7b54ea39ffd4344d944a1ce"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "Y = pdist(X, \u0027chebyshev\u0027)"}], "type": "paragraph"});
+            document.getElementById("b5ce4347b7b54ea39ffd4344d944a1ce").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="87c0ee218c0a4b3b8ca9d70cff5fea77"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Computes the Chebyshev distance between the points. The     Chebyshev distance between two n-vectors "}, {"type": "inlineCode", "value": "u"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "v"}, {"type": "text", "value": " is the     maximum norm-1 distance between their respective elements. More     precisely, the distance is given by"}], "type": "paragraph"});
+            document.getElementById("87c0ee218c0a4b3b8ca9d70cff5fea77").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$d(u,v) = \max_i {|u_i-v_i|}$$</span>
+
+</li>
+               <li>                               <div id="44c1331c4350478f9921a46f18e026b3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "Y = pdist(X, \u0027canberra\u0027)"}], "type": "paragraph"});
+            document.getElementById("44c1331c4350478f9921a46f18e026b3").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="f09bffee42764125acb84606c16b4ada"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Computes the Canberra distance between the points. The     Canberra distance between two points "}, {"type": "inlineCode", "value": "u"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "v"}, {"type": "text", "value": " is"}], "type": "paragraph"});
+            document.getElementById("f09bffee42764125acb84606c16b4ada").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$d(u,v) = \sum_i \frac{|u_i-v_i|}
+                         {|u_i|+|v_i|}$$</span>
+
+</li>
+               <li>                               <div id="3fbd8d160dfc40aa9e67007c37924fe5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "Y = pdist(X, \u0027braycurtis\u0027)"}], "type": "paragraph"});
+            document.getElementById("3fbd8d160dfc40aa9e67007c37924fe5").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="cdb354d1ca874efa8bfaf2af2321afa8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Computes the Bray-Curtis distance between the points. The     Bray-Curtis distance between two points "}, {"type": "inlineCode", "value": "u"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "v"}, {"type": "text", "value": " is"}], "type": "paragraph"});
+            document.getElementById("cdb354d1ca874efa8bfaf2af2321afa8").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$d(u,v) = \frac{\sum_i {|u_i-v_i|}}
+                   {\sum_i {|u_i+v_i|}}$$</span>
+
+</li>
+               <li>                               <div id="1864f78706354e1f9e6e6d4634a7f76a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "Y = pdist(X, \u0027mahalanobis\u0027, VI=None)"}], "type": "paragraph"});
+            document.getElementById("1864f78706354e1f9e6e6d4634a7f76a").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="64bcfe7de8a7427f8b50bf2442a67734"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Computes the Mahalanobis distance between the points. The     Mahalanobis distance between two points "}, {"type": "inlineCode", "value": "u"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "v"}, {"type": "text", "value": " is     "}, {"type": "Math", "value": "\\sqrt{(u-v)(1/V)(u-v)^T}"}, {"type": "text", "value": " where "}, {"type": "Math", "value": "(1/V)"}, {"type": "text", "value": " (the "}, {"type": "inlineCode", "value": "VI"}, {"type": "text", "value": "     variable) is the inverse covariance. If "}, {"type": "inlineCode", "value": "VI"}, {"type": "text", "value": " is not None,     "}, {"type": "inlineCode", "value": "VI"}, {"type": "text", "value": " will be used as the inverse covariance matrix."}], "type": "paragraph"});
+            document.getElementById("64bcfe7de8a7427f8b50bf2442a67734").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="7c09a14cd41e475994812f331c97f44e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "Y = pdist(X, \u0027yule\u0027)"}], "type": "paragraph"});
+            document.getElementById("7c09a14cd41e475994812f331c97f44e").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="4ec85795c4b8448db6ae440e69e8118f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Computes the Yule distance between each pair of boolean     vectors. (see yule function documentation)"}], "type": "paragraph"});
+            document.getElementById("4ec85795c4b8448db6ae440e69e8118f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="f0519e0bc5f544029c53d56332af32b4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "Y = pdist(X, \u0027matching\u0027)"}], "type": "paragraph"});
+            document.getElementById("f0519e0bc5f544029c53d56332af32b4").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="f1d8c0ad697f40e6b8642072349658c9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Synonym for \u0027hamming\u0027."}], "type": "paragraph"});
+            document.getElementById("f1d8c0ad697f40e6b8642072349658c9").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="4f0c660ef69c4d9c823a716f1adee462"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "Y = pdist(X, \u0027dice\u0027)"}], "type": "paragraph"});
+            document.getElementById("4f0c660ef69c4d9c823a716f1adee462").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="0456d80a8b174dac8b16fa43ebafe491"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Computes the Dice distance between each pair of boolean     vectors. (see dice function documentation)"}], "type": "paragraph"});
+            document.getElementById("0456d80a8b174dac8b16fa43ebafe491").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="5d0b053be57b4a87993ead3b0060723b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "Y = pdist(X, \u0027kulczynski1\u0027)"}], "type": "paragraph"});
+            document.getElementById("5d0b053be57b4a87993ead3b0060723b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="f7d143084e5c49f9a4364d90fbbb65a6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Computes the kulczynski1 distance between each pair of     boolean vectors. (see kulczynski1 function documentation)"}], "type": "paragraph"});
+            document.getElementById("f7d143084e5c49f9a4364d90fbbb65a6").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="4d7737e36b7b4a16bd656848abe9b1b6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "Y = pdist(X, \u0027rogerstanimoto\u0027)"}], "type": "paragraph"});
+            document.getElementById("4d7737e36b7b4a16bd656848abe9b1b6").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="cdfbb0fe7f4d422d86c113f5ffca49f3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Computes the Rogers-Tanimoto distance between each pair of     boolean vectors. (see rogerstanimoto function documentation)"}], "type": "paragraph"});
+            document.getElementById("cdfbb0fe7f4d422d86c113f5ffca49f3").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="255f305f170c438dab7f0d806aab62e7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "Y = pdist(X, \u0027russellrao\u0027)"}], "type": "paragraph"});
+            document.getElementById("255f305f170c438dab7f0d806aab62e7").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="bd4a2150f84143d39bb55bcab477b3b7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Computes the Russell-Rao distance between each pair of     boolean vectors. (see russellrao function documentation)"}], "type": "paragraph"});
+            document.getElementById("bd4a2150f84143d39bb55bcab477b3b7").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="6a1c627ff0d247dfb80bfa01f9c67c1e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "Y = pdist(X, \u0027sokalmichener\u0027)"}], "type": "paragraph"});
+            document.getElementById("6a1c627ff0d247dfb80bfa01f9c67c1e").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="157f56bb9c2d4247806ff58ea178e430"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Computes the Sokal-Michener distance between each pair of     boolean vectors. (see sokalmichener function documentation)"}], "type": "paragraph"});
+            document.getElementById("157f56bb9c2d4247806ff58ea178e430").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="548e9ee6c60b40c19699c68095f7f879"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "Y = pdist(X, \u0027sokalsneath\u0027)"}], "type": "paragraph"});
+            document.getElementById("548e9ee6c60b40c19699c68095f7f879").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="17742e4692aa4f8cabd134bc118cc8dc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Computes the Sokal-Sneath distance between each pair of     boolean vectors. (see sokalsneath function documentation)"}], "type": "paragraph"});
+            document.getElementById("17742e4692aa4f8cabd134bc118cc8dc").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="9d3103e03b9146d5a5c8f13488d3cc41"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "Y = pdist(X, \u0027kulczynski1\u0027)"}], "type": "paragraph"});
+            document.getElementById("9d3103e03b9146d5a5c8f13488d3cc41").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="14570192932a4089aeae840ad57a76cf"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Computes the Kulczynski 1 distance between each pair of     boolean vectors. (see kulczynski1 function documentation)"}], "type": "paragraph"});
+            document.getElementById("14570192932a4089aeae840ad57a76cf").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="ccb31269f98a4e54b8fba009dab39428"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "Y = pdist(X, f)"}], "type": "paragraph"});
+            document.getElementById("ccb31269f98a4e54b8fba009dab39428").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="bb2f2fea3caa4dffbe570a06113fa15f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Computes the distance between all pairs of vectors in X     using the user supplied 2-arity function f. For example,     Euclidean distance between the vectors could be computed     as follows        "}], "type": "paragraph"});
+            document.getElementById("bb2f2fea3caa4dffbe570a06113fa15f").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="62fd3cb19c99477a9acafdf6fe8958e6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "dm = pdist(X, lambda u, v: np.sqrt(((u-v)**2).sum()))"});
+            document.getElementById("62fd3cb19c99477a9acafdf6fe8958e6").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="274983b556d54de389a7a3da4f6bb88a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Note that you should avoid passing a reference to one of     the distance functions defined in this library. For example,        "}], "type": "paragraph"});
+            document.getElementById("274983b556d54de389a7a3da4f6bb88a").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="868fbde62c9446e38769b5eed25c928e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "dm = pdist(X, sokalsneath)"});
+            document.getElementById("868fbde62c9446e38769b5eed25c928e").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="f0bad7416bc1470584419f25ebc073e0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "would calculate the pair-wise distances between the vectors in     X using the Python function sokalsneath. This would result in     sokalsneath being called "}, {"type": "Math", "value": "{n \\choose 2}"}, {"type": "text", "value": " times, which     is inefficient. Instead, the optimized C version is more     efficient, and we call it using the following syntax.        "}], "type": "paragraph"});
+            document.getElementById("f0bad7416bc1470584419f25ebc073e0").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="27d7dacd4f1a4fd9b39b1b220df4ce0c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "dm = pdist(X, \u0027sokalsneath\u0027)"});
+            document.getElementById("27d7dacd4f1a4fd9b39b1b220df4ce0c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ol>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="X">X</a> : array_like</dt>
+<dd>
+                <div id="be3f177705dc41a491c924ed08efb306"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "An m by n array of m original observations in an n-dimensional space."}], "type": "paragraph"});
+            document.getElementById("be3f177705dc41a491c924ed08efb306").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="metric">metric</a> : str or function, optional</dt>
+<dd>
+                <div id="c6ca42d20d754f849d2f94509db811df"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The distance metric to use. The distance function can be \u0027braycurtis\u0027, \u0027canberra\u0027, \u0027chebyshev\u0027, \u0027cityblock\u0027, \u0027correlation\u0027, \u0027cosine\u0027, \u0027dice\u0027, \u0027euclidean\u0027, \u0027hamming\u0027, \u0027jaccard\u0027, \u0027jensenshannon\u0027, \u0027kulczynski1\u0027, \u0027mahalanobis\u0027, \u0027matching\u0027, \u0027minkowski\u0027, \u0027rogerstanimoto\u0027, \u0027russellrao\u0027, \u0027seuclidean\u0027, \u0027sokalmichener\u0027, \u0027sokalsneath\u0027, \u0027sqeuclidean\u0027, \u0027yule\u0027."}], "type": "paragraph"});
+            document.getElementById("c6ca42d20d754f849d2f94509db811df").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="**kwargs">**kwargs</a> : dict, optional</dt>
+<dd>
+                <div id="35f98a9b1da5452883fedfcd63506df8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Extra arguments to "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "metric", "type": "RefInfo", "version": null}, "type": "Link", "value": "metric"}, {"type": "text", "value": ": refer to each metric documentation for a list of all possible arguments."}], "type": "paragraph"});
+            document.getElementById("35f98a9b1da5452883fedfcd63506df8").innerHTML = html;
+        }
+        init();
+    </script>
+
+                <div id="5e671734a9254c03ad096a630d5588f6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Some possible arguments:"}], "type": "paragraph"});
+            document.getElementById("5e671734a9254c03ad096a630d5588f6").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="Y">Y</a> : ndarray</dt>
+<dd>
+                <div id="6789288370144347a7f74c321e445c42"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Returns a condensed distance matrix Y. For each "}, {"type": "Math", "value": "i"}, {"type": "text", "value": " and "}, {"type": "Math", "value": "j"}, {"type": "text", "value": " (where "}, {"type": "Math", "value": "i\u003cj\u003cm"}, {"type": "text", "value": "),where m is the number of original observations. The metric "}, {"type": "inlineCode", "value": "dist(u=X[i], v=X[j])"}, {"type": "text", "value": " is computed and stored in entry "}, {"type": "inlineCode", "value": "m\n* i + j - ((i + 2) * (i + 1)) // 2"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("6789288370144347a7f74c321e445c42").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="2dca784e42ec4b93bdca4020118fbe3d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Pairwise distances between observations in n-dimensional space."}], "type": "paragraph"});
+            document.getElementById("2dca784e42ec4b93bdca4020118fbe3d").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.spatial.distance.squareform.html" class='exists'>squareform</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="2272d98c9eb74f7983e2005f79ae6bbc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "converts between condensed distance matrices and square distance matrices."});
+            document.getElementById("2272d98c9eb74f7983e2005f79ae6bbc").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.linkage.html" class='exists'>scipy.cluster.hierarchy.linkage</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.single.html" class='exists'>scipy.cluster.hierarchy.single</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.complete.html" class='exists'>scipy.cluster.hierarchy.complete</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.weighted.html" class='exists'>scipy.cluster.hierarchy.weighted</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.average.html" class='exists'>scipy.cluster.hierarchy.average</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.median.html" class='exists'>scipy.cluster.hierarchy.median</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.centroid.html" class='exists'>scipy.cluster.hierarchy.centroid</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.fclusterdata.html" class='exists'>scipy.cluster.hierarchy.fclusterdata</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.ward.html" class='exists'>scipy.cluster.hierarchy.ward</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/spatial/distance.py#L1952'>/scipy/spatial/distance.py#1952</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 8.0, "label": "scipy.cluster.hierarchy.average", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.cluster.hierarchy.average"}, {"id": 2, "val": 8.0, "label": "scipy.cluster.hierarchy.centroid", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.cluster.hierarchy.centroid"}, {"id": 3, "val": 9.0, "label": "scipy.cluster.hierarchy.fclusterdata", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.cluster.hierarchy.fclusterdata"}, {"id": 4, "val": 13.099019513592784, "label": "scipy.cluster.hierarchy.linkage", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.cluster.hierarchy.linkage"}, {"id": 5, "val": 9.414213562373096, "label": "scipy.spatial.distance.squareform", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.spatial.distance.squareform"}, {"id": 6, "val": 8.0, "label": "scipy.cluster.hierarchy.weighted", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.cluster.hierarchy.weighted"}, {"id": 7, "val": 8.0, "label": "scipy.cluster.hierarchy.ward", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.cluster.hierarchy.ward"}, {"id": 8, "val": 8.0, "label": "scipy.cluster.hierarchy.median", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.cluster.hierarchy.median"}, {"id": 9, "val": 8.0, "label": "scipy.cluster.hierarchy.complete", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.cluster.hierarchy.complete"}, {"id": 10, "val": 8.0, "label": "scipy.cluster.hierarchy.single", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.cluster.hierarchy.single"}], "links": [{"source": 4, "target": 10, "id": 1}, {"source": 4, "target": 9, "id": 2}, {"source": 4, "target": 7, "id": 7}, {"source": 4, "target": 8, "id": 9}, {"source": 4, "target": 2, "id": 10}, {"source": 4, "target": 3, "id": 11}, {"source": 4, "target": 6, "id": 15}, {"source": 4, "target": 1, "id": 17}]};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

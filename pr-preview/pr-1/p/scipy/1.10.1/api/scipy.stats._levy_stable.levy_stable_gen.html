@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats.html'>stats</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats._levy_stable.html'>_levy_stable</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.stats._axis_nan_policy.html">_axis_nan_policy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._biasedurn.html">_biasedurn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binned_statistic.html">_binned_statistic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binomtest.html">_binomtest</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._boost.html">_boost</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._common.html">_common</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._constants.html">_constants</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._continuous_distns.html">_continuous_distns</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._covariance.html">_covariance</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._crosstab.html">_crosstab</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._discrete_distns.html">_discrete_distns</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._distn_infrastructure.html">_distn_infrastructure</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._distr_params.html">_distr_params</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._entropy.html">_entropy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._fit.html">_fit</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.html">_hypotests</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._kde.html">_kde</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._ksstats.html">_ksstats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable.html">_levy_stable</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mannwhitneyu.html">_mannwhitneyu</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._morestats.html">_morestats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mstats_basic.html">_mstats_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mstats_extras.html">_mstats_extras</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._multivariate.html">_multivariate</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mvn.html">_mvn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._odds_ratio.html">_odds_ratio</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._page_trend_test.html">_page_trend_test</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.html">_qmc</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc_cy.html">_qmc_cy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._rcont.html">_rcont</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._relative_risk.html">_relative_risk</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling.html">_resampling</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._rvs_sampling.html">_rvs_sampling</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._sobol.html">_sobol</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._statlib.html">_statlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats.html">_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_mstats_common.html">_stats_mstats_common</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.html">_stats_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_pythran.html">_stats_pythran</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._tukeylambda_stats.html">_tukeylambda_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._variation.html">_variation</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._warnings_errors.html">_warnings_errors</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.biasedurn.html">biasedurn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.contingency.html">contingency</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.distributions.html">distributions</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.kde.html">kde</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.morestats.html">morestats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats.html">mstats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats_basic.html">mstats_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats_extras.html">mstats_extras</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mvn.html">mvn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.qmc.html">qmc</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.statlib.html">statlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats._levy_stable.levy_stable_gen.html'>levy_stable_gen</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable._Phi_Z0.html">_Phi_Z0</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable._Phi_Z1.html">_Phi_Z1</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable._cdf_single_value_piecewise_Z0.html">_cdf_single_value_piecewise_Z0</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable._cdf_single_value_piecewise_Z1.html">_cdf_single_value_piecewise_Z1</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable._cdf_single_value_piecewise_post_rounding_Z0.html">_cdf_single_value_piecewise_post_rounding_Z0</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable._cf.html">_cf</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable._fitstart_S0.html">_fitstart_S0</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable._fitstart_S1.html">_fitstart_S1</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable._nolan_round_difficult_input.html">_nolan_round_difficult_input</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable._pdf_single_value_cf_integrate.html">_pdf_single_value_cf_integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable._pdf_single_value_piecewise_Z0.html">_pdf_single_value_piecewise_Z0</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable._pdf_single_value_piecewise_Z1.html">_pdf_single_value_piecewise_Z1</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable._pdf_single_value_piecewise_post_rounding_Z0.html">_pdf_single_value_piecewise_post_rounding_Z0</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable._rvs_Z1.html">_rvs_Z1</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable.levy_stable_gen.html">levy_stable_gen</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable.levyst.html">levyst</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable.pdf_from_cf_with_fft.html">pdf_from_cf_with_fft</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" >+</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable.levy_stable_gen._argcheck.html">_argcheck</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable.levy_stable_gen._cdf.html">_cdf</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable.levy_stable_gen._fitstart.html">_fitstart</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable.levy_stable_gen._parameterization.html">_parameterization</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable.levy_stable_gen._pdf.html">_pdf</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable.levy_stable_gen._rvs.html">_rvs</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable.levy_stable_gen._shape_info.html">_shape_info</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable.levy_stable_gen._stats.html">_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable.levy_stable_gen.cdf.html">cdf</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable.levy_stable_gen.pdf.html">pdf</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable.levy_stable_gen.rvs.html">rvs</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a>    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<!-- rendering Extended Summary -->
+                                       <div id="68a939466a804a42845ef11fe2ecc4ec"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "%(before_notes)s"}], "type": "paragraph"});
+            document.getElementById("68a939466a804a42845ef11fe2ecc4ec").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="e2dc8d66b8884f428b5cbcfba6d1660c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The distribution for "}, {"domain": null, "role": null, "type": "Directive", "value": "levy_stable"}, {"type": "text", "value": " has characteristic function:"}], "type": "paragraph"});
+            document.getElementById("e2dc8d66b8884f428b5cbcfba6d1660c").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$\varphi(t, \alpha, \beta, c, \mu) =
+e^{it\mu -|ct|^{\alpha}(1-i\beta\operatorname{sign}(t)\Phi(\alpha, t))}$$</span>
+
+                               <div id="27c6b89e724d42418954e16529c735fd"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "where two different parameterizations are supported. The first "}, {"type": "Math", "value": "S_1"}, {"type": "text", "value": ":"}], "type": "paragraph"});
+            document.getElementById("27c6b89e724d42418954e16529c735fd").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$\Phi = \begin{cases}
+        \tan \left({\frac {\pi \alpha }{2}}\right)&amp;\alpha \neq 1\\
+        -{\frac {2}{\pi }}\log |t|&amp;\alpha =1
+        \end{cases}$$</span>
+
+                               <div id="848f206c80ea4ad684cd19d13c995af4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The second "}, {"type": "Math", "value": "S_0"}, {"type": "text", "value": ":"}], "type": "paragraph"});
+            document.getElementById("848f206c80ea4ad684cd19d13c995af4").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$\Phi = \begin{cases}
+        -\tan \left({\frac {\pi \alpha }{2}}\right)(|ct|^{1-\alpha}-1)
+        &amp;\alpha \neq 1\\
+        -{\frac {2}{\pi }}\log |ct|&amp;\alpha =1
+        \end{cases}$$</span>
+
+                               <div id="56a35d257341447a8c6cf2f4691ad804"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The probability density function for "}, {"domain": null, "role": null, "type": "Directive", "value": "levy_stable"}, {"type": "text", "value": " is:"}], "type": "paragraph"});
+            document.getElementById("56a35d257341447a8c6cf2f4691ad804").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$f(x) = \frac{1}{2\pi}\int_{-\infty}^\infty \varphi(t)e^{-ixt}\,dt$$</span>
+
+                               <div id="2f1a9ed364ca42e69c22b9745d9a7745"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "where "}, {"type": "Math", "value": "-\\infty \u003c t \u003c \\infty"}, {"type": "text", "value": ". This integral does not have a known closed form."}], "type": "paragraph"});
+            document.getElementById("2f1a9ed364ca42e69c22b9745d9a7745").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="f9bec9c87767488fa6d141feccecd9a6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"domain": null, "role": null, "type": "Directive", "value": "levy_stable"}, {"type": "text", "value": " generalizes several distributions.  Where possible, they should be used instead.  Specifically, when the shape parameters assume the values in the table below, the corresponding equivalent distribution should be used."}], "type": "paragraph"});
+            document.getElementById("f9bec9c87767488fa6d141feccecd9a6").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="e3a28a7e945b4aaeae4c7879175bf530"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "=========  ========  =========== "}, {"type": "inlineCode", "value": "alpha"}, {"type": "text", "value": "  "}, {"type": "inlineCode", "value": "beta"}, {"type": "text", "value": "   Equivalent =========  ========  ===========  1/2       -1        "}, {"domain": null, "role": null, "type": "Directive", "value": "levy_l"}, {"type": "text", "value": "  1/2       1         "}, {"domain": null, "role": null, "type": "Directive", "value": "levy"}, {"type": "text", "value": "  1         0         "}, {"domain": null, "role": null, "type": "Directive", "value": "cauchy"}, {"type": "text", "value": "  2         any       "}, {"domain": null, "role": null, "type": "Directive", "value": "norm"}, {"type": "text", "value": " (with "}, {"type": "inlineCode", "value": "scale=sqrt(2)"}, {"type": "text", "value": ") =========  ========  ==========="}], "type": "paragraph"});
+            document.getElementById("e3a28a7e945b4aaeae4c7879175bf530").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="4a792d4b148a4ff798d5d7f25a1da9d6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Evaluation of the pdf uses Nolan\u0027s piecewise integration approach with the Zolotarev "}, {"type": "Math", "value": "M"}, {"type": "text", "value": " parameterization by default. There is also the option to use direct numerical integration of the standard parameterization of the characteristic function or to evaluate by taking the FFT of the characteristic function."}], "type": "paragraph"});
+            document.getElementById("4a792d4b148a4ff798d5d7f25a1da9d6").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="351445b93e254a019da2f1989098c0ed"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The default method can changed by setting the class variable "}, {"type": "inlineCode", "value": "levy_stable.pdf_default_method"}, {"type": "text", "value": " to one of \u0027piecewise\u0027 for Nolan\u0027s approach, \u0027dni\u0027 for direct numerical integration, or \u0027fft-simpson\u0027 for the FFT based approach. For the sake of backwards compatibility, the methods \u0027best\u0027 and \u0027zolotarev\u0027 are equivalent to \u0027piecewise\u0027 and the method \u0027quadrature\u0027 is equivalent to \u0027dni\u0027."}], "type": "paragraph"});
+            document.getElementById("351445b93e254a019da2f1989098c0ed").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="e130490f985449c2b52b2ec9bf94dccd"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The parameterization can be changed  by setting the class variable "}, {"type": "inlineCode", "value": "levy_stable.parameterization"}, {"type": "text", "value": " to either \u0027S0\u0027 or \u0027S1\u0027. The default is \u0027S1\u0027."}], "type": "paragraph"});
+            document.getElementById("e130490f985449c2b52b2ec9bf94dccd").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="63828a8852fa41d78d5974a07f16f0a4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "To improve performance of piecewise and direct numerical integration one can specify "}, {"type": "inlineCode", "value": "levy_stable.quad_eps"}, {"type": "text", "value": " (defaults to 1.2e-14). This is used as both the absolute and relative quadrature tolerance for direct numerical integration and as the relative quadrature tolerance for the piecewise method. One can also specify "}, {"type": "inlineCode", "value": "levy_stable.piecewise_x_tol_near_zeta"}, {"type": "text", "value": " (defaults to 0.005) for how close x is to zeta before it is considered the same as x [NO]. The exact check is "}, {"type": "inlineCode", "value": "abs(x0 - zeta) \u003c piecewise_x_tol_near_zeta*alpha**(1/alpha)"}, {"type": "text", "value": ". One can also specify "}, {"type": "inlineCode", "value": "levy_stable.piecewise_alpha_tol_near_one"}, {"type": "text", "value": " (defaults to 0.005) for how close alpha is to 1 before being considered equal to 1."}], "type": "paragraph"});
+            document.getElementById("63828a8852fa41d78d5974a07f16f0a4").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="02e8ed03145a4fa9846a486a747710b3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "To increase accuracy of FFT calculation one can specify "}, {"type": "inlineCode", "value": "levy_stable.pdf_fft_grid_spacing"}, {"type": "text", "value": " (defaults to 0.001) and "}, {"type": "inlineCode", "value": "pdf_fft_n_points_two_power"}, {"type": "text", "value": " (defaults to None which means a value is calculated that sufficiently covers the input range)."}], "type": "paragraph"});
+            document.getElementById("02e8ed03145a4fa9846a486a747710b3").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="7a4e1d7e7fdf4aa79b42ee9e5f1d94a6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Further control over FFT calculation is available by setting "}, {"type": "inlineCode", "value": "pdf_fft_interpolation_degree"}, {"type": "text", "value": " (defaults to 3) for spline order and "}, {"type": "inlineCode", "value": "pdf_fft_interpolation_level"}, {"type": "text", "value": " for determining the number of points to use in the Newton-Cotes formula when approximating the characteristic function (considered experimental)."}], "type": "paragraph"});
+            document.getElementById("7a4e1d7e7fdf4aa79b42ee9e5f1d94a6").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="8b89adc6157b479c8a689efb30e67489"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Evaluation of the cdf uses Nolan\u0027s piecewise integration approach with the Zolatarev "}, {"type": "Math", "value": "S_0"}, {"type": "text", "value": " parameterization by default. There is also the option to evaluate through integration of an interpolated spline of the pdf calculated by means of the FFT method. The settings affecting FFT calculation are the same as for pdf calculation. The default cdf method can be changed by setting "}, {"type": "inlineCode", "value": "levy_stable.cdf_default_method"}, {"type": "text", "value": " to either \u0027piecewise\u0027 or \u0027fft-simpson\u0027.  For cdf calculations the Zolatarev method is superior in accuracy, so FFT is disabled by default."}], "type": "paragraph"});
+            document.getElementById("8b89adc6157b479c8a689efb30e67489").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="3900ebe769ee4c24ac846604e4c53b4b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Fitting estimate uses quantile estimation method in [MC]. MLE estimation of parameters in fit method uses this quantile estimate initially. Note that MLE doesn\u0027t always converge if using FFT for pdf calculations; this will be the case if alpha \u003c= 1 where the FFT approach doesn\u0027t give good approximations."}], "type": "paragraph"});
+            document.getElementById("3900ebe769ee4c24ac846604e4c53b4b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="8db176e2938e48a2b2ee2553f6358b4c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Any non-missing value for the attribute "}, {"type": "inlineCode", "value": "levy_stable.pdf_fft_min_points_threshold"}, {"type": "text", "value": " will set "}, {"type": "inlineCode", "value": "levy_stable.pdf_default_method"}, {"type": "text", "value": " to \u0027fft-simpson\u0027 if a valid default method is not otherwise set."}], "type": "paragraph"});
+            document.getElementById("8db176e2938e48a2b2ee2553f6358b4c").innerHTML = html;
+        }
+        init();
+    </script>
+
+                           <div class='admonition'>
+    <div>warning </div>
+                        <div id="30065f9dee194f16ad521c778b9568a9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For pdf calculations FFT calculation is considered experimental."}], "type": "paragraph"});
+            document.getElementById("30065f9dee194f16ad521c778b9568a9").innerHTML = html;
+        }
+        init();
+    </script>
+
+                        <div id="ff6843425f0d477ab5b81dd1771589bf"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For cdf calculations FFT calculation is considered experimental. Use Zolatarev\u0027s method instead (default)."}], "type": "paragraph"});
+            document.getElementById("ff6843425f0d477ab5b81dd1771589bf").innerHTML = html;
+        }
+        init();
+    </script>
+
+</div>
+
+
+                               <div id="e8cfeaa82ae048629588a0378f6f42bf"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "%(after_notes)s"}], "type": "paragraph"});
+            document.getElementById("e8cfeaa82ae048629588a0378f6f42bf").innerHTML = html;
+        }
+        init();
+    </script>
+
+<!-- rendering Summary -->
+                                       <div id="0e012bce3b1f499d9c7f7d60157cfa8b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A Levy-stable continuous random variable."}], "type": "paragraph"});
+            document.getElementById("0e012bce3b1f499d9c7f7d60157cfa8b").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/current-module/current-version/to-resolve/cauchy.html.html" class='exists'>cauchy</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/current-module/current-version/to-resolve/levy.html.html" class='exists'>levy</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/current-module/current-version/to-resolve/levy_l.html.html" class='exists'>levy_l</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/current-module/current-version/to-resolve/norm.html.html" class='exists'>norm</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/stats/_levy_stable/__init__.py#L635'>/scipy/stats/_levy_stable/__init__.py#635</a>
+<br/>
+
+type: &lt;class &#39;type&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 9.732050807568877, "label": "cauchy", "mod": "cauchy", "url": "/p/current-module/current-version/to-resolve/cauchy"}, {"id": 2, "val": 9.414213562373096, "label": "norm", "mod": "norm", "url": "/p/current-module/current-version/to-resolve/norm"}, {"id": 3, "val": 9.414213562373096, "label": "levy", "mod": "levy", "url": "/p/current-module/current-version/to-resolve/levy"}, {"id": 4, "val": 9.414213562373096, "label": "levy_l", "mod": "levy_l", "url": "/p/current-module/current-version/to-resolve/levy_l"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

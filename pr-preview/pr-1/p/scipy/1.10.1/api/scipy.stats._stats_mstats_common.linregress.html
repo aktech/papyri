@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats.html'>stats</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats._stats_mstats_common.html'>_stats_mstats_common</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.stats._axis_nan_policy.html">_axis_nan_policy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._biasedurn.html">_biasedurn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binned_statistic.html">_binned_statistic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binomtest.html">_binomtest</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._boost.html">_boost</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._common.html">_common</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._constants.html">_constants</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._continuous_distns.html">_continuous_distns</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._covariance.html">_covariance</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._crosstab.html">_crosstab</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._discrete_distns.html">_discrete_distns</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._distn_infrastructure.html">_distn_infrastructure</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._distr_params.html">_distr_params</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._entropy.html">_entropy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._fit.html">_fit</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.html">_hypotests</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._kde.html">_kde</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._ksstats.html">_ksstats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable.html">_levy_stable</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mannwhitneyu.html">_mannwhitneyu</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._morestats.html">_morestats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mstats_basic.html">_mstats_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mstats_extras.html">_mstats_extras</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._multivariate.html">_multivariate</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mvn.html">_mvn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._odds_ratio.html">_odds_ratio</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._page_trend_test.html">_page_trend_test</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.html">_qmc</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc_cy.html">_qmc_cy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._rcont.html">_rcont</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._relative_risk.html">_relative_risk</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling.html">_resampling</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._rvs_sampling.html">_rvs_sampling</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._sobol.html">_sobol</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._statlib.html">_statlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats.html">_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_mstats_common.html">_stats_mstats_common</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.html">_stats_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_pythran.html">_stats_pythran</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._tukeylambda_stats.html">_tukeylambda_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._variation.html">_variation</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._warnings_errors.html">_warnings_errors</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.biasedurn.html">biasedurn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.contingency.html">contingency</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.distributions.html">distributions</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.kde.html">kde</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.morestats.html">morestats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats.html">mstats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats_basic.html">mstats_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats_extras.html">mstats_extras</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mvn.html">mvn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.qmc.html">qmc</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.statlib.html">statlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats._stats_mstats_common.linregress.html'>linregress</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_mstats_common.LinregressResult.html">LinregressResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_mstats_common.SiegelslopesResult.html">SiegelslopesResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_mstats_common.TheilslopesResult.html">TheilslopesResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_mstats_common._find_repeats.html">_find_repeats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_mstats_common.linregress.html">linregress</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_mstats_common.siegelslopes.html">siegelslopes</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_mstats_common.theilslopes.html">theilslopes</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>linregress(x, y=None, alternative=&#39;two-sided&#39;)</code><!-- rendering Extended Summary -->
+        <h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="01161e7512ff4c718f2b082b5412e28b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Missing values are considered pair-wise: if a value is missing in "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": ", the corresponding value in "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "y", "type": "RefInfo", "version": null}, "type": "Link", "value": "y"}, {"type": "text", "value": " is masked."}], "type": "paragraph"});
+            document.getElementById("01161e7512ff4c718f2b082b5412e28b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="ce21fffb27234b9ea6e2fb6772157d96"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For compatibility with older versions of SciPy, the return value acts like a "}, {"type": "inlineCode", "value": "namedtuple"}, {"type": "text", "value": " of length 5, with fields "}, {"type": "inlineCode", "value": "slope"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "intercept"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "rvalue"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "pvalue"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "stderr"}, {"type": "text", "value": ", so one can continue to write      "}], "type": "paragraph"});
+            document.getElementById("ce21fffb27234b9ea6e2fb6772157d96").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="95ae40f3623b45c1b60bdb664f39966e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "slope, intercept, r, p, se = linregress(x, y)"});
+            document.getElementById("95ae40f3623b45c1b60bdb664f39966e").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="8dcdbc04ca3246e2b46ff1b0ecb02482"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "With that style, however, the standard error of the intercept is not available.  To have access to all the computed values, including the standard error of the intercept, use the return value as an object with attributes, e.g.      "}], "type": "paragraph"});
+            document.getElementById("8dcdbc04ca3246e2b46ff1b0ecb02482").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="f3c885bd4c1c4620aa22041501cf6233"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "result = linregress(x, y)\nprint(result.intercept, result.intercept_stderr)"});
+            document.getElementById("f3c885bd4c1c4620aa22041501cf6233").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="x, y">x, y</a> : array_like</dt>
+<dd>
+                <div id="bae919e0a7c44a3fbbdf84512eeaf8f6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Two sets of measurements.  Both arrays should have the same length.  If only "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": " is given (and "}, {"type": "inlineCode", "value": "y=None"}, {"type": "text", "value": "), then it must be a two-dimensional array where one dimension has length 2.  The two sets of measurements are then found by splitting the array along the length-2 dimension. In the case where "}, {"type": "inlineCode", "value": "y=None"}, {"type": "text", "value": " and "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": " is a 2x2 array, "}, {"type": "inlineCode", "value": "linregress(x)"}, {"type": "text", "value": " is equivalent to "}, {"type": "inlineCode", "value": "linregress(x[0], x[1])"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("bae919e0a7c44a3fbbdf84512eeaf8f6").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="alternative">alternative</a> : {&#39;two-sided&#39;, &#39;less&#39;, &#39;greater&#39;}, optional</dt>
+<dd>
+                <div id="5c63b88b8d2a4aca81dd9b3384972846"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Defines the alternative hypothesis. Default is \u0027two-sided\u0027. The following options are available:"}], "type": "paragraph"});
+            document.getElementById("5c63b88b8d2a4aca81dd9b3384972846").innerHTML = html;
+        }
+        init();
+    </script>
+
+           <ul>               <li>                               <div id="7f1d95c4f75947dd8b2575e0a0f892cb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027two-sided\u0027: the slope of the regression line is nonzero"}], "type": "paragraph"});
+            document.getElementById("7f1d95c4f75947dd8b2575e0a0f892cb").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="e4e03e135f6a4e0c907c371fec63070e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027less\u0027: the slope of the regression line is less than zero"}], "type": "paragraph"});
+            document.getElementById("e4e03e135f6a4e0c907c371fec63070e").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="0ccb4fa82d854f648c8664b73dde55e4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027greater\u0027:  the slope of the regression line is greater than zero"}], "type": "paragraph"});
+            document.getElementById("0ccb4fa82d854f648c8664b73dde55e4").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+
+            <div class='admonition'>
+    <div>versionadded 1.7.0</div>
+</div>
+
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="result">result</a> : ``LinregressResult`` instance</dt>
+<dd>
+                <div id="2ecc1ca583f34d4cb6a60b4cdd92531f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The return value is an object with the following attributes:"}], "type": "paragraph"});
+            document.getElementById("2ecc1ca583f34d4cb6a60b4cdd92531f").innerHTML = html;
+        }
+        init();
+    </script>
+
+<!-- deflist -->
+           <dl>
+               <dt>                <div id="2db6f9e7688c475ba81bad31babb2075"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "slope"}], "type": "paragraph"});
+            document.getElementById("2db6f9e7688c475ba81bad31babb2075").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="36de586e7e39414ebfd77e5d1550419b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "slope"}], "type": "paragraph"});
+            document.getElementById("36de586e7e39414ebfd77e5d1550419b").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="5d80b5c9d65c414fbb58c371542a0a65"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "intercept"}], "type": "paragraph"});
+            document.getElementById("5d80b5c9d65c414fbb58c371542a0a65").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="0da07416a2884f8c9677220bef27114e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "intercept"}], "type": "paragraph"});
+            document.getElementById("0da07416a2884f8c9677220bef27114e").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="ca611db5510c49338eb7f7bf97b8bf34"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "rvalue"}], "type": "paragraph"});
+            document.getElementById("ca611db5510c49338eb7f7bf97b8bf34").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="5d4de9e47ca043ef8afb605045716aad"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "rvalue"}], "type": "paragraph"});
+            document.getElementById("5d4de9e47ca043ef8afb605045716aad").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="67eaa79199894fcc91c8378efb0d1e28"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "pvalue"}], "type": "paragraph"});
+            document.getElementById("67eaa79199894fcc91c8378efb0d1e28").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="d2f9527fd565495da9e5241da4fdd039"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "pvalue"}], "type": "paragraph"});
+            document.getElementById("d2f9527fd565495da9e5241da4fdd039").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="d94fa6bf4beb4aa1b23315f9b6d74eec"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "stderr"}], "type": "paragraph"});
+            document.getElementById("d94fa6bf4beb4aa1b23315f9b6d74eec").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="00b4a05e8614455c970e49882025f924"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "stderr"}], "type": "paragraph"});
+            document.getElementById("00b4a05e8614455c970e49882025f924").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="0f1542d201504703a5a8266e98721efb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "intercept_stderr"}], "type": "paragraph"});
+            document.getElementById("0f1542d201504703a5a8266e98721efb").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="46c6ff5a17f64447bd306da9fa0aea2b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "intercept_stderr"}], "type": "paragraph"});
+            document.getElementById("46c6ff5a17f64447bd306da9fa0aea2b").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="103f3fc8a238457a95629de4039bd9b7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Calculate a linear least-squares regression for two sets of measurements."}], "type": "paragraph"});
+            document.getElementById("103f3fc8a238457a95629de4039bd9b7").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.optimize._minpack_py.curve_fit.html" class='exists'>scipy.optimize.curve_fit</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="7fe916154b864252a824562b7f44cefe"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "Use non-linear least squares to fit a function to data."});
+            document.getElementById("7fe916154b864252a824562b7f44cefe").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.optimize._minpack_py.leastsq.html" class='exists'>scipy.optimize.leastsq</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="16fcd6028e8547908dca3d5c1bdea280"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "Minimize the sum of squares of a set of equations."});
+            document.getElementById("16fcd6028e8547908dca3d5c1bdea280").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">import</span><span class=""> </span><span class="nn">matplotlib</span><span class="nn">.</span><span class="nn">pyplot</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">plt</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">stats</span><br><span class='nsl'>...&nbsp;</span><span class="">rng</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">random</span><span class="o">.</span><span class="">default_rng</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+                           Generate some data:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">x</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">rng</span><span class="o">.</span><span class="">random</span><span class="">(</span><span class="mi">10</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">y</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="mf">1.6</span><span class="o">*</span><span class="">x</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="">rng</span><span class="o">.</span><span class="">random</span><span class="">(</span><span class="mi">10</span><span class="">)</span>
+</pre>
+            
+                           Perform the linear regression:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">linregress</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">y</span><span class="">)</span>
+</pre>
+            
+                           Coefficient of determination (R-squared):  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="nb">print</span><span class="">(</span><span class="sa">f</span><span class="s2">&#34;</span><span class="s2">R-squared: </span><span class="si">{</span><span class="">res</span><span class="o">.</span><span class="">rvalue</span><span class="o">*</span><span class="o">*</span><span class="mi">2</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2">&#34;</span><span class="">)</span>
+R-squared: 0.717533</pre>
+            
+                           Plot the data along with the fitted line:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">y</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">o</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">label</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">original data</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">res</span><span class="o">.</span><span class="">intercept</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="">res</span><span class="o">.</span><span class="">slope</span><span class="o">*</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">r</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">label</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">fitted line</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">legend</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">show</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+                           Calculate 95% confidence interval on slope and intercept:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="c1"># Two-sided inverse Students t-distribution</span><br><span class='nsl'>...&nbsp;</span><span class="c1"># p - probability, df - degrees of freedom</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">stats</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">t</span><br><span class='nsl'>...&nbsp;</span><span class="">tinv</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="k">lambda</span><span class=""> </span><span class="">p</span><span class="">,</span><span class=""> </span><span class="">df</span><span class="">:</span><span class=""> </span><span class="nb">abs</span><span class="">(</span><span class="">t</span><span class="o">.</span><span class="">ppf</span><span class="">(</span><span class="">p</span><span class="o">/</span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="">df</span><span class="">)</span><span class="">)</span>
+</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">ts</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">tinv</span><span class="">(</span><span class="mf">0.05</span><span class="">,</span><span class=""> </span><span class="nb">len</span><span class="">(</span><span class="">x</span><span class="">)</span><span class="o">-</span><span class="mi">2</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="nb">print</span><span class="">(</span><span class="sa">f</span><span class="s2">&#34;</span><span class="s2">slope (95%): </span><span class="si">{</span><span class="">res</span><span class="o">.</span><span class="">slope</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2"> +/- </span><span class="si">{</span><span class="">ts</span><span class="o">*</span><span class="">res</span><span class="o">.</span><span class="">stderr</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2">&#34;</span><span class="">)</span>
+slope (95%): 1.453392 +/- 0.743465</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="nb">print</span><span class="">(</span><span class="sa">f</span><span class="s2">&#34;</span><span class="s2">intercept (95%): </span><span class="si">{</span><span class="">res</span><span class="o">.</span><span class="">intercept</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2">&#34;</span><br><span class='nsl'>...&nbsp;</span><span class="">      </span><span class="sa">f</span><span class="s2">&#34;</span><span class="s2"> +/- </span><span class="si">{</span><span class="">ts</span><span class="o">*</span><span class="">res</span><span class="o">.</span><span class="">intercept_stderr</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2">&#34;</span><span class="">)</span>
+intercept (95%): 0.616950 +/- 0.544475</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.optimize._minpack_py.curve_fit.html" class='exists'>scipy.optimize._minpack_py.curve_fit</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/stats/_stats_mstats_common.py#L22'>/scipy/stats/_stats_mstats_common.py#22</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 9.0, "label": "scipy.optimize._minpack_py.curve_fit", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.optimize._minpack_py.curve_fit"}, {"id": 2, "val": 9.414213562373096, "label": "scipy.optimize._minpack_py.leastsq", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.optimize._minpack_py.leastsq"}], "links": [{"source": 2, "target": 1, "id": 1}]};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

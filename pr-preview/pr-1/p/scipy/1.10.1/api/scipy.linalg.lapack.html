@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.linalg.html'>linalg</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.linalg.lapack.html'>lapack</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.linalg._basic.html">_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._cythonized_array_utils.html">_cythonized_array_utils</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp.html">_decomp</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_cholesky.html">_decomp_cholesky</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_cossin.html">_decomp_cossin</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_ldl.html">_decomp_ldl</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_lu.html">_decomp_lu</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_polar.html">_decomp_polar</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_qr.html">_decomp_qr</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_qz.html">_decomp_qz</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_schur.html">_decomp_schur</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_svd.html">_decomp_svd</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_update.html">_decomp_update</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._expm_frechet.html">_expm_frechet</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._fblas.html">_fblas</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._flapack.html">_flapack</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._flinalg.html">_flinalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._flinalg_py.html">_flinalg_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative.html">_interpolative</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.html">_interpolative_backend</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs.html">_matfuncs</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs_expm.html">_matfuncs_expm</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs_sqrtm.html">_matfuncs_sqrtm</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs_sqrtm_triu.html">_matfuncs_sqrtm_triu</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._misc.html">_misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._procrustes.html">_procrustes</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._sketches.html">_sketches</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._solve_toeplitz.html">_solve_toeplitz</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._solvers.html">_solvers</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._special_matrices.html">_special_matrices</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.basic.html">basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.blas.html">blas</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.cython_blas.html">cython_blas</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.cython_lapack.html">cython_lapack</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp.html">decomp</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_cholesky.html">decomp_cholesky</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_lu.html">decomp_lu</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_qr.html">decomp_qr</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_schur.html">decomp_schur</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_svd.html">decomp_svd</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.flinalg.html">flinalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.interpolative.html">interpolative</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.lapack.html">lapack</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.matfuncs.html">matfuncs</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.special_matrices.html">special_matrices</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" >+</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.linalg.lapack._check_work_float.html">_check_work_float</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.lapack._compute_lwork.html">_compute_lwork</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.lapack.get_lapack_funcs.html">get_lapack_funcs</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<!-- rendering Extended Summary -->
+        <!-- rendering Notes -->
+        <!-- rendering Summary -->
+                                       <div id="eed708baf2c14b04aec5ce5fe0b712f3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "To remove in the future \u2013\u2013 scipy.linalg.lapack"}], "type": "paragraph"});
+            document.getElementById("eed708baf2c14b04aec5ce5fe0b712f3").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h1>Low-level LAPACK functions (:mod:`scipy.linalg.lapack`)</h1>
+                               <div id="7e44a1f4cae44e1cb176e20d38034948"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This module contains low-level functions from the LAPACK library."}], "type": "paragraph"});
+            document.getElementById("7e44a1f4cae44e1cb176e20d38034948").innerHTML = html;
+        }
+        init();
+    </script>
+
+                           <div class='admonition'>
+    <div>versionadded 0.12.0</div>
+</div>
+
+
+                           <div class='admonition'>
+    <div>note </div>
+                        <div id="4e754a3bf5174784b066759dd2077905"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The common "}, {"type": "inlineCode", "value": "overwrite_\u003c\u003e"}, {"type": "text", "value": " option in many routines, allows the input arrays to be overwritten to avoid extra memory allocation. However this requires the array to satisfy two conditions which are memory order and the data type to match exactly the order and the type expected by the routine."}], "type": "paragraph"});
+            document.getElementById("4e754a3bf5174784b066759dd2077905").innerHTML = html;
+        }
+        init();
+    </script>
+
+                        <div id="f2e6132ac2a64b988af24754dcfa307d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "As an example, if you pass a double precision float array to any "}, {"type": "inlineCode", "value": "S...."}, {"type": "text", "value": " routine which expects single precision arguments, f2py will create an intermediate array to match the argument types and overwriting will be performed on that intermediate array."}], "type": "paragraph"});
+            document.getElementById("f2e6132ac2a64b988af24754dcfa307d").innerHTML = html;
+        }
+        init();
+    </script>
+
+                        <div id="179ade90dea543b69aa3686c2a365931"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Similarly, if a C-contiguous array is passed, f2py will pass a FORTRAN-contiguous array internally. Please make sure that these details are satisfied. More information can be found in the f2py documentation."}], "type": "paragraph"});
+            document.getElementById("179ade90dea543b69aa3686c2a365931").innerHTML = html;
+        }
+        init();
+    </script>
+
+</div>
+
+
+                           <div class='admonition'>
+    <div>warning </div>
+                        <div id="1bf6bfc5fb874c21936737134b21726d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "These functions do little to no error checking. It is possible to cause crashes by mis-using them, so prefer using the higher-level routines in "}, {"domain": null, "role": null, "type": "Directive", "value": "scipy.linalg"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("1bf6bfc5fb874c21936737134b21726d").innerHTML = html;
+        }
+        init();
+    </script>
+
+</div>
+
+
+
+<h2>Finding functions</h2>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    get_lapack_funcs</pre>
+
+<h2>All functions</h2>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    sgbsv
+    dgbsv
+    cgbsv
+    zgbsv
+
+    sgbtrf
+    dgbtrf
+    cgbtrf
+    zgbtrf
+
+    sgbtrs
+    dgbtrs
+    cgbtrs
+    zgbtrs
+
+    sgebal
+    dgebal
+    cgebal
+    zgebal
+
+    sgecon
+    dgecon
+    cgecon
+    zgecon
+
+    sgeequ
+    dgeequ
+    cgeequ
+    zgeequ
+
+    sgeequb
+    dgeequb
+    cgeequb
+    zgeequb
+
+    sgees
+    dgees
+    cgees
+    zgees
+
+    sgeev
+    dgeev
+    cgeev
+    zgeev
+
+    sgeev_lwork
+    dgeev_lwork
+    cgeev_lwork
+    zgeev_lwork
+
+    sgehrd
+    dgehrd
+    cgehrd
+    zgehrd
+
+    sgehrd_lwork
+    dgehrd_lwork
+    cgehrd_lwork
+    zgehrd_lwork
+
+    sgejsv
+    dgejsv
+
+    sgels
+    dgels
+    cgels
+    zgels
+
+    sgels_lwork
+    dgels_lwork
+    cgels_lwork
+    zgels_lwork
+
+    sgelsd
+    dgelsd
+    cgelsd
+    zgelsd
+
+    sgelsd_lwork
+    dgelsd_lwork
+    cgelsd_lwork
+    zgelsd_lwork
+
+    sgelss
+    dgelss
+    cgelss
+    zgelss
+
+    sgelss_lwork
+    dgelss_lwork
+    cgelss_lwork
+    zgelss_lwork
+
+    sgelsy
+    dgelsy
+    cgelsy
+    zgelsy
+
+    sgelsy_lwork
+    dgelsy_lwork
+    cgelsy_lwork
+    zgelsy_lwork
+
+    sgeqp3
+    dgeqp3
+    cgeqp3
+    zgeqp3
+
+    sgeqrf
+    dgeqrf
+    cgeqrf
+    zgeqrf
+
+    sgeqrf_lwork
+    dgeqrf_lwork
+    cgeqrf_lwork
+    zgeqrf_lwork
+
+    sgeqrfp
+    dgeqrfp
+    cgeqrfp
+    zgeqrfp
+
+    sgeqrfp_lwork
+    dgeqrfp_lwork
+    cgeqrfp_lwork
+    zgeqrfp_lwork
+
+    sgerqf
+    dgerqf
+    cgerqf
+    zgerqf
+
+    sgesdd
+    dgesdd
+    cgesdd
+    zgesdd
+
+    sgesdd_lwork
+    dgesdd_lwork
+    cgesdd_lwork
+    zgesdd_lwork
+
+    sgesv
+    dgesv
+    cgesv
+    zgesv
+
+    sgesvd
+    dgesvd
+    cgesvd
+    zgesvd
+
+    sgesvd_lwork
+    dgesvd_lwork
+    cgesvd_lwork
+    zgesvd_lwork
+
+    sgesvx
+    dgesvx
+    cgesvx
+    zgesvx
+
+    sgetrf
+    dgetrf
+    cgetrf
+    zgetrf
+
+    sgetc2
+    dgetc2
+    cgetc2
+    zgetc2
+
+    sgetri
+    dgetri
+    cgetri
+    zgetri
+
+    sgetri_lwork
+    dgetri_lwork
+    cgetri_lwork
+    zgetri_lwork
+
+    sgetrs
+    dgetrs
+    cgetrs
+    zgetrs
+
+    sgesc2
+    dgesc2
+    cgesc2
+    zgesc2
+
+    sgges
+    dgges
+    cgges
+    zgges
+
+    sggev
+    dggev
+    cggev
+    zggev
+
+    sgglse
+    dgglse
+    cgglse
+    zgglse
+
+    sgglse_lwork
+    dgglse_lwork
+    cgglse_lwork
+    zgglse_lwork
+
+    sgtsv
+    dgtsv
+    cgtsv
+    zgtsv
+
+    sgtsvx
+    dgtsvx
+    cgtsvx
+    zgtsvx
+
+    chbevd
+    zhbevd
+
+    chbevx
+    zhbevx
+
+    checon
+    zhecon
+
+    cheequb
+    zheequb
+
+    cheev
+    zheev
+
+    cheev_lwork
+    zheev_lwork
+
+    cheevd
+    zheevd
+
+    cheevd_lwork
+    zheevd_lwork
+
+    cheevr
+    zheevr
+
+    cheevr_lwork
+    zheevr_lwork
+
+    cheevx
+    zheevx
+
+    cheevx_lwork
+    zheevx_lwork
+
+    chegst
+    zhegst
+
+    chegv
+    zhegv
+
+    chegv_lwork
+    zhegv_lwork
+
+    chegvd
+    zhegvd
+
+    chegvx
+    zhegvx
+
+    chegvx_lwork
+    zhegvx_lwork
+
+    chesv
+    zhesv
+
+    chesv_lwork
+    zhesv_lwork
+
+    chesvx
+    zhesvx
+
+    chesvx_lwork
+    zhesvx_lwork
+
+    chetrd
+    zhetrd
+
+    chetrd_lwork
+    zhetrd_lwork
+
+    chetrf
+    zhetrf
+
+    chetrf_lwork
+    zhetrf_lwork
+
+    chfrk
+    zhfrk
+
+    slamch
+    dlamch
+
+    slange
+    dlange
+    clange
+    zlange
+
+    slarf
+    dlarf
+    clarf
+    zlarf
+
+    slarfg
+    dlarfg
+    clarfg
+    zlarfg
+
+    slartg
+    dlartg
+    clartg
+    zlartg
+
+    slasd4
+    dlasd4
+
+    slaswp
+    dlaswp
+    claswp
+    zlaswp
+
+    slauum
+    dlauum
+    clauum
+    zlauum
+
+    sorcsd
+    dorcsd
+    sorcsd_lwork
+    dorcsd_lwork
+
+    sorghr
+    dorghr
+    sorghr_lwork
+    dorghr_lwork
+
+    sorgqr
+    dorgqr
+
+    sorgrq
+    dorgrq
+
+    sormqr
+    dormqr
+
+    sormrz
+    dormrz
+
+    sormrz_lwork
+    dormrz_lwork
+
+    spbsv
+    dpbsv
+    cpbsv
+    zpbsv
+
+    spbtrf
+    dpbtrf
+    cpbtrf
+    zpbtrf
+
+    spbtrs
+    dpbtrs
+    cpbtrs
+    zpbtrs
+
+    spftrf
+    dpftrf
+    cpftrf
+    zpftrf
+
+    spftri
+    dpftri
+    cpftri
+    zpftri
+
+    spftrs
+    dpftrs
+    cpftrs
+    zpftrs
+
+    spocon
+    dpocon
+    cpocon
+    zpocon
+
+    spstrf
+    dpstrf
+    cpstrf
+    zpstrf
+
+    spstf2
+    dpstf2
+    cpstf2
+    zpstf2
+
+    sposv
+    dposv
+    cposv
+    zposv
+
+    sposvx
+    dposvx
+    cposvx
+    zposvx
+
+    spotrf
+    dpotrf
+    cpotrf
+    zpotrf
+
+    spotri
+    dpotri
+    cpotri
+    zpotri
+
+    spotrs
+    dpotrs
+    cpotrs
+    zpotrs
+
+    sppcon
+    dppcon
+    cppcon
+    zppcon
+
+    sppsv
+    dppsv
+    cppsv
+    zppsv
+
+    spptrf
+    dpptrf
+    cpptrf
+    zpptrf
+
+    spptri
+    dpptri
+    cpptri
+    zpptri
+
+    spptrs
+    dpptrs
+    cpptrs
+    zpptrs
+
+    sptsv
+    dptsv
+    cptsv
+    zptsv
+
+    sptsvx
+    dptsvx
+    cptsvx
+    zptsvx
+
+    spttrf
+    dpttrf
+    cpttrf
+    zpttrf
+
+    spttrs
+    dpttrs
+    cpttrs
+    zpttrs
+
+    spteqr
+    dpteqr
+    cpteqr
+    zpteqr
+
+    crot
+    zrot
+
+    ssbev
+    dsbev
+
+    ssbevd
+    dsbevd
+
+    ssbevx
+    dsbevx
+
+    ssfrk
+    dsfrk
+
+    sstebz
+    dstebz
+
+    sstein
+    dstein
+
+    sstemr
+    dstemr
+
+    sstemr_lwork
+    dstemr_lwork
+
+    ssterf
+    dsterf
+
+    sstev
+    dstev
+
+    ssycon
+    dsycon
+    csycon
+    zsycon
+
+    ssyconv
+    dsyconv
+    csyconv
+    zsyconv
+
+    ssyequb
+    dsyequb
+    csyequb
+    zsyequb
+
+    ssyev
+    dsyev
+
+    ssyev_lwork
+    dsyev_lwork
+
+    ssyevd
+    dsyevd
+
+    ssyevd_lwork
+    dsyevd_lwork
+
+    ssyevr
+    dsyevr
+
+    ssyevr_lwork
+    dsyevr_lwork
+
+    ssyevx
+    dsyevx
+
+    ssyevx_lwork
+    dsyevx_lwork
+
+    ssygst
+    dsygst
+
+    ssygv
+    dsygv
+
+    ssygv_lwork
+    dsygv_lwork
+
+    ssygvd
+    dsygvd
+
+    ssygvx
+    dsygvx
+
+    ssygvx_lwork
+    dsygvx_lwork
+
+    ssysv
+    dsysv
+    csysv
+    zsysv
+
+    ssysv_lwork
+    dsysv_lwork
+    csysv_lwork
+    zsysv_lwork
+
+    ssysvx
+    dsysvx
+    csysvx
+    zsysvx
+
+    ssysvx_lwork
+    dsysvx_lwork
+    csysvx_lwork
+    zsysvx_lwork
+
+    ssytf2
+    dsytf2
+    csytf2
+    zsytf2
+
+    ssytrd
+    dsytrd
+
+    ssytrd_lwork
+    dsytrd_lwork
+
+    ssytrf
+    dsytrf
+    csytrf
+    zsytrf
+
+    ssytrf_lwork
+    dsytrf_lwork
+    csytrf_lwork
+    zsytrf_lwork
+
+    stbtrs
+    dtbtrs
+    ctbtrs
+    ztbtrs
+
+    stfsm
+    dtfsm
+    ctfsm
+    ztfsm
+
+    stfttp
+    dtfttp
+    ctfttp
+    ztfttp
+
+    stfttr
+    dtfttr
+    ctfttr
+    ztfttr
+
+    stgexc
+    dtgexc
+    ctgexc
+    ztgexc
+
+    stgsen
+    dtgsen
+    ctgsen
+    ztgsen
+
+    stgsen_lwork
+    dtgsen_lwork
+    ctgsen_lwork
+    ztgsen_lwork
+
+    stpttf
+    dtpttf
+    ctpttf
+    ztpttf
+
+    stpttr
+    dtpttr
+    ctpttr
+    ztpttr
+
+    strexc
+    dtrexc
+    ctrexc
+    ztrexc
+
+    strsen
+    dtrsen
+    ctrsen
+    ztrsen
+
+    strsen_lwork
+    dtrsen_lwork
+    ctrsen_lwork
+    ztrsen_lwork
+
+    strsyl
+    dtrsyl
+    ctrsyl
+    ztrsyl
+
+    strtri
+    dtrtri
+    ctrtri
+    ztrtri
+
+    strtrs
+    dtrtrs
+    ctrtrs
+    ztrtrs
+
+    strttf
+    dtrttf
+    ctrttf
+    ztrttf
+
+    strttp
+    dtrttp
+    ctrttp
+    ztrttp
+
+    stzrzf
+    dtzrzf
+    ctzrzf
+    ztzrzf
+
+    stzrzf_lwork
+    dtzrzf_lwork
+    ctzrzf_lwork
+    ztzrzf_lwork
+
+    cunghr
+    zunghr
+
+    cunghr_lwork
+    zunghr_lwork
+
+    cungqr
+    zungqr
+
+    cungrq
+    zungrq
+
+    cunmqr
+    zunmqr
+
+    sgeqrt
+    dgeqrt
+    cgeqrt
+    zgeqrt
+
+    sgemqrt
+    dgemqrt
+    cgemqrt
+    zgemqrt
+
+    sgttrf
+    dgttrf
+    cgttrf
+    zgttrf
+
+    sgttrs
+    dgttrs
+    cgttrs
+    zgttrs
+
+    stpqrt
+    dtpqrt
+    ctpqrt
+    ztpqrt
+
+    stpmqrt
+    dtpmqrt
+    ctpmqrt
+    ztpmqrt
+
+    cuncsd
+    zuncsd
+
+    cuncsd_lwork
+    zuncsd_lwork
+
+    cunmrz
+    zunmrz
+
+    cunmrz_lwork
+    zunmrz_lwork
+
+    ilaver</pre>
+
+<h3 id="section-Examples">Examples</h3>
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/linalg/lapack.py#L0'>/scipy/linalg/lapack.py#0</a>
+<br/>
+
+type: &lt;class &#39;module&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

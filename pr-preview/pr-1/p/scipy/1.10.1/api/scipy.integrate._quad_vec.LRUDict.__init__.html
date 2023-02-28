@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.integrate.html'>integrate</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.integrate._quad_vec.html'>_quad_vec</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.integrate._bvp.html">_bvp</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._dop.html">_dop</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._ivp.html">_ivp</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._lsoda.html">_lsoda</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._ode.html">_ode</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._odepack.html">_odepack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._odepack_py.html">_odepack_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quad_vec.html">_quad_vec</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadpack.html">_quadpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadpack_py.html">_quadpack_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.html">_quadrature</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._vode.html">_vode</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.dop.html">dop</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.lsoda.html">lsoda</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.odepack.html">odepack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.quadpack.html">quadpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.vode.html">vode</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.integrate._quad_vec.LRUDict.html'>LRUDict</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quad_vec.DoubleInfiniteFunc.html">DoubleInfiniteFunc</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quad_vec.LRUDict.html">LRUDict</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quad_vec.SemiInfiniteFunc.html">SemiInfiniteFunc</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quad_vec._Bunch.html">_Bunch</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quad_vec._get_sizeof.html">_get_sizeof</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quad_vec._max_norm.html">_max_norm</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quad_vec._quadrature_gk.html">_quadrature_gk</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quad_vec._quadrature_gk15.html">_quadrature_gk15</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quad_vec._quadrature_gk21.html">_quadrature_gk21</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quad_vec._quadrature_trapezoid.html">_quadrature_trapezoid</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quad_vec._subdivide_interval.html">_subdivide_interval</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quad_vec.quad_vec.html">quad_vec</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.integrate._quad_vec.LRUDict.__init__.html'>__init__</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quad_vec.LRUDict.__init__.html">__init__</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quad_vec.LRUDict.__setitem__.html">__setitem__</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quad_vec.LRUDict.update.html">update</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>__init__(self, max_size)</code><!-- rendering Extended Summary -->
+        <!-- rendering Notes -->
+        <!-- rendering Summary -->
+                                       <div id="f9fb591675214a46a8a9aa959e286cb9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "No Docstrings"}], "type": "paragraph"});
+            document.getElementById("f9fb591675214a46a8a9aa959e286cb9").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/integrate/_quad_vec.py#L13'>/scipy/integrate/_quad_vec.py#13</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

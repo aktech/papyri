@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.interpolate.html'>interpolate</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.interpolate._bspl.html'>_bspl</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._bspl.html">_bspl</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._bsplines.html">_bsplines</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._cubic.html">_cubic</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack.html">_fitpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.html">_fitpack2</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack_impl.html">_fitpack_impl</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack_py.html">_fitpack_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._interpolate.html">_interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._ndgriddata.html">_ndgriddata</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._pade.html">_pade</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._polyint.html">_polyint</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._ppoly.html">_ppoly</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._rbf.html">_rbf</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._rbfinterp.html">_rbfinterp</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._rbfinterp_pythran.html">_rbfinterp_pythran</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._rgi.html">_rgi</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._rgi_cython.html">_rgi_cython</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.dfitpack.html">dfitpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.fitpack.html">fitpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.fitpack2.html">fitpack2</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.interpnd.html">interpnd</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.ndgriddata.html">ndgriddata</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.polyint.html">polyint</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.rbf.html">rbf</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.interpolate._bspl.evaluate_all_bspl.html'>evaluate_all_bspl</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._bspl._colloc.html">_colloc</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._bspl._handle_lhs_derivatives.html">_handle_lhs_derivatives</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._bspl._make_design_matrix.html">_make_design_matrix</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._bspl._norm_eq_lsq.html">_norm_eq_lsq</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._bspl.evaluate_all_bspl.html">evaluate_all_bspl</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._bspl.evaluate_spline.html">evaluate_spline</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a>    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<!-- rendering Extended Summary -->
+        <!-- rendering Notes -->
+        <h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="t">t</a> : ndarray, shape (nt + k + 1,)</dt>
+<dd>
+                <div id="0926db5f627544338afc06466cfc3db5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "sorted 1D array of knots"}], "type": "paragraph"});
+            document.getElementById("0926db5f627544338afc06466cfc3db5").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="k">k</a> : int</dt>
+<dd>
+                <div id="4ad4515737ad4f90a9f4c08044e266bf"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "spline order"}], "type": "paragraph"});
+            document.getElementById("4ad4515737ad4f90a9f4c08044e266bf").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="xval: float">xval: float</a> : </dt>
+<dd>
+                <div id="8b8b1b461ca84b4fbec8a384cb153d8b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "argument at which to evaluate the B-splines"}], "type": "paragraph"});
+            document.getElementById("8b8b1b461ca84b4fbec8a384cb153d8b").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="m">m</a> : int</dt>
+<dd>
+                <div id="f5a3ae73cb394213912cb0f54db87081"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "index of the left edge of the evaluation interval, "}, {"type": "inlineCode", "value": "t[m] \u003c= x \u003c t[m+1]"}], "type": "paragraph"});
+            document.getElementById("f5a3ae73cb394213912cb0f54db87081").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="nu">nu</a> : int, optional</dt>
+<dd>
+                <div id="ff780ecd29884831980278ceffa47cef"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Evaluate derivatives order "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "nu", "type": "RefInfo", "version": null}, "type": "Link", "value": "nu"}, {"type": "text", "value": ". Default is zero."}], "type": "paragraph"});
+            document.getElementById("ff780ecd29884831980278ceffa47cef").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt>ndarray, shape (k+1,)</dt>
+<dd>
+                <div id="57a422cc528c456da0eb80c48c636128"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The values of B-splines "}, {"type": "Math", "value": "[B_{m-k}(xval), ..., B_{m}(xval)]"}, {"type": "text", "value": " if "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "nu", "type": "RefInfo", "version": null}, "type": "Link", "value": "nu"}, {"type": "text", "value": " is zero, otherwise the derivatives of order "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "nu", "type": "RefInfo", "version": null}, "type": "Link", "value": "nu"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("57a422cc528c456da0eb80c48c636128").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="acb38bcc0b9f441c90132397104af811"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Evaluate the "}, {"type": "inlineCode", "value": "k+1"}, {"type": "text", "value": " B-splines which are non-zero on interval "}, {"type": "inlineCode", "value": "m"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("acb38bcc0b9f441c90132397104af811").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+                           A textbook use of this sort of routine is plotting the ``k+1`` polynomial
+pieces which make up a B-spline of order `k`.  
+            
+                           Consider a cubic spline  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">k</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="mi">3</span><br><span class='nsl'>...&nbsp;</span><span class="">t</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">[</span><span class="mf">0.</span><span class="">,</span><span class=""> </span><span class="mf">1.</span><span class="">,</span><span class=""> </span><span class="mf">2.</span><span class="">,</span><span class=""> </span><span class="mf">3.</span><span class="">,</span><span class=""> </span><span class="mf">4.</span><span class="">]</span><span class="">   </span><span class="c1"># internal knots</span><br><span class='nsl'>...&nbsp;</span><span class="">a</span><span class="">,</span><span class=""> </span><span class="">b</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">t</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">t</span><span class="">[</span><span class="o">-</span><span class="mi">1</span><span class="">]</span><span class="">    </span><span class="c1"># base interval is [a, b)</span><br><span class='nsl'>...&nbsp;</span><span class="">t</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="">a</span><span class="">]</span><span class="o">*</span><span class="">k</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="">t</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="">[</span><span class="">b</span><span class="">]</span><span class="o">*</span><span class="">k</span><span class="">)</span><span class="">  </span><span class="c1"># add boundary knots</span>
+</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">matplotlib</span><span class="nn">.</span><span class="nn">pyplot</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">plt</span><br><span class='nsl'>...&nbsp;</span><span class="">xx</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">linspace</span><span class="">(</span><span class="">a</span><span class="">,</span><span class=""> </span><span class="">b</span><span class="">,</span><span class=""> </span><span class="mi">100</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">xx</span><span class="">,</span><span class=""> </span><span class="">BSpline</span><span class="o">.</span><span class="">basis_element</span><span class="">(</span><span class="">t</span><span class="">[</span><span class="">k</span><span class="">:</span><span class="o">-</span><span class="">k</span><span class="">]</span><span class="">)</span><span class="">(</span><span class="">xx</span><span class="">)</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">         </span><span class="">lw</span><span class="o">=</span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="">,</span><span class=""> </span><span class="">label</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">basis_element</span><span class="s1">&#39;</span><span class="">)</span>
+</pre>
+            
+                           Now we use slide an interval ``t[m]..t[m+1]`` along the base interval
+``a..b`` and use `evaluate_all_bspl` to compute the restriction of
+the B-spline of interest to this interval:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="k">for</span><span class=""> </span><span class="">i</span><span class=""> </span><span class="ow">in</span><span class=""> </span><span class="nb">range</span><span class="">(</span><span class="">k</span><span class="o">+</span><span class="mi">1</span><span class="">)</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">   </span><span class="">x1</span><span class="">,</span><span class=""> </span><span class="">x2</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">t</span><span class="">[</span><span class="mi">2</span><span class="o">*</span><span class="">k</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="">i</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">t</span><span class="">[</span><span class="mi">2</span><span class="o">*</span><span class="">k</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="">i</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="mi">1</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">   </span><span class="">xx</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">linspace</span><span class="">(</span><span class="">x1</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="mf">0.5</span><span class="">,</span><span class=""> </span><span class="">x2</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="mf">0.5</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">   </span><span class="">yy</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">[</span><span class="">evaluate_all_bspl</span><span class="">(</span><span class="">t</span><span class="">,</span><span class=""> </span><span class="">k</span><span class="">,</span><span class=""> </span><span class="">x</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="o">*</span><span class="">k</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="">i</span><span class="">)</span><span class="">[</span><span class="">i</span><span class="">]</span><span class=""> </span><span class="k">for</span><span class=""> </span><span class="">x</span><span class=""> </span><span class="ow">in</span><span class=""> </span><span class="">xx</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">   </span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">xx</span><span class="">,</span><span class=""> </span><span class="">yy</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">--</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">label</span><span class="o">=</span><span class="nb">str</span><span class="">(</span><span class="">i</span><span class="">)</span><span class="">)</span>
+...</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">plt</span><span class="o">.</span><span class="">grid</span><span class="">(</span><span class="kc">True</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">legend</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">show</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0/None#LNone'>None#None</a>
+<br/>
+
+type: &lt;class &#39;builtin_function_or_method&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

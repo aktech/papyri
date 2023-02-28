@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.sparse.html'>sparse</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.sparse.linalg.html'>linalg</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.sparse._arrays.html">_arrays</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._base.html">_base</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._bsr.html">_bsr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._compressed.html">_compressed</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._construct.html">_construct</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._coo.html">_coo</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._csc.html">_csc</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._csparsetools.html">_csparsetools</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._csr.html">_csr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._data.html">_data</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._dia.html">_dia</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._dok.html">_dok</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._extract.html">_extract</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._index.html">_index</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._lil.html">_lil</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._matrix_io.html">_matrix_io</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._sparsetools.html">_sparsetools</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._sputils.html">_sputils</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.base.html">base</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.bsr.html">bsr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.compressed.html">compressed</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.construct.html">construct</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.coo.html">coo</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csc.html">csc</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csgraph.html">csgraph</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csr.html">csr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.data.html">data</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.dia.html">dia</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.dok.html">dok</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.extract.html">extract</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.lil.html">lil</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.sparsetools.html">sparsetools</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.sputils.html">sputils</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.sparse.linalg._isolve.html'>_isolve</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._dsolve.html">_dsolve</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._eigen.html">_eigen</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._expm_multiply.html">_expm_multiply</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.html">_interface</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._isolve.html">_isolve</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._matfuncs.html">_matfuncs</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._norm.html">_norm</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._onenormest.html">_onenormest</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg.dsolve.html">dsolve</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg.eigen.html">eigen</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg.interface.html">interface</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg.isolve.html">isolve</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg.matfuncs.html">matfuncs</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.sparse.linalg._isolve.lsqr.html'>lsqr</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._isolve.lsqr.lsqr.html">lsqr</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>lsqr(A, b, damp=0.0, atol=1e-06, btol=1e-06, conlim=100000000.0, iter_lim=None, show=False, calc_var=False, x0=None)</code><!-- rendering Extended Summary -->
+                                       <div id="89ef0635f98d4692995db61706021f10"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The function solves "}, {"type": "inlineCode", "value": "Ax = b"}, {"type": "text", "value": "  or  "}, {"type": "inlineCode", "value": "min ||Ax - b||^2"}, {"type": "text", "value": " or "}, {"type": "inlineCode", "value": "min ||Ax - b||^2 + d^2 ||x - x0||^2"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("89ef0635f98d4692995db61706021f10").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="2e96bf9048534d1d8def8516184c8427"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The matrix A may be square or rectangular (over-determined or under-determined), and may have any rank."}], "type": "paragraph"});
+            document.getElementById("2e96bf9048534d1d8def8516184c8427").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="00903d487a494cdbbbae49350903d88b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "1. Unsymmetric equations --    solve  Ax = b\n\n2. Linear least squares  --    solve  Ax = b\n                               in the least-squares sense\n\n3. Damped least squares  --    solve  (   A    )*x = (    b    )\n                                      ( damp*I )     ( damp*x0 )\n                               in the least-squares sense"});
+            document.getElementById("00903d487a494cdbbbae49350903d88b").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="0d55dafdfdaa44608ffa6b1761695511"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "LSQR uses an iterative method to approximate the solution.  The number of iterations required to reach a certain accuracy depends strongly on the scaling of the problem.  Poor scaling of the rows or columns of A should therefore be avoided where possible."}], "type": "paragraph"});
+            document.getElementById("0d55dafdfdaa44608ffa6b1761695511").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="ac13add358c24accb0f5854643ae6772"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For example, in problem 1 the solution is unaltered by row-scaling.  If a row of A is very small or large compared to the other rows of A, the corresponding row of ( A  b ) should be scaled up or down."}], "type": "paragraph"});
+            document.getElementById("ac13add358c24accb0f5854643ae6772").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="2a84c1c91e2749369e21c5cf915830f0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "In problems 1 and 2, the solution x is easily recovered following column-scaling.  Unless better information is known, the nonzero columns of A should be scaled so that they all have the same Euclidean norm (e.g., 1.0)."}], "type": "paragraph"});
+            document.getElementById("2a84c1c91e2749369e21c5cf915830f0").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="945c6c2d3a564085a6035ffbd1722989"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "In problem 3, there is no freedom to re-scale if damp is nonzero.  However, the value of damp should be assigned only after attention has been paid to the scaling of A."}], "type": "paragraph"});
+            document.getElementById("945c6c2d3a564085a6035ffbd1722989").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="32bbd4a296e048578b400387e15283f2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The parameter damp is intended to help regularize ill-conditioned systems, by preventing the true solution from being very large.  Another aid to regularization is provided by the parameter acond, which may be used to terminate iterations before the computed solution becomes very large."}], "type": "paragraph"});
+            document.getElementById("32bbd4a296e048578b400387e15283f2").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="56ff947e0ac748d9a925617cb7fd0606"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If some initial estimate "}, {"type": "inlineCode", "value": "x0"}, {"type": "text", "value": " is known and if "}, {"type": "inlineCode", "value": "damp == 0"}, {"type": "text", "value": ", one could proceed as follows:"}], "type": "paragraph"});
+            document.getElementById("56ff947e0ac748d9a925617cb7fd0606").innerHTML = html;
+        }
+        init();
+    </script>
+
+                           <blockquote>           <ol>               <li>                               <div id="4209a010379646a9938a3b4130a46d40"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Compute a residual vector "}, {"type": "inlineCode", "value": "r0 = b - A@x0"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("4209a010379646a9938a3b4130a46d40").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="1b6d6f426f2341428233d093cdd2b17e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Use LSQR to solve the system  "}, {"type": "inlineCode", "value": "A@dx = r0"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("1b6d6f426f2341428233d093cdd2b17e").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="75f94668738a4a68b9c733fdfe75186e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Add the correction dx to obtain a final solution "}, {"type": "inlineCode", "value": "x = x0 + dx"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("75f94668738a4a68b9c733fdfe75186e").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ol>
+</blockquote>
+
+                               <div id="7534ce88a5054eb1bc23502aaf28b572"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This requires that "}, {"type": "inlineCode", "value": "x0"}, {"type": "text", "value": " be available before and after the call to LSQR.  To judge the benefits, suppose LSQR takes k1 iterations to solve A@x = b and k2 iterations to solve A@dx = r0. If x0 is \"good\", norm(r0) will be smaller than norm(b). If the same stopping tolerances atol and btol are used for each system, k1 and k2 will be similar, but the final solution x0 + dx should be more accurate.  The only way to reduce the total work is to use a larger stopping tolerance for the second system. If some value btol is suitable for A@x = b, the larger value btol*norm(b)/norm(r0)  should be suitable for A@dx = r0."}], "type": "paragraph"});
+            document.getElementById("7534ce88a5054eb1bc23502aaf28b572").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="47e40851007d4514b6a1351443a59646"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Preconditioning is another way to reduce the number of iterations. If it is possible to solve a related system "}, {"type": "inlineCode", "value": "M@x = b"}, {"type": "text", "value": " efficiently, where M approximates A in some helpful way (e.g. M - A has low rank or its elements are small relative to those of A), LSQR may converge more rapidly on the system "}, {"type": "inlineCode", "value": "A@M(inverse)@z =\nb"}, {"type": "text", "value": ", after which x can be recovered by solving M@x = z."}], "type": "paragraph"});
+            document.getElementById("47e40851007d4514b6a1351443a59646").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="a47ada332105496fa3c5fb5582775503"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If A is symmetric, LSQR should not be used!"}], "type": "paragraph"});
+            document.getElementById("a47ada332105496fa3c5fb5582775503").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="5421a2038efb48239ebc1120311f1869"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Alternatives are the symmetric conjugate-gradient method (cg) and/or SYMMLQ.  SYMMLQ is an implementation of symmetric cg that applies to any symmetric A and will converge more rapidly than LSQR.  If A is positive definite, there are other implementations of symmetric cg that require slightly less work per iteration than SYMMLQ (but will take the same number of iterations)."}], "type": "paragraph"});
+            document.getElementById("5421a2038efb48239ebc1120311f1869").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="A">A</a> : {sparse matrix, ndarray, LinearOperator}</dt>
+<dd>
+                <div id="80ceb46cb1214eeeb2f05b82d5e8e9d3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Representation of an m-by-n matrix. Alternatively, "}, {"type": "inlineCode", "value": "A"}, {"type": "text", "value": " can be a linear operator which can produce "}, {"type": "inlineCode", "value": "Ax"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "A^T x"}, {"type": "text", "value": " using, e.g., "}, {"type": "inlineCode", "value": "scipy.sparse.linalg.LinearOperator"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("80ceb46cb1214eeeb2f05b82d5e8e9d3").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="b">b</a> : array_like, shape (m,)</dt>
+<dd>
+                <div id="c0df73998aa541959d9d1e7d85a1e003"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Right-hand side vector "}, {"type": "inlineCode", "value": "b"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("c0df73998aa541959d9d1e7d85a1e003").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="damp">damp</a> : float</dt>
+<dd>
+                <div id="e3a04ccbfe244e5a9ade6eab792721b3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Damping coefficient. Default is 0."}], "type": "paragraph"});
+            document.getElementById("e3a04ccbfe244e5a9ade6eab792721b3").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="atol, btol">atol, btol</a> : float, optional</dt>
+<dd>
+                <div id="857988723e504f1bac4ffacedd42c2b9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Stopping tolerances. "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.sparse.linalg._isolve.lsqr.lsqr", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "lsqr"}, {"type": "text", "value": " continues iterations until a certain backward error estimate is smaller than some quantity depending on atol and btol.  Let "}, {"type": "inlineCode", "value": "r = b - Ax"}, {"type": "text", "value": " be the residual vector for the current approximate solution "}, {"type": "inlineCode", "value": "x"}, {"type": "text", "value": ". If "}, {"type": "inlineCode", "value": "Ax = b"}, {"type": "text", "value": " seems to be consistent, "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.sparse.linalg._isolve.lsqr.lsqr", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "lsqr"}, {"type": "text", "value": " terminates when "}, {"type": "inlineCode", "value": "norm(r) \u003c= atol * norm(A) * norm(x) + btol * norm(b)"}, {"type": "text", "value": ". Otherwise, "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.sparse.linalg._isolve.lsqr.lsqr", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "lsqr"}, {"type": "text", "value": " terminates when "}, {"type": "inlineCode", "value": "norm(A^H r) \u003c=\natol * norm(A) * norm(r)"}, {"type": "text", "value": ".  If both tolerances are 1.0e-6 (default), the final "}, {"type": "inlineCode", "value": "norm(r)"}, {"type": "text", "value": " should be accurate to about 6 digits. (The final "}, {"type": "inlineCode", "value": "x"}, {"type": "text", "value": " will usually have fewer correct digits, depending on "}, {"type": "inlineCode", "value": "cond(A)"}, {"type": "text", "value": " and the size of LAMBDA.)  If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "atol", "type": "RefInfo", "version": null}, "type": "Link", "value": "atol"}, {"type": "text", "value": " or "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "btol", "type": "RefInfo", "version": null}, "type": "Link", "value": "btol"}, {"type": "text", "value": " is None, a default value of 1.0e-6 will be used. Ideally, they should be estimates of the relative error in the entries of "}, {"type": "inlineCode", "value": "A"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "b"}, {"type": "text", "value": " respectively.  For example, if the entries of "}, {"type": "inlineCode", "value": "A"}, {"type": "text", "value": " have 7 correct digits, set "}, {"type": "inlineCode", "value": "atol = 1e-7"}, {"type": "text", "value": ". This prevents the algorithm from doing unnecessary work beyond the uncertainty of the input data."}], "type": "paragraph"});
+            document.getElementById("857988723e504f1bac4ffacedd42c2b9").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="conlim">conlim</a> : float, optional</dt>
+<dd>
+                <div id="0cbdd3ab3ca145f0bb6d8ce21b1b0e13"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Another stopping tolerance.  lsqr terminates if an estimate of "}, {"type": "inlineCode", "value": "cond(A)"}, {"type": "text", "value": " exceeds "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "conlim", "type": "RefInfo", "version": null}, "type": "Link", "value": "conlim"}, {"type": "text", "value": ".  For compatible systems "}, {"type": "inlineCode", "value": "Ax =\nb"}, {"type": "text", "value": ", "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "conlim", "type": "RefInfo", "version": null}, "type": "Link", "value": "conlim"}, {"type": "text", "value": " could be as large as 1.0e+12 (say).  For least-squares problems, conlim should be less than 1.0e+8. Maximum precision can be obtained by setting "}, {"type": "inlineCode", "value": "atol = btol =\nconlim = zero"}, {"type": "text", "value": ", but the number of iterations may then be excessive. Default is 1e8."}], "type": "paragraph"});
+            document.getElementById("0cbdd3ab3ca145f0bb6d8ce21b1b0e13").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="iter_lim">iter_lim</a> : int, optional</dt>
+<dd>
+                <div id="f27d27c17d49485c9ff468ebb87afb6d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Explicit limitation on number of iterations (for safety)."}], "type": "paragraph"});
+            document.getElementById("f27d27c17d49485c9ff468ebb87afb6d").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="show">show</a> : bool, optional</dt>
+<dd>
+                <div id="04615104be6a4edb9f71504a31e91ed8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Display an iteration log. Default is False."}], "type": "paragraph"});
+            document.getElementById("04615104be6a4edb9f71504a31e91ed8").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="calc_var">calc_var</a> : bool, optional</dt>
+<dd>
+                <div id="bc967ba33e8e4fbcaf75db81e4db0d4b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Whether to estimate diagonals of "}, {"type": "inlineCode", "value": "(A\u0027A + damp^2*I)^{-1}"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("bc967ba33e8e4fbcaf75db81e4db0d4b").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="x0">x0</a> : array_like, shape (n,), optional</dt>
+<dd>
+                <div id="e9f662626f584a399cbf50b868aac9b2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Initial guess of x, if None zeros are used. Default is None."}], "type": "paragraph"});
+            document.getElementById("e9f662626f584a399cbf50b868aac9b2").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <div class='admonition'>
+    <div>versionadded 1.0.0</div>
+</div>
+
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="x">x</a> : ndarray of float</dt>
+<dd>
+                <div id="70ad09692a7041fe8e84ba4a334304ee"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The final solution."}], "type": "paragraph"});
+            document.getElementById("70ad09692a7041fe8e84ba4a334304ee").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="istop">istop</a> : int</dt>
+<dd>
+                <div id="bdf4f57fcd0345149bab3dd38a4a3839"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Gives the reason for termination. 1 means x is an approximate solution to Ax = b. 2 means x approximately solves the least-squares problem."}], "type": "paragraph"});
+            document.getElementById("bdf4f57fcd0345149bab3dd38a4a3839").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="itn">itn</a> : int</dt>
+<dd>
+                <div id="48f567c941b240a09a4901bdca91c14a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Iteration number upon termination."}], "type": "paragraph"});
+            document.getElementById("48f567c941b240a09a4901bdca91c14a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="r1norm">r1norm</a> : float</dt>
+<dd>
+                <div id="735db85252f5451cb812d0d1bde2079f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "norm(r)"}, {"type": "text", "value": ", where "}, {"type": "inlineCode", "value": "r = b - Ax"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("735db85252f5451cb812d0d1bde2079f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="r2norm">r2norm</a> : float</dt>
+<dd>
+                <div id="9c670d615a84461c8579fde35130e132"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "sqrt( norm(r)^2  +  damp^2 * norm(x - x0)^2 )"}, {"type": "text", "value": ".  Equal to "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "r1norm", "type": "RefInfo", "version": null}, "type": "Link", "value": "r1norm"}, {"type": "text", "value": " if "}, {"type": "inlineCode", "value": "damp == 0"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("9c670d615a84461c8579fde35130e132").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="anorm">anorm</a> : float</dt>
+<dd>
+                <div id="cc69218bd96240c89abba556fa2bd789"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Estimate of Frobenius norm of "}, {"type": "inlineCode", "value": "Abar = [[A]; [damp*I]]"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("cc69218bd96240c89abba556fa2bd789").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="acond">acond</a> : float</dt>
+<dd>
+                <div id="d1f6e886b39b4b049e002292c4687d2c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Estimate of "}, {"type": "inlineCode", "value": "cond(Abar)"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("d1f6e886b39b4b049e002292c4687d2c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="arnorm">arnorm</a> : float</dt>
+<dd>
+                <div id="96243b2036e14ef38da7574b5eb8bf94"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Estimate of "}, {"type": "inlineCode", "value": "norm(A\u0027@r - damp^2*(x - x0))"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("96243b2036e14ef38da7574b5eb8bf94").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="xnorm">xnorm</a> : float</dt>
+<dd>
+                <div id="317a99d8a5454da29e1cf179645c0f50"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "norm(x)"}], "type": "paragraph"});
+            document.getElementById("317a99d8a5454da29e1cf179645c0f50").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="var">var</a> : ndarray of float</dt>
+<dd>
+                <div id="0ee79fd8993e433599727f07198ef5cf"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"type": "inlineCode", "value": "calc_var"}, {"type": "text", "value": " is True, estimates all diagonals of "}, {"type": "inlineCode", "value": "(A\u0027A)^{-1}"}, {"type": "text", "value": " (if "}, {"type": "inlineCode", "value": "damp == 0"}, {"type": "text", "value": ") or more generally "}, {"type": "inlineCode", "value": "(A\u0027A +\ndamp^2*I)^{-1}"}, {"type": "text", "value": ".  This is well defined if A has full column rank or "}, {"type": "inlineCode", "value": "damp \u003e 0"}, {"type": "text", "value": ".  (Not sure what var means if "}, {"type": "inlineCode", "value": "rank(A)\n\u003c n"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "damp = 0."}, {"type": "text", "value": ")"}], "type": "paragraph"});
+            document.getElementById("0ee79fd8993e433599727f07198ef5cf").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="522caff3625d401c86373052e2963570"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Find the least-squares solution to a large, sparse, linear system of equations."}], "type": "paragraph"});
+            document.getElementById("522caff3625d401c86373052e2963570").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">sparse</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">csc_matrix</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">sparse</span><span class="nn">.</span><span class="nn">linalg</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">lsqr</span><br><span class='nsl'>...&nbsp;</span><span class="">A</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">csc_matrix</span><span class="">(</span><span class="">[</span><span class="">[</span><span class="mf">1.</span><span class="">,</span><span class=""> </span><span class="mf">0.</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mf">1.</span><span class="">,</span><span class=""> </span><span class="mf">1.</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mf">0.</span><span class="">,</span><span class=""> </span><span class="mf">1.</span><span class="">]</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">dtype</span><span class="o">=</span><span class="nb">float</span><span class="">)</span>
+</pre>
+            
+                           The first example has the trivial solution ``[0, 0]``  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">b</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="mf">0.</span><span class="">,</span><span class=""> </span><span class="mf">0.</span><span class="">,</span><span class=""> </span><span class="mf">0.</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">dtype</span><span class="o">=</span><span class="nb">float</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">istop</span><span class="">,</span><span class=""> </span><span class="">itn</span><span class="">,</span><span class=""> </span><span class="">normr</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">lsqr</span><span class="">(</span><span class="">A</span><span class="">,</span><span class=""> </span><span class="">b</span><span class="">)</span><span class="">[</span><span class="">:</span><span class="mi">4</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">istop</span>
+0</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">x</span>
+array([ 0.,  0.])</pre>
+            
+                           The stopping code `istop=0` returned indicates that a vector of zeros was
+found as a solution. The returned solution `x` indeed contains
+``[0., 0.]``. The next example has a non-trivial solution:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">b</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="mf">1.</span><span class="">,</span><span class=""> </span><span class="mf">0.</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mf">1.</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">dtype</span><span class="o">=</span><span class="nb">float</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">istop</span><span class="">,</span><span class=""> </span><span class="">itn</span><span class="">,</span><span class=""> </span><span class="">r1norm</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">lsqr</span><span class="">(</span><span class="">A</span><span class="">,</span><span class=""> </span><span class="">b</span><span class="">)</span><span class="">[</span><span class="">:</span><span class="mi">4</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">istop</span>
+1</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">x</span>
+array([ 1., -1.])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">itn</span>
+1</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">r1norm</span>
+4.440892098500627e-16</pre>
+            
+                           As indicated by `istop=1`, `lsqr` found a solution obeying the tolerance
+limits. The given solution ``[1., -1.]`` obviously solves the equation. The
+remaining return values include information about the number of iterations
+(`itn=1`) and the remaining difference of left and right side of the solved
+equation.
+The final example demonstrates the behavior in the case where there is no
+solution for the equation:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">b</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="mf">1.</span><span class="">,</span><span class=""> </span><span class="mf">0.01</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mf">1.</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">dtype</span><span class="o">=</span><span class="nb">float</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">istop</span><span class="">,</span><span class=""> </span><span class="">itn</span><span class="">,</span><span class=""> </span><span class="">r1norm</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">lsqr</span><span class="">(</span><span class="">A</span><span class="">,</span><span class=""> </span><span class="">b</span><span class="">)</span><span class="">[</span><span class="">:</span><span class="mi">4</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">istop</span>
+2</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">x</span>
+array([ 1.00333333, -0.99666667])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">A</span><span class="o">.</span><span class="">dot</span><span class="">(</span><span class="">x</span><span class="">)</span><span class="o">-</span><span class="">b</span>
+array([ 0.00333333, -0.00333333,  0.00333333])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">r1norm</span>
+0.005773502691896255</pre>
+            
+                           `istop` indicates that the system is inconsistent and thus `x` is rather an
+approximate solution to the corresponding least-squares problem. `r1norm`
+contains the norm of the minimal residual that was found.  
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.sparse.linalg._isolve.lsqr.lsqr.html" class='exists'>scipy.sparse.linalg._isolve.lsqr.lsqr</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/sparse/linalg/_isolve/lsqr.py#L96'>/scipy/sparse/linalg/_isolve/lsqr.py#96</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

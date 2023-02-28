@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.signal.html'>signal</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.signal._peak_finding.html'>_peak_finding</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.signal._arraytools.html">_arraytools</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._bsplines.html">_bsplines</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._czt.html">_czt</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._filter_design.html">_filter_design</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._fir_filter_design.html">_fir_filter_design</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._lti_conversion.html">_lti_conversion</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.html">_ltisys</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._max_len_seq.html">_max_len_seq</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._max_len_seq_inner.html">_max_len_seq_inner</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._peak_finding.html">_peak_finding</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._peak_finding_utils.html">_peak_finding_utils</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._savitzky_golay.html">_savitzky_golay</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.html">_signaltools</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._sigtools.html">_sigtools</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._sosfilt.html">_sosfilt</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spectral.html">_spectral</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spectral_py.html">_spectral_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spline.html">_spline</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._upfirdn.html">_upfirdn</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._upfirdn_apply.html">_upfirdn_apply</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._waveforms.html">_waveforms</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._wavelets.html">_wavelets</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.barthann.html">barthann</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.bartlett.html">bartlett</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.blackman.html">blackman</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.blackmanharris.html">blackmanharris</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.bohman.html">bohman</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.boxcar.html">boxcar</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.bsplines.html">bsplines</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.chebwin.html">chebwin</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.cosine.html">cosine</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.exponential.html">exponential</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.filter_design.html">filter_design</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.fir_filter_design.html">fir_filter_design</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.flattop.html">flattop</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.gaussian.html">gaussian</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.general_gaussian.html">general_gaussian</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.hamming.html">hamming</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.hann.html">hann</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.kaiser.html">kaiser</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.lti_conversion.html">lti_conversion</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.ltisys.html">ltisys</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.nuttall.html">nuttall</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.parzen.html">parzen</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.signaltools.html">signaltools</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.spectral.html">spectral</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.spline.html">spline</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.triang.html">triang</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.tukey.html">tukey</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.waveforms.html">waveforms</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.wavelets.html">wavelets</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.windows.html">windows</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.signal._peak_finding.find_peaks.html'>find_peaks</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.signal._peak_finding._arg_peaks_as_expected.html">_arg_peaks_as_expected</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._peak_finding._arg_wlen_as_expected.html">_arg_wlen_as_expected</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._peak_finding._arg_x_as_expected.html">_arg_x_as_expected</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._peak_finding._boolrelextrema.html">_boolrelextrema</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._peak_finding._filter_ridge_lines.html">_filter_ridge_lines</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._peak_finding._select_by_peak_threshold.html">_select_by_peak_threshold</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._peak_finding._select_by_property.html">_select_by_property</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._peak_finding._unpack_condition_args.html">_unpack_condition_args</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._peak_finding.argrelextrema.html">argrelextrema</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._peak_finding.argrelmax.html">argrelmax</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._peak_finding.argrelmin.html">argrelmin</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._peak_finding.find_peaks.html">find_peaks</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._peak_finding.find_peaks_cwt.html">find_peaks_cwt</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._peak_finding.peak_prominences.html">peak_prominences</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._peak_finding.peak_widths.html">peak_widths</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-Warnings">Warnings</a><a href="#section-Warns">Warns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>find_peaks(x, height=None, threshold=None, distance=None, prominence=None, width=None, wlen=None, rel_height=0.5, plateau_size=None)</code><!-- rendering Extended Summary -->
+                                       <div id="56e273f0c58b413faca0a9bfe33f0282"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This function takes a 1-D array and finds all local maxima by simple comparison of neighboring values. Optionally, a subset of these peaks can be selected by specifying conditions for a peak\u0027s properties."}], "type": "paragraph"});
+            document.getElementById("56e273f0c58b413faca0a9bfe33f0282").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="0977adf7e78d4f0891dc6351aa929d09"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "In the context of this function, a peak or local maximum is defined as any sample whose two direct neighbours have a smaller amplitude. For flat peaks (more than one sample of equal amplitude wide) the index of the middle sample is returned (rounded down in case the number of samples is even). For noisy signals the peak locations can be off because the noise might change the position of local maxima. In those cases consider smoothing the signal before searching for peaks or use other peak finding and fitting methods (like "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.signal._peak_finding.find_peaks_cwt", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "find_peaks_cwt"}, {"type": "text", "value": ")."}], "type": "paragraph"});
+            document.getElementById("0977adf7e78d4f0891dc6351aa929d09").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="9d474e76532f41398bd3464d1bf1db01"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Some additional comments on specifying conditions:"}], "type": "paragraph"});
+            document.getElementById("9d474e76532f41398bd3464d1bf1db01").innerHTML = html;
+        }
+        init();
+    </script>
+
+                          <ul>               <li>                               <div id="95a44d1fafa2445889a4562790a092ff"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Almost all conditions (excluding "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "distance", "type": "RefInfo", "version": null}, "type": "Link", "value": "distance"}, {"type": "text", "value": ") can be given as half-open or   closed intervals, e.g., "}, {"type": "inlineCode", "value": "1"}, {"type": "text", "value": " or "}, {"type": "inlineCode", "value": "(1, None)"}, {"type": "text", "value": " defines the half-open   interval "}, {"type": "Math", "value": "[1, \\infty]"}, {"type": "text", "value": " while "}, {"type": "inlineCode", "value": "(None, 1)"}, {"type": "text", "value": " defines the interval   "}, {"type": "Math", "value": "[-\\infty, 1]"}, {"type": "text", "value": ". The open interval "}, {"type": "inlineCode", "value": "(None, None)"}, {"type": "text", "value": " can be specified   as well, which returns the matching properties without exclusion of peaks."}], "type": "paragraph"});
+            document.getElementById("95a44d1fafa2445889a4562790a092ff").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="f3ce8361a58344f89255af5aa6cb6cf0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The border is always included in the interval used to select valid peaks."}], "type": "paragraph"});
+            document.getElementById("f3ce8361a58344f89255af5aa6cb6cf0").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="7006ca10c9ff4bc1bd81d01b0602c41e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For several conditions the interval borders can be specified with   arrays matching "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": " in shape which enables dynamic constrains based on   the sample position."}], "type": "paragraph"});
+            document.getElementById("7006ca10c9ff4bc1bd81d01b0602c41e").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="a7bae208e610458aa51b8719db74bcd1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The conditions are evaluated in the following order: "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "plateau_size", "type": "RefInfo", "version": null}, "type": "Link", "value": "plateau_size"}, {"type": "text", "value": ",   "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "height", "type": "RefInfo", "version": null}, "type": "Link", "value": "height"}, {"type": "text", "value": ", "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "threshold", "type": "RefInfo", "version": null}, "type": "Link", "value": "threshold"}, {"type": "text", "value": ", "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "distance", "type": "RefInfo", "version": null}, "type": "Link", "value": "distance"}, {"type": "text", "value": ", "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "prominence", "type": "RefInfo", "version": null}, "type": "Link", "value": "prominence"}, {"type": "text", "value": ", "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "width", "type": "RefInfo", "version": null}, "type": "Link", "value": "width"}, {"type": "text", "value": ". In most cases   this order is the fastest one because faster operations are applied first   to reduce the number of peaks that need to be evaluated later."}], "type": "paragraph"});
+            document.getElementById("a7bae208e610458aa51b8719db74bcd1").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="c2cbaed94060435f832af0dbcce596fa"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "While indices in "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "peaks", "type": "RefInfo", "version": null}, "type": "Link", "value": "peaks"}, {"type": "text", "value": " are guaranteed to be at least "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "distance", "type": "RefInfo", "version": null}, "type": "Link", "value": "distance"}, {"type": "text", "value": " samples   apart, edges of flat peaks may be closer than the allowed "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "distance", "type": "RefInfo", "version": null}, "type": "Link", "value": "distance"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("c2cbaed94060435f832af0dbcce596fa").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="f228e055ea5843b49d8342245a0ac755"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Use "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "wlen", "type": "RefInfo", "version": null}, "type": "Link", "value": "wlen"}, {"type": "text", "value": " to reduce the time it takes to evaluate the conditions for   "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "prominence", "type": "RefInfo", "version": null}, "type": "Link", "value": "prominence"}, {"type": "text", "value": " or "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "width", "type": "RefInfo", "version": null}, "type": "Link", "value": "width"}, {"type": "text", "value": " if "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": " is large or has many local maxima   (see "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.signal._peak_finding.peak_prominences", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "peak_prominences"}, {"type": "text", "value": ")."}], "type": "paragraph"});
+            document.getElementById("f228e055ea5843b49d8342245a0ac755").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+
+                           <div class='admonition'>
+    <div>versionadded 1.1.0</div>
+</div>
+
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="x">x</a> : sequence</dt>
+<dd>
+                <div id="f3672bccdc4f43478d0206d3bfd7e2ef"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A signal with peaks."}], "type": "paragraph"});
+            document.getElementById("f3672bccdc4f43478d0206d3bfd7e2ef").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="height">height</a> : number or ndarray or sequence, optional</dt>
+<dd>
+                <div id="a7ce33ab0c1e417c8d0d635f6b98481f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Required height of peaks. Either a number, "}, {"type": "inlineCode", "value": "None"}, {"type": "text", "value": ", an array matching "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": " or a 2-element sequence of the former. The first element is always interpreted as the  minimal and the second, if supplied, as the maximal required height."}], "type": "paragraph"});
+            document.getElementById("a7ce33ab0c1e417c8d0d635f6b98481f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="threshold">threshold</a> : number or ndarray or sequence, optional</dt>
+<dd>
+                <div id="90fa7ddd694d4530aff7b108aa0b77ac"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Required threshold of peaks, the vertical distance to its neighboring samples. Either a number, "}, {"type": "inlineCode", "value": "None"}, {"type": "text", "value": ", an array matching "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": " or a 2-element sequence of the former. The first element is always interpreted as the  minimal and the second, if supplied, as the maximal required threshold."}], "type": "paragraph"});
+            document.getElementById("90fa7ddd694d4530aff7b108aa0b77ac").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="distance">distance</a> : number, optional</dt>
+<dd>
+                <div id="4ea3f5abf80c4d158e37863b76636f36"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Required minimal horizontal distance (\u003e= 1) in samples between neighbouring peaks. Smaller peaks are removed first until the condition is fulfilled for all remaining peaks."}], "type": "paragraph"});
+            document.getElementById("4ea3f5abf80c4d158e37863b76636f36").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="prominence">prominence</a> : number or ndarray or sequence, optional</dt>
+<dd>
+                <div id="4af9281f436440da8259195bbafa5abb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Required prominence of peaks. Either a number, "}, {"type": "inlineCode", "value": "None"}, {"type": "text", "value": ", an array matching "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": " or a 2-element sequence of the former. The first element is always interpreted as the  minimal and the second, if supplied, as the maximal required prominence."}], "type": "paragraph"});
+            document.getElementById("4af9281f436440da8259195bbafa5abb").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="width">width</a> : number or ndarray or sequence, optional</dt>
+<dd>
+                <div id="fe74da7abb4a4d2f9779004bf8c8f2d8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Required width of peaks in samples. Either a number, "}, {"type": "inlineCode", "value": "None"}, {"type": "text", "value": ", an array matching "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": " or a 2-element sequence of the former. The first element is always interpreted as the  minimal and the second, if supplied, as the maximal required width."}], "type": "paragraph"});
+            document.getElementById("fe74da7abb4a4d2f9779004bf8c8f2d8").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="wlen">wlen</a> : int, optional</dt>
+<dd>
+                <div id="93b260ebb7d1460c855d111e13b90146"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Used for calculation of the peaks prominences, thus it is only used if one of the arguments "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "prominence", "type": "RefInfo", "version": null}, "type": "Link", "value": "prominence"}, {"type": "text", "value": " or "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "width", "type": "RefInfo", "version": null}, "type": "Link", "value": "width"}, {"type": "text", "value": " is given. See argument "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "wlen", "type": "RefInfo", "version": null}, "type": "Link", "value": "wlen"}, {"type": "text", "value": " in "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.signal._peak_finding.peak_prominences", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "peak_prominences"}, {"type": "text", "value": " for a full description of its effects."}], "type": "paragraph"});
+            document.getElementById("93b260ebb7d1460c855d111e13b90146").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="rel_height">rel_height</a> : float, optional</dt>
+<dd>
+                <div id="fbeb94ee24424f0589d08e60b05fce5f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Used for calculation of the peaks width, thus it is only used if "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "width", "type": "RefInfo", "version": null}, "type": "Link", "value": "width"}, {"type": "text", "value": " is given. See argument  "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "rel_height", "type": "RefInfo", "version": null}, "type": "Link", "value": "rel_height"}, {"type": "text", "value": " in "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.signal._peak_finding.peak_widths", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "peak_widths"}, {"type": "text", "value": " for a full description of its effects."}], "type": "paragraph"});
+            document.getElementById("fbeb94ee24424f0589d08e60b05fce5f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="plateau_size">plateau_size</a> : number or ndarray or sequence, optional</dt>
+<dd>
+                <div id="274ec19200f54d45a7566a533fc58069"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Required size of the flat top of peaks in samples. Either a number, "}, {"type": "inlineCode", "value": "None"}, {"type": "text", "value": ", an array matching "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": " or a 2-element sequence of the former. The first element is always interpreted as the minimal and the second, if supplied as the maximal required plateau size."}], "type": "paragraph"});
+            document.getElementById("274ec19200f54d45a7566a533fc58069").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <div class='admonition'>
+    <div>versionadded 1.2.0</div>
+</div>
+
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="peaks">peaks</a> : ndarray</dt>
+<dd>
+                <div id="8a03d5de1341449492927d4961135611"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Indices of peaks in "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": " that satisfy all given conditions."}], "type": "paragraph"});
+            document.getElementById("8a03d5de1341449492927d4961135611").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="properties">properties</a> : dict</dt>
+<dd>
+                <div id="4a272f02642f4806bae991a3023c4c06"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A dictionary containing properties of the returned peaks which were calculated as intermediate results during evaluation of the specified conditions:"}], "type": "paragraph"});
+            document.getElementById("4a272f02642f4806bae991a3023c4c06").innerHTML = html;
+        }
+        init();
+    </script>
+
+           <ul>               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="ee55fa3232e1431585384f292d12fd59"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027peak_heights\u0027"}], "type": "paragraph"});
+            document.getElementById("ee55fa3232e1431585384f292d12fd59").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="53fa10e13ece41528167b312604df509"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "height", "type": "RefInfo", "version": null}, "type": "Link", "value": "height"}, {"type": "text", "value": " is given, the height of each peak in "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("53fa10e13ece41528167b312604df509").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="bbf5bf1ffaa44965a41cffcd5a7acba5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027left_thresholds\u0027, \u0027right_thresholds\u0027"}], "type": "paragraph"});
+            document.getElementById("bbf5bf1ffaa44965a41cffcd5a7acba5").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="9ecbe3f206c64ff2a20ac4adf8331d6f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "threshold", "type": "RefInfo", "version": null}, "type": "Link", "value": "threshold"}, {"type": "text", "value": " is given, these keys contain a peaks vertical       distance to its neighbouring samples."}], "type": "paragraph"});
+            document.getElementById("9ecbe3f206c64ff2a20ac4adf8331d6f").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="7f494b2288254c8f8b9110714b45225b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027prominences\u0027, \u0027right_bases\u0027, \u0027left_bases\u0027"}], "type": "paragraph"});
+            document.getElementById("7f494b2288254c8f8b9110714b45225b").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="c78660b60c8a4c1ba02e93b53d184f92"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "prominence", "type": "RefInfo", "version": null}, "type": "Link", "value": "prominence"}, {"type": "text", "value": " is given, these keys are accessible. See       "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.signal._peak_finding.peak_prominences", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "peak_prominences"}, {"type": "text", "value": " for a description of their content."}], "type": "paragraph"});
+            document.getElementById("c78660b60c8a4c1ba02e93b53d184f92").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="33996917a15d4397b658dde26987ce64"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027width_heights\u0027, \u0027left_ips\u0027, \u0027right_ips\u0027"}], "type": "paragraph"});
+            document.getElementById("33996917a15d4397b658dde26987ce64").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="d5c95914ea4849319900cf287cd1a19f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "width", "type": "RefInfo", "version": null}, "type": "Link", "value": "width"}, {"type": "text", "value": " is given, these keys are accessible. See "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.signal._peak_finding.peak_widths", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "peak_widths"}, {"type": "text", "value": "       for a description of their content."}], "type": "paragraph"});
+            document.getElementById("d5c95914ea4849319900cf287cd1a19f").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="ac20ff75c79b42a69723048c0f4c0031"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027plateau_sizes\u0027, left_edges\u0027, \u0027right_edges\u0027"}], "type": "paragraph"});
+            document.getElementById("ac20ff75c79b42a69723048c0f4c0031").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="069d179128254c6e936df3ced4b44b4c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "plateau_size", "type": "RefInfo", "version": null}, "type": "Link", "value": "plateau_size"}, {"type": "text", "value": " is given, these keys are accessible and contain       the indices of a peak\u0027s edges (edges are still part of the       plateau) and the calculated plateau sizes."}], "type": "paragraph"});
+            document.getElementById("069d179128254c6e936df3ced4b44b4c").innerHTML = html;
+        }
+        init();
+    </script>
+            <div class='admonition'>
+    <div>versionadded 1.2.0</div>
+</div>
+
+</dd>
+           </dl>
+
+</li>
+            </ul>
+
+                <div id="cf71cb1d0057474088620bd045845dcf"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "To calculate and return properties without excluding peaks, provide the open interval "}, {"type": "inlineCode", "value": "(None, None)"}, {"type": "text", "value": " as a value to the appropriate argument (excluding "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "distance", "type": "RefInfo", "version": null}, "type": "Link", "value": "distance"}, {"type": "text", "value": ")."}], "type": "paragraph"});
+            document.getElementById("cf71cb1d0057474088620bd045845dcf").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="7b9033500001430580ce69991fc950e1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Find peaks inside a signal based on peak properties."}], "type": "paragraph"});
+            document.getElementById("7b9033500001430580ce69991fc950e1").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Warnings">Warnings</h3>
+<h3 id="section-Warns">Warns</h3>
+<dl>
+<dt>PeakPropertyWarning</dt>
+<dd>
+                <div id="6e556548f18d46f781c950fe315f44c6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Raised if a peak\u0027s properties have unexpected values (see "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.signal._peak_finding.peak_prominences", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "peak_prominences"}, {"type": "text", "value": " and "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.signal._peak_finding.peak_widths", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "peak_widths"}, {"type": "text", "value": ")."}], "type": "paragraph"});
+            document.getElementById("6e556548f18d46f781c950fe315f44c6").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.signal._peak_finding.find_peaks_cwt.html" class='exists'>find_peaks_cwt</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="71f21bec4f9943b6a4f301c33b13f4b9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "Find peaks using the wavelet transformation."});
+            document.getElementById("71f21bec4f9943b6a4f301c33b13f4b9").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.signal._peak_finding.peak_prominences.html" class='exists'>peak_prominences</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="2de0327bba8e47bb96366d195a73ee87"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "Directly calculate the prominence of peaks."});
+            document.getElementById("2de0327bba8e47bb96366d195a73ee87").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.signal._peak_finding.peak_widths.html" class='exists'>peak_widths</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="afd15ea919e5495f8d81a27d719f38df"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "Directly calculate the width of peaks."});
+            document.getElementById("afd15ea919e5495f8d81a27d719f38df").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+                           To demonstrate this function&#39;s usage we use a signal `x` supplied with
+SciPy (see `scipy.datasets.electrocardiogram`). Let&#39;s find all peaks (local
+maxima) in `x` whose amplitude lies above 0.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">import</span><span class=""> </span><span class="nn">matplotlib</span><span class="nn">.</span><span class="nn">pyplot</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">plt</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">datasets</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">electrocardiogram</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">signal</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">find_peaks</span><br><span class='nsl'>...&nbsp;</span><span class="">x</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">electrocardiogram</span><span class="">(</span><span class="">)</span><span class="">[</span><span class="mi">2000</span><span class="">:</span><span class="mi">4000</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">peaks</span><span class="">,</span><span class=""> </span><span class="">_</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">find_peaks</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">height</span><span class="o">=</span><span class="mi">0</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">x</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">peaks</span><span class="">,</span><span class=""> </span><span class="">x</span><span class="">[</span><span class="">peaks</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="s2">&#34;</span><span class="s2">x</span><span class="s2">&#34;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">zeros_like</span><span class="">(</span><span class="">x</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="s2">&#34;</span><span class="s2">--</span><span class="s2">&#34;</span><span class="">,</span><span class=""> </span><span class="">color</span><span class="o">=</span><span class="s2">&#34;</span><span class="s2">gray</span><span class="s2">&#34;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">show</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+                           We can select peaks below 0 with ``height=(None, 0)`` or use arrays matching
+`x` in size to reflect a changing condition for different parts of the
+signal.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">border</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">sin</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">linspace</span><span class="">(</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">pi</span><span class="">,</span><span class=""> </span><span class="">x</span><span class="o">.</span><span class="">size</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">peaks</span><span class="">,</span><span class=""> </span><span class="">_</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">find_peaks</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">height</span><span class="o">=</span><span class="">(</span><span class="o">-</span><span class="">border</span><span class="">,</span><span class=""> </span><span class="">border</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">x</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="o">-</span><span class="">border</span><span class="">,</span><span class=""> </span><span class="s2">&#34;</span><span class="s2">--</span><span class="s2">&#34;</span><span class="">,</span><span class=""> </span><span class="">color</span><span class="o">=</span><span class="s2">&#34;</span><span class="s2">gray</span><span class="s2">&#34;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">border</span><span class="">,</span><span class=""> </span><span class="s2">&#34;</span><span class="s2">:</span><span class="s2">&#34;</span><span class="">,</span><span class=""> </span><span class="">color</span><span class="o">=</span><span class="s2">&#34;</span><span class="s2">gray</span><span class="s2">&#34;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">peaks</span><span class="">,</span><span class=""> </span><span class="">x</span><span class="">[</span><span class="">peaks</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="s2">&#34;</span><span class="s2">x</span><span class="s2">&#34;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">show</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+                           Another useful condition for periodic signals can be given with the
+`distance` argument. In this case, we can easily select the positions of
+QRS complexes within the electrocardiogram (ECG) by demanding a distance of
+at least 150 samples.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">peaks</span><span class="">,</span><span class=""> </span><span class="">_</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">find_peaks</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">distance</span><span class="o">=</span><span class="mi">150</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">np</span><span class="o">.</span><span class="">diff</span><span class="">(</span><span class="">peaks</span><span class="">)</span>
+array([186, 180, 177, 171, 177, 169, 167, 164, 158, 162, 172])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">x</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">peaks</span><span class="">,</span><span class=""> </span><span class="">x</span><span class="">[</span><span class="">peaks</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="s2">&#34;</span><span class="s2">x</span><span class="s2">&#34;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">show</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+                           Especially for noisy signals peaks can be easily grouped by their
+prominence (see `peak_prominences`). E.g., we can select all peaks except
+for the mentioned QRS complexes by limiting the allowed prominence to 0.6.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">peaks</span><span class="">,</span><span class=""> </span><span class="">properties</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">find_peaks</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">prominence</span><span class="o">=</span><span class="">(</span><span class="kc">None</span><span class="">,</span><span class=""> </span><span class="mf">0.6</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">properties</span><span class="">[</span><span class="s2">&#34;</span><span class="s2">prominences</span><span class="s2">&#34;</span><span class="">]</span><span class="o">.</span><span class="">max</span><span class="">(</span><span class="">)</span>
+0.5049999999999999</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">x</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">peaks</span><span class="">,</span><span class=""> </span><span class="">x</span><span class="">[</span><span class="">peaks</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="s2">&#34;</span><span class="s2">x</span><span class="s2">&#34;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">show</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+                           And, finally, let&#39;s examine a different section of the ECG which contains
+beat forms of different shape. To select only the atypical heart beats, we
+combine two conditions: a minimal prominence of 1 and width of at least 20
+samples.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">x</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">electrocardiogram</span><span class="">(</span><span class="">)</span><span class="">[</span><span class="mi">17000</span><span class="">:</span><span class="mi">18000</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">peaks</span><span class="">,</span><span class=""> </span><span class="">properties</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">find_peaks</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">prominence</span><span class="o">=</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="">width</span><span class="o">=</span><span class="mi">20</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">properties</span><span class="">[</span><span class="s2">&#34;</span><span class="s2">prominences</span><span class="s2">&#34;</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">properties</span><span class="">[</span><span class="s2">&#34;</span><span class="s2">widths</span><span class="s2">&#34;</span><span class="">]</span>
+(array([1.495, 2.3  ]), array([36.93773946, 39.32723577]))</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">x</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">peaks</span><span class="">,</span><span class=""> </span><span class="">x</span><span class="">[</span><span class="">peaks</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="s2">&#34;</span><span class="s2">x</span><span class="s2">&#34;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">vlines</span><span class="">(</span><span class="">x</span><span class="o">=</span><span class="">peaks</span><span class="">,</span><span class=""> </span><span class="">ymin</span><span class="o">=</span><span class="">x</span><span class="">[</span><span class="">peaks</span><span class="">]</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="">properties</span><span class="">[</span><span class="s2">&#34;</span><span class="s2">prominences</span><span class="s2">&#34;</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">           </span><span class="">ymax</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">x</span><span class="">[</span><span class="">peaks</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">color</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="s2">&#34;</span><span class="s2">C1</span><span class="s2">&#34;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">hlines</span><span class="">(</span><span class="">y</span><span class="o">=</span><span class="">properties</span><span class="">[</span><span class="s2">&#34;</span><span class="s2">width_heights</span><span class="s2">&#34;</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">xmin</span><span class="o">=</span><span class="">properties</span><span class="">[</span><span class="s2">&#34;</span><span class="s2">left_ips</span><span class="s2">&#34;</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">           </span><span class="">xmax</span><span class="o">=</span><span class="">properties</span><span class="">[</span><span class="s2">&#34;</span><span class="s2">right_ips</span><span class="s2">&#34;</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">color</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="s2">&#34;</span><span class="s2">C1</span><span class="s2">&#34;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">show</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.signal._peak_finding.argrelmin.html" class='exists'>scipy.signal._peak_finding.argrelmin</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.signal._peak_finding._select_by_property.html" class='exists'>scipy.signal._peak_finding._select_by_property</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.signal._peak_finding._arg_x_as_expected.html" class='exists'>scipy.signal._peak_finding._arg_x_as_expected</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.signal._peak_finding._unpack_condition_args.html" class='exists'>scipy.signal._peak_finding._unpack_condition_args</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.signal._peak_finding.peak_prominences.html" class='exists'>scipy.signal._peak_finding.peak_prominences</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.signal._peak_finding.peak_widths.html" class='exists'>scipy.signal._peak_finding.peak_widths</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.signal._peak_finding.argrelmax.html" class='exists'>scipy.signal._peak_finding.argrelmax</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.signal._peak_finding.find_peaks_cwt.html" class='exists'>scipy.signal._peak_finding.find_peaks_cwt</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/signal/_peak_finding.py#L729'>/scipy/signal/_peak_finding.py#729</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 9.732050807568877, "label": "scipy.signal._peak_finding.argrelmin", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._peak_finding.argrelmin"}, {"id": 2, "val": 10.0, "label": "scipy.signal._peak_finding.argrelmax", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._peak_finding.argrelmax"}, {"id": 3, "val": 8.0, "label": "scipy.signal._peak_finding._select_by_property", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._peak_finding._select_by_property"}, {"id": 4, "val": 8.0, "label": "scipy.signal._peak_finding._unpack_condition_args", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._peak_finding._unpack_condition_args"}, {"id": 5, "val": 9.0, "label": "scipy.signal._peak_finding.find_peaks_cwt", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._peak_finding.find_peaks_cwt"}, {"id": 6, "val": 10.449489742783179, "label": "scipy.signal._peak_finding.peak_widths", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._peak_finding.peak_widths"}, {"id": 7, "val": 8.0, "label": "scipy.signal._peak_finding._arg_x_as_expected", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._peak_finding._arg_x_as_expected"}, {"id": 8, "val": 10.64575131106459, "label": "scipy.signal._peak_finding.peak_prominences", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._peak_finding.peak_prominences"}], "links": [{"source": 1, "target": 2, "id": 0}, {"source": 8, "target": 7, "id": 3}, {"source": 8, "target": 6, "id": 4}, {"source": 6, "target": 7, "id": 10}, {"source": 6, "target": 8, "id": 12}, {"source": 2, "target": 1, "id": 16}]};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

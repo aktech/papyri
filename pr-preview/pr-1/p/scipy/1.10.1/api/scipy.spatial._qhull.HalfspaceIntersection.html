@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.spatial.html'>spatial</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.spatial._qhull.html'>_qhull</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.spatial._ckdtree.html">_ckdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._distance_pybind.html">_distance_pybind</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._distance_wrap.html">_distance_wrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._geometric_slerp.html">_geometric_slerp</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._hausdorff.html">_hausdorff</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.html">_kdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._plotutils.html">_plotutils</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._procrustes.html">_procrustes</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.html">_qhull</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._spherical_voronoi.html">_spherical_voronoi</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._voronoi.html">_voronoi</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.ckdtree.html">ckdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.html">distance</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.kdtree.html">kdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.qhull.html">qhull</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.transform.html">transform</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.spatial._qhull.HalfspaceIntersection.html'>HalfspaceIntersection</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.ConvexHull.html">ConvexHull</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.Delaunay.html">Delaunay</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.HalfspaceIntersection.html">HalfspaceIntersection</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.QhullError.html">QhullError</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.Voronoi.html">Voronoi</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull._Qhull.html">_Qhull</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull._QhullUser.html">_QhullUser</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull._copy_docstr.html">_copy_docstr</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull._get_barycentric_transforms.html">_get_barycentric_transforms</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.tsearch.html">tsearch</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" >+</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.HalfspaceIntersection.__init__.html">__init__</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.HalfspaceIntersection._update.html">_update</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.HalfspaceIntersection.add_halfspaces.html">add_halfspaces</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Attributes">Attributes</a><a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Raises">Raises</a>    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>HalfspaceIntersection(halfspaces, interior_point, incremental=False, qhull_options=None)</code><h3 id="section-Attributes">Attributes</h3>
+<dl>
+<dt><a id="halfspaces">halfspaces</a> : ndarray of double, shape (nineq, ndim+1)</dt>
+<dd>
+                <div id="c33f84e19fd943b4a36999f969daee49"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Input halfspaces."}], "type": "paragraph"});
+            document.getElementById("c33f84e19fd943b4a36999f969daee49").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="interior_point :ndarray of floats, shape (ndim,)">interior_point :ndarray of floats, shape (ndim,)</a> : </dt>
+<dd>
+                <div id="21d23ccc744a4c0da2160d3b4ed6e817"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Input interior point."}], "type": "paragraph"});
+            document.getElementById("21d23ccc744a4c0da2160d3b4ed6e817").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="intersections">intersections</a> : ndarray of double, shape (ninter, ndim)</dt>
+<dd>
+                <div id="429f1e1752f747cd8bee1aaf0b1bbf91"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Intersections of all halfspaces."}], "type": "paragraph"});
+            document.getElementById("429f1e1752f747cd8bee1aaf0b1bbf91").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="dual_points">dual_points</a> : ndarray of double, shape (nineq, ndim)</dt>
+<dd>
+                <div id="842df384469140269ab6eb730f0979d5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Dual points of the input halfspaces."}], "type": "paragraph"});
+            document.getElementById("842df384469140269ab6eb730f0979d5").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="dual_facets">dual_facets</a> : list of lists of ints</dt>
+<dd>
+                <div id="2be5abff833f42b0bfa7e350d38835ec"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Indices of points forming the (non necessarily simplicial) facets of the dual convex hull."}], "type": "paragraph"});
+            document.getElementById("2be5abff833f42b0bfa7e350d38835ec").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="dual_vertices">dual_vertices</a> : ndarray of ints, shape (nvertices,)</dt>
+<dd>
+                <div id="1ce32723e1da4f9898310438dce4a72f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Indices of halfspaces forming the vertices of the dual convex hull. For 2-D convex hulls, the vertices are in counterclockwise order. For other dimensions, they are in input order."}], "type": "paragraph"});
+            document.getElementById("1ce32723e1da4f9898310438dce4a72f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="dual_equations">dual_equations</a> : ndarray of double, shape (nfacet, ndim+1)</dt>
+<dd>
+                <div id="dc5a1c964f8b4d329023da96686dda49"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "[normal, offset] forming the hyperplane equation of the dual facet (see "}, {"target": "http://www.qhull.org/", "type": "ExternalLink", "value": "Qhull documentation"}, {"type": "text", "value": "  for more)."}], "type": "paragraph"});
+            document.getElementById("dc5a1c964f8b4d329023da96686dda49").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="dual_area">dual_area</a> : float</dt>
+<dd>
+                <div id="201848bc3f9049cb83bd179f5f049bb5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Area of the dual convex hull"}], "type": "paragraph"});
+            document.getElementById("201848bc3f9049cb83bd179f5f049bb5").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="dual_volume">dual_volume</a> : float</dt>
+<dd>
+                <div id="750089986c5345419bb2368e23a91df2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Volume of the dual convex hull"}], "type": "paragraph"});
+            document.getElementById("750089986c5345419bb2368e23a91df2").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Extended Summary -->
+                                   <div class='admonition'>
+    <div>versionadded 0.19.0</div>
+</div>
+
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="11d52d8a5f354039b75fc6782c2024be"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The intersections are computed using the "}, {"target": "http://www.qhull.org/", "type": "ExternalLink", "value": "Qhull library"}, {"type": "text", "value": ". This reproduces the \"qhalf\" functionality of Qhull."}], "type": "paragraph"});
+            document.getElementById("11d52d8a5f354039b75fc6782c2024be").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="halfspaces">halfspaces</a> : ndarray of floats, shape (nineq, ndim+1)</dt>
+<dd>
+                <div id="d28fd49279a34e6db4362c08bff7d3cc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Stacked Inequalities of the form Ax + b \u003c= 0 in format [A; b]"}], "type": "paragraph"});
+            document.getElementById("d28fd49279a34e6db4362c08bff7d3cc").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="interior_point">interior_point</a> : ndarray of floats, shape (ndim,)</dt>
+<dd>
+                <div id="d79248dd8cc342b783dd368a5456f702"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Point clearly inside the region defined by halfspaces. Also called a feasible point, it can be obtained by linear programming."}], "type": "paragraph"});
+            document.getElementById("d79248dd8cc342b783dd368a5456f702").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="incremental">incremental</a> : bool, optional</dt>
+<dd>
+                <div id="02d3b2ef066a4648a4bf06dd581160aa"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Allow adding new halfspaces incrementally. This takes up some additional resources."}], "type": "paragraph"});
+            document.getElementById("02d3b2ef066a4648a4bf06dd581160aa").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="qhull_options">qhull_options</a> : str, optional</dt>
+<dd>
+                <div id="8fe57f0ce6e74f27a5ac925b045b9ec8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Additional options to pass to Qhull. See Qhull manual for details. (Default: \"Qx\" for ndim \u003e 4 and \"\" otherwise) Option \"H\" is always enabled."}], "type": "paragraph"});
+            document.getElementById("8fe57f0ce6e74f27a5ac925b045b9ec8").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Raises">Raises</h3>
+<dl>
+<dt>QhullError</dt>
+<dd>
+                <div id="b397d263eac8494887570005b2a0bf36"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Raised when Qhull encounters an error condition, such as geometrical degeneracy when options to resolve are not enabled."}], "type": "paragraph"});
+            document.getElementById("b397d263eac8494887570005b2a0bf36").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt>ValueError</dt>
+<dd>
+                <div id="cd34634b7f3346f4a10e5a57e712c8d4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Raised if an incompatible array is given as input."}], "type": "paragraph"});
+            document.getElementById("cd34634b7f3346f4a10e5a57e712c8d4").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="0c32c50875914fb28d964f04b758bee1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Halfspace intersections in N dimensions."}], "type": "paragraph"});
+            document.getElementById("0c32c50875914fb28d964f04b758bee1").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+                           Halfspace intersection of planes forming some polygon  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">spatial</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">HalfspaceIntersection</span><br><span class='nsl'>...&nbsp;</span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="">halfspaces</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="">[</span><span class="o">-</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mf">0.</span><span class="">,</span><span class=""> </span><span class="mf">0.</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                       </span><span class="">[</span><span class="mf">0.</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mf">1.</span><span class="">,</span><span class=""> </span><span class="mf">0.</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                       </span><span class="">[</span><span class="mf">2.</span><span class="">,</span><span class=""> </span><span class="mf">1.</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mf">4.</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                       </span><span class="">[</span><span class="o">-</span><span class="mf">0.5</span><span class="">,</span><span class=""> </span><span class="mf">1.</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mf">2.</span><span class="">]</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">feasible_point</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="mf">0.5</span><span class="">,</span><span class=""> </span><span class="mf">0.5</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">hs</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">HalfspaceIntersection</span><span class="">(</span><span class="">halfspaces</span><span class="">,</span><span class=""> </span><span class="">feasible_point</span><span class="">)</span>
+</pre>
+            
+                           Plot halfspaces as filled regions and intersection points:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">matplotlib</span><span class="nn">.</span><span class="nn">pyplot</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">plt</span><br><span class='nsl'>...&nbsp;</span><span class="">fig</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">plt</span><span class="o">.</span><span class="">figure</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">fig</span><span class="o">.</span><span class="">add_subplot</span><span class="">(</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="">aspect</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">equal</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">xlim</span><span class="">,</span><span class=""> </span><span class="">ylim</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">(</span><span class="o">-</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">(</span><span class="o">-</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class="o">.</span><span class="">set_xlim</span><span class="">(</span><span class="">xlim</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class="o">.</span><span class="">set_ylim</span><span class="">(</span><span class="">ylim</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">x</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">linspace</span><span class="">(</span><span class="o">-</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">100</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">symbols</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">[</span><span class="s1">&#39;</span><span class="s1">-</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">+</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">x</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">*</span><span class="s1">&#39;</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">signs</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mi">1</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">fmt</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">{</span><span class="s2">&#34;</span><span class="s2">color</span><span class="s2">&#34;</span><span class="">:</span><span class=""> </span><span class="kc">None</span><span class="">,</span><span class=""> </span><span class="s2">&#34;</span><span class="s2">edgecolor</span><span class="s2">&#34;</span><span class="">:</span><span class=""> </span><span class="s2">&#34;</span><span class="s2">b</span><span class="s2">&#34;</span><span class="">,</span><span class=""> </span><span class="s2">&#34;</span><span class="s2">alpha</span><span class="s2">&#34;</span><span class="">:</span><span class=""> </span><span class="mf">0.5</span><span class="">}</span><br><span class='nsl'>...&nbsp;</span><span class="k">for</span><span class=""> </span><span class="">h</span><span class="">,</span><span class=""> </span><span class="">sym</span><span class="">,</span><span class=""> </span><span class="">sign</span><span class=""> </span><span class="ow">in</span><span class=""> </span><span class="nb">zip</span><span class="">(</span><span class="">halfspaces</span><span class="">,</span><span class=""> </span><span class="">symbols</span><span class="">,</span><span class=""> </span><span class="">signs</span><span class="">)</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="">hlist</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">h</span><span class="o">.</span><span class="">tolist</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="">fmt</span><span class="">[</span><span class="s2">&#34;</span><span class="s2">hatch</span><span class="s2">&#34;</span><span class="">]</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">sym</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="k">if</span><span class=""> </span><span class="">h</span><span class="">[</span><span class="mi">1</span><span class="">]</span><span class="o">==</span><span class=""> </span><span class="mi">0</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">        </span><span class="">ax</span><span class="o">.</span><span class="">axvline</span><span class="">(</span><span class="o">-</span><span class="">h</span><span class="">[</span><span class="mi">2</span><span class="">]</span><span class="o">/</span><span class="">h</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">label</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">x+</span><span class="si">{}</span><span class="s1">y+</span><span class="si">{}</span><span class="s1">=0</span><span class="s1">&#39;</span><span class="o">.</span><span class="">format</span><span class="">(</span><span class="o">*</span><span class="">hlist</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">        </span><span class="">xi</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">linspace</span><span class="">(</span><span class="">xlim</span><span class="">[</span><span class="">sign</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="">h</span><span class="">[</span><span class="mi">2</span><span class="">]</span><span class="o">/</span><span class="">h</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="mi">100</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">        </span><span class="">ax</span><span class="o">.</span><span class="">fill_between</span><span class="">(</span><span class="">xi</span><span class="">,</span><span class=""> </span><span class="">ylim</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">ylim</span><span class="">[</span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="o">*</span><span class="o">*</span><span class="">fmt</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="k">else</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">        </span><span class="">ax</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">(</span><span class="o">-</span><span class="">h</span><span class="">[</span><span class="mi">2</span><span class="">]</span><span class="o">-</span><span class="">h</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class="o">*</span><span class="">x</span><span class="">)</span><span class="o">/</span><span class="">h</span><span class="">[</span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">label</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">x+</span><span class="si">{}</span><span class="s1">y+</span><span class="si">{}</span><span class="s1">=0</span><span class="s1">&#39;</span><span class="o">.</span><span class="">format</span><span class="">(</span><span class="o">*</span><span class="">hlist</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">        </span><span class="">ax</span><span class="o">.</span><span class="">fill_between</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">(</span><span class="o">-</span><span class="">h</span><span class="">[</span><span class="mi">2</span><span class="">]</span><span class="o">-</span><span class="">h</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class="o">*</span><span class="">x</span><span class="">)</span><span class="o">/</span><span class="">h</span><span class="">[</span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">ylim</span><span class="">[</span><span class="">sign</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="o">*</span><span class="o">*</span><span class="">fmt</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">y</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="nb">zip</span><span class="">(</span><span class="o">*</span><span class="">hs</span><span class="o">.</span><span class="">intersections</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">y</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">o</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">markersize</span><span class="o">=</span><span class="mi">8</span><span class="">)</span>
+</pre>
+            
+                           By default, qhull does not provide with a way to compute an interior point.
+This can easily be computed using linear programming. Considering halfspaces
+of the form :math:`Ax + b \leq 0`, solving the linear program:  
+            
+                           .. math::  
+            
+                               max \: y  
+            
+                               s.t. Ax + y ||A_i|| \leq -b  
+            
+                           With :math:`A_i` being the rows of A, i.e. the normals to each plane.  
+            
+                           Will yield a point x that is furthest inside the convex polyhedron. To
+be precise, it is the center of the largest hypersphere of radius y
+inscribed in the polyhedron. This point is called the Chebyshev center
+of the polyhedron (see [1]_ 4.3.1, pp148-149). The
+equations outputted by Qhull are always normalized.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">optimize</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">linprog</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">matplotlib</span><span class="nn">.</span><span class="nn">patches</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">Circle</span><br><span class='nsl'>...&nbsp;</span><span class="">norm_vector</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">reshape</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">linalg</span><span class="o">.</span><span class="">norm</span><span class="">(</span><span class="">halfspaces</span><span class="">[</span><span class="">:</span><span class="">,</span><span class=""> </span><span class="">:</span><span class="o">-</span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">axis</span><span class="o">=</span><span class="mi">1</span><span class="">)</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="">(</span><span class="">halfspaces</span><span class="o">.</span><span class="">shape</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">c</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">zeros</span><span class="">(</span><span class="">(</span><span class="">halfspaces</span><span class="o">.</span><span class="">shape</span><span class="">[</span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">c</span><span class="">[</span><span class="o">-</span><span class="mi">1</span><span class="">]</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="o">-</span><span class="mi">1</span><br><span class='nsl'>...&nbsp;</span><span class="">A</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">hstack</span><span class="">(</span><span class="">(</span><span class="">halfspaces</span><span class="">[</span><span class="">:</span><span class="">,</span><span class=""> </span><span class="">:</span><span class="o">-</span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">norm_vector</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">b</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="">halfspaces</span><span class="">[</span><span class="">:</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mi">1</span><span class="">:</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">linprog</span><span class="">(</span><span class="">c</span><span class="">,</span><span class=""> </span><span class="">A_ub</span><span class="o">=</span><span class="">A</span><span class="">,</span><span class=""> </span><span class="">b_ub</span><span class="o">=</span><span class="">b</span><span class="">,</span><span class=""> </span><span class="">bounds</span><span class="o">=</span><span class="">(</span><span class="kc">None</span><span class="">,</span><span class=""> </span><span class="kc">None</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">x</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">res</span><span class="o">.</span><span class="">x</span><span class="">[</span><span class="">:</span><span class="o">-</span><span class="mi">1</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">y</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">res</span><span class="o">.</span><span class="">x</span><span class="">[</span><span class="o">-</span><span class="mi">1</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">circle</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">Circle</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">radius</span><span class="o">=</span><span class="">y</span><span class="">,</span><span class=""> </span><span class="">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class="o">.</span><span class="">add_patch</span><span class="">(</span><span class="">circle</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">legend</span><span class="">(</span><span class="">bbox_to_anchor</span><span class="o">=</span><span class="">(</span><span class="mf">1.6</span><span class="">,</span><span class=""> </span><span class="mf">1.0</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">show</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/spatial/_qhull.cpython-39-x86_64-linux-gnu.so#LNone'>/scipy/spatial/_qhull.cpython-39-x86_64-linux-gnu.so#None</a>
+<br/>
+
+type: &lt;class &#39;type&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

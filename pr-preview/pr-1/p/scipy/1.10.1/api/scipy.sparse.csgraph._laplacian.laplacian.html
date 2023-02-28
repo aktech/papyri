@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.sparse.html'>sparse</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.sparse.csgraph.html'>csgraph</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.sparse._arrays.html">_arrays</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._base.html">_base</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._bsr.html">_bsr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._compressed.html">_compressed</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._construct.html">_construct</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._coo.html">_coo</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._csc.html">_csc</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._csparsetools.html">_csparsetools</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._csr.html">_csr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._data.html">_data</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._dia.html">_dia</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._dok.html">_dok</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._extract.html">_extract</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._index.html">_index</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._lil.html">_lil</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._matrix_io.html">_matrix_io</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._sparsetools.html">_sparsetools</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._sputils.html">_sputils</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.base.html">base</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.bsr.html">bsr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.compressed.html">compressed</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.construct.html">construct</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.coo.html">coo</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csc.html">csc</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csgraph.html">csgraph</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csr.html">csr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.data.html">data</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.dia.html">dia</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.dok.html">dok</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.extract.html">extract</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.lil.html">lil</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.sparsetools.html">sparsetools</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.sputils.html">sputils</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.sparse.csgraph._laplacian.html'>_laplacian</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csgraph._flow.html">_flow</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csgraph._laplacian.html">_laplacian</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csgraph._matching.html">_matching</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csgraph._min_spanning_tree.html">_min_spanning_tree</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csgraph._reordering.html">_reordering</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csgraph._shortest_path.html">_shortest_path</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csgraph._tools.html">_tools</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csgraph._traversal.html">_traversal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csgraph._validation.html">_validation</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.sparse.csgraph._laplacian.laplacian.html'>laplacian</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csgraph._laplacian._laplace.html">_laplace</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csgraph._laplacian._laplace_normed.html">_laplace_normed</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csgraph._laplacian._laplace_normed_sym.html">_laplace_normed_sym</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csgraph._laplacian._laplace_sym.html">_laplace_sym</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csgraph._laplacian._laplacian_dense.html">_laplacian_dense</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csgraph._laplacian._laplacian_dense_flo.html">_laplacian_dense_flo</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csgraph._laplacian._laplacian_sparse.html">_laplacian_sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csgraph._laplacian._laplacian_sparse_flo.html">_laplacian_sparse_flo</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csgraph._laplacian._linearoperator.html">_linearoperator</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csgraph._laplacian._setdiag_dense.html">_setdiag_dense</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csgraph._laplacian.laplacian.html">laplacian</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a>    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>laplacian(csgraph, normed=False, return_diag=False, use_out_degree=False, *, copy=True, form=&#39;array&#39;, dtype=None, symmetrized=False)</code><!-- rendering Extended Summary -->
+        <h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="93639709b73848e583fc9541220d13ce"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The Laplacian matrix of a graph is sometimes referred to as the \"Kirchhoff matrix\" or just the \"Laplacian\", and is useful in many parts of spectral graph theory. In particular, the eigen-decomposition of the Laplacian can give insight into many properties of the graph, e.g., is commonly used for spectral data embedding and clustering."}], "type": "paragraph"});
+            document.getElementById("93639709b73848e583fc9541220d13ce").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="96690a06a829415c941686a4a26af94c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The constructed Laplacian doubles the memory use if "}, {"type": "inlineCode", "value": "copy=True"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "form=\"array\""}, {"type": "text", "value": " which is the default. Choosing "}, {"type": "inlineCode", "value": "copy=False"}, {"type": "text", "value": " has no effect unless "}, {"type": "inlineCode", "value": "form=\"array\""}, {"type": "text", "value": " or the matrix is sparse in the "}, {"type": "inlineCode", "value": "coo"}, {"type": "text", "value": " format, or dense array, except for the integer input with "}, {"type": "inlineCode", "value": "normed=True"}, {"type": "text", "value": " that forces the float output."}], "type": "paragraph"});
+            document.getElementById("96690a06a829415c941686a4a26af94c").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="56396244ea0744ceb25eb2ba47705f6a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Sparse input is reformatted into "}, {"type": "inlineCode", "value": "coo"}, {"type": "text", "value": " if "}, {"type": "inlineCode", "value": "form=\"array\""}, {"type": "text", "value": ", which is the default."}], "type": "paragraph"});
+            document.getElementById("56396244ea0744ceb25eb2ba47705f6a").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="e72d60af297048a583511dacd0a92072"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If the input adjacency matrix is not symmetic, the Laplacian is also non-symmetric unless "}, {"type": "inlineCode", "value": "symmetrized=True"}, {"type": "text", "value": " is used."}], "type": "paragraph"});
+            document.getElementById("e72d60af297048a583511dacd0a92072").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="43f49995f40048be9bbd2ed4ce2e8ab1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Diagonal entries of the input adjacency matrix are ignored and replaced with zeros for the purpose of normalization where "}, {"type": "inlineCode", "value": "normed=True"}, {"type": "text", "value": ". The normalization uses the inverse square roots of row-sums of the input adjacency matrix, and thus may fail if the row-sums contain negative or complex with a non-zero imaginary part values."}], "type": "paragraph"});
+            document.getElementById("43f49995f40048be9bbd2ed4ce2e8ab1").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="bce7f259e9be4dbd8a55951a3c892695"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The normalization is symmetric, making the normalized Laplacian also symmetric if the input csgraph was symmetric."}], "type": "paragraph"});
+            document.getElementById("bce7f259e9be4dbd8a55951a3c892695").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="csgraph">csgraph</a> : array_like or sparse matrix, 2 dimensions</dt>
+<dd>
+                <div id="f123c162f6124c6fa6abba9feae16adc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "compressed-sparse graph, with shape (N, N)."}], "type": "paragraph"});
+            document.getElementById("f123c162f6124c6fa6abba9feae16adc").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="normed">normed</a> : bool, optional</dt>
+<dd>
+                <div id="6af4233acc9e482e832be694821c7458"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If True, then compute symmetrically normalized Laplacian. Default: False."}], "type": "paragraph"});
+            document.getElementById("6af4233acc9e482e832be694821c7458").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="return_diag">return_diag</a> : bool, optional</dt>
+<dd>
+                <div id="4a5695643316443e8fb7818f1060cad8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If True, then also return an array related to vertex degrees. Default: False."}], "type": "paragraph"});
+            document.getElementById("4a5695643316443e8fb7818f1060cad8").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="use_out_degree">use_out_degree</a> : bool, optional</dt>
+<dd>
+                <div id="e10604a010be47c2becec6676ab54c8c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If True, then use out-degree instead of in-degree. This distinction matters only if the graph is asymmetric. Default: False."}], "type": "paragraph"});
+            document.getElementById("e10604a010be47c2becec6676ab54c8c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="copy: bool, optional">copy: bool, optional</a> : </dt>
+<dd>
+                <div id="6fb2dd8d371140ce836c5ce6f781ae87"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If False, then change "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "csgraph", "type": "RefInfo", "version": null}, "type": "Link", "value": "csgraph"}, {"type": "text", "value": " in place if possible, avoiding doubling the memory use. Default: True, for backward compatibility."}], "type": "paragraph"});
+            document.getElementById("6fb2dd8d371140ce836c5ce6f781ae87").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="form: &#39;array&#39;, or &#39;function&#39;, or &#39;lo&#39;">form: &#39;array&#39;, or &#39;function&#39;, or &#39;lo&#39;</a> : </dt>
+<dd>
+                <div id="0ba3e9a2358d4a0a82cc79d5d1a67c1e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Determines the format of the output Laplacian:"}], "type": "paragraph"});
+            document.getElementById("0ba3e9a2358d4a0a82cc79d5d1a67c1e").innerHTML = html;
+        }
+        init();
+    </script>
+
+           <ul>               <li>                               <div id="d72ecd9582fa437cb31b4ca0320a5330"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027array\u0027 is a numpy array;"}], "type": "paragraph"});
+            document.getElementById("d72ecd9582fa437cb31b4ca0320a5330").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="78112a55cecb446dabbb83beff88deaa"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027function\u0027 is a pointer to evaluating the Laplacian-vector   or Laplacian-matrix product;"}], "type": "paragraph"});
+            document.getElementById("78112a55cecb446dabbb83beff88deaa").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="5863e2ad180c4d7e96543881b5f7ec8b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027lo\u0027 results in the format of the "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.sparse.linalg._interface.LinearOperator", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "LinearOperator"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("5863e2ad180c4d7e96543881b5f7ec8b").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+
+                <div id="f6ab6ab2bbf54faf9bf21c9c9e783d42"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Choosing \u0027function\u0027 or \u0027lo\u0027 always avoids doubling the memory use, ignoring "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "copy", "path": "copy", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "copy"}, {"type": "text", "value": " value. Default: \u0027array\u0027, for backward compatibility."}], "type": "paragraph"});
+            document.getElementById("f6ab6ab2bbf54faf9bf21c9c9e783d42").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="dtype: None or one of numeric numpy dtypes, optional">dtype: None or one of numeric numpy dtypes, optional</a> : </dt>
+<dd>
+                <div id="b0973677b06741f59430211778484e6c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The dtype of the output. If "}, {"type": "inlineCode", "value": "dtype=None"}, {"type": "text", "value": ", the dtype of the output matches the dtype of the input csgraph, except for the case "}, {"type": "inlineCode", "value": "normed=True"}, {"type": "text", "value": " and integer-like csgraph, where the output dtype is \u0027float\u0027 allowing accurate normalization, but dramatically increasing the memory use. Default: None, for backward compatibility."}], "type": "paragraph"});
+            document.getElementById("b0973677b06741f59430211778484e6c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="symmetrized: bool, optional">symmetrized: bool, optional</a> : </dt>
+<dd>
+                <div id="601f74710e7b42efaf075c60a3a223f5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If True, then the output Laplacian is symmetric/Hermitian. The symmetrization is done by "}, {"type": "inlineCode", "value": "csgraph + csgraph.T.conj"}, {"type": "text", "value": " without dividing by 2 to preserve integer dtypes if possible prior to the construction of the Laplacian. The symmetrization will increase the memory footprint of sparse matrices unless the sparsity pattern is symmetric or "}, {"domain": null, "role": null, "type": "Directive", "value": "form"}, {"type": "text", "value": " is \u0027function\u0027 or \u0027lo\u0027. Default: False, for backward compatibility."}], "type": "paragraph"});
+            document.getElementById("601f74710e7b42efaf075c60a3a223f5").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="lap">lap</a> : ndarray, or sparse matrix, or `LinearOperator`</dt>
+<dd>
+                <div id="102509a96f6846f49fa6405dc69eae32"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The N x N Laplacian of csgraph. It will be a NumPy array (dense) if the input was dense, or a sparse matrix otherwise, or the format of a function or "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.sparse.linalg._interface.LinearOperator", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "LinearOperator"}, {"type": "text", "value": " if "}, {"domain": null, "role": null, "type": "Directive", "value": "form"}, {"type": "text", "value": " equals \u0027function\u0027 or \u0027lo\u0027, respectively."}], "type": "paragraph"});
+            document.getElementById("102509a96f6846f49fa6405dc69eae32").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="diag">diag</a> : ndarray, optional</dt>
+<dd>
+                <div id="2d4bac2dfcc643b38eece4446ffc8cf8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The length-N main diagonal of the Laplacian matrix. For the normalized Laplacian, this is the array of square roots of vertex degrees or 1 if the degree is zero."}], "type": "paragraph"});
+            document.getElementById("2d4bac2dfcc643b38eece4446ffc8cf8").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="b1fbe2a4699b4510a29dfa857c6b9b2f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Return the Laplacian of a directed graph."}], "type": "paragraph"});
+            document.getElementById("b1fbe2a4699b4510a29dfa857c6b9b2f").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">sparse</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">csgraph</span>
+</pre>
+            
+                           Our first illustration is the symmetric graph  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">G</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">arange</span><span class="">(</span><span class="mi">4</span><span class="">)</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">arange</span><span class="">(</span><span class="mi">4</span><span class="">)</span><span class="">[</span><span class="">:</span><span class="">,</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">newaxis</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">G</span>
+array([[0, 0, 0, 0],
+       [0, 1, 2, 3],
+       [0, 2, 4, 6],
+       [0, 3, 6, 9]])</pre>
+            
+                           and its symmetric Laplacian matrix  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">csgraph</span><span class="o">.</span><span class="">laplacian</span><span class="">(</span><span class="">G</span><span class="">)</span>
+array([[ 0,  0,  0,  0],
+       [ 0,  5, -2, -3],
+       [ 0, -2,  8, -6],
+       [ 0, -3, -6,  9]])</pre>
+            
+                           The non-symmetric graph  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">G</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">arange</span><span class="">(</span><span class="mi">9</span><span class="">)</span><span class="o">.</span><span class="">reshape</span><span class="">(</span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">G</span>
+array([[0, 1, 2],
+       [3, 4, 5],
+       [6, 7, 8]])</pre>
+            
+                           has different row- and column sums, resulting in two varieties
+of the Laplacian matrix, using an in-degree, which is the default  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">L_in_degree</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">csgraph</span><span class="o">.</span><span class="">laplacian</span><span class="">(</span><span class="">G</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">L_in_degree</span>
+array([[ 9, -1, -2],
+       [-3,  8, -5],
+       [-6, -7,  7]])</pre>
+            
+                           or alternatively an out-degree  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">L_out_degree</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">csgraph</span><span class="o">.</span><span class="">laplacian</span><span class="">(</span><span class="">G</span><span class="">,</span><span class=""> </span><span class="">use_out_degree</span><span class="o">=</span><span class="kc">True</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">L_out_degree</span>
+array([[ 3, -1, -2],
+       [-3,  8, -5],
+       [-6, -7, 13]])</pre>
+            
+                           Constructing a symmetric Laplacian matrix, one can add the two as  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">L_in_degree</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="">L_out_degree</span><span class="o">.</span><span class="">T</span>
+array([[ 12,  -4,  -8],
+        [ -4,  16, -12],
+        [ -8, -12,  20]])</pre>
+            
+                           or use the ``symmetrized=True`` option  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">csgraph</span><span class="o">.</span><span class="">laplacian</span><span class="">(</span><span class="">G</span><span class="">,</span><span class=""> </span><span class="">symmetrized</span><span class="o">=</span><span class="kc">True</span><span class="">)</span>
+array([[ 12,  -4,  -8],
+       [ -4,  16, -12],
+       [ -8, -12,  20]])</pre>
+            
+                           that is equivalent to symmetrizing the original graph  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">csgraph</span><span class="o">.</span><span class="">laplacian</span><span class="">(</span><span class="">G</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="">G</span><span class="o">.</span><span class="">T</span><span class="">)</span>
+array([[ 12,  -4,  -8],
+       [ -4,  16, -12],
+       [ -8, -12,  20]])</pre>
+            
+                           The goal of normalization is to make the non-zero diagonal entries
+of the Laplacian matrix to be all unit, also scaling off-diagonal
+entries correspondingly. The normalization can be done manually, e.g.,  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">G</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">L</span><span class="">,</span><span class=""> </span><span class="">d</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">csgraph</span><span class="o">.</span><span class="">laplacian</span><span class="">(</span><span class="">G</span><span class="">,</span><span class=""> </span><span class="">return_diag</span><span class="o">=</span><span class="kc">True</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">L</span>
+array([[ 2, -1, -1],
+       [-1,  2, -1],
+       [-1, -1,  2]])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">d</span>
+array([2, 2, 2])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">scaling</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">sqrt</span><span class="">(</span><span class="">d</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">scaling</span>
+array([1.41421356, 1.41421356, 1.41421356])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">(</span><span class="mi">1</span><span class="o">/</span><span class="">scaling</span><span class="">)</span><span class="o">*</span><span class="">L</span><span class="o">*</span><span class="">(</span><span class="mi">1</span><span class="o">/</span><span class="">scaling</span><span class="">)</span>
+array([[ 1. , -0.5, -0.5],
+       [-0.5,  1. , -0.5],
+       [-0.5, -0.5,  1. ]])</pre>
+            
+                           Or using ``normed=True`` option  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">L</span><span class="">,</span><span class=""> </span><span class="">d</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">csgraph</span><span class="o">.</span><span class="">laplacian</span><span class="">(</span><span class="">G</span><span class="">,</span><span class=""> </span><span class="">return_diag</span><span class="o">=</span><span class="kc">True</span><span class="">,</span><span class=""> </span><span class="">normed</span><span class="o">=</span><span class="kc">True</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">L</span>
+array([[ 1. , -0.5, -0.5],
+       [-0.5,  1. , -0.5],
+       [-0.5, -0.5,  1. ]])</pre>
+            
+                           which now instead of the diagonal returns the scaling coefficients  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">d</span>
+array([1.41421356, 1.41421356, 1.41421356])</pre>
+            
+                           Zero scaling coefficients are substituted with 1s, where scaling
+has thus no effect, e.g.,  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">G</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">G</span>
+array([[0, 0, 0],
+       [0, 0, 1],
+       [0, 1, 0]])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">L</span><span class="">,</span><span class=""> </span><span class="">d</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">csgraph</span><span class="o">.</span><span class="">laplacian</span><span class="">(</span><span class="">G</span><span class="">,</span><span class=""> </span><span class="">return_diag</span><span class="o">=</span><span class="kc">True</span><span class="">,</span><span class=""> </span><span class="">normed</span><span class="o">=</span><span class="kc">True</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">L</span>
+array([[ 0., -0., -0.],
+       [-0.,  1., -1.],
+       [-0., -1.,  1.]])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">d</span>
+array([1., 1., 1.])</pre>
+            
+                           Only the symmetric normalization is implemented, resulting
+in a symmetric Laplacian matrix if and only if its graph is symmetric
+and has all non-negative degrees, like in the examples above.  
+            
+                           The output Laplacian matrix is by default a dense array or a sparse matrix
+inferring its shape, format, and dtype from the input graph matrix:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">G</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">]</span><span class="">)</span><span class="o">.</span><span class="">astype</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">float32</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">G</span>
+array([[0., 1., 1.],
+       [1., 0., 1.],
+       [1., 1., 0.]], dtype=float32)</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">csgraph</span><span class="o">.</span><span class="">laplacian</span><span class="">(</span><span class="">G</span><span class="">)</span>
+array([[ 2., -1., -1.],
+       [-1.,  2., -1.],
+       [-1., -1.,  2.]], dtype=float32)</pre>
+            
+                           but can alternatively be generated matrix-free as a LinearOperator:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">L</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">csgraph</span><span class="o">.</span><span class="">laplacian</span><span class="">(</span><span class="">G</span><span class="">,</span><span class=""> </span><span class="">form</span><span class="o">=</span><span class="s2">&#34;</span><span class="s2">lo</span><span class="s2">&#34;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">L</span>
+&lt;3x3 _CustomLinearOperator with dtype=float32&gt;</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">L</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">eye</span><span class="">(</span><span class="mi">3</span><span class="">)</span><span class="">)</span>
+array([[ 2., -1., -1.],
+       [-1.,  2., -1.],
+       [-1., -1.,  2.]])</pre>
+            
+                           or as a lambda-function:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">L</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">csgraph</span><span class="o">.</span><span class="">laplacian</span><span class="">(</span><span class="">G</span><span class="">,</span><span class=""> </span><span class="">form</span><span class="o">=</span><span class="s2">&#34;</span><span class="s2">function</span><span class="s2">&#34;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">L</span>
+&lt;function _laplace.&lt;locals&gt;.&lt;lambda&gt; at 0x0000012AE6F5A598&gt;</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">L</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">eye</span><span class="">(</span><span class="mi">3</span><span class="">)</span><span class="">)</span>
+array([[ 2., -1., -1.],
+       [-1.,  2., -1.],
+       [-1., -1.,  2.]])</pre>
+            
+                           The Laplacian matrix is used for
+spectral data clustering and embedding
+as well as for spectral graph partitioning.
+Our final example illustrates the latter
+for a noisy directed linear graph.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">sparse</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">diags</span><span class="">,</span><span class=""> </span><span class="">random</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">sparse</span><span class="nn">.</span><span class="nn">linalg</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">lobpcg</span>
+</pre>
+            
+                           Create a directed linear graph with ``N=35`` vertices
+using a sparse adjacency matrix ``G``:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">N</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="mi">35</span><br><span class='nsl'>...&nbsp;</span><span class="">G</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">diags</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">ones</span><span class="">(</span><span class="">N</span><span class="o">-</span><span class="mi">1</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="nb">format</span><span class="o">=</span><span class="s2">&#34;</span><span class="s2">csr</span><span class="s2">&#34;</span><span class="">)</span>
+</pre>
+            
+                           Fix a random seed ``rng`` and add a random sparse noise to the graph ``G``:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">rng</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">random</span><span class="o">.</span><span class="">default_rng</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">G</span><span class=""> </span><span class="o">+</span><span class="o">=</span><span class=""> </span><span class="mf">1e-2</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">random</span><span class="">(</span><span class="">N</span><span class="">,</span><span class=""> </span><span class="">N</span><span class="">,</span><span class=""> </span><span class="">density</span><span class="o">=</span><span class="mf">0.1</span><span class="">,</span><span class=""> </span><span class="">random_state</span><span class="o">=</span><span class="">rng</span><span class="">)</span>
+</pre>
+            
+                           Set initial approximations for eigenvectors:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">X</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">rng</span><span class="o">.</span><span class="">random</span><span class="">(</span><span class="">(</span><span class="">N</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">)</span><span class="">)</span>
+</pre>
+            
+                           The constant vector of ones is always a trivial eigenvector
+of the non-normalized Laplacian to be filtered out:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">Y</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">ones</span><span class="">(</span><span class="">(</span><span class="">N</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">)</span><span class="">)</span>
+</pre>
+            
+                           Alternating (1) the sign of the graph weights allows determining
+labels for spectral max- and min- cuts in a single loop.
+Since the graph is undirected, the option ``symmetrized=True``
+must be used in the construction of the Laplacian.
+The option ``normed=True`` cannot be used in (2) for the negative weights
+here as the symmetric normalization evaluates square roots.
+The option ``form=&#34;lo&#34;`` in (2) is matrix-free, i.e., guarantees
+a fixed memory footprint and read-only access to the graph.
+Calling the eigenvalue solver ``lobpcg`` (3) computes the Fiedler vector
+that determines the labels as the signs of its components in (5).
+Since the sign in an eigenvector is not deterministic and can flip,
+we fix the sign of the first component to be always +1 in (4).  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="k">for</span><span class=""> </span><span class="">cut</span><span class=""> </span><span class="ow">in</span><span class=""> </span><span class="">[</span><span class="s2">&#34;</span><span class="s2">max</span><span class="s2">&#34;</span><span class="">,</span><span class=""> </span><span class="s2">&#34;</span><span class="s2">min</span><span class="s2">&#34;</span><span class="">]</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="">G</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="o">-</span><span class="">G</span><span class="">  </span><span class="c1"># 1.</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="">L</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">csgraph</span><span class="o">.</span><span class="">laplacian</span><span class="">(</span><span class="">G</span><span class="">,</span><span class=""> </span><span class="">symmetrized</span><span class="o">=</span><span class="kc">True</span><span class="">,</span><span class=""> </span><span class="">form</span><span class="o">=</span><span class="s2">&#34;</span><span class="s2">lo</span><span class="s2">&#34;</span><span class="">)</span><span class="">  </span><span class="c1"># 2.</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="">_</span><span class="">,</span><span class=""> </span><span class="">eves</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">lobpcg</span><span class="">(</span><span class="">L</span><span class="">,</span><span class=""> </span><span class="">X</span><span class="">,</span><span class=""> </span><span class="">Y</span><span class="o">=</span><span class="">Y</span><span class="">,</span><span class=""> </span><span class="">largest</span><span class="o">=</span><span class="kc">False</span><span class="">,</span><span class=""> </span><span class="">tol</span><span class="o">=</span><span class="mf">1e-3</span><span class="">)</span><span class="">  </span><span class="c1"># 3.</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="">eves</span><span class=""> </span><span class="o">*</span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">sign</span><span class="">(</span><span class="">eves</span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">)</span><span class="">  </span><span class="c1"># 4.</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="nb">print</span><span class="">(</span><span class="">cut</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="s2">&#34;</span><span class="s2">-cut labels:</span><span class="se">\n</span><span class="s2">&#34;</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">(</span><span class="">eves</span><span class="">[</span><span class="">:</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="o">&gt;</span><span class="mi">0</span><span class="">)</span><span class="">)</span><span class="">  </span><span class="c1"># 5.</span>
+max-cut labels:
+[1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1]
+min-cut labels:
+[1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]</pre>
+            
+                           As anticipated for a (slightly noisy) linear graph,
+the max-cut strips all the edges of the graph coloring all
+odd vertices into one color and all even vertices into another one,
+while the balanced min-cut partitions the graph
+in the middle by deleting a single edge.
+Both determined partitions are optimal.  
+            
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/sparse/csgraph/_laplacian.py#L12'>/scipy/sparse/csgraph/_laplacian.py#12</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 9.732050807568877, "label": "copy", "mod": "copy", "url": "/p/copy/*/api/copy"}, {"id": 2, "val": 10.449489742783179, "label": "scipy.sparse.linalg._interface.LinearOperator", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.LinearOperator"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

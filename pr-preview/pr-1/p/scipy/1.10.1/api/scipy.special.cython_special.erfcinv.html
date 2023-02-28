@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.special.html'>special</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.special.cython_special.html'>cython_special</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.special._add_newdocs.html">_add_newdocs</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.html">_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._comb.html">_comb</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._ellip_harm.html">_ellip_harm</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._ellip_harm_2.html">_ellip_harm_2</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._lambertw.html">_lambertw</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._logsumexp.html">_logsumexp</a>
+<a href="/p/?/?/?/scipy.special._orthogonal.html.html">_orthogonal</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._sf_error.html">_sf_error</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._specfun.html">_specfun</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._spfun_stats.html">_spfun_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._spherical_bessel.html">_spherical_bessel</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._ufuncs.html">_ufuncs</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._ufuncs_cxx.html">_ufuncs_cxx</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.add_newdocs.html">add_newdocs</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.basic.html">basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.html">cython_special</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.orthogonal.html">orthogonal</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.sf_error.html">sf_error</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.specfun.html">specfun</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.spfun_stats.html">spfun_stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.special.cython_special.erfcinv.html'>erfcinv</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._airy_pywrap.html">_airy_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._airye_pywrap.html">_airye_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._bench_airy_D_cy.html">_bench_airy_D_cy</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._bench_airy_D_py.html">_bench_airy_D_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._bench_airy_d_cy.html">_bench_airy_d_cy</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._bench_airy_d_py.html">_bench_airy_d_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._bench_beta_dd_cy.html">_bench_beta_dd_cy</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._bench_beta_dd_py.html">_bench_beta_dd_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._bench_erf_D_cy.html">_bench_erf_D_cy</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._bench_erf_D_py.html">_bench_erf_D_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._bench_erf_d_cy.html">_bench_erf_d_cy</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._bench_erf_d_py.html">_bench_erf_d_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._bench_exprel_d_cy.html">_bench_exprel_d_cy</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._bench_exprel_d_py.html">_bench_exprel_d_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._bench_gamma_D_cy.html">_bench_gamma_D_cy</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._bench_gamma_D_py.html">_bench_gamma_D_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._bench_gamma_d_cy.html">_bench_gamma_d_cy</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._bench_gamma_d_py.html">_bench_gamma_d_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._bench_jv_dD_cy.html">_bench_jv_dD_cy</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._bench_jv_dD_py.html">_bench_jv_dD_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._bench_jv_dd_cy.html">_bench_jv_dd_cy</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._bench_jv_dd_py.html">_bench_jv_dd_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._bench_loggamma_D_cy.html">_bench_loggamma_D_cy</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._bench_loggamma_D_py.html">_bench_loggamma_D_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._bench_logit_d_cy.html">_bench_logit_d_cy</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._bench_logit_d_py.html">_bench_logit_d_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._bench_psi_D_cy.html">_bench_psi_D_cy</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._bench_psi_D_py.html">_bench_psi_D_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._bench_psi_d_cy.html">_bench_psi_d_cy</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._bench_psi_d_py.html">_bench_psi_d_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._ellipj_pywrap.html">_ellipj_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._fresnel_pywrap.html">_fresnel_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._it2i0k0_pywrap.html">_it2i0k0_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._it2j0y0_pywrap.html">_it2j0y0_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._itairy_pywrap.html">_itairy_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._iti0k0_pywrap.html">_iti0k0_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._itj0y0_pywrap.html">_itj0y0_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._kelvin_pywrap.html">_kelvin_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._mathieu_cem_pywrap.html">_mathieu_cem_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._mathieu_modcem1_pywrap.html">_mathieu_modcem1_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._mathieu_modcem2_pywrap.html">_mathieu_modcem2_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._mathieu_modsem1_pywrap.html">_mathieu_modsem1_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._mathieu_modsem2_pywrap.html">_mathieu_modsem2_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._mathieu_sem_pywrap.html">_mathieu_sem_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._modfresnelm_pywrap.html">_modfresnelm_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._modfresnelp_pywrap.html">_modfresnelp_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._obl_ang1_cv_pywrap.html">_obl_ang1_cv_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._obl_ang1_pywrap.html">_obl_ang1_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._obl_rad1_cv_pywrap.html">_obl_rad1_cv_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._obl_rad1_pywrap.html">_obl_rad1_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._obl_rad2_cv_pywrap.html">_obl_rad2_cv_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._obl_rad2_pywrap.html">_obl_rad2_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._pbdv_pywrap.html">_pbdv_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._pbvv_pywrap.html">_pbvv_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._pbwa_pywrap.html">_pbwa_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._pro_ang1_cv_pywrap.html">_pro_ang1_cv_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._pro_ang1_pywrap.html">_pro_ang1_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._pro_rad1_cv_pywrap.html">_pro_rad1_cv_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._pro_rad1_pywrap.html">_pro_rad1_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._pro_rad2_cv_pywrap.html">_pro_rad2_cv_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._pro_rad2_pywrap.html">_pro_rad2_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._shichi_pywrap.html">_shichi_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special._sici_pywrap.html">_sici_pywrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.agm.html">agm</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.bdtr.html">bdtr</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.bdtrc.html">bdtrc</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.bdtri.html">bdtri</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.bdtrik.html">bdtrik</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.bdtrin.html">bdtrin</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.bei.html">bei</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.beip.html">beip</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.ber.html">ber</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.berp.html">berp</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.besselpoly.html">besselpoly</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.beta.html">beta</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.betainc.html">betainc</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.betaincinv.html">betaincinv</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.betaln.html">betaln</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.binom.html">binom</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.boxcox.html">boxcox</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.boxcox1p.html">boxcox1p</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.btdtr.html">btdtr</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.btdtri.html">btdtri</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.btdtria.html">btdtria</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.btdtrib.html">btdtrib</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.cbrt.html">cbrt</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.chdtr.html">chdtr</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.chdtrc.html">chdtrc</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.chdtri.html">chdtri</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.chdtriv.html">chdtriv</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.chndtr.html">chndtr</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.chndtridf.html">chndtridf</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.chndtrinc.html">chndtrinc</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.chndtrix.html">chndtrix</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.cosdg.html">cosdg</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.cosm1.html">cosm1</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.cotdg.html">cotdg</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.dawsn.html">dawsn</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.ellipe.html">ellipe</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.ellipeinc.html">ellipeinc</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.ellipk.html">ellipk</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.ellipkinc.html">ellipkinc</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.ellipkm1.html">ellipkm1</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.elliprc.html">elliprc</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.elliprd.html">elliprd</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.elliprf.html">elliprf</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.elliprg.html">elliprg</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.elliprj.html">elliprj</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.entr.html">entr</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.erf.html">erf</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.erfc.html">erfc</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.erfcinv.html">erfcinv</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.erfcx.html">erfcx</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.erfi.html">erfi</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.erfinv.html">erfinv</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.eval_chebyc.html">eval_chebyc</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.eval_chebys.html">eval_chebys</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.eval_chebyt.html">eval_chebyt</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.eval_chebyu.html">eval_chebyu</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.eval_gegenbauer.html">eval_gegenbauer</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.eval_genlaguerre.html">eval_genlaguerre</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.eval_hermite.html">eval_hermite</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.eval_hermitenorm.html">eval_hermitenorm</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.eval_jacobi.html">eval_jacobi</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.eval_laguerre.html">eval_laguerre</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.eval_legendre.html">eval_legendre</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.eval_sh_chebyt.html">eval_sh_chebyt</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.eval_sh_chebyu.html">eval_sh_chebyu</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.eval_sh_jacobi.html">eval_sh_jacobi</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.eval_sh_legendre.html">eval_sh_legendre</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.exp1.html">exp1</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.exp10.html">exp10</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.exp2.html">exp2</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.expi.html">expi</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.expit.html">expit</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.expm1.html">expm1</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.expn.html">expn</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.exprel.html">exprel</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.fdtr.html">fdtr</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.fdtrc.html">fdtrc</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.fdtri.html">fdtri</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.fdtridfd.html">fdtridfd</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.gamma.html">gamma</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.gammainc.html">gammainc</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.gammaincc.html">gammaincc</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.gammainccinv.html">gammainccinv</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.gammaincinv.html">gammaincinv</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.gammaln.html">gammaln</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.gammasgn.html">gammasgn</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.gdtr.html">gdtr</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.gdtrc.html">gdtrc</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.gdtria.html">gdtria</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.gdtrib.html">gdtrib</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.gdtrix.html">gdtrix</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.hankel1.html">hankel1</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.hankel1e.html">hankel1e</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.hankel2.html">hankel2</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.hankel2e.html">hankel2e</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.huber.html">huber</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.hyp0f1.html">hyp0f1</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.hyp1f1.html">hyp1f1</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.hyp2f1.html">hyp2f1</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.hyperu.html">hyperu</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.i0.html">i0</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.i0e.html">i0e</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.i1.html">i1</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.i1e.html">i1e</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.inv_boxcox.html">inv_boxcox</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.inv_boxcox1p.html">inv_boxcox1p</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.it2struve0.html">it2struve0</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.itmodstruve0.html">itmodstruve0</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.itstruve0.html">itstruve0</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.iv.html">iv</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.ive.html">ive</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.j0.html">j0</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.j1.html">j1</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.jv.html">jv</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.jve.html">jve</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.k0.html">k0</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.k0e.html">k0e</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.k1.html">k1</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.k1e.html">k1e</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.kei.html">kei</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.keip.html">keip</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.ker.html">ker</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.kerp.html">kerp</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.kl_div.html">kl_div</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.kn.html">kn</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.kolmogi.html">kolmogi</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.kolmogorov.html">kolmogorov</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.kv.html">kv</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.kve.html">kve</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.log1p.html">log1p</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.log_expit.html">log_expit</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.log_ndtr.html">log_ndtr</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.loggamma.html">loggamma</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.logit.html">logit</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.lpmv.html">lpmv</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.mathieu_a.html">mathieu_a</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.mathieu_b.html">mathieu_b</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.modstruve.html">modstruve</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.nbdtr.html">nbdtr</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.nbdtrc.html">nbdtrc</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.nbdtri.html">nbdtri</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.nbdtrik.html">nbdtrik</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.nbdtrin.html">nbdtrin</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.ncfdtr.html">ncfdtr</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.ncfdtri.html">ncfdtri</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.ncfdtridfd.html">ncfdtridfd</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.ncfdtridfn.html">ncfdtridfn</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.ncfdtrinc.html">ncfdtrinc</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.nctdtr.html">nctdtr</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.nctdtridf.html">nctdtridf</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.nctdtrinc.html">nctdtrinc</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.nctdtrit.html">nctdtrit</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.ndtr.html">ndtr</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.ndtri.html">ndtri</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.ndtri_exp.html">ndtri_exp</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.nrdtrimn.html">nrdtrimn</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.nrdtrisd.html">nrdtrisd</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.obl_cv.html">obl_cv</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.owens_t.html">owens_t</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.pdtr.html">pdtr</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.pdtrc.html">pdtrc</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.pdtri.html">pdtri</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.pdtrik.html">pdtrik</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.poch.html">poch</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.powm1.html">powm1</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.pro_cv.html">pro_cv</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.pseudo_huber.html">pseudo_huber</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.psi.html">psi</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.radian.html">radian</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.rel_entr.html">rel_entr</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.rgamma.html">rgamma</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.round.html">round</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.sindg.html">sindg</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.smirnov.html">smirnov</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.smirnovi.html">smirnovi</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.spence.html">spence</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.sph_harm.html">sph_harm</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.spherical_in.html">spherical_in</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.spherical_jn.html">spherical_jn</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.spherical_kn.html">spherical_kn</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.spherical_yn.html">spherical_yn</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.stdtr.html">stdtr</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.stdtridf.html">stdtridf</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.stdtrit.html">stdtrit</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.struve.html">struve</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.tandg.html">tandg</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.tklmbda.html">tklmbda</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.voigt_profile.html">voigt_profile</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.wofz.html">wofz</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.wright_bessel.html">wright_bessel</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.wrightomega.html">wrightomega</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.xlog1py.html">xlog1py</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.xlogy.html">xlogy</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.y0.html">y0</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.y1.html">y1</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.yn.html">yn</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.yv.html">yv</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.yve.html">yve</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.zetac.html">zetac</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<!-- rendering Extended Summary -->
+        <!-- rendering Notes -->
+        <!-- rendering Summary -->
+                                       <div id="919864ad8c9f4cfc874514e43f91c20c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "See the documentation for scipy.special.erfcinv"}], "type": "paragraph"});
+            document.getElementById("919864ad8c9f4cfc874514e43f91c20c").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0/None#LNone'>None#None</a>
+<br/>
+
+type: &lt;class &#39;builtin_function_or_method&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

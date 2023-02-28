@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.signal.html'>signal</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.signal._signaltools.html'>_signaltools</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.signal._arraytools.html">_arraytools</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._bsplines.html">_bsplines</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._czt.html">_czt</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._filter_design.html">_filter_design</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._fir_filter_design.html">_fir_filter_design</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._lti_conversion.html">_lti_conversion</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.html">_ltisys</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._max_len_seq.html">_max_len_seq</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._max_len_seq_inner.html">_max_len_seq_inner</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._peak_finding.html">_peak_finding</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._peak_finding_utils.html">_peak_finding_utils</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._savitzky_golay.html">_savitzky_golay</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.html">_signaltools</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._sigtools.html">_sigtools</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._sosfilt.html">_sosfilt</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spectral.html">_spectral</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spectral_py.html">_spectral_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spline.html">_spline</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._upfirdn.html">_upfirdn</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._upfirdn_apply.html">_upfirdn_apply</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._waveforms.html">_waveforms</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._wavelets.html">_wavelets</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.barthann.html">barthann</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.bartlett.html">bartlett</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.blackman.html">blackman</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.blackmanharris.html">blackmanharris</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.bohman.html">bohman</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.boxcar.html">boxcar</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.bsplines.html">bsplines</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.chebwin.html">chebwin</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.cosine.html">cosine</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.exponential.html">exponential</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.filter_design.html">filter_design</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.fir_filter_design.html">fir_filter_design</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.flattop.html">flattop</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.gaussian.html">gaussian</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.general_gaussian.html">general_gaussian</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.hamming.html">hamming</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.hann.html">hann</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.kaiser.html">kaiser</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.lti_conversion.html">lti_conversion</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.ltisys.html">ltisys</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.nuttall.html">nuttall</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.parzen.html">parzen</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.signaltools.html">signaltools</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.spectral.html">spectral</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.spline.html">spline</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.triang.html">triang</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.tukey.html">tukey</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.waveforms.html">waveforms</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.wavelets.html">wavelets</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.windows.html">windows</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.signal._signaltools.filtfilt.html'>filtfilt</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._apply_conv_mode.html">_apply_conv_mode</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._bvalfromboundary.html">_bvalfromboundary</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._calc_oa_lens.html">_calc_oa_lens</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._centered.html">_centered</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._compute_factors.html">_compute_factors</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._compute_residues.html">_compute_residues</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._conv_ops.html">_conv_ops</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._fftconv_faster.html">_fftconv_faster</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._filtfilt_gust.html">_filtfilt_gust</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._freq_domain_conv.html">_freq_domain_conv</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._group_poles.html">_group_poles</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._init_freq_conv_axes.html">_init_freq_conv_axes</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._inputs_swap_needed.html">_inputs_swap_needed</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._np_conv_ok.html">_np_conv_ok</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._numeric_arrays.html">_numeric_arrays</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._reverse_and_conj.html">_reverse_and_conj</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._timeit_fast.html">_timeit_fast</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._valfrommode.html">_valfrommode</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._validate_pad.html">_validate_pad</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._validate_x.html">_validate_x</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.choose_conv_method.html">choose_conv_method</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.cmplx_sort.html">cmplx_sort</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.convolve.html">convolve</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.convolve2d.html">convolve2d</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.correlate.html">correlate</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.correlate2d.html">correlate2d</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.correlation_lags.html">correlation_lags</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.decimate.html">decimate</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.deconvolve.html">deconvolve</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.detrend.html">detrend</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.fftconvolve.html">fftconvolve</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.filtfilt.html">filtfilt</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.hilbert.html">hilbert</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.hilbert2.html">hilbert2</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.invres.html">invres</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.invresz.html">invresz</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.lfilter.html">lfilter</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.lfilter_zi.html">lfilter_zi</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.lfiltic.html">lfiltic</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.medfilt.html">medfilt</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.medfilt2d.html">medfilt2d</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.oaconvolve.html">oaconvolve</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.order_filter.html">order_filter</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.resample.html">resample</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.resample_poly.html">resample_poly</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.residue.html">residue</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.residuez.html">residuez</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.sosfilt.html">sosfilt</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.sosfilt_zi.html">sosfilt_zi</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.sosfiltfilt.html">sosfiltfilt</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.unique_roots.html">unique_roots</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.vectorstrength.html">vectorstrength</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.wiener.html">wiener</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>filtfilt(b, a, x, axis=-1, padtype=&#39;odd&#39;, padlen=None, method=&#39;pad&#39;, irlen=None)</code><!-- rendering Extended Summary -->
+                                       <div id="5125dce78bf84b128a43d763593d529e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This function applies a linear digital filter twice, once forward and once backwards.  The combined filter has zero phase and a filter order twice that of the original."}], "type": "paragraph"});
+            document.getElementById("5125dce78bf84b128a43d763593d529e").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="9865495c037845d982d349a68c589a06"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The function provides options for handling the edges of the signal."}], "type": "paragraph"});
+            document.getElementById("9865495c037845d982d349a68c589a06").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="fc33fb1e26a6473f9b908b4b0b5279fb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The function "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.signal._signaltools.sosfiltfilt", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "sosfiltfilt"}, {"type": "text", "value": " (and filter design using "}, {"type": "inlineCode", "value": "output=\u0027sos\u0027"}, {"type": "text", "value": ") should be preferred over "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.signal._signaltools.filtfilt", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "filtfilt"}, {"type": "text", "value": " for most filtering tasks, as second-order sections have fewer numerical problems."}], "type": "paragraph"});
+            document.getElementById("fc33fb1e26a6473f9b908b4b0b5279fb").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="67a83523dec84fa9bbb4d22a13f39d6b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "When "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "method", "type": "RefInfo", "version": null}, "type": "Link", "value": "method"}, {"type": "text", "value": " is \"pad\", the function pads the data along the given axis in one of three ways: odd, even or constant.  The odd and even extensions have the corresponding symmetry about the end point of the data.  The constant extension extends the data with the values at the end points. On both the forward and backward passes, the initial condition of the filter is found by using "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.signal._signaltools.lfilter_zi", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "lfilter_zi"}, {"type": "text", "value": " and scaling it by the end point of the extended data."}], "type": "paragraph"});
+            document.getElementById("67a83523dec84fa9bbb4d22a13f39d6b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="a055e8542b4e4dad8fc1f7ad34fd43cc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "When "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "method", "type": "RefInfo", "version": null}, "type": "Link", "value": "method"}, {"type": "text", "value": " is \"gust\", Gustafsson\u0027s method  is used.  Initial conditions are chosen for the forward and backward passes so that the forward-backward filter gives the same result as the backward-forward filter."}], "type": "paragraph"});
+            document.getElementById("a055e8542b4e4dad8fc1f7ad34fd43cc").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="0f74257a745c4273a81383a7bd59e9a7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The option to use Gustaffson\u0027s method was added in scipy version 0.16.0."}], "type": "paragraph"});
+            document.getElementById("0f74257a745c4273a81383a7bd59e9a7").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="b">b</a> : (N,) array_like</dt>
+<dd>
+                <div id="24ef16e7f84941f7a21c6d43780cb389"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The numerator coefficient vector of the filter."}], "type": "paragraph"});
+            document.getElementById("24ef16e7f84941f7a21c6d43780cb389").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="a">a</a> : (N,) array_like</dt>
+<dd>
+                <div id="1b6a16d2586243ecbb6d67b11e825e58"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The denominator coefficient vector of the filter.  If "}, {"type": "inlineCode", "value": "a[0]"}, {"type": "text", "value": " is not 1, then both "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "a", "type": "RefInfo", "version": null}, "type": "Link", "value": "a"}, {"type": "text", "value": " and "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "b", "type": "RefInfo", "version": null}, "type": "Link", "value": "b"}, {"type": "text", "value": " are normalized by "}, {"type": "inlineCode", "value": "a[0]"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("1b6a16d2586243ecbb6d67b11e825e58").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="x">x</a> : array_like</dt>
+<dd>
+                <div id="634dd60051024b4fa5e46acd9e7cd141"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The array of data to be filtered."}], "type": "paragraph"});
+            document.getElementById("634dd60051024b4fa5e46acd9e7cd141").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="axis">axis</a> : int, optional</dt>
+<dd>
+                <div id="b6730c86aada46d7bafd8bb4583aa06f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The axis of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": " to which the filter is applied. Default is -1."}], "type": "paragraph"});
+            document.getElementById("b6730c86aada46d7bafd8bb4583aa06f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="padtype">padtype</a> : str or None, optional</dt>
+<dd>
+                <div id="deb6ea9a07634f2fafc96904816509aa"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Must be \u0027odd\u0027, \u0027even\u0027, \u0027constant\u0027, or None.  This determines the type of extension to use for the padded signal to which the filter is applied.  If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "padtype", "type": "RefInfo", "version": null}, "type": "Link", "value": "padtype"}, {"type": "text", "value": " is None, no padding is used.  The default is \u0027odd\u0027."}], "type": "paragraph"});
+            document.getElementById("deb6ea9a07634f2fafc96904816509aa").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="padlen">padlen</a> : int or None, optional</dt>
+<dd>
+                <div id="2f2a28d3eea94b57a5b10209c7d505e4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The number of elements by which to extend "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": " at both ends of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "axis", "type": "RefInfo", "version": null}, "type": "Link", "value": "axis"}, {"type": "text", "value": " before applying the filter.  This value must be less than "}, {"type": "inlineCode", "value": "x.shape[axis] - 1"}, {"type": "text", "value": ".  "}, {"type": "inlineCode", "value": "padlen=0"}, {"type": "text", "value": " implies no padding. The default value is "}, {"type": "inlineCode", "value": "3 * max(len(a), len(b))"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("2f2a28d3eea94b57a5b10209c7d505e4").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="method">method</a> : str, optional</dt>
+<dd>
+                <div id="d708e2cd6073425f8d11ab0b864fd862"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Determines the method for handling the edges of the signal, either \"pad\" or \"gust\".  When "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "method", "type": "RefInfo", "version": null}, "type": "Link", "value": "method"}, {"type": "text", "value": " is \"pad\", the signal is padded; the type of padding is determined by "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "padtype", "type": "RefInfo", "version": null}, "type": "Link", "value": "padtype"}, {"type": "text", "value": " and "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "padlen", "type": "RefInfo", "version": null}, "type": "Link", "value": "padlen"}, {"type": "text", "value": ", and "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "irlen", "type": "RefInfo", "version": null}, "type": "Link", "value": "irlen"}, {"type": "text", "value": " is ignored.  When "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "method", "type": "RefInfo", "version": null}, "type": "Link", "value": "method"}, {"type": "text", "value": " is \"gust\", Gustafsson\u0027s method is used, and "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "padtype", "type": "RefInfo", "version": null}, "type": "Link", "value": "padtype"}, {"type": "text", "value": " and "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "padlen", "type": "RefInfo", "version": null}, "type": "Link", "value": "padlen"}, {"type": "text", "value": " are ignored."}], "type": "paragraph"});
+            document.getElementById("d708e2cd6073425f8d11ab0b864fd862").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="irlen">irlen</a> : int or None, optional</dt>
+<dd>
+                <div id="ea13bf4c850b4055a6215f7d1ecabe9b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "When "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "method", "type": "RefInfo", "version": null}, "type": "Link", "value": "method"}, {"type": "text", "value": " is \"gust\", "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "irlen", "type": "RefInfo", "version": null}, "type": "Link", "value": "irlen"}, {"type": "text", "value": " specifies the length of the impulse response of the filter.  If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "irlen", "type": "RefInfo", "version": null}, "type": "Link", "value": "irlen"}, {"type": "text", "value": " is None, no part of the impulse response is ignored.  For a long signal, specifying "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "irlen", "type": "RefInfo", "version": null}, "type": "Link", "value": "irlen"}, {"type": "text", "value": " can significantly improve the performance of the filter."}], "type": "paragraph"});
+            document.getElementById("ea13bf4c850b4055a6215f7d1ecabe9b").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="y">y</a> : ndarray</dt>
+<dd>
+                <div id="9093bc82b1884dc49c9f1275a9f7e469"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The filtered output with the same shape as "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("9093bc82b1884dc49c9f1275a9f7e469").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="15965294a27d4e0687fdfd9432e87b79"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Apply a digital filter forward and backward to a signal."}], "type": "paragraph"});
+            document.getElementById("15965294a27d4e0687fdfd9432e87b79").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.lfilter.html" class='exists'>lfilter</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.lfilter_zi.html" class='exists'>lfilter_zi</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.lfiltic.html" class='exists'>lfiltic</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.signal._savitzky_golay.savgol_filter.html" class='exists'>savgol_filter</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.sosfilt.html" class='exists'>sosfilt</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.sosfiltfilt.html" class='exists'>sosfiltfilt</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+                           The examples will use several functions from `scipy.signal`.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">signal</span><br><span class='nsl'>...&nbsp;</span><span class="kn">import</span><span class=""> </span><span class="nn">matplotlib</span><span class="nn">.</span><span class="nn">pyplot</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">plt</span>
+</pre>
+            
+                           First we create a one second signal that is the sum of two pure sine
+waves, with frequencies 5 Hz and 250 Hz, sampled at 2000 Hz.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">t</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">linspace</span><span class="">(</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mf">1.0</span><span class="">,</span><span class=""> </span><span class="mi">2001</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">xlow</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">sin</span><span class="">(</span><span class="mi">2</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">pi</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="mi">5</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">t</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">xhigh</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">sin</span><span class="">(</span><span class="mi">2</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">pi</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="mi">250</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">t</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">x</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">xlow</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="">xhigh</span>
+</pre>
+            
+                           Now create a lowpass Butterworth filter with a cutoff of 0.125 times
+the Nyquist frequency, or 125 Hz, and apply it to ``x`` with `filtfilt`.
+The result should be approximately ``xlow``, with no phase shift.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">b</span><span class="">,</span><span class=""> </span><span class="">a</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">signal</span><span class="o">.</span><span class="">butter</span><span class="">(</span><span class="mi">8</span><span class="">,</span><span class=""> </span><span class="mf">0.125</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">y</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">signal</span><span class="o">.</span><span class="">filtfilt</span><span class="">(</span><span class="">b</span><span class="">,</span><span class=""> </span><span class="">a</span><span class="">,</span><span class=""> </span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">padlen</span><span class="o">=</span><span class="mi">150</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">np</span><span class="o">.</span><span class="">abs</span><span class="">(</span><span class="">y</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="">xlow</span><span class="">)</span><span class="o">.</span><span class="">max</span><span class="">(</span><span class="">)</span>
+9.1086182074789912e-06</pre>
+            
+                           We get a fairly clean result for this artificial example because
+the odd extension is exact, and with the moderately long padding,
+the filter&#39;s transients have dissipated by the time the actual data
+is reached.  In general, transient effects at the edges are
+unavoidable.  
+            
+                           The following example demonstrates the option ``method=&#34;gust&#34;``.  
+            
+                           First, create a filter.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">b</span><span class="">,</span><span class=""> </span><span class="">a</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">signal</span><span class="o">.</span><span class="">ellip</span><span class="">(</span><span class="mi">4</span><span class="">,</span><span class=""> </span><span class="mf">0.01</span><span class="">,</span><span class=""> </span><span class="mi">120</span><span class="">,</span><span class=""> </span><span class="mf">0.125</span><span class="">)</span><span class="">  </span><span class="c1"># Filter to be applied.</span>
+</pre>
+            
+                           `sig` is a random input signal to be filtered.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">rng</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">random</span><span class="o">.</span><span class="">default_rng</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">n</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="mi">60</span><br><span class='nsl'>...&nbsp;</span><span class="">sig</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">rng</span><span class="o">.</span><span class="">standard_normal</span><span class="">(</span><span class="">n</span><span class="">)</span><span class="o">*</span><span class="o">*</span><span class="mi">3</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="mi">3</span><span class="o">*</span><span class="">rng</span><span class="o">.</span><span class="">standard_normal</span><span class="">(</span><span class="">n</span><span class="">)</span><span class="o">.</span><span class="">cumsum</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+                           Apply `filtfilt` to `sig`, once using the Gustafsson method, and
+once using padding, and plot the results for comparison.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">fgust</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">signal</span><span class="o">.</span><span class="">filtfilt</span><span class="">(</span><span class="">b</span><span class="">,</span><span class=""> </span><span class="">a</span><span class="">,</span><span class=""> </span><span class="">sig</span><span class="">,</span><span class=""> </span><span class="">method</span><span class="o">=</span><span class="s2">&#34;</span><span class="s2">gust</span><span class="s2">&#34;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">fpad</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">signal</span><span class="o">.</span><span class="">filtfilt</span><span class="">(</span><span class="">b</span><span class="">,</span><span class=""> </span><span class="">a</span><span class="">,</span><span class=""> </span><span class="">sig</span><span class="">,</span><span class=""> </span><span class="">padlen</span><span class="o">=</span><span class="mi">50</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">sig</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">k-</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">label</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">input</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">fgust</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">b-</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">linewidth</span><span class="o">=</span><span class="mi">4</span><span class="">,</span><span class=""> </span><span class="">label</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">gust</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">fpad</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">c-</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">linewidth</span><span class="o">=</span><span class="mf">1.5</span><span class="">,</span><span class=""> </span><span class="">label</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">pad</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">legend</span><span class="">(</span><span class="">loc</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">best</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">show</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+                           The `irlen` argument can be used to improve the performance
+of Gustafsson&#39;s method.  
+            
+                           Estimate the impulse response length of the filter.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">z</span><span class="">,</span><span class=""> </span><span class="">p</span><span class="">,</span><span class=""> </span><span class="">k</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">signal</span><span class="o">.</span><span class="">tf2zpk</span><span class="">(</span><span class="">b</span><span class="">,</span><span class=""> </span><span class="">a</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">eps</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="mf">1e-9</span><br><span class='nsl'>...&nbsp;</span><span class="">r</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">max</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">abs</span><span class="">(</span><span class="">p</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">approx_impulse_len</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="nb">int</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">ceil</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">log</span><span class="">(</span><span class="">eps</span><span class="">)</span><span class=""> </span><span class="o">/</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">log</span><span class="">(</span><span class="">r</span><span class="">)</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">approx_impulse_len</span>
+137</pre>
+            
+                           Apply the filter to a longer signal, with and without the `irlen`
+argument.  The difference between `y1` and `y2` is small.  For long
+signals, using `irlen` gives a significant performance improvement.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">x</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">rng</span><span class="o">.</span><span class="">standard_normal</span><span class="">(</span><span class="mi">5000</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">y1</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">signal</span><span class="o">.</span><span class="">filtfilt</span><span class="">(</span><span class="">b</span><span class="">,</span><span class=""> </span><span class="">a</span><span class="">,</span><span class=""> </span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">method</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">gust</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">y2</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">signal</span><span class="o">.</span><span class="">filtfilt</span><span class="">(</span><span class="">b</span><span class="">,</span><span class=""> </span><span class="">a</span><span class="">,</span><span class=""> </span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">method</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">gust</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">irlen</span><span class="o">=</span><span class="">approx_impulse_len</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="nb">print</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">max</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">abs</span><span class="">(</span><span class="">y1</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="">y2</span><span class="">)</span><span class="">)</span><span class="">)</span>
+1.80056858312e-10</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.signal._signaltools.decimate.html" class='exists'>scipy.signal._signaltools.decimate</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.signal._signaltools.sosfiltfilt.html" class='exists'>scipy.signal._signaltools.sosfiltfilt</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.signal._signaltools.filtfilt.html" class='exists'>scipy.signal._signaltools.filtfilt</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.signal._signaltools.lfilter_zi.html" class='exists'>scipy.signal._signaltools.lfilter_zi</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.signal._signaltools.lfilter.html" class='exists'>scipy.signal._signaltools.lfilter</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/signal/_signaltools.py#L3960'>/scipy/signal/_signaltools.py#3960</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 9.732050807568877, "label": "scipy.signal._signaltools.decimate", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._signaltools.decimate"}, {"id": 2, "val": 9.732050807568877, "label": "scipy.signal._signaltools.sosfiltfilt", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._signaltools.sosfiltfilt"}, {"id": 3, "val": 10.0, "label": "scipy.signal._signaltools.lfilter_zi", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._signaltools.lfilter_zi"}, {"id": 4, "val": 10.0, "label": "scipy.signal._signaltools.lfiltic", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._signaltools.lfiltic"}, {"id": 5, "val": 11.0, "label": "scipy.signal._signaltools.sosfilt", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._signaltools.sosfilt"}, {"id": 7, "val": 10.23606797749979, "label": "scipy.signal._signaltools.lfilter", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._signaltools.lfilter"}, {"id": 8, "val": 9.732050807568877, "label": "scipy.signal._savitzky_golay.savgol_filter", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._savitzky_golay.savgol_filter"}], "links": [{"source": 4, "target": 7, "id": 4}, {"source": 4, "target": 5, "id": 5}, {"source": 4, "target": 3, "id": 6}, {"source": 2, "target": 7, "id": 8}, {"source": 2, "target": 5, "id": 9}, {"source": 3, "target": 4, "id": 16}, {"source": 3, "target": 7, "id": 17}, {"source": 3, "target": 5, "id": 18}, {"source": 8, "target": 7, "id": 20}, {"source": 7, "target": 1, "id": 22}, {"source": 7, "target": 4, "id": 23}, {"source": 7, "target": 3, "id": 25}, {"source": 5, "target": 2, "id": 31}, {"source": 5, "target": 7, "id": 35}]};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

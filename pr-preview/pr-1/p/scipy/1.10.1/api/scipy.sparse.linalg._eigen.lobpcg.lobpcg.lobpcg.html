@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.sparse.html'>sparse</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.sparse.linalg.html'>linalg</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.sparse._arrays.html">_arrays</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._base.html">_base</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._bsr.html">_bsr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._compressed.html">_compressed</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._construct.html">_construct</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._coo.html">_coo</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._csc.html">_csc</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._csparsetools.html">_csparsetools</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._csr.html">_csr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._data.html">_data</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._dia.html">_dia</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._dok.html">_dok</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._extract.html">_extract</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._index.html">_index</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._lil.html">_lil</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._matrix_io.html">_matrix_io</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._sparsetools.html">_sparsetools</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._sputils.html">_sputils</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.base.html">base</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.bsr.html">bsr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.compressed.html">compressed</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.construct.html">construct</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.coo.html">coo</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csc.html">csc</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csgraph.html">csgraph</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csr.html">csr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.data.html">data</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.dia.html">dia</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.dok.html">dok</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.extract.html">extract</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.lil.html">lil</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.sparsetools.html">sparsetools</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.sputils.html">sputils</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.sparse.linalg._eigen.html'>_eigen</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._dsolve.html">_dsolve</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._eigen.html">_eigen</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._expm_multiply.html">_expm_multiply</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._interface.html">_interface</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._isolve.html">_isolve</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._matfuncs.html">_matfuncs</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._norm.html">_norm</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._onenormest.html">_onenormest</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg.dsolve.html">dsolve</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg.eigen.html">eigen</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg.interface.html">interface</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg.isolve.html">isolve</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg.matfuncs.html">matfuncs</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.sparse.linalg._eigen.lobpcg.html'>lobpcg</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg._eigen.lobpcg.lobpcg.lobpcg.html">lobpcg</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a>    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>lobpcg(A, X, B=None, M=None, Y=None, tol=None, maxiter=None, largest=True, verbosityLevel=0, retLambdaHistory=False, retResidualNormsHistory=False, restartControl=20)</code><!-- rendering Extended Summary -->
+                                       <div id="33f0854860964361a5f3da0b9ecc7a57"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "LOBPCG is a preconditioned eigensolver for large symmetric positive definite (SPD) generalized eigenproblems."}], "type": "paragraph"});
+            document.getElementById("33f0854860964361a5f3da0b9ecc7a57").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="fbf0c53b8406466684fc5e85fb633c54"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The iterative loop in lobpcg runs maxit=maxiter (or 20 if maxit=None) iterations at most and finishes earler if the tolerance is met. Breaking backward compatibility with the previous version, lobpcg now returns the block of iterative vectors with the best accuracy rather than the last one iterated, as a cure for possible divergence."}], "type": "paragraph"});
+            document.getElementById("fbf0c53b8406466684fc5e85fb633c54").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="6a87c3c3790a443aae01df72c19312b7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The size of the iteration history output equals to the number of the best (limited by maxit) iterations plus 3 (initial, final, and postprocessing)."}], "type": "paragraph"});
+            document.getElementById("6a87c3c3790a443aae01df72c19312b7").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="cd406297220c45c8be61f870b113d38a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If both "}, {"type": "inlineCode", "value": "retLambdaHistory"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "retResidualNormsHistory"}, {"type": "text", "value": " are True, the return tuple has the following format "}, {"type": "inlineCode", "value": "(lambda, V, lambda history, residual norms history)"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("cd406297220c45c8be61f870b113d38a").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="a2848003d27344189db6afca5fc7c59a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "In the following "}, {"type": "inlineCode", "value": "n"}, {"type": "text", "value": " denotes the matrix size and "}, {"type": "inlineCode", "value": "k"}, {"type": "text", "value": " the number of required eigenvalues (smallest or largest)."}], "type": "paragraph"});
+            document.getElementById("a2848003d27344189db6afca5fc7c59a").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="06c98fd2019c413d9a61a0833483c995"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The LOBPCG code internally solves eigenproblems of the size "}, {"type": "inlineCode", "value": "3k"}, {"type": "text", "value": " on every iteration by calling the dense eigensolver "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.linalg._decomp.eigh", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "eigh"}, {"type": "text", "value": ", so if "}, {"type": "inlineCode", "value": "k"}, {"type": "text", "value": " is not small enough compared to "}, {"type": "inlineCode", "value": "n"}, {"type": "text", "value": ", it makes no sense to call the LOBPCG code. Moreover, if one calls the LOBPCG algorithm for "}, {"type": "inlineCode", "value": "5k \u003e n"}, {"type": "text", "value": ", it would likely break internally, so the code calls the standard function "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.linalg._decomp.eigh", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "eigh"}, {"type": "text", "value": " instead. It is not that "}, {"type": "inlineCode", "value": "n"}, {"type": "text", "value": " should be large for the LOBPCG to work, but rather the ratio "}, {"type": "inlineCode", "value": "n / k"}, {"type": "text", "value": " should be large. It you call LOBPCG with "}, {"type": "inlineCode", "value": "k=1"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "n=10"}, {"type": "text", "value": ", it works though "}, {"type": "inlineCode", "value": "n"}, {"type": "text", "value": " is small. The method is intended for extremely large "}, {"type": "inlineCode", "value": "n / k"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("06c98fd2019c413d9a61a0833483c995").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="c4d20c3badd34657940858b41302707a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The convergence speed depends basically on two factors:"}], "type": "paragraph"});
+            document.getElementById("c4d20c3badd34657940858b41302707a").innerHTML = html;
+        }
+        init();
+    </script>
+
+                          <ol>               <li>                               <div id="b96127224b6f40f1b7d85a2f55222839"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Relative separation of the seeking eigenvalues from the rest    of the eigenvalues. One can vary "}, {"type": "inlineCode", "value": "k"}, {"type": "text", "value": " to improve the absolute    separation and use proper preconditioning to shrink the spectral spread.    For example, a rod vibration test problem (under tests    directory) is ill-conditioned for large "}, {"type": "inlineCode", "value": "n"}, {"type": "text", "value": ", so convergence will be    slow, unless efficient preconditioning is used. For this specific    problem, a good simple preconditioner function would be a linear solve    for "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "A", "type": "RefInfo", "version": null}, "type": "Link", "value": "A"}, {"type": "text", "value": ", which is easy to code since "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "A", "type": "RefInfo", "version": null}, "type": "Link", "value": "A"}, {"type": "text", "value": " is tridiagonal."}], "type": "paragraph"});
+            document.getElementById("b96127224b6f40f1b7d85a2f55222839").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="dee5489c175849e1b1760d7cff6a2515"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Quality of the initial approximations "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "X", "type": "RefInfo", "version": null}, "type": "Link", "value": "X"}, {"type": "text", "value": " to the seeking eigenvectors.    Randomly distributed around the origin vectors work well if no better    choice is known."}], "type": "paragraph"});
+            document.getElementById("dee5489c175849e1b1760d7cff6a2515").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ol>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="A">A</a> : {sparse matrix, dense matrix, LinearOperator, callable object}</dt>
+<dd>
+                <div id="d65426053600426ab3e13c1ac3e8fdaf"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The symmetric linear operator of the problem, usually a sparse matrix.  Often called the \"stiffness matrix\"."}], "type": "paragraph"});
+            document.getElementById("d65426053600426ab3e13c1ac3e8fdaf").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="X">X</a> : ndarray, float32 or float64</dt>
+<dd>
+                <div id="bb5b451955b24ecaa15c4e8e106744f7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Initial approximation to the "}, {"type": "inlineCode", "value": "k"}, {"type": "text", "value": " eigenvectors (non-sparse). If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "A", "type": "RefInfo", "version": null}, "type": "Link", "value": "A"}, {"type": "text", "value": " has "}, {"type": "inlineCode", "value": "shape=(n,n)"}, {"type": "text", "value": " then "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "X", "type": "RefInfo", "version": null}, "type": "Link", "value": "X"}, {"type": "text", "value": " should have shape "}, {"type": "inlineCode", "value": "shape=(n,k)"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("bb5b451955b24ecaa15c4e8e106744f7").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="B">B</a> : {dense matrix, sparse matrix, LinearOperator, callable object}</dt>
+<dd>
+                <div id="9a600756d4c44d1caaef1e7bf1f45872"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Optional. The right hand side operator in a generalized eigenproblem. By default, "}, {"type": "inlineCode", "value": "B = Identity"}, {"type": "text", "value": ".  Often called the \"mass matrix\"."}], "type": "paragraph"});
+            document.getElementById("9a600756d4c44d1caaef1e7bf1f45872").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="M">M</a> : {dense matrix, sparse matrix, LinearOperator, callable object}</dt>
+<dd>
+                <div id="f793358b6f6e4529ba9dde4f520e50ab"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Optional. Preconditioner to "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "A", "type": "RefInfo", "version": null}, "type": "Link", "value": "A"}, {"type": "text", "value": "; by default "}, {"type": "inlineCode", "value": "M = Identity"}, {"type": "text", "value": ". "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "M", "type": "RefInfo", "version": null}, "type": "Link", "value": "M"}, {"type": "text", "value": " should approximate the inverse of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "A", "type": "RefInfo", "version": null}, "type": "Link", "value": "A"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("f793358b6f6e4529ba9dde4f520e50ab").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="Y">Y</a> : ndarray, float32 or float64, optional.</dt>
+<dd>
+                <div id="92a9924f57604590ad5b52d613f941e7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "An n-by-sizeY matrix of constraints (non-sparse), sizeY \u003c n. The iterations will be performed in the B-orthogonal complement of the column-space of Y. Y must be full rank."}], "type": "paragraph"});
+            document.getElementById("92a9924f57604590ad5b52d613f941e7").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="tol">tol</a> : scalar, optional.</dt>
+<dd>
+                <div id="9bb920645d614ad38b36b4b2636d2313"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Solver tolerance (stopping criterion). The default is "}, {"type": "inlineCode", "value": "tol=n*sqrt(eps)"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("9bb920645d614ad38b36b4b2636d2313").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="maxiter">maxiter</a> : int, optional.</dt>
+<dd>
+                <div id="68cdfa6b58e548249fe2283699dae84a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Maximum number of iterations.  The default is "}, {"type": "inlineCode", "value": "maxiter=20"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("68cdfa6b58e548249fe2283699dae84a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="largest">largest</a> : bool, optional.</dt>
+<dd>
+                <div id="766439293f3c4fb886b6a101d1b34387"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "When True, solve for the largest eigenvalues, otherwise the smallest."}], "type": "paragraph"});
+            document.getElementById("766439293f3c4fb886b6a101d1b34387").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="verbosityLevel">verbosityLevel</a> : int, optional</dt>
+<dd>
+                <div id="7cd1b59307e54f32a1659c8195571bbf"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Controls solver output.  The default is "}, {"type": "inlineCode", "value": "verbosityLevel=0"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("7cd1b59307e54f32a1659c8195571bbf").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="retLambdaHistory">retLambdaHistory</a> : bool, optional.</dt>
+<dd>
+                <div id="758524c0612b45b79270da2fab9ad661"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Whether to return eigenvalue history.  Default is False."}], "type": "paragraph"});
+            document.getElementById("758524c0612b45b79270da2fab9ad661").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="retResidualNormsHistory">retResidualNormsHistory</a> : bool, optional.</dt>
+<dd>
+                <div id="a14bf75cba59405180fd5a41ec91b39f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Whether to return history of residual norms.  Default is False."}], "type": "paragraph"});
+            document.getElementById("a14bf75cba59405180fd5a41ec91b39f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="restartControl">restartControl</a> : int, optional.</dt>
+<dd>
+                <div id="ca0c445837fd40b2a63bcc300b83b1bd"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Iterations restart if the residuals jump up 2**restartControl times compared to the smallest ones recorded in retResidualNormsHistory. The default is "}, {"type": "inlineCode", "value": "restartControl=20"}, {"type": "text", "value": ", making the restarts rare for backward compatibility."}], "type": "paragraph"});
+            document.getElementById("ca0c445837fd40b2a63bcc300b83b1bd").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="w">w</a> : ndarray</dt>
+<dd>
+                <div id="a1db9d00cddf49f9815b5df35e53b7be"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Array of "}, {"type": "inlineCode", "value": "k"}, {"type": "text", "value": " eigenvalues."}], "type": "paragraph"});
+            document.getElementById("a1db9d00cddf49f9815b5df35e53b7be").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="v">v</a> : ndarray</dt>
+<dd>
+                <div id="ba365efdaeb540a5a7f8f549b24b9a19"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "An array of "}, {"type": "inlineCode", "value": "k"}, {"type": "text", "value": " eigenvectors.  "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "v", "type": "RefInfo", "version": null}, "type": "Link", "value": "v"}, {"type": "text", "value": " has the same shape as "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "X", "type": "RefInfo", "version": null}, "type": "Link", "value": "X"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("ba365efdaeb540a5a7f8f549b24b9a19").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="lambdas">lambdas</a> : ndarray, optional</dt>
+<dd>
+                <div id="bb4c6f91f64b44ad80e1df07a6844327"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The eigenvalue history, if "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "retLambdaHistory", "type": "RefInfo", "version": null}, "type": "Link", "value": "retLambdaHistory"}, {"type": "text", "value": " is True."}], "type": "paragraph"});
+            document.getElementById("bb4c6f91f64b44ad80e1df07a6844327").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="rnorms">rnorms</a> : ndarray, optional</dt>
+<dd>
+                <div id="e871e90a37054d93a76afa6f53744d5d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The history of residual norms, if "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "retResidualNormsHistory", "type": "RefInfo", "version": null}, "type": "Link", "value": "retResidualNormsHistory"}, {"type": "text", "value": " is True."}], "type": "paragraph"});
+            document.getElementById("e871e90a37054d93a76afa6f53744d5d").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="e8bbb8c772c94d889a4bc9d64a05740a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Locally Optimal Block Preconditioned Conjugate Gradient Method (LOBPCG)."}], "type": "paragraph"});
+            document.getElementById("e8bbb8c772c94d889a4bc9d64a05740a").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+                           Solve ``A x = lambda x`` with constraints and preconditioning.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">sparse</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">spdiags</span><span class="">,</span><span class=""> </span><span class="">issparse</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">sparse</span><span class="nn">.</span><span class="nn">linalg</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">lobpcg</span><span class="">,</span><span class=""> </span><span class="">LinearOperator</span>
+</pre>
+            
+                           The square matrix size:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">n</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="mi">100</span><br><span class='nsl'>...&nbsp;</span><span class="">vals</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">arange</span><span class="">(</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="">n</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="mi">1</span><span class="">)</span>
+</pre>
+            
+                           The first mandatory input parameter, in this test
+a sparse 2D array representing the square matrix
+of the eigenvalue problem to solve:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">A</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">spdiags</span><span class="">(</span><span class="">vals</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="">n</span><span class="">,</span><span class=""> </span><span class="">n</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">A</span><span class="o">.</span><span class="">toarray</span><span class="">(</span><span class="">)</span>
+array([[  1,   0,   0, ...,   0,   0,   0],
+       [  0,   2,   0, ...,   0,   0,   0],
+       [  0,   0,   3, ...,   0,   0,   0],
+       ...,
+       [  0,   0,   0, ...,  98,   0,   0],
+       [  0,   0,   0, ...,   0,  99,   0],
+       [  0,   0,   0, ...,   0,   0, 100]])</pre>
+            
+                           Initial guess for eigenvectors, should have linearly independent
+columns. The second mandatory input parameter, a 2D array with the
+row dimension determining the number of requested eigenvalues.
+If no initial approximations available, randomly oriented vectors
+commonly work best, e.g., with components normally disrtibuted
+around zero or uniformly distributed on the interval [-1 1].  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">rng</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">random</span><span class="o">.</span><span class="">default_rng</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">X</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">rng</span><span class="o">.</span><span class="">normal</span><span class="">(</span><span class="">size</span><span class="o">=</span><span class="">(</span><span class="">n</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">)</span><span class="">)</span>
+</pre>
+            
+                           Constraints - an optional input parameter is a 2D array comprising
+of column vectors that the eigenvectors must be orthogonal to:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">Y</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">eye</span><span class="">(</span><span class="">n</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">)</span>
+</pre>
+            
+                           Preconditioner in the inverse of A in this example:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">invA</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">spdiags</span><span class="">(</span><span class="">[</span><span class="mf">1.</span><span class="o">/</span><span class="">vals</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="">n</span><span class="">,</span><span class=""> </span><span class="">n</span><span class="">)</span>
+</pre>
+            
+                           The preconditiner must be defined by a function:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="k">def</span><span class=""> </span><span class="nf">precond</span><span class="">(</span><span class=""> </span><span class="">x</span><span class=""> </span><span class="">)</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="k">return</span><span class=""> </span><span class="">invA</span><span class=""> </span><span class="o">@</span><span class=""> </span><span class="">x</span>
+</pre>
+            
+                           The argument x of the preconditioner function is a matrix inside `lobpcg`,
+thus the use of matrix-matrix product ``@``.  
+            
+                           The preconditioner function is passed to lobpcg as a `LinearOperator`:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">M</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">LinearOperator</span><span class="">(</span><span class="">matvec</span><span class="o">=</span><span class="">precond</span><span class="">,</span><span class=""> </span><span class="">matmat</span><span class="o">=</span><span class="">precond</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                   </span><span class="">shape</span><span class="o">=</span><span class="">(</span><span class="">n</span><span class="">,</span><span class=""> </span><span class="">n</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">dtype</span><span class="o">=</span><span class="">np</span><span class="o">.</span><span class="">float64</span><span class="">)</span>
+</pre>
+            
+                           Let us now solve the eigenvalue problem for the matrix A:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">eigenvalues</span><span class="">,</span><span class=""> </span><span class="">_</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">lobpcg</span><span class="">(</span><span class="">A</span><span class="">,</span><span class=""> </span><span class="">X</span><span class="">,</span><span class=""> </span><span class="">Y</span><span class="o">=</span><span class="">Y</span><span class="">,</span><span class=""> </span><span class="">M</span><span class="o">=</span><span class="">M</span><span class="">,</span><span class=""> </span><span class="">largest</span><span class="o">=</span><span class="kc">False</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">eigenvalues</span>
+array([4., 5., 6.])</pre>
+            
+                           Note that the vectors passed in Y are the eigenvectors of the 3 smallest
+eigenvalues. The results returned are orthogonal to those.  
+            
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/sparse/linalg/_eigen/lobpcg/lobpcg.py#L142'>/scipy/sparse/linalg/_eigen/lobpcg/lobpcg.py#142</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 10.449489742783179, "label": "scipy.linalg._decomp.eigh", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.linalg._decomp.eigh"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

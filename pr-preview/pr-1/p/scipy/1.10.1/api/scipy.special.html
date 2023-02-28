@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.special.html'>special</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" >+</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.special._add_newdocs.html">_add_newdocs</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.html">_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._comb.html">_comb</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._ellip_harm.html">_ellip_harm</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._ellip_harm_2.html">_ellip_harm_2</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._lambertw.html">_lambertw</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._logsumexp.html">_logsumexp</a>
+<a href="/p/?/?/?/scipy.special._orthogonal.html.html">_orthogonal</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._sf_error.html">_sf_error</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._specfun.html">_specfun</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._spfun_stats.html">_spfun_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._spherical_bessel.html">_spherical_bessel</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._ufuncs.html">_ufuncs</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._ufuncs_cxx.html">_ufuncs_cxx</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.add_newdocs.html">add_newdocs</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.basic.html">basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.html">cython_special</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.orthogonal.html">orthogonal</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.sf_error.html">sf_error</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.specfun.html">specfun</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.spfun_stats.html">spfun_stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<!-- rendering Extended Summary -->
+        <!-- rendering Notes -->
+        <!-- rendering Summary -->
+                                       <div id="109d53bd5a624408b11a817cf0984f90"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "To remove in the future \u2013\u2013 scipy.special"}], "type": "paragraph"});
+            document.getElementById("109d53bd5a624408b11a817cf0984f90").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h1>Special functions (:mod:`scipy.special`)</h1>
+               <pre class='not-implemented'>
+.. currentmodule:: scipy.special
+    </pre>
+
+
+                               <div id="8e5febbead1d48b49315ae5ebc12ea79"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Almost all of the functions below accept NumPy arrays as input arguments as well as single numbers. This means they follow broadcasting and automatic array-looping rules. Technically, they are "}, {"target": "https://numpy.org/doc/stable/user/basics.ufuncs.html#ufuncs-basics", "type": "ExternalLink", "value": "NumPy universal functions"}, {"type": "text", "value": ". Functions which do not accept NumPy arrays are marked by a warning in the section description."}], "type": "paragraph"});
+            document.getElementById("8e5febbead1d48b49315ae5ebc12ea79").innerHTML = html;
+        }
+        init();
+    </script>
+
+               <pre class='not-implemented'>
+.. seealso:: 
+    `scipy.special.cython_special` -- Typed Cython versions of special functions</pre>
+
+
+
+<h2>Error handling</h2>
+                               <div id="f57b8ed5aeec418aab6aa5f47bae93c4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Errors are handled by returning NaNs or other appropriate values. Some of the special function routines can emit warnings or raise exceptions when an error occurs. By default this is disabled; to query and control the current error handling state the following functions are provided."}], "type": "paragraph"});
+            document.getElementById("f57b8ed5aeec418aab6aa5f47bae93c4").innerHTML = html;
+        }
+        init();
+    </script>
+
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    geterr                 -- Get the current way of handling special-function errors.
+    seterr                 -- Set how special-function errors are handled.
+    errstate               -- Context manager for special-function error handling.
+    SpecialFunctionWarning -- Warning that can be emitted by special functions.
+    SpecialFunctionError   -- Exception that can be raised by special functions.</pre>
+
+<h2>Available functions</h2>
+
+<h3>Airy functions</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    airy     -- Airy functions and their derivatives.
+    airye    -- Exponentially scaled Airy functions and their derivatives.
+    ai_zeros -- Compute `nt` zeros and values of the Airy function Ai and its derivative.
+    bi_zeros -- Compute `nt` zeros and values of the Airy function Bi and its derivative.
+    itairy   -- Integrals of Airy functions</pre>
+
+<h3>Elliptic functions and integrals</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    ellipj    -- Jacobian elliptic functions.
+    ellipk    -- Complete elliptic integral of the first kind.
+    ellipkm1  -- Complete elliptic integral of the first kind around `m` = 1.
+    ellipkinc -- Incomplete elliptic integral of the first kind.
+    ellipe    -- Complete elliptic integral of the second kind.
+    ellipeinc -- Incomplete elliptic integral of the second kind.
+    elliprc   -- Degenerate symmetric integral RC.
+    elliprd   -- Symmetric elliptic integral of the second kind.
+    elliprf   -- Completely-symmetric elliptic integral of the first kind.
+    elliprg   -- Completely-symmetric elliptic integral of the second kind.
+    elliprj   -- Symmetric elliptic integral of the third kind.</pre>
+
+<h3>Bessel functions</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    jv            -- Bessel function of the first kind of real order and                     complex argument.
+    jve           -- Exponentially scaled Bessel function of order `v`.
+    yn            -- Bessel function of the second kind of integer order and                     real argument.
+    yv            -- Bessel function of the second kind of real order and                     complex argument.
+    yve           -- Exponentially scaled Bessel function of the second kind                     of real order.
+    kn            -- Modified Bessel function of the second kind of integer                     order `n`
+    kv            -- Modified Bessel function of the second kind of real order                     `v`
+    kve           -- Exponentially scaled modified Bessel function of the                     second kind.
+    iv            -- Modified Bessel function of the first kind of real order.
+    ive           -- Exponentially scaled modified Bessel function of the                     first kind.
+    hankel1       -- Hankel function of the first kind.
+    hankel1e      -- Exponentially scaled Hankel function of the first kind.
+    hankel2       -- Hankel function of the second kind.
+    hankel2e      -- Exponentially scaled Hankel function of the second kind.
+    wright_bessel -- Wright&#39;s generalized Bessel function.</pre>
+                               <div id="c7233ae9f8c94ddea1fa50e9d4e38c4e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The following function does not accept NumPy arrays (it is not a universal function):"}], "type": "paragraph"});
+            document.getElementById("c7233ae9f8c94ddea1fa50e9d4e38c4e").innerHTML = html;
+        }
+        init();
+    </script>
+
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    lmbda -- Jahnke-Emden Lambda function, Lambdav(x).</pre>
+
+<h4>Zeros of Bessel functions</h4>
+                               <div id="4c8b51b5735c4027b316d225a7da6720"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The following functions do not accept NumPy arrays (they are not universal functions):"}], "type": "paragraph"});
+            document.getElementById("4c8b51b5735c4027b316d225a7da6720").innerHTML = html;
+        }
+        init();
+    </script>
+
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    jnjnp_zeros -- Compute zeros of integer-order Bessel functions Jn and Jn&#39;.
+    jnyn_zeros  -- Compute nt zeros of Bessel functions Jn(x), Jn&#39;(x), Yn(x), and Yn&#39;(x).
+    jn_zeros    -- Compute zeros of integer-order Bessel function Jn(x).
+    jnp_zeros   -- Compute zeros of integer-order Bessel function derivative Jn&#39;(x).
+    yn_zeros    -- Compute zeros of integer-order Bessel function Yn(x).
+    ynp_zeros   -- Compute zeros of integer-order Bessel function derivative Yn&#39;(x).
+    y0_zeros    -- Compute nt zeros of Bessel function Y0(z), and derivative at each zero.
+    y1_zeros    -- Compute nt zeros of Bessel function Y1(z), and derivative at each zero.
+    y1p_zeros   -- Compute nt zeros of Bessel derivative Y1&#39;(z), and value at each zero.</pre>
+
+<h4>Faster versions of common Bessel functions</h4>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    j0  -- Bessel function of the first kind of order 0.
+    j1  -- Bessel function of the first kind of order 1.
+    y0  -- Bessel function of the second kind of order 0.
+    y1  -- Bessel function of the second kind of order 1.
+    i0  -- Modified Bessel function of order 0.
+    i0e -- Exponentially scaled modified Bessel function of order 0.
+    i1  -- Modified Bessel function of order 1.
+    i1e -- Exponentially scaled modified Bessel function of order 1.
+    k0  -- Modified Bessel function of the second kind of order 0, :math:`K_0`.
+    k0e -- Exponentially scaled modified Bessel function K of order 0
+    k1  -- Modified Bessel function of the second kind of order 1, :math:`K_1(x)`.
+    k1e -- Exponentially scaled modified Bessel function K of order 1.</pre>
+
+<h4>Integrals of Bessel functions</h4>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    itj0y0     -- Integrals of Bessel functions of order 0.
+    it2j0y0    -- Integrals related to Bessel functions of order 0.
+    iti0k0     -- Integrals of modified Bessel functions of order 0.
+    it2i0k0    -- Integrals related to modified Bessel functions of order 0.
+    besselpoly -- Weighted integral of a Bessel function.</pre>
+
+<h4>Derivatives of Bessel functions</h4>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    jvp  -- Compute nth derivative of Bessel function Jv(z) with respect to `z`.
+    yvp  -- Compute nth derivative of Bessel function Yv(z) with respect to `z`.
+    kvp  -- Compute nth derivative of real-order modified Bessel function Kv(z)
+    ivp  -- Compute nth derivative of modified Bessel function Iv(z) with respect to `z`.
+    h1vp -- Compute nth derivative of Hankel function H1v(z) with respect to `z`.
+    h2vp -- Compute nth derivative of Hankel function H2v(z) with respect to `z`.</pre>
+
+<h4>Spherical Bessel functions</h4>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    spherical_jn -- Spherical Bessel function of the first kind or its derivative.
+    spherical_yn -- Spherical Bessel function of the second kind or its derivative.
+    spherical_in -- Modified spherical Bessel function of the first kind or its derivative.
+    spherical_kn -- Modified spherical Bessel function of the second kind or its derivative.</pre>
+
+<h4>Riccati-Bessel functions</h4>
+                               <div id="0ed09223f4cb4f4f9813195b49f6229b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The following functions do not accept NumPy arrays (they are not universal functions):"}], "type": "paragraph"});
+            document.getElementById("0ed09223f4cb4f4f9813195b49f6229b").innerHTML = html;
+        }
+        init();
+    </script>
+
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    riccati_jn -- Compute Ricatti-Bessel function of the first kind and its derivative.
+    riccati_yn -- Compute Ricatti-Bessel function of the second kind and its derivative.</pre>
+
+<h3>Struve functions</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    struve       -- Struve function.
+    modstruve    -- Modified Struve function.
+    itstruve0    -- Integral of the Struve function of order 0.
+    it2struve0   -- Integral related to the Struve function of order 0.
+    itmodstruve0 -- Integral of the modified Struve function of order 0.</pre>
+
+<h3>Raw statistical functions</h3>
+               <pre class='not-implemented'>
+.. seealso:: 
+    </pre>
+
+
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    bdtr         -- Binomial distribution cumulative distribution function.
+    bdtrc        -- Binomial distribution survival function.
+    bdtri        -- Inverse function to `bdtr` with respect to `p`.
+    bdtrik       -- Inverse function to `bdtr` with respect to `k`.
+    bdtrin       -- Inverse function to `bdtr` with respect to `n`.
+    btdtr        -- Cumulative distribution function of the beta distribution.
+    btdtri       -- The `p`-th quantile of the beta distribution.
+    btdtria      -- Inverse of `btdtr` with respect to `a`.
+    btdtrib      -- btdtria(a, p, x).
+    fdtr         -- F cumulative distribution function.
+    fdtrc        -- F survival function.
+    fdtri        -- The `p`-th quantile of the F-distribution.
+    fdtridfd     -- Inverse to `fdtr` vs dfd.
+    gdtr         -- Gamma distribution cumulative distribution function.
+    gdtrc        -- Gamma distribution survival function.
+    gdtria       -- Inverse of `gdtr` vs a.
+    gdtrib       -- Inverse of `gdtr` vs b.
+    gdtrix       -- Inverse of `gdtr` vs x.
+    nbdtr        -- Negative binomial cumulative distribution function.
+    nbdtrc       -- Negative binomial survival function.
+    nbdtri       -- Inverse of `nbdtr` vs `p`.
+    nbdtrik      -- Inverse of `nbdtr` vs `k`.
+    nbdtrin      -- Inverse of `nbdtr` vs `n`.
+    ncfdtr       -- Cumulative distribution function of the non-central F distribution.
+    ncfdtridfd   -- Calculate degrees of freedom (denominator) for the noncentral F-distribution.
+    ncfdtridfn   -- Calculate degrees of freedom (numerator) for the noncentral F-distribution.
+    ncfdtri      -- Inverse cumulative distribution function of the non-central F distribution.
+    ncfdtrinc    -- Calculate non-centrality parameter for non-central F distribution.
+    nctdtr       -- Cumulative distribution function of the non-central `t` distribution.
+    nctdtridf    -- Calculate degrees of freedom for non-central t distribution.
+    nctdtrit     -- Inverse cumulative distribution function of the non-central t distribution.
+    nctdtrinc    -- Calculate non-centrality parameter for non-central t distribution.
+    nrdtrimn     -- Calculate mean of normal distribution given other params.
+    nrdtrisd     -- Calculate standard deviation of normal distribution given other params.
+    pdtr         -- Poisson cumulative distribution function.
+    pdtrc        -- Poisson survival function.
+    pdtri        -- Inverse to `pdtr` vs m.
+    pdtrik       -- Inverse to `pdtr` vs k.
+    stdtr        -- Student t distribution cumulative distribution function.
+    stdtridf     -- Inverse of `stdtr` vs df.
+    stdtrit      -- Inverse of `stdtr` vs `t`.
+    chdtr        -- Chi square cumulative distribution function.
+    chdtrc       -- Chi square survival function.
+    chdtri       -- Inverse to `chdtrc`.
+    chdtriv      -- Inverse to `chdtr` vs `v`.
+    ndtr         -- Gaussian cumulative distribution function.
+    log_ndtr     -- Logarithm of Gaussian cumulative distribution function.
+    ndtri        -- Inverse of `ndtr` vs x.
+    ndtri_exp    -- Inverse of `log_ndtr` vs x.
+    chndtr       -- Non-central chi square cumulative distribution function.
+    chndtridf    -- Inverse to `chndtr` vs `df`.
+    chndtrinc    -- Inverse to `chndtr` vs `nc`.
+    chndtrix     -- Inverse to `chndtr` vs `x`.
+    smirnov      -- Kolmogorov-Smirnov complementary cumulative distribution function.
+    smirnovi     -- Inverse to `smirnov`.
+    kolmogorov   -- Complementary cumulative distribution function of Kolmogorov distribution.
+    kolmogi      -- Inverse function to `kolmogorov`.
+    tklmbda      -- Tukey-Lambda cumulative distribution function.
+    logit        -- Logit ufunc for ndarrays.
+    expit        -- Logistic sigmoid function.
+    log_expit    -- Logarithm of the logistic sigmoid function.
+    boxcox       -- Compute the Box-Cox transformation.
+    boxcox1p     -- Compute the Box-Cox transformation of 1 + `x`.
+    inv_boxcox   -- Compute the inverse of the Box-Cox transformation.
+    inv_boxcox1p -- Compute the inverse of the Box-Cox transformation.
+    owens_t      -- Owen&#39;s T Function.</pre>
+
+<h3>Information Theory functions</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    entr         -- Elementwise function for computing entropy.
+    rel_entr     -- Elementwise function for computing relative entropy.
+    kl_div       -- Elementwise function for computing Kullback-Leibler divergence.
+    huber        -- Huber loss function.
+    pseudo_huber -- Pseudo-Huber loss function.</pre>
+
+<h3>Gamma and related functions</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    gamma        -- Gamma function.
+    gammaln      -- Logarithm of the absolute value of the Gamma function for real inputs.
+    loggamma     -- Principal branch of the logarithm of the Gamma function.
+    gammasgn     -- Sign of the gamma function.
+    gammainc     -- Regularized lower incomplete gamma function.
+    gammaincinv  -- Inverse to `gammainc`.
+    gammaincc    -- Regularized upper incomplete gamma function.
+    gammainccinv -- Inverse to `gammaincc`.
+    beta         -- Beta function.
+    betaln       -- Natural logarithm of absolute value of beta function.
+    betainc      -- Incomplete beta integral.
+    betaincinv   -- Inverse function to beta integral.
+    psi          -- The digamma function.
+    rgamma       -- Gamma function inverted.
+    polygamma    -- Polygamma function n.
+    multigammaln -- Returns the log of multivariate gamma, also sometimes called the generalized gamma.
+    digamma      -- psi(x[, out]).
+    poch         -- Rising factorial (z)_m.</pre>
+
+<h3>Error function and Fresnel integrals</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    erf           -- Returns the error function of complex argument.
+    erfc          -- Complementary error function, ``1 - erf(x)``.
+    erfcx         -- Scaled complementary error function, ``exp(x**2) * erfc(x)``.
+    erfi          -- Imaginary error function, ``-i erf(i z)``.
+    erfinv        -- Inverse function for erf.
+    erfcinv       -- Inverse function for erfc.
+    wofz          -- Faddeeva function.
+    dawsn         -- Dawson&#39;s integral.
+    fresnel       -- Fresnel sin and cos integrals.
+    fresnel_zeros -- Compute nt complex zeros of sine and cosine Fresnel integrals S(z) and C(z).
+    modfresnelp   -- Modified Fresnel positive integrals.
+    modfresnelm   -- Modified Fresnel negative integrals.
+    voigt_profile -- Voigt profile.</pre>
+                               <div id="f33521c28ee047358b34c78bf11b0f43"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The following functions do not accept NumPy arrays (they are not universal functions):"}], "type": "paragraph"});
+            document.getElementById("f33521c28ee047358b34c78bf11b0f43").innerHTML = html;
+        }
+        init();
+    </script>
+
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    erf_zeros      -- Compute nt complex zeros of error function erf(z).
+    fresnelc_zeros -- Compute nt complex zeros of cosine Fresnel integral C(z).
+    fresnels_zeros -- Compute nt complex zeros of sine Fresnel integral S(z).</pre>
+
+<h3>Legendre functions</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    lpmv     -- Associated Legendre function of integer order and real degree.
+    sph_harm -- Compute spherical harmonics.</pre>
+                               <div id="9abe5b63b34d4f77a71a6f131bebaefb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The following functions do not accept NumPy arrays (they are not universal functions):"}], "type": "paragraph"});
+            document.getElementById("9abe5b63b34d4f77a71a6f131bebaefb").innerHTML = html;
+        }
+        init();
+    </script>
+
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    clpmn -- Associated Legendre function of the first kind for complex arguments.
+    lpn   -- Legendre function of the first kind.
+    lqn   -- Legendre function of the second kind.
+    lpmn  -- Sequence of associated Legendre functions of the first kind.
+    lqmn  -- Sequence of associated Legendre functions of the second kind.</pre>
+
+<h3>Ellipsoidal harmonics</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    ellip_harm   -- Ellipsoidal harmonic functions E^p_n(l).
+    ellip_harm_2 -- Ellipsoidal harmonic functions F^p_n(l).
+    ellip_normal -- Ellipsoidal harmonic normalization constants gamma^p_n.</pre>
+
+<h3>Orthogonal polynomials</h3>
+                               <div id="92f0c10ed4ee4e6c8fe88b306d3afca7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The following functions evaluate values of orthogonal polynomials:"}], "type": "paragraph"});
+            document.getElementById("92f0c10ed4ee4e6c8fe88b306d3afca7").innerHTML = html;
+        }
+        init();
+    </script>
+
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    assoc_laguerre   -- Compute the generalized (associated) Laguerre polynomial of degree n and order k.
+    eval_legendre    -- Evaluate Legendre polynomial at a point.
+    eval_chebyt      -- Evaluate Chebyshev polynomial of the first kind at a point.
+    eval_chebyu      -- Evaluate Chebyshev polynomial of the second kind at a point.
+    eval_chebyc      -- Evaluate Chebyshev polynomial of the first kind on [-2, 2] at a point.
+    eval_chebys      -- Evaluate Chebyshev polynomial of the second kind on [-2, 2] at a point.
+    eval_jacobi      -- Evaluate Jacobi polynomial at a point.
+    eval_laguerre    -- Evaluate Laguerre polynomial at a point.
+    eval_genlaguerre -- Evaluate generalized Laguerre polynomial at a point.
+    eval_hermite     -- Evaluate physicist&#39;s Hermite polynomial at a point.
+    eval_hermitenorm -- Evaluate probabilist&#39;s (normalized) Hermite polynomial at a point.
+    eval_gegenbauer  -- Evaluate Gegenbauer polynomial at a point.
+    eval_sh_legendre -- Evaluate shifted Legendre polynomial at a point.
+    eval_sh_chebyt   -- Evaluate shifted Chebyshev polynomial of the first kind at a point.
+    eval_sh_chebyu   -- Evaluate shifted Chebyshev polynomial of the second kind at a point.
+    eval_sh_jacobi   -- Evaluate shifted Jacobi polynomial at a point.</pre>
+                               <div id="7c6ff7d152de4d16ad731b2036f1dd02"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The following functions compute roots and quadrature weights for orthogonal polynomials:"}], "type": "paragraph"});
+            document.getElementById("7c6ff7d152de4d16ad731b2036f1dd02").innerHTML = html;
+        }
+        init();
+    </script>
+
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    roots_legendre    -- Gauss-Legendre quadrature.
+    roots_chebyt      -- Gauss-Chebyshev (first kind) quadrature.
+    roots_chebyu      -- Gauss-Chebyshev (second kind) quadrature.
+    roots_chebyc      -- Gauss-Chebyshev (first kind) quadrature.
+    roots_chebys      -- Gauss-Chebyshev (second kind) quadrature.
+    roots_jacobi      -- Gauss-Jacobi quadrature.
+    roots_laguerre    -- Gauss-Laguerre quadrature.
+    roots_genlaguerre -- Gauss-generalized Laguerre quadrature.
+    roots_hermite     -- Gauss-Hermite (physicst&#39;s) quadrature.
+    roots_hermitenorm -- Gauss-Hermite (statistician&#39;s) quadrature.
+    roots_gegenbauer  -- Gauss-Gegenbauer quadrature.
+    roots_sh_legendre -- Gauss-Legendre (shifted) quadrature.
+    roots_sh_chebyt   -- Gauss-Chebyshev (first kind, shifted) quadrature.
+    roots_sh_chebyu   -- Gauss-Chebyshev (second kind, shifted) quadrature.
+    roots_sh_jacobi   -- Gauss-Jacobi (shifted) quadrature.</pre>
+                               <div id="66b3ac901d8e4eb18317493180d747d2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The functions below, in turn, return the polynomial coefficients in "}, {"type": "inlineCode", "value": "orthopoly1d"}, {"type": "text", "value": " objects, which function similarly as "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "numpy", "path": "numpy.poly1d", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "numpy.poly1d"}, {"type": "text", "value": ". The "}, {"type": "inlineCode", "value": "orthopoly1d"}, {"type": "text", "value": " class also has an attribute "}, {"type": "inlineCode", "value": "weights"}, {"type": "text", "value": ", which returns the roots, weights, and total weights for the appropriate form of Gaussian quadrature. These are returned in an "}, {"type": "inlineCode", "value": "n x 3"}, {"type": "text", "value": " array with roots in the first column, weights in the second column, and total weights in the final column. Note that "}, {"type": "inlineCode", "value": "orthopoly1d"}, {"type": "text", "value": " objects are converted to "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "numpy", "path": "numpy.poly1d", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "poly1d"}, {"type": "text", "value": " when doing arithmetic, and lose information of the original orthogonal polynomial."}], "type": "paragraph"});
+            document.getElementById("66b3ac901d8e4eb18317493180d747d2").innerHTML = html;
+        }
+        init();
+    </script>
+
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    legendre    -- Legendre polynomial.
+    chebyt      -- Chebyshev polynomial of the first kind.
+    chebyu      -- Chebyshev polynomial of the second kind.
+    chebyc      -- Chebyshev polynomial of the first kind on :math:`[-2, 2]`.
+    chebys      -- Chebyshev polynomial of the second kind on :math:`[-2, 2]`.
+    jacobi      -- Jacobi polynomial.
+    laguerre    -- Laguerre polynomial.
+    genlaguerre -- Generalized (associated) Laguerre polynomial.
+    hermite     -- Physicist&#39;s Hermite polynomial.
+    hermitenorm -- Normalized (probabilist&#39;s) Hermite polynomial.
+    gegenbauer  -- Gegenbauer (ultraspherical) polynomial.
+    sh_legendre -- Shifted Legendre polynomial.
+    sh_chebyt   -- Shifted Chebyshev polynomial of the first kind.
+    sh_chebyu   -- Shifted Chebyshev polynomial of the second kind.
+    sh_jacobi   -- Shifted Jacobi polynomial.</pre>
+                           <div class='admonition'>
+    <div>warning </div>
+                        <div id="d075992086e84d468a6b60345b176b9a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Computing values of high-order polynomials (around "}, {"type": "inlineCode", "value": "order \u003e 20"}, {"type": "text", "value": ") using polynomial coefficients is numerically unstable. To evaluate polynomial values, the "}, {"type": "inlineCode", "value": "eval_*"}, {"type": "text", "value": " functions should be used instead."}], "type": "paragraph"});
+            document.getElementById("d075992086e84d468a6b60345b176b9a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</div>
+
+
+
+<h3>Hypergeometric functions</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    hyp2f1 -- Gauss hypergeometric function 2F1(a, b; c; z).
+    hyp1f1 -- Confluent hypergeometric function 1F1(a, b; x).
+    hyperu -- Confluent hypergeometric function U(a, b, x) of the second kind.
+    hyp0f1 -- Confluent hypergeometric limit function 0F1.</pre>
+
+<h3>Parabolic cylinder functions</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    pbdv -- Parabolic cylinder function D.
+    pbvv -- Parabolic cylinder function V.
+    pbwa -- Parabolic cylinder function W.</pre>
+                               <div id="90b93db8ec0f4f76b21e62ad098bcaac"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The following functions do not accept NumPy arrays (they are not universal functions):"}], "type": "paragraph"});
+            document.getElementById("90b93db8ec0f4f76b21e62ad098bcaac").innerHTML = html;
+        }
+        init();
+    </script>
+
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    pbdv_seq -- Parabolic cylinder functions Dv(x) and derivatives.
+    pbvv_seq -- Parabolic cylinder functions Vv(x) and derivatives.
+    pbdn_seq -- Parabolic cylinder functions Dn(z) and derivatives.</pre>
+
+<h3>Mathieu and related functions</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    mathieu_a -- Characteristic value of even Mathieu functions.
+    mathieu_b -- Characteristic value of odd Mathieu functions.</pre>
+                               <div id="0721787296c841298ec3ab851aa1ba6c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The following functions do not accept NumPy arrays (they are not universal functions):"}], "type": "paragraph"});
+            document.getElementById("0721787296c841298ec3ab851aa1ba6c").innerHTML = html;
+        }
+        init();
+    </script>
+
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    mathieu_even_coef -- Fourier coefficients for even Mathieu and modified Mathieu functions.
+    mathieu_odd_coef  -- Fourier coefficients for even Mathieu and modified Mathieu functions.</pre>
+                               <div id="0c8074edca1a49c09516141b85cfd0ee"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The following return both function and first derivative:"}], "type": "paragraph"});
+            document.getElementById("0c8074edca1a49c09516141b85cfd0ee").innerHTML = html;
+        }
+        init();
+    </script>
+
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    mathieu_cem     -- Even Mathieu function and its derivative.
+    mathieu_sem     -- Odd Mathieu function and its derivative.
+    mathieu_modcem1 -- Even modified Mathieu function of the first kind and its derivative.
+    mathieu_modcem2 -- Even modified Mathieu function of the second kind and its derivative.
+    mathieu_modsem1 -- Odd modified Mathieu function of the first kind and its derivative.
+    mathieu_modsem2 -- Odd modified Mathieu function of the second kind and its derivative.</pre>
+
+<h3>Spheroidal wave functions</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    pro_ang1   -- Prolate spheroidal angular function of the first kind and its derivative.
+    pro_rad1   -- Prolate spheroidal radial function of the first kind and its derivative.
+    pro_rad2   -- Prolate spheroidal radial function of the secon kind and its derivative.
+    obl_ang1   -- Oblate spheroidal angular function of the first kind and its derivative.
+    obl_rad1   -- Oblate spheroidal radial function of the first kind and its derivative.
+    obl_rad2   -- Oblate spheroidal radial function of the second kind and its derivative.
+    pro_cv     -- Characteristic value of prolate spheroidal function.
+    obl_cv     -- Characteristic value of oblate spheroidal function.
+    pro_cv_seq -- Characteristic values for prolate spheroidal wave functions.
+    obl_cv_seq -- Characteristic values for oblate spheroidal wave functions.</pre>
+                               <div id="f7f0b9ea738645fda41f6634ff6bf729"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The following functions require pre-computed characteristic value:"}], "type": "paragraph"});
+            document.getElementById("f7f0b9ea738645fda41f6634ff6bf729").innerHTML = html;
+        }
+        init();
+    </script>
+
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    pro_ang1_cv -- Prolate spheroidal angular function pro_ang1 for precomputed characteristic value.
+    pro_rad1_cv -- Prolate spheroidal radial function pro_rad1 for precomputed characteristic value.
+    pro_rad2_cv -- Prolate spheroidal radial function pro_rad2 for precomputed characteristic value.
+    obl_ang1_cv -- Oblate spheroidal angular function obl_ang1 for precomputed characteristic value.
+    obl_rad1_cv -- Oblate spheroidal radial function obl_rad1 for precomputed characteristic value.
+    obl_rad2_cv -- Oblate spheroidal radial function obl_rad2 for precomputed characteristic value.</pre>
+
+<h3>Kelvin functions</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    kelvin       -- Kelvin functions as complex numbers.
+    kelvin_zeros -- Compute nt zeros of all Kelvin functions.
+    ber          -- Kelvin function ber.
+    bei          -- Kelvin function bei
+    berp         -- Derivative of the Kelvin function `ber`.
+    beip         -- Derivative of the Kelvin function `bei`.
+    ker          -- Kelvin function ker.
+    kei          -- Kelvin function ker.
+    kerp         -- Derivative of the Kelvin function ker.
+    keip         -- Derivative of the Kelvin function kei.</pre>
+                               <div id="5e76f14556d44dc088dc5250b4144876"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The following functions do not accept NumPy arrays (they are not universal functions):"}], "type": "paragraph"});
+            document.getElementById("5e76f14556d44dc088dc5250b4144876").innerHTML = html;
+        }
+        init();
+    </script>
+
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    ber_zeros  -- Compute nt zeros of the Kelvin function ber(x).
+    bei_zeros  -- Compute nt zeros of the Kelvin function bei(x).
+    berp_zeros -- Compute nt zeros of the Kelvin function ber&#39;(x).
+    beip_zeros -- Compute nt zeros of the Kelvin function bei&#39;(x).
+    ker_zeros  -- Compute nt zeros of the Kelvin function ker(x).
+    kei_zeros  -- Compute nt zeros of the Kelvin function kei(x).
+    kerp_zeros -- Compute nt zeros of the Kelvin function ker&#39;(x).
+    keip_zeros -- Compute nt zeros of the Kelvin function kei&#39;(x).</pre>
+
+<h3>Combinatorics</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    comb -- The number of combinations of N things taken k at a time.
+    perm -- Permutations of N things taken k at a time, i.e., k-permutations of N.</pre>
+
+<h3>Lambert W and related functions</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    lambertw    -- Lambert W function.
+    wrightomega -- Wright Omega function.</pre>
+
+<h3>Other special functions</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    agm         -- Arithmetic, Geometric Mean.
+    bernoulli   -- Bernoulli numbers B0..Bn (inclusive).
+    binom       -- Binomial coefficient
+    diric       -- Periodic sinc function, also called the Dirichlet function.
+    euler       -- Euler numbers E0..En (inclusive).
+    expn        -- Exponential integral E_n.
+    exp1        -- Exponential integral E_1 of complex argument z.
+    expi        -- Exponential integral Ei.
+    factorial   -- The factorial of a number or array of numbers.
+    factorial2  -- Double factorial.
+    factorialk  -- Multifactorial of n of order k, n(!!...!).
+    shichi      -- Hyperbolic sine and cosine integrals.
+    sici        -- Sine and cosine integrals.
+    softmax     -- Softmax function.
+    log_softmax -- Logarithm of softmax function.
+    spence      -- Spence&#39;s function, also known as the dilogarithm.
+    zeta        -- Riemann zeta function.
+    zetac       -- Riemann zeta function minus 1.</pre>
+
+<h3>Convenience functions</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    cbrt      -- Cube root of `x`.
+    exp10     -- 10**x.
+    exp2      -- 2**x.
+    radian    -- Convert from degrees to radians.
+    cosdg     -- Cosine of the angle `x` given in degrees.
+    sindg     -- Sine of angle given in degrees.
+    tandg     -- Tangent of angle x given in degrees.
+    cotdg     -- Cotangent of the angle `x` given in degrees.
+    log1p     -- Calculates log(1+x) for use when `x` is near zero.
+    expm1     -- ``exp(x) - 1`` for use when `x` is near zero.
+    cosm1     -- ``cos(x) - 1`` for use when `x` is near zero.
+    powm1     -- ``x**y - 1`` for use when `y` is near zero or `x` is near 1.
+    round     -- Round to nearest integer.
+    xlogy     -- Compute ``x*log(y)`` so that the result is 0 if ``x = 0``.
+    xlog1py   -- Compute ``x*log1p(y)`` so that the result is 0 if ``x = 0``.
+    logsumexp -- Compute the log of the sum of exponentials of input elements.
+    exprel    -- Relative error exponential, (exp(x)-1)/x, for use when `x` is near zero.
+    sinc      -- Return the sinc function.</pre>
+
+<h3 id="section-Examples">Examples</h3>
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.integrate._quadpack_py.dblquad.html" class='exists'>scipy.integrate._quadpack_py.dblquad</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.integrate._quadpack_py.quad.html" class='exists'>scipy.integrate._quadpack_py.quad</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.integrate._quadpack_py.tplquad.html" class='exists'>scipy.integrate._quadpack_py.tplquad</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/special/__init__.py#L0'>/scipy/special/__init__.py#0</a>
+<br/>
+
+type: &lt;class &#39;module&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 11.16227766016838, "label": "numpy.poly1d", "mod": "numpy", "url": "/p/numpy/*/api/numpy.poly1d"}, {"id": 2, "val": 11.0, "label": "scipy.integrate._quadpack_py.tplquad", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.integrate._quadpack_py.tplquad"}, {"id": 3, "val": 11.464101615137753, "label": "scipy.integrate._quadpack_py.quad", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.integrate._quadpack_py.quad"}, {"id": 4, "val": 11.0, "label": "scipy.integrate._quadpack_py.dblquad", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.integrate._quadpack_py.dblquad"}], "links": [{"source": 4, "target": 2, "id": 4}, {"source": 4, "target": 3, "id": 6}, {"source": 3, "target": 2, "id": 24}, {"source": 3, "target": 4, "id": 25}, {"source": 2, "target": 4, "id": 35}, {"source": 2, "target": 3, "id": 37}]};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

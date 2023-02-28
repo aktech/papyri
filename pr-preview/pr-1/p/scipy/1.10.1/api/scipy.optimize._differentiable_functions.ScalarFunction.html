@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize.html'>optimize</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize._differentiable_functions.html'>_differentiable_functions</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.optimize.__nnls.html">__nnls</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._basinhopping.html">_basinhopping</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._bglu_dense.html">_bglu_dense</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._cobyla.html">_cobyla</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._cobyla_py.html">_cobyla_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._constraints.html">_constraints</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentiable_functions.html">_differentiable_functions</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentialevolution.html">_differentialevolution</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._direct.html">_direct</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._direct_py.html">_direct_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._dual_annealing.html">_dual_annealing</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._group_columns.html">_group_columns</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._hessian_update_strategy.html">_hessian_update_strategy</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._highs.html">_highs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lbfgsb.html">_lbfgsb</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lbfgsb_py.html">_lbfgsb_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linesearch.html">_linesearch</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog.html">_linprog</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_doc.html">_linprog_doc</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_highs.html">_linprog_highs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_ip.html">_linprog_ip</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_rs.html">_linprog_rs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_simplex.html">_linprog_simplex</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_util.html">_linprog_util</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lsap.html">_lsap</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lsq.html">_lsq</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._milp.html">_milp</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minimize.html">_minimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minpack.html">_minpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minpack2.html">_minpack2</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minpack_py.html">_minpack_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._moduleTNC.html">_moduleTNC</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nnls.html">_nnls</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.html">_nonlin</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._numdiff.html">_numdiff</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.html">_optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._qap.html">_qap</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._remove_redundancy.html">_remove_redundancy</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._root.html">_root</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._root_scalar.html">_root_scalar</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._shgo.html">_shgo</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._shgo_lib.html">_shgo_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._slsqp.html">_slsqp</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._slsqp_py.html">_slsqp_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._spectral.html">_spectral</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._tnc.html">_tnc</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trlib.html">_trlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion.html">_trustregion</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_constr.html">_trustregion_constr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_dogleg.html">_trustregion_dogleg</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_exact.html">_trustregion_exact</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_krylov.html">_trustregion_krylov</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_ncg.html">_trustregion_ncg</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros.html">_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros_py.html">_zeros_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.cobyla.html">cobyla</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.lbfgsb.html">lbfgsb</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.linesearch.html">linesearch</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.minpack.html">minpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.minpack2.html">minpack2</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.moduleTNC.html">moduleTNC</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.nonlin.html">nonlin</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.slsqp.html">slsqp</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.tnc.html">tnc</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.zeros.html">zeros</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize._differentiable_functions.ScalarFunction.html'>ScalarFunction</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentiable_functions.IdentityVectorFunction.html">IdentityVectorFunction</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentiable_functions.LinearVectorFunction.html">LinearVectorFunction</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentiable_functions.ScalarFunction.html">ScalarFunction</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentiable_functions.VectorFunction.html">VectorFunction</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" >+</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentiable_functions.ScalarFunction.__init__.html">__init__</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentiable_functions.ScalarFunction._update_fun.html">_update_fun</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentiable_functions.ScalarFunction._update_grad.html">_update_grad</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentiable_functions.ScalarFunction._update_hess.html">_update_hess</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentiable_functions.ScalarFunction.fun.html">fun</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentiable_functions.ScalarFunction.fun_and_grad.html">fun_and_grad</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentiable_functions.ScalarFunction.grad.html">grad</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentiable_functions.ScalarFunction.hess.html">hess</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a>    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<!-- rendering Extended Summary -->
+                                       <div id="db60f50a4b98474bac30b761a8a8fdd3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This class defines a scalar function F: R^n-\u003eR and methods for computing or approximating its first and second derivatives."}], "type": "paragraph"});
+            document.getElementById("db60f50a4b98474bac30b761a8a8fdd3").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="9b77d9bdc89146db875389590f2e458b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This class implements a memoization logic. There are methods "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "fun", "type": "RefInfo", "version": null}, "type": "Link", "value": "fun"}, {"type": "text", "value": ", "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "grad", "type": "RefInfo", "version": null}, "type": "Link", "value": "grad"}, {"type": "text", "value": ", hess` and corresponding attributes "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.optimize._bglu_dense._consider_refactor.\u003clocals\u003e.f", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "f"}, {"type": "text", "value": ", "}, {"domain": null, "role": null, "type": "Directive", "value": "g"}, {"type": "text", "value": " and "}, {"domain": null, "role": null, "type": "Directive", "value": "H"}, {"type": "text", "value": ". The following things should be considered:"}], "type": "paragraph"});
+            document.getElementById("9b77d9bdc89146db875389590f2e458b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                           <blockquote>           <ol>               <li>                               <div id="33663e0d3c604a3d8832de0c070439ac"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Use only public methods "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "fun", "type": "RefInfo", "version": null}, "type": "Link", "value": "fun"}, {"type": "text", "value": ", "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "grad", "type": "RefInfo", "version": null}, "type": "Link", "value": "grad"}, {"type": "text", "value": " and "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "hess", "type": "RefInfo", "version": null}, "type": "Link", "value": "hess"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("33663e0d3c604a3d8832de0c070439ac").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="c687951158de47cdaae87c8f8d6f3e90"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "After one of the methods is called, the corresponding attribute        will be set. However, a subsequent call with a different argument        of "}, {"children": [{"type": "text", "value": "any"}], "type": "emphasis"}, {"type": "text", "value": " of the methods may overwrite the attribute."}], "type": "paragraph"});
+            document.getElementById("c687951158de47cdaae87c8f8d6f3e90").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ol>
+</blockquote>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="fun">fun</a> : callable</dt>
+<dd>
+                <div id="0a738a14b82a49f7abf86cc1c35964c8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "evaluates the scalar function. Must be of the form "}, {"type": "inlineCode", "value": "fun(x, *args)"}, {"type": "text", "value": ", where "}, {"type": "inlineCode", "value": "x"}, {"type": "text", "value": " is the argument in the form of a 1-D array and "}, {"type": "inlineCode", "value": "args"}, {"type": "text", "value": " is a tuple of any additional fixed parameters needed to completely specify the function. Should return a scalar."}], "type": "paragraph"});
+            document.getElementById("0a738a14b82a49f7abf86cc1c35964c8").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="x0">x0</a> : array-like</dt>
+<dd>
+                <div id="7f0320c380d6409cad3fd4a69bc3958f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Provides an initial set of variables for evaluating fun. Array of real elements of size (n,), where \u0027n\u0027 is the number of independent variables."}], "type": "paragraph"});
+            document.getElementById("7f0320c380d6409cad3fd4a69bc3958f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="args">args</a> : tuple, optional</dt>
+<dd>
+                <div id="7882ac5365c1491a9fde74f05e670e39"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Any additional fixed parameters needed to completely specify the scalar function."}], "type": "paragraph"});
+            document.getElementById("7882ac5365c1491a9fde74f05e670e39").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="grad">grad</a> : {callable, &#39;2-point&#39;, &#39;3-point&#39;, &#39;cs&#39;}</dt>
+<dd>
+                <div id="984e3f8775cf439590827c442a84fea3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Method for computing the gradient vector. If it is a callable, it should be a function that returns the gradient vector:"}], "type": "paragraph"});
+            document.getElementById("984e3f8775cf439590827c442a84fea3").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <blockquote>                <div id="367ba7907c8e4e8b910fdb46eed4dfa3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "grad(x, *args) -\u003e array_like, shape (n,)"}], "type": "paragraph"});
+            document.getElementById("367ba7907c8e4e8b910fdb46eed4dfa3").innerHTML = html;
+        }
+        init();
+    </script>
+</blockquote>
+
+                <div id="e8e77c8d3cfd4fa888561a57b86aaabc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "where "}, {"type": "inlineCode", "value": "x"}, {"type": "text", "value": " is an array with shape (n,) and "}, {"type": "inlineCode", "value": "args"}, {"type": "text", "value": " is a tuple with the fixed parameters. Alternatively, the keywords  {\u00272-point\u0027, \u00273-point\u0027, \u0027cs\u0027} can be used to select a finite difference scheme for numerical estimation of the gradient with a relative step size. These finite difference schemes obey any specified "}, {"domain": null, "role": null, "type": "Directive", "value": "bounds"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("e8e77c8d3cfd4fa888561a57b86aaabc").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="hess">hess</a> : {callable, &#39;2-point&#39;, &#39;3-point&#39;, &#39;cs&#39;, HessianUpdateStrategy}</dt>
+<dd>
+                <div id="414b944f08df4aaba55c938189768cd5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Method for computing the Hessian matrix. If it is callable, it should return the  Hessian matrix:"}], "type": "paragraph"});
+            document.getElementById("414b944f08df4aaba55c938189768cd5").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <blockquote>                <div id="ddd8aa42a269417ba6a27925e7df7c3c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "hess(x, *args) -\u003e {LinearOperator, spmatrix, array}, (n, n)"}], "type": "paragraph"});
+            document.getElementById("ddd8aa42a269417ba6a27925e7df7c3c").innerHTML = html;
+        }
+        init();
+    </script>
+</blockquote>
+
+                <div id="8ab417c8e6bd449ba9b0d267d2f5b55f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "where x is a (n,) ndarray and "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "args", "type": "RefInfo", "version": null}, "type": "Link", "value": "args"}, {"type": "text", "value": " is a tuple with the fixed parameters. Alternatively, the keywords {\u00272-point\u0027, \u00273-point\u0027, \u0027cs\u0027} select a finite difference scheme for numerical estimation. Or, objects implementing "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.optimize._hessian_update_strategy.HessianUpdateStrategy", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "HessianUpdateStrategy"}, {"type": "text", "value": " interface can be used to approximate the Hessian. Whenever the gradient is estimated via finite-differences, the Hessian cannot be estimated with options {\u00272-point\u0027, \u00273-point\u0027, \u0027cs\u0027} and needs to be estimated using one of the quasi-Newton strategies."}], "type": "paragraph"});
+            document.getElementById("8ab417c8e6bd449ba9b0d267d2f5b55f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="finite_diff_rel_step">finite_diff_rel_step</a> : None or array_like</dt>
+<dd>
+                <div id="a58993e0004f4cd6b5224cf6f22a8df3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Relative step size to use. The absolute step size is computed as "}, {"type": "inlineCode", "value": "h = finite_diff_rel_step * sign(x0) * max(1, abs(x0))"}, {"type": "text", "value": ", possibly adjusted to fit into the bounds. For "}, {"type": "inlineCode", "value": "method=\u00273-point\u0027"}, {"type": "text", "value": " the sign of "}, {"domain": null, "role": null, "type": "Directive", "value": "h"}, {"type": "text", "value": " is ignored. If None then finite_diff_rel_step is selected automatically,"}], "type": "paragraph"});
+            document.getElementById("a58993e0004f4cd6b5224cf6f22a8df3").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="finite_diff_bounds">finite_diff_bounds</a> : tuple of array_like</dt>
+<dd>
+                <div id="71ca9bfc60c945ac90646f011fe86d26"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Lower and upper bounds on independent variables. Defaults to no bounds, (-np.inf, np.inf). Each bound must match the size of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x0", "type": "RefInfo", "version": null}, "type": "Link", "value": "x0"}, {"type": "text", "value": " or be a scalar, in the latter case the bound will be the same for all variables. Use it to limit the range of function evaluation."}], "type": "paragraph"});
+            document.getElementById("71ca9bfc60c945ac90646f011fe86d26").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="epsilon">epsilon</a> : None or array_like, optional</dt>
+<dd>
+                <div id="3fd85382e63d4eb1a6ddf5b39528493f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Absolute step size to use, possibly adjusted to fit into the bounds. For "}, {"type": "inlineCode", "value": "method=\u00273-point\u0027"}, {"type": "text", "value": " the sign of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "epsilon", "type": "RefInfo", "version": null}, "type": "Link", "value": "epsilon"}, {"type": "text", "value": " is ignored. By default relative steps are used, only if "}, {"type": "inlineCode", "value": "epsilon is not None"}, {"type": "text", "value": " are absolute steps used."}], "type": "paragraph"});
+            document.getElementById("3fd85382e63d4eb1a6ddf5b39528493f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="d80aa072ec54431dbe46a80adc46e757"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Scalar function and its derivatives."}], "type": "paragraph"});
+            document.getElementById("d80aa072ec54431dbe46a80adc46e757").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/optimize/_differentiable_functions.py#L11'>/scipy/optimize/_differentiable_functions.py#11</a>
+<br/>
+
+type: &lt;class &#39;type&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 10.0, "label": "scipy.optimize._hessian_update_strategy.HessianUpdateStrategy", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.optimize._hessian_update_strategy.HessianUpdateStrategy"}, {"id": 2, "val": 12.242640687119284, "label": "scipy.optimize._bglu_dense._consider_refactor.<locals>.f", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.optimize._bglu_dense._consider_refactor.<locals>.f"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

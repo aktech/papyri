@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.spatial.html'>spatial</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.spatial._kdtree.html'>_kdtree</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.spatial._ckdtree.html">_ckdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._distance_pybind.html">_distance_pybind</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._distance_wrap.html">_distance_wrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._geometric_slerp.html">_geometric_slerp</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._hausdorff.html">_hausdorff</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.html">_kdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._plotutils.html">_plotutils</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._procrustes.html">_procrustes</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.html">_qhull</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._spherical_voronoi.html">_spherical_voronoi</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._voronoi.html">_voronoi</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.ckdtree.html">ckdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.html">distance</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.kdtree.html">kdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.qhull.html">qhull</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.transform.html">transform</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.spatial._kdtree.KDTree.html'>KDTree</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.KDTree.html">KDTree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.Rectangle.html">Rectangle</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.distance_matrix.html">distance_matrix</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.minkowski_distance.html">minkowski_distance</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.minkowski_distance_p.html">minkowski_distance_p</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.spatial._kdtree.KDTree.query.html'>query</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.KDTree.__init__.html">__init__</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.KDTree.count_neighbors.html">count_neighbors</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.KDTree.innernode.html">innernode</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.KDTree.leafnode.html">leafnode</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.KDTree.node.html">node</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.KDTree.query.html">query</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.KDTree.query_ball_point.html">query_ball_point</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.KDTree.query_ball_tree.html">query_ball_tree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.KDTree.query_pairs.html">query_pairs</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.KDTree.sparse_distance_matrix.html">sparse_distance_matrix</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a>    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>query(self, x, k=1, eps=0, p=2, distance_upper_bound=inf, workers=1)</code><!-- rendering Extended Summary -->
+        <!-- rendering Notes -->
+        <h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="x">x</a> : array_like, last dimension self.m</dt>
+<dd>
+                <div id="f1270208f35d490783de9d9150cabc39"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "An array of points to query."}], "type": "paragraph"});
+            document.getElementById("f1270208f35d490783de9d9150cabc39").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="k">k</a> : int or Sequence[int], optional</dt>
+<dd>
+                <div id="a64822d886d24f99aac21e3e75346801"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Either the number of nearest neighbors to return, or a list of the k-th nearest neighbors to return, starting from 1."}], "type": "paragraph"});
+            document.getElementById("a64822d886d24f99aac21e3e75346801").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="eps">eps</a> : nonnegative float, optional</dt>
+<dd>
+                <div id="dcd9e4f21c3c4307b9148835bf7f9254"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Return approximate nearest neighbors; the kth returned value is guaranteed to be no further than (1+eps) times the distance to the real kth nearest neighbor."}], "type": "paragraph"});
+            document.getElementById("dcd9e4f21c3c4307b9148835bf7f9254").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="p">p</a> : float, 1&lt;=p&lt;=infinity, optional</dt>
+<dd>
+                <div id="f5fb0436d1064ea0bf23a236f13a9cc8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Which Minkowski p-norm to use. 1 is the sum-of-absolute-values distance (\"Manhattan\" distance). 2 is the usual Euclidean distance. infinity is the maximum-coordinate-difference distance. A large, finite p may cause a ValueError if overflow can occur."}], "type": "paragraph"});
+            document.getElementById("f5fb0436d1064ea0bf23a236f13a9cc8").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="distance_upper_bound">distance_upper_bound</a> : nonnegative float, optional</dt>
+<dd>
+                <div id="3991ae7957a7449887d13eb81a3c2b20"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Return only neighbors within this distance. This is used to prune tree searches, so if you are doing a series of nearest-neighbor queries, it may help to supply the distance to the nearest neighbor of the most recent point."}], "type": "paragraph"});
+            document.getElementById("3991ae7957a7449887d13eb81a3c2b20").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="workers">workers</a> : int, optional</dt>
+<dd>
+                <div id="5ae40a93b1864483bf69a0b0d6d36f76"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Number of workers to use for parallel processing. If -1 is given all CPU threads are used. Default: 1."}], "type": "paragraph"});
+            document.getElementById("5ae40a93b1864483bf69a0b0d6d36f76").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <div class='admonition'>
+    <div>versionadded 1.6.0</div>
+</div>
+
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="d">d</a> : float or array of floats</dt>
+<dd>
+                <div id="32a770d541c14b6aa88d8472fdc99346"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The distances to the nearest neighbors. If "}, {"type": "inlineCode", "value": "x"}, {"type": "text", "value": " has shape "}, {"type": "inlineCode", "value": "tuple+(self.m,)"}, {"type": "text", "value": ", then "}, {"type": "inlineCode", "value": "d"}, {"type": "text", "value": " has shape "}, {"type": "inlineCode", "value": "tuple+(k,)"}, {"type": "text", "value": ". When k == 1, the last dimension of the output is squeezed. Missing neighbors are indicated with infinite distances. Hits are sorted by distance (nearest first)."}], "type": "paragraph"});
+            document.getElementById("32a770d541c14b6aa88d8472fdc99346").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <div class='admonition'>
+    <div>versionchanged 1.9.0</div>
+                        <div id="2bf6d11bfa5e4c98af57282456f9cbf7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Previously if "}, {"type": "inlineCode", "value": "k=None"}, {"type": "text", "value": ", then "}, {"domain": null, "role": null, "type": "Directive", "value": "d"}, {"type": "text", "value": " was an object array of shape "}, {"type": "inlineCode", "value": "tuple"}, {"type": "text", "value": ", containing lists of distances. This behavior has been removed, use "}, {"domain": null, "role": null, "type": "Directive", "value": "query_ball_point"}, {"type": "text", "value": " instead."}], "type": "paragraph"});
+            document.getElementById("2bf6d11bfa5e4c98af57282456f9cbf7").innerHTML = html;
+        }
+        init();
+    </script>
+
+</div>
+
+
+</dd>
+<dt><a id="i">i</a> : integer or array of integers</dt>
+<dd>
+                <div id="aad9197775414af0a012d930d2e26711"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The index of each neighbor in "}, {"type": "inlineCode", "value": "self.data"}, {"type": "text", "value": ". "}, {"type": "inlineCode", "value": "i"}, {"type": "text", "value": " is the same shape as d. Missing neighbors are indicated with "}, {"type": "inlineCode", "value": "self.n"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("aad9197775414af0a012d930d2e26711").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="13527b432bbd4dccba8f0496ea09f0f4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Query the kd-tree for nearest neighbors."}], "type": "paragraph"});
+            document.getElementById("13527b432bbd4dccba8f0496ea09f0f4").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">spatial</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">KDTree</span><br><span class='nsl'>...&nbsp;</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">y</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">mgrid</span><span class="">[</span><span class="mi">0</span><span class="">:</span><span class="mi">5</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">:</span><span class="mi">8</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">tree</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">KDTree</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">c_</span><span class="">[</span><span class="">x</span><span class="o">.</span><span class="">ravel</span><span class="">(</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">y</span><span class="o">.</span><span class="">ravel</span><span class="">(</span><span class="">)</span><span class="">]</span><span class="">)</span>
+</pre>
+            
+                           To query the nearest neighbours and return squeezed result, use  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">dd</span><span class="">,</span><span class=""> </span><span class="">ii</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">tree</span><span class="o">.</span><span class="">query</span><span class="">(</span><span class="">[</span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mf">2.2</span><span class="">,</span><span class=""> </span><span class="mf">2.9</span><span class="">]</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">k</span><span class="o">=</span><span class="mi">1</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="nb">print</span><span class="">(</span><span class="">dd</span><span class="">,</span><span class=""> </span><span class="">ii</span><span class="">,</span><span class=""> </span><span class="">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="">)</span>
+[2.         0.2236068]
+[ 0 13]</pre>
+            
+                           To query the nearest neighbours and return unsqueezed result, use  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">dd</span><span class="">,</span><span class=""> </span><span class="">ii</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">tree</span><span class="o">.</span><span class="">query</span><span class="">(</span><span class="">[</span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mf">2.2</span><span class="">,</span><span class=""> </span><span class="mf">2.9</span><span class="">]</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">k</span><span class="o">=</span><span class="">[</span><span class="mi">1</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="nb">print</span><span class="">(</span><span class="">dd</span><span class="">,</span><span class=""> </span><span class="">ii</span><span class="">,</span><span class=""> </span><span class="">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="">)</span>
+[[2.        ]
+ [0.2236068]]
+[[ 0]
+ [13]]</pre>
+            
+                           To query the second nearest neighbours and return unsqueezed result,
+use  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">dd</span><span class="">,</span><span class=""> </span><span class="">ii</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">tree</span><span class="o">.</span><span class="">query</span><span class="">(</span><span class="">[</span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mf">2.2</span><span class="">,</span><span class=""> </span><span class="mf">2.9</span><span class="">]</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">k</span><span class="o">=</span><span class="">[</span><span class="mi">2</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="nb">print</span><span class="">(</span><span class="">dd</span><span class="">,</span><span class=""> </span><span class="">ii</span><span class="">,</span><span class=""> </span><span class="">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="">)</span>
+[[2.23606798]
+ [0.80622577]]
+[[ 6]
+ [19]]</pre>
+            
+                           To query the first and second nearest neighbours, use  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">dd</span><span class="">,</span><span class=""> </span><span class="">ii</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">tree</span><span class="o">.</span><span class="">query</span><span class="">(</span><span class="">[</span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mf">2.2</span><span class="">,</span><span class=""> </span><span class="mf">2.9</span><span class="">]</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">k</span><span class="o">=</span><span class="mi">2</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="nb">print</span><span class="">(</span><span class="">dd</span><span class="">,</span><span class=""> </span><span class="">ii</span><span class="">,</span><span class=""> </span><span class="">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="">)</span>
+[[2.         2.23606798]
+ [0.2236068  0.80622577]]
+[[ 0  6]
+ [13 19]]</pre>
+            
+                           or, be more specific  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">dd</span><span class="">,</span><span class=""> </span><span class="">ii</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">tree</span><span class="o">.</span><span class="">query</span><span class="">(</span><span class="">[</span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mf">2.2</span><span class="">,</span><span class=""> </span><span class="mf">2.9</span><span class="">]</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">k</span><span class="o">=</span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="nb">print</span><span class="">(</span><span class="">dd</span><span class="">,</span><span class=""> </span><span class="">ii</span><span class="">,</span><span class=""> </span><span class="">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="">)</span>
+[[2.         2.23606798]
+ [0.2236068  0.80622577]]
+[[ 0  6]
+ [13 19]]</pre>
+            
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/spatial/_kdtree.py#L363'>/scipy/spatial/_kdtree.py#363</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

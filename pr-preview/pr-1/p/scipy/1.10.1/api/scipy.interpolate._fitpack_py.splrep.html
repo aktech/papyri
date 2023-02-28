@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.interpolate.html'>interpolate</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.interpolate._fitpack_py.html'>_fitpack_py</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._bspl.html">_bspl</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._bsplines.html">_bsplines</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._cubic.html">_cubic</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack.html">_fitpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.html">_fitpack2</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack_impl.html">_fitpack_impl</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack_py.html">_fitpack_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._interpolate.html">_interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._ndgriddata.html">_ndgriddata</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._pade.html">_pade</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._polyint.html">_polyint</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._ppoly.html">_ppoly</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._rbf.html">_rbf</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._rbfinterp.html">_rbfinterp</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._rbfinterp_pythran.html">_rbfinterp_pythran</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._rgi.html">_rgi</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._rgi_cython.html">_rgi_cython</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.dfitpack.html">dfitpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.fitpack.html">fitpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.fitpack2.html">fitpack2</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.interpnd.html">interpnd</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.ndgriddata.html">ndgriddata</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.polyint.html">polyint</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.rbf.html">rbf</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.interpolate._fitpack_py.splrep.html'>splrep</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack_py.insert.html">insert</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack_py.splantider.html">splantider</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack_py.splder.html">splder</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack_py.splev.html">splev</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack_py.splint.html">splint</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack_py.splrep.html">splrep</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack_py.sproot.html">sproot</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>splrep(x, y, w=None, xb=None, xe=None, k=3, task=0, s=None, t=None, full_output=0, per=0, quiet=1)</code><!-- rendering Extended Summary -->
+                                       <div id="33387d5255ce4b199375220c48cc251e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Given the set of data points "}, {"type": "inlineCode", "value": "(x[i], y[i])"}, {"type": "text", "value": " determine a smooth spline approximation of degree k on the interval "}, {"type": "inlineCode", "value": "xb \u003c= x \u003c= xe"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("33387d5255ce4b199375220c48cc251e").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="dc520aef85b44e8a940ebe5cca17856d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "See "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.interpolate._fitpack_py.splev", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "splev"}, {"type": "text", "value": " for evaluation of the spline and its derivatives. Uses the FORTRAN routine "}, {"type": "inlineCode", "value": "curfit"}, {"type": "text", "value": " from FITPACK."}], "type": "paragraph"});
+            document.getElementById("dc520aef85b44e8a940ebe5cca17856d").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="f156fc2bf7914b25abf1520f9d34f85a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The user is responsible for assuring that the values of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": " are unique. Otherwise, "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.interpolate._fitpack_py.splrep", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "splrep"}, {"type": "text", "value": " will not return sensible results."}], "type": "paragraph"});
+            document.getElementById("f156fc2bf7914b25abf1520f9d34f85a").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="b0fb77495fbd4113816c6d3afe096cc1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If provided, knots "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "t", "type": "RefInfo", "version": null}, "type": "Link", "value": "t"}, {"type": "text", "value": " must satisfy the Schoenberg-Whitney conditions, i.e., there must be a subset of data points "}, {"type": "inlineCode", "value": "x[j]"}, {"type": "text", "value": " such that "}, {"type": "inlineCode", "value": "t[j] \u003c x[j] \u003c t[j+k+1]"}, {"type": "text", "value": ", for "}, {"type": "inlineCode", "value": "j=0, 1,...,n-k-2"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("b0fb77495fbd4113816c6d3afe096cc1").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="6505b3d07060457ea51721d287e45708"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This routine zero-pads the coefficients array "}, {"type": "inlineCode", "value": "c"}, {"type": "text", "value": " to have the same length as the array of knots "}, {"type": "inlineCode", "value": "t"}, {"type": "text", "value": " (the trailing "}, {"type": "inlineCode", "value": "k + 1"}, {"type": "text", "value": " coefficients are ignored by the evaluation routines, "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.interpolate._fitpack_py.splev", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "splev"}, {"type": "text", "value": " and "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.interpolate._bsplines.BSpline", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "BSpline"}, {"type": "text", "value": ".) This is in contrast with "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.interpolate._fitpack_impl.splprep", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "splprep"}, {"type": "text", "value": ", which does not zero-pad the coefficients."}], "type": "paragraph"});
+            document.getElementById("6505b3d07060457ea51721d287e45708").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="x, y">x, y</a> : array_like</dt>
+<dd>
+                <div id="75d387b206754cbab8b9b62a7433a85e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The data points defining a curve y = f(x)."}], "type": "paragraph"});
+            document.getElementById("75d387b206754cbab8b9b62a7433a85e").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="w">w</a> : array_like, optional</dt>
+<dd>
+                <div id="fa4a7736979b419694d58288a349ac5f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Strictly positive rank-1 array of weights the same length as x and y. The weights are used in computing the weighted least-squares spline fit. If the errors in the y values have standard-deviation given by the vector d, then w should be 1/d. Default is ones(len(x))."}], "type": "paragraph"});
+            document.getElementById("fa4a7736979b419694d58288a349ac5f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="xb, xe">xb, xe</a> : float, optional</dt>
+<dd>
+                <div id="a8cd5fc9d3194316892eec47d924a24f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The interval to fit.  If None, these default to x[0] and x[-1] respectively."}], "type": "paragraph"});
+            document.getElementById("a8cd5fc9d3194316892eec47d924a24f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="k">k</a> : int, optional</dt>
+<dd>
+                <div id="f894d0607fec4b5fa4c5de2e36564b88"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The degree of the spline fit. It is recommended to use cubic splines. Even values of k should be avoided especially with small s values. 1 \u003c= k \u003c= 5"}], "type": "paragraph"});
+            document.getElementById("f894d0607fec4b5fa4c5de2e36564b88").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="task">task</a> : {1, 0, -1}, optional</dt>
+<dd>
+                <div id="68752278687448b9b8089ee135c5daa3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If task==0 find t and c for a given smoothing factor, s."}], "type": "paragraph"});
+            document.getElementById("68752278687448b9b8089ee135c5daa3").innerHTML = html;
+        }
+        init();
+    </script>
+
+                <div id="c54c3f8a8b1449139248e1249ae1d240"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If task==1 find t and c for another value of the smoothing factor, s. There must have been a previous call with task=0 or task=1 for the same set of data (t will be stored an used internally)"}], "type": "paragraph"});
+            document.getElementById("c54c3f8a8b1449139248e1249ae1d240").innerHTML = html;
+        }
+        init();
+    </script>
+
+                <div id="c9f1c56a07904aea931dec77fbf95a49"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If task=-1 find the weighted least square spline for a given set of knots, t. These should be interior knots as knots on the ends will be added automatically."}], "type": "paragraph"});
+            document.getElementById("c9f1c56a07904aea931dec77fbf95a49").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="s">s</a> : float, optional</dt>
+<dd>
+                <div id="c008d1a7fcc94502bce87286aa3e50da"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A smoothing condition. The amount of smoothness is determined by satisfying the conditions: sum((w * (y - g))**2,axis=0) \u003c= s where g(x) is the smoothed interpolation of (x,y). The user can use s to control the tradeoff between closeness and smoothness of fit. Larger s means more smoothing while smaller values of s indicate less smoothing. Recommended values of s depend on the weights, w. If the weights represent the inverse of the standard-deviation of y, then a good s value should be found in the range (m-sqrt(2*m),m+sqrt(2*m)) where m is the number of datapoints in x, y, and w. default : s=m-sqrt(2*m) if weights are supplied. s = 0.0 (interpolating) if no weights are supplied."}], "type": "paragraph"});
+            document.getElementById("c008d1a7fcc94502bce87286aa3e50da").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="t">t</a> : array_like, optional</dt>
+<dd>
+                <div id="4ab03420cff34fe8bcafdbb939870398"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The knots needed for task=-1. If given then task is automatically set to -1."}], "type": "paragraph"});
+            document.getElementById("4ab03420cff34fe8bcafdbb939870398").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="full_output">full_output</a> : bool, optional</dt>
+<dd>
+                <div id="35f213547b7e44b6a3ba94f29de83710"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If non-zero, then return optional outputs."}], "type": "paragraph"});
+            document.getElementById("35f213547b7e44b6a3ba94f29de83710").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="per">per</a> : bool, optional</dt>
+<dd>
+                <div id="7d4c685299814bed929fe9d0bd234843"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If non-zero, data points are considered periodic with period x[m-1] - x[0] and a smooth periodic spline approximation is returned. Values of y[m-1] and w[m-1] are not used."}], "type": "paragraph"});
+            document.getElementById("7d4c685299814bed929fe9d0bd234843").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="quiet">quiet</a> : bool, optional</dt>
+<dd>
+                <div id="4c2982a88ed04b009f181225682e63f8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Non-zero to suppress messages."}], "type": "paragraph"});
+            document.getElementById("4c2982a88ed04b009f181225682e63f8").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="tck">tck</a> : tuple</dt>
+<dd>
+                <div id="327fedea74f846b096a43599aa11dc4d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A tuple (t,c,k) containing the vector of knots, the B-spline coefficients, and the degree of the spline."}], "type": "paragraph"});
+            document.getElementById("327fedea74f846b096a43599aa11dc4d").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="fp">fp</a> : array, optional</dt>
+<dd>
+                <div id="973105441a744a9a89976548fa9e05c3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The weighted sum of squared residuals of the spline approximation."}], "type": "paragraph"});
+            document.getElementById("973105441a744a9a89976548fa9e05c3").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="ier">ier</a> : int, optional</dt>
+<dd>
+                <div id="ad4ef2d727a54d67b2a818d2fb77b8a9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "An integer flag about splrep success. Success is indicated if ier\u003c=0. If ier in [1,2,3] an error occurred but was not raised. Otherwise an error is raised."}], "type": "paragraph"});
+            document.getElementById("ad4ef2d727a54d67b2a818d2fb77b8a9").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="msg">msg</a> : str, optional</dt>
+<dd>
+                <div id="157312b3592a438cba7f55696e942442"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A message corresponding to the integer flag, ier."}], "type": "paragraph"});
+            document.getElementById("157312b3592a438cba7f55696e942442").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="3b671ef473084806ad9a0cec13eb8d48"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Find the B-spline representation of a 1-D curve."}], "type": "paragraph"});
+            document.getElementById("3b671ef473084806ad9a0cec13eb8d48").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.interpolate._bsplines.BSpline.html" class='exists'>BSpline</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.BivariateSpline.html" class='exists'>BivariateSpline</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.UnivariateSpline.html" class='exists'>UnivariateSpline</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack_impl.bisplev.html" class='exists'>bisplev</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack_impl.bisplrep.html" class='exists'>bisplrep</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.interpolate._bsplines.make_interp_spline.html" class='exists'>make_interp_spline</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack_py.spalde.html" class='exists'>spalde</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack_py.splev.html" class='exists'>splev</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack_py.splint.html" class='exists'>splint</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack_impl.splprep.html" class='exists'>splprep</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack_py.sproot.html" class='exists'>sproot</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+                           You can interpolate 1-D points with a B-spline curve.
+Further examples are given in
+:ref:`in the tutorial &lt;tutorial-interpolate_splXXX&gt;`.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">import</span><span class=""> </span><span class="nn">matplotlib</span><span class="nn">.</span><span class="nn">pyplot</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">plt</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">interpolate</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">splev</span><span class="">,</span><span class=""> </span><span class="">splrep</span><br><span class='nsl'>...&nbsp;</span><span class="">x</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">linspace</span><span class="">(</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">10</span><span class="">,</span><span class=""> </span><span class="mi">10</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">y</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">sin</span><span class="">(</span><span class="">x</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">spl</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">splrep</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">y</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">x2</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">linspace</span><span class="">(</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">10</span><span class="">,</span><span class=""> </span><span class="mi">200</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">y2</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">splev</span><span class="">(</span><span class="">x2</span><span class="">,</span><span class=""> </span><span class="">spl</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">y</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">o</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">x2</span><span class="">,</span><span class=""> </span><span class="">y2</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">show</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack_py.sproot.html" class='exists'>scipy.interpolate._fitpack_py.sproot</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack_py.splint.html" class='exists'>scipy.interpolate._fitpack_py.splint</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack_py.splev.html" class='exists'>scipy.interpolate._fitpack_py.splev</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack_py.splrep.html" class='exists'>scipy.interpolate._fitpack_py.splrep</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/interpolate/_fitpack_py.py#L158'>/scipy/interpolate/_fitpack_py.py#158</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 9.414213562373096, "label": "scipy.interpolate._bsplines.make_interp_spline", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.interpolate._bsplines.make_interp_spline"}, {"id": 2, "val": 9.732050807568877, "label": "scipy.interpolate._fitpack_py.sproot", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.interpolate._fitpack_py.sproot"}, {"id": 3, "val": 10.0, "label": "scipy.interpolate._fitpack_py.splint", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.interpolate._fitpack_py.splint"}, {"id": 4, "val": 12.47213595499958, "label": "scipy.interpolate._fitpack2.UnivariateSpline", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.UnivariateSpline"}, {"id": 5, "val": 10.23606797749979, "label": "scipy.interpolate._fitpack_py.splev", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.interpolate._fitpack_py.splev"}, {"id": 6, "val": 10.449489742783179, "label": "scipy.interpolate._fitpack_py.spalde", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.interpolate._fitpack_py.spalde"}, {"id": 8, "val": 11.0, "label": "scipy.interpolate._bsplines.BSpline", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.interpolate._bsplines.BSpline"}, {"id": 9, "val": 11.0, "label": "scipy.interpolate._fitpack_impl.splprep", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.interpolate._fitpack_impl.splprep"}, {"id": 10, "val": 12.69041575982343, "label": "scipy.interpolate._fitpack_impl.bisplrep", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.interpolate._fitpack_impl.bisplrep"}, {"id": 11, "val": 11.872983346207416, "label": "scipy.interpolate._fitpack2.BivariateSpline", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.BivariateSpline"}, {"id": 12, "val": 12.79583152331272, "label": "scipy.interpolate._fitpack_impl.bisplev", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.interpolate._fitpack_impl.bisplev"}], "links": [{"source": 2, "target": 5, "id": 1}, {"source": 2, "target": 3, "id": 2}, {"source": 12, "target": 5, "id": 3}, {"source": 12, "target": 3, "id": 4}, {"source": 12, "target": 4, "id": 7}, {"source": 12, "target": 2, "id": 8}, {"source": 12, "target": 10, "id": 9}, {"source": 12, "target": 9, "id": 14}, {"source": 12, "target": 11, "id": 21}, {"source": 10, "target": 5, "id": 26}, {"source": 10, "target": 3, "id": 27}, {"source": 10, "target": 4, "id": 30}, {"source": 10, "target": 2, "id": 31}, {"source": 10, "target": 9, "id": 36}, {"source": 10, "target": 11, "id": 43}, {"source": 5, "target": 2, "id": 50}, {"source": 5, "target": 3, "id": 52}, {"source": 9, "target": 2, "id": 55}, {"source": 9, "target": 10, "id": 56}, {"source": 9, "target": 5, "id": 60}, {"source": 9, "target": 3, "id": 61}, {"source": 11, "target": 10, "id": 65}, {"source": 11, "target": 9, "id": 69}, {"source": 11, "target": 4, "id": 78}, {"source": 3, "target": 2, "id": 79}, {"source": 3, "target": 5, "id": 81}, {"source": 6, "target": 2, "id": 83}, {"source": 6, "target": 5, "id": 84}, {"source": 6, "target": 3, "id": 86}, {"source": 8, "target": 2, "id": 89}, {"source": 8, "target": 1, "id": 90}, {"source": 8, "target": 5, "id": 91}, {"source": 8, "target": 3, "id": 93}, {"source": 4, "target": 10, "id": 107}, {"source": 4, "target": 9, "id": 111}, {"source": 4, "target": 1, "id": 113}, {"source": 4, "target": 11, "id": 119}]};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

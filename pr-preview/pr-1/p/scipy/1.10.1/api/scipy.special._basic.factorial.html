@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.special.html'>special</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.special._basic.html'>_basic</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.special._add_newdocs.html">_add_newdocs</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.html">_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._comb.html">_comb</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._ellip_harm.html">_ellip_harm</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._ellip_harm_2.html">_ellip_harm_2</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._lambertw.html">_lambertw</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._logsumexp.html">_logsumexp</a>
+<a href="/p/?/?/?/scipy.special._orthogonal.html.html">_orthogonal</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._sf_error.html">_sf_error</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._specfun.html">_specfun</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._spfun_stats.html">_spfun_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._spherical_bessel.html">_spherical_bessel</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._ufuncs.html">_ufuncs</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._ufuncs_cxx.html">_ufuncs_cxx</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.add_newdocs.html">add_newdocs</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.basic.html">basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.cython_special.html">cython_special</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.orthogonal.html">orthogonal</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.sf_error.html">sf_error</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.specfun.html">specfun</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.spfun_stats.html">spfun_stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.special._basic.factorial.html'>factorial</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.special._basic._bessel_diff_formula.html">_bessel_diff_formula</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic._nonneg_int_or_fail.html">_nonneg_int_or_fail</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic._range_prod.html">_range_prod</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.ai_zeros.html">ai_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.assoc_laguerre.html">assoc_laguerre</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.bei_zeros.html">bei_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.beip_zeros.html">beip_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.ber_zeros.html">ber_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.bernoulli.html">bernoulli</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.berp_zeros.html">berp_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.bi_zeros.html">bi_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.clpmn.html">clpmn</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.comb.html">comb</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.diric.html">diric</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.erf_zeros.html">erf_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.euler.html">euler</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.factorial.html">factorial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.factorial2.html">factorial2</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.factorialk.html">factorialk</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.fresnel_zeros.html">fresnel_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.fresnelc_zeros.html">fresnelc_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.fresnels_zeros.html">fresnels_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.h1vp.html">h1vp</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.h2vp.html">h2vp</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.ivp.html">ivp</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.jn_zeros.html">jn_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.jnjnp_zeros.html">jnjnp_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.jnp_zeros.html">jnp_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.jnyn_zeros.html">jnyn_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.jvp.html">jvp</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.kei_zeros.html">kei_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.keip_zeros.html">keip_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.kelvin_zeros.html">kelvin_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.ker_zeros.html">ker_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.kerp_zeros.html">kerp_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.kvp.html">kvp</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.lmbda.html">lmbda</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.lpmn.html">lpmn</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.lpn.html">lpn</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.lqmn.html">lqmn</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.lqn.html">lqn</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.mathieu_even_coef.html">mathieu_even_coef</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.mathieu_odd_coef.html">mathieu_odd_coef</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.obl_cv_seq.html">obl_cv_seq</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.pbdn_seq.html">pbdn_seq</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.pbdv_seq.html">pbdv_seq</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.pbvv_seq.html">pbvv_seq</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.perm.html">perm</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.pro_cv_seq.html">pro_cv_seq</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.riccati_jn.html">riccati_jn</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.riccati_yn.html">riccati_yn</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.y0_zeros.html">y0_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.y1_zeros.html">y1_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.y1p_zeros.html">y1p_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.yn_zeros.html">yn_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.ynp_zeros.html">ynp_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.special._basic.yvp.html">yvp</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a>    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>factorial(n, exact=False)</code><!-- rendering Extended Summary -->
+                                       <div id="7c9e5a1e61bd48eab7b8e1acca357710"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The factorial of non-negative integer "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "n", "type": "RefInfo", "version": null}, "type": "Link", "value": "n"}, {"type": "text", "value": " is the product of all positive integers less than or equal to "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "n", "type": "RefInfo", "version": null}, "type": "Link", "value": "n"}, {"type": "text", "value": ":      "}], "type": "paragraph"});
+            document.getElementById("7c9e5a1e61bd48eab7b8e1acca357710").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="3df56b2b1c954a258b37b13dff59ecc0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "n! = n * (n - 1) * (n - 2) * ... * 1"});
+            document.getElementById("3df56b2b1c954a258b37b13dff59ecc0").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="5b65389946c7428795e35e71ed4aa62a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For arrays with "}, {"type": "inlineCode", "value": "exact=True"}, {"type": "text", "value": ", the factorial is computed only once, for the largest input, with each other result computed in the process. The output dtype is increased to "}, {"type": "inlineCode", "value": "int64"}, {"type": "text", "value": " or "}, {"type": "inlineCode", "value": "object"}, {"type": "text", "value": " if necessary."}], "type": "paragraph"});
+            document.getElementById("5b65389946c7428795e35e71ed4aa62a").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="30f096e2309c4382b48360d0d0e3e65b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "With "}, {"type": "inlineCode", "value": "exact=False"}, {"type": "text", "value": " the factorial is approximated using the gamma function:"}], "type": "paragraph"});
+            document.getElementById("30f096e2309c4382b48360d0d0e3e65b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$n! = \Gamma(n+1)$$</span>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="n">n</a> : int or array_like of ints</dt>
+<dd>
+                <div id="fe847386f9424a35aa779ab0a9ccf470"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Input values.  If "}, {"type": "inlineCode", "value": "n \u003c 0"}, {"type": "text", "value": ", the return value is 0."}], "type": "paragraph"});
+            document.getElementById("fe847386f9424a35aa779ab0a9ccf470").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="exact">exact</a> : bool, optional</dt>
+<dd>
+                <div id="e32227ec00a64d4ba317a8c3fc13d777"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If True, calculate the answer exactly using long integer arithmetic. If False, result is approximated in floating point rapidly using the "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.special.cython_special.gamma", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "gamma"}, {"type": "text", "value": " function. Default is False."}], "type": "paragraph"});
+            document.getElementById("e32227ec00a64d4ba317a8c3fc13d777").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="nf">nf</a> : float or int or ndarray</dt>
+<dd>
+                <div id="9fd827a24e56436588de9b6176cd15f3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Factorial of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "n", "type": "RefInfo", "version": null}, "type": "Link", "value": "n"}, {"type": "text", "value": ", as integer or float depending on "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "exact", "type": "RefInfo", "version": null}, "type": "Link", "value": "exact"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("9fd827a24e56436588de9b6176cd15f3").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="b5c9543c48e4443db097a92cad7b77ee"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The factorial of a number or array of numbers."}], "type": "paragraph"});
+            document.getElementById("b5c9543c48e4443db097a92cad7b77ee").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">special</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">factorial</span><br><span class='nsl'>...&nbsp;</span><span class="">arr</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">,</span><span class=""> </span><span class="mi">5</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">factorial</span><span class="">(</span><span class="">arr</span><span class="">,</span><span class=""> </span><span class="">exact</span><span class="o">=</span><span class="kc">False</span><span class="">)</span>
+array([   6.,   24.,  120.])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">factorial</span><span class="">(</span><span class="">arr</span><span class="">,</span><span class=""> </span><span class="">exact</span><span class="o">=</span><span class="kc">True</span><span class="">)</span>
+array([  6,  24, 120])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">factorial</span><span class="">(</span><span class="mi">5</span><span class="">,</span><span class=""> </span><span class="">exact</span><span class="o">=</span><span class="kc">True</span><span class="">)</span>
+120</pre>
+            
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/special/_basic.py#L2747'>/scipy/special/_basic.py#2747</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 10.0, "label": "scipy.special.cython_special.gamma", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.special.cython_special.gamma"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

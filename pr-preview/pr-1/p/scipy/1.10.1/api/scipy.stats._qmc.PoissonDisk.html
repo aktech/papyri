@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats.html'>stats</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats._qmc.html'>_qmc</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.stats._axis_nan_policy.html">_axis_nan_policy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._biasedurn.html">_biasedurn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binned_statistic.html">_binned_statistic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binomtest.html">_binomtest</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._boost.html">_boost</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._common.html">_common</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._constants.html">_constants</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._continuous_distns.html">_continuous_distns</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._covariance.html">_covariance</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._crosstab.html">_crosstab</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._discrete_distns.html">_discrete_distns</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._distn_infrastructure.html">_distn_infrastructure</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._distr_params.html">_distr_params</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._entropy.html">_entropy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._fit.html">_fit</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.html">_hypotests</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._kde.html">_kde</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._ksstats.html">_ksstats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable.html">_levy_stable</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mannwhitneyu.html">_mannwhitneyu</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._morestats.html">_morestats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mstats_basic.html">_mstats_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mstats_extras.html">_mstats_extras</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._multivariate.html">_multivariate</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mvn.html">_mvn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._odds_ratio.html">_odds_ratio</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._page_trend_test.html">_page_trend_test</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.html">_qmc</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc_cy.html">_qmc_cy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._rcont.html">_rcont</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._relative_risk.html">_relative_risk</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling.html">_resampling</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._rvs_sampling.html">_rvs_sampling</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._sobol.html">_sobol</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._statlib.html">_statlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats.html">_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_mstats_common.html">_stats_mstats_common</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.html">_stats_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_pythran.html">_stats_pythran</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._tukeylambda_stats.html">_tukeylambda_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._variation.html">_variation</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._warnings_errors.html">_warnings_errors</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.biasedurn.html">biasedurn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.contingency.html">contingency</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.distributions.html">distributions</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.kde.html">kde</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.morestats.html">morestats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats.html">mstats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats_basic.html">mstats_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats_extras.html">mstats_extras</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mvn.html">mvn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.qmc.html">qmc</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.statlib.html">statlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats._qmc.PoissonDisk.html'>PoissonDisk</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.Halton.html">Halton</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.LatinHypercube.html">LatinHypercube</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.MultinomialQMC.html">MultinomialQMC</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.MultivariateNormalQMC.html">MultivariateNormalQMC</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.PoissonDisk.html">PoissonDisk</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.QMCEngine.html">QMCEngine</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.Sobol.html">Sobol</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc._l1_norm.html">_l1_norm</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc._lloyd_centroidal_voronoi_tessellation.html">_lloyd_centroidal_voronoi_tessellation</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc._lloyd_iteration.html">_lloyd_iteration</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc._perturb_discrepancy.html">_perturb_discrepancy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc._random_cd.html">_random_cd</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc._select_optimizer.html">_select_optimizer</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc._validate_bounds.html">_validate_bounds</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc._validate_workers.html">_validate_workers</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.check_random_state.html">check_random_state</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.discrepancy.html">discrepancy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.n_primes.html">n_primes</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.primes_from_2_to.html">primes_from_2_to</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.scale.html">scale</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.update_discrepancy.html">update_discrepancy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.van_der_corput.html">van_der_corput</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" >+</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.PoissonDisk.__init__.html">__init__</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.PoissonDisk._hypersphere_surface_sample.html">_hypersphere_surface_sample</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.PoissonDisk._hypersphere_volume_sample.html">_hypersphere_volume_sample</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.PoissonDisk._initialize_grid_pool.html">_initialize_grid_pool</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.PoissonDisk._random.html">_random</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.PoissonDisk.fill_space.html">fill_space</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.PoissonDisk.reset.html">reset</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a>    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<!-- rendering Extended Summary -->
+        <h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="6016e7fdc03f41e2bab226f88a41591d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Poisson disk sampling is an iterative sampling strategy. Starting from a seed sample, "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "ncandidates", "type": "RefInfo", "version": null}, "type": "Link", "value": "ncandidates"}, {"type": "text", "value": " are sampled in the hypersphere surrounding the seed. Candidates bellow a certain "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "radius", "type": "RefInfo", "version": null}, "type": "Link", "value": "radius"}, {"type": "text", "value": " or outside the domain are rejected. New samples are added in a pool of sample seed. The process stops when the pool is empty or when the number of required samples is reached."}], "type": "paragraph"});
+            document.getElementById("6016e7fdc03f41e2bab226f88a41591d").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="1c496fd3127c4bf59c0e9c719fcacb9a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The maximum number of point that a sample can contain is directly linked to the "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "radius", "type": "RefInfo", "version": null}, "type": "Link", "value": "radius"}, {"type": "text", "value": ". As the dimension of the space increases, a higher radius spreads the points further and help overcome the curse of dimensionality. See the "}, {"type": "Verbatim", "value": ["quasi monte carlo tutorial \u003cquasi-monte-carlo\u003e"]}, {"type": "text", "value": " for more details."}], "type": "paragraph"});
+            document.getElementById("1c496fd3127c4bf59c0e9c719fcacb9a").innerHTML = html;
+        }
+        init();
+    </script>
+
+                           <div class='admonition'>
+    <div>warning </div>
+                        <div id="858147f4cf8b40e9913abaed86de1860"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The algorithm is more suitable for low dimensions and sampling size due to its iterative nature and memory requirements. Selecting a small radius with a high dimension would mean that the space could contain more samples than using lower dimension or a bigger radius."}], "type": "paragraph"});
+            document.getElementById("858147f4cf8b40e9913abaed86de1860").innerHTML = html;
+        }
+        init();
+    </script>
+
+</div>
+
+
+                               <div id="cae98ac2b1da4024922d1b86eff0c48c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Some code taken from , written consent given on 31.03.2021 by the original author, Shamis, for free use in SciPy under the 3-clause BSD."}], "type": "paragraph"});
+            document.getElementById("cae98ac2b1da4024922d1b86eff0c48c").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="d">d</a> : int</dt>
+<dd>
+                <div id="3af0445fafc24fc796156c476fd81136"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Dimension of the parameter space."}], "type": "paragraph"});
+            document.getElementById("3af0445fafc24fc796156c476fd81136").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="radius">radius</a> : float</dt>
+<dd>
+                <div id="8972f94c0fc4465d905ecaa723db889b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Minimal distance to keep between points when sampling new candidates."}], "type": "paragraph"});
+            document.getElementById("8972f94c0fc4465d905ecaa723db889b").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="hypersphere">hypersphere</a> : {&#34;volume&#34;, &#34;surface&#34;}, optional</dt>
+<dd>
+                <div id="e0133e91ddb24f1299a552637500afcb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Sampling strategy to generate potential candidates to be added in the final sample. Default is \"volume\"."}], "type": "paragraph"});
+            document.getElementById("e0133e91ddb24f1299a552637500afcb").innerHTML = html;
+        }
+        init();
+    </script>
+
+           <ul>               <li>                               <div id="e95cde172719442c9ac4d9d6c5d2ce2f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "volume"}, {"type": "text", "value": ": original Bridson algorithm as described in .   New candidates are sampled "}, {"children": [{"type": "text", "value": "within"}], "type": "emphasis"}, {"type": "text", "value": " the hypersphere."}], "type": "paragraph"});
+            document.getElementById("e95cde172719442c9ac4d9d6c5d2ce2f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="fc6258b7adb64840b13a12ea20f6591c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "surface"}, {"type": "text", "value": ": only sample the surface of the hypersphere."}], "type": "paragraph"});
+            document.getElementById("fc6258b7adb64840b13a12ea20f6591c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+
+</dd>
+<dt><a id="ncandidates">ncandidates</a> : int</dt>
+<dd>
+                <div id="0da7b6d09bbb4b1abc235191a74fdc41"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Number of candidates to sample per iteration. More candidates result in a denser sampling as more candidates can be accepted per iteration."}], "type": "paragraph"});
+            document.getElementById("0da7b6d09bbb4b1abc235191a74fdc41").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="optimization">optimization</a> : {None, &#34;random-cd&#34;, &#34;lloyd&#34;}, optional</dt>
+<dd>
+                <div id="c67b5266e6b8467a88056e70c3b03656"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Whether to use an optimization scheme to improve the quality after sampling. Note that this is a post-processing step that does not guarantee that all properties of the sample will be conserved. Default is None."}], "type": "paragraph"});
+            document.getElementById("c67b5266e6b8467a88056e70c3b03656").innerHTML = html;
+        }
+        init();
+    </script>
+
+           <ul>               <li>                               <div id="bbb43edd31d645e1b2202ad7e2c21bc9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "random-cd"}, {"type": "text", "value": ": random permutations of coordinates to lower the   centered discrepancy. The best sample based on the centered   discrepancy is constantly updated. Centered discrepancy-based   sampling shows better space-filling robustness toward 2D and 3D   subprojections compared to using other discrepancy measures."}], "type": "paragraph"});
+            document.getElementById("bbb43edd31d645e1b2202ad7e2c21bc9").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="cd0d8bd584454976b31421d723f83b2f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "lloyd"}, {"type": "text", "value": ": Perturb samples using a modified Lloyd-Max algorithm.   The process converges to equally spaced samples."}], "type": "paragraph"});
+            document.getElementById("cd0d8bd584454976b31421d723f83b2f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+
+            <div class='admonition'>
+    <div>versionadded 1.10.0</div>
+</div>
+
+
+</dd>
+<dt><a id="seed">seed</a> : {None, int, `numpy.random.Generator`}, optional</dt>
+<dd>
+                <div id="6b31490e34514be68d40f5d91e025069"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "seed", "type": "RefInfo", "version": null}, "type": "Link", "value": "seed"}, {"type": "text", "value": " is an int or None, a new "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "numpy", "path": "numpy.random._generator.Generator", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "numpy.random.Generator"}, {"type": "text", "value": " is created using "}, {"type": "inlineCode", "value": "np.random.default_rng(seed)"}, {"type": "text", "value": ". If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "seed", "type": "RefInfo", "version": null}, "type": "Link", "value": "seed"}, {"type": "text", "value": " is already a "}, {"type": "inlineCode", "value": "Generator"}, {"type": "text", "value": " instance, then the provided instance is used."}], "type": "paragraph"});
+            document.getElementById("6b31490e34514be68d40f5d91e025069").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="4cd5ee4fa7e84d3dbfb27c61c97f2bf0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Poisson disk sampling."}], "type": "paragraph"});
+            document.getElementById("4cd5ee4fa7e84d3dbfb27c61c97f2bf0").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+                           Generate a 2D sample using a `radius` of 0.2.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">import</span><span class=""> </span><span class="nn">matplotlib</span><span class="nn">.</span><span class="nn">pyplot</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">plt</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">matplotlib</span><span class="nn">.</span><span class="nn">collections</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">PatchCollection</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">stats</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">qmc</span>
+&gt;&gt;&gt;</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">rng</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">random</span><span class="o">.</span><span class="">default_rng</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">radius</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="mf">0.2</span><br><span class='nsl'>...&nbsp;</span><span class="">engine</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">qmc</span><span class="o">.</span><span class="">PoissonDisk</span><span class="">(</span><span class="">d</span><span class="o">=</span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="">radius</span><span class="o">=</span><span class="">radius</span><span class="">,</span><span class=""> </span><span class="">seed</span><span class="o">=</span><span class="">rng</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">sample</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">engine</span><span class="o">.</span><span class="">random</span><span class="">(</span><span class="mi">20</span><span class="">)</span>
+</pre>
+            
+                           Visualizing the 2D sample and showing that no points are closer than
+`radius`. ``radius/2`` is used to visualize non-intersecting circles.
+If two samples are exactly at `radius` from each other, then their circle
+of radius ``radius/2`` will touch.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">fig</span><span class="">,</span><span class=""> </span><span class="">ax</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">plt</span><span class="o">.</span><span class="">subplots</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">_</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">ax</span><span class="o">.</span><span class="">scatter</span><span class="">(</span><span class="">sample</span><span class="">[</span><span class="">:</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">sample</span><span class="">[</span><span class="">:</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">circles</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">[</span><span class="">plt</span><span class="o">.</span><span class="">Circle</span><span class="">(</span><span class="">(</span><span class="">xi</span><span class="">,</span><span class=""> </span><span class="">yi</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">radius</span><span class="o">=</span><span class="">radius</span><span class="o">/</span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="">fill</span><span class="o">=</span><span class="kc">False</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">           </span><span class="k">for</span><span class=""> </span><span class="">xi</span><span class="">,</span><span class=""> </span><span class="">yi</span><span class=""> </span><span class="ow">in</span><span class=""> </span><span class="">sample</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">collection</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">PatchCollection</span><span class="">(</span><span class="">circles</span><span class="">,</span><span class=""> </span><span class="">match_original</span><span class="o">=</span><span class="kc">True</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class="o">.</span><span class="">add_collection</span><span class="">(</span><span class="">collection</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">_</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">ax</span><span class="o">.</span><span class="">set</span><span class="">(</span><span class="">aspect</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">equal</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">xlabel</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;</span><span class="s1">$x_1$</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">ylabel</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;</span><span class="s1">$x_2$</span><span class="s1">&#39;</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">           </span><span class="">xlim</span><span class="o">=</span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">ylim</span><span class="o">=</span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">show</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+                           Such visualization can be seen as circle packing: how many circle can
+we put in the space. It is a np-hard problem. The method `fill_space`
+can be used to add samples until no more samples can be added. This is
+a hard problem and parameters may need to be adjusted manually. Beware of
+the dimension: as the dimensionality increases, the number of samples
+required to fill the space increases exponentially
+(curse-of-dimensionality).  
+            
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/stats/_qmc.py#L1638'>/scipy/stats/_qmc.py#1638</a>
+<br/>
+
+type: &lt;class &#39;abc.ABCMeta&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 12.358898943540673, "label": "numpy.random._generator.Generator", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.random._generator.Generator"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

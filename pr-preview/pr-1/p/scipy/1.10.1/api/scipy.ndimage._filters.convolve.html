@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.ndimage.html'>ndimage</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.ndimage._filters.html'>_filters</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.html">_filters</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._fourier.html">_fourier</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._interpolation.html">_interpolation</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.html">_measurements</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._morphology.html">_morphology</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._nd_image.html">_nd_image</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._ni_docstrings.html">_ni_docstrings</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._ni_label.html">_ni_label</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._ni_support.html">_ni_support</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.filters.html">filters</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.fourier.html">fourier</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.interpolation.html">interpolation</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.measurements.html">measurements</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.morphology.html">morphology</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.ndimage._filters.convolve.html'>convolve</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters._complex_via_real_components.html">_complex_via_real_components</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters._correlate_or_convolve.html">_correlate_or_convolve</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters._gaussian_kernel1d.html">_gaussian_kernel1d</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters._invalid_origin.html">_invalid_origin</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters._min_or_max_filter.html">_min_or_max_filter</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters._rank_filter.html">_rank_filter</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.convolve.html">convolve</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.convolve1d.html">convolve1d</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.correlate.html">correlate</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.correlate1d.html">correlate1d</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.gaussian_filter.html">gaussian_filter</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.gaussian_filter1d.html">gaussian_filter1d</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.gaussian_gradient_magnitude.html">gaussian_gradient_magnitude</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.gaussian_laplace.html">gaussian_laplace</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.generic_filter.html">generic_filter</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.generic_filter1d.html">generic_filter1d</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.generic_gradient_magnitude.html">generic_gradient_magnitude</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.generic_laplace.html">generic_laplace</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.laplace.html">laplace</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.maximum_filter.html">maximum_filter</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.maximum_filter1d.html">maximum_filter1d</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.median_filter.html">median_filter</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.minimum_filter.html">minimum_filter</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.minimum_filter1d.html">minimum_filter1d</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.percentile_filter.html">percentile_filter</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.prewitt.html">prewitt</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.rank_filter.html">rank_filter</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.sobel.html">sobel</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.uniform_filter.html">uniform_filter</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.uniform_filter1d.html">uniform_filter1d</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>convolve(input, weights, output=None, mode=&#39;reflect&#39;, cval=0.0, origin=0)</code><!-- rendering Extended Summary -->
+                                       <div id="01181f70f69c476b91dd2af3b8fcac50"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The array is convolved with the given kernel."}], "type": "paragraph"});
+            document.getElementById("01181f70f69c476b91dd2af3b8fcac50").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="77b1079ae5cc4194b2dcfaa4110404f4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Each value in result is "}, {"type": "Math", "value": "C_i = \\sum_j{I_{i+k-j} W_j}"}, {"type": "text", "value": ", where W is the "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "weights", "type": "RefInfo", "version": null}, "type": "Link", "value": "weights"}, {"type": "text", "value": " kernel, j is the N-D spatial index over "}, {"type": "Math", "value": "W"}, {"type": "text", "value": ", I is the "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "input", "type": "RefInfo", "version": null}, "type": "Link", "value": "input"}, {"type": "text", "value": " and k is the coordinate of the center of W, specified by "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "origin", "type": "RefInfo", "version": null}, "type": "Link", "value": "origin"}, {"type": "text", "value": " in the input parameters."}], "type": "paragraph"});
+            document.getElementById("77b1079ae5cc4194b2dcfaa4110404f4").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="input">input</a> : array_like</dt>
+<dd>
+                <div id="609053a3970d45a9a1d05a0a0e2c97f9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The input array."}], "type": "paragraph"});
+            document.getElementById("609053a3970d45a9a1d05a0a0e2c97f9").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="weights">weights</a> : array_like</dt>
+<dd>
+                <div id="f09aa6032c654716ba3a18982192bc6a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Array of weights, same number of dimensions as input"}], "type": "paragraph"});
+            document.getElementById("f09aa6032c654716ba3a18982192bc6a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="output">output</a> : array or dtype, optional</dt>
+<dd>
+                <div id="9c122e20c96b403681d5dcc45029e812"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The array in which to place the output, or the dtype of the returned array. By default an array of the same dtype as input will be created."}], "type": "paragraph"});
+            document.getElementById("9c122e20c96b403681d5dcc45029e812").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="mode">mode</a> : {&#39;reflect&#39;, &#39;constant&#39;, &#39;nearest&#39;, &#39;mirror&#39;, &#39;wrap&#39;}, optional</dt>
+<dd>
+                <div id="698061a7dc6f4e41a31ea4757a8142dd"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "mode", "type": "RefInfo", "version": null}, "type": "Link", "value": "mode"}, {"type": "text", "value": " parameter determines how the input array is extended beyond its boundaries. Default is \u0027reflect\u0027. Behavior for each valid value is as follows:"}], "type": "paragraph"});
+            document.getElementById("698061a7dc6f4e41a31ea4757a8142dd").innerHTML = html;
+        }
+        init();
+    </script>
+
+<!-- deflist -->
+           <dl>
+               <dt>                <div id="dc067d80ad6b4aa78c08c5d3de5e9f69"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027reflect\u0027 ("}, {"domain": null, "role": null, "type": "Directive", "value": "d c b a | a b c d | d c b a"}, {"type": "text", "value": ")"}], "type": "paragraph"});
+            document.getElementById("dc067d80ad6b4aa78c08c5d3de5e9f69").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="5490366e97f642b38bc4511788a09872"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The input is extended by reflecting about the edge of the last     pixel. This mode is also sometimes referred to as half-sample     symmetric."}], "type": "paragraph"});
+            document.getElementById("5490366e97f642b38bc4511788a09872").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="d53f172f768a477fad8063df09ca71a5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027constant\u0027 ("}, {"domain": null, "role": null, "type": "Directive", "value": "k k k k | a b c d | k k k k"}, {"type": "text", "value": ")"}], "type": "paragraph"});
+            document.getElementById("d53f172f768a477fad8063df09ca71a5").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="c9c7be9c4633423b99dd3ac4996ffce9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The input is extended by filling all values beyond the edge with     the same constant value, defined by the "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "cval", "type": "RefInfo", "version": null}, "type": "Link", "value": "cval"}, {"type": "text", "value": " parameter."}], "type": "paragraph"});
+            document.getElementById("c9c7be9c4633423b99dd3ac4996ffce9").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="4e63c4b9a55944ea9680f4f777ab30d1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027nearest\u0027 ("}, {"domain": null, "role": null, "type": "Directive", "value": "a a a a | a b c d | d d d d"}, {"type": "text", "value": ")"}], "type": "paragraph"});
+            document.getElementById("4e63c4b9a55944ea9680f4f777ab30d1").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="453cfd0a8d5d45cf8c7f3c2fb563b792"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The input is extended by replicating the last pixel."}], "type": "paragraph"});
+            document.getElementById("453cfd0a8d5d45cf8c7f3c2fb563b792").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="fb5a2a145aaa4027950e3d5c7b54e5a3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027mirror\u0027 ("}, {"domain": null, "role": null, "type": "Directive", "value": "d c b | a b c d | c b a"}, {"type": "text", "value": ")"}], "type": "paragraph"});
+            document.getElementById("fb5a2a145aaa4027950e3d5c7b54e5a3").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="b218642e8bed4560a76060e3fbf96c2a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The input is extended by reflecting about the center of the last     pixel. This mode is also sometimes referred to as whole-sample     symmetric."}], "type": "paragraph"});
+            document.getElementById("b218642e8bed4560a76060e3fbf96c2a").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="30dd42642710419290be59957a5e1fc8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027wrap\u0027 ("}, {"domain": null, "role": null, "type": "Directive", "value": "a b c d | a b c d | a b c d"}, {"type": "text", "value": ")"}], "type": "paragraph"});
+            document.getElementById("30dd42642710419290be59957a5e1fc8").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="47b0424c0f2f4bbe9cfd257f538b4d13"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The input is extended by wrapping around to the opposite edge."}], "type": "paragraph"});
+            document.getElementById("47b0424c0f2f4bbe9cfd257f538b4d13").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+                <div id="8541a14e5d3f443a924610e10e18102b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For consistency with the interpolation functions, the following mode names can also be used:"}], "type": "paragraph"});
+            document.getElementById("8541a14e5d3f443a924610e10e18102b").innerHTML = html;
+        }
+        init();
+    </script>
+
+<!-- deflist -->
+           <dl>
+               <dt>                <div id="ee04e5e4b08d4fe5b09b21c815a38fe7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027grid-mirror\u0027"}], "type": "paragraph"});
+            document.getElementById("ee04e5e4b08d4fe5b09b21c815a38fe7").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="196fb8f023b6478f863503a8364f5111"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This is a synonym for \u0027reflect\u0027."}], "type": "paragraph"});
+            document.getElementById("196fb8f023b6478f863503a8364f5111").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="8fca41c3e19d44a5a2e16ff7b5b95562"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027grid-constant\u0027"}], "type": "paragraph"});
+            document.getElementById("8fca41c3e19d44a5a2e16ff7b5b95562").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="7fb7b56dfb034e458af8b40351c65063"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This is a synonym for \u0027constant\u0027."}], "type": "paragraph"});
+            document.getElementById("7fb7b56dfb034e458af8b40351c65063").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="a7c1232fb5cd4788bd7d41e030a9de16"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027grid-wrap\u0027"}], "type": "paragraph"});
+            document.getElementById("a7c1232fb5cd4788bd7d41e030a9de16").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="858fa539d416432fa0e36c01090528a4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This is a synonym for \u0027wrap\u0027."}], "type": "paragraph"});
+            document.getElementById("858fa539d416432fa0e36c01090528a4").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</dd>
+<dt><a id="cval">cval</a> : scalar, optional</dt>
+<dd>
+                <div id="6a8ceff9bd184d9da5f3f0505994ce32"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Value to fill past edges of input if "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "mode", "type": "RefInfo", "version": null}, "type": "Link", "value": "mode"}, {"type": "text", "value": " is \u0027constant\u0027. Default is 0.0"}], "type": "paragraph"});
+            document.getElementById("6a8ceff9bd184d9da5f3f0505994ce32").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="origin">origin</a> : int, optional</dt>
+<dd>
+                <div id="75a26276331d4cd4a8a9a6f2cd67a799"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Controls the origin of the input signal, which is where the filter is centered to produce the first element of the output. Positive values shift the filter to the right, and negative values shift the filter to the left. Default is 0."}], "type": "paragraph"});
+            document.getElementById("75a26276331d4cd4a8a9a6f2cd67a799").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="result">result</a> : ndarray</dt>
+<dd>
+                <div id="ee10212c77c54e8889fcfbc353178d1e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The result of convolution of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "input", "type": "RefInfo", "version": null}, "type": "Link", "value": "input"}, {"type": "text", "value": " with "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "weights", "type": "RefInfo", "version": null}, "type": "Link", "value": "weights"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("ee10212c77c54e8889fcfbc353178d1e").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="796842f324b84e888f26839ecc0c9d82"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Multidimensional convolution."}], "type": "paragraph"});
+            document.getElementById("796842f324b84e888f26839ecc0c9d82").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.correlate.html" class='exists'>correlate</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="da2f7e45bbe046ecb6a568624a93d6ba"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "Correlate an image with a kernel."});
+            document.getElementById("da2f7e45bbe046ecb6a568624a93d6ba").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+                           Perhaps the simplest case to understand is ``mode=&#39;constant&#39;, cval=0.0``,
+because in this case borders (i.e., where the `weights` kernel, centered
+on any one value, extends beyond an edge of `input`) are treated as zeros.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="">a</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">              </span><span class="">[</span><span class="mi">5</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">              </span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">7</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">              </span><span class="">[</span><span class="mi">9</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">k</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class="mi">1</span><span class="">,</span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class="mi">1</span><span class="">,</span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class="mi">0</span><span class="">,</span><span class="mi">0</span><span class="">]</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">ndimage</span><br><span class='nsl'>...&nbsp;</span><span class="">ndimage</span><span class="o">.</span><span class="">convolve</span><span class="">(</span><span class="">a</span><span class="">,</span><span class=""> </span><span class="">k</span><span class="">,</span><span class=""> </span><span class="">mode</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">constant</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">cval</span><span class="o">=</span><span class="mf">0.0</span><span class="">)</span>
+array([[11, 10,  7,  4],
+       [10,  3, 11, 11],
+       [15, 12, 14,  7],
+       [12,  3,  7,  0]])</pre>
+            
+                           Setting ``cval=1.0`` is equivalent to padding the outer edge of `input`
+with 1.0&#39;s (and then extracting only the original region of the result).  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">ndimage</span><span class="o">.</span><span class="">convolve</span><span class="">(</span><span class="">a</span><span class="">,</span><span class=""> </span><span class="">k</span><span class="">,</span><span class=""> </span><span class="">mode</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">constant</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">cval</span><span class="o">=</span><span class="mf">1.0</span><span class="">)</span>
+array([[13, 11,  8,  7],
+       [11,  3, 11, 14],
+       [16, 12, 14, 10],
+       [15,  6, 10,  5]])</pre>
+            
+                           With ``mode=&#39;reflect&#39;`` (the default), outer values are reflected at the
+edge of `input` to fill in missing values.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">b</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="">[</span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">              </span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">              </span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">k</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class="mi">1</span><span class="">,</span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class="mi">1</span><span class="">,</span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class="mi">1</span><span class="">,</span><span class="mi">0</span><span class="">]</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ndimage</span><span class="o">.</span><span class="">convolve</span><span class="">(</span><span class="">b</span><span class="">,</span><span class=""> </span><span class="">k</span><span class="">,</span><span class=""> </span><span class="">mode</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">reflect</span><span class="s1">&#39;</span><span class="">)</span>
+array([[5, 0, 0],
+       [3, 0, 0],
+       [1, 0, 0]])</pre>
+            
+                           This includes diagonally at the corners.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">k</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class="mi">0</span><span class="">,</span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class="mi">1</span><span class="">,</span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class="mi">0</span><span class="">,</span><span class="mi">1</span><span class="">]</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ndimage</span><span class="o">.</span><span class="">convolve</span><span class="">(</span><span class="">b</span><span class="">,</span><span class=""> </span><span class="">k</span><span class="">)</span>
+array([[4, 2, 0],
+       [3, 2, 0],
+       [1, 1, 0]])</pre>
+            
+                           With ``mode=&#39;nearest&#39;``, the single nearest value in to an edge in
+`input` is repeated as many times as needed to match the overlapping
+`weights`.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">c</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="">[</span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">              </span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">              </span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">k</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">              </span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">              </span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">              </span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">              </span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ndimage</span><span class="o">.</span><span class="">convolve</span><span class="">(</span><span class="">c</span><span class="">,</span><span class=""> </span><span class="">k</span><span class="">,</span><span class=""> </span><span class="">mode</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">nearest</span><span class="s1">&#39;</span><span class="">)</span>
+array([[7, 0, 3],
+       [5, 0, 2],
+       [3, 0, 1]])</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.ndimage._filters.correlate.html" class='exists'>scipy.ndimage._filters.correlate</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/ndimage/_filters.py#L783'>/scipy/ndimage/_filters.py#783</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 9.0, "label": "scipy.ndimage._filters.correlate", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.ndimage._filters.correlate"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

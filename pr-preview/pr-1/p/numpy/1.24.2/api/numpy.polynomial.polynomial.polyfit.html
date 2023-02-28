@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=numpy>numpy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/numpy/1.24.2/api/numpy.html'>1.24.2</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">1.24.2</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/numpy/1.24.2/api/numpy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/numpy/1.24.2/api/numpy.html">API</a>
+                        <a href="/p/numpy/1.24.2/gallery">Gallery</a>
+                        <a href="/p/numpy/1.24.2/examples">Examples</a>
+                        <a href="/p/numpy/1.24.2/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='numpy.html'>numpy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='numpy.polynomial.html'>polynomial</a>.                            <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.polynomial._polybase.html">_polybase</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.chebyshev.html">chebyshev</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.hermite.html">hermite</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.hermite_e.html">hermite_e</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.laguerre.html">laguerre</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.legendre.html">legendre</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.html">polynomial</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polyutils.html">polyutils</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.set_default_printstyle.html">set_default_printstyle</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='numpy.polynomial.polyfit.html'>polyfit</a>                            <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.Polynomial.html">Polynomial</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyadd.html">polyadd</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polycompanion.html">polycompanion</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyder.html">polyder</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polydiv.html">polydiv</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyfit.html">polyfit</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyfromroots.html">polyfromroots</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polygrid2d.html">polygrid2d</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polygrid3d.html">polygrid3d</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyint.html">polyint</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyline.html">polyline</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polymul.html">polymul</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polymulx.html">polymulx</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polypow.html">polypow</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyroots.html">polyroots</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polysub.html">polysub</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyval.html">polyval</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyval2d.html">polyval2d</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyval3d.html">polyval3d</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyvalfromroots.html">polyvalfromroots</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyvander.html">polyvander</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyvander2d.html">polyvander2d</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyvander3d.html">polyvander3d</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/numpy/1.24.2/img/numpy_logo.png"/>
+    <a href="#">numpy</a>
+    <a href="#">1.24.2</a>
+        <a class='external'  href="https://pypi.org/project/numpy">Pypi</a>
+        <a class='external' href="https://github.com/numpy/numpy">GitHub</a>
+        <a class='external' href="https://numpy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://numpy.org/doc/1.22/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Raises">Raises</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>polyfit(x, y, deg, rcond=None, full=False, w=None)</code><!-- rendering Extended Summary -->
+                                       <div id="33649a0f47124ba2b63a1c3d53ad8d4f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Return the coefficients of a polynomial of degree "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "deg", "type": "RefInfo", "version": null}, "type": "Link", "value": "deg"}, {"type": "text", "value": " that is the least squares fit to the data values "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "y", "type": "RefInfo", "version": null}, "type": "Link", "value": "y"}, {"type": "text", "value": " given at points "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": ". If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "y", "type": "RefInfo", "version": null}, "type": "Link", "value": "y"}, {"type": "text", "value": " is 1-D the returned coefficients will also be 1-D. If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "y", "type": "RefInfo", "version": null}, "type": "Link", "value": "y"}, {"type": "text", "value": " is 2-D multiple fits are done, one for each column of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "y", "type": "RefInfo", "version": null}, "type": "Link", "value": "y"}, {"type": "text", "value": ", and the resulting coefficients are stored in the corresponding columns of a 2-D return. The fitted polynomial(s) are in the form"}], "type": "paragraph"});
+            document.getElementById("33649a0f47124ba2b63a1c3d53ad8d4f").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$p(x) = c_0 + c_1 * x + ... + c_n * x^n,$$</span>
+
+                               <div id="f7a46fcf5d5249ff884e1c3df30ac0e2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "where "}, {"domain": null, "role": null, "type": "Directive", "value": "n"}, {"type": "text", "value": " is "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "deg", "type": "RefInfo", "version": null}, "type": "Link", "value": "deg"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("f7a46fcf5d5249ff884e1c3df30ac0e2").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="42934a0df40e4d4faa98b633e71b4173"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The solution is the coefficients of the polynomial "}, {"domain": null, "role": null, "type": "Directive", "value": "p"}, {"type": "text", "value": " that minimizes the sum of the weighted squared errors"}], "type": "paragraph"});
+            document.getElementById("42934a0df40e4d4faa98b633e71b4173").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$E = \sum_j w_j^2 * |y_j - p(x_j)|^2,$$</span>
+
+                               <div id="6a752800c0f4465483112b20e2fa4646"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "where the "}, {"type": "Math", "value": "w_j"}, {"type": "text", "value": " are the weights. This problem is solved by setting up the (typically) over-determined matrix equation:"}], "type": "paragraph"});
+            document.getElementById("6a752800c0f4465483112b20e2fa4646").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$V(x) * c = w * y,$$</span>
+
+                               <div id="10969a12c70141c9b4661c20341fed05"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "where "}, {"domain": null, "role": null, "type": "Directive", "value": "V"}, {"type": "text", "value": " is the weighted pseudo Vandermonde matrix of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": ", "}, {"domain": null, "role": null, "type": "Directive", "value": "c"}, {"type": "text", "value": " are the coefficients to be solved for, "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "w", "type": "RefInfo", "version": null}, "type": "Link", "value": "w"}, {"type": "text", "value": " are the weights, and "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "y", "type": "RefInfo", "version": null}, "type": "Link", "value": "y"}, {"type": "text", "value": " are the observed values.  This equation is then solved using the singular value decomposition of "}, {"domain": null, "role": null, "type": "Directive", "value": "V"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("10969a12c70141c9b4661c20341fed05").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="8341fa1c6171490fa1aff99580d5b792"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If some of the singular values of "}, {"domain": null, "role": null, "type": "Directive", "value": "V"}, {"type": "text", "value": " are so small that they are neglected (and "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "full", "type": "RefInfo", "version": null}, "type": "Link", "value": "full"}, {"type": "text", "value": " == "}, {"type": "inlineCode", "value": "False"}, {"type": "text", "value": "), a "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "numpy", "path": "numpy.RankWarning", "type": "RefInfo", "version": "1.24.2"}, "type": "Link", "value": "RankWarning"}, {"type": "text", "value": " will be raised. This means that the coefficient values may be poorly determined. Fitting to a lower order polynomial will usually get rid of the warning (but may not be what you want, of course; if you have independent reason(s) for choosing the degree which isn\u0027t working, you may have to: a) reconsider those reasons, and/or b) reconsider the quality of your data).  The "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "rcond", "type": "RefInfo", "version": null}, "type": "Link", "value": "rcond"}, {"type": "text", "value": " parameter can also be set to a value smaller than its default, but the resulting fit may be spurious and have large contributions from roundoff error."}], "type": "paragraph"});
+            document.getElementById("8341fa1c6171490fa1aff99580d5b792").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="9665b0611efe4e3e9a0e0dd7269ee128"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Polynomial fits using double precision tend to \"fail\" at about (polynomial) degree 20. Fits using Chebyshev or Legendre series are generally better conditioned, but much can still depend on the distribution of the sample points and the smoothness of the data.  If the quality of the fit is inadequate, splines may be a good alternative."}], "type": "paragraph"});
+            document.getElementById("9665b0611efe4e3e9a0e0dd7269ee128").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="x">x</a> : array_like, shape (`M`,)</dt>
+<dd>
+                <div id="4827fbf5ad6b45eea164b895f3de2630"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "x-coordinates of the "}, {"domain": null, "role": null, "type": "Directive", "value": "M"}, {"type": "text", "value": " sample (data) points "}, {"type": "inlineCode", "value": "(x[i], y[i])"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("4827fbf5ad6b45eea164b895f3de2630").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="y">y</a> : array_like, shape (`M`,) or (`M`, `K`)</dt>
+<dd>
+                <div id="98f2e6d7d31f48b8b4fc71682428b30c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "y-coordinates of the sample points.  Several sets of sample points sharing the same x-coordinates can be (independently) fit with one call to "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "numpy", "path": "numpy.polyfit", "type": "RefInfo", "version": "1.24.2"}, "type": "Link", "value": "polyfit"}, {"type": "text", "value": " by passing in for "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "y", "type": "RefInfo", "version": null}, "type": "Link", "value": "y"}, {"type": "text", "value": " a 2-D array that contains one data set per column."}], "type": "paragraph"});
+            document.getElementById("98f2e6d7d31f48b8b4fc71682428b30c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="deg">deg</a> : int or 1-D array_like</dt>
+<dd>
+                <div id="d4f05cf31c254bbabec849e8305ad9a8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Degree(s) of the fitting polynomials. If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "deg", "type": "RefInfo", "version": null}, "type": "Link", "value": "deg"}, {"type": "text", "value": " is a single integer all terms up to and including the "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "deg", "type": "RefInfo", "version": null}, "type": "Link", "value": "deg"}, {"type": "text", "value": "\u0027th term are included in the fit. For NumPy versions \u003e= 1.11.0 a list of integers specifying the degrees of the terms to include may be used instead."}], "type": "paragraph"});
+            document.getElementById("d4f05cf31c254bbabec849e8305ad9a8").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="rcond">rcond</a> : float, optional</dt>
+<dd>
+                <div id="a569f568598744ff96b30b21e7179856"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Relative condition number of the fit.  Singular values smaller than "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "rcond", "type": "RefInfo", "version": null}, "type": "Link", "value": "rcond"}, {"type": "text", "value": ", relative to the largest singular value, will be ignored.  The default value is "}, {"type": "inlineCode", "value": "len(x)*eps"}, {"type": "text", "value": ", where "}, {"domain": null, "role": null, "type": "Directive", "value": "eps"}, {"type": "text", "value": " is the relative precision of the platform\u0027s float type, about 2e-16 in most cases."}], "type": "paragraph"});
+            document.getElementById("a569f568598744ff96b30b21e7179856").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="full">full</a> : bool, optional</dt>
+<dd>
+                <div id="79ed60a3736944e9b861220642f0b27a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Switch determining the nature of the return value.  When "}, {"type": "inlineCode", "value": "False"}, {"type": "text", "value": " (the default) just the coefficients are returned; when "}, {"type": "inlineCode", "value": "True"}, {"type": "text", "value": ", diagnostic information from the singular value decomposition (used to solve the fit\u0027s matrix equation) is also returned."}], "type": "paragraph"});
+            document.getElementById("79ed60a3736944e9b861220642f0b27a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="w">w</a> : array_like, shape (`M`,), optional</dt>
+<dd>
+                <div id="5a14f3d0115d4613875e2f3594bec8da"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Weights. If not None, the weight "}, {"type": "inlineCode", "value": "w[i]"}, {"type": "text", "value": " applies to the unsquared residual "}, {"type": "inlineCode", "value": "y[i] - y_hat[i]"}, {"type": "text", "value": " at "}, {"type": "inlineCode", "value": "x[i]"}, {"type": "text", "value": ". Ideally the weights are chosen so that the errors of the products "}, {"type": "inlineCode", "value": "w[i]*y[i]"}, {"type": "text", "value": " all have the same variance.  When using inverse-variance weighting, use "}, {"type": "inlineCode", "value": "w[i] = 1/sigma(y[i])"}, {"type": "text", "value": ".  The default value is None."}], "type": "paragraph"});
+            document.getElementById("5a14f3d0115d4613875e2f3594bec8da").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <div class='admonition'>
+    <div>versionadded 1.5.0</div>
+</div>
+
+
+</dd>
+</dl>
+
+<h3 id="section-Raises">Raises</h3>
+<dl>
+<dt>RankWarning</dt>
+<dd>
+                <div id="f3af73ef4ec84eb4b77fd924e75006b6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Raised if the matrix in the least-squares fit is rank deficient. The warning is only raised if "}, {"type": "inlineCode", "value": "full == False"}, {"type": "text", "value": ".  The warnings can be turned off by:"}], "type": "paragraph"});
+            document.getElementById("f3af73ef4ec84eb4b77fd924e75006b6").innerHTML = html;
+        }
+        init();
+    </script>
+
+                <div id="577b094b09564fbd96e6ae887c1c5e94"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "\u003e\u003e\u003e import warnings\n\u003e\u003e\u003e warnings.simplefilter(\u0027ignore\u0027, np.RankWarning)"});
+            document.getElementById("577b094b09564fbd96e6ae887c1c5e94").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="coef">coef</a> : ndarray, shape (`deg` + 1,) or (`deg` + 1, `K`)</dt>
+<dd>
+                <div id="6b1338472ede4aadac3b4e5a53a6f2a7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Polynomial coefficients ordered from low to high.  If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "y", "type": "RefInfo", "version": null}, "type": "Link", "value": "y"}, {"type": "text", "value": " was 2-D, the coefficients in column "}, {"domain": null, "role": null, "type": "Directive", "value": "k"}, {"type": "text", "value": " of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "coef", "type": "RefInfo", "version": null}, "type": "Link", "value": "coef"}, {"type": "text", "value": " represent the polynomial fit to the data in "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "y", "type": "RefInfo", "version": null}, "type": "Link", "value": "y"}, {"type": "text", "value": "\u0027s "}, {"domain": null, "role": null, "type": "Directive", "value": "k"}, {"type": "text", "value": "-th column."}], "type": "paragraph"});
+            document.getElementById("6b1338472ede4aadac3b4e5a53a6f2a7").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="[residuals, rank, singular_values, rcond]">[residuals, rank, singular_values, rcond]</a> : list</dt>
+<dd>
+                <div id="e25c02ecc4e84833adfb9a4739e5e6fa"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "These values are only returned if "}, {"type": "inlineCode", "value": "full == True"}], "type": "paragraph"});
+            document.getElementById("e25c02ecc4e84833adfb9a4739e5e6fa").innerHTML = html;
+        }
+        init();
+    </script>
+
+           <ul>               <li>                               <div id="cce03ed9137d4d54873ebb5b87eb47d0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "residuals -- sum of squared residuals of the least squares fit"}], "type": "paragraph"});
+            document.getElementById("cce03ed9137d4d54873ebb5b87eb47d0").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="a3acf7a8033c49a98f3017c2cde1813a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "rank -- the numerical rank of the scaled Vandermonde matrix"}], "type": "paragraph"});
+            document.getElementById("a3acf7a8033c49a98f3017c2cde1813a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="405e386a6c8947158f99576e14607017"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "singular_values -- singular values of the scaled Vandermonde matrix"}], "type": "paragraph"});
+            document.getElementById("405e386a6c8947158f99576e14607017").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="0bcc1a75c9774dd1b8beb5972545b3bf"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "rcond -- value of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "rcond", "type": "RefInfo", "version": null}, "type": "Link", "value": "rcond"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("0bcc1a75c9774dd1b8beb5972545b3bf").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+
+                <div id="d537093e586145fcb2564d044ee228dd"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For more details, see "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "numpy", "path": "numpy.linalg.lstsq", "type": "RefInfo", "version": "1.24.2"}, "type": "Link", "value": "numpy.linalg.lstsq"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("d537093e586145fcb2564d044ee228dd").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="20509000964444c98bff0b146f49f390"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Least-squares fit of a polynomial to data."}], "type": "paragraph"});
+            document.getElementById("20509000964444c98bff0b146f49f390").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/numpy/1.24.2/api/numpy.linalg.lstsq.html" class='exists'>numpy.linalg.lstsq</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="7d303d6bf1c04857902546e0873cdbe8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "Computes a least-squares fit from the matrix."});
+            document.getElementById("7d303d6bf1c04857902546e0873cdbe8").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/numpy/1.24.2/api/numpy.polynomial.chebyshev.chebfit.html" class='exists'>numpy.polynomial.chebyshev.chebfit</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/numpy/1.24.2/api/numpy.polynomial.hermite.hermfit.html" class='exists'>numpy.polynomial.hermite.hermfit</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/numpy/1.24.2/api/numpy.polynomial.hermite_e.hermefit.html" class='exists'>numpy.polynomial.hermite_e.hermefit</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/numpy/1.24.2/api/numpy.polynomial.laguerre.lagfit.html" class='exists'>numpy.polynomial.laguerre.lagfit</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/numpy/1.24.2/api/numpy.polynomial.legendre.legfit.html" class='exists'>numpy.polynomial.legendre.legfit</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/numpy/1.24.2/api/numpy.polyval.html" class='exists'>polyval</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="44968f26fa9240cd9a304ea594f7f63c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "Evaluates a polynomial."});
+            document.getElementById("44968f26fa9240cd9a304ea594f7f63c").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyvander.html" class='exists'>polyvander</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="551a345dbf594cf9aaad8598fe6274b5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "Vandermonde matrix for powers."});
+            document.getElementById("551a345dbf594cf9aaad8598fe6274b5").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/current-module/current-version/to-resolve/scipy.interpolate.UnivariateSpline.html.html" class='exists'>scipy.interpolate.UnivariateSpline</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="56f7167c656e4b95a9c972e2d6f92c17"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "Computes spline fits."});
+            document.getElementById("56f7167c656e4b95a9c972e2d6f92c17").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">np</span><span class="o">.</span><span class="">random</span><span class="o">.</span><span class="">seed</span><span class="">(</span><span class="mi">123</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">numpy</span><span class="nn">.</span><span class="nn">polynomial</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">polynomial</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="">P</span><br><span class='nsl'>...&nbsp;</span><span class="">x</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">linspace</span><span class="">(</span><span class="o">-</span><span class="mi">1</span><span class="">,</span><span class="mi">1</span><span class="">,</span><span class="mi">51</span><span class="">)</span><span class=""> </span><span class="c1"># x &#34;data&#34;: [-1, -0.96, ..., 0.96, 1]</span><br><span class='nsl'>...&nbsp;</span><span class="">y</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">x</span><span class="o">*</span><span class="o">*</span><span class="mi">3</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="">x</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">random</span><span class="o">.</span><span class="">randn</span><span class="">(</span><span class="nb">len</span><span class="">(</span><span class="">x</span><span class="">)</span><span class="">)</span><span class="">  </span><span class="c1"># x^3 - x + Gaussian noise</span><br><span class='nsl'>...&nbsp;</span><span class="">c</span><span class="">,</span><span class=""> </span><span class="">stats</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">P</span><span class="o">.</span><span class="">polyfit</span><span class="">(</span><span class="">x</span><span class="">,</span><span class="">y</span><span class="">,</span><span class="mi">3</span><span class="">,</span><span class="">full</span><span class="o">=</span><span class="kc">True</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">np</span><span class="o">.</span><span class="">random</span><span class="o">.</span><span class="">seed</span><span class="">(</span><span class="mi">123</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">c</span><span class=""> </span><span class="c1"># c[0], c[2] should be approx. 0, c[1] approx. -1, c[3] approx. 1</span>
+array([ 0.01909725, -1.30598256, -0.00577963,  1.02644286]) # may vary</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">stats</span><span class=""> </span><span class="c1"># note the large SSR, explaining the rather poor results</span>
+ [array([ 38.06116253]), 4, array([ 1.38446749,  1.32119158,  0.50443316, # may vary
+          0.28853036]), 1.1324274851176597e-014]</pre>
+            
+                           Same thing without the added noise  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">y</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">x</span><span class="o">*</span><span class="o">*</span><span class="mi">3</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="">x</span><br><span class='nsl'>...&nbsp;</span><span class="">c</span><span class="">,</span><span class=""> </span><span class="">stats</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">P</span><span class="o">.</span><span class="">polyfit</span><span class="">(</span><span class="">x</span><span class="">,</span><span class="">y</span><span class="">,</span><span class="mi">3</span><span class="">,</span><span class="">full</span><span class="o">=</span><span class="kc">True</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">c</span><span class=""> </span><span class="c1"># c[0], c[2] should be &#34;very close to 0&#34;, c[1] ~= -1, c[3] ~= 1</span>
+array([-6.36925336e-18, -1.00000000e+00, -4.08053781e-16,  1.00000000e+00])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">stats</span><span class=""> </span><span class="c1"># note the minuscule SSR</span>
+[array([  7.46346754e-31]), 4, array([ 1.38446749,  1.32119158, # may vary
+           0.50443316,  0.28853036]), 1.1324274851176597e-014]</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/numpy/1.24.2/api/numpy.polynomial.laguerre.lagfit.html" class='exists'>numpy.polynomial.laguerre.lagfit</a></code>
+        <code><a link href="/p/numpy/1.24.2/api/numpy.polynomial.chebyshev.chebfit.html" class='exists'>numpy.polynomial.chebyshev.chebfit</a></code>
+        <code><a link href="/p/numpy/1.24.2/api/numpy.polynomial.hermite.hermfit.html" class='exists'>numpy.polynomial.hermite.hermfit</a></code>
+        <code><a link href="/p/numpy/1.24.2/api/numpy.polynomial.legendre.legfit.html" class='exists'>numpy.polynomial.legendre.legfit</a></code>
+        <code><a link href="/p/numpy/1.24.2/api/numpy.polynomial.hermite_e.hermefit.html" class='exists'>numpy.polynomial.hermite_e.hermefit</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/numpy/numpy/blob/v1.24.2//numpy/polynomial/polynomial.py#L1214'>/numpy/polynomial/polynomial.py#1214</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 10.82842712474619, "label": "scipy.interpolate.UnivariateSpline", "mod": "scipy", "url": "/p/current-module/current-version/to-resolve/scipy.interpolate.UnivariateSpline"}, {"id": 2, "val": 11.74165738677394, "label": "numpy.polyval", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.polyval"}, {"id": 3, "val": 10.449489742783179, "label": "numpy.polynomial.chebyshev.chebfit", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.polynomial.chebyshev.chebfit"}, {"id": 4, "val": 10.23606797749979, "label": "numpy.polynomial.hermite_e.hermefit", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.polynomial.hermite_e.hermefit"}, {"id": 5, "val": 10.23606797749979, "label": "numpy.polynomial.hermite.hermfit", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.polynomial.hermite.hermfit"}, {"id": 6, "val": 11.16227766016838, "label": "numpy.polyfit", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.polyfit"}, {"id": 7, "val": 11.0, "label": "numpy.linalg.lstsq", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.linalg.lstsq"}, {"id": 8, "val": 11.0, "label": "numpy.RankWarning", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.RankWarning"}, {"id": 9, "val": 10.449489742783179, "label": "numpy.polynomial.laguerre.lagfit", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.polynomial.laguerre.lagfit"}, {"id": 10, "val": 10.23606797749979, "label": "numpy.polynomial.legendre.legfit", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.polynomial.legendre.legfit"}, {"id": 11, "val": 10.23606797749979, "label": "numpy.polynomial.polynomial.polyvander", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.polynomial.polynomial.polyvander"}], "links": [{"source": 9, "target": 3, "id": 0}, {"source": 9, "target": 4, "id": 2}, {"source": 9, "target": 10, "id": 3}, {"source": 9, "target": 5, "id": 4}, {"source": 1, "target": 9, "id": 6}, {"source": 1, "target": 6, "id": 7}, {"source": 1, "target": 3, "id": 9}, {"source": 1, "target": 5, "id": 10}, {"source": 1, "target": 10, "id": 11}, {"source": 1, "target": 4, "id": 12}, {"source": 7, "target": 9, "id": 14}, {"source": 7, "target": 6, "id": 15}, {"source": 7, "target": 3, "id": 17}, {"source": 7, "target": 5, "id": 19}, {"source": 7, "target": 10, "id": 20}, {"source": 7, "target": 4, "id": 21}, {"source": 6, "target": 8, "id": 28}, {"source": 8, "target": 9, "id": 33}, {"source": 8, "target": 6, "id": 34}, {"source": 8, "target": 3, "id": 37}, {"source": 8, "target": 5, "id": 38}, {"source": 8, "target": 10, "id": 39}, {"source": 8, "target": 4, "id": 40}, {"source": 3, "target": 9, "id": 42}, {"source": 3, "target": 5, "id": 44}, {"source": 3, "target": 10, "id": 45}, {"source": 3, "target": 4, "id": 46}, {"source": 2, "target": 6, "id": 54}, {"source": 5, "target": 9, "id": 62}, {"source": 5, "target": 3, "id": 63}, {"source": 5, "target": 10, "id": 64}, {"source": 5, "target": 4, "id": 65}, {"source": 10, "target": 9, "id": 67}, {"source": 10, "target": 3, "id": 68}, {"source": 10, "target": 5, "id": 69}, {"source": 10, "target": 4, "id": 70}, {"source": 4, "target": 9, "id": 77}, {"source": 4, "target": 3, "id": 78}, {"source": 4, "target": 10, "id": 79}, {"source": 4, "target": 5, "id": 80}]};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

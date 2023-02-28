@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.spatial.html'>spatial</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.spatial._qhull.html'>_qhull</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.spatial._ckdtree.html">_ckdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._distance_pybind.html">_distance_pybind</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._distance_wrap.html">_distance_wrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._geometric_slerp.html">_geometric_slerp</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._hausdorff.html">_hausdorff</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.html">_kdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._plotutils.html">_plotutils</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._procrustes.html">_procrustes</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.html">_qhull</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._spherical_voronoi.html">_spherical_voronoi</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._voronoi.html">_voronoi</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.ckdtree.html">ckdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.html">distance</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.kdtree.html">kdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.qhull.html">qhull</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.transform.html">transform</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.spatial._qhull.Voronoi.html'>Voronoi</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.ConvexHull.html">ConvexHull</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.Delaunay.html">Delaunay</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.HalfspaceIntersection.html">HalfspaceIntersection</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.QhullError.html">QhullError</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.Voronoi.html">Voronoi</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull._Qhull.html">_Qhull</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull._QhullUser.html">_QhullUser</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull._copy_docstr.html">_copy_docstr</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull._get_barycentric_transforms.html">_get_barycentric_transforms</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.tsearch.html">tsearch</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" >+</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.Voronoi.__init__.html">__init__</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.Voronoi._update.html">_update</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.Voronoi.add_points.html">add_points</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Attributes">Attributes</a><a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Raises">Raises</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>Voronoi(points, furthest_site=False, incremental=False, qhull_options=None)</code><h3 id="section-Attributes">Attributes</h3>
+<dl>
+<dt><a id="points">points</a> : ndarray of double, shape (npoints, ndim)</dt>
+<dd>
+                <div id="103908ca44594c099c846e09edef2736"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Coordinates of input points."}], "type": "paragraph"});
+            document.getElementById("103908ca44594c099c846e09edef2736").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="vertices">vertices</a> : ndarray of double, shape (nvertices, ndim)</dt>
+<dd>
+                <div id="275e3f25495c43959d41b2d0e0b04daa"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Coordinates of the Voronoi vertices."}], "type": "paragraph"});
+            document.getElementById("275e3f25495c43959d41b2d0e0b04daa").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="ridge_points">ridge_points</a> : ndarray of ints, shape ``(nridges, 2)``</dt>
+<dd>
+                <div id="1e20d32e4d8c4165a12bb92df1defa59"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Indices of the points between which each Voronoi ridge lies."}], "type": "paragraph"});
+            document.getElementById("1e20d32e4d8c4165a12bb92df1defa59").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="ridge_vertices">ridge_vertices</a> : list of list of ints, shape ``(nridges, *)``</dt>
+<dd>
+                <div id="598a48425d3f4b5a81ce57bb3f02388a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Indices of the Voronoi vertices forming each Voronoi ridge."}], "type": "paragraph"});
+            document.getElementById("598a48425d3f4b5a81ce57bb3f02388a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="regions">regions</a> : list of list of ints, shape ``(nregions, *)``</dt>
+<dd>
+                <div id="f4f310e2ae604f779c1dd1f4ba33d501"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Indices of the Voronoi vertices forming each Voronoi region. -1 indicates vertex outside the Voronoi diagram. When qhull option \"Qz\" was specified, an empty sublist represents the Voronoi region for a point at infinity that was added internally."}], "type": "paragraph"});
+            document.getElementById("f4f310e2ae604f779c1dd1f4ba33d501").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="point_region">point_region</a> : array of ints, shape (npoints)</dt>
+<dd>
+                <div id="27d0f68814b14a4481bfbe2fa2fd32f5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Index of the Voronoi region for each input point. If qhull option \"Qc\" was not specified, the list will contain -1 for points that are not associated with a Voronoi region. If qhull option \"Qz\" was specified, there will be one less element than the number of regions because an extra point at infinity is added internally to facilitate computation."}], "type": "paragraph"});
+            document.getElementById("27d0f68814b14a4481bfbe2fa2fd32f5").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="furthest_site">furthest_site</a> : </dt>
+<dd>
+                <div id="022a38b495174c5ea08c7d414b0d71a7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "True if this was a furthest site triangulation and False if not."}], "type": "paragraph"});
+            document.getElementById("022a38b495174c5ea08c7d414b0d71a7").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <div class='admonition'>
+    <div>versionadded 1.4.0</div>
+</div>
+
+
+</dd>
+</dl>
+
+<!-- rendering Extended Summary -->
+                                   <div class='admonition'>
+    <div>versionadded 0.12.0</div>
+</div>
+
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="f59ded5ff6d543748465d3cfd1aead72"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The Voronoi diagram is computed using the "}, {"target": "http://www.qhull.org/", "type": "ExternalLink", "value": "Qhull library"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("f59ded5ff6d543748465d3cfd1aead72").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="points">points</a> : ndarray of floats, shape (npoints, ndim)</dt>
+<dd>
+                <div id="a4911873fe6b45ec817d2516fbbb9117"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Coordinates of points to construct a Voronoi diagram from"}], "type": "paragraph"});
+            document.getElementById("a4911873fe6b45ec817d2516fbbb9117").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="furthest_site">furthest_site</a> : bool, optional</dt>
+<dd>
+                <div id="b98af2b6856647f98fbbcd08e1daedfb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Whether to compute a furthest-site Voronoi diagram. Default: False"}], "type": "paragraph"});
+            document.getElementById("b98af2b6856647f98fbbcd08e1daedfb").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="incremental">incremental</a> : bool, optional</dt>
+<dd>
+                <div id="7dd7dc7944b0434dab2437b9bc2bc296"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Allow adding new points incrementally. This takes up some additional resources."}], "type": "paragraph"});
+            document.getElementById("7dd7dc7944b0434dab2437b9bc2bc296").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="qhull_options">qhull_options</a> : str, optional</dt>
+<dd>
+                <div id="78071a21dd5445fe954f8d3c6263b013"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Additional options to pass to Qhull. See Qhull manual for details. (Default: \"Qbb Qc Qz Qx\" for ndim \u003e 4 and \"Qbb Qc Qz\" otherwise. Incremental mode omits \"Qz\".)"}], "type": "paragraph"});
+            document.getElementById("78071a21dd5445fe954f8d3c6263b013").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Raises">Raises</h3>
+<dl>
+<dt>QhullError</dt>
+<dd>
+                <div id="4aa1872242f9487182fe1838287653bb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Raised when Qhull encounters an error condition, such as geometrical degeneracy when options to resolve are not enabled."}], "type": "paragraph"});
+            document.getElementById("4aa1872242f9487182fe1838287653bb").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt>ValueError</dt>
+<dd>
+                <div id="bc25344f059b49cf88b031ca93614451"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Raised if an incompatible array is given as input."}], "type": "paragraph"});
+            document.getElementById("bc25344f059b49cf88b031ca93614451").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="6a9bc059e1b84f1eb7548bf2d31021ca"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Voronoi diagrams in N dimensions."}], "type": "paragraph"});
+            document.getElementById("6a9bc059e1b84f1eb7548bf2d31021ca").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+                           Voronoi diagram for a set of point:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="">points</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                   </span><span class="">[</span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">]</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">spatial</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">Voronoi</span><span class="">,</span><span class=""> </span><span class="">voronoi_plot_2d</span><br><span class='nsl'>...&nbsp;</span><span class="">vor</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">Voronoi</span><span class="">(</span><span class="">points</span><span class="">)</span>
+</pre>
+            
+                           Plot it:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">matplotlib</span><span class="nn">.</span><span class="nn">pyplot</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">plt</span><br><span class='nsl'>...&nbsp;</span><span class="">fig</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">voronoi_plot_2d</span><span class="">(</span><span class="">vor</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">show</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+                           The Voronoi vertices:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">vor</span><span class="o">.</span><span class="">vertices</span>
+array([[0.5, 0.5],
+       [0.5, 1.5],
+       [1.5, 0.5],
+       [1.5, 1.5]])</pre>
+            
+                           There is a single finite Voronoi region, and four finite Voronoi
+ridges:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">vor</span><span class="o">.</span><span class="">regions</span>
+[[], [-1, 0], [-1, 1], [1, -1, 0], [3, -1, 2], [-1, 3], [-1, 2], [0, 1, 3, 2], [2, -1, 0], [3, -1, 1]]</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">vor</span><span class="o">.</span><span class="">ridge_vertices</span>
+[[-1, 0], [-1, 0], [-1, 1], [-1, 1], [0, 1], [-1, 3], [-1, 2], [2, 3], [-1, 3], [-1, 2], [1, 3], [0, 2]]</pre>
+            
+                           The ridges are perpendicular between lines drawn between the following
+input points:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">vor</span><span class="o">.</span><span class="">ridge_points</span>
+array([[0, 3],
+       [0, 1],
+       [2, 5],
+       [2, 1],
+       [1, 4],
+       [7, 8],
+       [7, 6],
+       [7, 4],
+       [8, 5],
+       [6, 3],
+       [4, 5],
+       [4, 3]], dtype=int32)</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.spatial._plotutils.voronoi_plot_2d.html" class='exists'>scipy.spatial._plotutils.voronoi_plot_2d</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/spatial/_qhull.cpython-39-x86_64-linux-gnu.so#LNone'>/scipy/spatial/_qhull.cpython-39-x86_64-linux-gnu.so#None</a>
+<br/>
+
+type: &lt;class &#39;type&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 8.0, "label": "scipy.spatial._plotutils.voronoi_plot_2d", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.spatial._plotutils.voronoi_plot_2d"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

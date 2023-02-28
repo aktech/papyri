@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.linalg.html'>linalg</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.linalg._misc.html'>_misc</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.linalg._basic.html">_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._cythonized_array_utils.html">_cythonized_array_utils</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp.html">_decomp</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_cholesky.html">_decomp_cholesky</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_cossin.html">_decomp_cossin</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_ldl.html">_decomp_ldl</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_lu.html">_decomp_lu</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_polar.html">_decomp_polar</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_qr.html">_decomp_qr</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_qz.html">_decomp_qz</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_schur.html">_decomp_schur</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_svd.html">_decomp_svd</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_update.html">_decomp_update</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._expm_frechet.html">_expm_frechet</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._fblas.html">_fblas</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._flapack.html">_flapack</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._flinalg.html">_flinalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._flinalg_py.html">_flinalg_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative.html">_interpolative</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.html">_interpolative_backend</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs.html">_matfuncs</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs_expm.html">_matfuncs_expm</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs_sqrtm.html">_matfuncs_sqrtm</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs_sqrtm_triu.html">_matfuncs_sqrtm_triu</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._misc.html">_misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._procrustes.html">_procrustes</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._sketches.html">_sketches</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._solve_toeplitz.html">_solve_toeplitz</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._solvers.html">_solvers</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._special_matrices.html">_special_matrices</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.basic.html">basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.blas.html">blas</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.cython_blas.html">cython_blas</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.cython_lapack.html">cython_lapack</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp.html">decomp</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_cholesky.html">decomp_cholesky</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_lu.html">decomp_lu</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_qr.html">decomp_qr</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_schur.html">decomp_schur</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_svd.html">decomp_svd</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.flinalg.html">flinalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.interpolative.html">interpolative</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.lapack.html">lapack</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.matfuncs.html">matfuncs</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.special_matrices.html">special_matrices</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.linalg._misc.norm.html'>norm</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.linalg._misc.LinAlgWarning.html">LinAlgWarning</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._misc._datacopied.html">_datacopied</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._misc.norm.html">norm</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a>    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>norm(a, ord=None, axis=None, keepdims=False, check_finite=True)</code><!-- rendering Extended Summary -->
+                                       <div id="d9f7912e95234f57be650a3192656e36"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This function is able to return one of eight different matrix norms, or one of an infinite number of vector norms (described below), depending on the value of the "}, {"type": "inlineCode", "value": "ord"}, {"type": "text", "value": " parameter. For tensors with rank different from 1 or 2, only "}, {"domain": null, "role": null, "type": "Directive", "value": "ord=None"}, {"type": "text", "value": " is supported."}], "type": "paragraph"});
+            document.getElementById("d9f7912e95234f57be650a3192656e36").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="59c48924706643fe821590b18ba51c93"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For values of "}, {"type": "inlineCode", "value": "ord \u003c= 0"}, {"type": "text", "value": ", the result is, strictly speaking, not a mathematical \u0027norm\u0027, but it may still be useful for various numerical purposes."}], "type": "paragraph"});
+            document.getElementById("59c48924706643fe821590b18ba51c93").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="9c1ac2584b5b43e0a8199b511ce5e13f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The following norms can be calculated:"}], "type": "paragraph"});
+            document.getElementById("9c1ac2584b5b43e0a8199b511ce5e13f").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="54b0ea1f72f3440aa597c501c63468ea"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "=====  ============================  ========================== ord    norm for matrices             norm for vectors =====  ============================  ========================== None   Frobenius norm                2-norm \u0027fro\u0027  Frobenius norm                -- \u0027nuc\u0027  nuclear norm                  -- inf    max(sum(abs(a), axis=1))      max(abs(a)) -inf   min(sum(abs(a), axis=1))      min(abs(a)) 0      --                            sum(a != 0) 1      max(sum(abs(a), axis=0))      as below -1     min(sum(abs(a), axis=0))      as below 2      2-norm (largest sing. value)  as below -2     smallest singular value       as below other  --                            sum(abs(a)**ord)**(1./ord) =====  ============================  =========================="}], "type": "paragraph"});
+            document.getElementById("54b0ea1f72f3440aa597c501c63468ea").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="8b509e7b08a649bf912328d1bc0a681f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The Frobenius norm is given by :"}], "type": "paragraph"});
+            document.getElementById("8b509e7b08a649bf912328d1bc0a681f").innerHTML = html;
+        }
+        init();
+    </script>
+
+                           <blockquote>                <div id="a5df5ed7795142fb9cd89544572ddbee"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "Math", "value": "||A||_F = [\\sum_{i,j} abs(a_{i,j})^2]^{1/2}"}], "type": "paragraph"});
+            document.getElementById("a5df5ed7795142fb9cd89544572ddbee").innerHTML = html;
+        }
+        init();
+    </script>
+</blockquote>
+
+                               <div id="0082dce26b8b4ae3a52a1764857b8df1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The nuclear norm is the sum of the singular values."}], "type": "paragraph"});
+            document.getElementById("0082dce26b8b4ae3a52a1764857b8df1").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="8e6d7881a7694a6f97243065a275ee32"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Both the Frobenius and nuclear norm orders are only defined for matrices."}], "type": "paragraph"});
+            document.getElementById("8e6d7881a7694a6f97243065a275ee32").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="a">a</a> : array_like</dt>
+<dd>
+                <div id="0f5ca1b4e45541ce948a58b32fee662a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Input array. If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "axis", "type": "RefInfo", "version": null}, "type": "Link", "value": "axis"}, {"type": "text", "value": " is None, "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "a", "type": "RefInfo", "version": null}, "type": "Link", "value": "a"}, {"type": "text", "value": " must be 1-D or 2-D, unless "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "ord", "type": "RefInfo", "version": null}, "type": "Link", "value": "ord"}, {"type": "text", "value": " is None. If both "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "axis", "type": "RefInfo", "version": null}, "type": "Link", "value": "axis"}, {"type": "text", "value": " and "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "ord", "type": "RefInfo", "version": null}, "type": "Link", "value": "ord"}, {"type": "text", "value": " are None, the 2-norm of "}, {"type": "inlineCode", "value": "a.ravel"}, {"type": "text", "value": " will be returned."}], "type": "paragraph"});
+            document.getElementById("0f5ca1b4e45541ce948a58b32fee662a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="ord">ord</a> : {int, inf, -inf, &#39;fro&#39;, &#39;nuc&#39;, None}, optional</dt>
+<dd>
+                <div id="4049788bdaa74040932e726e974c77e5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Order of the norm (see table under "}, {"type": "inlineCode", "value": "Notes"}, {"type": "text", "value": "). inf means NumPy\u0027s "}, {"domain": null, "role": null, "type": "Directive", "value": "inf"}, {"type": "text", "value": " object."}], "type": "paragraph"});
+            document.getElementById("4049788bdaa74040932e726e974c77e5").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="axis">axis</a> : {int, 2-tuple of ints, None}, optional</dt>
+<dd>
+                <div id="b595192eed594274a7c6cc083fbca010"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "axis", "type": "RefInfo", "version": null}, "type": "Link", "value": "axis"}, {"type": "text", "value": " is an integer, it specifies the axis of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "a", "type": "RefInfo", "version": null}, "type": "Link", "value": "a"}, {"type": "text", "value": " along which to compute the vector norms. If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "axis", "type": "RefInfo", "version": null}, "type": "Link", "value": "axis"}, {"type": "text", "value": " is a 2-tuple, it specifies the axes that hold 2-D matrices, and the matrix norms of these matrices are computed. If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "axis", "type": "RefInfo", "version": null}, "type": "Link", "value": "axis"}, {"type": "text", "value": " is None then either a vector norm (when "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "a", "type": "RefInfo", "version": null}, "type": "Link", "value": "a"}, {"type": "text", "value": " is 1-D) or a matrix norm (when "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "a", "type": "RefInfo", "version": null}, "type": "Link", "value": "a"}, {"type": "text", "value": " is 2-D) is returned."}], "type": "paragraph"});
+            document.getElementById("b595192eed594274a7c6cc083fbca010").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="keepdims">keepdims</a> : bool, optional</dt>
+<dd>
+                <div id="f1106adf7b4342c99a6f34b333460228"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If this is set to True, the axes which are normed over are left in the result as dimensions with size one. With this option the result will broadcast correctly against the original "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "a", "type": "RefInfo", "version": null}, "type": "Link", "value": "a"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("f1106adf7b4342c99a6f34b333460228").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="check_finite">check_finite</a> : bool, optional</dt>
+<dd>
+                <div id="5259f8a894ee4529a9f6c581ac2396b9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Whether to check that the input matrix contains only finite numbers. Disabling may give a performance gain, but may result in problems (crashes, non-termination) if the inputs do contain infinities or NaNs."}], "type": "paragraph"});
+            document.getElementById("5259f8a894ee4529a9f6c581ac2396b9").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="n">n</a> : float or ndarray</dt>
+<dd>
+                <div id="ad55737dbc2843d186a8d9f3fcf8c266"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Norm of the matrix or vector(s)."}], "type": "paragraph"});
+            document.getElementById("ad55737dbc2843d186a8d9f3fcf8c266").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="0a02dc26700c49379ec7350ad0c9f6cc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Matrix or vector norm."}], "type": "paragraph"});
+            document.getElementById("0a02dc26700c49379ec7350ad0c9f6cc").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">linalg</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">norm</span><br><span class='nsl'>...&nbsp;</span><span class="">a</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">arange</span><span class="">(</span><span class="mi">9</span><span class="">)</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="mf">4.0</span><br><span class='nsl'>...&nbsp;</span><span class="">a</span>
+array([-4., -3., -2., -1.,  0.,  1.,  2.,  3.,  4.])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">b</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">a</span><span class="o">.</span><span class="">reshape</span><span class="">(</span><span class="">(</span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">b</span>
+array([[-4., -3., -2.],
+       [-1.,  0.,  1.],
+       [ 2.,  3.,  4.]])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">norm</span><span class="">(</span><span class="">a</span><span class="">)</span>
+7.745966692414834</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">norm</span><span class="">(</span><span class="">b</span><span class="">)</span>
+7.745966692414834</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">norm</span><span class="">(</span><span class="">b</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">fro</span><span class="s1">&#39;</span><span class="">)</span>
+7.745966692414834</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">norm</span><span class="">(</span><span class="">a</span><span class="">,</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">inf</span><span class="">)</span>
+4</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">norm</span><span class="">(</span><span class="">b</span><span class="">,</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">inf</span><span class="">)</span>
+9</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">norm</span><span class="">(</span><span class="">a</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="">np</span><span class="o">.</span><span class="">inf</span><span class="">)</span>
+0</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">norm</span><span class="">(</span><span class="">b</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="">np</span><span class="o">.</span><span class="">inf</span><span class="">)</span>
+2</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">norm</span><span class="">(</span><span class="">a</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">)</span>
+20</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">norm</span><span class="">(</span><span class="">b</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">)</span>
+7</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">norm</span><span class="">(</span><span class="">a</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mi">1</span><span class="">)</span>
+-4.6566128774142013e-010</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">norm</span><span class="">(</span><span class="">b</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mi">1</span><span class="">)</span>
+6</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">norm</span><span class="">(</span><span class="">a</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">)</span>
+7.745966692414834</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">norm</span><span class="">(</span><span class="">b</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">)</span>
+7.3484692283495345</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">norm</span><span class="">(</span><span class="">a</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mi">2</span><span class="">)</span>
+0</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">norm</span><span class="">(</span><span class="">b</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mi">2</span><span class="">)</span>
+1.8570331885190563e-016</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">norm</span><span class="">(</span><span class="">a</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">)</span>
+5.8480354764257312</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">norm</span><span class="">(</span><span class="">a</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mi">3</span><span class="">)</span>
+0</pre>
+            
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/linalg/_misc.py#L17'>/scipy/linalg/_misc.py#17</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

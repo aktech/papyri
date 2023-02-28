@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=numpy>numpy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/numpy/1.24.2/api/numpy.html'>1.24.2</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">1.24.2</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/numpy/1.24.2/api/numpy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/numpy/1.24.2/api/numpy.html">API</a>
+                        <a href="/p/numpy/1.24.2/gallery">Gallery</a>
+                        <a href="/p/numpy/1.24.2/examples">Examples</a>
+                        <a href="/p/numpy/1.24.2/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='numpy.html'>numpy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='numpy.quantile.html'>quantile</a>                            <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.AxisError.html">AxisError</a>
+<a href="/p/numpy/1.24.2/api/numpy.ComplexWarning.html">ComplexWarning</a>
+<a href="/p/numpy/1.24.2/api/numpy.DataSource.html">DataSource</a>
+<a href="/p/numpy/1.24.2/api/numpy.MachAr.html">MachAr</a>
+<a href="/p/numpy/1.24.2/api/numpy.ModuleDeprecationWarning.html">ModuleDeprecationWarning</a>
+<a href="/p/numpy/1.24.2/api/numpy.RankWarning.html">RankWarning</a>
+<a href="/p/numpy/1.24.2/api/numpy.TooHardError.html">TooHardError</a>
+<a href="/p/numpy/1.24.2/api/numpy.VisibleDeprecationWarning.html">VisibleDeprecationWarning</a>
+<a href="/p/numpy/1.24.2/api/numpy._CopyMode.html">_CopyMode</a>
+<a href="/p/numpy/1.24.2/api/numpy.__config__.html">__config__</a>
+<a href="/p/numpy/1.24.2/api/numpy.__dir__.html">__dir__</a>
+<a href="/p/numpy/1.24.2/api/numpy.__getattr__.html">__getattr__</a>
+<a href="/p/numpy/1.24.2/api/numpy._distributor_init.html">_distributor_init</a>
+<a href="/p/numpy/1.24.2/api/numpy._get_promotion_state.html">_get_promotion_state</a>
+<a href="/p/numpy/1.24.2/api/numpy._globals.html">_globals</a>
+<a href="/p/numpy/1.24.2/api/numpy._no_nep50_warning.html">_no_nep50_warning</a>
+<a href="/p/numpy/1.24.2/api/numpy._pyinstaller_hooks_dir.html">_pyinstaller_hooks_dir</a>
+<a href="/p/numpy/1.24.2/api/numpy._pytesttester.html">_pytesttester</a>
+<a href="/p/numpy/1.24.2/api/numpy._set_promotion_state.html">_set_promotion_state</a>
+<a href="/p/numpy/1.24.2/api/numpy._typing.html">_typing</a>
+<a href="/p/numpy/1.24.2/api/numpy._version.html">_version</a>
+<a href="/p/numpy/1.24.2/api/numpy.all.html">all</a>
+<a href="/p/numpy/1.24.2/api/numpy.allclose.html">allclose</a>
+<a href="/p/numpy/1.24.2/api/numpy.alltrue.html">alltrue</a>
+<a href="/p/numpy/1.24.2/api/numpy.amax.html">amax</a>
+<a href="/p/numpy/1.24.2/api/numpy.amin.html">amin</a>
+<a href="/p/numpy/1.24.2/api/numpy.angle.html">angle</a>
+<a href="/p/numpy/1.24.2/api/numpy.any.html">any</a>
+<a href="/p/numpy/1.24.2/api/numpy.append.html">append</a>
+<a href="/p/numpy/1.24.2/api/numpy.apply_along_axis.html">apply_along_axis</a>
+<a href="/p/numpy/1.24.2/api/numpy.apply_over_axes.html">apply_over_axes</a>
+<a href="/p/numpy/1.24.2/api/numpy.arange.html">arange</a>
+<a href="/p/numpy/1.24.2/api/numpy.argmax.html">argmax</a>
+<a href="/p/numpy/1.24.2/api/numpy.argmin.html">argmin</a>
+<a href="/p/numpy/1.24.2/api/numpy.argpartition.html">argpartition</a>
+<a href="/p/numpy/1.24.2/api/numpy.argsort.html">argsort</a>
+<a href="/p/numpy/1.24.2/api/numpy.argwhere.html">argwhere</a>
+<a href="/p/numpy/1.24.2/api/numpy.around.html">around</a>
+<a href="/p/numpy/1.24.2/api/numpy.array.html">array</a>
+<a href="/p/numpy/1.24.2/api/numpy.array2string.html">array2string</a>
+<a href="/p/numpy/1.24.2/api/numpy.array_api.html">array_api</a>
+<a href="/p/numpy/1.24.2/api/numpy.array_equal.html">array_equal</a>
+<a href="/p/numpy/1.24.2/api/numpy.array_equiv.html">array_equiv</a>
+<a href="/p/numpy/1.24.2/api/numpy.array_repr.html">array_repr</a>
+<a href="/p/numpy/1.24.2/api/numpy.array_split.html">array_split</a>
+<a href="/p/numpy/1.24.2/api/numpy.array_str.html">array_str</a>
+<a href="/p/numpy/1.24.2/api/numpy.asanyarray.html">asanyarray</a>
+<a href="/p/numpy/1.24.2/api/numpy.asarray.html">asarray</a>
+<a href="/p/numpy/1.24.2/api/numpy.asarray_chkfinite.html">asarray_chkfinite</a>
+<a href="/p/numpy/1.24.2/api/numpy.ascontiguousarray.html">ascontiguousarray</a>
+<a href="/p/numpy/1.24.2/api/numpy.asfarray.html">asfarray</a>
+<a href="/p/numpy/1.24.2/api/numpy.asfortranarray.html">asfortranarray</a>
+<a href="/p/numpy/1.24.2/api/numpy.asmatrix.html">asmatrix</a>
+<a href="/p/numpy/1.24.2/api/numpy.atleast_1d.html">atleast_1d</a>
+<a href="/p/numpy/1.24.2/api/numpy.atleast_2d.html">atleast_2d</a>
+<a href="/p/numpy/1.24.2/api/numpy.atleast_3d.html">atleast_3d</a>
+<a href="/p/numpy/1.24.2/api/numpy.average.html">average</a>
+<a href="/p/numpy/1.24.2/api/numpy.bartlett.html">bartlett</a>
+<a href="/p/numpy/1.24.2/api/numpy.base_repr.html">base_repr</a>
+<a href="/p/numpy/1.24.2/api/numpy.binary_repr.html">binary_repr</a>
+<a href="/p/numpy/1.24.2/api/numpy.bincount.html">bincount</a>
+<a href="/p/numpy/1.24.2/api/numpy.blackman.html">blackman</a>
+<a href="/p/numpy/1.24.2/api/numpy.block.html">block</a>
+<a href="/p/numpy/1.24.2/api/numpy.bmat.html">bmat</a>
+<a href="/p/numpy/1.24.2/api/numpy.bool_.html">bool_</a>
+<a href="/p/numpy/1.24.2/api/numpy.broadcast.html">broadcast</a>
+<a href="/p/numpy/1.24.2/api/numpy.broadcast_arrays.html">broadcast_arrays</a>
+<a href="/p/numpy/1.24.2/api/numpy.broadcast_shapes.html">broadcast_shapes</a>
+<a href="/p/numpy/1.24.2/api/numpy.broadcast_to.html">broadcast_to</a>
+<a href="/p/numpy/1.24.2/api/numpy.busday_count.html">busday_count</a>
+<a href="/p/numpy/1.24.2/api/numpy.busday_offset.html">busday_offset</a>
+<a href="/p/numpy/1.24.2/api/numpy.busdaycalendar.html">busdaycalendar</a>
+<a href="/p/numpy/1.24.2/api/numpy.bytes_.html">bytes_</a>
+<a href="/p/numpy/1.24.2/api/numpy.can_cast.html">can_cast</a>
+<a href="/p/?/?/?/numpy.char.html.html">char</a>
+<a href="/p/numpy/1.24.2/api/numpy.character.html">character</a>
+<a href="/p/numpy/1.24.2/api/numpy.chararray.html">chararray</a>
+<a href="/p/numpy/1.24.2/api/numpy.choose.html">choose</a>
+<a href="/p/numpy/1.24.2/api/numpy.clip.html">clip</a>
+<a href="/p/numpy/1.24.2/api/numpy.column_stack.html">column_stack</a>
+<a href="/p/numpy/1.24.2/api/numpy.common_type.html">common_type</a>
+<a href="/p/numpy/1.24.2/api/numpy.compat.html">compat</a>
+<a href="/p/numpy/1.24.2/api/numpy.complex128.html">complex128</a>
+<a href="/p/numpy/1.24.2/api/numpy.complex256.html">complex256</a>
+<a href="/p/numpy/1.24.2/api/numpy.complex64.html">complex64</a>
+<a href="/p/numpy/1.24.2/api/numpy.complexfloating.html">complexfloating</a>
+<a href="/p/numpy/1.24.2/api/numpy.compress.html">compress</a>
+<a href="/p/numpy/1.24.2/api/numpy.concatenate.html">concatenate</a>
+<a href="/p/numpy/1.24.2/api/numpy.convolve.html">convolve</a>
+<a href="/p/numpy/1.24.2/api/numpy.copy.html">copy</a>
+<a href="/p/numpy/1.24.2/api/numpy.copyto.html">copyto</a>
+<a href="/p/numpy/1.24.2/api/numpy.core.html">core</a>
+<a href="/p/numpy/1.24.2/api/numpy.corrcoef.html">corrcoef</a>
+<a href="/p/numpy/1.24.2/api/numpy.correlate.html">correlate</a>
+<a href="/p/numpy/1.24.2/api/numpy.count_nonzero.html">count_nonzero</a>
+<a href="/p/numpy/1.24.2/api/numpy.cov.html">cov</a>
+<a href="/p/numpy/1.24.2/api/numpy.cross.html">cross</a>
+<a href="/p/numpy/1.24.2/api/numpy.ctypeslib.html">ctypeslib</a>
+<a href="/p/numpy/1.24.2/api/numpy.cumprod.html">cumprod</a>
+<a href="/p/numpy/1.24.2/api/numpy.cumproduct.html">cumproduct</a>
+<a href="/p/numpy/1.24.2/api/numpy.cumsum.html">cumsum</a>
+<a href="/p/numpy/1.24.2/api/numpy.datetime64.html">datetime64</a>
+<a href="/p/numpy/1.24.2/api/numpy.datetime_as_string.html">datetime_as_string</a>
+<a href="/p/numpy/1.24.2/api/numpy.datetime_data.html">datetime_data</a>
+<a href="/p/numpy/1.24.2/api/numpy.delete.html">delete</a>
+<a href="/p/numpy/1.24.2/api/numpy.diag.html">diag</a>
+<a href="/p/numpy/1.24.2/api/numpy.diag_indices.html">diag_indices</a>
+<a href="/p/numpy/1.24.2/api/numpy.diag_indices_from.html">diag_indices_from</a>
+<a href="/p/numpy/1.24.2/api/numpy.diagflat.html">diagflat</a>
+<a href="/p/numpy/1.24.2/api/numpy.diagonal.html">diagonal</a>
+<a href="/p/numpy/1.24.2/api/numpy.diff.html">diff</a>
+<a href="/p/numpy/1.24.2/api/numpy.digitize.html">digitize</a>
+<a href="/p/numpy/1.24.2/api/numpy.distutils.html">distutils</a>
+<a href="/p/numpy/1.24.2/api/numpy.doc.html">doc</a>
+<a href="/p/numpy/1.24.2/api/numpy.dot.html">dot</a>
+<a href="/p/numpy/1.24.2/api/numpy.dsplit.html">dsplit</a>
+<a href="/p/numpy/1.24.2/api/numpy.dstack.html">dstack</a>
+<a href="/p/numpy/1.24.2/api/numpy.dtype.html">dtype</a>
+<a href="/p/numpy/1.24.2/api/numpy.dual.html">dual</a>
+<a href="/p/numpy/1.24.2/api/numpy.ediff1d.html">ediff1d</a>
+<a href="/p/numpy/1.24.2/api/numpy.einsum.html">einsum</a>
+<a href="/p/numpy/1.24.2/api/numpy.einsum_path.html">einsum_path</a>
+<a href="/p/numpy/1.24.2/api/numpy.empty.html">empty</a>
+<a href="/p/numpy/1.24.2/api/numpy.empty_like.html">empty_like</a>
+<a href="/p/numpy/1.24.2/api/numpy.errstate.html">errstate</a>
+<a href="/p/numpy/1.24.2/api/numpy.expand_dims.html">expand_dims</a>
+<a href="/p/numpy/1.24.2/api/numpy.extract.html">extract</a>
+<a href="/p/numpy/1.24.2/api/numpy.eye.html">eye</a>
+<a href="/p/?/?/?/numpy.fft.html.html">fft</a>
+<a href="/p/numpy/1.24.2/api/numpy.fill_diagonal.html">fill_diagonal</a>
+<a href="/p/numpy/1.24.2/api/numpy.find_common_type.html">find_common_type</a>
+<a href="/p/numpy/1.24.2/api/numpy.finfo.html">finfo</a>
+<a href="/p/numpy/1.24.2/api/numpy.fix.html">fix</a>
+<a href="/p/numpy/1.24.2/api/numpy.flatiter.html">flatiter</a>
+<a href="/p/numpy/1.24.2/api/numpy.flatnonzero.html">flatnonzero</a>
+<a href="/p/numpy/1.24.2/api/numpy.flexible.html">flexible</a>
+<a href="/p/numpy/1.24.2/api/numpy.flip.html">flip</a>
+<a href="/p/numpy/1.24.2/api/numpy.fliplr.html">fliplr</a>
+<a href="/p/numpy/1.24.2/api/numpy.flipud.html">flipud</a>
+<a href="/p/numpy/1.24.2/api/numpy.float128.html">float128</a>
+<a href="/p/numpy/1.24.2/api/numpy.float16.html">float16</a>
+<a href="/p/numpy/1.24.2/api/numpy.float32.html">float32</a>
+<a href="/p/numpy/1.24.2/api/numpy.float64.html">float64</a>
+<a href="/p/numpy/1.24.2/api/numpy.floating.html">floating</a>
+<a href="/p/numpy/1.24.2/api/numpy.format_float_positional.html">format_float_positional</a>
+<a href="/p/numpy/1.24.2/api/numpy.format_float_scientific.html">format_float_scientific</a>
+<a href="/p/numpy/1.24.2/api/numpy.format_parser.html">format_parser</a>
+<a href="/p/numpy/1.24.2/api/numpy.from_dlpack.html">from_dlpack</a>
+<a href="/p/numpy/1.24.2/api/numpy.frombuffer.html">frombuffer</a>
+<a href="/p/numpy/1.24.2/api/numpy.fromfile.html">fromfile</a>
+<a href="/p/numpy/1.24.2/api/numpy.fromfunction.html">fromfunction</a>
+<a href="/p/numpy/1.24.2/api/numpy.fromiter.html">fromiter</a>
+<a href="/p/numpy/1.24.2/api/numpy.frompyfunc.html">frompyfunc</a>
+<a href="/p/numpy/1.24.2/api/numpy.fromregex.html">fromregex</a>
+<a href="/p/numpy/1.24.2/api/numpy.fromstring.html">fromstring</a>
+<a href="/p/numpy/1.24.2/api/numpy.full.html">full</a>
+<a href="/p/numpy/1.24.2/api/numpy.full_like.html">full_like</a>
+<a href="/p/numpy/1.24.2/api/numpy.generic.html">generic</a>
+<a href="/p/numpy/1.24.2/api/numpy.genfromtxt.html">genfromtxt</a>
+<a href="/p/numpy/1.24.2/api/numpy.geomspace.html">geomspace</a>
+<a href="/p/numpy/1.24.2/api/numpy.get_printoptions.html">get_printoptions</a>
+<a href="/p/numpy/1.24.2/api/numpy.getbufsize.html">getbufsize</a>
+<a href="/p/numpy/1.24.2/api/numpy.geterr.html">geterr</a>
+<a href="/p/numpy/1.24.2/api/numpy.geterrcall.html">geterrcall</a>
+<a href="/p/numpy/1.24.2/api/numpy.geterrobj.html">geterrobj</a>
+<a href="/p/numpy/1.24.2/api/numpy.gradient.html">gradient</a>
+<a href="/p/numpy/1.24.2/api/numpy.hamming.html">hamming</a>
+<a href="/p/numpy/1.24.2/api/numpy.hanning.html">hanning</a>
+<a href="/p/numpy/1.24.2/api/numpy.histogram.html">histogram</a>
+<a href="/p/numpy/1.24.2/api/numpy.histogram2d.html">histogram2d</a>
+<a href="/p/numpy/1.24.2/api/numpy.histogram_bin_edges.html">histogram_bin_edges</a>
+<a href="/p/numpy/1.24.2/api/numpy.histogramdd.html">histogramdd</a>
+<a href="/p/numpy/1.24.2/api/numpy.hsplit.html">hsplit</a>
+<a href="/p/numpy/1.24.2/api/numpy.hstack.html">hstack</a>
+<a href="/p/numpy/1.24.2/api/numpy.i0.html">i0</a>
+<a href="/p/numpy/1.24.2/api/numpy.identity.html">identity</a>
+<a href="/p/numpy/1.24.2/api/numpy.iinfo.html">iinfo</a>
+<a href="/p/numpy/1.24.2/api/numpy.imag.html">imag</a>
+<a href="/p/numpy/1.24.2/api/numpy.in1d.html">in1d</a>
+<a href="/p/numpy/1.24.2/api/numpy.indices.html">indices</a>
+<a href="/p/numpy/1.24.2/api/numpy.inexact.html">inexact</a>
+<a href="/p/numpy/1.24.2/api/numpy.info.html">info</a>
+<a href="/p/numpy/1.24.2/api/numpy.inner.html">inner</a>
+<a href="/p/numpy/1.24.2/api/numpy.insert.html">insert</a>
+<a href="/p/numpy/1.24.2/api/numpy.int16.html">int16</a>
+<a href="/p/numpy/1.24.2/api/numpy.int32.html">int32</a>
+<a href="/p/numpy/1.24.2/api/numpy.int64.html">int64</a>
+<a href="/p/numpy/1.24.2/api/numpy.int8.html">int8</a>
+<a href="/p/numpy/1.24.2/api/numpy.integer.html">integer</a>
+<a href="/p/numpy/1.24.2/api/numpy.interp.html">interp</a>
+<a href="/p/numpy/1.24.2/api/numpy.intersect1d.html">intersect1d</a>
+<a href="/p/numpy/1.24.2/api/numpy.is_busday.html">is_busday</a>
+<a href="/p/numpy/1.24.2/api/numpy.isclose.html">isclose</a>
+<a href="/p/numpy/1.24.2/api/numpy.iscomplex.html">iscomplex</a>
+<a href="/p/numpy/1.24.2/api/numpy.iscomplexobj.html">iscomplexobj</a>
+<a href="/p/numpy/1.24.2/api/numpy.isfortran.html">isfortran</a>
+<a href="/p/numpy/1.24.2/api/numpy.isin.html">isin</a>
+<a href="/p/numpy/1.24.2/api/numpy.isneginf.html">isneginf</a>
+<a href="/p/numpy/1.24.2/api/numpy.isposinf.html">isposinf</a>
+<a href="/p/numpy/1.24.2/api/numpy.isreal.html">isreal</a>
+<a href="/p/numpy/1.24.2/api/numpy.isrealobj.html">isrealobj</a>
+<a href="/p/numpy/1.24.2/api/numpy.isscalar.html">isscalar</a>
+<a href="/p/numpy/1.24.2/api/numpy.issctype.html">issctype</a>
+<a href="/p/numpy/1.24.2/api/numpy.issubclass_.html">issubclass_</a>
+<a href="/p/numpy/1.24.2/api/numpy.issubdtype.html">issubdtype</a>
+<a href="/p/numpy/1.24.2/api/numpy.issubsctype.html">issubsctype</a>
+<a href="/p/numpy/1.24.2/api/numpy.iterable.html">iterable</a>
+<a href="/p/numpy/1.24.2/api/numpy.ix_.html">ix_</a>
+<a href="/p/numpy/1.24.2/api/numpy.kaiser.html">kaiser</a>
+<a href="/p/numpy/1.24.2/api/numpy.kron.html">kron</a>
+<a href="/p/numpy/1.24.2/api/numpy.lexsort.html">lexsort</a>
+<a href="/p/numpy/1.24.2/api/numpy.lib.html">lib</a>
+<a href="/p/numpy/1.24.2/api/numpy.linalg.html">linalg</a>
+<a href="/p/numpy/1.24.2/api/numpy.linspace.html">linspace</a>
+<a href="/p/numpy/1.24.2/api/numpy.load.html">load</a>
+<a href="/p/numpy/1.24.2/api/numpy.loadtxt.html">loadtxt</a>
+<a href="/p/numpy/1.24.2/api/numpy.logspace.html">logspace</a>
+<a href="/p/numpy/1.24.2/api/numpy.longlong.html">longlong</a>
+<a href="/p/numpy/1.24.2/api/numpy.lookfor.html">lookfor</a>
+<a href="/p/numpy/1.24.2/api/numpy.ma.html">ma</a>
+<a href="/p/numpy/1.24.2/api/numpy.mask_indices.html">mask_indices</a>
+<a href="/p/numpy/1.24.2/api/numpy.matlib.html">matlib</a>
+<a href="/p/numpy/1.24.2/api/numpy.matrix.html">matrix</a>
+<a href="/p/numpy/1.24.2/api/numpy.matrixlib.html">matrixlib</a>
+<a href="/p/numpy/1.24.2/api/numpy.maximum_sctype.html">maximum_sctype</a>
+<a href="/p/numpy/1.24.2/api/numpy.may_share_memory.html">may_share_memory</a>
+<a href="/p/numpy/1.24.2/api/numpy.mean.html">mean</a>
+<a href="/p/numpy/1.24.2/api/numpy.median.html">median</a>
+<a href="/p/numpy/1.24.2/api/numpy.memmap.html">memmap</a>
+<a href="/p/numpy/1.24.2/api/numpy.meshgrid.html">meshgrid</a>
+<a href="/p/numpy/1.24.2/api/numpy.min_scalar_type.html">min_scalar_type</a>
+<a href="/p/numpy/1.24.2/api/numpy.mintypecode.html">mintypecode</a>
+<a href="/p/numpy/1.24.2/api/numpy.moveaxis.html">moveaxis</a>
+<a href="/p/numpy/1.24.2/api/numpy.msort.html">msort</a>
+<a href="/p/numpy/1.24.2/api/numpy.nan_to_num.html">nan_to_num</a>
+<a href="/p/numpy/1.24.2/api/numpy.nanargmax.html">nanargmax</a>
+<a href="/p/numpy/1.24.2/api/numpy.nanargmin.html">nanargmin</a>
+<a href="/p/numpy/1.24.2/api/numpy.nancumprod.html">nancumprod</a>
+<a href="/p/numpy/1.24.2/api/numpy.nancumsum.html">nancumsum</a>
+<a href="/p/numpy/1.24.2/api/numpy.nanmax.html">nanmax</a>
+<a href="/p/numpy/1.24.2/api/numpy.nanmean.html">nanmean</a>
+<a href="/p/numpy/1.24.2/api/numpy.nanmedian.html">nanmedian</a>
+<a href="/p/numpy/1.24.2/api/numpy.nanmin.html">nanmin</a>
+<a href="/p/numpy/1.24.2/api/numpy.nanpercentile.html">nanpercentile</a>
+<a href="/p/numpy/1.24.2/api/numpy.nanprod.html">nanprod</a>
+<a href="/p/numpy/1.24.2/api/numpy.nanquantile.html">nanquantile</a>
+<a href="/p/numpy/1.24.2/api/numpy.nanstd.html">nanstd</a>
+<a href="/p/numpy/1.24.2/api/numpy.nansum.html">nansum</a>
+<a href="/p/numpy/1.24.2/api/numpy.nanvar.html">nanvar</a>
+<a href="/p/numpy/1.24.2/api/numpy.ndarray.html">ndarray</a>
+<a href="/p/numpy/1.24.2/api/numpy.ndenumerate.html">ndenumerate</a>
+<a href="/p/numpy/1.24.2/api/numpy.ndim.html">ndim</a>
+<a href="/p/numpy/1.24.2/api/numpy.ndindex.html">ndindex</a>
+<a href="/p/numpy/1.24.2/api/numpy.nditer.html">nditer</a>
+<a href="/p/numpy/1.24.2/api/numpy.nested_iters.html">nested_iters</a>
+<a href="/p/numpy/1.24.2/api/numpy.nonzero.html">nonzero</a>
+<a href="/p/numpy/1.24.2/api/numpy.number.html">number</a>
+<a href="/p/numpy/1.24.2/api/numpy.obj2sctype.html">obj2sctype</a>
+<a href="/p/numpy/1.24.2/api/numpy.object_.html">object_</a>
+<a href="/p/numpy/1.24.2/api/numpy.ones.html">ones</a>
+<a href="/p/numpy/1.24.2/api/numpy.ones_like.html">ones_like</a>
+<a href="/p/numpy/1.24.2/api/numpy.outer.html">outer</a>
+<a href="/p/numpy/1.24.2/api/numpy.packbits.html">packbits</a>
+<a href="/p/numpy/1.24.2/api/numpy.pad.html">pad</a>
+<a href="/p/numpy/1.24.2/api/numpy.partition.html">partition</a>
+<a href="/p/numpy/1.24.2/api/numpy.percentile.html">percentile</a>
+<a href="/p/numpy/1.24.2/api/numpy.piecewise.html">piecewise</a>
+<a href="/p/numpy/1.24.2/api/numpy.place.html">place</a>
+<a href="/p/numpy/1.24.2/api/numpy.poly.html">poly</a>
+<a href="/p/numpy/1.24.2/api/numpy.poly1d.html">poly1d</a>
+<a href="/p/numpy/1.24.2/api/numpy.polyadd.html">polyadd</a>
+<a href="/p/numpy/1.24.2/api/numpy.polyder.html">polyder</a>
+<a href="/p/numpy/1.24.2/api/numpy.polydiv.html">polydiv</a>
+<a href="/p/numpy/1.24.2/api/numpy.polyfit.html">polyfit</a>
+<a href="/p/numpy/1.24.2/api/numpy.polyint.html">polyint</a>
+<a href="/p/numpy/1.24.2/api/numpy.polymul.html">polymul</a>
+<a href="/p/numpy/1.24.2/api/numpy.polynomial.html">polynomial</a>
+<a href="/p/numpy/1.24.2/api/numpy.polysub.html">polysub</a>
+<a href="/p/numpy/1.24.2/api/numpy.polyval.html">polyval</a>
+<a href="/p/numpy/1.24.2/api/numpy.printoptions.html">printoptions</a>
+<a href="/p/numpy/1.24.2/api/numpy.prod.html">prod</a>
+<a href="/p/numpy/1.24.2/api/numpy.product.html">product</a>
+<a href="/p/numpy/1.24.2/api/numpy.promote_types.html">promote_types</a>
+<a href="/p/numpy/1.24.2/api/numpy.ptp.html">ptp</a>
+<a href="/p/numpy/1.24.2/api/numpy.put.html">put</a>
+<a href="/p/numpy/1.24.2/api/numpy.put_along_axis.html">put_along_axis</a>
+<a href="/p/numpy/1.24.2/api/numpy.putmask.html">putmask</a>
+<a href="/p/numpy/1.24.2/api/numpy.quantile.html">quantile</a>
+<a href="/p/numpy/1.24.2/api/numpy.random.html">random</a>
+<a href="/p/numpy/1.24.2/api/numpy.ravel.html">ravel</a>
+<a href="/p/numpy/1.24.2/api/numpy.ravel_multi_index.html">ravel_multi_index</a>
+<a href="/p/numpy/1.24.2/api/numpy.real.html">real</a>
+<a href="/p/numpy/1.24.2/api/numpy.real_if_close.html">real_if_close</a>
+<a href="/p/?/?/?/numpy.rec.html.html">rec</a>
+<a href="/p/numpy/1.24.2/api/numpy.recarray.html">recarray</a>
+<a href="/p/numpy/1.24.2/api/numpy.record.html">record</a>
+<a href="/p/numpy/1.24.2/api/numpy.repeat.html">repeat</a>
+<a href="/p/numpy/1.24.2/api/numpy.require.html">require</a>
+<a href="/p/numpy/1.24.2/api/numpy.reshape.html">reshape</a>
+<a href="/p/numpy/1.24.2/api/numpy.resize.html">resize</a>
+<a href="/p/numpy/1.24.2/api/numpy.result_type.html">result_type</a>
+<a href="/p/numpy/1.24.2/api/numpy.roll.html">roll</a>
+<a href="/p/numpy/1.24.2/api/numpy.roots.html">roots</a>
+<a href="/p/numpy/1.24.2/api/numpy.rot90.html">rot90</a>
+<a href="/p/numpy/1.24.2/api/numpy.round_.html">round_</a>
+<a href="/p/numpy/1.24.2/api/numpy.save.html">save</a>
+<a href="/p/numpy/1.24.2/api/numpy.savetxt.html">savetxt</a>
+<a href="/p/numpy/1.24.2/api/numpy.savez.html">savez</a>
+<a href="/p/numpy/1.24.2/api/numpy.savez_compressed.html">savez_compressed</a>
+<a href="/p/numpy/1.24.2/api/numpy.sctype2char.html">sctype2char</a>
+<a href="/p/numpy/1.24.2/api/numpy.searchsorted.html">searchsorted</a>
+<a href="/p/numpy/1.24.2/api/numpy.select.html">select</a>
+<a href="/p/numpy/1.24.2/api/numpy.set_numeric_ops.html">set_numeric_ops</a>
+<a href="/p/numpy/1.24.2/api/numpy.set_printoptions.html">set_printoptions</a>
+<a href="/p/numpy/1.24.2/api/numpy.setbufsize.html">setbufsize</a>
+<a href="/p/numpy/1.24.2/api/numpy.setdiff1d.html">setdiff1d</a>
+<a href="/p/numpy/1.24.2/api/numpy.seterr.html">seterr</a>
+<a href="/p/numpy/1.24.2/api/numpy.seterrcall.html">seterrcall</a>
+<a href="/p/numpy/1.24.2/api/numpy.seterrobj.html">seterrobj</a>
+<a href="/p/numpy/1.24.2/api/numpy.setxor1d.html">setxor1d</a>
+<a href="/p/numpy/1.24.2/api/numpy.shape.html">shape</a>
+<a href="/p/numpy/1.24.2/api/numpy.shares_memory.html">shares_memory</a>
+<a href="/p/numpy/1.24.2/api/numpy.signedinteger.html">signedinteger</a>
+<a href="/p/numpy/1.24.2/api/numpy.sinc.html">sinc</a>
+<a href="/p/numpy/1.24.2/api/numpy.size.html">size</a>
+<a href="/p/numpy/1.24.2/api/numpy.sometrue.html">sometrue</a>
+<a href="/p/numpy/1.24.2/api/numpy.sort.html">sort</a>
+<a href="/p/numpy/1.24.2/api/numpy.sort_complex.html">sort_complex</a>
+<a href="/p/numpy/1.24.2/api/numpy.source.html">source</a>
+<a href="/p/numpy/1.24.2/api/numpy.split.html">split</a>
+<a href="/p/numpy/1.24.2/api/numpy.squeeze.html">squeeze</a>
+<a href="/p/numpy/1.24.2/api/numpy.stack.html">stack</a>
+<a href="/p/numpy/1.24.2/api/numpy.std.html">std</a>
+<a href="/p/numpy/1.24.2/api/numpy.str_.html">str_</a>
+<a href="/p/numpy/1.24.2/api/numpy.sum.html">sum</a>
+<a href="/p/numpy/1.24.2/api/numpy.swapaxes.html">swapaxes</a>
+<a href="/p/numpy/1.24.2/api/numpy.take.html">take</a>
+<a href="/p/numpy/1.24.2/api/numpy.take_along_axis.html">take_along_axis</a>
+<a href="/p/numpy/1.24.2/api/numpy.testing.html">testing</a>
+<a href="/p/numpy/1.24.2/api/numpy.tests.html">tests</a>
+<a href="/p/numpy/1.24.2/api/numpy.tile.html">tile</a>
+<a href="/p/numpy/1.24.2/api/numpy.timedelta64.html">timedelta64</a>
+<a href="/p/numpy/1.24.2/api/numpy.trace.html">trace</a>
+<a href="/p/numpy/1.24.2/api/numpy.transpose.html">transpose</a>
+<a href="/p/numpy/1.24.2/api/numpy.trapz.html">trapz</a>
+<a href="/p/numpy/1.24.2/api/numpy.tri.html">tri</a>
+<a href="/p/numpy/1.24.2/api/numpy.tril.html">tril</a>
+<a href="/p/numpy/1.24.2/api/numpy.tril_indices.html">tril_indices</a>
+<a href="/p/numpy/1.24.2/api/numpy.tril_indices_from.html">tril_indices_from</a>
+<a href="/p/numpy/1.24.2/api/numpy.trim_zeros.html">trim_zeros</a>
+<a href="/p/numpy/1.24.2/api/numpy.triu.html">triu</a>
+<a href="/p/numpy/1.24.2/api/numpy.triu_indices.html">triu_indices</a>
+<a href="/p/numpy/1.24.2/api/numpy.triu_indices_from.html">triu_indices_from</a>
+<a href="/p/numpy/1.24.2/api/numpy.typename.html">typename</a>
+<a href="/p/numpy/1.24.2/api/numpy.typing.html">typing</a>
+<a href="/p/numpy/1.24.2/api/numpy.ufunc.html">ufunc</a>
+<a href="/p/numpy/1.24.2/api/numpy.uint16.html">uint16</a>
+<a href="/p/numpy/1.24.2/api/numpy.uint32.html">uint32</a>
+<a href="/p/numpy/1.24.2/api/numpy.uint64.html">uint64</a>
+<a href="/p/numpy/1.24.2/api/numpy.uint8.html">uint8</a>
+<a href="/p/numpy/1.24.2/api/numpy.ulonglong.html">ulonglong</a>
+<a href="/p/numpy/1.24.2/api/numpy.union1d.html">union1d</a>
+<a href="/p/numpy/1.24.2/api/numpy.unique.html">unique</a>
+<a href="/p/numpy/1.24.2/api/numpy.unpackbits.html">unpackbits</a>
+<a href="/p/numpy/1.24.2/api/numpy.unravel_index.html">unravel_index</a>
+<a href="/p/numpy/1.24.2/api/numpy.unsignedinteger.html">unsignedinteger</a>
+<a href="/p/numpy/1.24.2/api/numpy.unwrap.html">unwrap</a>
+<a href="/p/numpy/1.24.2/api/numpy.vander.html">vander</a>
+<a href="/p/numpy/1.24.2/api/numpy.var.html">var</a>
+<a href="/p/numpy/1.24.2/api/numpy.vdot.html">vdot</a>
+<a href="/p/numpy/1.24.2/api/numpy.vectorize.html">vectorize</a>
+<a href="/p/numpy/1.24.2/api/numpy.version.html">version</a>
+<a href="/p/numpy/1.24.2/api/numpy.void.html">void</a>
+<a href="/p/numpy/1.24.2/api/numpy.vsplit.html">vsplit</a>
+<a href="/p/numpy/1.24.2/api/numpy.vstack.html">vstack</a>
+<a href="/p/numpy/1.24.2/api/numpy.where.html">where</a>
+<a href="/p/numpy/1.24.2/api/numpy.zeros.html">zeros</a>
+<a href="/p/numpy/1.24.2/api/numpy.zeros_like.html">zeros_like</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/numpy/1.24.2/img/numpy_logo.png"/>
+    <a href="#">numpy</a>
+    <a href="#">1.24.2</a>
+        <a class='external'  href="https://pypi.org/project/numpy">Pypi</a>
+        <a class='external' href="https://github.com/numpy/numpy">GitHub</a>
+        <a class='external' href="https://numpy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://numpy.org/doc/1.22/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>quantile(a, q, axis=None, out=None, overwrite_input=False, method=&#39;linear&#39;, keepdims=False, *, interpolation=None)</code><!-- rendering Extended Summary -->
+                                   <div class='admonition'>
+    <div>versionadded 1.15.0</div>
+</div>
+
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="9785947110c24338b80fc053f8c397ac"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Given a vector "}, {"type": "inlineCode", "value": "V"}, {"type": "text", "value": " of length "}, {"type": "inlineCode", "value": "n"}, {"type": "text", "value": ", the q-th quantile of "}, {"type": "inlineCode", "value": "V"}, {"type": "text", "value": " is the value "}, {"type": "inlineCode", "value": "q"}, {"type": "text", "value": " of the way from the minimum to the maximum in a sorted copy of "}, {"type": "inlineCode", "value": "V"}, {"type": "text", "value": ". The values and distances of the two nearest neighbors as well as the "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "method", "type": "RefInfo", "version": null}, "type": "Link", "value": "method"}, {"type": "text", "value": " parameter will determine the quantile if the normalized ranking does not match the location of "}, {"type": "inlineCode", "value": "q"}, {"type": "text", "value": " exactly. This function is the same as the median if "}, {"type": "inlineCode", "value": "q=0.5"}, {"type": "text", "value": ", the same as the minimum if "}, {"type": "inlineCode", "value": "q=0.0"}, {"type": "text", "value": " and the same as the maximum if "}, {"type": "inlineCode", "value": "q=1.0"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("9785947110c24338b80fc053f8c397ac").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="f2443b0fde4a450eb90fcfa063ad7e7a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The optional "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "method", "type": "RefInfo", "version": null}, "type": "Link", "value": "method"}, {"type": "text", "value": " parameter specifies the method to use when the desired quantile lies between two indexes "}, {"type": "inlineCode", "value": "i"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "j = i + 1"}, {"type": "text", "value": ". In that case, we first determine "}, {"type": "inlineCode", "value": "i + g"}, {"type": "text", "value": ", a virtual index that lies between "}, {"type": "inlineCode", "value": "i"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "j"}, {"type": "text", "value": ", where  "}, {"type": "inlineCode", "value": "i"}, {"type": "text", "value": " is the floor and "}, {"type": "inlineCode", "value": "g"}, {"type": "text", "value": " is the fractional part of the index. The final result is, then, an interpolation of "}, {"type": "inlineCode", "value": "a[i]"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "a[j]"}, {"type": "text", "value": " based on "}, {"type": "inlineCode", "value": "g"}, {"type": "text", "value": ". During the computation of "}, {"type": "inlineCode", "value": "g"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "i"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "j"}, {"type": "text", "value": " are modified using correction constants "}, {"type": "inlineCode", "value": "alpha"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "beta"}, {"type": "text", "value": " whose choices depend on the "}, {"type": "inlineCode", "value": "method"}, {"type": "text", "value": " used. Finally, note that since Python uses 0-based indexing, the code subtracts another 1 from the index internally."}], "type": "paragraph"});
+            document.getElementById("f2443b0fde4a450eb90fcfa063ad7e7a").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="faf151b265544ee6af90e72e1ed2e032"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The following formula determines the virtual index "}, {"type": "inlineCode", "value": "i + g"}, {"type": "text", "value": ", the location  of the quantile in the sorted sample:"}], "type": "paragraph"});
+            document.getElementById("faf151b265544ee6af90e72e1ed2e032").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$i + g = q * ( n - alpha - beta + 1 ) + alpha$$</span>
+
+                               <div id="703fe44e452248b78eeb532099681af1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The different methods then work as follows"}], "type": "paragraph"});
+            document.getElementById("703fe44e452248b78eeb532099681af1").innerHTML = html;
+        }
+        init();
+    </script>
+
+               <!-- deflist -->
+           <dl>
+               <dt>                <div id="9f20aa9d7da542dd810c1152d552ca8d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "inverted_cdf:"}], "type": "paragraph"});
+            document.getElementById("9f20aa9d7da542dd810c1152d552ca8d").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="4b830c23374d4330b7c00571fa144390"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "method 1 of H\u0026F .     This method gives discontinuous results:"}], "type": "paragraph"});
+            document.getElementById("4b830c23374d4330b7c00571fa144390").innerHTML = html;
+        }
+        init();
+    </script>
+           <ul>               <li>                               <div id="851be53d4c2b4d03a5e42c1dc9d92b59"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "if g \u003e 0 ; then take j"}], "type": "paragraph"});
+            document.getElementById("851be53d4c2b4d03a5e42c1dc9d92b59").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="60a14957ab15486b87d96594f00e95be"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "if g = 0 ; then take i"}], "type": "paragraph"});
+            document.getElementById("60a14957ab15486b87d96594f00e95be").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+</dd>
+               <dt>                <div id="eba06e56053a4bf29234abfea7697e06"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "averaged_inverted_cdf:"}], "type": "paragraph"});
+            document.getElementById("eba06e56053a4bf29234abfea7697e06").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="e9f9afe4d40e44d59af65772fa2704f2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "method 2 of H\u0026F .     This method gives discontinuous results:"}], "type": "paragraph"});
+            document.getElementById("e9f9afe4d40e44d59af65772fa2704f2").innerHTML = html;
+        }
+        init();
+    </script>
+           <ul>               <li>                               <div id="057688631eb1479eb824c3ff0ab378a5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "if g \u003e 0 ; then take j"}], "type": "paragraph"});
+            document.getElementById("057688631eb1479eb824c3ff0ab378a5").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="f05211884e3f4259877e4eb9c2f5d069"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "if g = 0 ; then average between bounds"}], "type": "paragraph"});
+            document.getElementById("f05211884e3f4259877e4eb9c2f5d069").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+</dd>
+               <dt>                <div id="df6614ac4ece4dc68c69e3dc46e341d7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "closest_observation:"}], "type": "paragraph"});
+            document.getElementById("df6614ac4ece4dc68c69e3dc46e341d7").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="f8b9c9c2e6da40e7bf447fd5eeaf142a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "method 3 of H\u0026F .     This method gives discontinuous results:"}], "type": "paragraph"});
+            document.getElementById("f8b9c9c2e6da40e7bf447fd5eeaf142a").innerHTML = html;
+        }
+        init();
+    </script>
+           <ul>               <li>                               <div id="ffab7e0f912a4ce98ffcd630f32cd885"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "if g \u003e 0 ; then take j"}], "type": "paragraph"});
+            document.getElementById("ffab7e0f912a4ce98ffcd630f32cd885").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="c880984735b44b65bea37e1b2c3fc8fe"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "if g = 0 and index is odd ; then take j"}], "type": "paragraph"});
+            document.getElementById("c880984735b44b65bea37e1b2c3fc8fe").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="25f94de2730f4e609d11f530295f4046"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "if g = 0 and index is even ; then take i"}], "type": "paragraph"});
+            document.getElementById("25f94de2730f4e609d11f530295f4046").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+</dd>
+               <dt>                <div id="b6e12e209a5d422ea53893add20db678"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "interpolated_inverted_cdf:"}], "type": "paragraph"});
+            document.getElementById("b6e12e209a5d422ea53893add20db678").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="03e1d031f80c4f69b351fb1e6965b0c8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "method 4 of H\u0026F .     This method gives continuous results using:"}], "type": "paragraph"});
+            document.getElementById("03e1d031f80c4f69b351fb1e6965b0c8").innerHTML = html;
+        }
+        init();
+    </script>
+           <ul>               <li>                               <div id="65b99f74bcb84339a3ab3e06652bc487"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "alpha = 0"}], "type": "paragraph"});
+            document.getElementById("65b99f74bcb84339a3ab3e06652bc487").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="1a78e74a0315492cb749707860c5556d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "beta = 1"}], "type": "paragraph"});
+            document.getElementById("1a78e74a0315492cb749707860c5556d").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+</dd>
+               <dt>                <div id="c3c4019034cd424bb237be7d035ae18e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "hazen:"}], "type": "paragraph"});
+            document.getElementById("c3c4019034cd424bb237be7d035ae18e").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="96962cf31a0048a9b93bae9ccb18d565"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "method 5 of H\u0026F .     This method gives continuous results using:"}], "type": "paragraph"});
+            document.getElementById("96962cf31a0048a9b93bae9ccb18d565").innerHTML = html;
+        }
+        init();
+    </script>
+           <ul>               <li>                               <div id="217c51c9e6414700922930391e32fa20"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "alpha = 1/2"}], "type": "paragraph"});
+            document.getElementById("217c51c9e6414700922930391e32fa20").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="11a7e572072c4845bc9cadac5ce094b6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "beta = 1/2"}], "type": "paragraph"});
+            document.getElementById("11a7e572072c4845bc9cadac5ce094b6").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+</dd>
+               <dt>                <div id="3318d1a1ae754f8e9d4dc30d51411cb4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "weibull:"}], "type": "paragraph"});
+            document.getElementById("3318d1a1ae754f8e9d4dc30d51411cb4").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="fdd975f7b1ca4ff3ba87f149c4f1f8f0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "method 6 of H\u0026F .     This method gives continuous results using:"}], "type": "paragraph"});
+            document.getElementById("fdd975f7b1ca4ff3ba87f149c4f1f8f0").innerHTML = html;
+        }
+        init();
+    </script>
+           <ul>               <li>                               <div id="861015a70bb74764a792a87c7756e41a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "alpha = 0"}], "type": "paragraph"});
+            document.getElementById("861015a70bb74764a792a87c7756e41a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="1e94244a32594338b076ddccab583721"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "beta = 0"}], "type": "paragraph"});
+            document.getElementById("1e94244a32594338b076ddccab583721").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+</dd>
+               <dt>                <div id="a97081b9175c44509e1f0da50714604b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "linear:"}], "type": "paragraph"});
+            document.getElementById("a97081b9175c44509e1f0da50714604b").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="0e19cd27c1a14619a54078a0e9cfcbd3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "method 7 of H\u0026F .     This method gives continuous results using:"}], "type": "paragraph"});
+            document.getElementById("0e19cd27c1a14619a54078a0e9cfcbd3").innerHTML = html;
+        }
+        init();
+    </script>
+           <ul>               <li>                               <div id="617b7b5a8abc4c1d9fc711a935f61df6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "alpha = 1"}], "type": "paragraph"});
+            document.getElementById("617b7b5a8abc4c1d9fc711a935f61df6").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="d37223b3949e4051acb7725d6275d0c1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "beta = 1"}], "type": "paragraph"});
+            document.getElementById("d37223b3949e4051acb7725d6275d0c1").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+</dd>
+               <dt>                <div id="25bb57a3a6d546a6ad08dd8182146e14"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "median_unbiased:"}], "type": "paragraph"});
+            document.getElementById("25bb57a3a6d546a6ad08dd8182146e14").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="a7182ceaf7424398ae503c1e1e75583e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "method 8 of H\u0026F .     This method is probably the best method if the sample     distribution function is unknown (see reference).     This method gives continuous results using:"}], "type": "paragraph"});
+            document.getElementById("a7182ceaf7424398ae503c1e1e75583e").innerHTML = html;
+        }
+        init();
+    </script>
+           <ul>               <li>                               <div id="f2a0a3535f9a45e2a5f53a0342a7c52d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "alpha = 1/3"}], "type": "paragraph"});
+            document.getElementById("f2a0a3535f9a45e2a5f53a0342a7c52d").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="8acc35b79e464d378e7ad5ef48c13c6c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "beta = 1/3"}], "type": "paragraph"});
+            document.getElementById("8acc35b79e464d378e7ad5ef48c13c6c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+</dd>
+               <dt>                <div id="14ba50dd8f234614b5113f92bb286767"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "normal_unbiased:"}], "type": "paragraph"});
+            document.getElementById("14ba50dd8f234614b5113f92bb286767").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="440f181c9574424b8e241d03b9fb0138"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "method 9 of H\u0026F .     This method is probably the best method if the sample     distribution function is known to be normal.     This method gives continuous results using:"}], "type": "paragraph"});
+            document.getElementById("440f181c9574424b8e241d03b9fb0138").innerHTML = html;
+        }
+        init();
+    </script>
+           <ul>               <li>                               <div id="789ad177db3c47ce920a61a0ee769fe8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "alpha = 3/8"}], "type": "paragraph"});
+            document.getElementById("789ad177db3c47ce920a61a0ee769fe8").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="3facff85558e488f96ac218b2e9e725f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "beta = 3/8"}], "type": "paragraph"});
+            document.getElementById("3facff85558e488f96ac218b2e9e725f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+</dd>
+               <dt>                <div id="d619dde5a7054c62a6602bb31d9f4b2d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "lower:"}], "type": "paragraph"});
+            document.getElementById("d619dde5a7054c62a6602bb31d9f4b2d").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="c9aa819b0b584eecbe9d980c1c5e9b05"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "NumPy method kept for backwards compatibility.     Takes "}, {"type": "inlineCode", "value": "i"}, {"type": "text", "value": " as the interpolation point."}], "type": "paragraph"});
+            document.getElementById("c9aa819b0b584eecbe9d980c1c5e9b05").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="daaf424d16494c94bdf149050d333ca0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "higher:"}], "type": "paragraph"});
+            document.getElementById("daaf424d16494c94bdf149050d333ca0").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="85b03594ed7d493a85c19550c5c91508"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "NumPy method kept for backwards compatibility.     Takes "}, {"type": "inlineCode", "value": "j"}, {"type": "text", "value": " as the interpolation point."}], "type": "paragraph"});
+            document.getElementById("85b03594ed7d493a85c19550c5c91508").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="054f86c133e4454ca86f893a8f7a181d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "nearest:"}], "type": "paragraph"});
+            document.getElementById("054f86c133e4454ca86f893a8f7a181d").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="9fb9ce1ed22f4d13b894ba73840b3609"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "NumPy method kept for backwards compatibility.     Takes "}, {"type": "inlineCode", "value": "i"}, {"type": "text", "value": " or "}, {"type": "inlineCode", "value": "j"}, {"type": "text", "value": ", whichever is nearest."}], "type": "paragraph"});
+            document.getElementById("9fb9ce1ed22f4d13b894ba73840b3609").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="054e45868558486eb374159dbebe0f74"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "midpoint:"}], "type": "paragraph"});
+            document.getElementById("054e45868558486eb374159dbebe0f74").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="44ffa9d1e3d740488ff64fe1ef967ccd"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "NumPy method kept for backwards compatibility.     Uses "}, {"type": "inlineCode", "value": "(i + j) / 2"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("44ffa9d1e3d740488ff64fe1ef967ccd").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="a">a</a> : array_like</dt>
+<dd>
+                <div id="b15462d6af5f44d18e8b4d37414e0816"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Input array or object that can be converted to an array."}], "type": "paragraph"});
+            document.getElementById("b15462d6af5f44d18e8b4d37414e0816").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="q">q</a> : array_like of float</dt>
+<dd>
+                <div id="6e4d437e00cd401fa588d6fd39274474"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Quantile or sequence of quantiles to compute, which must be between 0 and 1 inclusive."}], "type": "paragraph"});
+            document.getElementById("6e4d437e00cd401fa588d6fd39274474").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="axis">axis</a> : {int, tuple of int, None}, optional</dt>
+<dd>
+                <div id="e5293d4d5e6649d888bf676964eed189"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Axis or axes along which the quantiles are computed. The default is to compute the quantile(s) along a flattened version of the array."}], "type": "paragraph"});
+            document.getElementById("e5293d4d5e6649d888bf676964eed189").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="out">out</a> : ndarray, optional</dt>
+<dd>
+                <div id="3d27fda6926441a3b020edfbc981c7b3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Alternative output array in which to place the result. It must have the same shape and buffer length as the expected output, but the type (of the output) will be cast if necessary."}], "type": "paragraph"});
+            document.getElementById("3d27fda6926441a3b020edfbc981c7b3").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="overwrite_input">overwrite_input</a> : bool, optional</dt>
+<dd>
+                <div id="faac2fa6b83a4c64b164f41e8c5ed2f0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If True, then allow the input array "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "a", "type": "RefInfo", "version": null}, "type": "Link", "value": "a"}, {"type": "text", "value": " to be modified by intermediate calculations, to save memory. In this case, the contents of the input "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "a", "type": "RefInfo", "version": null}, "type": "Link", "value": "a"}, {"type": "text", "value": " after this function completes is undefined."}], "type": "paragraph"});
+            document.getElementById("faac2fa6b83a4c64b164f41e8c5ed2f0").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="method">method</a> : str, optional</dt>
+<dd>
+                <div id="ab82f759116741a4b643766de4552ca3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This parameter specifies the method to use for estimating the quantile.  There are many different methods, some unique to NumPy. See the notes for explanation.  The options sorted by their R type as summarized in the H\u0026F paper  are:"}], "type": "paragraph"});
+            document.getElementById("ab82f759116741a4b643766de4552ca3").innerHTML = html;
+        }
+        init();
+    </script>
+
+           <ol>               <li>                               <div id="8fb6fae8c1554cfdbd85d671c9d9d855"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027inverted_cdf\u0027"}], "type": "paragraph"});
+            document.getElementById("8fb6fae8c1554cfdbd85d671c9d9d855").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="cfac1b9c0ce643d0aea1ca7a7e9018af"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027averaged_inverted_cdf\u0027"}], "type": "paragraph"});
+            document.getElementById("cfac1b9c0ce643d0aea1ca7a7e9018af").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="1e6dd892d9894b01aa4f4c0229ebcc96"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027closest_observation\u0027"}], "type": "paragraph"});
+            document.getElementById("1e6dd892d9894b01aa4f4c0229ebcc96").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="721b33480789499dbbb1310c5069b4e3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027interpolated_inverted_cdf\u0027"}], "type": "paragraph"});
+            document.getElementById("721b33480789499dbbb1310c5069b4e3").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="9cd588c6b966439aa1aa7c490a7d9da7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027hazen\u0027"}], "type": "paragraph"});
+            document.getElementById("9cd588c6b966439aa1aa7c490a7d9da7").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="b5247a729a33432b905f7d69c876c27c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027weibull\u0027"}], "type": "paragraph"});
+            document.getElementById("b5247a729a33432b905f7d69c876c27c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="5e622b95efd346028adff9602e0ff88e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027linear\u0027  (default)"}], "type": "paragraph"});
+            document.getElementById("5e622b95efd346028adff9602e0ff88e").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="4d34b2a963024aff9d0ad3e18c01b2cf"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027median_unbiased\u0027"}], "type": "paragraph"});
+            document.getElementById("4d34b2a963024aff9d0ad3e18c01b2cf").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="b052ea1d69454448b07d946878323104"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027normal_unbiased\u0027"}], "type": "paragraph"});
+            document.getElementById("b052ea1d69454448b07d946878323104").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ol>
+
+                <div id="a8e544cc993a48f8813edc1a4ad8be79"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The first three methods are discontinuous.  NumPy further defines the following discontinuous variations of the default \u0027linear\u0027 (7.) option:"}], "type": "paragraph"});
+            document.getElementById("a8e544cc993a48f8813edc1a4ad8be79").innerHTML = html;
+        }
+        init();
+    </script>
+
+           <ul>               <li>                               <div id="437c5ea0db4443cba0870d76f07bc7f9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027lower\u0027"}], "type": "paragraph"});
+            document.getElementById("437c5ea0db4443cba0870d76f07bc7f9").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="8d6b0c61bcd94bd0a1ff585e81b4b4d8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027higher\u0027,"}], "type": "paragraph"});
+            document.getElementById("8d6b0c61bcd94bd0a1ff585e81b4b4d8").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="1996fc68ede34a31b8278d79ec5b86e5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027midpoint\u0027"}], "type": "paragraph"});
+            document.getElementById("1996fc68ede34a31b8278d79ec5b86e5").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="9261a0ed7e534ac6b4e435b2746b6b47"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027nearest\u0027"}], "type": "paragraph"});
+            document.getElementById("9261a0ed7e534ac6b4e435b2746b6b47").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+
+            <div class='admonition'>
+    <div>versionchanged 1.22.0</div>
+                        <div id="7a8fe1b5dc5d438882cb3e28536b34be"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This argument was previously called \"interpolation\" and only offered the \"linear\" default and last four options."}], "type": "paragraph"});
+            document.getElementById("7a8fe1b5dc5d438882cb3e28536b34be").innerHTML = html;
+        }
+        init();
+    </script>
+
+</div>
+
+
+</dd>
+<dt><a id="keepdims">keepdims</a> : bool, optional</dt>
+<dd>
+                <div id="52217317bc3a4984831e9a8576515682"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If this is set to True, the axes which are reduced are left in the result as dimensions with size one. With this option, the result will broadcast correctly against the original array "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "a", "type": "RefInfo", "version": null}, "type": "Link", "value": "a"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("52217317bc3a4984831e9a8576515682").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="interpolation">interpolation</a> : str, optional</dt>
+<dd>
+                <div id="556fe809b3ff476e9a9f2280508c5400"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Deprecated name for the method keyword argument."}], "type": "paragraph"});
+            document.getElementById("556fe809b3ff476e9a9f2280508c5400").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <div class='admonition'>
+    <div>deprecated 1.22.0</div>
+</div>
+
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="quantile">quantile</a> : scalar or ndarray</dt>
+<dd>
+                <div id="7db7dfb5694a4007932e211722c35f21"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "q", "type": "RefInfo", "version": null}, "type": "Link", "value": "q"}, {"type": "text", "value": " is a single quantile and "}, {"domain": null, "role": null, "type": "Directive", "value": "axis=None"}, {"type": "text", "value": ", then the result is a scalar. If multiple quantiles are given, first axis of the result corresponds to the quantiles. The other axes are the axes that remain after the reduction of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "a", "type": "RefInfo", "version": null}, "type": "Link", "value": "a"}, {"type": "text", "value": ". If the input contains integers or floats smaller than "}, {"type": "inlineCode", "value": "float64"}, {"type": "text", "value": ", the output data-type is "}, {"type": "inlineCode", "value": "float64"}, {"type": "text", "value": ". Otherwise, the output data-type is the same as that of the input. If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "out", "type": "RefInfo", "version": null}, "type": "Link", "value": "out"}, {"type": "text", "value": " is specified, that array is returned instead."}], "type": "paragraph"});
+            document.getElementById("7db7dfb5694a4007932e211722c35f21").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="355ec945037645b794a3a9296fd0ce43"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Compute the q-th quantile of the data along the specified axis."}], "type": "paragraph"});
+            document.getElementById("355ec945037645b794a3a9296fd0ce43").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/numpy/1.24.2/api/numpy.mean.html" class='exists'>mean</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/numpy/1.24.2/api/numpy.median.html" class='exists'>median</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="64a78d50b5ed4bfdbbefee1f705e92a5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "equivalent to "});
+            document.getElementById("64a78d50b5ed4bfdbbefee1f705e92a5").innerHTML = html;
+        }
+        init();
+    </script>             <div id="5b755aca5ff24104a83ad7dffaa4fb19"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "inlineCode", "value": "quantile(..., 0.5)"});
+            document.getElementById("5b755aca5ff24104a83ad7dffaa4fb19").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/numpy/1.24.2/api/numpy.nanquantile.html" class='exists'>nanquantile</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/numpy/1.24.2/api/numpy.percentile.html" class='exists'>percentile</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="1a637f479b604f4e99f503e7cfed5eff"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "equivalent to quantile, but with q in the range [0, 100]."});
+            document.getElementById("1a637f479b604f4e99f503e7cfed5eff").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">a</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="">[</span><span class="mi">10</span><span class="">,</span><span class=""> </span><span class="mi">7</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">a</span>
+array([[10,  7,  4],
+       [ 3,  2,  1]])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">np</span><span class="o">.</span><span class="">quantile</span><span class="">(</span><span class="">a</span><span class="">,</span><span class=""> </span><span class="mf">0.5</span><span class="">)</span>
+3.5</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">np</span><span class="o">.</span><span class="">quantile</span><span class="">(</span><span class="">a</span><span class="">,</span><span class=""> </span><span class="mf">0.5</span><span class="">,</span><span class=""> </span><span class="">axis</span><span class="o">=</span><span class="mi">0</span><span class="">)</span>
+array([6.5, 4.5, 2.5])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">np</span><span class="o">.</span><span class="">quantile</span><span class="">(</span><span class="">a</span><span class="">,</span><span class=""> </span><span class="mf">0.5</span><span class="">,</span><span class=""> </span><span class="">axis</span><span class="o">=</span><span class="mi">1</span><span class="">)</span>
+array([7.,  2.])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">np</span><span class="o">.</span><span class="">quantile</span><span class="">(</span><span class="">a</span><span class="">,</span><span class=""> </span><span class="mf">0.5</span><span class="">,</span><span class=""> </span><span class="">axis</span><span class="o">=</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="">keepdims</span><span class="o">=</span><span class="kc">True</span><span class="">)</span>
+array([[7.],
+       [2.]])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">m</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">quantile</span><span class="">(</span><span class="">a</span><span class="">,</span><span class=""> </span><span class="mf">0.5</span><span class="">,</span><span class=""> </span><span class="">axis</span><span class="o">=</span><span class="mi">0</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">out</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">zeros_like</span><span class="">(</span><span class="">m</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">np</span><span class="o">.</span><span class="">quantile</span><span class="">(</span><span class="">a</span><span class="">,</span><span class=""> </span><span class="mf">0.5</span><span class="">,</span><span class=""> </span><span class="">axis</span><span class="o">=</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="">out</span><span class="o">=</span><span class="">out</span><span class="">)</span>
+array([6.5, 4.5, 2.5])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">m</span>
+array([6.5, 4.5, 2.5])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">b</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">a</span><span class="o">.</span><span class="">copy</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">np</span><span class="o">.</span><span class="">quantile</span><span class="">(</span><span class="">b</span><span class="">,</span><span class=""> </span><span class="mf">0.5</span><span class="">,</span><span class=""> </span><span class="">axis</span><span class="o">=</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="">overwrite_input</span><span class="o">=</span><span class="kc">True</span><span class="">)</span>
+array([7.,  2.])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="k">assert</span><span class=""> </span><span class="ow">not</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">all</span><span class="">(</span><span class="">a</span><span class=""> </span><span class="o">==</span><span class=""> </span><span class="">b</span><span class="">)</span>
+</pre>
+            
+                           See also `numpy.percentile` for a visualization of most methods.  
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/numpy/1.24.2/api/numpy.percentile.html" class='exists'>numpy.percentile</a></code>
+        <code><a link href="/p/numpy/1.24.2/api/numpy.nanquantile.html" class='exists'>numpy.nanquantile</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.stats._stats_py.expectile.html" class='exists'>scipy.stats._stats_py.expectile</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/numpy/numpy/blob/v1.24.2//numpy/lib/function_base.py#L4214'>/numpy/lib/function_base.py#4214</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 9.732050807568877, "label": "numpy.nanquantile", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.nanquantile"}, {"id": 2, "val": 10.64575131106459, "label": "numpy.percentile", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.percentile"}, {"id": 3, "val": 13.099019513592784, "label": "numpy.mean", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.mean"}, {"id": 4, "val": 8.0, "label": "scipy.stats._stats_py.expectile", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.stats._stats_py.expectile"}, {"id": 5, "val": 10.23606797749979, "label": "numpy.median", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.median"}], "links": [{"source": 2, "target": 5, "id": 5}, {"source": 5, "target": 2, "id": 7}, {"source": 3, "target": 4, "id": 22}, {"source": 3, "target": 1, "id": 32}, {"source": 3, "target": 5, "id": 34}, {"source": 3, "target": 2, "id": 36}]};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

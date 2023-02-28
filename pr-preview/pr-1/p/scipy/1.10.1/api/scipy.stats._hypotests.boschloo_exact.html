@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats.html'>stats</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats._hypotests.html'>_hypotests</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.stats._axis_nan_policy.html">_axis_nan_policy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._biasedurn.html">_biasedurn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binned_statistic.html">_binned_statistic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binomtest.html">_binomtest</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._boost.html">_boost</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._common.html">_common</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._constants.html">_constants</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._continuous_distns.html">_continuous_distns</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._covariance.html">_covariance</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._crosstab.html">_crosstab</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._discrete_distns.html">_discrete_distns</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._distn_infrastructure.html">_distn_infrastructure</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._distr_params.html">_distr_params</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._entropy.html">_entropy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._fit.html">_fit</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.html">_hypotests</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._kde.html">_kde</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._ksstats.html">_ksstats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable.html">_levy_stable</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mannwhitneyu.html">_mannwhitneyu</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._morestats.html">_morestats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mstats_basic.html">_mstats_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mstats_extras.html">_mstats_extras</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._multivariate.html">_multivariate</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mvn.html">_mvn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._odds_ratio.html">_odds_ratio</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._page_trend_test.html">_page_trend_test</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.html">_qmc</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc_cy.html">_qmc_cy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._rcont.html">_rcont</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._relative_risk.html">_relative_risk</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling.html">_resampling</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._rvs_sampling.html">_rvs_sampling</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._sobol.html">_sobol</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._statlib.html">_statlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats.html">_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_mstats_common.html">_stats_mstats_common</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.html">_stats_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_pythran.html">_stats_pythran</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._tukeylambda_stats.html">_tukeylambda_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._variation.html">_variation</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._warnings_errors.html">_warnings_errors</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.biasedurn.html">biasedurn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.contingency.html">contingency</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.distributions.html">distributions</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.kde.html">kde</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.morestats.html">morestats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats.html">mstats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats_basic.html">mstats_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats_extras.html">mstats_extras</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mvn.html">mvn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.qmc.html">qmc</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.statlib.html">statlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats._hypotests.boschloo_exact.html'>boschloo_exact</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.CramerVonMisesResult.html">CramerVonMisesResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.Epps_Singleton_2sampResult.html">Epps_Singleton_2sampResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.TukeyHSDResult.html">TukeyHSDResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests._all_partitions.html">_all_partitions</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests._cdf_cvm.html">_cdf_cvm</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests._cdf_cvm_inf.html">_cdf_cvm_inf</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests._compute_log_combinations.html">_compute_log_combinations</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests._get_binomial_log_p_value_with_nuisance_param.html">_get_binomial_log_p_value_with_nuisance_param</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests._get_wilcoxon_distr.html">_get_wilcoxon_distr</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests._get_wilcoxon_distr2.html">_get_wilcoxon_distr2</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests._poisson_means_test_iv.html">_poisson_means_test_iv</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests._psi1_mod.html">_psi1_mod</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests._pval_cvm_2samp_exact.html">_pval_cvm_2samp_exact</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests._somers_d.html">_somers_d</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests._tau_b.html">_tau_b</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests._tukey_hsd_iv.html">_tukey_hsd_iv</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.barnard_exact.html">barnard_exact</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.boschloo_exact.html">boschloo_exact</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.cramervonmises.html">cramervonmises</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.cramervonmises_2samp.html">cramervonmises_2samp</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.epps_singleton_2samp.html">epps_singleton_2samp</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.poisson_means_test.html">poisson_means_test</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.somersd.html">somersd</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.tukey_hsd.html">tukey_hsd</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>boschloo_exact(table, alternative=&#39;two-sided&#39;, n=32)</code><!-- rendering Extended Summary -->
+        <h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="8dca72b1581548e59cf5cfd431fd75e8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Boschloo\u0027s test is an exact test used in the analysis of contingency tables. It examines the association of two categorical variables, and is a uniformly more powerful alternative to Fisher\u0027s exact test for 2x2 contingency tables."}], "type": "paragraph"});
+            document.getElementById("8dca72b1581548e59cf5cfd431fd75e8").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="9805a2ccfcde45599c86132402f637c5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Boschloo\u0027s exact test uses the p-value of Fisher\u0027s exact test as a statistic, and Boschloo\u0027s p-value is the probability under the null hypothesis of observing such an extreme value of this statistic."}], "type": "paragraph"});
+            document.getElementById("9805a2ccfcde45599c86132402f637c5").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="f28f4c01ae7d4026b12390de1b8c7a73"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Let\u0027s define "}, {"type": "Math", "value": "X_0"}, {"type": "text", "value": " a 2x2 matrix representing the observed sample, where each column stores the binomial experiment, as in the example below. Let\u0027s also define "}, {"type": "Math", "value": "p_1, p_2"}, {"type": "text", "value": " the theoretical binomial probabilities for  "}, {"type": "Math", "value": "x_{11}"}, {"type": "text", "value": " and "}, {"type": "Math", "value": "x_{12}"}, {"type": "text", "value": ". When using Boschloo exact test, we can assert three different alternative hypotheses:"}], "type": "paragraph"});
+            document.getElementById("f28f4c01ae7d4026b12390de1b8c7a73").innerHTML = html;
+        }
+        init();
+    </script>
+
+                          <ul>               <li>                               <div id="5c876e5c96b1497b9a4b998230cbb02e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "Math", "value": "H_0 : p_1=p_2"}, {"type": "text", "value": " versus "}, {"type": "Math", "value": "H_1 : p_1 \u003c p_2"}, {"type": "text", "value": ",   with "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "alternative", "type": "RefInfo", "version": null}, "type": "Link", "value": "alternative"}, {"type": "text", "value": " = \"less\""}], "type": "paragraph"});
+            document.getElementById("5c876e5c96b1497b9a4b998230cbb02e").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="b4c9324547a84109a880f1384eaa28c7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "Math", "value": "H_0 : p_1=p_2"}, {"type": "text", "value": " versus "}, {"type": "Math", "value": "H_1 : p_1 \u003e p_2"}, {"type": "text", "value": ",   with "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "alternative", "type": "RefInfo", "version": null}, "type": "Link", "value": "alternative"}, {"type": "text", "value": " = \"greater\""}], "type": "paragraph"});
+            document.getElementById("b4c9324547a84109a880f1384eaa28c7").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="5293f07da9a34c6b83d97f464e203bc0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "Math", "value": "H_0 : p_1=p_2"}, {"type": "text", "value": " versus "}, {"type": "Math", "value": "H_1 : p_1 \\neq p_2"}, {"type": "text", "value": ",   with "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "alternative", "type": "RefInfo", "version": null}, "type": "Link", "value": "alternative"}, {"type": "text", "value": " = \"two-sided\" (default)"}], "type": "paragraph"});
+            document.getElementById("5293f07da9a34c6b83d97f464e203bc0").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+
+                               <div id="16abd09e65fa4c50a840129a51177d9f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "There are multiple conventions for computing a two-sided p-value when the null distribution is asymmetric. Here, we apply the convention that the p-value of a two-sided test is twice the minimum of the p-values of the one-sided tests (clipped to 1.0). Note that "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.stats._stats_py.fisher_exact", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "fisher_exact"}, {"type": "text", "value": " follows a different convention, so for a given "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "table", "type": "RefInfo", "version": null}, "type": "Link", "value": "table"}, {"type": "text", "value": ", the statistic reported by "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.stats._hypotests.boschloo_exact", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "boschloo_exact"}, {"type": "text", "value": " may differ from the p-value reported by "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.stats._stats_py.fisher_exact", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "fisher_exact"}, {"type": "text", "value": " when "}, {"type": "inlineCode", "value": "alternative=\u0027two-sided\u0027"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("16abd09e65fa4c50a840129a51177d9f").innerHTML = html;
+        }
+        init();
+    </script>
+
+                           <div class='admonition'>
+    <div>versionadded 1.7.0</div>
+</div>
+
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="table">table</a> : array_like of ints</dt>
+<dd>
+                <div id="d6b36fc1c0994961a736dee67cfaab66"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A 2x2 contingency table.  Elements should be non-negative integers."}], "type": "paragraph"});
+            document.getElementById("d6b36fc1c0994961a736dee67cfaab66").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="alternative">alternative</a> : {&#39;two-sided&#39;, &#39;less&#39;, &#39;greater&#39;}, optional</dt>
+<dd>
+                <div id="73a8667818334d9f830ba978e0aa3ade"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Defines the null and alternative hypotheses. Default is \u0027two-sided\u0027. Please see explanations in the Notes section below."}], "type": "paragraph"});
+            document.getElementById("73a8667818334d9f830ba978e0aa3ade").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="n">n</a> : int, optional</dt>
+<dd>
+                <div id="4cc79fb1073f4b74a1c5f2bda2b6e151"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Number of sampling points used in the construction of the sampling method. Note that this argument will automatically be converted to the next higher power of 2 since "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "scipy", "path": "scipy.stats._qmc.Sobol", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "scipy.stats.qmc.Sobol"}, {"type": "text", "value": " is used to select sample points. Default is 32. Must be positive. In most cases, 32 points is enough to reach good precision. More points comes at performance cost."}], "type": "paragraph"});
+            document.getElementById("4cc79fb1073f4b74a1c5f2bda2b6e151").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="ber">ber</a> : BoschlooExactResult</dt>
+<dd>
+                <div id="59fc14a877b94ad49d3d00c6256f6d03"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A result object with the following attributes."}], "type": "paragraph"});
+            document.getElementById("59fc14a877b94ad49d3d00c6256f6d03").innerHTML = html;
+        }
+        init();
+    </script>
+
+<!-- deflist -->
+           <dl>
+               <dt>                <div id="329a5026c45f4c809dc986614d40673e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "statistic"}], "type": "paragraph"});
+            document.getElementById("329a5026c45f4c809dc986614d40673e").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="85457b4584cf482ba887b11ba39713c3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "statistic"}], "type": "paragraph"});
+            document.getElementById("85457b4584cf482ba887b11ba39713c3").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="596ef2a8b891463d989d348b7676ea72"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "pvalue"}], "type": "paragraph"});
+            document.getElementById("596ef2a8b891463d989d348b7676ea72").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="4a444d1c6a1a4244a778c5cd2e2436eb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "pvalue"}], "type": "paragraph"});
+            document.getElementById("4a444d1c6a1a4244a778c5cd2e2436eb").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="8153928f1f7a45b08be8a813663bd8bc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Perform Boschloo\u0027s exact test on a 2x2 contingency table."}], "type": "paragraph"});
+            document.getElementById("8153928f1f7a45b08be8a813663bd8bc").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.barnard_exact.html" class='exists'>barnard_exact</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="ed534328fb654978a30f19a1cc6e6a67"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "Barnard\u0027s exact test, which is a more powerful alternative than Fisher\u0027s exact test for 2x2 contingency tables."});
+            document.getElementById("ed534328fb654978a30f19a1cc6e6a67").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.stats.contingency.chi2_contingency.html" class='exists'>chi2_contingency</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="989a604da08a4ee8a8cd88324c577923"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "Chi-square test of independence of variables in a contingency table."});
+            document.getElementById("989a604da08a4ee8a8cd88324c577923").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.fisher_exact.html" class='exists'>fisher_exact</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="12ee8c3012ed4607a8ededa670915dd1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "Fisher exact test on a 2x2 contingency table."});
+            document.getElementById("12ee8c3012ed4607a8ededa670915dd1").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+                           In the following example, we consider the article &#34;Employee
+attitudes and job satisfaction&#34; [3]_
+which reports the results of a survey from 63 scientists and 117 college
+professors. Of the 63 scientists, 31 said they were very satisfied with
+their jobs, whereas 74 of the college professors were very satisfied
+with their work. Is this significant evidence that college
+professors are happier with their work than scientists?
+The following table summarizes the data mentioned above::  
+            
+                                                college professors   scientists
+    Very Satisfied   74                     31
+    Dissatisfied     43                     32  
+            
+                           When working with statistical hypothesis testing, we usually use a
+threshold probability or significance level upon which we decide
+to reject the null hypothesis :math:`H_0`. Suppose we choose the common
+significance level of 5%.  
+            
+                           Our alternative hypothesis is that college professors are truly more
+satisfied with their work than scientists. Therefore, we expect
+:math:`p_1` the proportion of very satisfied college professors to be
+greater than :math:`p_2`, the proportion of very satisfied scientists.
+We thus call `boschloo_exact` with the ``alternative=&#34;greater&#34;`` option:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">stats</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">stats</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">boschloo_exact</span><span class="">(</span><span class="">[</span><span class="">[</span><span class="mi">74</span><span class="">,</span><span class=""> </span><span class="mi">31</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">43</span><span class="">,</span><span class=""> </span><span class="mi">32</span><span class="">]</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">alternative</span><span class="o">=</span><span class="s2">&#34;</span><span class="s2">greater</span><span class="s2">&#34;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class="o">.</span><span class="">statistic</span>
+0.0483...</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">res</span><span class="o">.</span><span class="">pvalue</span>
+0.0355...</pre>
+            
+                           Under the null hypothesis that scientists are happier in their work than
+college professors, the probability of obtaining test
+results at least as extreme as the observed data is approximately 3.55%.
+Since this p-value is less than our chosen significance level, we have
+evidence to reject :math:`H_0` in favor of the alternative hypothesis.  
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.stats._hypotests.barnard_exact.html" class='exists'>scipy.stats._hypotests.barnard_exact</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.stats._stats_py.fisher_exact.html" class='exists'>scipy.stats._stats_py.fisher_exact</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.stats._hypotests.boschloo_exact.html" class='exists'>scipy.stats._hypotests.boschloo_exact</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.stats.contingency.chi2_contingency.html" class='exists'>scipy.stats.contingency.chi2_contingency</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/stats/_hypotests.py#L1180'>/scipy/stats/_hypotests.py#1180</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 10.0, "label": "scipy.stats._qmc.Sobol", "mod": "scipy", "url": "/p/scipy/*/api/scipy.stats._qmc.Sobol"}, {"id": 2, "val": 10.23606797749979, "label": "scipy.stats._stats_py.fisher_exact", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.stats._stats_py.fisher_exact"}, {"id": 3, "val": 10.0, "label": "scipy.stats._hypotests.barnard_exact", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.stats._hypotests.barnard_exact"}, {"id": 4, "val": 10.23606797749979, "label": "scipy.stats.contingency.chi2_contingency", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.stats.contingency.chi2_contingency"}], "links": [{"source": 2, "target": 3, "id": 0}, {"source": 2, "target": 4, "id": 2}, {"source": 1, "target": 3, "id": 5}, {"source": 4, "target": 3, "id": 9}, {"source": 4, "target": 2, "id": 12}, {"source": 3, "target": 2, "id": 15}, {"source": 3, "target": 4, "id": 17}]};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.signal.html'>signal</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.signal._signaltools.html'>_signaltools</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.signal._arraytools.html">_arraytools</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._bsplines.html">_bsplines</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._czt.html">_czt</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._filter_design.html">_filter_design</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._fir_filter_design.html">_fir_filter_design</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._lti_conversion.html">_lti_conversion</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._ltisys.html">_ltisys</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._max_len_seq.html">_max_len_seq</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._max_len_seq_inner.html">_max_len_seq_inner</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._peak_finding.html">_peak_finding</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._peak_finding_utils.html">_peak_finding_utils</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._savitzky_golay.html">_savitzky_golay</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.html">_signaltools</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._sigtools.html">_sigtools</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._sosfilt.html">_sosfilt</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spectral.html">_spectral</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spectral_py.html">_spectral_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._spline.html">_spline</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._upfirdn.html">_upfirdn</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._upfirdn_apply.html">_upfirdn_apply</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._waveforms.html">_waveforms</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._wavelets.html">_wavelets</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.barthann.html">barthann</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.bartlett.html">bartlett</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.blackman.html">blackman</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.blackmanharris.html">blackmanharris</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.bohman.html">bohman</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.boxcar.html">boxcar</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.bsplines.html">bsplines</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.chebwin.html">chebwin</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.cosine.html">cosine</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.exponential.html">exponential</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.filter_design.html">filter_design</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.fir_filter_design.html">fir_filter_design</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.flattop.html">flattop</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.gaussian.html">gaussian</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.general_gaussian.html">general_gaussian</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.hamming.html">hamming</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.hann.html">hann</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.kaiser.html">kaiser</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.lti_conversion.html">lti_conversion</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.ltisys.html">ltisys</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.nuttall.html">nuttall</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.parzen.html">parzen</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.signaltools.html">signaltools</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.spectral.html">spectral</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.spline.html">spline</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.triang.html">triang</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.tukey.html">tukey</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.waveforms.html">waveforms</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.wavelets.html">wavelets</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.windows.html">windows</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.signal._signaltools.residuez.html'>residuez</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._apply_conv_mode.html">_apply_conv_mode</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._bvalfromboundary.html">_bvalfromboundary</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._calc_oa_lens.html">_calc_oa_lens</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._centered.html">_centered</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._compute_factors.html">_compute_factors</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._compute_residues.html">_compute_residues</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._conv_ops.html">_conv_ops</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._fftconv_faster.html">_fftconv_faster</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._filtfilt_gust.html">_filtfilt_gust</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._freq_domain_conv.html">_freq_domain_conv</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._group_poles.html">_group_poles</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._init_freq_conv_axes.html">_init_freq_conv_axes</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._inputs_swap_needed.html">_inputs_swap_needed</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._np_conv_ok.html">_np_conv_ok</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._numeric_arrays.html">_numeric_arrays</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._reverse_and_conj.html">_reverse_and_conj</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._timeit_fast.html">_timeit_fast</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._valfrommode.html">_valfrommode</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._validate_pad.html">_validate_pad</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools._validate_x.html">_validate_x</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.choose_conv_method.html">choose_conv_method</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.cmplx_sort.html">cmplx_sort</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.convolve.html">convolve</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.convolve2d.html">convolve2d</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.correlate.html">correlate</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.correlate2d.html">correlate2d</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.correlation_lags.html">correlation_lags</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.decimate.html">decimate</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.deconvolve.html">deconvolve</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.detrend.html">detrend</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.fftconvolve.html">fftconvolve</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.filtfilt.html">filtfilt</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.hilbert.html">hilbert</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.hilbert2.html">hilbert2</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.invres.html">invres</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.invresz.html">invresz</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.lfilter.html">lfilter</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.lfilter_zi.html">lfilter_zi</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.lfiltic.html">lfiltic</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.medfilt.html">medfilt</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.medfilt2d.html">medfilt2d</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.oaconvolve.html">oaconvolve</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.order_filter.html">order_filter</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.resample.html">resample</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.resample_poly.html">resample_poly</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.residue.html">residue</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.residuez.html">residuez</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.sosfilt.html">sosfilt</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.sosfilt_zi.html">sosfilt_zi</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.sosfiltfilt.html">sosfiltfilt</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.unique_roots.html">unique_roots</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.vectorstrength.html">vectorstrength</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.wiener.html">wiener</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>residuez(b, a, tol=0.001, rtype=&#39;avg&#39;)</code><!-- rendering Extended Summary -->
+                                       <div id="d692eea03d1047f0b579ec645479f8bb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"domain": null, "role": null, "type": "Directive", "value": "M"}, {"type": "text", "value": " is the degree of numerator "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "b", "type": "RefInfo", "version": null}, "type": "Link", "value": "b"}, {"type": "text", "value": " and "}, {"domain": null, "role": null, "type": "Directive", "value": "N"}, {"type": "text", "value": " the degree of denominator "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "a", "type": "RefInfo", "version": null}, "type": "Link", "value": "a"}, {"type": "text", "value": ":              "}], "type": "paragraph"});
+            document.getElementById("d692eea03d1047f0b579ec645479f8bb").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="f75beb6469ce47cd81c6a421390c019a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "        b(z)     b[0] + b[1] z**(-1) + ... + b[M] z**(-M)\nH(z) = ------ = ------------------------------------------\n        a(z)     a[0] + a[1] z**(-1) + ... + a[N] z**(-N)"});
+            document.getElementById("f75beb6469ce47cd81c6a421390c019a").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="769ec98e323f491a81900fd3c8ce3c89"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "then the partial-fraction expansion H(z) is defined as               "}], "type": "paragraph"});
+            document.getElementById("769ec98e323f491a81900fd3c8ce3c89").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="c403dc4dbb5941089e1fb4bdcd21064e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "        r[0]                   r[-1]\n= --------------- + ... + ---------------- + k[0] + k[1]z**(-1) ...\n  (1-p[0]z**(-1))         (1-p[-1]z**(-1))"});
+            document.getElementById("c403dc4dbb5941089e1fb4bdcd21064e").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="bc9862b05df343fcac903a0006a12faf"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If there are any repeated roots (closer than "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "tol", "type": "RefInfo", "version": null}, "type": "Link", "value": "tol"}, {"type": "text", "value": "), then the partial fraction expansion has terms like           "}], "type": "paragraph"});
+            document.getElementById("bc9862b05df343fcac903a0006a12faf").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="8fbe0f47bce54061b4daaac7e5fff24b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "     r[i]              r[i+1]                    r[i+n-1]\n-------------- + ------------------ + ... + ------------------\n(1-p[i]z**(-1))  (1-p[i]z**(-1))**2         (1-p[i]z**(-1))**n"});
+            document.getElementById("8fbe0f47bce54061b4daaac7e5fff24b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="576528efce9541f9b84ce1dd24236370"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This function is used for polynomials in negative powers of z, such as digital filters in DSP.  For positive powers, use "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.signal._signaltools.residue", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "residue"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("576528efce9541f9b84ce1dd24236370").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="289fbe35a30e4287b5faf54e504a264f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "See Notes of "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.signal._signaltools.residue", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "residue"}, {"type": "text", "value": " for details about the algorithm."}], "type": "paragraph"});
+            document.getElementById("289fbe35a30e4287b5faf54e504a264f").innerHTML = html;
+        }
+        init();
+    </script>
+
+<!-- rendering Notes -->
+        <h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="b">b</a> : array_like</dt>
+<dd>
+                <div id="12b6796bf4934a4db24d61e063696f7a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Numerator polynomial coefficients."}], "type": "paragraph"});
+            document.getElementById("12b6796bf4934a4db24d61e063696f7a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="a">a</a> : array_like</dt>
+<dd>
+                <div id="48f50d6940744f8da73308648581b541"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Denominator polynomial coefficients."}], "type": "paragraph"});
+            document.getElementById("48f50d6940744f8da73308648581b541").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="tol">tol</a> : float, optional</dt>
+<dd>
+                <div id="5068432384ff49249e6c978cf05cc5ed"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The tolerance for two roots to be considered equal in terms of the distance between them. Default is 1e-3. See "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.signal._signaltools.unique_roots", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "unique_roots"}, {"type": "text", "value": " for further details."}], "type": "paragraph"});
+            document.getElementById("5068432384ff49249e6c978cf05cc5ed").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="rtype">rtype</a> : {&#39;avg&#39;, &#39;min&#39;, &#39;max&#39;}, optional</dt>
+<dd>
+                <div id="03a3284d072e4f62ae7617ba8f8aa86c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Method for computing a root to represent a group of identical roots. Default is \u0027avg\u0027. See "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.signal._signaltools.unique_roots", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "unique_roots"}, {"type": "text", "value": " for further details."}], "type": "paragraph"});
+            document.getElementById("03a3284d072e4f62ae7617ba8f8aa86c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="r">r</a> : ndarray</dt>
+<dd>
+                <div id="b222b915a021401e87454d3c80c0c7e0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Residues corresponding to the poles. For repeated poles, the residues are ordered to correspond to ascending by power fractions."}], "type": "paragraph"});
+            document.getElementById("b222b915a021401e87454d3c80c0c7e0").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="p">p</a> : ndarray</dt>
+<dd>
+                <div id="d02bd6aadf494c9fa099756acd914a15"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Poles ordered by magnitude in ascending order."}], "type": "paragraph"});
+            document.getElementById("d02bd6aadf494c9fa099756acd914a15").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="k">k</a> : ndarray</dt>
+<dd>
+                <div id="ab21ccf6fa104da3873f86b7cf3af27a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Coefficients of the direct polynomial term."}], "type": "paragraph"});
+            document.getElementById("ab21ccf6fa104da3873f86b7cf3af27a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="75a97da0789d4851bdb3fa52bcf781ea"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Compute partial-fraction expansion of b(z) / a(z)."}], "type": "paragraph"});
+            document.getElementById("75a97da0789d4851bdb3fa52bcf781ea").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.invresz.html" class='exists'>invresz</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.residue.html" class='exists'>residue</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.signal._signaltools.unique_roots.html" class='exists'>unique_roots</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.signal._signaltools.invresz.html" class='exists'>scipy.signal._signaltools.invresz</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.signal._signaltools.residue.html" class='exists'>scipy.signal._signaltools.residue</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/signal/_signaltools.py#L2798'>/scipy/signal/_signaltools.py#2798</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 9.414213562373096, "label": "scipy.signal._signaltools.invresz", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._signaltools.invresz"}, {"id": 2, "val": 9.732050807568877, "label": "scipy.signal._signaltools.residue", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._signaltools.residue"}, {"id": 3, "val": 10.0, "label": "scipy.signal._signaltools.unique_roots", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._signaltools.unique_roots"}], "links": [{"source": 3, "target": 1, "id": 5}, {"source": 3, "target": 2, "id": 7}]};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

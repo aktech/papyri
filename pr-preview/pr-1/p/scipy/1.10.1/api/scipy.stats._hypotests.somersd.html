@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats.html'>stats</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats._hypotests.html'>_hypotests</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.stats._axis_nan_policy.html">_axis_nan_policy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._biasedurn.html">_biasedurn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binned_statistic.html">_binned_statistic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binomtest.html">_binomtest</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._boost.html">_boost</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._common.html">_common</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._constants.html">_constants</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._continuous_distns.html">_continuous_distns</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._covariance.html">_covariance</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._crosstab.html">_crosstab</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._discrete_distns.html">_discrete_distns</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._distn_infrastructure.html">_distn_infrastructure</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._distr_params.html">_distr_params</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._entropy.html">_entropy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._fit.html">_fit</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.html">_hypotests</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._kde.html">_kde</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._ksstats.html">_ksstats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable.html">_levy_stable</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mannwhitneyu.html">_mannwhitneyu</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._morestats.html">_morestats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mstats_basic.html">_mstats_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mstats_extras.html">_mstats_extras</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._multivariate.html">_multivariate</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mvn.html">_mvn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._odds_ratio.html">_odds_ratio</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._page_trend_test.html">_page_trend_test</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.html">_qmc</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc_cy.html">_qmc_cy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._rcont.html">_rcont</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._relative_risk.html">_relative_risk</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling.html">_resampling</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._rvs_sampling.html">_rvs_sampling</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._sobol.html">_sobol</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._statlib.html">_statlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats.html">_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_mstats_common.html">_stats_mstats_common</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.html">_stats_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_pythran.html">_stats_pythran</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._tukeylambda_stats.html">_tukeylambda_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._variation.html">_variation</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._warnings_errors.html">_warnings_errors</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.biasedurn.html">biasedurn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.contingency.html">contingency</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.distributions.html">distributions</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.kde.html">kde</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.morestats.html">morestats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats.html">mstats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats_basic.html">mstats_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats_extras.html">mstats_extras</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mvn.html">mvn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.qmc.html">qmc</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.statlib.html">statlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats._hypotests.somersd.html'>somersd</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.CramerVonMisesResult.html">CramerVonMisesResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.Epps_Singleton_2sampResult.html">Epps_Singleton_2sampResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.TukeyHSDResult.html">TukeyHSDResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests._all_partitions.html">_all_partitions</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests._cdf_cvm.html">_cdf_cvm</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests._cdf_cvm_inf.html">_cdf_cvm_inf</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests._compute_log_combinations.html">_compute_log_combinations</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests._get_binomial_log_p_value_with_nuisance_param.html">_get_binomial_log_p_value_with_nuisance_param</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests._get_wilcoxon_distr.html">_get_wilcoxon_distr</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests._get_wilcoxon_distr2.html">_get_wilcoxon_distr2</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests._poisson_means_test_iv.html">_poisson_means_test_iv</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests._psi1_mod.html">_psi1_mod</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests._pval_cvm_2samp_exact.html">_pval_cvm_2samp_exact</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests._somers_d.html">_somers_d</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests._tau_b.html">_tau_b</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests._tukey_hsd_iv.html">_tukey_hsd_iv</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.barnard_exact.html">barnard_exact</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.boschloo_exact.html">boschloo_exact</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.cramervonmises.html">cramervonmises</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.cramervonmises_2samp.html">cramervonmises_2samp</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.epps_singleton_2samp.html">epps_singleton_2samp</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.poisson_means_test.html">poisson_means_test</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.somersd.html">somersd</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.tukey_hsd.html">tukey_hsd</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>somersd(x, y=None, alternative=&#39;two-sided&#39;)</code><!-- rendering Extended Summary -->
+                                       <div id="b5d71d246e3146e9ba9180225823fc77"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Like Kendall\u0027s "}, {"type": "Math", "value": "\\tau"}, {"type": "text", "value": ", Somers\u0027 "}, {"type": "Math", "value": "D"}, {"type": "text", "value": " is a measure of the correspondence between two rankings. Both statistics consider the difference between the number of concordant and discordant pairs in two rankings "}, {"type": "Math", "value": "X"}, {"type": "text", "value": " and "}, {"type": "Math", "value": "Y"}, {"type": "text", "value": ", and both are normalized such that values close  to 1 indicate strong agreement and values close to -1 indicate strong disagreement. They differ in how they are normalized. To show the relationship, Somers\u0027 "}, {"type": "Math", "value": "D"}, {"type": "text", "value": " can be defined in terms of Kendall\u0027s "}, {"type": "Math", "value": "\\tau_a"}, {"type": "text", "value": ":"}], "type": "paragraph"});
+            document.getElementById("b5d71d246e3146e9ba9180225823fc77").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$D(Y|X) = \frac{\tau_a(X, Y)}{\tau_a(X, X)}$$</span>
+
+                               <div id="f323a120b3284afb92dbf2962efc3490"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Suppose the first ranking "}, {"type": "Math", "value": "X"}, {"type": "text", "value": " has "}, {"type": "Math", "value": "r"}, {"type": "text", "value": " distinct ranks and the second ranking "}, {"type": "Math", "value": "Y"}, {"type": "text", "value": " has "}, {"type": "Math", "value": "s"}, {"type": "text", "value": " distinct ranks. These two lists of "}, {"type": "Math", "value": "n"}, {"type": "text", "value": " rankings can also be viewed as an "}, {"type": "Math", "value": "r \\times s"}, {"type": "text", "value": " contingency table in which element "}, {"type": "Math", "value": "i, j"}, {"type": "text", "value": " is the number of rank pairs with rank "}, {"type": "Math", "value": "i"}, {"type": "text", "value": " in ranking "}, {"type": "Math", "value": "X"}, {"type": "text", "value": " and rank "}, {"type": "Math", "value": "j"}, {"type": "text", "value": " in ranking "}, {"type": "Math", "value": "Y"}, {"type": "text", "value": ". Accordingly, "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.stats._hypotests.somersd", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "somersd"}, {"type": "text", "value": " also allows the input data to be supplied as a single, 2D contingency table instead of as two separate, 1D rankings."}], "type": "paragraph"});
+            document.getElementById("f323a120b3284afb92dbf2962efc3490").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="b51fa0aae03f40b6ab60c659457295ca"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Note that the definition of Somers\u0027 "}, {"type": "Math", "value": "D"}, {"type": "text", "value": " is asymmetric: in general, "}, {"type": "Math", "value": "D(Y|X) \\neq D(X|Y)"}, {"type": "text", "value": ". "}, {"type": "inlineCode", "value": "somersd(x, y)"}, {"type": "text", "value": " calculates Somers\u0027 "}, {"type": "Math", "value": "D(Y|X)"}, {"type": "text", "value": ": the \"row\" variable "}, {"type": "Math", "value": "X"}, {"type": "text", "value": " is treated as an independent variable, and the \"column\" variable "}, {"type": "Math", "value": "Y"}, {"type": "text", "value": " is dependent. For Somers\u0027 "}, {"type": "Math", "value": "D(X|Y)"}, {"type": "text", "value": ", swap the input lists or transpose the input table."}], "type": "paragraph"});
+            document.getElementById("b51fa0aae03f40b6ab60c659457295ca").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="596c884afc2f4e2ea8e66ddeec53d7e5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This function follows the contingency table approach of  and . "}, {"children": [{"type": "text", "value": "p"}], "type": "emphasis"}, {"type": "text", "value": "-values are computed based on an asymptotic approximation of the test statistic distribution under the null hypothesis "}, {"type": "Math", "value": "D=0"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("596c884afc2f4e2ea8e66ddeec53d7e5").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="0f1959f5f61140a8be78f0d07b862a4c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Theoretically, hypothesis tests based on Kendall\u0027s "}, {"type": "Math", "value": "tau"}, {"type": "text", "value": " and Somers\u0027 "}, {"type": "Math", "value": "D"}, {"type": "text", "value": " should be identical. However, the "}, {"children": [{"type": "text", "value": "p"}], "type": "emphasis"}, {"type": "text", "value": "-values returned by "}, {"domain": null, "role": null, "type": "Directive", "value": "kendalltau"}, {"type": "text", "value": " are based on the null hypothesis of "}, {"children": [{"type": "text", "value": "independence"}], "type": "emphasis"}, {"type": "text", "value": " between "}, {"type": "Math", "value": "X"}, {"type": "text", "value": " and "}, {"type": "Math", "value": "Y"}, {"type": "text", "value": " (i.e. the population from which pairs in "}, {"type": "Math", "value": "X"}, {"type": "text", "value": " and "}, {"type": "Math", "value": "Y"}, {"type": "text", "value": " are sampled contains equal numbers of all possible pairs), which is more specific than the null hypothesis "}, {"type": "Math", "value": "D=0"}, {"type": "text", "value": " used here. If the null hypothesis of independence is desired, it is acceptable to use the "}, {"children": [{"type": "text", "value": "p"}], "type": "emphasis"}, {"type": "text", "value": "-value returned by "}, {"domain": null, "role": null, "type": "Directive", "value": "kendalltau"}, {"type": "text", "value": " with the statistic returned by "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.stats._hypotests.somersd", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "somersd"}, {"type": "text", "value": " and vice versa. For more information, see ."}], "type": "paragraph"});
+            document.getElementById("0f1959f5f61140a8be78f0d07b862a4c").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="4e9df22b032942b9b3b194b0d8af49cf"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Contingency tables are formatted according to the convention used by SAS and R: the first ranking supplied ("}, {"type": "inlineCode", "value": "x"}, {"type": "text", "value": ") is the \"row\" variable, and the second ranking supplied ("}, {"type": "inlineCode", "value": "y"}, {"type": "text", "value": ") is the \"column\" variable. This is opposite the convention of Somers\u0027 original paper ."}], "type": "paragraph"});
+            document.getElementById("4e9df22b032942b9b3b194b0d8af49cf").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="x">x</a> : array_like</dt>
+<dd>
+                <div id="1cb9c07896014f5b91a8886eb608cda5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "1D array of rankings, treated as the (row) independent variable. Alternatively, a 2D contingency table."}], "type": "paragraph"});
+            document.getElementById("1cb9c07896014f5b91a8886eb608cda5").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="y">y</a> : array_like, optional</dt>
+<dd>
+                <div id="265f583d32574142a8d5cede95d1a3d2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": " is a 1D array of rankings, "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "y", "type": "RefInfo", "version": null}, "type": "Link", "value": "y"}, {"type": "text", "value": " is a 1D array of rankings of the same length, treated as the (column) dependent variable. If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": " is 2D, "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "y", "type": "RefInfo", "version": null}, "type": "Link", "value": "y"}, {"type": "text", "value": " is ignored."}], "type": "paragraph"});
+            document.getElementById("265f583d32574142a8d5cede95d1a3d2").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="alternative">alternative</a> : {&#39;two-sided&#39;, &#39;less&#39;, &#39;greater&#39;}, optional</dt>
+<dd>
+                <div id="b1d804ff761e402ab1bf91980852e4d6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Defines the alternative hypothesis. Default is \u0027two-sided\u0027. The following options are available: * \u0027two-sided\u0027: the rank correlation is nonzero * \u0027less\u0027: the rank correlation is negative (less than zero) * \u0027greater\u0027:  the rank correlation is positive (greater than zero)"}], "type": "paragraph"});
+            document.getElementById("b1d804ff761e402ab1bf91980852e4d6").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="res">res</a> : SomersDResult</dt>
+<dd>
+                <div id="30cafce3cd2b420c87d3c46d96d91b8b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A "}, {"domain": null, "role": null, "type": "Directive", "value": "SomersDResult"}, {"type": "text", "value": " object with the following fields:"}], "type": "paragraph"});
+            document.getElementById("30cafce3cd2b420c87d3c46d96d91b8b").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <blockquote><!-- deflist -->
+           <dl>
+               <dt>                <div id="7c43066b89664ce5935bda15eb39ef38"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "statistic"}], "type": "paragraph"});
+            document.getElementById("7c43066b89664ce5935bda15eb39ef38").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="c077414cbdf64d4ea835a705da4d21ba"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "statistic"}], "type": "paragraph"});
+            document.getElementById("c077414cbdf64d4ea835a705da4d21ba").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="ba4036289f1541aab5126fbde996b5d0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "pvalue"}], "type": "paragraph"});
+            document.getElementById("ba4036289f1541aab5126fbde996b5d0").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="3f14fa5e23094a05bae9d9a0795867c7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "pvalue"}], "type": "paragraph"});
+            document.getElementById("3f14fa5e23094a05bae9d9a0795867c7").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="ca704644cd3541da99b10f32c0873fae"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "table"}], "type": "paragraph"});
+            document.getElementById("ca704644cd3541da99b10f32c0873fae").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="6a0de2a6aa864ad985c6d5f832415f93"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "table"}], "type": "paragraph"});
+            document.getElementById("6a0de2a6aa864ad985c6d5f832415f93").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+</blockquote>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="8083cbae5fcd4c659e70d4f62401d67b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Calculates Somers\u0027 D, an asymmetric measure of ordinal association."}], "type": "paragraph"});
+            document.getElementById("8083cbae5fcd4c659e70d4f62401d67b").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/current-module/current-version/to-resolve/kendalltau.html.html" class='exists'>kendalltau</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="5cca534bf02e43b2a593395f9977d1cf"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "Calculates Kendall\u0027s tau, another correlation measure."});
+            document.getElementById("5cca534bf02e43b2a593395f9977d1cf").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/current-module/current-version/to-resolve/pearsonr.html.html" class='exists'>pearsonr</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="de7c5f66091a44de84868f3c36cc318d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "Calculates a Pearson correlation coefficient."});
+            document.getElementById("de7c5f66091a44de84868f3c36cc318d").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/current-module/current-version/to-resolve/spearmanr.html.html" class='exists'>spearmanr</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="562315e5c69448f5ba66bc09f19be20d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "Calculates a Spearman rank-order correlation coefficient."});
+            document.getElementById("562315e5c69448f5ba66bc09f19be20d").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.weightedtau.html" class='exists'>weightedtau</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="0e9a6e8c4c7248ffa355303170e04dc2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "Computes a weighted version of Kendall\u0027s tau."});
+            document.getElementById("0e9a6e8c4c7248ffa355303170e04dc2").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+                           We calculate Somers&#39; D for the example given in [4]_, in which a hotel
+chain owner seeks to determine the association between hotel room
+cleanliness and customer satisfaction. The independent variable, hotel
+room cleanliness, is ranked on an ordinal scale: &#34;below average (1)&#34;,
+&#34;average (2)&#34;, or &#34;above average (3)&#34;. The dependent variable, customer
+satisfaction, is ranked on a second scale: &#34;very dissatisfied (1)&#34;,
+&#34;moderately dissatisfied (2)&#34;, &#34;neither dissatisfied nor satisfied (3)&#34;,
+&#34;moderately satisfied (4)&#34;, or &#34;very satisfied (5)&#34;. 189 customers
+respond to the survey, and the results are cast into a contingency table
+with the hotel room cleanliness as the &#34;row&#34; variable and customer
+satisfaction as the &#34;column&#34; variable.  
+            
+                           +-----+-----+-----+-----+-----+-----+
+|     | (1) | (2) | (3) | (4) | (5) |
++=====+=====+=====+=====+=====+=====+
+| (1) | 27  | 25  | 14  | 7   | 0   |
++-----+-----+-----+-----+-----+-----+
+| (2) | 7   | 14  | 18  | 35  | 12  |
++-----+-----+-----+-----+-----+-----+
+| (3) | 1   | 3   | 2   | 7   | 17  |
++-----+-----+-----+-----+-----+-----+  
+            
+                           For example, 27 customers assigned their room a cleanliness ranking of
+&#34;below average (1)&#34; and a corresponding satisfaction of &#34;very
+dissatisfied (1)&#34;. We perform the analysis as follows.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">stats</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">somersd</span><br><span class='nsl'>...&nbsp;</span><span class="">table</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">[</span><span class="">[</span><span class="mi">27</span><span class="">,</span><span class=""> </span><span class="mi">25</span><span class="">,</span><span class=""> </span><span class="mi">14</span><span class="">,</span><span class=""> </span><span class="mi">7</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">7</span><span class="">,</span><span class=""> </span><span class="mi">14</span><span class="">,</span><span class=""> </span><span class="mi">18</span><span class="">,</span><span class=""> </span><span class="mi">35</span><span class="">,</span><span class=""> </span><span class="mi">12</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">7</span><span class="">,</span><span class=""> </span><span class="mi">17</span><span class="">]</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">somersd</span><span class="">(</span><span class="">table</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class="o">.</span><span class="">statistic</span>
+0.6032766111513396</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">res</span><span class="o">.</span><span class="">pvalue</span>
+1.0007091191074533e-27</pre>
+            
+                           The value of the Somers&#39; D statistic is approximately 0.6, indicating
+a positive correlation between room cleanliness and customer satisfaction
+in the sample.
+The *p*-value is very small, indicating a very small probability of
+observing such an extreme value of the statistic under the null
+hypothesis that the statistic of the entire population (from which
+our sample of 189 customers is drawn) is zero. This supports the
+alternative hypothesis that the true value of Somers&#39; D for the population
+is nonzero.  
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.stats._hypotests.somersd.html" class='exists'>scipy.stats._hypotests.somersd</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/stats/_hypotests.py#L701'>/scipy/stats/_hypotests.py#701</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 9.414213562373096, "label": "spearmanr", "mod": "spearmanr", "url": "/p/current-module/current-version/to-resolve/spearmanr"}, {"id": 2, "val": 9.0, "label": "kendalltau", "mod": "kendalltau", "url": "/p/current-module/current-version/to-resolve/kendalltau"}, {"id": 4, "val": 9.414213562373096, "label": "scipy.stats._stats_py.weightedtau", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.stats._stats_py.weightedtau"}, {"id": 5, "val": 9.0, "label": "pearsonr", "mod": "pearsonr", "url": "/p/current-module/current-version/to-resolve/pearsonr"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

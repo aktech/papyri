@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize.html'>optimize</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize._shgo.html'>_shgo</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.optimize.__nnls.html">__nnls</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._basinhopping.html">_basinhopping</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._bglu_dense.html">_bglu_dense</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._cobyla.html">_cobyla</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._cobyla_py.html">_cobyla_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._constraints.html">_constraints</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentiable_functions.html">_differentiable_functions</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentialevolution.html">_differentialevolution</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._direct.html">_direct</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._direct_py.html">_direct_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._dual_annealing.html">_dual_annealing</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._group_columns.html">_group_columns</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._hessian_update_strategy.html">_hessian_update_strategy</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._highs.html">_highs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lbfgsb.html">_lbfgsb</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lbfgsb_py.html">_lbfgsb_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linesearch.html">_linesearch</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog.html">_linprog</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_doc.html">_linprog_doc</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_highs.html">_linprog_highs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_ip.html">_linprog_ip</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_rs.html">_linprog_rs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_simplex.html">_linprog_simplex</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_util.html">_linprog_util</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lsap.html">_lsap</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lsq.html">_lsq</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._milp.html">_milp</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minimize.html">_minimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minpack.html">_minpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minpack2.html">_minpack2</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minpack_py.html">_minpack_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._moduleTNC.html">_moduleTNC</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nnls.html">_nnls</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.html">_nonlin</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._numdiff.html">_numdiff</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.html">_optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._qap.html">_qap</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._remove_redundancy.html">_remove_redundancy</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._root.html">_root</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._root_scalar.html">_root_scalar</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._shgo.html">_shgo</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._shgo_lib.html">_shgo_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._slsqp.html">_slsqp</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._slsqp_py.html">_slsqp_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._spectral.html">_spectral</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._tnc.html">_tnc</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trlib.html">_trlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion.html">_trustregion</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_constr.html">_trustregion_constr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_dogleg.html">_trustregion_dogleg</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_exact.html">_trustregion_exact</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_krylov.html">_trustregion_krylov</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_ncg.html">_trustregion_ncg</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros.html">_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros_py.html">_zeros_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.cobyla.html">cobyla</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.lbfgsb.html">lbfgsb</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.linesearch.html">linesearch</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.minpack.html">minpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.minpack2.html">minpack2</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.moduleTNC.html">moduleTNC</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.nonlin.html">nonlin</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.slsqp.html">slsqp</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.tnc.html">tnc</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.zeros.html">zeros</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize._shgo.shgo.html'>shgo</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.optimize._shgo.LMap.html">LMap</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._shgo.LMapCache.html">LMapCache</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._shgo.SHGO.html">SHGO</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._shgo.shgo.html">shgo</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>shgo(func, bounds, args=(), constraints=None, n=None, iters=1, callback=None, minimizer_kwargs=None, options=None, sampling_method=&#39;simplicial&#39;)</code><!-- rendering Extended Summary -->
+                                       <div id="d1fe8330fc834ac1b31d0eaf33251aa2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "SHGO stands for \"simplicial homology global optimization\"."}], "type": "paragraph"});
+            document.getElementById("d1fe8330fc834ac1b31d0eaf33251aa2").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="b3f8e19385fa48f2a0f31844567e6891"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Global optimization using simplicial homology global optimization . Appropriate for solving general purpose NLP and blackbox optimization problems to global optimality (low-dimensional problems)."}], "type": "paragraph"});
+            document.getElementById("b3f8e19385fa48f2a0f31844567e6891").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="56f5ded401d649be8f460082384ae81c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "In general, the optimization problems are of the form      "}], "type": "paragraph"});
+            document.getElementById("56f5ded401d649be8f460082384ae81c").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="819c20c2870547d195e5cf6a794f4835"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "minimize f(x) subject to\n\ng_i(x) \u003e= 0,  i = 1,...,m\nh_j(x)  = 0,  j = 1,...,p"});
+            document.getElementById("819c20c2870547d195e5cf6a794f4835").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="03b1dd7ad77c404e95274a35d4d49283"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "where x is a vector of one or more variables. "}, {"type": "inlineCode", "value": "f(x)"}, {"type": "text", "value": " is the objective function "}, {"type": "inlineCode", "value": "R^n -\u003e R"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "g_i(x)"}, {"type": "text", "value": " are the inequality constraints, and "}, {"type": "inlineCode", "value": "h_j(x)"}, {"type": "text", "value": " are the equality constraints."}], "type": "paragraph"});
+            document.getElementById("03b1dd7ad77c404e95274a35d4d49283").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="60092f935a37417aaf56701e3766f108"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Optionally, the lower and upper bounds for each element in x can also be specified using the "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "bounds", "type": "RefInfo", "version": null}, "type": "Link", "value": "bounds"}, {"type": "text", "value": " argument."}], "type": "paragraph"});
+            document.getElementById("60092f935a37417aaf56701e3766f108").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="7db0b9d41e644dd6a87f071516246848"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "While most of the theoretical advantages of SHGO are only proven for when "}, {"type": "inlineCode", "value": "f(x)"}, {"type": "text", "value": " is a Lipschitz smooth function, the algorithm is also proven to converge to the global optimum for the more general case where "}, {"type": "inlineCode", "value": "f(x)"}, {"type": "text", "value": " is non-continuous, non-convex and non-smooth, if the default sampling method is used ."}], "type": "paragraph"});
+            document.getElementById("7db0b9d41e644dd6a87f071516246848").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="22a8a1114bf54a2b82c388f5547858ca"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The local search method may be specified using the "}, {"type": "inlineCode", "value": "minimizer_kwargs"}, {"type": "text", "value": " parameter which is passed on to "}, {"type": "inlineCode", "value": "scipy.optimize.minimize"}, {"type": "text", "value": ". By default, the "}, {"type": "inlineCode", "value": "SLSQP"}, {"type": "text", "value": " method is used. In general, it is recommended to use the "}, {"type": "inlineCode", "value": "SLSQP"}, {"type": "text", "value": " or "}, {"type": "inlineCode", "value": "COBYLA"}, {"type": "text", "value": " local minimization if inequality constraints are defined for the problem since the other methods do not use constraints."}], "type": "paragraph"});
+            document.getElementById("22a8a1114bf54a2b82c388f5547858ca").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="629f7e5c97d44eb897d69a1d6ff994a5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The "}, {"type": "inlineCode", "value": "halton"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "sobol"}, {"type": "text", "value": " method points are generated using "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.stats.qmc", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "scipy.stats.qmc"}, {"type": "text", "value": ". Any other QMC method could be used."}], "type": "paragraph"});
+            document.getElementById("629f7e5c97d44eb897d69a1d6ff994a5").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="func">func</a> : callable</dt>
+<dd>
+                <div id="eca0968f20cc4ede919ca2c05627423e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The objective function to be minimized.  Must be in the form "}, {"type": "inlineCode", "value": "f(x, *args)"}, {"type": "text", "value": ", where "}, {"type": "inlineCode", "value": "x"}, {"type": "text", "value": " is the argument in the form of a 1-D array and "}, {"type": "inlineCode", "value": "args"}, {"type": "text", "value": " is a tuple of any additional fixed parameters needed to completely specify the function."}], "type": "paragraph"});
+            document.getElementById("eca0968f20cc4ede919ca2c05627423e").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="bounds">bounds</a> : sequence or `Bounds`</dt>
+<dd>
+                <div id="3fb7542e66064561b2962006d9f8d6bd"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Bounds for variables. There are two ways to specify the bounds:"}], "type": "paragraph"});
+            document.getElementById("3fb7542e66064561b2962006d9f8d6bd").innerHTML = html;
+        }
+        init();
+    </script>
+
+           <ol>               <li>                               <div id="702e3f5b49654ed290cc1620e675c371"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Instance of "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.optimize._constraints.Bounds", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "Bounds"}, {"type": "text", "value": " class."}], "type": "paragraph"});
+            document.getElementById("702e3f5b49654ed290cc1620e675c371").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="46a1dc48d1ec4be381d2d661b94da589"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Sequence of "}, {"type": "inlineCode", "value": "(min, max)"}, {"type": "text", "value": " pairs for each element in "}, {"domain": null, "role": null, "type": "Directive", "value": "x"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("46a1dc48d1ec4be381d2d661b94da589").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ol>
+
+</dd>
+<dt><a id="args">args</a> : tuple, optional</dt>
+<dd>
+                <div id="095833682c70404aa55952faa224dee1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Any additional fixed parameters needed to completely specify the objective function."}], "type": "paragraph"});
+            document.getElementById("095833682c70404aa55952faa224dee1").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="constraints">constraints</a> : dict or sequence of dict, optional</dt>
+<dd>
+                <div id="d18b3f14901e4909a359162fc33f38b1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Constraints definition. Function(s) "}, {"type": "inlineCode", "value": "R**n"}, {"type": "text", "value": " in the form      "}], "type": "paragraph"});
+            document.getElementById("d18b3f14901e4909a359162fc33f38b1").innerHTML = html;
+        }
+        init();
+    </script>
+
+                <div id="b20160233c3b40199374fed89f7a412a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "g(x) \u003e= 0 applied as g : R^n -\u003e R^m\nh(x) == 0 applied as h : R^n -\u003e R^p"});
+            document.getElementById("b20160233c3b40199374fed89f7a412a").innerHTML = html;
+        }
+        init();
+    </script>
+
+                <div id="88ce664ffd2543368746d8ffc7144aaf"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Each constraint is defined in a dictionary with fields:"}], "type": "paragraph"});
+            document.getElementById("88ce664ffd2543368746d8ffc7144aaf").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <blockquote><!-- deflist -->
+           <dl>
+               <dt>                <div id="15eb6f3fb687449e87e59bf626c690bc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "type"}], "type": "paragraph"});
+            document.getElementById("15eb6f3fb687449e87e59bf626c690bc").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="318598040fd34e20911a9ee3733b5a48"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "type"}], "type": "paragraph"});
+            document.getElementById("318598040fd34e20911a9ee3733b5a48").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="c60d4c6442ac4773a7e1a8f270ee937e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "fun"}], "type": "paragraph"});
+            document.getElementById("c60d4c6442ac4773a7e1a8f270ee937e").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="60795c2cfde5455f8f5b01ea9ed90da7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "fun"}], "type": "paragraph"});
+            document.getElementById("60795c2cfde5455f8f5b01ea9ed90da7").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="a67e3844c1ab44c1ba6a901f7722dc33"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "jac"}], "type": "paragraph"});
+            document.getElementById("a67e3844c1ab44c1ba6a901f7722dc33").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="93d7e49d97864e18a2b3327c53c18f04"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "jac"}], "type": "paragraph"});
+            document.getElementById("93d7e49d97864e18a2b3327c53c18f04").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="4df55c6d51034cc48621c2b90281d0d9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "args"}], "type": "paragraph"});
+            document.getElementById("4df55c6d51034cc48621c2b90281d0d9").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="9cedb2d1b4664a9eb160009971966927"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "args"}], "type": "paragraph"});
+            document.getElementById("9cedb2d1b4664a9eb160009971966927").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+</blockquote>
+
+                <div id="f54acae15ac741a3a1243849e801ba27"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Equality constraint means that the constraint function result is to be zero whereas inequality means that it is to be non-negative. Note that COBYLA only supports inequality constraints."}], "type": "paragraph"});
+            document.getElementById("f54acae15ac741a3a1243849e801ba27").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <div class='admonition'>
+    <div>note </div>
+                        <div id="900c37881aab4072a5d480daa0a8aad1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Only the COBYLA and SLSQP local minimize methods currently support constraint arguments. If the "}, {"type": "inlineCode", "value": "constraints"}, {"type": "text", "value": " sequence used in the local optimization problem is not defined in "}, {"type": "inlineCode", "value": "minimizer_kwargs"}, {"type": "text", "value": " and a constrained method is used then the global "}, {"type": "inlineCode", "value": "constraints"}, {"type": "text", "value": " will be used. (Defining a "}, {"type": "inlineCode", "value": "constraints"}, {"type": "text", "value": " sequence in "}, {"type": "inlineCode", "value": "minimizer_kwargs"}, {"type": "text", "value": " means that "}, {"type": "inlineCode", "value": "constraints"}, {"type": "text", "value": " will not be added so if equality constraints and so forth need to be added then the inequality functions in "}, {"type": "inlineCode", "value": "constraints"}, {"type": "text", "value": " need to be added to "}, {"type": "inlineCode", "value": "minimizer_kwargs"}, {"type": "text", "value": " too)."}], "type": "paragraph"});
+            document.getElementById("900c37881aab4072a5d480daa0a8aad1").innerHTML = html;
+        }
+        init();
+    </script>
+
+</div>
+
+
+</dd>
+<dt><a id="n">n</a> : int, optional</dt>
+<dd>
+                <div id="07e71c4e469f4ddd949cb620638a6c29"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Number of sampling points used in the construction of the simplicial complex. Note that this argument is only used for "}, {"type": "inlineCode", "value": "sobol"}, {"type": "text", "value": " and other arbitrary "}, {"domain": null, "role": null, "type": "Directive", "value": "sampling_methods"}, {"type": "text", "value": ". In case of "}, {"type": "inlineCode", "value": "sobol"}, {"type": "text", "value": ", it must be a power of 2: "}, {"type": "inlineCode", "value": "n=2**m"}, {"type": "text", "value": ", and the argument will automatically be converted to the next higher power of 2. Default is 100 for "}, {"type": "inlineCode", "value": "sampling_method=\u0027simplicial\u0027"}, {"type": "text", "value": " and 128 for "}, {"type": "inlineCode", "value": "sampling_method=\u0027sobol\u0027"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("07e71c4e469f4ddd949cb620638a6c29").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="iters">iters</a> : int, optional</dt>
+<dd>
+                <div id="1ba21b732e0d4b2fba0934ec341d90c6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Number of iterations used in the construction of the simplicial complex. Default is 1."}], "type": "paragraph"});
+            document.getElementById("1ba21b732e0d4b2fba0934ec341d90c6").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="callback">callback</a> : callable, optional</dt>
+<dd>
+                <div id="6327fd1771354496b54634d503763d67"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Called after each iteration, as "}, {"type": "inlineCode", "value": "callback(xk)"}, {"type": "text", "value": ", where "}, {"type": "inlineCode", "value": "xk"}, {"type": "text", "value": " is the current parameter vector."}], "type": "paragraph"});
+            document.getElementById("6327fd1771354496b54634d503763d67").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="minimizer_kwargs">minimizer_kwargs</a> : dict, optional</dt>
+<dd>
+                <div id="ac5c02ee251d4105bc0fb2881527b1e7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Extra keyword arguments to be passed to the minimizer "}, {"type": "inlineCode", "value": "scipy.optimize.minimize"}, {"type": "text", "value": " Some important options could be:"}], "type": "paragraph"});
+            document.getElementById("ac5c02ee251d4105bc0fb2881527b1e7").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <blockquote>           <ul>               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="19c675aa80d6451ba2c74f881ee237a4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "method"}], "type": "paragraph"});
+            document.getElementById("19c675aa80d6451ba2c74f881ee237a4").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="0d439b066c2b44a189519db3f0f59cbd"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "method"}], "type": "paragraph"});
+            document.getElementById("0d439b066c2b44a189519db3f0f59cbd").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="d7046d7732254922ba9be2d28efcfd62"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "args"}], "type": "paragraph"});
+            document.getElementById("d7046d7732254922ba9be2d28efcfd62").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="42560c53be524fab819a464a99190c3c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "args"}], "type": "paragraph"});
+            document.getElementById("42560c53be524fab819a464a99190c3c").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="d2928ce043ee40428b251cf028c579b5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "options"}], "type": "paragraph"});
+            document.getElementById("d2928ce043ee40428b251cf028c579b5").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="63688f4bc38849a38f0499b4722a8dc2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "options"}], "type": "paragraph"});
+            document.getElementById("63688f4bc38849a38f0499b4722a8dc2").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+            </ul>
+</blockquote>
+
+</dd>
+<dt><a id="options">options</a> : dict, optional</dt>
+<dd>
+                <div id="2d026bf0fbef4a33b4e7652aa258df39"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A dictionary of solver options. Many of the options specified for the global routine are also passed to the scipy.optimize.minimize routine. The options that are also passed to the local routine are marked with \"(L)\"."}], "type": "paragraph"});
+            document.getElementById("2d026bf0fbef4a33b4e7652aa258df39").innerHTML = html;
+        }
+        init();
+    </script>
+
+                <div id="102efccb23c44c9eb7a06d84d2178165"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Stopping criteria, the algorithm will terminate if any of the specified criteria are met. However, the default algorithm does not require any to be specified:"}], "type": "paragraph"});
+            document.getElementById("102efccb23c44c9eb7a06d84d2178165").innerHTML = html;
+        }
+        init();
+    </script>
+
+           <ul>               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="665dfd5d901e456daafdf63db58fc120"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "maxfev"}], "type": "paragraph"});
+            document.getElementById("665dfd5d901e456daafdf63db58fc120").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="faac73df23a74fb5b6de124f1915ecc1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "maxfev"}], "type": "paragraph"});
+            document.getElementById("faac73df23a74fb5b6de124f1915ecc1").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="757f60db01a24e6f8d941682f0782839"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "f_min"}], "type": "paragraph"});
+            document.getElementById("757f60db01a24e6f8d941682f0782839").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="d68499003d0d4bfa86e9e56cb2c45382"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Specify the minimum objective function value, if it is known."}], "type": "paragraph"});
+            document.getElementById("d68499003d0d4bfa86e9e56cb2c45382").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="729d1b91b94b4e3d85757ec29cce4286"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "f_tol"}], "type": "paragraph"});
+            document.getElementById("729d1b91b94b4e3d85757ec29cce4286").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="75aa23cd3c684174809831641ecb3722"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "f_tol"}], "type": "paragraph"});
+            document.getElementById("75aa23cd3c684174809831641ecb3722").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="fe73ea6ddb9d49fa8e34d297c3aeb757"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "maxiter"}], "type": "paragraph"});
+            document.getElementById("fe73ea6ddb9d49fa8e34d297c3aeb757").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="d6ff5e3debe94be9bc677db6f3a1dbed"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "maxiter"}], "type": "paragraph"});
+            document.getElementById("d6ff5e3debe94be9bc677db6f3a1dbed").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="043a2fbffd8e458d81988c91992a7c21"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "maxev"}], "type": "paragraph"});
+            document.getElementById("043a2fbffd8e458d81988c91992a7c21").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="73c059597590413390f07ba89e3d6624"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "maxev"}], "type": "paragraph"});
+            document.getElementById("73c059597590413390f07ba89e3d6624").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="51689169bbbc436797955eaebfafcd47"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "maxtime"}], "type": "paragraph"});
+            document.getElementById("51689169bbbc436797955eaebfafcd47").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="88cce6b2ef7548328f92f8356026e51e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "maxtime"}], "type": "paragraph"});
+            document.getElementById("88cce6b2ef7548328f92f8356026e51e").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="0b5fbafff48e4a5a8e4996f5241ea3ef"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "minhgrd"}], "type": "paragraph"});
+            document.getElementById("0b5fbafff48e4a5a8e4996f5241ea3ef").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="aedc2518b54f4aeba47dc9d2ec991d5e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "minhgrd"}], "type": "paragraph"});
+            document.getElementById("aedc2518b54f4aeba47dc9d2ec991d5e").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+            </ul>
+
+                <div id="e70646c77c8b44e8b663ab4be8afe819"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Objective function knowledge:"}], "type": "paragraph"});
+            document.getElementById("e70646c77c8b44e8b663ab4be8afe819").innerHTML = html;
+        }
+        init();
+    </script>
+
+           <ul>               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="2c3b5c8a7f7e4e4283a3f7a160f0a475"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "symmetry"}], "type": "paragraph"});
+            document.getElementById("2c3b5c8a7f7e4e4283a3f7a160f0a475").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="689215efd98e478dba4caeecd77163cc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "symmetry"}], "type": "paragraph"});
+            document.getElementById("689215efd98e478dba4caeecd77163cc").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="f9171b9bea7847d8be77479aeaba134f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "jac"}], "type": "paragraph"});
+            document.getElementById("f9171b9bea7847d8be77479aeaba134f").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="cff59d4875bd4260aa85406bc842245a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "jac"}], "type": "paragraph"});
+            document.getElementById("cff59d4875bd4260aa85406bc842245a").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="21648b91763f474dbb6ade1c5d26a485"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "hess,hessp"}], "type": "paragraph"});
+            document.getElementById("21648b91763f474dbb6ade1c5d26a485").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="953675ada22746c59c7931857cad5e4d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "hess, hessp"}], "type": "paragraph"});
+            document.getElementById("953675ada22746c59c7931857cad5e4d").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+            </ul>
+
+                <div id="e8314fc9d6894cc69afc23de5f6c2026"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Algorithm settings:"}], "type": "paragraph"});
+            document.getElementById("e8314fc9d6894cc69afc23de5f6c2026").innerHTML = html;
+        }
+        init();
+    </script>
+
+           <ul>               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="202b575c537d47ad956e79a6002b7ecd"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "minimize_every_iter"}], "type": "paragraph"});
+            document.getElementById("202b575c537d47ad956e79a6002b7ecd").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="9ee6a20dd05347dbb089f108aaef356b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "minimize_every_iter"}], "type": "paragraph"});
+            document.getElementById("9ee6a20dd05347dbb089f108aaef356b").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="71a0b413528f4cc3926b99189df04a62"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "local_iter"}], "type": "paragraph"});
+            document.getElementById("71a0b413528f4cc3926b99189df04a62").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="4bf3f04c2526494e85c070e7d9078530"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "local_iter"}], "type": "paragraph"});
+            document.getElementById("4bf3f04c2526494e85c070e7d9078530").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="2642739a567944009102b4dd561f415c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "infty_constraints: bool"}], "type": "paragraph"});
+            document.getElementById("2642739a567944009102b4dd561f415c").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="6e75eb85974c48178e6bba67b5faf461"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If True then any sampling points generated which are outside will     the feasible domain will be saved and given an objective function     value of "}, {"type": "inlineCode", "value": "inf"}, {"type": "text", "value": ". If False then these points will be discarded.     Using this functionality could lead to higher performance with     respect to function evaluations before the global minimum is found,     specifying False will use less memory at the cost of a slight     decrease in performance. Defaults to True."}], "type": "paragraph"});
+            document.getElementById("6e75eb85974c48178e6bba67b5faf461").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+            </ul>
+
+                <div id="05bd87c23a244dbe80c206ef633a6ebc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Feedback:"}], "type": "paragraph"});
+            document.getElementById("05bd87c23a244dbe80c206ef633a6ebc").innerHTML = html;
+        }
+        init();
+    </script>
+
+           <ul>               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="dfd82afd5e744af88e22a94ac49a2a5d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "disp"}], "type": "paragraph"});
+            document.getElementById("dfd82afd5e744af88e22a94ac49a2a5d").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="00720921c5ba44778b73aaca62d8a440"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "disp"}], "type": "paragraph"});
+            document.getElementById("00720921c5ba44778b73aaca62d8a440").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+            </ul>
+
+</dd>
+<dt><a id="sampling_method">sampling_method</a> : str or function, optional</dt>
+<dd>
+                <div id="569a08389db44e05991d223351f509a6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Current built in sampling method options are "}, {"type": "inlineCode", "value": "halton"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "sobol"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "simplicial"}, {"type": "text", "value": ". The default "}, {"type": "inlineCode", "value": "simplicial"}, {"type": "text", "value": " provides the theoretical guarantee of convergence to the global minimum in finite time. "}, {"type": "inlineCode", "value": "halton"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "sobol"}, {"type": "text", "value": " method are faster in terms of sampling point generation at the cost of the loss of guaranteed convergence. It is more appropriate for most \"easier\" problems where the convergence is relatively fast. User defined sampling functions must accept two arguments of "}, {"type": "inlineCode", "value": "n"}, {"type": "text", "value": " sampling points of dimension "}, {"type": "inlineCode", "value": "dim"}, {"type": "text", "value": " per call and output an array of sampling points with shape "}, {"domain": null, "role": null, "type": "Directive", "value": "n x dim"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("569a08389db44e05991d223351f509a6").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="res">res</a> : OptimizeResult</dt>
+<dd>
+                <div id="a1cfb4ef6e084d3097df62c3058ef9f7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The optimization result represented as a "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.optimize._optimize.OptimizeResult", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "OptimizeResult"}, {"type": "text", "value": " object. Important attributes are: "}, {"type": "inlineCode", "value": "x"}, {"type": "text", "value": " the solution array corresponding to the global minimum, "}, {"type": "inlineCode", "value": "fun"}, {"type": "text", "value": " the function output at the global solution, "}, {"type": "inlineCode", "value": "xl"}, {"type": "text", "value": " an ordered list of local minima solutions, "}, {"type": "inlineCode", "value": "funl"}, {"type": "text", "value": " the function output at the corresponding local solutions, "}, {"type": "inlineCode", "value": "success"}, {"type": "text", "value": " a Boolean flag indicating if the optimizer exited successfully, "}, {"type": "inlineCode", "value": "message"}, {"type": "text", "value": " which describes the cause of the termination, "}, {"type": "inlineCode", "value": "nfev"}, {"type": "text", "value": " the total number of objective function evaluations including the sampling calls, "}, {"type": "inlineCode", "value": "nlfev"}, {"type": "text", "value": " the total number of objective function evaluations culminating from all local search optimizations, "}, {"type": "inlineCode", "value": "nit"}, {"type": "text", "value": " number of iterations performed by the global routine."}], "type": "paragraph"});
+            document.getElementById("a1cfb4ef6e084d3097df62c3058ef9f7").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="248d0174188c48acbb6676a29cef6e8e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Finds the global minimum of a function using SHG optimization."}], "type": "paragraph"});
+            document.getElementById("248d0174188c48acbb6676a29cef6e8e").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+                           First consider the problem of minimizing the Rosenbrock function, `rosen`:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">optimize</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">rosen</span><span class="">,</span><span class=""> </span><span class="">shgo</span><br><span class='nsl'>...&nbsp;</span><span class="">bounds</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">[</span><span class="">(</span><span class="mi">0</span><span class="">,</span><span class="mi">2</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">(</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">(</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">(</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">(</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">)</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">result</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">shgo</span><span class="">(</span><span class="">rosen</span><span class="">,</span><span class=""> </span><span class="">bounds</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">result</span><span class="o">.</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">result</span><span class="o">.</span><span class="">fun</span>
+(array([1., 1., 1., 1., 1.]), 2.920392374190081e-18)</pre>
+            
+                           Note that bounds determine the dimensionality of the objective
+function and is therefore a required input, however you can specify
+empty bounds using ``None`` or objects like ``np.inf`` which will be
+converted to large float numbers.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">bounds</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">[</span><span class="">(</span><span class="kc">None</span><span class="">,</span><span class=""> </span><span class="kc">None</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">]</span><span class="o">*</span><span class="mi">4</span><br><span class='nsl'>...&nbsp;</span><span class="">result</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">shgo</span><span class="">(</span><span class="">rosen</span><span class="">,</span><span class=""> </span><span class="">bounds</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">result</span><span class="o">.</span><span class="">x</span>
+array([0.99999851, 0.99999704, 0.99999411, 0.9999882 ])</pre>
+            
+                           Next, we consider the Eggholder function, a problem with several local
+minima and one global minimum. We will demonstrate the use of arguments and
+the capabilities of `shgo`.
+(https://en.wikipedia.org/wiki/Test_functions_for_optimization)  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="k">def</span><span class=""> </span><span class="nf">eggholder</span><span class="">(</span><span class="">x</span><span class="">)</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="k">return</span><span class=""> </span><span class="">(</span><span class="o">-</span><span class="">(</span><span class="">x</span><span class="">[</span><span class="mi">1</span><span class="">]</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="mf">47.0</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">            </span><span class="o">*</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">sin</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">sqrt</span><span class="">(</span><span class="nb">abs</span><span class="">(</span><span class="">x</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class="o">/</span><span class="mf">2.0</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="">(</span><span class="">x</span><span class="">[</span><span class="mi">1</span><span class="">]</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="mf">47.0</span><span class="">)</span><span class="">)</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">            </span><span class="o">-</span><span class=""> </span><span class="">x</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">sin</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">sqrt</span><span class="">(</span><span class="nb">abs</span><span class="">(</span><span class="">x</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="">(</span><span class="">x</span><span class="">[</span><span class="mi">1</span><span class="">]</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="mf">47.0</span><span class="">)</span><span class="">)</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">            </span><span class="">)</span>
+...</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">bounds</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">[</span><span class="">(</span><span class="o">-</span><span class="mi">512</span><span class="">,</span><span class=""> </span><span class="mi">512</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">(</span><span class="o">-</span><span class="mi">512</span><span class="">,</span><span class=""> </span><span class="mi">512</span><span class="">)</span><span class="">]</span>
+</pre>
+            
+                           `shgo` has built-in low discrepancy sampling sequences. First, we will
+input 64 initial sampling points of the *Sobol&#39;* sequence:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">result</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">shgo</span><span class="">(</span><span class="">eggholder</span><span class="">,</span><span class=""> </span><span class="">bounds</span><span class="">,</span><span class=""> </span><span class="">n</span><span class="o">=</span><span class="mi">64</span><span class="">,</span><span class=""> </span><span class="">sampling_method</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">sobol</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">result</span><span class="o">.</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">result</span><span class="o">.</span><span class="">fun</span>
+(array([512.        , 404.23180824]), -959.6406627208397)</pre>
+            
+                           `shgo` also has a return for any other local minima that was found, these
+can be called using:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">result</span><span class="o">.</span><span class="">xl</span>
+array([[ 512.        ,  404.23180824],
+       [ 283.0759062 , -487.12565635],
+       [-294.66820039, -462.01964031],
+       [-105.87688911,  423.15323845],
+       [-242.97926   ,  274.38030925],
+       [-506.25823477,    6.3131022 ],
+       [-408.71980731, -156.10116949],
+       [ 150.23207937,  301.31376595],
+       [  91.00920901, -391.283763  ],
+       [ 202.89662724, -269.38043241],
+       [ 361.66623976, -106.96493868],
+       [-219.40612786, -244.06020508]])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">result</span><span class="o">.</span><span class="">funl</span>
+array([-959.64066272, -718.16745962, -704.80659592, -565.99778097,
+       -559.78685655, -557.36868733, -507.87385942, -493.9605115 ,
+       -426.48799655, -421.15571437, -419.31194957, -410.98477763])</pre>
+            
+                           These results are useful in applications where there are many global minima
+and the values of other global minima are desired or where the local minima
+can provide insight into the system (for example morphologies
+in physical chemistry [4]_).  
+            
+                           If we want to find a larger number of local minima, we can increase the
+number of sampling points or the number of iterations. We&#39;ll increase the
+number of sampling points to 64 and the number of iterations from the
+default of 1 to 3. Using ``simplicial`` this would have given us
+64 x 3 = 192 initial sampling points.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">result_2</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">shgo</span><span class="">(</span><span class="">eggholder</span><span class="">,</span><span class=""> </span><span class="">bounds</span><span class="">,</span><span class=""> </span><span class="">n</span><span class="o">=</span><span class="mi">64</span><span class="">,</span><span class=""> </span><span class="">iters</span><span class="o">=</span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="">sampling_method</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">sobol</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="nb">len</span><span class="">(</span><span class="">result</span><span class="o">.</span><span class="">xl</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="nb">len</span><span class="">(</span><span class="">result_2</span><span class="o">.</span><span class="">xl</span><span class="">)</span>
+(12, 20)</pre>
+            
+                           Note the difference between, e.g., ``n=192, iters=1`` and ``n=64,
+iters=3``.
+In the first case the promising points contained in the minimiser pool
+are processed only once. In the latter case it is processed every 64
+sampling points for a total of 3 times.  
+            
+                           To demonstrate solving problems with non-linear constraints consider the
+following example from Hock and Schittkowski problem 73 (cattle-feed) [3]_::  
+            
+                               minimize: f = 24.55 * x_1 + 26.75 * x_2 + 39 * x_3 + 40.50 * x_4  
+            
+                               subject to: 2.3 * x_1 + 5.6 * x_2 + 11.1 * x_3 + 1.3 * x_4 - 5     &gt;= 0,  
+            
+                                           12 * x_1 + 11.9 * x_2 + 41.8 * x_3 + 52.1 * x_4 - 21
+                    -1.645 * sqrt(0.28 * x_1**2 + 0.19 * x_2**2 +
+                                  20.5 * x_3**2 + 0.62 * x_4**2)       &gt;= 0,  
+            
+                                           x_1 + x_2 + x_3 + x_4 - 1                              == 0,  
+            
+                                           1 &gt;= x_i &gt;= 0 for all i  
+            
+                           The approximate answer given in [3]_ is::  
+            
+                               f([0.6355216, -0.12e-11, 0.3127019, 0.05177655]) = 29.894378  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="k">def</span><span class=""> </span><span class="nf">f</span><span class="">(</span><span class="">x</span><span class="">)</span><span class="">:</span><span class="">  </span><span class="c1"># (cattle-feed)</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="k">return</span><span class=""> </span><span class="mf">24.55</span><span class="o">*</span><span class="">x</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="mf">26.75</span><span class="o">*</span><span class="">x</span><span class="">[</span><span class="mi">1</span><span class="">]</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="mi">39</span><span class="o">*</span><span class="">x</span><span class="">[</span><span class="mi">2</span><span class="">]</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="mf">40.50</span><span class="o">*</span><span class="">x</span><span class="">[</span><span class="mi">3</span><span class="">]</span>
+...</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="k">def</span><span class=""> </span><span class="nf">g1</span><span class="">(</span><span class="">x</span><span class="">)</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="k">return</span><span class=""> </span><span class="mf">2.3</span><span class="o">*</span><span class="">x</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="mf">5.6</span><span class="o">*</span><span class="">x</span><span class="">[</span><span class="mi">1</span><span class="">]</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="mf">11.1</span><span class="o">*</span><span class="">x</span><span class="">[</span><span class="mi">2</span><span class="">]</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="mf">1.3</span><span class="o">*</span><span class="">x</span><span class="">[</span><span class="mi">3</span><span class="">]</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="mi">5</span><span class="">  </span><span class="c1"># &gt;=0</span>
+...</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="k">def</span><span class=""> </span><span class="nf">g2</span><span class="">(</span><span class="">x</span><span class="">)</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="k">return</span><span class=""> </span><span class="">(</span><span class="mi">12</span><span class="o">*</span><span class="">x</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="mf">11.9</span><span class="o">*</span><span class="">x</span><span class="">[</span><span class="mi">1</span><span class="">]</span><span class=""> </span><span class="o">+</span><span class="mf">41.8</span><span class="o">*</span><span class="">x</span><span class="">[</span><span class="mi">2</span><span class="">]</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="mf">52.1</span><span class="o">*</span><span class="">x</span><span class="">[</span><span class="mi">3</span><span class="">]</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="mi">21</span><br><span class='nsl'>...&nbsp;</span><span class="">            </span><span class="o">-</span><span class=""> </span><span class="mf">1.645</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">sqrt</span><span class="">(</span><span class="mf">0.28</span><span class="o">*</span><span class="">x</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class="o">*</span><span class="o">*</span><span class="mi">2</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="mf">0.19</span><span class="o">*</span><span class="">x</span><span class="">[</span><span class="mi">1</span><span class="">]</span><span class="o">*</span><span class="o">*</span><span class="mi">2</span><br><span class='nsl'>...&nbsp;</span><span class="">                            </span><span class="o">+</span><span class=""> </span><span class="mf">20.5</span><span class="o">*</span><span class="">x</span><span class="">[</span><span class="mi">2</span><span class="">]</span><span class="o">*</span><span class="o">*</span><span class="mi">2</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="mf">0.62</span><span class="o">*</span><span class="">x</span><span class="">[</span><span class="mi">3</span><span class="">]</span><span class="o">*</span><span class="o">*</span><span class="mi">2</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">            </span><span class="">)</span><span class=""> </span><span class="c1"># &gt;=0</span>
+...</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="k">def</span><span class=""> </span><span class="nf">h1</span><span class="">(</span><span class="">x</span><span class="">)</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="k">return</span><span class=""> </span><span class="">x</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="">x</span><span class="">[</span><span class="mi">1</span><span class="">]</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="">x</span><span class="">[</span><span class="mi">2</span><span class="">]</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="">x</span><span class="">[</span><span class="mi">3</span><span class="">]</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="mi">1</span><span class="">  </span><span class="c1"># == 0</span>
+...</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">cons</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">(</span><span class="">{</span><span class="s1">&#39;</span><span class="s1">type</span><span class="s1">&#39;</span><span class="">:</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">ineq</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">fun</span><span class="s1">&#39;</span><span class="">:</span><span class=""> </span><span class="">g1</span><span class="">}</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">        </span><span class="">{</span><span class="s1">&#39;</span><span class="s1">type</span><span class="s1">&#39;</span><span class="">:</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">ineq</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">fun</span><span class="s1">&#39;</span><span class="">:</span><span class=""> </span><span class="">g2</span><span class="">}</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">        </span><span class="">{</span><span class="s1">&#39;</span><span class="s1">type</span><span class="s1">&#39;</span><span class="">:</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">eq</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">fun</span><span class="s1">&#39;</span><span class="">:</span><span class=""> </span><span class="">h1</span><span class="">}</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">bounds</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">[</span><span class="">(</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mf">1.0</span><span class="">)</span><span class="">,</span><span class="">]</span><span class="o">*</span><span class="mi">4</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">shgo</span><span class="">(</span><span class="">f</span><span class="">,</span><span class=""> </span><span class="">bounds</span><span class="">,</span><span class=""> </span><span class="">iters</span><span class="o">=</span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="">constraints</span><span class="o">=</span><span class="">cons</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span>
+ message: Optimization terminated successfully.
+ success: True
+     fun: 29.894378159142136
+    funl: [ 2.989e+01]
+       x: [ 6.355e-01  1.137e-13  3.127e-01  5.178e-02]
+      xl: [[ 6.355e-01  1.137e-13  3.127e-01  5.178e-02]]
+     nit: 3
+    nfev: 114
+   nlfev: 35
+   nljev: 5
+   nlhev: 0</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">g1</span><span class="">(</span><span class="">res</span><span class="o">.</span><span class="">x</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">g2</span><span class="">(</span><span class="">res</span><span class="o">.</span><span class="">x</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">h1</span><span class="">(</span><span class="">res</span><span class="o">.</span><span class="">x</span><span class="">)</span>
+(-5.062616992290714e-14, -2.9594104944408173e-12, 0.0)</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.stats._hypotests._get_binomial_log_p_value_with_nuisance_param.html" class='exists'>scipy.stats._hypotests._get_binomial_log_p_value_with_nuisance_param</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/optimize/_shgo.py#L19'>/scipy/optimize/_shgo.py#19</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 9.732050807568877, "label": "scipy.stats.qmc", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.stats.qmc"}, {"id": 2, "val": 12.242640687119284, "label": "scipy.optimize._optimize.OptimizeResult", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.optimize._optimize.OptimizeResult"}, {"id": 3, "val": 8.0, "label": "scipy.stats._hypotests._get_binomial_log_p_value_with_nuisance_param", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.stats._hypotests._get_binomial_log_p_value_with_nuisance_param"}, {"id": 4, "val": 11.16227766016838, "label": "scipy.optimize._constraints.Bounds", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.optimize._constraints.Bounds"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

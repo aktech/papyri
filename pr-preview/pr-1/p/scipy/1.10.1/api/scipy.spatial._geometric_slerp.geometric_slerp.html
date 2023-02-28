@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.spatial.html'>spatial</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.spatial._geometric_slerp.html'>_geometric_slerp</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.spatial._ckdtree.html">_ckdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._distance_pybind.html">_distance_pybind</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._distance_wrap.html">_distance_wrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._geometric_slerp.html">_geometric_slerp</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._hausdorff.html">_hausdorff</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.html">_kdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._plotutils.html">_plotutils</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._procrustes.html">_procrustes</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.html">_qhull</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._spherical_voronoi.html">_spherical_voronoi</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._voronoi.html">_voronoi</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.ckdtree.html">ckdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.html">distance</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.kdtree.html">kdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.qhull.html">qhull</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.transform.html">transform</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.spatial._geometric_slerp.geometric_slerp.html'>geometric_slerp</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.spatial._geometric_slerp._geometric_slerp.html">_geometric_slerp</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._geometric_slerp.geometric_slerp.html">geometric_slerp</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Raises">Raises</a><a href="#section-Returns">Returns</a>    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>geometric_slerp(start: &#39;npt.ArrayLike&#39;, end: &#39;npt.ArrayLike&#39;, t: &#39;npt.ArrayLike&#39;, tol: &#39;float&#39; = 1e-07) -&gt; &#39;np.ndarray&#39;</code><!-- rendering Extended Summary -->
+                                       <div id="8bc60e92de314205a0abdaf1e8d4a932"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The interpolation occurs along a unit-radius great circle arc in arbitrary dimensional space."}], "type": "paragraph"});
+            document.getElementById("8bc60e92de314205a0abdaf1e8d4a932").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="264340b0e63d46a48f67dd562fa09faf"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The implementation is based on the mathematical formula provided in , and the first known presentation of this algorithm, derived from study of 4-D geometry, is credited to Glenn Davis in a footnote of the original quaternion Slerp publication by Ken Shoemake ."}], "type": "paragraph"});
+            document.getElementById("264340b0e63d46a48f67dd562fa09faf").innerHTML = html;
+        }
+        init();
+    </script>
+
+                           <div class='admonition'>
+    <div>versionadded 1.5.0</div>
+</div>
+
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="start">start</a> : (n_dimensions, ) array-like</dt>
+<dd>
+                <div id="0c52dc39ab024cf5be53f2be354f8b22"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Single n-dimensional input coordinate in a 1-D array-like object. "}, {"domain": null, "role": null, "type": "Directive", "value": "n"}, {"type": "text", "value": " must be greater than 1."}], "type": "paragraph"});
+            document.getElementById("0c52dc39ab024cf5be53f2be354f8b22").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="end">end</a> : (n_dimensions, ) array-like</dt>
+<dd>
+                <div id="b3f89650e8664839bae62d03c4d88c8c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Single n-dimensional input coordinate in a 1-D array-like object. "}, {"domain": null, "role": null, "type": "Directive", "value": "n"}, {"type": "text", "value": " must be greater than 1."}], "type": "paragraph"});
+            document.getElementById("b3f89650e8664839bae62d03c4d88c8c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="t">t</a> : float or (n_points,) 1D array-like</dt>
+<dd>
+                <div id="8b9a1bf9ded14ac78d02cd7144aceaca"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A float or 1D array-like of doubles representing interpolation parameters, with values required in the inclusive interval between 0 and 1. A common approach is to generate the array with "}, {"type": "inlineCode", "value": "np.linspace(0, 1, n_pts)"}, {"type": "text", "value": " for linearly spaced points. Ascending, descending, and scrambled orders are permitted."}], "type": "paragraph"});
+            document.getElementById("8b9a1bf9ded14ac78d02cd7144aceaca").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="tol">tol</a> : float</dt>
+<dd>
+                <div id="a3fec03867e547e9aaf45b79c2f7c634"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The absolute tolerance for determining if the start and end coordinates are antipodes."}], "type": "paragraph"});
+            document.getElementById("a3fec03867e547e9aaf45b79c2f7c634").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Raises">Raises</h3>
+<dl>
+<dt>ValueError</dt>
+<dd>
+                <div id="24a848943b0249029fbc21a8cded238c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"type": "inlineCode", "value": "start"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "end"}, {"type": "text", "value": " are antipodes, not on the unit n-sphere, or for a variety of degenerate conditions."}], "type": "paragraph"});
+            document.getElementById("24a848943b0249029fbc21a8cded238c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="result">result</a> : (t.size, D)</dt>
+<dd>
+                <div id="b96660061dd54d4f8061562078646466"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "An array of doubles containing the interpolated spherical path and including start and end when 0 and 1 t are used. The interpolated values should correspond to the same sort order provided in the t array. The result may be 1-dimensional if "}, {"type": "inlineCode", "value": "t"}, {"type": "text", "value": " is a float."}], "type": "paragraph"});
+            document.getElementById("b96660061dd54d4f8061562078646466").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="7b7b74a2dddc4dfdb5388fd595de3368"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Geometric spherical linear interpolation."}], "type": "paragraph"});
+            document.getElementById("7b7b74a2dddc4dfdb5388fd595de3368").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.spatial.transform._rotation.Slerp.html" class='exists'>scipy.spatial.transform.Slerp</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="adbaa0f9fedb40f7b5ef9f5d8db40ca1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "3-D Slerp that works with quaternions"});
+            document.getElementById("adbaa0f9fedb40f7b5ef9f5d8db40ca1").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+                           Interpolate four linearly-spaced values on the circumference of
+a circle spanning 90 degrees:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">spatial</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">geometric_slerp</span><br><span class='nsl'>...&nbsp;</span><span class="kn">import</span><span class=""> </span><span class="nn">matplotlib</span><span class="nn">.</span><span class="nn">pyplot</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">plt</span><br><span class='nsl'>...&nbsp;</span><span class="">fig</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">plt</span><span class="o">.</span><span class="">figure</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">fig</span><span class="o">.</span><span class="">add_subplot</span><span class="">(</span><span class="mi">111</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">start</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">end</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">t_vals</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">linspace</span><span class="">(</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">result</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">geometric_slerp</span><span class="">(</span><span class="">start</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                         </span><span class="">end</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                         </span><span class="">t_vals</span><span class="">)</span>
+</pre>
+            
+                           The interpolated results should be at 30 degree intervals
+recognizable on the unit circle:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">ax</span><span class="o">.</span><span class="">scatter</span><span class="">(</span><span class="">result</span><span class="">[</span><span class="o">.</span><span class="o">.</span><span class="o">.</span><span class="">,</span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">result</span><span class="">[</span><span class="o">.</span><span class="o">.</span><span class="o">.</span><span class="">,</span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">c</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">k</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">circle</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">plt</span><span class="o">.</span><span class="">Circle</span><span class="">(</span><span class="">(</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="">color</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">grey</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class="o">.</span><span class="">add_artist</span><span class="">(</span><span class="">circle</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class="o">.</span><span class="">set_aspect</span><span class="">(</span><span class="s1">&#39;</span><span class="s1">equal</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">show</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+                           Attempting to interpolate between antipodes on a circle is
+ambiguous because there are two possible paths, and on a
+sphere there are infinite possible paths on the geodesic surface.
+Nonetheless, one of the ambiguous paths is returned along
+with a warning:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">opposite_pole</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="o">-</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="k">with</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">testing</span><span class="o">.</span><span class="">suppress_warnings</span><span class="">(</span><span class="">)</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="">sup</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="">sup</span><span class="o">.</span><span class="">filter</span><span class="">(</span><span class="ne">UserWarning</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="">geometric_slerp</span><span class="">(</span><span class="">start</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                    </span><span class="">opposite_pole</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                    </span><span class="">t_vals</span><span class="">)</span>
+array([[ 1.00000000e+00,  0.00000000e+00],
+       [ 5.00000000e-01,  8.66025404e-01],
+       [-5.00000000e-01,  8.66025404e-01],
+       [-1.00000000e+00,  1.22464680e-16]])</pre>
+            
+                           Extend the original example to a sphere and plot interpolation
+points in 3D:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">from</span><span class=""> </span><span class="nn">mpl_toolkits</span><span class="nn">.</span><span class="nn">mplot3d</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">proj3d</span><br><span class='nsl'>...&nbsp;</span><span class="">fig</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">plt</span><span class="o">.</span><span class="">figure</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">fig</span><span class="o">.</span><span class="">add_subplot</span><span class="">(</span><span class="mi">111</span><span class="">,</span><span class=""> </span><span class="">projection</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">3d</span><span class="s1">&#39;</span><span class="">)</span>
+</pre>
+            
+                           Plot the unit sphere for reference (optional):  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">u</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">linspace</span><span class="">(</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">pi</span><span class="">,</span><span class=""> </span><span class="mi">100</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">v</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">linspace</span><span class="">(</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">pi</span><span class="">,</span><span class=""> </span><span class="mi">100</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">x</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">outer</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">cos</span><span class="">(</span><span class="">u</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">sin</span><span class="">(</span><span class="">v</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">y</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">outer</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">sin</span><span class="">(</span><span class="">u</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">sin</span><span class="">(</span><span class="">v</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">z</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">outer</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">ones</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">size</span><span class="">(</span><span class="">u</span><span class="">)</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">cos</span><span class="">(</span><span class="">v</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class="o">.</span><span class="">plot_surface</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">y</span><span class="">,</span><span class=""> </span><span class="">z</span><span class="">,</span><span class=""> </span><span class="">color</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">y</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">alpha</span><span class="o">=</span><span class="mf">0.1</span><span class="">)</span>
+</pre>
+            
+                           Interpolating over a larger number of points
+may provide the appearance of a smooth curve on
+the surface of the sphere, which is also useful
+for discretized integration calculations on a
+sphere surface:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">start</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">end</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">t_vals</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">linspace</span><span class="">(</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">200</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">result</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">geometric_slerp</span><span class="">(</span><span class="">start</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                         </span><span class="">end</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                         </span><span class="">t_vals</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">result</span><span class="">[</span><span class="o">.</span><span class="o">.</span><span class="o">.</span><span class="">,</span><span class="mi">0</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">        </span><span class="">result</span><span class="">[</span><span class="o">.</span><span class="o">.</span><span class="o">.</span><span class="">,</span><span class="mi">1</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">        </span><span class="">result</span><span class="">[</span><span class="o">.</span><span class="o">.</span><span class="o">.</span><span class="">,</span><span class="mi">2</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">        </span><span class="">c</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">k</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">show</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/spatial/_geometric_slerp.py#L35'>/scipy/spatial/_geometric_slerp.py#35</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 9.414213562373096, "label": "scipy.spatial.transform._rotation.Slerp", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.spatial.transform._rotation.Slerp"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

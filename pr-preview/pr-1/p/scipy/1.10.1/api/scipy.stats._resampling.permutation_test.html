@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats.html'>stats</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats._resampling.html'>_resampling</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.stats._axis_nan_policy.html">_axis_nan_policy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._biasedurn.html">_biasedurn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binned_statistic.html">_binned_statistic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binomtest.html">_binomtest</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._boost.html">_boost</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._common.html">_common</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._constants.html">_constants</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._continuous_distns.html">_continuous_distns</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._covariance.html">_covariance</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._crosstab.html">_crosstab</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._discrete_distns.html">_discrete_distns</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._distn_infrastructure.html">_distn_infrastructure</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._distr_params.html">_distr_params</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._entropy.html">_entropy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._fit.html">_fit</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.html">_hypotests</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._kde.html">_kde</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._ksstats.html">_ksstats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable.html">_levy_stable</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mannwhitneyu.html">_mannwhitneyu</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._morestats.html">_morestats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mstats_basic.html">_mstats_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mstats_extras.html">_mstats_extras</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._multivariate.html">_multivariate</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mvn.html">_mvn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._odds_ratio.html">_odds_ratio</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._page_trend_test.html">_page_trend_test</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.html">_qmc</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc_cy.html">_qmc_cy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._rcont.html">_rcont</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._relative_risk.html">_relative_risk</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling.html">_resampling</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._rvs_sampling.html">_rvs_sampling</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._sobol.html">_sobol</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._statlib.html">_statlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats.html">_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_mstats_common.html">_stats_mstats_common</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.html">_stats_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_pythran.html">_stats_pythran</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._tukeylambda_stats.html">_tukeylambda_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._variation.html">_variation</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._warnings_errors.html">_warnings_errors</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.biasedurn.html">biasedurn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.contingency.html">contingency</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.distributions.html">distributions</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.kde.html">kde</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.morestats.html">morestats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats.html">mstats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats_basic.html">mstats_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats_extras.html">mstats_extras</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mvn.html">mvn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.qmc.html">qmc</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.statlib.html">statlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats._resampling.permutation_test.html'>permutation_test</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling._all_partitions_concatenated.html">_all_partitions_concatenated</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling._batch_generator.html">_batch_generator</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling._bca_interval.html">_bca_interval</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling._bootstrap_iv.html">_bootstrap_iv</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling._bootstrap_resample.html">_bootstrap_resample</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling._calculate_null_both.html">_calculate_null_both</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling._calculate_null_pairings.html">_calculate_null_pairings</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling._calculate_null_samples.html">_calculate_null_samples</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling._jackknife_resample.html">_jackknife_resample</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling._monte_carlo_test_iv.html">_monte_carlo_test_iv</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling._pairings_permutations_gen.html">_pairings_permutations_gen</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling._percentile_along_axis.html">_percentile_along_axis</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling._percentile_of_score.html">_percentile_of_score</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling._permutation_test_iv.html">_permutation_test_iv</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling._vectorize_statistic.html">_vectorize_statistic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling.monte_carlo_test.html">monte_carlo_test</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling.permutation_test.html">permutation_test</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>permutation_test(data, statistic, *, permutation_type=&#39;independent&#39;, vectorized=None, n_resamples=9999, batch=None, alternative=&#39;two-sided&#39;, axis=0, random_state=None)</code><!-- rendering Extended Summary -->
+                                       <div id="20ca482c43e94cb5bd29a01d5a6a5ed7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For independent sample statistics, the null hypothesis is that the data are randomly sampled from the same distribution. For paired sample statistics, two null hypothesis can be tested: that the data are paired at random or that the data are assigned to samples at random."}], "type": "paragraph"});
+            document.getElementById("20ca482c43e94cb5bd29a01d5a6a5ed7").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="2b5d46ec3648466b8f5568ecaced27ad"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The three types of permutation tests supported by this function are described below."}], "type": "paragraph"});
+            document.getElementById("2b5d46ec3648466b8f5568ecaced27ad").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="344f373a3d7a4acb9b560d167db99bd6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"children": [{"type": "text", "value": "Unpaired statistics"}], "type": "strong"}, {"type": "text", "value": " ("}, {"type": "inlineCode", "value": "permutation_type=\u0027independent\u0027"}, {"type": "text", "value": "):"}], "type": "paragraph"});
+            document.getElementById("344f373a3d7a4acb9b560d167db99bd6").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="0dbee83444f449db86c8dd4e8924d6c3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The null hypothesis associated with this permutation type is that all observations are sampled from the same underlying distribution and that they have been assigned to one of the samples at random."}], "type": "paragraph"});
+            document.getElementById("0dbee83444f449db86c8dd4e8924d6c3").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="7777760c621e450bbcc6a4fd765bad58"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Suppose "}, {"type": "inlineCode", "value": "data"}, {"type": "text", "value": " contains two samples; e.g. "}, {"type": "inlineCode", "value": "a, b = data"}, {"type": "text", "value": ". When "}, {"type": "inlineCode", "value": "1 \u003c n_resamples \u003c binom(n, k)"}, {"type": "text", "value": ", where"}], "type": "paragraph"});
+            document.getElementById("7777760c621e450bbcc6a4fd765bad58").innerHTML = html;
+        }
+        init();
+    </script>
+
+                          <ul>               <li>                               <div id="51116f40fd6040c5a01ee8fca7c07e11"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "k"}, {"type": "text", "value": " is the number of observations in "}, {"type": "inlineCode", "value": "a"}, {"type": "text", "value": ","}], "type": "paragraph"});
+            document.getElementById("51116f40fd6040c5a01ee8fca7c07e11").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="05cdacc8137748729f197d700e3ab7d9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "n"}, {"type": "text", "value": " is the total number of observations in "}, {"type": "inlineCode", "value": "a"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "b"}, {"type": "text", "value": ", and"}], "type": "paragraph"});
+            document.getElementById("05cdacc8137748729f197d700e3ab7d9").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="9a84434a577c43888bff9f9d4f54c3a4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "binom(n, k)"}, {"type": "text", "value": " is the binomial coefficient ("}, {"type": "inlineCode", "value": "n"}, {"type": "text", "value": " choose "}, {"type": "inlineCode", "value": "k"}, {"type": "text", "value": "),"}], "type": "paragraph"});
+            document.getElementById("9a84434a577c43888bff9f9d4f54c3a4").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+
+                               <div id="7b0274a858d143c5b09b423cb8d74708"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "the data are pooled (concatenated), randomly assigned to either the first or second sample, and the statistic is calculated. This process is performed repeatedly, "}, {"domain": null, "role": null, "type": "Directive", "value": "permutation"}, {"type": "text", "value": " times, generating a distribution of the statistic under the null hypothesis. The statistic of the original data is compared to this distribution to determine the p-value."}], "type": "paragraph"});
+            document.getElementById("7b0274a858d143c5b09b423cb8d74708").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="f9bb79368c02440e8de7cfac45962372"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "When "}, {"type": "inlineCode", "value": "n_resamples \u003e= binom(n, k)"}, {"type": "text", "value": ", an exact test is performed: the data are "}, {"children": [{"type": "text", "value": "partitioned"}], "type": "emphasis"}, {"type": "text", "value": " between the samples in each distinct way exactly once, and the exact null distribution is formed. Note that for a given partitioning of the data between the samples, only one ordering/permutation of the data "}, {"children": [{"type": "text", "value": "within"}], "type": "emphasis"}, {"type": "text", "value": " each sample is considered. For statistics that do not depend on the order of the data within samples, this dramatically reduces computational cost without affecting the shape of the null distribution (because the frequency/count of each value is affected by the same factor)."}], "type": "paragraph"});
+            document.getElementById("f9bb79368c02440e8de7cfac45962372").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="29840db397a54cdcbccbf147c42e40cc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For "}, {"type": "inlineCode", "value": "a = [a1, a2, a3, a4]"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "b = [b1, b2, b3]"}, {"type": "text", "value": ", an example of this permutation type is "}, {"type": "inlineCode", "value": "x = [b3, a1, a2, b2]"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "y = [a4, b1, a3]"}, {"type": "text", "value": ". Because only one ordering/permutation of the data "}, {"children": [{"type": "text", "value": "within"}], "type": "emphasis"}, {"type": "text", "value": " each sample is considered in an exact test, a resampling like "}, {"type": "inlineCode", "value": "x = [b3, a1, b2, a2]"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "y = [a4, a3, b1]"}, {"type": "text", "value": " would "}, {"children": [{"type": "text", "value": "not"}], "type": "emphasis"}, {"type": "text", "value": " be considered distinct from the example above."}], "type": "paragraph"});
+            document.getElementById("29840db397a54cdcbccbf147c42e40cc").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="e9793360e10543079f8b9ff92e89d3a0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "permutation_type=\u0027independent\u0027"}, {"type": "text", "value": " does not support one-sample statistics, but it can be applied to statistics with more than two samples. In this case, if "}, {"type": "inlineCode", "value": "n"}, {"type": "text", "value": " is an array of the number of observations within each sample, the number of distinct partitions is      "}], "type": "paragraph"});
+            document.getElementById("e9793360e10543079f8b9ff92e89d3a0").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="f10b4de0964a4b59be0d735409f9ee93"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "np.product([binom(sum(n[i:]), sum(n[i+1:])) for i in range(len(n)-1)])"});
+            document.getElementById("f10b4de0964a4b59be0d735409f9ee93").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="02eef0ebb4e14d039c0750516e714717"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"children": [{"type": "text", "value": "Paired statistics, permute pairings"}], "type": "strong"}, {"type": "text", "value": " ("}, {"type": "inlineCode", "value": "permutation_type=\u0027pairings\u0027"}, {"type": "text", "value": "):"}], "type": "paragraph"});
+            document.getElementById("02eef0ebb4e14d039c0750516e714717").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="c8e6fdf852644a20bde8dd3f29ba3045"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The null hypothesis associated with this permutation type is that observations within each sample are drawn from the same underlying distribution and that pairings with elements of other samples are assigned at random."}], "type": "paragraph"});
+            document.getElementById("c8e6fdf852644a20bde8dd3f29ba3045").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="1313b61dc37f477ebaf1f17f3d358408"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Suppose "}, {"type": "inlineCode", "value": "data"}, {"type": "text", "value": " contains only one sample; e.g. "}, {"type": "inlineCode", "value": "a, = data"}, {"type": "text", "value": ", and we wish to consider all possible pairings of elements of "}, {"type": "inlineCode", "value": "a"}, {"type": "text", "value": " with elements of a second sample, "}, {"type": "inlineCode", "value": "b"}, {"type": "text", "value": ". Let "}, {"type": "inlineCode", "value": "n"}, {"type": "text", "value": " be the number of observations in "}, {"type": "inlineCode", "value": "a"}, {"type": "text", "value": ", which must also equal the number of observations in "}, {"type": "inlineCode", "value": "b"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("1313b61dc37f477ebaf1f17f3d358408").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="afa5b1fc9134428d8536e6a0ac03fd1f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "When "}, {"type": "inlineCode", "value": "1 \u003c n_resamples \u003c factorial(n)"}, {"type": "text", "value": ", the elements of "}, {"type": "inlineCode", "value": "a"}, {"type": "text", "value": " are randomly permuted. The user-supplied statistic accepts one data argument, say "}, {"type": "inlineCode", "value": "a_perm"}, {"type": "text", "value": ", and calculates the statistic considering "}, {"type": "inlineCode", "value": "a_perm"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "b"}, {"type": "text", "value": ". This process is performed repeatedly, "}, {"domain": null, "role": null, "type": "Directive", "value": "permutation"}, {"type": "text", "value": " times, generating a distribution of the statistic under the null hypothesis. The statistic of the original data is compared to this distribution to determine the p-value."}], "type": "paragraph"});
+            document.getElementById("afa5b1fc9134428d8536e6a0ac03fd1f").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="c748f7c088364a0cbcbba4de1a172aae"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "When "}, {"type": "inlineCode", "value": "n_resamples \u003e= factorial(n)"}, {"type": "text", "value": ", an exact test is performed: "}, {"type": "inlineCode", "value": "a"}, {"type": "text", "value": " is permuted in each distinct way exactly once. Therefore, the "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "statistic", "type": "RefInfo", "version": null}, "type": "Link", "value": "statistic"}, {"type": "text", "value": " is computed for each unique pairing of samples between "}, {"type": "inlineCode", "value": "a"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "b"}, {"type": "text", "value": " exactly once."}], "type": "paragraph"});
+            document.getElementById("c748f7c088364a0cbcbba4de1a172aae").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="d2fc3e262d8e44cfbf26e31316bd9bd0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For "}, {"type": "inlineCode", "value": "a = [a1, a2, a3]"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "b = [b1, b2, b3]"}, {"type": "text", "value": ", an example of this permutation type is "}, {"type": "inlineCode", "value": "a_perm = [a3, a1, a2]"}, {"type": "text", "value": " while "}, {"type": "inlineCode", "value": "b"}, {"type": "text", "value": " is left in its original order."}], "type": "paragraph"});
+            document.getElementById("d2fc3e262d8e44cfbf26e31316bd9bd0").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="26ff2879ef2f4086921a371d63ef03e0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "permutation_type=\u0027pairings\u0027"}, {"type": "text", "value": " supports "}, {"type": "inlineCode", "value": "data"}, {"type": "text", "value": " containing any number of samples, each of which must contain the same number of observations. All samples provided in "}, {"type": "inlineCode", "value": "data"}, {"type": "text", "value": " are permuted "}, {"children": [{"type": "text", "value": "independently"}], "type": "emphasis"}, {"type": "text", "value": ". Therefore, if "}, {"type": "inlineCode", "value": "m"}, {"type": "text", "value": " is the number of samples and "}, {"type": "inlineCode", "value": "n"}, {"type": "text", "value": " is the number of observations within each sample, then the number of permutations in an exact test is      "}], "type": "paragraph"});
+            document.getElementById("26ff2879ef2f4086921a371d63ef03e0").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="e9a0af8392a9426e86aa8b09f62d6f5b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "factorial(n)**m"});
+            document.getElementById("e9a0af8392a9426e86aa8b09f62d6f5b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="ae09e018048541cdb1378025c23371db"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Note that if a two-sample statistic, for example, does not inherently depend on the order in which observations are provided - only on the "}, {"children": [{"type": "text", "value": "pairings"}], "type": "emphasis"}, {"type": "text", "value": " of observations - then only one of the two samples should be provided in "}, {"type": "inlineCode", "value": "data"}, {"type": "text", "value": ". This dramatically reduces computational cost without affecting the shape of the null distribution (because the frequency/count of each value is affected by the same factor)."}], "type": "paragraph"});
+            document.getElementById("ae09e018048541cdb1378025c23371db").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="50471c65a47646a4a994957da07befd8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"children": [{"type": "text", "value": "Paired statistics, permute samples"}], "type": "strong"}, {"type": "text", "value": " ("}, {"type": "inlineCode", "value": "permutation_type=\u0027samples\u0027"}, {"type": "text", "value": "):"}], "type": "paragraph"});
+            document.getElementById("50471c65a47646a4a994957da07befd8").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="d3da598aa8c64816acda3211d8fd8a3a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The null hypothesis associated with this permutation type is that observations within each pair are drawn from the same underlying distribution and that the sample to which they are assigned is random."}], "type": "paragraph"});
+            document.getElementById("d3da598aa8c64816acda3211d8fd8a3a").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="aa97753460bf4e1d8e2e658c88f9b38a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Suppose "}, {"type": "inlineCode", "value": "data"}, {"type": "text", "value": " contains two samples; e.g. "}, {"type": "inlineCode", "value": "a, b = data"}, {"type": "text", "value": ". Let "}, {"type": "inlineCode", "value": "n"}, {"type": "text", "value": " be the number of observations in "}, {"type": "inlineCode", "value": "a"}, {"type": "text", "value": ", which must also equal the number of observations in "}, {"type": "inlineCode", "value": "b"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("aa97753460bf4e1d8e2e658c88f9b38a").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="75a27e3ed8df4cf1b1ca123f64202ec2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "When "}, {"type": "inlineCode", "value": "1 \u003c n_resamples \u003c 2**n"}, {"type": "text", "value": ", the elements of "}, {"type": "inlineCode", "value": "a"}, {"type": "text", "value": " are "}, {"type": "inlineCode", "value": "b"}, {"type": "text", "value": " are randomly swapped between samples (maintaining their pairings) and the statistic is calculated. This process is performed repeatedly, "}, {"domain": null, "role": null, "type": "Directive", "value": "permutation"}, {"type": "text", "value": " times,  generating a distribution of the statistic under the null hypothesis. The statistic of the original data is compared to this distribution to determine the p-value."}], "type": "paragraph"});
+            document.getElementById("75a27e3ed8df4cf1b1ca123f64202ec2").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="4f190e4bf88e4849b67f85b6beec57c2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "When "}, {"type": "inlineCode", "value": "n_resamples \u003e= 2**n"}, {"type": "text", "value": ", an exact test is performed: the observations are assigned to the two samples in each distinct way (while maintaining pairings) exactly once."}], "type": "paragraph"});
+            document.getElementById("4f190e4bf88e4849b67f85b6beec57c2").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="e97097e3db844ab38abcc3812e00d063"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For "}, {"type": "inlineCode", "value": "a = [a1, a2, a3]"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "b = [b1, b2, b3]"}, {"type": "text", "value": ", an example of this permutation type is "}, {"type": "inlineCode", "value": "x = [b1, a2, b3]"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "y = [a1, b2, a3]"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("e97097e3db844ab38abcc3812e00d063").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="8b48d7b7677b4218ba099733743fe3dd"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "inlineCode", "value": "permutation_type=\u0027samples\u0027"}, {"type": "text", "value": " supports "}, {"type": "inlineCode", "value": "data"}, {"type": "text", "value": " containing any number of samples, each of which must contain the same number of observations. If "}, {"type": "inlineCode", "value": "data"}, {"type": "text", "value": " contains more than one sample, paired observations within "}, {"type": "inlineCode", "value": "data"}, {"type": "text", "value": " are exchanged between samples "}, {"children": [{"type": "text", "value": "independently"}], "type": "emphasis"}, {"type": "text", "value": ". Therefore, if "}, {"type": "inlineCode", "value": "m"}, {"type": "text", "value": " is the number of samples and "}, {"type": "inlineCode", "value": "n"}, {"type": "text", "value": " is the number of observations within each sample, then the number of permutations in an exact test is      "}], "type": "paragraph"});
+            document.getElementById("8b48d7b7677b4218ba099733743fe3dd").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="f548bc9cc02e406f9bcf4c5e0b83044b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "factorial(m)**n"});
+            document.getElementById("f548bc9cc02e406f9bcf4c5e0b83044b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="0a747667665349b1a314bd2ceb2c9e17"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Several paired-sample statistical tests, such as the Wilcoxon signed rank test and paired-sample t-test, can be performed considering only the "}, {"children": [{"type": "text", "value": "difference"}], "type": "emphasis"}, {"type": "text", "value": " between two paired elements. Accordingly, if "}, {"type": "inlineCode", "value": "data"}, {"type": "text", "value": " contains only one sample, then the null distribution is formed by independently changing the "}, {"children": [{"type": "text", "value": "sign"}], "type": "emphasis"}, {"type": "text", "value": " of each observation."}], "type": "paragraph"});
+            document.getElementById("0a747667665349b1a314bd2ceb2c9e17").innerHTML = html;
+        }
+        init();
+    </script>
+
+                           <div class='admonition'>
+    <div>warning </div>
+                        <div id="f1bc3d4ddeda4ac2904e522dd2d2ac53"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The p-value is calculated by counting the elements of the null distribution that are as extreme or more extreme than the observed value of the statistic. Due to the use of finite precision arithmetic, some statistic functions return numerically distinct values when the theoretical values would be exactly equal. In some cases, this could lead to a large error in the calculated p-value. "}, {"domain": null, "role": null, "type": "Directive", "value": "permutation_test"}, {"type": "text", "value": " guards against this by considering elements in the null distribution that are \"close\" (within a factor of "}, {"type": "inlineCode", "value": "1+1e-14"}, {"type": "text", "value": ") to the observed value of the test statistic as equal to the observed value of the test statistic. However, the user is advised to inspect the null distribution to assess whether this method of comparison is appropriate, and if not, calculate the p-value manually. See example below."}], "type": "paragraph"});
+            document.getElementById("f1bc3d4ddeda4ac2904e522dd2d2ac53").innerHTML = html;
+        }
+        init();
+    </script>
+
+</div>
+
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="data">data</a> : iterable of array-like</dt>
+<dd>
+                <div id="c493f47a485f454e98e5167a925a57a5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Contains the samples, each of which is an array of observations. Dimensions of sample arrays must be compatible for broadcasting except along "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "axis", "type": "RefInfo", "version": null}, "type": "Link", "value": "axis"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("c493f47a485f454e98e5167a925a57a5").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="statistic">statistic</a> : callable</dt>
+<dd>
+                <div id="5ae841424192414b8abf3c9b75c32a58"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Statistic for which the p-value of the hypothesis test is to be calculated. "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "statistic", "type": "RefInfo", "version": null}, "type": "Link", "value": "statistic"}, {"type": "text", "value": " must be a callable that accepts samples as separate arguments (e.g. "}, {"type": "inlineCode", "value": "statistic(*data)"}, {"type": "text", "value": ") and returns the resulting statistic. If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "vectorized", "type": "RefInfo", "version": null}, "type": "Link", "value": "vectorized"}, {"type": "text", "value": " is set "}, {"type": "inlineCode", "value": "True"}, {"type": "text", "value": ", "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "statistic", "type": "RefInfo", "version": null}, "type": "Link", "value": "statistic"}, {"type": "text", "value": " must also accept a keyword argument "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "axis", "type": "RefInfo", "version": null}, "type": "Link", "value": "axis"}, {"type": "text", "value": " and be vectorized to compute the statistic along the provided "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "axis", "type": "RefInfo", "version": null}, "type": "Link", "value": "axis"}, {"type": "text", "value": " of the sample arrays."}], "type": "paragraph"});
+            document.getElementById("5ae841424192414b8abf3c9b75c32a58").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="permutation_type">permutation_type</a> : {&#39;independent&#39;, &#39;samples&#39;, &#39;pairings&#39;}, optional</dt>
+<dd>
+                <div id="8c9740e65759414a9792255e757651ea"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The type of permutations to be performed, in accordance with the null hypothesis. The first two permutation types are for paired sample statistics, in which all samples contain the same number of observations and observations with corresponding indices along "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "axis", "type": "RefInfo", "version": null}, "type": "Link", "value": "axis"}, {"type": "text", "value": " are considered to be paired; the third is for independent sample statistics."}], "type": "paragraph"});
+            document.getElementById("8c9740e65759414a9792255e757651ea").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="vectorized">vectorized</a> : bool, optional</dt>
+<dd>
+                <div id="604a90f00c1f4f23b1db0d5b10ffed44"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "vectorized", "type": "RefInfo", "version": null}, "type": "Link", "value": "vectorized"}, {"type": "text", "value": " is set "}, {"type": "inlineCode", "value": "False"}, {"type": "text", "value": ", "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "statistic", "type": "RefInfo", "version": null}, "type": "Link", "value": "statistic"}, {"type": "text", "value": " will not be passed keyword argument "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "axis", "type": "RefInfo", "version": null}, "type": "Link", "value": "axis"}, {"type": "text", "value": " and is expected to calculate the statistic only for 1D samples. If "}, {"type": "inlineCode", "value": "True"}, {"type": "text", "value": ", "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "statistic", "type": "RefInfo", "version": null}, "type": "Link", "value": "statistic"}, {"type": "text", "value": " will be passed keyword argument "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "axis", "type": "RefInfo", "version": null}, "type": "Link", "value": "axis"}, {"type": "text", "value": " and is expected to calculate the statistic along "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "axis", "type": "RefInfo", "version": null}, "type": "Link", "value": "axis"}, {"type": "text", "value": " when passed an ND sample array. If "}, {"type": "inlineCode", "value": "None"}, {"type": "text", "value": " (default), "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "vectorized", "type": "RefInfo", "version": null}, "type": "Link", "value": "vectorized"}, {"type": "text", "value": " will be set "}, {"type": "inlineCode", "value": "True"}, {"type": "text", "value": " if "}, {"type": "inlineCode", "value": "axis"}, {"type": "text", "value": " is a parameter of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "statistic", "type": "RefInfo", "version": null}, "type": "Link", "value": "statistic"}, {"type": "text", "value": ". Use of a vectorized statistic typically reduces computation time."}], "type": "paragraph"});
+            document.getElementById("604a90f00c1f4f23b1db0d5b10ffed44").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="n_resamples">n_resamples</a> : int or np.inf, default: 9999</dt>
+<dd>
+                <div id="a327b63baf4e4c16a708639039ebfdec"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Number of random permutations (resamples) used to approximate the null distribution. If greater than or equal to the number of distinct permutations, the exact null distribution will be computed. Note that the number of distinct permutations grows very rapidly with the sizes of samples, so exact tests are feasible only for very small data sets."}], "type": "paragraph"});
+            document.getElementById("a327b63baf4e4c16a708639039ebfdec").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="batch">batch</a> : int, optional</dt>
+<dd>
+                <div id="afaf5114d9054a4b8c6163e0db57b94c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The number of permutations to process in each call to "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "statistic", "type": "RefInfo", "version": null}, "type": "Link", "value": "statistic"}, {"type": "text", "value": ". Memory usage is O("}, {"domain": null, "role": null, "type": "Directive", "value": "batch\u0027*\u0027\u0027n\u0027"}, {"type": "text", "value": "), where "}, {"type": "inlineCode", "value": "n"}, {"type": "text", "value": " is the total size of all samples, regardless of the value of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "vectorized", "type": "RefInfo", "version": null}, "type": "Link", "value": "vectorized"}, {"type": "text", "value": ". Default is "}, {"type": "inlineCode", "value": "None"}, {"type": "text", "value": ", in which case "}, {"type": "inlineCode", "value": "batch"}, {"type": "text", "value": " is the number of permutations."}], "type": "paragraph"});
+            document.getElementById("afaf5114d9054a4b8c6163e0db57b94c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="alternative">alternative</a> : {&#39;two-sided&#39;, &#39;less&#39;, &#39;greater&#39;}, optional</dt>
+<dd>
+                <div id="4ed22b646c3d4e6581557fa967f0219f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The alternative hypothesis for which the p-value is calculated. For each alternative, the p-value is defined for exact tests as follows."}], "type": "paragraph"});
+            document.getElementById("4ed22b646c3d4e6581557fa967f0219f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="axis">axis</a> : int, default: 0</dt>
+<dd>
+                <div id="0216f3501f834085a76a42aff63870dd"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The axis of the (broadcasted) samples over which to calculate the statistic. If samples have a different number of dimensions, singleton dimensions are prepended to samples with fewer dimensions before "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "axis", "type": "RefInfo", "version": null}, "type": "Link", "value": "axis"}, {"type": "text", "value": " is considered."}], "type": "paragraph"});
+            document.getElementById("0216f3501f834085a76a42aff63870dd").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="random_state">random_state</a> : {None, int, `numpy.random.Generator`,</dt>
+<dd>
+            <blockquote>                <div id="61f4334cc1ca40b79a0cee07fef9c168"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "numpy", "path": "numpy.random.mtrand.RandomState", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "numpy.random.RandomState"}, {"type": "text", "value": "}, optional"}], "type": "paragraph"});
+            document.getElementById("61f4334cc1ca40b79a0cee07fef9c168").innerHTML = html;
+        }
+        init();
+    </script>
+</blockquote>
+
+                <div id="82c2334455cf4e3bb13187032c9f7491"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Pseudorandom number generator state used to generate permutations."}], "type": "paragraph"});
+            document.getElementById("82c2334455cf4e3bb13187032c9f7491").innerHTML = html;
+        }
+        init();
+    </script>
+
+                <div id="ddfa495e5fb24c80a123083f8c3918d8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "random_state", "type": "RefInfo", "version": null}, "type": "Link", "value": "random_state"}, {"type": "text", "value": " is "}, {"type": "inlineCode", "value": "None"}, {"type": "text", "value": " (default), the "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "numpy", "path": "numpy.random.mtrand.RandomState", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "numpy.random.RandomState"}, {"type": "text", "value": " singleton is used. If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "random_state", "type": "RefInfo", "version": null}, "type": "Link", "value": "random_state"}, {"type": "text", "value": " is an int, a new "}, {"type": "inlineCode", "value": "RandomState"}, {"type": "text", "value": " instance is used, seeded with "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "random_state", "type": "RefInfo", "version": null}, "type": "Link", "value": "random_state"}, {"type": "text", "value": ". If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "random_state", "type": "RefInfo", "version": null}, "type": "Link", "value": "random_state"}, {"type": "text", "value": " is already a "}, {"type": "inlineCode", "value": "Generator"}, {"type": "text", "value": " or "}, {"type": "inlineCode", "value": "RandomState"}, {"type": "text", "value": " instance then that instance is used."}], "type": "paragraph"});
+            document.getElementById("ddfa495e5fb24c80a123083f8c3918d8").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="statistic">statistic</a> : float or ndarray</dt>
+<dd>
+                <div id="96b81cc670a74c6d82d872238e33fe53"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The observed test statistic of the data."}], "type": "paragraph"});
+            document.getElementById("96b81cc670a74c6d82d872238e33fe53").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="pvalue">pvalue</a> : float or ndarray</dt>
+<dd>
+                <div id="1032126da5a24ffda7cc7d8737975103"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The p-value for the given alternative."}], "type": "paragraph"});
+            document.getElementById("1032126da5a24ffda7cc7d8737975103").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="null_distribution">null_distribution</a> : ndarray</dt>
+<dd>
+                <div id="05775a4e16b644daa0d1755282ae1795"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The values of the test statistic generated under the null hypothesis."}], "type": "paragraph"});
+            document.getElementById("05775a4e16b644daa0d1755282ae1795").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="85b90b46e9c4446cb77a1d4b76ec24a6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Performs a permutation test of a given statistic on provided data."}], "type": "paragraph"});
+            document.getElementById("85b90b46e9c4446cb77a1d4b76ec24a6").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+                           Suppose we wish to test whether two samples are drawn from the same
+distribution. Assume that the underlying distributions are unknown to us,
+and that before observing the data, we hypothesized that the mean of the
+first sample would be less than that of the second sample. We decide that
+we will use the difference between the sample means as a test statistic,
+and we will consider a p-value of 0.05 to be statistically significant.  
+            
+                           For efficiency, we write the function defining the test statistic in a
+vectorized fashion: the samples ``x`` and ``y`` can be ND arrays, and the
+statistic will be calculated for each axis-slice along `axis`.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="k">def</span><span class=""> </span><span class="nf">statistic</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">y</span><span class="">,</span><span class=""> </span><span class="">axis</span><span class="">)</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="k">return</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">mean</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">axis</span><span class="o">=</span><span class="">axis</span><span class="">)</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">mean</span><span class="">(</span><span class="">y</span><span class="">,</span><span class=""> </span><span class="">axis</span><span class="o">=</span><span class="">axis</span><span class="">)</span>
+</pre>
+            
+                           After collecting our data, we calculate the observed value of the test
+statistic.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">stats</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">norm</span><br><span class='nsl'>...&nbsp;</span><span class="">rng</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">random</span><span class="o">.</span><span class="">default_rng</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">x</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">norm</span><span class="o">.</span><span class="">rvs</span><span class="">(</span><span class="">size</span><span class="o">=</span><span class="mi">5</span><span class="">,</span><span class=""> </span><span class="">random_state</span><span class="o">=</span><span class="">rng</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">y</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">norm</span><span class="o">.</span><span class="">rvs</span><span class="">(</span><span class="">size</span><span class="o">=</span><span class="mi">6</span><span class="">,</span><span class=""> </span><span class="">loc</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="">random_state</span><span class="o">=</span><span class="">rng</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">statistic</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">y</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">)</span>
+-3.5411688580987266</pre>
+            
+                           Indeed, the test statistic is negative, suggesting that the true mean of
+the distribution underlying ``x`` is less than that of the distribution
+underlying ``y``. To determine the probability of this occuring by chance
+if the two samples were drawn from the same distribution, we perform
+a permutation test.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">stats</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">permutation_test</span><br><span class='nsl'>...&nbsp;</span><span class="c1"># because our statistic is vectorized, we pass `vectorized=True`</span><br><span class='nsl'>...&nbsp;</span><span class="c1"># `n_resamples=np.inf` indicates that an exact test is to be performed</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">permutation_test</span><span class="">(</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">y</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">statistic</span><span class="">,</span><span class=""> </span><span class="">vectorized</span><span class="o">=</span><span class="kc">True</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                       </span><span class="">n_resamples</span><span class="o">=</span><span class="">np</span><span class="o">.</span><span class="">inf</span><span class="">,</span><span class=""> </span><span class="">alternative</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">less</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="nb">print</span><span class="">(</span><span class="">res</span><span class="o">.</span><span class="">statistic</span><span class="">)</span>
+-3.5411688580987266</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="nb">print</span><span class="">(</span><span class="">res</span><span class="o">.</span><span class="">pvalue</span><span class="">)</span>
+0.004329004329004329</pre>
+            
+                           The probability of obtaining a test statistic less than or equal to the
+observed value under the null hypothesis is 0.4329%. This is less than our
+chosen threshold of 5%, so we consider this to be significant evidence
+against the null hypothesis in favor of the alternative.  
+            
+                           Because the size of the samples above was small, `permutation_test` could
+perform an exact test. For larger samples, we resort to a randomized
+permutation test.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">x</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">norm</span><span class="o">.</span><span class="">rvs</span><span class="">(</span><span class="">size</span><span class="o">=</span><span class="mi">100</span><span class="">,</span><span class=""> </span><span class="">random_state</span><span class="o">=</span><span class="">rng</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">y</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">norm</span><span class="o">.</span><span class="">rvs</span><span class="">(</span><span class="">size</span><span class="o">=</span><span class="mi">120</span><span class="">,</span><span class=""> </span><span class="">loc</span><span class="o">=</span><span class="mf">0.3</span><span class="">,</span><span class=""> </span><span class="">random_state</span><span class="o">=</span><span class="">rng</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">permutation_test</span><span class="">(</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">y</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">statistic</span><span class="">,</span><span class=""> </span><span class="">n_resamples</span><span class="o">=</span><span class="mi">100000</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                       </span><span class="">vectorized</span><span class="o">=</span><span class="kc">True</span><span class="">,</span><span class=""> </span><span class="">alternative</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">less</span><span class="s1">&#39;</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                       </span><span class="">random_state</span><span class="o">=</span><span class="">rng</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="nb">print</span><span class="">(</span><span class="">res</span><span class="o">.</span><span class="">statistic</span><span class="">)</span>
+-0.5230459671240913</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="nb">print</span><span class="">(</span><span class="">res</span><span class="o">.</span><span class="">pvalue</span><span class="">)</span>
+0.00016999830001699983</pre>
+            
+                           The approximate probability of obtaining a test statistic less than or
+equal to the observed value under the null hypothesis is 0.0225%. This is
+again less than our chosen threshold of 5%, so again we have significant
+evidence to reject the null hypothesis in favor of the alternative.  
+            
+                           For large samples and number of permutations, the result is comparable to
+that of the corresponding asymptotic test, the independent sample t-test.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">stats</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">ttest_ind</span><br><span class='nsl'>...&nbsp;</span><span class="">res_asymptotic</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">ttest_ind</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">y</span><span class="">,</span><span class=""> </span><span class="">alternative</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">less</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="nb">print</span><span class="">(</span><span class="">res_asymptotic</span><span class="o">.</span><span class="">pvalue</span><span class="">)</span>
+0.00012688101537979522</pre>
+            
+                           The permutation distribution of the test statistic is provided for
+further investigation.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">matplotlib</span><span class="nn">.</span><span class="nn">pyplot</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">plt</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">hist</span><span class="">(</span><span class="">res</span><span class="o">.</span><span class="">null_distribution</span><span class="">,</span><span class=""> </span><span class="">bins</span><span class="o">=</span><span class="mi">50</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">title</span><span class="">(</span><span class="s2">&#34;</span><span class="s2">Permutation distribution of test statistic</span><span class="s2">&#34;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">xlabel</span><span class="">(</span><span class="s2">&#34;</span><span class="s2">Value of Statistic</span><span class="s2">&#34;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">ylabel</span><span class="">(</span><span class="s2">&#34;</span><span class="s2">Frequency</span><span class="s2">&#34;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">show</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+                           Inspection of the null distribution is essential if the statistic suffers
+from inaccuracy due to limited machine precision. Consider the following
+case:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">stats</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">pearsonr</span><br><span class='nsl'>...&nbsp;</span><span class="">x</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">y</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">[</span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">,</span><span class=""> </span><span class="mi">6</span><span class="">,</span><span class=""> </span><span class="mi">8</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="k">def</span><span class=""> </span><span class="nf">statistic</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">y</span><span class="">)</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="k">return</span><span class=""> </span><span class="">pearsonr</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">y</span><span class="">)</span><span class="o">.</span><span class="">statistic</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">permutation_test</span><span class="">(</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">y</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">statistic</span><span class="">,</span><span class=""> </span><span class="">vectorized</span><span class="o">=</span><span class="kc">False</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                       </span><span class="">permutation_type</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">pairings</span><span class="s1">&#39;</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                       </span><span class="">alternative</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">greater</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">r</span><span class="">,</span><span class=""> </span><span class="">pvalue</span><span class="">,</span><span class=""> </span><span class="">null</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">res</span><span class="o">.</span><span class="">statistic</span><span class="">,</span><span class=""> </span><span class="">res</span><span class="o">.</span><span class="">pvalue</span><span class="">,</span><span class=""> </span><span class="">res</span><span class="o">.</span><span class="">null_distribution</span>
+</pre>
+            
+                           In this case, some elements of the null distribution differ from the
+observed value of the correlation coefficient ``r`` due to numerical noise.
+We manually inspect the elements of the null distribution that are nearly
+the same as the observed value of the test statistic.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">r</span>
+0.8</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">unique</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">unique</span><span class="">(</span><span class="">null</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">unique</span>
+array([-1. , -0.8, -0.8, -0.6, -0.4, -0.2, -0.2,  0. ,  0.2,  0.2,  0.4,
+        0.6,  0.8,  0.8,  1. ]) # may vary</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">unique</span><span class="">[</span><span class="">np</span><span class="o">.</span><span class="">isclose</span><span class="">(</span><span class="">r</span><span class="">,</span><span class=""> </span><span class="">unique</span><span class="">)</span><span class="">]</span><span class="o">.</span><span class="">tolist</span><span class="">(</span><span class="">)</span>
+[0.7999999999999999, 0.8]</pre>
+            
+                           If `permutation_test` were to perform the comparison naively, the
+elements of the null distribution with value ``0.7999999999999999`` would
+not be considered as extreme or more extreme as the observed value of the
+statistic, so the calculated p-value would be too small.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">incorrect_pvalue</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">count_nonzero</span><span class="">(</span><span class="">null</span><span class=""> </span><span class="o">&gt;</span><span class="o">=</span><span class=""> </span><span class="">r</span><span class="">)</span><span class=""> </span><span class="o">/</span><span class=""> </span><span class="nb">len</span><span class="">(</span><span class="">null</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">incorrect_pvalue</span>
+0.1111111111111111  # may vary</pre>
+            
+                           Instead, `permutation_test` treats elements of the null distribution that
+are within ``max(1e-14, abs(r)*1e-14)`` of the observed value of the
+statistic ``r`` to be equal to ``r``.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">correct_pvalue</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">count_nonzero</span><span class="">(</span><span class="">null</span><span class=""> </span><span class="o">&gt;</span><span class="o">=</span><span class=""> </span><span class="">r</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="mf">1e-14</span><span class="">)</span><span class=""> </span><span class="o">/</span><span class=""> </span><span class="nb">len</span><span class="">(</span><span class="">null</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">correct_pvalue</span>
+0.16666666666666666</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">res</span><span class="o">.</span><span class="">pvalue</span><span class=""> </span><span class="o">==</span><span class=""> </span><span class="">correct_pvalue</span>
+True</pre>
+            
+                           This method of comparison is expected to be accurate in most practical
+situations, but the user is advised to assess this by inspecting the
+elements of the null distribution that are close to the observed value
+of the statistic. Also, consider the use of statistics that can be
+calculated using exact arithmetic (e.g. integer statistics).  
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.stats._resampling._permutation_test_iv.html" class='exists'>scipy.stats._resampling._permutation_test_iv</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.stats._stats_py.ttest_ind.html" class='exists'>scipy.stats._stats_py.ttest_ind</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/stats/_resampling.py#L1133'>/scipy/stats/_resampling.py#1133</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 9.414213562373096, "label": "scipy.stats._stats_py.ttest_ind", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.stats._stats_py.ttest_ind"}, {"id": 2, "val": 8.0, "label": "scipy.stats._resampling._permutation_test_iv", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.stats._resampling._permutation_test_iv"}, {"id": 3, "val": 14.782329983125269, "label": "numpy.random.mtrand.RandomState", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.random.mtrand.RandomState"}], "links": [{"source": 3, "target": 1, "id": 46}]};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

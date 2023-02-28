@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats.html'>stats</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats._stats_py.html'>_stats_py</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.stats._axis_nan_policy.html">_axis_nan_policy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._biasedurn.html">_biasedurn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binned_statistic.html">_binned_statistic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binomtest.html">_binomtest</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._boost.html">_boost</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._common.html">_common</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._constants.html">_constants</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._continuous_distns.html">_continuous_distns</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._covariance.html">_covariance</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._crosstab.html">_crosstab</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._discrete_distns.html">_discrete_distns</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._distn_infrastructure.html">_distn_infrastructure</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._distr_params.html">_distr_params</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._entropy.html">_entropy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._fit.html">_fit</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.html">_hypotests</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._kde.html">_kde</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._ksstats.html">_ksstats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable.html">_levy_stable</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mannwhitneyu.html">_mannwhitneyu</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._morestats.html">_morestats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mstats_basic.html">_mstats_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mstats_extras.html">_mstats_extras</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._multivariate.html">_multivariate</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mvn.html">_mvn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._odds_ratio.html">_odds_ratio</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._page_trend_test.html">_page_trend_test</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.html">_qmc</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc_cy.html">_qmc_cy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._rcont.html">_rcont</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._relative_risk.html">_relative_risk</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling.html">_resampling</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._rvs_sampling.html">_rvs_sampling</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._sobol.html">_sobol</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._statlib.html">_statlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats.html">_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_mstats_common.html">_stats_mstats_common</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.html">_stats_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_pythran.html">_stats_pythran</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._tukeylambda_stats.html">_tukeylambda_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._variation.html">_variation</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._warnings_errors.html">_warnings_errors</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.biasedurn.html">biasedurn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.contingency.html">contingency</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.distributions.html">distributions</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.kde.html">kde</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.morestats.html">morestats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats.html">mstats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats_basic.html">mstats_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats_extras.html">mstats_extras</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mvn.html">mvn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.qmc.html">qmc</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.statlib.html">statlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats._stats_py.spearmanr.html'>spearmanr</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.BrunnerMunzelResult.html">BrunnerMunzelResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.ConfidenceInterval.html">ConfidenceInterval</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.CumfreqResult.html">CumfreqResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.DescribeResult.html">DescribeResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.F_onewayResult.html">F_onewayResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.FriedmanchisquareResult.html">FriedmanchisquareResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.HistogramResult.html">HistogramResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.KruskalResult.html">KruskalResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.KstestResult.html">KstestResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.KurtosistestResult.html">KurtosistestResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.MGCResult.html">MGCResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.ModeResult.html">ModeResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.NormaltestResult.html">NormaltestResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.PearsonRResult.html">PearsonRResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.PearsonRResultBase.html">PearsonRResultBase</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.Power_divergenceResult.html">Power_divergenceResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.RanksumsResult.html">RanksumsResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.RelfreqResult.html">RelfreqResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.RepeatedResults.html">RepeatedResults</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.SigmaclipResult.html">SigmaclipResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.SignificanceResult.html">SignificanceResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.SkewtestResult.html">SkewtestResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.TtestResult.html">TtestResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.TtestResultBase.html">TtestResultBase</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.Ttest_indResult.html">Ttest_indResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._ParallelP.html">_ParallelP</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._alexandergovern_input_validation.html">_alexandergovern_input_validation</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._attempt_exact_2kssamp.html">_attempt_exact_2kssamp</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._broadcast_shapes.html">_broadcast_shapes</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._broadcast_shapes_with_dropped_axis.html">_broadcast_shapes_with_dropped_axis</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._calc_t_stat.html">_calc_t_stat</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._calculate_winsorized_variance.html">_calculate_winsorized_variance</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._cdf_distance.html">_cdf_distance</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._chk2_asarray.html">_chk2_asarray</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._chk_asarray.html">_chk_asarray</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._compute_dminus.html">_compute_dminus</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._compute_dplus.html">_compute_dplus</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._compute_prob_outside_square.html">_compute_prob_outside_square</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._compute_qth_percentile.html">_compute_qth_percentile</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._count.html">_count</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._count_paths_outside_method.html">_count_paths_outside_method</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._create_f_oneway_nan_result.html">_create_f_oneway_nan_result</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._equal_var_ttest_denom.html">_equal_var_ttest_denom</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._euclidean_dist.html">_euclidean_dist</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._first.html">_first</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._get_len.html">_get_len</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._histogram.html">_histogram</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._isconst.html">_isconst</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._m_broadcast_to.html">_m_broadcast_to</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._mad_1d.html">_mad_1d</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._mask_to_limits.html">_mask_to_limits</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._mgc_stat.html">_mgc_stat</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._moment.html">_moment</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._moment_outputs.html">_moment_outputs</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._moment_result_object.html">_moment_result_object</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._normtest_finish.html">_normtest_finish</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._parse_kstest_args.html">_parse_kstest_args</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._pearsonr_fisher_ci.html">_pearsonr_fisher_ci</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._perm_test.html">_perm_test</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._permutation_distribution_t.html">_permutation_distribution_t</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._permutation_ttest.html">_permutation_ttest</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._quiet_nanmean.html">_quiet_nanmean</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._quiet_nanstd.html">_quiet_nanstd</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._shape_with_dropped_axis.html">_shape_with_dropped_axis</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._smooth_mgc_map.html">_smooth_mgc_map</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._square_of_sums.html">_square_of_sums</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._sum_of_squares.html">_sum_of_squares</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._t_confidence_interval.html">_t_confidence_interval</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._threshold_mgc_map.html">_threshold_mgc_map</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._ttest_finish.html">_ttest_finish</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._ttest_ind_from_stats.html">_ttest_ind_from_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._ttest_nans.html">_ttest_nans</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._ttest_trim_var_mean_len.html">_ttest_trim_var_mean_len</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._two_sample_transform.html">_two_sample_transform</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._unequal_var_ttest_denom.html">_unequal_var_ttest_denom</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._validate_distribution.html">_validate_distribution</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py._var.html">_var</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.alexandergovern.html">alexandergovern</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.brunnermunzel.html">brunnermunzel</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.chisquare.html">chisquare</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.combine_pvalues.html">combine_pvalues</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.cumfreq.html">cumfreq</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.describe.html">describe</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.energy_distance.html">energy_distance</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.expectile.html">expectile</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.f_oneway.html">f_oneway</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.find_repeats.html">find_repeats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.fisher_exact.html">fisher_exact</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.friedmanchisquare.html">friedmanchisquare</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.gmean.html">gmean</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.gstd.html">gstd</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.gzscore.html">gzscore</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.hmean.html">hmean</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.iqr.html">iqr</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.jarque_bera.html">jarque_bera</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.kendalltau.html">kendalltau</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.kruskal.html">kruskal</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.ks_1samp.html">ks_1samp</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.ks_2samp.html">ks_2samp</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.kstest.html">kstest</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.kurtosis.html">kurtosis</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.kurtosistest.html">kurtosistest</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.median_abs_deviation.html">median_abs_deviation</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.mode.html">mode</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.multiscale_graphcorr.html">multiscale_graphcorr</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.normaltest.html">normaltest</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.obrientransform.html">obrientransform</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.pack_TtestResult.html">pack_TtestResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.pearsonr.html">pearsonr</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.percentileofscore.html">percentileofscore</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.pmean.html">pmean</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.pointbiserialr.html">pointbiserialr</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.power_divergence.html">power_divergence</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.rankdata.html">rankdata</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.ranksums.html">ranksums</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.relfreq.html">relfreq</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.scoreatpercentile.html">scoreatpercentile</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.sem.html">sem</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.sigmaclip.html">sigmaclip</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.skew.html">skew</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.skewtest.html">skewtest</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.spearmanr.html">spearmanr</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.tiecorrect.html">tiecorrect</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.tmax.html">tmax</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.tmean.html">tmean</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.tmin.html">tmin</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.trim1.html">trim1</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.trim_mean.html">trim_mean</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.trimboth.html">trimboth</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.tsem.html">tsem</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.tstd.html">tstd</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.ttest_1samp.html">ttest_1samp</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.ttest_ind.html">ttest_ind</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.ttest_ind_from_stats.html">ttest_ind_from_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.ttest_rel.html">ttest_rel</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.tvar.html">tvar</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.unpack_TtestResult.html">unpack_TtestResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.wasserstein_distance.html">wasserstein_distance</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.weightedtau.html">weightedtau</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.zmap.html">zmap</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.zscore.html">zscore</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-Warns">Warns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>spearmanr(a, b=None, axis=0, nan_policy=&#39;propagate&#39;, alternative=&#39;two-sided&#39;)</code><!-- rendering Extended Summary -->
+                                       <div id="fb055d28b39a49babc528e31da9e8cc4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The Spearman rank-order correlation coefficient is a nonparametric measure of the monotonicity of the relationship between two datasets. Like other correlation coefficients, this one varies between -1 and +1 with 0 implying no correlation. Correlations of -1 or +1 imply an exact monotonic relationship. Positive correlations imply that as x increases, so does y. Negative correlations imply that as x increases, y decreases."}], "type": "paragraph"});
+            document.getElementById("fb055d28b39a49babc528e31da9e8cc4").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="f6b2034f0f9a48559bab2abfc518d24d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The p-value roughly indicates the probability of an uncorrelated system producing datasets that have a Spearman correlation at least as extreme as the one computed from these datasets. Although calculation of the p-value does not make strong assumptions about the distributions underlying the samples, it is only accurate for very large samples (\u003e500 observations). For smaller sample sizes, consider a permutation test (see Examples section below)."}], "type": "paragraph"});
+            document.getElementById("f6b2034f0f9a48559bab2abfc518d24d").innerHTML = html;
+        }
+        init();
+    </script>
+
+<!-- rendering Notes -->
+        <h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="a, b">a, b</a> : 1D or 2D array_like, b is optional</dt>
+<dd>
+                <div id="e7e618f9ae4e4b39a3e9070148014f39"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "One or two 1-D or 2-D arrays containing multiple variables and observations. When these are 1-D, each represents a vector of observations of a single variable. For the behavior in the 2-D case, see under "}, {"type": "inlineCode", "value": "axis"}, {"type": "text", "value": ", below. Both arrays need to have the same length in the "}, {"type": "inlineCode", "value": "axis"}, {"type": "text", "value": " dimension."}], "type": "paragraph"});
+            document.getElementById("e7e618f9ae4e4b39a3e9070148014f39").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="axis">axis</a> : int or None, optional</dt>
+<dd>
+                <div id="76a711d351cd45258cad96bff223c461"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If axis=0 (default), then each column represents a variable, with observations in the rows. If axis=1, the relationship is transposed: each row represents a variable, while the columns contain observations. If axis=None, then both arrays will be raveled."}], "type": "paragraph"});
+            document.getElementById("76a711d351cd45258cad96bff223c461").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="nan_policy">nan_policy</a> : {&#39;propagate&#39;, &#39;raise&#39;, &#39;omit&#39;}, optional</dt>
+<dd>
+                <div id="97faa06b9dde47188a0c76a9a87828b8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Defines how to handle when input contains nan. The following options are available (default is \u0027propagate\u0027):"}], "type": "paragraph"});
+            document.getElementById("97faa06b9dde47188a0c76a9a87828b8").innerHTML = html;
+        }
+        init();
+    </script>
+
+           <ul>               <li>                               <div id="0cfb9571023f4ca8bd2c83726e5aee8a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027propagate\u0027: returns nan"}], "type": "paragraph"});
+            document.getElementById("0cfb9571023f4ca8bd2c83726e5aee8a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="ace252e6a998463bb63a6d5d005551e0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027raise\u0027: throws an error"}], "type": "paragraph"});
+            document.getElementById("ace252e6a998463bb63a6d5d005551e0").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="a0337344b83848068bdd5c3f955265d4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027omit\u0027: performs the calculations ignoring nan values"}], "type": "paragraph"});
+            document.getElementById("a0337344b83848068bdd5c3f955265d4").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+
+</dd>
+<dt><a id="alternative">alternative</a> : {&#39;two-sided&#39;, &#39;less&#39;, &#39;greater&#39;}, optional</dt>
+<dd>
+                <div id="744a13c051c344ecb1c15f9b74a4e929"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Defines the alternative hypothesis. Default is \u0027two-sided\u0027. The following options are available:"}], "type": "paragraph"});
+            document.getElementById("744a13c051c344ecb1c15f9b74a4e929").innerHTML = html;
+        }
+        init();
+    </script>
+
+           <ul>               <li>                               <div id="547738d6ddc8474e819bc9ff9360f864"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027two-sided\u0027: the correlation is nonzero"}], "type": "paragraph"});
+            document.getElementById("547738d6ddc8474e819bc9ff9360f864").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="fe398157a0af4228a541855fdf548378"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027less\u0027: the correlation is negative (less than zero)"}], "type": "paragraph"});
+            document.getElementById("fe398157a0af4228a541855fdf548378").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="f7aa828948894b248a6da564731e6168"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027greater\u0027:  the correlation is positive (greater than zero)"}], "type": "paragraph"});
+            document.getElementById("f7aa828948894b248a6da564731e6168").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+
+            <div class='admonition'>
+    <div>versionadded 1.7.0</div>
+</div>
+
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="res">res</a> : SignificanceResult</dt>
+<dd>
+                <div id="20f8267bc4fb43a29ff764b8e1e764fc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "An object containing attributes:"}], "type": "paragraph"});
+            document.getElementById("20f8267bc4fb43a29ff764b8e1e764fc").innerHTML = html;
+        }
+        init();
+    </script>
+
+<!-- deflist -->
+           <dl>
+               <dt>                <div id="f3d92b945abc4c419f6eb92ece63e757"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "statistic"}], "type": "paragraph"});
+            document.getElementById("f3d92b945abc4c419f6eb92ece63e757").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="1d13ebcec90842e082398775642c5885"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "statistic"}], "type": "paragraph"});
+            document.getElementById("1d13ebcec90842e082398775642c5885").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="2a9ba7deddc941ae955acde5cc63f17c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "pvalue"}], "type": "paragraph"});
+            document.getElementById("2a9ba7deddc941ae955acde5cc63f17c").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="ff088ca95a014e9ea0d2ade7e9e324c1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "pvalue"}], "type": "paragraph"});
+            document.getElementById("ff088ca95a014e9ea0d2ade7e9e324c1").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="234be90b609e407fa11d160a7a5e3ba0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Calculate a Spearman correlation coefficient with associated p-value."}], "type": "paragraph"});
+            document.getElementById("234be90b609e407fa11d160a7a5e3ba0").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Warns">Warns</h3>
+<dl>
+<dt>`~scipy.stats.ConstantInputWarning`</dt>
+<dd>
+                <div id="77b6eb073aae4138972cef7e33713fa9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Raised if an input is a constant array.  The correlation coefficient is not defined in this case, so "}, {"type": "inlineCode", "value": "np.nan"}, {"type": "text", "value": " is returned."}], "type": "paragraph"});
+            document.getElementById("77b6eb073aae4138972cef7e33713fa9").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Examples">Examples</h3>
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">stats</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">spearmanr</span><span class="">(</span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">,</span><span class=""> </span><span class="mi">5</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">5</span><span class="">,</span><span class=""> </span><span class="mi">6</span><span class="">,</span><span class=""> </span><span class="mi">7</span><span class="">,</span><span class=""> </span><span class="mi">8</span><span class="">,</span><span class=""> </span><span class="mi">7</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class="o">.</span><span class="">statistic</span>
+0.8207826816681233</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">res</span><span class="o">.</span><span class="">pvalue</span>
+0.08858700531354381</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">rng</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">random</span><span class="o">.</span><span class="">default_rng</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">x2n</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">rng</span><span class="o">.</span><span class="">standard_normal</span><span class="">(</span><span class="">(</span><span class="mi">100</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">y2n</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">rng</span><span class="o">.</span><span class="">standard_normal</span><span class="">(</span><span class="">(</span><span class="mi">100</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">spearmanr</span><span class="">(</span><span class="">x2n</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class="o">.</span><span class="">statistic</span><span class="">,</span><span class=""> </span><span class="">res</span><span class="o">.</span><span class="">pvalue</span>
+(-0.07960396039603959, 0.4311168705769747)</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">spearmanr</span><span class="">(</span><span class="">x2n</span><span class="">[</span><span class="">:</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">x2n</span><span class="">[</span><span class="">:</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class="o">.</span><span class="">statistic</span><span class="">,</span><span class=""> </span><span class="">res</span><span class="o">.</span><span class="">pvalue</span>
+(-0.07960396039603959, 0.4311168705769747)</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">spearmanr</span><span class="">(</span><span class="">x2n</span><span class="">,</span><span class=""> </span><span class="">y2n</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class="o">.</span><span class="">statistic</span>
+array([[ 1.        , -0.07960396, -0.08314431,  0.09662166],
+       [-0.07960396,  1.        , -0.14448245,  0.16738074],
+       [-0.08314431, -0.14448245,  1.        ,  0.03234323],
+       [ 0.09662166,  0.16738074,  0.03234323,  1.        ]])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">res</span><span class="o">.</span><span class="">pvalue</span>
+array([[0.        , 0.43111687, 0.41084066, 0.33891628],
+       [0.43111687, 0.        , 0.15151618, 0.09600687],
+       [0.41084066, 0.15151618, 0.        , 0.74938561],
+       [0.33891628, 0.09600687, 0.74938561, 0.        ]])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">spearmanr</span><span class="">(</span><span class="">x2n</span><span class="o">.</span><span class="">T</span><span class="">,</span><span class=""> </span><span class="">y2n</span><span class="o">.</span><span class="">T</span><span class="">,</span><span class=""> </span><span class="">axis</span><span class="o">=</span><span class="mi">1</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class="o">.</span><span class="">statistic</span>
+array([[ 1.        , -0.07960396, -0.08314431,  0.09662166],
+       [-0.07960396,  1.        , -0.14448245,  0.16738074],
+       [-0.08314431, -0.14448245,  1.        ,  0.03234323],
+       [ 0.09662166,  0.16738074,  0.03234323,  1.        ]])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">spearmanr</span><span class="">(</span><span class="">x2n</span><span class="">,</span><span class=""> </span><span class="">y2n</span><span class="">,</span><span class=""> </span><span class="">axis</span><span class="o">=</span><span class="kc">None</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class="o">.</span><span class="">statistic</span><span class="">,</span><span class=""> </span><span class="">res</span><span class="o">.</span><span class="">pvalue</span>
+(0.044981624540613524, 0.5270803651336189)</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">spearmanr</span><span class="">(</span><span class="">x2n</span><span class="o">.</span><span class="">ravel</span><span class="">(</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">y2n</span><span class="o">.</span><span class="">ravel</span><span class="">(</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class="o">.</span><span class="">statistic</span><span class="">,</span><span class=""> </span><span class="">res</span><span class="o">.</span><span class="">pvalue</span>
+(0.044981624540613524, 0.5270803651336189)</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">rng</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">random</span><span class="o">.</span><span class="">default_rng</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">xint</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">rng</span><span class="o">.</span><span class="">integers</span><span class="">(</span><span class="mi">10</span><span class="">,</span><span class=""> </span><span class="">size</span><span class="o">=</span><span class="">(</span><span class="mi">100</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">spearmanr</span><span class="">(</span><span class="">xint</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">res</span><span class="o">.</span><span class="">statistic</span><span class="">,</span><span class=""> </span><span class="">res</span><span class="o">.</span><span class="">pvalue</span>
+(0.09800224850707953, 0.3320271757932076)</pre>
+            
+                           For small samples, consider performing a permutation test instead of
+relying on the asymptotic p-value. Note that to calculate the null
+distribution of the statistic (for all possibly pairings between
+observations in sample ``x`` and ``y``), only one of the two inputs needs
+to be permuted.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">x</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">[</span><span class="mf">1.76405235</span><span class="">,</span><span class=""> </span><span class="mf">0.40015721</span><span class="">,</span><span class=""> </span><span class="mf">0.97873798</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">     </span><span class="mf">2.2408932</span><span class="">,</span><span class=""> </span><span class="mf">1.86755799</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mf">0.97727788</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">y</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">[</span><span class="mf">2.71414076</span><span class="">,</span><span class=""> </span><span class="mf">0.2488</span><span class="">,</span><span class=""> </span><span class="mf">0.87551913</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">     </span><span class="mf">2.6514917</span><span class="">,</span><span class=""> </span><span class="mf">2.01160156</span><span class="">,</span><span class=""> </span><span class="mf">0.47699563</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="k">def</span><span class=""> </span><span class="nf">statistic</span><span class="">(</span><span class="">x</span><span class="">)</span><span class="">:</span><span class="">  </span><span class="c1"># permute only `x`</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="k">return</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">spearmanr</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">y</span><span class="">)</span><span class="o">.</span><span class="">statistic</span><br><span class='nsl'>...&nbsp;</span><span class="">res_exact</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">permutation_test</span><span class="">(</span><span class="">(</span><span class="">x</span><span class="">,</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">statistic</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                                   </span><span class="">permutation_type</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">pairings</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">res_asymptotic</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">spearmanr</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">y</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">res_exact</span><span class="o">.</span><span class="">pvalue</span><span class="">,</span><span class=""> </span><span class="">res_asymptotic</span><span class="o">.</span><span class="">pvalue</span><span class="">  </span><span class="c1"># asymptotic pvalue is too low</span>
+(0.10277777777777777, 0.07239650145772594)</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.stats._stats_py.pearsonr.html" class='exists'>scipy.stats._stats_py.pearsonr</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.stats._stats_py.multiscale_graphcorr.html" class='exists'>scipy.stats._stats_py.multiscale_graphcorr</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.stats._stats_py.weightedtau.html" class='exists'>scipy.stats._stats_py.weightedtau</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.stats._stats_py.kendalltau.html" class='exists'>scipy.stats._stats_py.kendalltau</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/stats/_stats_py.py#L4729'>/scipy/stats/_stats_py.py#4729</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 9.414213562373096, "label": "scipy.stats._stats_py.weightedtau", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.stats._stats_py.weightedtau"}, {"id": 2, "val": 9.732050807568877, "label": "scipy.stats._stats_py.kendalltau", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.stats._stats_py.kendalltau"}, {"id": 3, "val": 10.0, "label": "scipy.stats._stats_py.pearsonr", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.stats._stats_py.pearsonr"}, {"id": 4, "val": 8.0, "label": "scipy.stats._stats_py.multiscale_graphcorr", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.stats._stats_py.multiscale_graphcorr"}], "links": [{"source": 3, "target": 4, "id": 2}, {"source": 1, "target": 2, "id": 5}, {"source": 2, "target": 3, "id": 6}, {"source": 2, "target": 4, "id": 7}, {"source": 2, "target": 1, "id": 8}]};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

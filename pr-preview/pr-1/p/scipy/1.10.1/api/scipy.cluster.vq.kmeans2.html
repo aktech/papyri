@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.cluster.html'>cluster</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.cluster.vq.html'>vq</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.cluster._hierarchy.html">_hierarchy</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster._optimal_leaf_ordering.html">_optimal_leaf_ordering</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster._vq.html">_vq</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.hierarchy.html">hierarchy</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.vq.html">vq</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.cluster.vq.kmeans2.html'>kmeans2</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.cluster.vq.ClusterError.html">ClusterError</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.vq._kmeans.html">_kmeans</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.vq._kpoints.html">_kpoints</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.vq._kpp.html">_kpp</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.vq._krandinit.html">_krandinit</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.vq._missing_raise.html">_missing_raise</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.vq._missing_warn.html">_missing_warn</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.vq.kmeans.html">kmeans</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.vq.kmeans2.html">kmeans2</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.vq.py_vq.html">py_vq</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.vq.vq.html">vq</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.vq.whiten.html">whiten</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>kmeans2(data, k, iter=10, thresh=1e-05, minit=&#39;random&#39;, missing=&#39;warn&#39;, check_finite=True, *, seed=None)</code><!-- rendering Extended Summary -->
+                                       <div id="576bb7ed1dc24174acac94971a476806"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The algorithm attempts to minimize the Euclidean distance between observations and centroids. Several initialization methods are included."}], "type": "paragraph"});
+            document.getElementById("576bb7ed1dc24174acac94971a476806").innerHTML = html;
+        }
+        init();
+    </script>
+
+<!-- rendering Notes -->
+        <h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="data">data</a> : ndarray</dt>
+<dd>
+                <div id="47cc4040890f476188c82646545bf2df"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A \u0027M\u0027 by \u0027N\u0027 array of \u0027M\u0027 observations in \u0027N\u0027 dimensions or a length \u0027M\u0027 array of \u0027M\u0027 1-D observations."}], "type": "paragraph"});
+            document.getElementById("47cc4040890f476188c82646545bf2df").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="k">k</a> : int or ndarray</dt>
+<dd>
+                <div id="b6c2395d64704c3e87c103405fffa2c6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The number of clusters to form as well as the number of centroids to generate. If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "minit", "type": "RefInfo", "version": null}, "type": "Link", "value": "minit"}, {"type": "text", "value": " initialization string is \u0027matrix\u0027, or if a ndarray is given instead, it is interpreted as initial cluster to use instead."}], "type": "paragraph"});
+            document.getElementById("b6c2395d64704c3e87c103405fffa2c6").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="iter">iter</a> : int, optional</dt>
+<dd>
+                <div id="911fdce46c404498b16cd23eb6bee84a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Number of iterations of the k-means algorithm to run. Note that this differs in meaning from the iters parameter to the kmeans function."}], "type": "paragraph"});
+            document.getElementById("911fdce46c404498b16cd23eb6bee84a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="thresh">thresh</a> : float, optional</dt>
+<dd>
+                <div id="e5a4f3f1f310437f8b22a823768691a6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "(not used yet)"}], "type": "paragraph"});
+            document.getElementById("e5a4f3f1f310437f8b22a823768691a6").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="minit">minit</a> : str, optional</dt>
+<dd>
+                <div id="0355780d473248c0b2c4be27351c7a54"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Method for initialization. Available methods are \u0027random\u0027, \u0027points\u0027, \u0027++\u0027 and \u0027matrix\u0027:"}], "type": "paragraph"});
+            document.getElementById("0355780d473248c0b2c4be27351c7a54").innerHTML = html;
+        }
+        init();
+    </script>
+
+                <div id="741b0b0bc16a40e9bbda29024f55c6fa"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027random\u0027: generate k centroids from a Gaussian with mean and variance estimated from the data."}], "type": "paragraph"});
+            document.getElementById("741b0b0bc16a40e9bbda29024f55c6fa").innerHTML = html;
+        }
+        init();
+    </script>
+
+                <div id="4dc3a047baaa49b59c79b191993d352d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027points\u0027: choose k observations (rows) at random from data for the initial centroids."}], "type": "paragraph"});
+            document.getElementById("4dc3a047baaa49b59c79b191993d352d").innerHTML = html;
+        }
+        init();
+    </script>
+
+                <div id="d63929f6b9c744ebb6cd4275d924adaa"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027++\u0027: choose k observations accordingly to the kmeans++ method (careful seeding)"}], "type": "paragraph"});
+            document.getElementById("d63929f6b9c744ebb6cd4275d924adaa").innerHTML = html;
+        }
+        init();
+    </script>
+
+                <div id="e89d3f79cb8b458d8a54d7be642337a0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027matrix\u0027: interpret the k parameter as a k by M (or length k array for 1-D data) array of initial centroids."}], "type": "paragraph"});
+            document.getElementById("e89d3f79cb8b458d8a54d7be642337a0").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="missing">missing</a> : str, optional</dt>
+<dd>
+                <div id="0e3583a2ca1a4ffaad9179cdcb856c97"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Method to deal with empty clusters. Available methods are \u0027warn\u0027 and \u0027raise\u0027:"}], "type": "paragraph"});
+            document.getElementById("0e3583a2ca1a4ffaad9179cdcb856c97").innerHTML = html;
+        }
+        init();
+    </script>
+
+                <div id="afbfa365528745d08edd3904cce7b92e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027warn\u0027: give a warning and continue."}], "type": "paragraph"});
+            document.getElementById("afbfa365528745d08edd3904cce7b92e").innerHTML = html;
+        }
+        init();
+    </script>
+
+                <div id="804139930c3a452fa6877effa170c039"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027raise\u0027: raise an ClusterError and terminate the algorithm."}], "type": "paragraph"});
+            document.getElementById("804139930c3a452fa6877effa170c039").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="check_finite">check_finite</a> : bool, optional</dt>
+<dd>
+                <div id="8607e0a75a3c45b5b66c0d78e68c7501"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Whether to check that the input matrices contain only finite numbers. Disabling may give a performance gain, but may result in problems (crashes, non-termination) if the inputs do contain infinities or NaNs. Default: True"}], "type": "paragraph"});
+            document.getElementById("8607e0a75a3c45b5b66c0d78e68c7501").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="seed">seed</a> : {None, int, `numpy.random.Generator`, `numpy.random.RandomState`}, optional</dt>
+<dd>
+                <div id="1c3517b0e6d2433f9e6bd81d89a8d6b6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Seed for initializing the pseudo-random number generator. If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "seed", "type": "RefInfo", "version": null}, "type": "Link", "value": "seed"}, {"type": "text", "value": " is None (or "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "numpy", "path": "numpy.random", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "numpy.random"}, {"type": "text", "value": "), the "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "numpy", "path": "numpy.random.mtrand.RandomState", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "numpy.random.RandomState"}, {"type": "text", "value": " singleton is used. If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "seed", "type": "RefInfo", "version": null}, "type": "Link", "value": "seed"}, {"type": "text", "value": " is an int, a new "}, {"type": "inlineCode", "value": "RandomState"}, {"type": "text", "value": " instance is used, seeded with "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "seed", "type": "RefInfo", "version": null}, "type": "Link", "value": "seed"}, {"type": "text", "value": ". If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "seed", "type": "RefInfo", "version": null}, "type": "Link", "value": "seed"}, {"type": "text", "value": " is already a "}, {"type": "inlineCode", "value": "Generator"}, {"type": "text", "value": " or "}, {"type": "inlineCode", "value": "RandomState"}, {"type": "text", "value": " instance then that instance is used. The default is None."}], "type": "paragraph"});
+            document.getElementById("1c3517b0e6d2433f9e6bd81d89a8d6b6").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="centroid">centroid</a> : ndarray</dt>
+<dd>
+                <div id="f8fe5d1b016a482a999e6a1384163cde"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A \u0027k\u0027 by \u0027N\u0027 array of centroids found at the last iteration of k-means."}], "type": "paragraph"});
+            document.getElementById("f8fe5d1b016a482a999e6a1384163cde").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="label">label</a> : ndarray</dt>
+<dd>
+                <div id="e1c08ce30ebc4456a87b56b35951855e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "label[i] is the code or index of the centroid the ith observation is closest to."}], "type": "paragraph"});
+            document.getElementById("e1c08ce30ebc4456a87b56b35951855e").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="5bd48b28a33143eca550c218357f7642"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Classify a set of observations into k clusters using the k-means algorithm."}], "type": "paragraph"});
+            document.getElementById("5bd48b28a33143eca550c218357f7642").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.cluster.vq.kmeans.html" class='exists'>kmeans</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">cluster</span><span class="nn">.</span><span class="nn">vq</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">kmeans2</span><br><span class='nsl'>...&nbsp;</span><span class="kn">import</span><span class=""> </span><span class="nn">matplotlib</span><span class="nn">.</span><span class="nn">pyplot</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">plt</span><br><span class='nsl'>...&nbsp;</span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span>
+</pre>
+            
+                           Create z, an array with shape (100, 2) containing a mixture of samples
+from three multivariate normal distributions.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">rng</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">random</span><span class="o">.</span><span class="">default_rng</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">a</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">rng</span><span class="o">.</span><span class="">multivariate_normal</span><span class="">(</span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">6</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="">[</span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mf">1.5</span><span class="">]</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">size</span><span class="o">=</span><span class="mi">45</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">b</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">rng</span><span class="o">.</span><span class="">multivariate_normal</span><span class="">(</span><span class="">[</span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="o">-</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">]</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">size</span><span class="o">=</span><span class="mi">30</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">c</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">rng</span><span class="o">.</span><span class="">multivariate_normal</span><span class="">(</span><span class="">[</span><span class="mi">6</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="">[</span><span class="mi">5</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mf">1.2</span><span class="">]</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">size</span><span class="o">=</span><span class="mi">25</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">z</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">concatenate</span><span class="">(</span><span class="">(</span><span class="">a</span><span class="">,</span><span class=""> </span><span class="">b</span><span class="">,</span><span class=""> </span><span class="">c</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">rng</span><span class="o">.</span><span class="">shuffle</span><span class="">(</span><span class="">z</span><span class="">)</span>
+</pre>
+            
+                           Compute three clusters.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">centroid</span><span class="">,</span><span class=""> </span><span class="">label</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">kmeans2</span><span class="">(</span><span class="">z</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="">minit</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">points</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">centroid</span>
+array([[ 2.22274463, -0.61666946],  # may vary
+       [ 0.54069047,  5.86541444],
+       [ 6.73846769,  4.01991898]])</pre>
+            
+                           How many points are in each cluster?  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">counts</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">bincount</span><span class="">(</span><span class="">label</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">counts</span>
+array([29, 51, 20])  # may vary</pre>
+            
+                           Plot the clusters.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">w0</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">z</span><span class="">[</span><span class="">label</span><span class=""> </span><span class="o">==</span><span class=""> </span><span class="mi">0</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">w1</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">z</span><span class="">[</span><span class="">label</span><span class=""> </span><span class="o">==</span><span class=""> </span><span class="mi">1</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">w2</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">z</span><span class="">[</span><span class="">label</span><span class=""> </span><span class="o">==</span><span class=""> </span><span class="mi">2</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">w0</span><span class="">[</span><span class="">:</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">w0</span><span class="">[</span><span class="">:</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">o</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="">,</span><span class=""> </span><span class="">label</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">cluster 0</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">w1</span><span class="">[</span><span class="">:</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">w1</span><span class="">[</span><span class="">:</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">d</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="">,</span><span class=""> </span><span class="">label</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">cluster 1</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">w2</span><span class="">[</span><span class="">:</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">w2</span><span class="">[</span><span class="">:</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">s</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="">,</span><span class=""> </span><span class="">label</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">cluster 2</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">centroid</span><span class="">[</span><span class="">:</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">centroid</span><span class="">[</span><span class="">:</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">k*</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">label</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">centroids</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">axis</span><span class="">(</span><span class="s1">&#39;</span><span class="s1">equal</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">legend</span><span class="">(</span><span class="">shadow</span><span class="o">=</span><span class="kc">True</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">show</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.cluster.vq.kmeans.html" class='exists'>scipy.cluster.vq.kmeans</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/cluster/vq.py#L615'>/scipy/cluster/vq.py#615</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 14.782329983125269, "label": "numpy.random.mtrand.RandomState", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.random.mtrand.RandomState"}, {"id": 2, "val": 9.414213562373096, "label": "scipy.cluster.vq.kmeans", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.cluster.vq.kmeans"}, {"id": 3, "val": 10.0, "label": "numpy.random", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.random"}], "links": [{"source": 3, "target": 2, "id": 0}, {"source": 1, "target": 3, "id": 8}, {"source": 1, "target": 2, "id": 40}]};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.interpolate.html'>interpolate</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.interpolate._cubic.html'>_cubic</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._bspl.html">_bspl</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._bsplines.html">_bsplines</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._cubic.html">_cubic</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack.html">_fitpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.html">_fitpack2</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack_impl.html">_fitpack_impl</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._fitpack_py.html">_fitpack_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._interpolate.html">_interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._ndgriddata.html">_ndgriddata</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._pade.html">_pade</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._polyint.html">_polyint</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._ppoly.html">_ppoly</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._rbf.html">_rbf</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._rbfinterp.html">_rbfinterp</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._rbfinterp_pythran.html">_rbfinterp_pythran</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._rgi.html">_rgi</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._rgi_cython.html">_rgi_cython</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.dfitpack.html">dfitpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.fitpack.html">fitpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.fitpack2.html">fitpack2</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.interpnd.html">interpnd</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.ndgriddata.html">ndgriddata</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.polyint.html">polyint</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.rbf.html">rbf</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.interpolate._cubic.CubicSpline.html'>CubicSpline</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._cubic.Akima1DInterpolator.html">Akima1DInterpolator</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._cubic.CubicHermiteSpline.html">CubicHermiteSpline</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._cubic.CubicSpline.html">CubicSpline</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._cubic.PchipInterpolator.html">PchipInterpolator</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._cubic.pchip_interpolate.html">pchip_interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._cubic.prepare_input.html">prepare_input</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" >+</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.interpolate._cubic.CubicSpline.__init__.html">__init__</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Attributes">Attributes</a><a href="#section-Methods">Methods</a><a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<h3 id="section-Attributes">Attributes</h3>
+<dl>
+<dt><a id="x">x</a> : ndarray, shape (n,)</dt>
+<dd>
+                <div id="75f78fa7597e4338ba2eec671217cf18"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Breakpoints. The same "}, {"type": "inlineCode", "value": "x"}, {"type": "text", "value": " which was passed to the constructor."}], "type": "paragraph"});
+            document.getElementById("75f78fa7597e4338ba2eec671217cf18").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="c">c</a> : ndarray, shape (4, n-1, ...)</dt>
+<dd>
+                <div id="5318bb5d294245a1bc9c8f2a8de03aef"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Coefficients of the polynomials on each segment. The trailing dimensions match the dimensions of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "y", "type": "RefInfo", "version": null}, "type": "Link", "value": "y"}, {"type": "text", "value": ", excluding "}, {"type": "inlineCode", "value": "axis"}, {"type": "text", "value": ". For example, if "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "y", "type": "RefInfo", "version": null}, "type": "Link", "value": "y"}, {"type": "text", "value": " is 1-d, then "}, {"type": "inlineCode", "value": "c[k, i]"}, {"type": "text", "value": " is a coefficient for "}, {"type": "inlineCode", "value": "(x-x[i])**(3-k)"}, {"type": "text", "value": " on the segment between "}, {"type": "inlineCode", "value": "x[i]"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "x[i+1]"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("5318bb5d294245a1bc9c8f2a8de03aef").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="axis">axis</a> : int</dt>
+<dd>
+                <div id="34cf3a9a5d9f4ef28c30bb8c750b7a0d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Interpolation axis. The same axis which was passed to the constructor."}], "type": "paragraph"});
+            document.getElementById("34cf3a9a5d9f4ef28c30bb8c750b7a0d").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Extended Summary -->
+                                       <div id="99afba857a76426bab245518652eed81"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Interpolate data with a piecewise cubic polynomial which is twice continuously differentiable . The result is represented as a "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.interpolate._interpolate.PPoly", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "PPoly"}, {"type": "text", "value": " instance with breakpoints matching the given data."}], "type": "paragraph"});
+            document.getElementById("99afba857a76426bab245518652eed81").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Methods">Methods</h3>
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="165e4175b4c64aaaaac5314878258f2b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Parameters "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "bc_type", "type": "RefInfo", "version": null}, "type": "Link", "value": "bc_type"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "extrapolate"}, {"type": "text", "value": " work independently, i.e. the former controls only construction of a spline, and the latter only evaluation."}], "type": "paragraph"});
+            document.getElementById("165e4175b4c64aaaaac5314878258f2b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="16295db2702747318aad99a279cda1b3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "When a boundary condition is \u0027not-a-knot\u0027 and n = 2, it is replaced by a condition that the first derivative is equal to the linear interpolant slope. When both boundary conditions are \u0027not-a-knot\u0027 and n = 3, the solution is sought as a parabola passing through given points."}], "type": "paragraph"});
+            document.getElementById("16295db2702747318aad99a279cda1b3").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="de35b5b5171c4160905eaf0797117b5d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "When \u0027not-a-knot\u0027 boundary conditions is applied to both ends, the resulting spline will be the same as returned by "}, {"domain": null, "role": null, "type": "Directive", "value": "splrep"}, {"type": "text", "value": " (with "}, {"type": "inlineCode", "value": "s=0"}, {"type": "text", "value": ") and "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.interpolate._fitpack2.InterpolatedUnivariateSpline", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "InterpolatedUnivariateSpline"}, {"type": "text", "value": ", but these two methods use a representation in B-spline basis."}], "type": "paragraph"});
+            document.getElementById("de35b5b5171c4160905eaf0797117b5d").innerHTML = html;
+        }
+        init();
+    </script>
+
+                           <div class='admonition'>
+    <div>versionadded 0.18.0</div>
+</div>
+
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="x">x</a> : array_like, shape (n,)</dt>
+<dd>
+                <div id="99f8981a77634566a50bd7e24830230a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "1-D array containing values of the independent variable. Values must be real, finite and in strictly increasing order."}], "type": "paragraph"});
+            document.getElementById("99f8981a77634566a50bd7e24830230a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="y">y</a> : array_like</dt>
+<dd>
+                <div id="4680d37fab274015b81f188490cca1ce"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Array containing values of the dependent variable. It can have arbitrary number of dimensions, but the length along "}, {"type": "inlineCode", "value": "axis"}, {"type": "text", "value": " (see below) must match the length of "}, {"type": "inlineCode", "value": "x"}, {"type": "text", "value": ". Values must be finite."}], "type": "paragraph"});
+            document.getElementById("4680d37fab274015b81f188490cca1ce").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="axis">axis</a> : int, optional</dt>
+<dd>
+                <div id="7d5ba61cd416456b91d7697e22247fcb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Axis along which "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "y", "type": "RefInfo", "version": null}, "type": "Link", "value": "y"}, {"type": "text", "value": " is assumed to be varying. Meaning that for "}, {"type": "inlineCode", "value": "x[i]"}, {"type": "text", "value": " the corresponding values are "}, {"type": "inlineCode", "value": "np.take(y, i, axis=axis)"}, {"type": "text", "value": ". Default is 0."}], "type": "paragraph"});
+            document.getElementById("7d5ba61cd416456b91d7697e22247fcb").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="bc_type">bc_type</a> : string or 2-tuple, optional</dt>
+<dd>
+                <div id="ad0bdd95af4b4ae39d724911f445f35e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Boundary condition type. Two additional equations, given by the boundary conditions, are required to determine all coefficients of polynomials on each segment ."}], "type": "paragraph"});
+            document.getElementById("ad0bdd95af4b4ae39d724911f445f35e").innerHTML = html;
+        }
+        init();
+    </script>
+
+                <div id="362f112a8e6e42cfbf17e7c36dc24df1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "bc_type", "type": "RefInfo", "version": null}, "type": "Link", "value": "bc_type"}, {"type": "text", "value": " is a string, then the specified condition will be applied at both ends of a spline. Available conditions are:"}], "type": "paragraph"});
+            document.getElementById("362f112a8e6e42cfbf17e7c36dc24df1").innerHTML = html;
+        }
+        init();
+    </script>
+
+           <ul>               <li>                               <div id="530c98538374414e84315b4453b8b0b6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027not-a-knot\u0027 (default): The first and second segment at a curve end   are the same polynomial. It is a good default when there is no   information on boundary conditions."}], "type": "paragraph"});
+            document.getElementById("530c98538374414e84315b4453b8b0b6").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="2368fe4329e34d959d0e87acdce17ab2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027periodic\u0027: The interpolated functions is assumed to be periodic   of period "}, {"type": "inlineCode", "value": "x[-1] - x[0]"}, {"type": "text", "value": ". The first and last value of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "y", "type": "RefInfo", "version": null}, "type": "Link", "value": "y"}, {"type": "text", "value": " must be   identical: "}, {"type": "inlineCode", "value": "y[0] == y[-1]"}, {"type": "text", "value": ". This boundary condition will result in   "}, {"type": "inlineCode", "value": "y\u0027[0] == y\u0027[-1]"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "y\u0027\u0027[0] == y\u0027\u0027[-1]"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("2368fe4329e34d959d0e87acdce17ab2").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="b866ac8f3bc54e9e94fdfa3c357dc7b4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027clamped\u0027: The first derivative at curves ends are zero. Assuming   a 1D "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "y", "type": "RefInfo", "version": null}, "type": "Link", "value": "y"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "bc_type=((1, 0.0), (1, 0.0))"}, {"type": "text", "value": " is the same condition."}], "type": "paragraph"});
+            document.getElementById("b866ac8f3bc54e9e94fdfa3c357dc7b4").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="353bac4e6a634cf2809de2ef4b13f036"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027natural\u0027: The second derivative at curve ends are zero. Assuming   a 1D "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "y", "type": "RefInfo", "version": null}, "type": "Link", "value": "y"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "bc_type=((2, 0.0), (2, 0.0))"}, {"type": "text", "value": " is the same condition."}], "type": "paragraph"});
+            document.getElementById("353bac4e6a634cf2809de2ef4b13f036").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+
+                <div id="2b8b4f42197f4f94ab2fcb14b03f9f48"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "bc_type", "type": "RefInfo", "version": null}, "type": "Link", "value": "bc_type"}, {"type": "text", "value": " is a 2-tuple, the first and the second value will be applied at the curve start and end respectively. The tuple values can be one of the previously mentioned strings (except \u0027periodic\u0027) or a tuple "}, {"domain": null, "role": null, "type": "Directive", "value": "(order, deriv_values)"}, {"type": "text", "value": " allowing to specify arbitrary derivatives at curve ends:"}], "type": "paragraph"});
+            document.getElementById("2b8b4f42197f4f94ab2fcb14b03f9f48").innerHTML = html;
+        }
+        init();
+    </script>
+
+           <ul>               <li>                               <div id="c96cb3f3e0ba49b592f2c6aab442cc48"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"domain": null, "role": null, "type": "Directive", "value": "order"}, {"type": "text", "value": ": the derivative order, 1 or 2."}], "type": "paragraph"});
+            document.getElementById("c96cb3f3e0ba49b592f2c6aab442cc48").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="02ee42982acb4d54a4c24a1e470c6276"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"domain": null, "role": null, "type": "Directive", "value": "deriv_value"}, {"type": "text", "value": ": array_like containing derivative values, shape must   be the same as "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "y", "type": "RefInfo", "version": null}, "type": "Link", "value": "y"}, {"type": "text", "value": ", excluding "}, {"type": "inlineCode", "value": "axis"}, {"type": "text", "value": " dimension. For example, if   "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "y", "type": "RefInfo", "version": null}, "type": "Link", "value": "y"}, {"type": "text", "value": " is 1-D, then "}, {"domain": null, "role": null, "type": "Directive", "value": "deriv_value"}, {"type": "text", "value": " must be a scalar. If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "y", "type": "RefInfo", "version": null}, "type": "Link", "value": "y"}, {"type": "text", "value": " is 3-D with   the shape (n0, n1, n2) and axis=2, then "}, {"domain": null, "role": null, "type": "Directive", "value": "deriv_value"}, {"type": "text", "value": " must be 2-D   and have the shape (n0, n1)."}], "type": "paragraph"});
+            document.getElementById("02ee42982acb4d54a4c24a1e470c6276").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+
+</dd>
+<dt><a id="extrapolate">extrapolate</a> : {bool, &#39;periodic&#39;, None}, optional</dt>
+<dd>
+                <div id="6f50c02177884abab75428381dba0b2b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If bool, determines whether to extrapolate to out-of-bounds points based on first and last intervals, or to return NaNs. If \u0027periodic\u0027, periodic extrapolation is used. If None (default), "}, {"type": "inlineCode", "value": "extrapolate"}, {"type": "text", "value": " is set to \u0027periodic\u0027 for "}, {"type": "inlineCode", "value": "bc_type=\u0027periodic\u0027"}, {"type": "text", "value": " and to True otherwise."}], "type": "paragraph"});
+            document.getElementById("6f50c02177884abab75428381dba0b2b").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="a39e00f0b701422db434da78626cdea5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Cubic spline data interpolator."}], "type": "paragraph"});
+            document.getElementById("a39e00f0b701422db434da78626cdea5").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.interpolate._cubic.Akima1DInterpolator.html" class='exists'>Akima1DInterpolator</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="2e63f4cef9f248eb989aa8c56abba02d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "Akima 1D interpolator."});
+            document.getElementById("2e63f4cef9f248eb989aa8c56abba02d").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.interpolate._interpolate.PPoly.html" class='exists'>PPoly</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="3aa4af53187a4fa191912116ca7ccf5e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "Piecewise polynomial in terms of coefficients and breakpoints."});
+            document.getElementById("3aa4af53187a4fa191912116ca7ccf5e").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.interpolate._cubic.PchipInterpolator.html" class='exists'>PchipInterpolator</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="d5e811b3aa1349a4889abc7e94b472e4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "PCHIP 1-D monotonic cubic interpolator."});
+            document.getElementById("d5e811b3aa1349a4889abc7e94b472e4").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+                           In this example the cubic spline is used to interpolate a sampled sinusoid.
+You can see that the spline continuity property holds for the first and
+second derivatives and violates only for the third derivative.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">interpolate</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">CubicSpline</span><br><span class='nsl'>...&nbsp;</span><span class="kn">import</span><span class=""> </span><span class="nn">matplotlib</span><span class="nn">.</span><span class="nn">pyplot</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">plt</span><br><span class='nsl'>...&nbsp;</span><span class="">x</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">arange</span><span class="">(</span><span class="mi">10</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">y</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">sin</span><span class="">(</span><span class="">x</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">cs</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">CubicSpline</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">y</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">xs</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">arange</span><span class="">(</span><span class="o">-</span><span class="mf">0.5</span><span class="">,</span><span class=""> </span><span class="mf">9.6</span><span class="">,</span><span class=""> </span><span class="mf">0.1</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">fig</span><span class="">,</span><span class=""> </span><span class="">ax</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">plt</span><span class="o">.</span><span class="">subplots</span><span class="">(</span><span class="">figsize</span><span class="o">=</span><span class="">(</span><span class="mf">6.5</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">y</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">o</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">label</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">data</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">xs</span><span class="">,</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">sin</span><span class="">(</span><span class="">xs</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">label</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">true</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">xs</span><span class="">,</span><span class=""> </span><span class="">cs</span><span class="">(</span><span class="">xs</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">label</span><span class="o">=</span><span class="s2">&#34;</span><span class="s2">S</span><span class="s2">&#34;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">xs</span><span class="">,</span><span class=""> </span><span class="">cs</span><span class="">(</span><span class="">xs</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">label</span><span class="o">=</span><span class="s2">&#34;</span><span class="s2">S</span><span class="s2">&#39;</span><span class="s2">&#34;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">xs</span><span class="">,</span><span class=""> </span><span class="">cs</span><span class="">(</span><span class="">xs</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">label</span><span class="o">=</span><span class="s2">&#34;</span><span class="s2">S</span><span class="s2">&#39;</span><span class="s2">&#39;</span><span class="s2">&#34;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">xs</span><span class="">,</span><span class=""> </span><span class="">cs</span><span class="">(</span><span class="">xs</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">label</span><span class="o">=</span><span class="s2">&#34;</span><span class="s2">S</span><span class="s2">&#39;</span><span class="s2">&#39;</span><span class="s2">&#39;</span><span class="s2">&#34;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class="o">.</span><span class="">set_xlim</span><span class="">(</span><span class="o">-</span><span class="mf">0.5</span><span class="">,</span><span class=""> </span><span class="mf">9.5</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class="o">.</span><span class="">legend</span><span class="">(</span><span class="">loc</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">lower left</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">ncol</span><span class="o">=</span><span class="mi">2</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">show</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+                           In the second example, the unit circle is interpolated with a spline. A
+periodic boundary condition is used. You can see that the first derivative
+values, ds/dx=0, ds/dy=1 at the periodic point (1, 0) are correctly
+computed. Note that a circle cannot be exactly represented by a cubic
+spline. To increase precision, more breakpoints would be required.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">theta</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="mi">2</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">pi</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">linspace</span><span class="">(</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">5</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">y</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">c_</span><span class="">[</span><span class="">np</span><span class="o">.</span><span class="">cos</span><span class="">(</span><span class="">theta</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">sin</span><span class="">(</span><span class="">theta</span><span class="">)</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">cs</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">CubicSpline</span><span class="">(</span><span class="">theta</span><span class="">,</span><span class=""> </span><span class="">y</span><span class="">,</span><span class=""> </span><span class="">bc_type</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">periodic</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="nb">print</span><span class="">(</span><span class="s2">&#34;</span><span class="s2">ds/dx=</span><span class="si">{:.1f}</span><span class="s2"> ds/dy=</span><span class="si">{:.1f}</span><span class="s2">&#34;</span><span class="o">.</span><span class="">format</span><span class="">(</span><span class="">cs</span><span class="">(</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">)</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">cs</span><span class="">(</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">)</span><span class="">[</span><span class="mi">1</span><span class="">]</span><span class="">)</span><span class="">)</span>
+ds/dx=0.0 ds/dy=1.0</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">xs</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="mi">2</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">pi</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">linspace</span><span class="">(</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">100</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">fig</span><span class="">,</span><span class=""> </span><span class="">ax</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">plt</span><span class="o">.</span><span class="">subplots</span><span class="">(</span><span class="">figsize</span><span class="o">=</span><span class="">(</span><span class="mf">6.5</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">y</span><span class="">[</span><span class="">:</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">y</span><span class="">[</span><span class="">:</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">o</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">label</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">data</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">cos</span><span class="">(</span><span class="">xs</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">sin</span><span class="">(</span><span class="">xs</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">label</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">true</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">cs</span><span class="">(</span><span class="">xs</span><span class="">)</span><span class="">[</span><span class="">:</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">cs</span><span class="">(</span><span class="">xs</span><span class="">)</span><span class="">[</span><span class="">:</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">label</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">spline</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class="o">.</span><span class="">axes</span><span class="o">.</span><span class="">set_aspect</span><span class="">(</span><span class="s1">&#39;</span><span class="s1">equal</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ax</span><span class="o">.</span><span class="">legend</span><span class="">(</span><span class="">loc</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">center</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">show</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+                           The third example is the interpolation of a polynomial y = x**3 on the
+interval 0 &lt;= x&lt;= 1. A cubic spline can represent this function exactly.
+To achieve that we need to specify values and first derivatives at
+endpoints of the interval. Note that y&#39; = 3 * x**2 and thus y&#39;(0) = 0 and
+y&#39;(1) = 3.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">cs</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">CubicSpline</span><span class="">(</span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">bc_type</span><span class="o">=</span><span class="">(</span><span class="">(</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">(</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">)</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">x</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">linspace</span><span class="">(</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">np</span><span class="o">.</span><span class="">allclose</span><span class="">(</span><span class="">x</span><span class="o">*</span><span class="o">*</span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="">cs</span><span class="">(</span><span class="">x</span><span class="">)</span><span class="">)</span>
+True</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.interpolate._cubic.Akima1DInterpolator.html" class='exists'>scipy.interpolate._cubic.Akima1DInterpolator</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.interpolate._cubic.CubicHermiteSpline.html" class='exists'>scipy.interpolate._cubic.CubicHermiteSpline</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.interpolate._cubic.PchipInterpolator.html" class='exists'>scipy.interpolate._cubic.PchipInterpolator</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.interpolate._bsplines.make_interp_spline.html" class='exists'>scipy.interpolate._bsplines.make_interp_spline</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/interpolate/_cubic.py#L468'>/scipy/interpolate/_cubic.py#468</a>
+<br/>
+
+type: &lt;class &#39;type&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 9.414213562373096, "label": "scipy.interpolate._bsplines.make_interp_spline", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.interpolate._bsplines.make_interp_spline"}, {"id": 2, "val": 10.64575131106459, "label": "scipy.interpolate._interpolate.PPoly", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.interpolate._interpolate.PPoly"}, {"id": 3, "val": 9.732050807568877, "label": "scipy.interpolate._cubic.Akima1DInterpolator", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.interpolate._cubic.Akima1DInterpolator"}, {"id": 4, "val": 10.23606797749979, "label": "scipy.interpolate._cubic.PchipInterpolator", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.interpolate._cubic.PchipInterpolator"}, {"id": 5, "val": 9.0, "label": "scipy.interpolate._cubic.CubicHermiteSpline", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.interpolate._cubic.CubicHermiteSpline"}, {"id": 6, "val": 9.732050807568877, "label": "scipy.interpolate._fitpack2.InterpolatedUnivariateSpline", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.interpolate._fitpack2.InterpolatedUnivariateSpline"}], "links": [{"source": 2, "target": 5, "id": 2}, {"source": 2, "target": 3, "id": 5}, {"source": 2, "target": 4, "id": 6}, {"source": 3, "target": 5, "id": 13}, {"source": 3, "target": 4, "id": 14}, {"source": 5, "target": 4, "id": 15}, {"source": 4, "target": 5, "id": 18}, {"source": 4, "target": 3, "id": 20}]};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

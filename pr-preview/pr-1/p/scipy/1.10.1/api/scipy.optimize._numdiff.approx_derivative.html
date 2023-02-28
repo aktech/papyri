@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize.html'>optimize</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize._numdiff.html'>_numdiff</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.optimize.__nnls.html">__nnls</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._basinhopping.html">_basinhopping</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._bglu_dense.html">_bglu_dense</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._cobyla.html">_cobyla</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._cobyla_py.html">_cobyla_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._constraints.html">_constraints</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentiable_functions.html">_differentiable_functions</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentialevolution.html">_differentialevolution</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._direct.html">_direct</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._direct_py.html">_direct_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._dual_annealing.html">_dual_annealing</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._group_columns.html">_group_columns</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._hessian_update_strategy.html">_hessian_update_strategy</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._highs.html">_highs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lbfgsb.html">_lbfgsb</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lbfgsb_py.html">_lbfgsb_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linesearch.html">_linesearch</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog.html">_linprog</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_doc.html">_linprog_doc</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_highs.html">_linprog_highs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_ip.html">_linprog_ip</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_rs.html">_linprog_rs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_simplex.html">_linprog_simplex</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_util.html">_linprog_util</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lsap.html">_lsap</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lsq.html">_lsq</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._milp.html">_milp</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minimize.html">_minimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minpack.html">_minpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minpack2.html">_minpack2</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minpack_py.html">_minpack_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._moduleTNC.html">_moduleTNC</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nnls.html">_nnls</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.html">_nonlin</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._numdiff.html">_numdiff</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.html">_optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._qap.html">_qap</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._remove_redundancy.html">_remove_redundancy</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._root.html">_root</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._root_scalar.html">_root_scalar</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._shgo.html">_shgo</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._shgo_lib.html">_shgo_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._slsqp.html">_slsqp</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._slsqp_py.html">_slsqp_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._spectral.html">_spectral</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._tnc.html">_tnc</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trlib.html">_trlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion.html">_trustregion</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_constr.html">_trustregion_constr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_dogleg.html">_trustregion_dogleg</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_exact.html">_trustregion_exact</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_krylov.html">_trustregion_krylov</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_ncg.html">_trustregion_ncg</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros.html">_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros_py.html">_zeros_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.cobyla.html">cobyla</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.lbfgsb.html">lbfgsb</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.linesearch.html">linesearch</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.minpack.html">minpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.minpack2.html">minpack2</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.moduleTNC.html">moduleTNC</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.nonlin.html">nonlin</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.slsqp.html">slsqp</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.tnc.html">tnc</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.zeros.html">zeros</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize._numdiff.approx_derivative.html'>approx_derivative</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.optimize._numdiff._adjust_scheme_to_bounds.html">_adjust_scheme_to_bounds</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._numdiff._compute_absolute_step.html">_compute_absolute_step</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._numdiff._dense_difference.html">_dense_difference</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._numdiff._eps_for_method.html">_eps_for_method</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._numdiff._linear_operator_difference.html">_linear_operator_difference</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._numdiff._prepare_bounds.html">_prepare_bounds</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._numdiff._sparse_difference.html">_sparse_difference</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._numdiff.approx_derivative.html">approx_derivative</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._numdiff.check_derivative.html">check_derivative</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._numdiff.group_columns.html">group_columns</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>approx_derivative(fun, x0, method=&#39;3-point&#39;, rel_step=None, abs_step=None, f0=None, bounds=(-inf, inf), sparsity=None, as_linear_operator=False, args=(), kwargs={})</code><!-- rendering Extended Summary -->
+                                       <div id="6ce5cf85f2fd4f049a0f4c759d9e6bde"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If a function maps from R^n to R^m, its derivatives form m-by-n matrix called the Jacobian, where an element (i, j) is a partial derivative of f[i] with respect to x[j]."}], "type": "paragraph"});
+            document.getElementById("6ce5cf85f2fd4f049a0f4c759d9e6bde").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="646ef4a9aa0942a7aee37bc664a129b1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "rel_step", "type": "RefInfo", "version": null}, "type": "Link", "value": "rel_step"}, {"type": "text", "value": " is not provided, it assigned as "}, {"type": "inlineCode", "value": "EPS**(1/s)"}, {"type": "text", "value": ", where EPS is determined from the smallest floating point dtype of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x0", "type": "RefInfo", "version": null}, "type": "Link", "value": "x0"}, {"type": "text", "value": " or "}, {"domain": null, "role": null, "type": "Directive", "value": "fun(x0)"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "np.finfo(x0.dtype).eps"}, {"type": "text", "value": ", s=2 for \u00272-point\u0027 method and s=3 for \u00273-point\u0027 method. Such relative step approximately minimizes a sum of truncation and round-off errors, see . Relative steps are used by default. However, absolute steps are used when "}, {"type": "inlineCode", "value": "abs_step is not None"}, {"type": "text", "value": ". If any of the absolute or relative steps produces an indistinguishable difference from the original "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x0", "type": "RefInfo", "version": null}, "type": "Link", "value": "x0"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "(x0 + dx) - x0 == 0"}, {"type": "text", "value": ", then a automatic step size is substituted for that particular entry."}], "type": "paragraph"});
+            document.getElementById("646ef4a9aa0942a7aee37bc664a129b1").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="5ba25848a0364f869d8b52ee1be6b257"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A finite difference scheme for \u00273-point\u0027 method is selected automatically. The well-known central difference scheme is used for points sufficiently far from the boundary, and 3-point forward or backward scheme is used for points near the boundary. Both schemes have the second-order accuracy in terms of Taylor expansion. Refer to  for the formulas of 3-point forward and backward difference schemes."}], "type": "paragraph"});
+            document.getElementById("5ba25848a0364f869d8b52ee1be6b257").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="29bbb37a6abe43fba6a7f4c819c09960"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For dense differencing when m=1 Jacobian is returned with a shape (n,), on the other hand when n=1 Jacobian is returned with a shape (m, 1). Our motivation is the following: a) It handles a case of gradient computation (m=1) in a conventional way. b) It clearly separates these two different cases. b) In all cases np.atleast_2d can be called to get 2-D Jacobian with correct dimensions."}], "type": "paragraph"});
+            document.getElementById("29bbb37a6abe43fba6a7f4c819c09960").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="fun">fun</a> : callable</dt>
+<dd>
+                <div id="e129708690cc49dc913d7e87e8fb6efb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Function of which to estimate the derivatives. The argument x passed to this function is ndarray of shape (n,) (never a scalar even if n=1). It must return 1-D array_like of shape (m,) or a scalar."}], "type": "paragraph"});
+            document.getElementById("e129708690cc49dc913d7e87e8fb6efb").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="x0">x0</a> : array_like of shape (n,) or float</dt>
+<dd>
+                <div id="8a8f171b9117412ca4b4f110dfb70974"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Point at which to estimate the derivatives. Float will be converted to a 1-D array."}], "type": "paragraph"});
+            document.getElementById("8a8f171b9117412ca4b4f110dfb70974").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="method">method</a> : {&#39;3-point&#39;, &#39;2-point&#39;, &#39;cs&#39;}, optional</dt>
+<dd>
+<!-- deflist -->
+           <dl>
+               <dt>                <div id="9bb279bcf1e947f18a29124ad6e75e06"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Finite difference method to use:"}], "type": "paragraph"});
+            document.getElementById("9bb279bcf1e947f18a29124ad6e75e06").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>           <ul>               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="16eb75fc7d09460aab56e112c00a9a51"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u00272-point\u0027 - use the first order accuracy forward or backward"}], "type": "paragraph"});
+            document.getElementById("16eb75fc7d09460aab56e112c00a9a51").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="c68ce13eaa894d06966a72ff3a060236"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "difference."}], "type": "paragraph"});
+            document.getElementById("c68ce13eaa894d06966a72ff3a060236").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="34cf252ccb864f9684b9a9c80ba90750"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u00273-point\u0027 - use central difference in interior points and the"}], "type": "paragraph"});
+            document.getElementById("34cf252ccb864f9684b9a9c80ba90750").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="b93f71ccc37b46d097530c918518322a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "second order accuracy forward or backward difference                   near the boundary."}], "type": "paragraph"});
+            document.getElementById("b93f71ccc37b46d097530c918518322a").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+               <li>               <!-- deflist -->
+           <dl>
+               <dt>                <div id="eaca6b626c0e4dbe8e47747b703f86c0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027cs\u0027 - use a complex-step finite difference scheme. This assumes"}], "type": "paragraph"});
+            document.getElementById("eaca6b626c0e4dbe8e47747b703f86c0").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="c3ccae87ea904a018d8345b5393712cf"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "that the user function is real-valued and can be              analytically continued to the complex plane. Otherwise,              produces bogus results."}], "type": "paragraph"});
+            document.getElementById("c3ccae87ea904a018d8345b5393712cf").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+</li>
+            </ul>
+</dd>
+           </dl>
+
+</dd>
+<dt><a id="rel_step">rel_step</a> : None or array_like, optional</dt>
+<dd>
+                <div id="d03aa3db407448e4abfd27f33f3719fa"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Relative step size to use. If None (default) the absolute step size is computed as "}, {"type": "inlineCode", "value": "h = rel_step * sign(x0) * max(1, abs(x0))"}, {"type": "text", "value": ", with "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "rel_step", "type": "RefInfo", "version": null}, "type": "Link", "value": "rel_step"}, {"type": "text", "value": " being selected automatically, see Notes. Otherwise "}, {"type": "inlineCode", "value": "h = rel_step * sign(x0) * abs(x0)"}, {"type": "text", "value": ". For "}, {"type": "inlineCode", "value": "method=\u00273-point\u0027"}, {"type": "text", "value": " the sign of "}, {"domain": null, "role": null, "type": "Directive", "value": "h"}, {"type": "text", "value": " is ignored. The calculated step size is possibly adjusted to fit into the bounds."}], "type": "paragraph"});
+            document.getElementById("d03aa3db407448e4abfd27f33f3719fa").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="abs_step">abs_step</a> : array_like, optional</dt>
+<dd>
+                <div id="c31a755dc0a14ec3817817aeba54847b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Absolute step size to use, possibly adjusted to fit into the bounds. For "}, {"type": "inlineCode", "value": "method=\u00273-point\u0027"}, {"type": "text", "value": " the sign of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "abs_step", "type": "RefInfo", "version": null}, "type": "Link", "value": "abs_step"}, {"type": "text", "value": " is ignored. By default relative steps are used, only if "}, {"type": "inlineCode", "value": "abs_step is not None"}, {"type": "text", "value": " are absolute steps used."}], "type": "paragraph"});
+            document.getElementById("c31a755dc0a14ec3817817aeba54847b").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="f0">f0</a> : None or array_like, optional</dt>
+<dd>
+                <div id="1a35db23f01045b781a55285f94135c9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If not None it is assumed to be equal to "}, {"type": "inlineCode", "value": "fun(x0)"}, {"type": "text", "value": ", in this case the "}, {"type": "inlineCode", "value": "fun(x0)"}, {"type": "text", "value": " is not called. Default is None."}], "type": "paragraph"});
+            document.getElementById("1a35db23f01045b781a55285f94135c9").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="bounds">bounds</a> : tuple of array_like, optional</dt>
+<dd>
+                <div id="5d60b85d18b546f7a49a4fa51a610894"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Lower and upper bounds on independent variables. Defaults to no bounds. Each bound must match the size of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x0", "type": "RefInfo", "version": null}, "type": "Link", "value": "x0"}, {"type": "text", "value": " or be a scalar, in the latter case the bound will be the same for all variables. Use it to limit the range of function evaluation. Bounds checking is not implemented when "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "as_linear_operator", "type": "RefInfo", "version": null}, "type": "Link", "value": "as_linear_operator"}, {"type": "text", "value": " is True."}], "type": "paragraph"});
+            document.getElementById("5d60b85d18b546f7a49a4fa51a610894").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="sparsity">sparsity</a> : {None, array_like, sparse matrix, 2-tuple}, optional</dt>
+<dd>
+                <div id="2b1a52298c654e78b8f5ff8488c2c5ba"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Defines a sparsity structure of the Jacobian matrix. If the Jacobian matrix is known to have only few non-zero elements in each row, then it\u0027s possible to estimate its several columns by a single function evaluation . To perform such economic computations two ingredients are required:"}], "type": "paragraph"});
+            document.getElementById("2b1a52298c654e78b8f5ff8488c2c5ba").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="as_linear_operator">as_linear_operator</a> : bool, optional</dt>
+<dd>
+                <div id="ed56fd7a4c834c1ea4547750b365093a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "When True the function returns an "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "scipy", "path": "scipy.sparse.linalg._interface.LinearOperator", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "scipy.sparse.linalg.LinearOperator"}, {"type": "text", "value": ". Otherwise it returns a dense array or a sparse matrix depending on "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "sparsity", "type": "RefInfo", "version": null}, "type": "Link", "value": "sparsity"}, {"type": "text", "value": ". The linear operator provides an efficient way of computing "}, {"type": "inlineCode", "value": "J.dot(p)"}, {"type": "text", "value": " for any vector "}, {"type": "inlineCode", "value": "p"}, {"type": "text", "value": " of shape (n,), but does not allow direct access to individual elements of the matrix. By default "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "as_linear_operator", "type": "RefInfo", "version": null}, "type": "Link", "value": "as_linear_operator"}, {"type": "text", "value": " is False."}], "type": "paragraph"});
+            document.getElementById("ed56fd7a4c834c1ea4547750b365093a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="args, kwargs">args, kwargs</a> : tuple and dict, optional</dt>
+<dd>
+                <div id="8af9af96ae3f401f9bcc663d232d8d09"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Additional arguments passed to "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "fun", "type": "RefInfo", "version": null}, "type": "Link", "value": "fun"}, {"type": "text", "value": ". Both empty by default. The calling signature is "}, {"type": "inlineCode", "value": "fun(x, *args, **kwargs)"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("8af9af96ae3f401f9bcc663d232d8d09").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="J">J</a> : {ndarray, sparse matrix, LinearOperator}</dt>
+<dd>
+                <div id="0273b83f824241c38d7eb80aad26ecf4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Finite difference approximation of the Jacobian matrix. If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "as_linear_operator", "type": "RefInfo", "version": null}, "type": "Link", "value": "as_linear_operator"}, {"type": "text", "value": " is True returns a LinearOperator with shape (m, n). Otherwise it returns a dense array or sparse matrix depending on how "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "sparsity", "type": "RefInfo", "version": null}, "type": "Link", "value": "sparsity"}, {"type": "text", "value": " is defined. If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "sparsity", "type": "RefInfo", "version": null}, "type": "Link", "value": "sparsity"}, {"type": "text", "value": " is None then a ndarray with shape (m, n) is returned. If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "sparsity", "type": "RefInfo", "version": null}, "type": "Link", "value": "sparsity"}, {"type": "text", "value": " is not None returns a csr_matrix with shape (m, n). For sparse matrices and linear operators it is always returned as a 2-D structure, for ndarrays, if m=1 it is returned as a 1-D gradient array with shape (n,)."}], "type": "paragraph"});
+            document.getElementById("0273b83f824241c38d7eb80aad26ecf4").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="cfec148baedf47daa42f49f27614e265"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Compute finite difference approximation of the derivatives of a vector-valued function."}], "type": "paragraph"});
+            document.getElementById("cfec148baedf47daa42f49f27614e265").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.optimize._numdiff.check_derivative.html" class='exists'>check_derivative</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="18d5f4bca64c41ef838f43c28e54d1df"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "Check correctness of a function computing derivatives."});
+            document.getElementById("18d5f4bca64c41ef838f43c28e54d1df").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">optimize</span><span class="nn">.</span><span class="nn">_numdiff</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">approx_derivative</span>
+&gt;&gt;&gt;</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="k">def</span><span class=""> </span><span class="nf">f</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">c1</span><span class="">,</span><span class=""> </span><span class="">c2</span><span class="">)</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="k">return</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="">x</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">sin</span><span class="">(</span><span class="">c1</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">x</span><span class="">[</span><span class="mi">1</span><span class="">]</span><span class="">)</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                     </span><span class="">x</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">cos</span><span class="">(</span><span class="">c2</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">x</span><span class="">[</span><span class="mi">1</span><span class="">]</span><span class="">)</span><span class="">]</span><span class="">)</span>
+...</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">x0</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="mf">1.0</span><span class="">,</span><span class=""> </span><span class="mf">0.5</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">pi</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">approx_derivative</span><span class="">(</span><span class="">f</span><span class="">,</span><span class=""> </span><span class="">x0</span><span class="">,</span><span class=""> </span><span class="">args</span><span class="o">=</span><span class="">(</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">)</span><span class="">)</span>
+array([[ 1.,  0.],
+       [-1.,  0.]])</pre>
+            
+                           Bounds can be used to limit the region of function evaluation.
+In the example below we compute left and right derivative at point 1.0.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="k">def</span><span class=""> </span><span class="nf">g</span><span class="">(</span><span class="">x</span><span class="">)</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="k">return</span><span class=""> </span><span class="">x</span><span class="o">*</span><span class="o">*</span><span class="mi">2</span><span class=""> </span><span class="k">if</span><span class=""> </span><span class="">x</span><span class=""> </span><span class="o">&gt;</span><span class="o">=</span><span class=""> </span><span class="mi">1</span><span class=""> </span><span class="k">else</span><span class=""> </span><span class="">x</span>
+...</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">x0</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="mf">1.0</span><br><span class='nsl'>...&nbsp;</span><span class="">approx_derivative</span><span class="">(</span><span class="">g</span><span class="">,</span><span class=""> </span><span class="">x0</span><span class="">,</span><span class=""> </span><span class="">bounds</span><span class="o">=</span><span class="">(</span><span class="o">-</span><span class="">np</span><span class="o">.</span><span class="">inf</span><span class="">,</span><span class=""> </span><span class="mf">1.0</span><span class="">)</span><span class="">)</span>
+array([ 1.])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">approx_derivative</span><span class="">(</span><span class="">g</span><span class="">,</span><span class=""> </span><span class="">x0</span><span class="">,</span><span class=""> </span><span class="">bounds</span><span class="o">=</span><span class="">(</span><span class="mf">1.0</span><span class="">,</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">inf</span><span class="">)</span><span class="">)</span>
+array([ 2.])</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.optimize._numdiff.check_derivative.html" class='exists'>scipy.optimize._numdiff.check_derivative</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/optimize/_numdiff.py#L275'>/scipy/optimize/_numdiff.py#275</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 10.449489742783179, "label": "scipy.sparse.linalg._interface.LinearOperator", "mod": "scipy", "url": "/p/scipy/*/api/scipy.sparse.linalg._interface.LinearOperator"}, {"id": 2, "val": 9.0, "label": "scipy.optimize._numdiff.check_derivative", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.optimize._numdiff.check_derivative"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

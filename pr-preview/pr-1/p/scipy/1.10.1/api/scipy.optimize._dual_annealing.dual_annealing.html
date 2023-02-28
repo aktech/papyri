@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize.html'>optimize</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize._dual_annealing.html'>_dual_annealing</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.optimize.__nnls.html">__nnls</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._basinhopping.html">_basinhopping</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._bglu_dense.html">_bglu_dense</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._cobyla.html">_cobyla</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._cobyla_py.html">_cobyla_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._constraints.html">_constraints</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentiable_functions.html">_differentiable_functions</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentialevolution.html">_differentialevolution</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._direct.html">_direct</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._direct_py.html">_direct_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._dual_annealing.html">_dual_annealing</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._group_columns.html">_group_columns</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._hessian_update_strategy.html">_hessian_update_strategy</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._highs.html">_highs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lbfgsb.html">_lbfgsb</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lbfgsb_py.html">_lbfgsb_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linesearch.html">_linesearch</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog.html">_linprog</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_doc.html">_linprog_doc</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_highs.html">_linprog_highs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_ip.html">_linprog_ip</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_rs.html">_linprog_rs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_simplex.html">_linprog_simplex</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_util.html">_linprog_util</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lsap.html">_lsap</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lsq.html">_lsq</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._milp.html">_milp</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minimize.html">_minimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minpack.html">_minpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minpack2.html">_minpack2</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minpack_py.html">_minpack_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._moduleTNC.html">_moduleTNC</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nnls.html">_nnls</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.html">_nonlin</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._numdiff.html">_numdiff</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.html">_optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._qap.html">_qap</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._remove_redundancy.html">_remove_redundancy</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._root.html">_root</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._root_scalar.html">_root_scalar</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._shgo.html">_shgo</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._shgo_lib.html">_shgo_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._slsqp.html">_slsqp</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._slsqp_py.html">_slsqp_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._spectral.html">_spectral</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._tnc.html">_tnc</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trlib.html">_trlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion.html">_trustregion</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_constr.html">_trustregion_constr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_dogleg.html">_trustregion_dogleg</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_exact.html">_trustregion_exact</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_krylov.html">_trustregion_krylov</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_ncg.html">_trustregion_ncg</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros.html">_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros_py.html">_zeros_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.cobyla.html">cobyla</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.lbfgsb.html">lbfgsb</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.linesearch.html">linesearch</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.minpack.html">minpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.minpack2.html">minpack2</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.moduleTNC.html">moduleTNC</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.nonlin.html">nonlin</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.slsqp.html">slsqp</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.tnc.html">tnc</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.zeros.html">zeros</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize._dual_annealing.dual_annealing.html'>dual_annealing</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.optimize._dual_annealing.EnergyState.html">EnergyState</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._dual_annealing.LocalSearchWrapper.html">LocalSearchWrapper</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._dual_annealing.ObjectiveFunWrapper.html">ObjectiveFunWrapper</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._dual_annealing.StrategyChain.html">StrategyChain</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._dual_annealing.VisitingDistribution.html">VisitingDistribution</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._dual_annealing.dual_annealing.html">dual_annealing</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a>    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>dual_annealing(func, bounds, args=(), maxiter=1000, minimizer_kwargs=None, initial_temp=5230.0, restart_temp_ratio=2e-05, visit=2.62, accept=-5.0, maxfun=10000000.0, seed=None, no_local_search=False, callback=None, x0=None)</code><!-- rendering Extended Summary -->
+        <h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="9b083c345a1b40f28409158ea68323f5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This function implements the Dual Annealing optimization. This stochastic approach derived from  combines the generalization of CSA (Classical Simulated Annealing) and FSA (Fast Simulated Annealing)   coupled to a strategy for applying a local search on accepted locations . An alternative implementation of this same algorithm is described in  and benchmarks are presented in . This approach introduces an advanced method to refine the solution found by the generalized annealing process. This algorithm uses a distorted Cauchy-Lorentz visiting distribution, with its shape controlled by the parameter "}, {"type": "Math", "value": "q_{v}"}], "type": "paragraph"});
+            document.getElementById("9b083c345a1b40f28409158ea68323f5").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$g_{q_{v}}(\Delta x(t)) \propto \frac{ \
+\left[T_{q_{v}}(t) \right]^{-\frac{D}{3-q_{v}}}}{ \
+\left[{1+(q_{v}-1)\frac{(\Delta x(t))^{2}} { \
+\left[T_{q_{v}}(t)\right]^{\frac{2}{3-q_{v}}}}}\right]^{ \
+\frac{1}{q_{v}-1}+\frac{D-1}{2}}}$$</span>
+
+                               <div id="24778b2b653041c3b448ef88f078bc74"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Where "}, {"type": "Math", "value": "t"}, {"type": "text", "value": " is the artificial time. This visiting distribution is used to generate a trial jump distance "}, {"type": "Math", "value": "\\Delta x(t)"}, {"type": "text", "value": " of variable "}, {"type": "Math", "value": "x(t)"}, {"type": "text", "value": " under artificial temperature "}, {"type": "Math", "value": "T_{q_{v}}(t)"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("24778b2b653041c3b448ef88f078bc74").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="fb0d7b5885554c668790f4ab77b7c701"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "From the starting point, after calling the visiting distribution function, the acceptance probability is computed as follows:"}], "type": "paragraph"});
+            document.getElementById("fb0d7b5885554c668790f4ab77b7c701").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$p_{q_{a}} = \min{\{1,\left[1-(1-q_{a}) \beta \Delta E \right]^{ \
+\frac{1}{1-q_{a}}}\}}$$</span>
+
+                               <div id="fd96a0d83a654e1c876fa31a36a298c3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Where "}, {"type": "Math", "value": "q_{a}"}, {"type": "text", "value": " is a acceptance parameter. For "}, {"type": "Math", "value": "q_{a}\u003c1"}, {"type": "text", "value": ", zero acceptance probability is assigned to the cases where"}], "type": "paragraph"});
+            document.getElementById("fd96a0d83a654e1c876fa31a36a298c3").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$[1-(1-q_{a}) \beta \Delta E] &lt; 0$$</span>
+
+                               <div id="d0c19a74a85a42ee9c4d62d41a83c028"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The artificial temperature "}, {"type": "Math", "value": "T_{q_{v}}(t)"}, {"type": "text", "value": " is decreased according to"}], "type": "paragraph"});
+            document.getElementById("d0c19a74a85a42ee9c4d62d41a83c028").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$T_{q_{v}}(t) = T_{q_{v}}(1) \frac{2^{q_{v}-1}-1}{\left( \
+1 + t\right)^{q_{v}-1}-1}$$</span>
+
+                               <div id="75d4eeb9049e475faa3cb4035e26708b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Where "}, {"type": "Math", "value": "q_{v}"}, {"type": "text", "value": " is the visiting parameter."}], "type": "paragraph"});
+            document.getElementById("75d4eeb9049e475faa3cb4035e26708b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                           <div class='admonition'>
+    <div>versionadded 1.2.0</div>
+</div>
+
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="func">func</a> : callable</dt>
+<dd>
+                <div id="a0af12608b9f45758bb5c366d30fa9e9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The objective function to be minimized. Must be in the form "}, {"type": "inlineCode", "value": "f(x, *args)"}, {"type": "text", "value": ", where "}, {"type": "inlineCode", "value": "x"}, {"type": "text", "value": " is the argument in the form of a 1-D array and "}, {"type": "inlineCode", "value": "args"}, {"type": "text", "value": " is a  tuple of any additional fixed parameters needed to completely specify the function."}], "type": "paragraph"});
+            document.getElementById("a0af12608b9f45758bb5c366d30fa9e9").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="bounds">bounds</a> : sequence or `Bounds`</dt>
+<dd>
+                <div id="f255734408d84395a8fb30d85e8d7a08"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Bounds for variables. There are two ways to specify the bounds:"}], "type": "paragraph"});
+            document.getElementById("f255734408d84395a8fb30d85e8d7a08").innerHTML = html;
+        }
+        init();
+    </script>
+
+           <ol>               <li>                               <div id="89c70b27beb4476ea26e19733900f84e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Instance of "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.optimize._constraints.Bounds", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "Bounds"}, {"type": "text", "value": " class."}], "type": "paragraph"});
+            document.getElementById("89c70b27beb4476ea26e19733900f84e").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="3e1eb621579947bda367f60b4085a959"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Sequence of "}, {"type": "inlineCode", "value": "(min, max)"}, {"type": "text", "value": " pairs for each element in "}, {"domain": null, "role": null, "type": "Directive", "value": "x"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("3e1eb621579947bda367f60b4085a959").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ol>
+
+</dd>
+<dt><a id="args">args</a> : tuple, optional</dt>
+<dd>
+                <div id="cf968377610743b092b3700798b4b107"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Any additional fixed parameters needed to completely specify the objective function."}], "type": "paragraph"});
+            document.getElementById("cf968377610743b092b3700798b4b107").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="maxiter">maxiter</a> : int, optional</dt>
+<dd>
+                <div id="a0c19c0ae6f14946b12a7681b5dd4b79"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The maximum number of global search iterations. Default value is 1000."}], "type": "paragraph"});
+            document.getElementById("a0c19c0ae6f14946b12a7681b5dd4b79").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="minimizer_kwargs">minimizer_kwargs</a> : dict, optional</dt>
+<dd>
+                <div id="7049c441730a45a786e39ed8fa4051a3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Extra keyword arguments to be passed to the local minimizer ("}, {"domain": null, "role": null, "type": "Directive", "value": "minimize"}, {"type": "text", "value": "). Some important options could be: "}, {"type": "inlineCode", "value": "method"}, {"type": "text", "value": " for the minimizer method to use and "}, {"type": "inlineCode", "value": "args"}, {"type": "text", "value": " for objective function additional arguments."}], "type": "paragraph"});
+            document.getElementById("7049c441730a45a786e39ed8fa4051a3").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="initial_temp">initial_temp</a> : float, optional</dt>
+<dd>
+                <div id="9654222e1a0f40eba1491002d0c100cc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The initial temperature, use higher values to facilitates a wider search of the energy landscape, allowing dual_annealing to escape local minima that it is trapped in. Default value is 5230. Range is (0.01, 5.e4]."}], "type": "paragraph"});
+            document.getElementById("9654222e1a0f40eba1491002d0c100cc").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="restart_temp_ratio">restart_temp_ratio</a> : float, optional</dt>
+<dd>
+                <div id="6cfd3676a264450badb844d2abfa094a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "During the annealing process, temperature is decreasing, when it reaches "}, {"type": "inlineCode", "value": "initial_temp * restart_temp_ratio"}, {"type": "text", "value": ", the reannealing process is triggered. Default value of the ratio is 2e-5. Range is (0, 1)."}], "type": "paragraph"});
+            document.getElementById("6cfd3676a264450badb844d2abfa094a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="visit">visit</a> : float, optional</dt>
+<dd>
+                <div id="d88dc9ee67ab463f94e22a999e8e1084"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Parameter for visiting distribution. Default value is 2.62. Higher values give the visiting distribution a heavier tail, this makes the algorithm jump to a more distant region. The value range is (1, 3]."}], "type": "paragraph"});
+            document.getElementById("d88dc9ee67ab463f94e22a999e8e1084").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="accept">accept</a> : float, optional</dt>
+<dd>
+                <div id="8f8ec235677142d78ad081fcb43dd499"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Parameter for acceptance distribution. It is used to control the probability of acceptance. The lower the acceptance parameter, the smaller the probability of acceptance. Default value is -5.0 with a range (-1e4, -5]."}], "type": "paragraph"});
+            document.getElementById("8f8ec235677142d78ad081fcb43dd499").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="maxfun">maxfun</a> : int, optional</dt>
+<dd>
+                <div id="6fcb578d0833427b874b8c99df7eb800"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Soft limit for the number of objective function calls. If the algorithm is in the middle of a local search, this number will be exceeded, the algorithm will stop just after the local search is done. Default value is 1e7."}], "type": "paragraph"});
+            document.getElementById("6fcb578d0833427b874b8c99df7eb800").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="seed">seed</a> : {None, int, `numpy.random.Generator`, `numpy.random.RandomState`}, optional</dt>
+<dd>
+                <div id="8f0efe42fb82414e9c3003ef33f3c698"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "seed", "type": "RefInfo", "version": null}, "type": "Link", "value": "seed"}, {"type": "text", "value": " is None (or "}, {"domain": null, "role": null, "type": "Directive", "value": "np.random"}, {"type": "text", "value": "), the "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "numpy", "path": "numpy.random.mtrand.RandomState", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "numpy.random.RandomState"}, {"type": "text", "value": " singleton is used. If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "seed", "type": "RefInfo", "version": null}, "type": "Link", "value": "seed"}, {"type": "text", "value": " is an int, a new "}, {"type": "inlineCode", "value": "RandomState"}, {"type": "text", "value": " instance is used, seeded with "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "seed", "type": "RefInfo", "version": null}, "type": "Link", "value": "seed"}, {"type": "text", "value": ". If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "seed", "type": "RefInfo", "version": null}, "type": "Link", "value": "seed"}, {"type": "text", "value": " is already a "}, {"type": "inlineCode", "value": "Generator"}, {"type": "text", "value": " or "}, {"type": "inlineCode", "value": "RandomState"}, {"type": "text", "value": " instance then that instance is used. Specify "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "seed", "type": "RefInfo", "version": null}, "type": "Link", "value": "seed"}, {"type": "text", "value": " for repeatable minimizations. The random numbers generated with this seed only affect the visiting distribution function and new coordinates generation."}], "type": "paragraph"});
+            document.getElementById("8f0efe42fb82414e9c3003ef33f3c698").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="no_local_search">no_local_search</a> : bool, optional</dt>
+<dd>
+                <div id="1d8c52ab919c4ea0bec4c5d40ebd48d0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "no_local_search", "type": "RefInfo", "version": null}, "type": "Link", "value": "no_local_search"}, {"type": "text", "value": " is set to True, a traditional Generalized Simulated Annealing will be performed with no local search strategy applied."}], "type": "paragraph"});
+            document.getElementById("1d8c52ab919c4ea0bec4c5d40ebd48d0").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="callback">callback</a> : callable, optional</dt>
+<dd>
+                <div id="3acdc796c67d425cb57338e4f42e6899"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A callback function with signature "}, {"type": "inlineCode", "value": "callback(x, f, context)"}, {"type": "text", "value": ", which will be called for all minima found. "}, {"type": "inlineCode", "value": "x"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "f"}, {"type": "text", "value": " are the coordinates and function value of the latest minimum found, and "}, {"type": "inlineCode", "value": "context"}, {"type": "text", "value": " has value in [0, 1, 2], with the following meaning:"}], "type": "paragraph"});
+            document.getElementById("3acdc796c67d425cb57338e4f42e6899").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <blockquote>           <ul>               <li>                               <div id="85a2fe4d1f894f97852657291a536a5e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "0: minimum detected in the annealing process."}], "type": "paragraph"});
+            document.getElementById("85a2fe4d1f894f97852657291a536a5e").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="ba56fe10e83d4920b180626d67b23cd6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "1: detection occurred in the local search process."}], "type": "paragraph"});
+            document.getElementById("ba56fe10e83d4920b180626d67b23cd6").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="ba7051c893814b07b18df3f0e6071edc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "2: detection done in the dual annealing process."}], "type": "paragraph"});
+            document.getElementById("ba7051c893814b07b18df3f0e6071edc").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+</blockquote>
+
+                <div id="2f251d60c3a842bb84a39da4bafcd68e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If the callback implementation returns True, the algorithm will stop."}], "type": "paragraph"});
+            document.getElementById("2f251d60c3a842bb84a39da4bafcd68e").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="x0">x0</a> : ndarray, shape(n,), optional</dt>
+<dd>
+                <div id="3aac9de79bb94f7693f00587db659280"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Coordinates of a single N-D starting point."}], "type": "paragraph"});
+            document.getElementById("3aac9de79bb94f7693f00587db659280").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="res">res</a> : OptimizeResult</dt>
+<dd>
+                <div id="842f08ae238b4e129e3f389b5c3fe400"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The optimization result represented as a "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.optimize._optimize.OptimizeResult", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "OptimizeResult"}, {"type": "text", "value": " object. Important attributes are: "}, {"type": "inlineCode", "value": "x"}, {"type": "text", "value": " the solution array, "}, {"type": "inlineCode", "value": "fun"}, {"type": "text", "value": " the value of the function at the solution, and "}, {"type": "inlineCode", "value": "message"}, {"type": "text", "value": " which describes the cause of the termination. See "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.optimize._optimize.OptimizeResult", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "OptimizeResult"}, {"type": "text", "value": " for a description of other attributes."}], "type": "paragraph"});
+            document.getElementById("842f08ae238b4e129e3f389b5c3fe400").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="47da764d6a05406e9a6fb935960e20e9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Find the global minimum of a function using Dual Annealing."}], "type": "paragraph"});
+            document.getElementById("47da764d6a05406e9a6fb935960e20e9").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+                           The following example is a 10-D problem, with many local minima.
+The function involved is called Rastrigin
+(https://en.wikipedia.org/wiki/Rastrigin_function)  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">optimize</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">dual_annealing</span><br><span class='nsl'>...&nbsp;</span><span class="">func</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="k">lambda</span><span class=""> </span><span class="">x</span><span class="">:</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">sum</span><span class="">(</span><span class="">x</span><span class="o">*</span><span class="">x</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="mi">10</span><span class="o">*</span><span class="">np</span><span class="o">.</span><span class="">cos</span><span class="">(</span><span class="mi">2</span><span class="o">*</span><span class="">np</span><span class="o">.</span><span class="">pi</span><span class="o">*</span><span class="">x</span><span class="">)</span><span class="">)</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="mi">10</span><span class="o">*</span><span class="">np</span><span class="o">.</span><span class="">size</span><span class="">(</span><span class="">x</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">lw</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">[</span><span class="o">-</span><span class="mf">5.12</span><span class="">]</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="mi">10</span><br><span class='nsl'>...&nbsp;</span><span class="">up</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">[</span><span class="mf">5.12</span><span class="">]</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="mi">10</span><br><span class='nsl'>...&nbsp;</span><span class="">ret</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">dual_annealing</span><span class="">(</span><span class="">func</span><span class="">,</span><span class=""> </span><span class="">bounds</span><span class="o">=</span><span class="nb">list</span><span class="">(</span><span class="nb">zip</span><span class="">(</span><span class="">lw</span><span class="">,</span><span class=""> </span><span class="">up</span><span class="">)</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">ret</span><span class="o">.</span><span class="">x</span>
+array([-4.26437714e-09, -3.91699361e-09, -1.86149218e-09, -3.97165720e-09,
+       -6.29151648e-09, -6.53145322e-09, -3.93616815e-09, -6.55623025e-09,
+       -6.05775280e-09, -5.00668935e-09]) # random</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">ret</span><span class="o">.</span><span class="">fun</span>
+0.000000</pre>
+            
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/optimize/_dual_annealing.py#L435'>/scipy/optimize/_dual_annealing.py#435</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 14.782329983125269, "label": "numpy.random.mtrand.RandomState", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.random.mtrand.RandomState"}, {"id": 2, "val": 12.242640687119284, "label": "scipy.optimize._optimize.OptimizeResult", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.optimize._optimize.OptimizeResult"}, {"id": 3, "val": 11.16227766016838, "label": "scipy.optimize._constraints.Bounds", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.optimize._constraints.Bounds"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

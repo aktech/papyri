@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.integrate.html'>integrate</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.integrate._quadpack_py.html'>_quadpack_py</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.integrate._bvp.html">_bvp</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._dop.html">_dop</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._ivp.html">_ivp</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._lsoda.html">_lsoda</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._ode.html">_ode</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._odepack.html">_odepack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._odepack_py.html">_odepack_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quad_vec.html">_quad_vec</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadpack.html">_quadpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadpack_py.html">_quadpack_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.html">_quadrature</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._vode.html">_vode</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.dop.html">dop</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.lsoda.html">lsoda</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.odepack.html">odepack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.quadpack.html">quadpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.vode.html">vode</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.integrate._quadpack_py.nquad.html'>nquad</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadpack_py.IntegrationWarning.html">IntegrationWarning</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadpack_py._NQuad.html">_NQuad</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadpack_py._OptFunc.html">_OptFunc</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadpack_py._RangeFunc.html">_RangeFunc</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadpack_py._quad.html">_quad</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadpack_py._quad_weight.html">_quad_weight</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadpack_py.dblquad.html">dblquad</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadpack_py.nquad.html">nquad</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadpack_py.quad.html">quad</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadpack_py.tplquad.html">tplquad</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>nquad(func, ranges, args=None, opts=None, full_output=False)</code><!-- rendering Extended Summary -->
+                                       <div id="fd232f8d361c4d3c918f24226ad1cebf"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Wraps "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.integrate._quadpack_py.quad", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "quad"}, {"type": "text", "value": " to enable integration over multiple variables. Various options allow improved integration of discontinuous functions, as well as the use of weighted integration, and generally finer control of the integration process."}], "type": "paragraph"});
+            document.getElementById("fd232f8d361c4d3c918f24226ad1cebf").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="a0d19dbebc134e76a01627a596921afc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"children": [{"type": "text", "value": "Details of QUADPACK level routines"}], "type": "strong"}], "type": "paragraph"});
+            document.getElementById("a0d19dbebc134e76a01627a596921afc").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="737c0acd19b7439fb3bbdee82c964f18"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.integrate._quadpack_py.nquad", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "nquad"}, {"type": "text", "value": " calls routines from the FORTRAN library QUADPACK. This section provides details on the conditions for each routine to be called and a short description of each routine. The routine called depends on "}, {"domain": null, "role": null, "type": "Directive", "value": "weight"}, {"type": "text", "value": ", "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.signal._czt.CZT.points", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "points"}, {"type": "text", "value": " and the integration limits "}, {"domain": null, "role": null, "type": "Directive", "value": "a"}, {"type": "text", "value": " and "}, {"domain": null, "role": null, "type": "Directive", "value": "b"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("737c0acd19b7439fb3bbdee82c964f18").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="e9428bc231e947cbb9ec7dd1ee9b1611"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "================  ==============  ==========  ===================== QUADPACK routine  "}, {"domain": null, "role": null, "type": "Directive", "value": "weight"}, {"type": "text", "value": "        "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.signal._czt.CZT.points", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "points"}, {"type": "text", "value": "    infinite bounds ================  ==============  ==========  ===================== qagse             None            No          No qagie             None            No          Yes qagpe             None            Yes         No qawoe             \u0027sin\u0027, \u0027cos\u0027    No          No qawfe             \u0027sin\u0027, \u0027cos\u0027    No          either "}, {"domain": null, "role": null, "type": "Directive", "value": "a"}, {"type": "text", "value": " or "}, {"domain": null, "role": null, "type": "Directive", "value": "b"}, {"type": "text", "value": " qawse             \u0027alg*\u0027          No          No qawce             \u0027cauchy\u0027        No          No ================  ==============  ==========  ====================="}], "type": "paragraph"});
+            document.getElementById("e9428bc231e947cbb9ec7dd1ee9b1611").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="5f8477029b424bc3b1ea5cd97b354f68"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The following provides a short desciption from  for each routine."}], "type": "paragraph"});
+            document.getElementById("5f8477029b424bc3b1ea5cd97b354f68").innerHTML = html;
+        }
+        init();
+    </script>
+
+               <!-- deflist -->
+           <dl>
+               <dt>                <div id="88c1c3a51fbb4856a5f4b4f406765f1c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "qagse"}], "type": "paragraph"});
+            document.getElementById("88c1c3a51fbb4856a5f4b4f406765f1c").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="a6c0f812380045268f2140659c79bc20"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "is an integrator based on globally adaptive interval     subdivision in connection with extrapolation, which will     eliminate the effects of integrand singularities of     several types."}], "type": "paragraph"});
+            document.getElementById("a6c0f812380045268f2140659c79bc20").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="29636c22f4984c58a09ccc83eb6ec1a2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "qagie"}], "type": "paragraph"});
+            document.getElementById("29636c22f4984c58a09ccc83eb6ec1a2").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="b8a14be77265469fa767fa1318a0488b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "handles integration over infinite intervals. The infinite range is     mapped onto a finite interval and subsequently the same strategy as     in "}, {"type": "inlineCode", "value": "QAGS"}, {"type": "text", "value": " is applied."}], "type": "paragraph"});
+            document.getElementById("b8a14be77265469fa767fa1318a0488b").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="f8ffac5236b34578b5b4ca53180eac94"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "qagpe"}], "type": "paragraph"});
+            document.getElementById("f8ffac5236b34578b5b4ca53180eac94").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="3f621e80a45241eb8c65ae3633e9021d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "serves the same purposes as QAGS, but also allows the     user to provide explicit information about the location     and type of trouble-spots i.e. the abscissae of internal     singularities, discontinuities and other difficulties of     the integrand function."}], "type": "paragraph"});
+            document.getElementById("3f621e80a45241eb8c65ae3633e9021d").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="589136c287424b6094413391d0b07eb7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "qawoe"}], "type": "paragraph"});
+            document.getElementById("589136c287424b6094413391d0b07eb7").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="0e736cc70ce345f6b9f5ce07b52b610c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "is an integrator for the evaluation of     "}, {"type": "Math", "value": "\\int^b_a \\cos(\\omega x)f(x)dx"}, {"type": "text", "value": " or     "}, {"type": "Math", "value": "\\int^b_a \\sin(\\omega x)f(x)dx"}, {"type": "text", "value": "     over a finite interval [a,b], where "}, {"type": "Math", "value": "\\omega"}, {"type": "text", "value": " and "}, {"type": "Math", "value": "f"}, {"type": "text", "value": "     are specified by the user. The rule evaluation component is based     on the modified Clenshaw-Curtis technique"}], "type": "paragraph"});
+            document.getElementById("0e736cc70ce345f6b9f5ce07b52b610c").innerHTML = html;
+        }
+        init();
+    </script>
+                <div id="9eb8afcf5d1b4d4ab002c78d051031f8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "An adaptive subdivision scheme is used in connection     with an extrapolation procedure, which is a modification     of that in "}, {"type": "inlineCode", "value": "QAGS"}, {"type": "text", "value": " and allows the algorithm to deal with     singularities in "}, {"type": "Math", "value": "f(x)"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("9eb8afcf5d1b4d4ab002c78d051031f8").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="3f989c47fcc246f2b6860fe7566d9b2a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "qawfe"}], "type": "paragraph"});
+            document.getElementById("3f989c47fcc246f2b6860fe7566d9b2a").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="e7f0439dd7984b00af47843beab6960e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "calculates the Fourier transform     "}, {"type": "Math", "value": "\\int^\\infty_a \\cos(\\omega x)f(x)dx"}, {"type": "text", "value": " or     "}, {"type": "Math", "value": "\\int^\\infty_a \\sin(\\omega x)f(x)dx"}, {"type": "text", "value": "     for user-provided "}, {"type": "Math", "value": "\\omega"}, {"type": "text", "value": " and "}, {"type": "Math", "value": "f"}, {"type": "text", "value": ". The procedure of     "}, {"type": "inlineCode", "value": "QAWO"}, {"type": "text", "value": " is applied on successive finite intervals, and convergence     acceleration by means of the "}, {"type": "Math", "value": "\\varepsilon"}, {"type": "text", "value": "-algorithm is applied     to the series of integral approximations."}], "type": "paragraph"});
+            document.getElementById("e7f0439dd7984b00af47843beab6960e").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="e2cb6a22050f4d2abf7b74379274f724"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "qawse"}], "type": "paragraph"});
+            document.getElementById("e2cb6a22050f4d2abf7b74379274f724").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="22e658e55e55473bb8dd94a66fc79188"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "approximate "}, {"type": "Math", "value": "\\int^b_a w(x)f(x)dx"}, {"type": "text", "value": ", with "}, {"type": "Math", "value": "a \u003c b"}, {"type": "text", "value": " where     "}, {"type": "Math", "value": "w(x) = (x-a)^{\\alpha}(b-x)^{\\beta}v(x)"}, {"type": "text", "value": " with     "}, {"type": "Math", "value": "\\alpha,\\beta \u003e -1"}, {"type": "text", "value": ", where "}, {"type": "Math", "value": "v(x)"}, {"type": "text", "value": " may be one of the     following functions: "}, {"type": "Math", "value": "1"}, {"type": "text", "value": ", "}, {"type": "Math", "value": "\\log(x-a)"}, {"type": "text", "value": ", "}, {"type": "Math", "value": "\\log(b-x)"}, {"type": "text", "value": ",     "}, {"type": "Math", "value": "\\log(x-a)\\log(b-x)"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("22e658e55e55473bb8dd94a66fc79188").innerHTML = html;
+        }
+        init();
+    </script>
+                <div id="5799b88b1e854041b48895f8f9365366"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The user specifies "}, {"type": "Math", "value": "\\alpha"}, {"type": "text", "value": ", "}, {"type": "Math", "value": "\\beta"}, {"type": "text", "value": " and the type of the     function "}, {"type": "Math", "value": "v"}, {"type": "text", "value": ". A globally adaptive subdivision strategy is     applied, with modified Clenshaw-Curtis integration on those     subintervals which contain "}, {"domain": null, "role": null, "type": "Directive", "value": "a"}, {"type": "text", "value": " or "}, {"domain": null, "role": null, "type": "Directive", "value": "b"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("5799b88b1e854041b48895f8f9365366").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="76ccf8848c7b4236badb2bc1098abb6d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "qawce"}], "type": "paragraph"});
+            document.getElementById("76ccf8848c7b4236badb2bc1098abb6d").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="d214496458544a7e90c8f57b78a0ef3c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "compute "}, {"type": "Math", "value": "\\int^b_a f(x) / (x-c)dx"}, {"type": "text", "value": " where the integral must be     interpreted as a Cauchy principal value integral, for user specified     "}, {"type": "Math", "value": "c"}, {"type": "text", "value": " and "}, {"type": "Math", "value": "f"}, {"type": "text", "value": ". The strategy is globally adaptive. Modified     Clenshaw-Curtis integration is used on those intervals containing the     point "}, {"type": "Math", "value": "x = c"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("d214496458544a7e90c8f57b78a0ef3c").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="func">func</a> : {callable, scipy.LowLevelCallable}</dt>
+<dd>
+                <div id="02fa88ecec1b4741b57214e669a02770"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The function to be integrated. Has arguments of "}, {"type": "inlineCode", "value": "x0, ... xn"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "t0, ... tm"}, {"type": "text", "value": ", where integration is carried out over "}, {"type": "inlineCode", "value": "x0, ... xn"}, {"type": "text", "value": ", which must be floats.  Where "}, {"type": "inlineCode", "value": "t0, ... tm"}, {"type": "text", "value": " are extra arguments passed in args. Function signature should be "}, {"type": "inlineCode", "value": "func(x0, x1, ..., xn, t0, t1, ..., tm)"}, {"type": "text", "value": ". Integration is carried out in order.  That is, integration over "}, {"type": "inlineCode", "value": "x0"}, {"type": "text", "value": " is the innermost integral, and "}, {"type": "inlineCode", "value": "xn"}, {"type": "text", "value": " is the outermost."}], "type": "paragraph"});
+            document.getElementById("02fa88ecec1b4741b57214e669a02770").innerHTML = html;
+        }
+        init();
+    </script>
+
+                <div id="8328187d31fd4f0cbaaba7342da59f5f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If the user desires improved integration performance, then "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.optimize._bglu_dense._consider_refactor.\u003clocals\u003e.f", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "f"}, {"type": "text", "value": " may be a "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "scipy", "path": "scipy._lib._ccallback.LowLevelCallable", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "scipy.LowLevelCallable"}, {"type": "text", "value": " with one of the signatures      "}], "type": "paragraph"});
+            document.getElementById("8328187d31fd4f0cbaaba7342da59f5f").innerHTML = html;
+        }
+        init();
+    </script>
+
+                <div id="35c3f922b4e34dfa814597e01e767d90"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "double func(int n, double *xx)\ndouble func(int n, double *xx, void *user_data)"});
+            document.getElementById("35c3f922b4e34dfa814597e01e767d90").innerHTML = html;
+        }
+        init();
+    </script>
+
+                <div id="ae2de08905044d788557cf629b0f05ae"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "where "}, {"type": "inlineCode", "value": "n"}, {"type": "text", "value": " is the number of variables and args.  The "}, {"type": "inlineCode", "value": "xx"}, {"type": "text", "value": " array contains the coordinates and extra arguments. "}, {"type": "inlineCode", "value": "user_data"}, {"type": "text", "value": " is the data contained in the "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "scipy", "path": "scipy._lib._ccallback.LowLevelCallable", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "scipy.LowLevelCallable"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("ae2de08905044d788557cf629b0f05ae").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="ranges">ranges</a> : iterable object</dt>
+<dd>
+                <div id="5e6c8655534b44a493c94f2c9a9bd752"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Each element of ranges may be either a sequence  of 2 numbers, or else a callable that returns such a sequence. "}, {"type": "inlineCode", "value": "ranges[0]"}, {"type": "text", "value": " corresponds to integration over x0, and so on. If an element of ranges is a callable, then it will be called with all of the integration arguments available, as well as any parametric arguments. e.g., if "}, {"type": "inlineCode", "value": "func = f(x0, x1, x2, t0, t1)"}, {"type": "text", "value": ", then "}, {"type": "inlineCode", "value": "ranges[0]"}, {"type": "text", "value": " may be defined as either "}, {"type": "inlineCode", "value": "(a, b)"}, {"type": "text", "value": " or else as "}, {"type": "inlineCode", "value": "(a, b) = range0(x1, x2, t0, t1)"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("5e6c8655534b44a493c94f2c9a9bd752").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="args">args</a> : iterable object, optional</dt>
+<dd>
+                <div id="52a386bfce2941e5b98b370434860fa5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Additional arguments "}, {"type": "inlineCode", "value": "t0, ... tn"}, {"type": "text", "value": ", required by "}, {"type": "inlineCode", "value": "func"}, {"type": "text", "value": ", "}, {"type": "inlineCode", "value": "ranges"}, {"type": "text", "value": ", and "}, {"type": "inlineCode", "value": "opts"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("52a386bfce2941e5b98b370434860fa5").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="opts">opts</a> : iterable object or dict, optional</dt>
+<dd>
+                <div id="b607bc7a285649db8e90585ac2c0269c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Options to be passed to "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.integrate._quadpack_py.quad", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "quad"}, {"type": "text", "value": ". May be empty, a dict, or a sequence of dicts or functions that return a dict. If empty, the default options from scipy.integrate.quad are used. If a dict, the same options are used for all levels of integraion. If a sequence, then each element of the sequence corresponds to a particular integration. e.g., "}, {"type": "inlineCode", "value": "opts[0]"}, {"type": "text", "value": " corresponds to integration over "}, {"type": "inlineCode", "value": "x0"}, {"type": "text", "value": ", and so on. If a callable, the signature must be the same as for "}, {"type": "inlineCode", "value": "ranges"}, {"type": "text", "value": ". The available options together with their default values are:"}], "type": "paragraph"});
+            document.getElementById("b607bc7a285649db8e90585ac2c0269c").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <blockquote>           <ul>               <li>                               <div id="5ae6eb4752ed485b9d63cbfb3a4edc31"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "epsabs = 1.49e-08"}], "type": "paragraph"});
+            document.getElementById("5ae6eb4752ed485b9d63cbfb3a4edc31").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="ff5a54bebebf445aafb323b50559a582"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "epsrel = 1.49e-08"}], "type": "paragraph"});
+            document.getElementById("ff5a54bebebf445aafb323b50559a582").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="456a072336f541cbaf8916db7e5ba6d9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "limit  = 50"}], "type": "paragraph"});
+            document.getElementById("456a072336f541cbaf8916db7e5ba6d9").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="de44e623418a49e0acea0663eca0d681"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "points = None"}], "type": "paragraph"});
+            document.getElementById("de44e623418a49e0acea0663eca0d681").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="e86191a89c19443e83bc88283deae68c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "weight = None"}], "type": "paragraph"});
+            document.getElementById("e86191a89c19443e83bc88283deae68c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="fb1d38ff9f0d467286d36dc9035e66a2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "wvar   = None"}], "type": "paragraph"});
+            document.getElementById("fb1d38ff9f0d467286d36dc9035e66a2").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="d827b761a6f244138426aef602deecb7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "wopts  = None"}], "type": "paragraph"});
+            document.getElementById("d827b761a6f244138426aef602deecb7").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+</blockquote>
+
+                <div id="ee41313a2133481faca32e61a0de8b05"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For more information on these options, see "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.integrate._quadpack_py.quad", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "quad"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("ee41313a2133481faca32e61a0de8b05").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="full_output">full_output</a> : bool, optional</dt>
+<dd>
+                <div id="77045a4b82c844b69bfb89a183d43783"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Partial implementation of "}, {"type": "inlineCode", "value": "full_output"}, {"type": "text", "value": " from scipy.integrate.quad. The number of integrand function evaluations "}, {"type": "inlineCode", "value": "neval"}, {"type": "text", "value": " can be obtained by setting "}, {"type": "inlineCode", "value": "full_output=True"}, {"type": "text", "value": " when calling nquad."}], "type": "paragraph"});
+            document.getElementById("77045a4b82c844b69bfb89a183d43783").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="result">result</a> : float</dt>
+<dd>
+                <div id="d2810e87b8214a7facc10dafb3a879a2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The result of the integration."}], "type": "paragraph"});
+            document.getElementById("d2810e87b8214a7facc10dafb3a879a2").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="abserr">abserr</a> : float</dt>
+<dd>
+                <div id="114208ec5c2b41f3bf608f7b2857405a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The maximum of the estimates of the absolute error in the various integration results."}], "type": "paragraph"});
+            document.getElementById("114208ec5c2b41f3bf608f7b2857405a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="out_dict">out_dict</a> : dict, optional</dt>
+<dd>
+                <div id="38fb5d3e7ed943c99f3bb1a95916f1cb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A dict containing additional information on the integration."}], "type": "paragraph"});
+            document.getElementById("38fb5d3e7ed943c99f3bb1a95916f1cb").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="19e7ad33fe804df6925d2b0b397cfb4f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Integration over multiple variables."}], "type": "paragraph"});
+            document.getElementById("19e7ad33fe804df6925d2b0b397cfb4f").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.integrate._quadpack_py.dblquad.html" class='exists'>dblquad</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="82b9601c489847b5b7909cfdf85fd9f2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "double and triple integrals"});
+            document.getElementById("82b9601c489847b5b7909cfdf85fd9f2").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.fixed_quad.html" class='exists'>fixed_quad</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="146cda9e0f2148e8887ab1457a1c8821"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "fixed-order Gaussian quadrature"});
+            document.getElementById("146cda9e0f2148e8887ab1457a1c8821").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.integrate._quadpack_py.quad.html" class='exists'>quad</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="49d8b3f3e71a42f2810e192cba70f6d8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "1-D numerical integration"});
+            document.getElementById("49d8b3f3e71a42f2810e192cba70f6d8").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.quadrature.html" class='exists'>quadrature</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="b44fecb633814e82af906274905b6ab1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "adaptive Gaussian quadrature"});
+            document.getElementById("b44fecb633814e82af906274905b6ab1").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.integrate._quadpack_py.tplquad.html" class='exists'>tplquad</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="9fc26a3e9d234bb5b6ae70360b0a570e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "double and triple integrals"});
+            document.getElementById("9fc26a3e9d234bb5b6ae70360b0a570e").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+                           Calculate  
+            
+                           .. math::  
+            
+                               \int^{1}_{-0.15} \int^{0.8}_{0.13} \int^{1}_{-1} \int^{1}_{0}
+    f(x_0, x_1, x_2, x_3) \,dx_0 \,dx_1 \,dx_2 \,dx_3 ,  
+            
+                           where  
+            
+                           .. math::  
+            
+                               f(x_0, x_1, x_2, x_3) = \begin{cases}
+      x_0^2+x_1 x_2-x_3^3+ \sin{x_0}+1 &amp; (x_0-0.2 x_3-0.5-0.25 x_1 &gt; 0) \\
+      x_0^2+x_1 x_2-x_3^3+ \sin{x_0}+0 &amp; (x_0-0.2 x_3-0.5-0.25 x_1 \leq 0)
+    \end{cases} .  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">integrate</span><br><span class='nsl'>...&nbsp;</span><span class="">func</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="k">lambda</span><span class=""> </span><span class="">x0</span><span class="">,</span><span class="">x1</span><span class="">,</span><span class="">x2</span><span class="">,</span><span class="">x3</span><span class=""> </span><span class="">:</span><span class=""> </span><span class="">x0</span><span class="o">*</span><span class="o">*</span><span class="mi">2</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="">x1</span><span class="o">*</span><span class="">x2</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="">x3</span><span class="o">*</span><span class="o">*</span><span class="mi">3</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">sin</span><span class="">(</span><span class="">x0</span><span class="">)</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="">(</span><br><span class='nsl'>...&nbsp;</span><span class="">                                </span><span class="mi">1</span><span class=""> </span><span class="k">if</span><span class=""> </span><span class="">(</span><span class="">x0</span><span class="o">-</span><span class="mf">.2</span><span class="o">*</span><span class="">x3</span><span class="o">-</span><span class="mf">.5</span><span class="o">-</span><span class="mf">.25</span><span class="o">*</span><span class="">x1</span><span class="o">&gt;</span><span class="mi">0</span><span class="">)</span><span class=""> </span><span class="k">else</span><span class=""> </span><span class="mi">0</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="k">def</span><span class=""> </span><span class="nf">opts0</span><span class="">(</span><span class="o">*</span><span class="">args</span><span class="">,</span><span class=""> </span><span class="o">*</span><span class="o">*</span><span class="">kwargs</span><span class="">)</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="k">return</span><span class=""> </span><span class="">{</span><span class="s1">&#39;</span><span class="s1">points</span><span class="s1">&#39;</span><span class="">:</span><span class="">[</span><span class="mf">0.2</span><span class="o">*</span><span class="">args</span><span class="">[</span><span class="mi">2</span><span class="">]</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="mf">0.5</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="mf">0.25</span><span class="o">*</span><span class="">args</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class="">]</span><span class="">}</span><br><span class='nsl'>...&nbsp;</span><span class="">integrate</span><span class="o">.</span><span class="">nquad</span><span class="">(</span><span class="">func</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="o">-</span><span class="mi">1</span><span class="">,</span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mf">.13</span><span class="">,</span><span class="mf">.8</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="o">-</span><span class="mf">.15</span><span class="">,</span><span class="mi">1</span><span class="">]</span><span class="">]</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                </span><span class="">opts</span><span class="o">=</span><span class="">[</span><span class="">opts0</span><span class="">,</span><span class="">{</span><span class="">}</span><span class="">,</span><span class="">{</span><span class="">}</span><span class="">,</span><span class="">{</span><span class="">}</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">full_output</span><span class="o">=</span><span class="kc">True</span><span class="">)</span>
+(1.5267454070738633, 2.9437360001402324e-14, {&#39;neval&#39;: 388962})</pre>
+            
+                           Calculate  
+            
+                           .. math::  
+            
+                               \int^{t_0+t_1+1}_{t_0+t_1-1}
+    \int^{x_2+t_0^2 t_1^3+1}_{x_2+t_0^2 t_1^3-1}
+    \int^{t_0 x_1+t_1 x_2+1}_{t_0 x_1+t_1 x_2-1}
+    f(x_0,x_1, x_2,t_0,t_1)
+    \,dx_0 \,dx_1 \,dx_2,  
+            
+                           where  
+            
+                           .. math::  
+            
+                               f(x_0, x_1, x_2, t_0, t_1) = \begin{cases}
+      x_0 x_2^2 + \sin{x_1}+2 &amp; (x_0+t_1 x_1-t_0 &gt; 0) \\
+      x_0 x_2^2 +\sin{x_1}+1 &amp; (x_0+t_1 x_1-t_0 \leq 0)
+    \end{cases}  
+            
+                           and :math:`(t_0, t_1) = (0, 1)` .  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="k">def</span><span class=""> </span><span class="nf">func2</span><span class="">(</span><span class="">x0</span><span class="">,</span><span class=""> </span><span class="">x1</span><span class="">,</span><span class=""> </span><span class="">x2</span><span class="">,</span><span class=""> </span><span class="">t0</span><span class="">,</span><span class=""> </span><span class="">t1</span><span class="">)</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="k">return</span><span class=""> </span><span class="">x0</span><span class="o">*</span><span class="">x2</span><span class="o">*</span><span class="o">*</span><span class="mi">2</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">sin</span><span class="">(</span><span class="">x1</span><span class="">)</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="mi">1</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="">(</span><span class="mi">1</span><span class=""> </span><span class="k">if</span><span class=""> </span><span class="">x0</span><span class="o">+</span><span class="">t1</span><span class="o">*</span><span class="">x1</span><span class="o">-</span><span class="">t0</span><span class="o">&gt;</span><span class="mi">0</span><span class=""> </span><span class="k">else</span><span class=""> </span><span class="mi">0</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="k">def</span><span class=""> </span><span class="nf">lim0</span><span class="">(</span><span class="">x1</span><span class="">,</span><span class=""> </span><span class="">x2</span><span class="">,</span><span class=""> </span><span class="">t0</span><span class="">,</span><span class=""> </span><span class="">t1</span><span class="">)</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="k">return</span><span class=""> </span><span class="">[</span><span class="">t0</span><span class="o">*</span><span class="">x1</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="">t1</span><span class="o">*</span><span class="">x2</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="">t0</span><span class="o">*</span><span class="">x1</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="">t1</span><span class="o">*</span><span class="">x2</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="mi">1</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="k">def</span><span class=""> </span><span class="nf">lim1</span><span class="">(</span><span class="">x2</span><span class="">,</span><span class=""> </span><span class="">t0</span><span class="">,</span><span class=""> </span><span class="">t1</span><span class="">)</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="k">return</span><span class=""> </span><span class="">[</span><span class="">x2</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="">t0</span><span class="o">*</span><span class="o">*</span><span class="mi">2</span><span class="o">*</span><span class="">t1</span><span class="o">*</span><span class="o">*</span><span class="mi">3</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="">x2</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="">t0</span><span class="o">*</span><span class="o">*</span><span class="mi">2</span><span class="o">*</span><span class="">t1</span><span class="o">*</span><span class="o">*</span><span class="mi">3</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="mi">1</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="k">def</span><span class=""> </span><span class="nf">lim2</span><span class="">(</span><span class="">t0</span><span class="">,</span><span class=""> </span><span class="">t1</span><span class="">)</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="k">return</span><span class=""> </span><span class="">[</span><span class="">t0</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="">t1</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="">t0</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="">t1</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="mi">1</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="k">def</span><span class=""> </span><span class="nf">opts0</span><span class="">(</span><span class="">x1</span><span class="">,</span><span class=""> </span><span class="">x2</span><span class="">,</span><span class=""> </span><span class="">t0</span><span class="">,</span><span class=""> </span><span class="">t1</span><span class="">)</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="k">return</span><span class=""> </span><span class="">{</span><span class="s1">&#39;</span><span class="s1">points</span><span class="s1">&#39;</span><span class=""> </span><span class="">:</span><span class=""> </span><span class="">[</span><span class="">t0</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="">t1</span><span class="o">*</span><span class="">x1</span><span class="">]</span><span class="">}</span><br><span class='nsl'>...&nbsp;</span><span class="k">def</span><span class=""> </span><span class="nf">opts1</span><span class="">(</span><span class="">x2</span><span class="">,</span><span class=""> </span><span class="">t0</span><span class="">,</span><span class=""> </span><span class="">t1</span><span class="">)</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="k">return</span><span class=""> </span><span class="">{</span><span class="">}</span><br><span class='nsl'>...&nbsp;</span><span class="k">def</span><span class=""> </span><span class="nf">opts2</span><span class="">(</span><span class="">t0</span><span class="">,</span><span class=""> </span><span class="">t1</span><span class="">)</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="k">return</span><span class=""> </span><span class="">{</span><span class="">}</span><br><span class='nsl'>...&nbsp;</span><span class="">integrate</span><span class="o">.</span><span class="">nquad</span><span class="">(</span><span class="">func2</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="">lim0</span><span class="">,</span><span class=""> </span><span class="">lim1</span><span class="">,</span><span class=""> </span><span class="">lim2</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">args</span><span class="o">=</span><span class="">(</span><span class="mi">0</span><span class="">,</span><span class="mi">1</span><span class="">)</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                </span><span class="">opts</span><span class="o">=</span><span class="">[</span><span class="">opts0</span><span class="">,</span><span class=""> </span><span class="">opts1</span><span class="">,</span><span class=""> </span><span class="">opts2</span><span class="">]</span><span class="">)</span>
+(36.099919226771625, 1.8546948553373528e-07)</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.integrate._quadpack_py.dblquad.html" class='exists'>scipy.integrate._quadpack_py.dblquad</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.integrate._quadpack_py.nquad.html" class='exists'>scipy.integrate._quadpack_py.nquad</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.integrate._quadpack_py.quad.html" class='exists'>scipy.integrate._quadpack_py.quad</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.integrate._quadpack_py.tplquad.html" class='exists'>scipy.integrate._quadpack_py.tplquad</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/integrate/_quadpack_py.py#L923'>/scipy/integrate/_quadpack_py.py#923</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 12.242640687119284, "label": "scipy.optimize._bglu_dense._consider_refactor.<locals>.f", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.optimize._bglu_dense._consider_refactor.<locals>.f"}, {"id": 2, "val": 11.0, "label": "scipy.integrate._quadpack_py.dblquad", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.integrate._quadpack_py.dblquad"}, {"id": 3, "val": 11.464101615137753, "label": "scipy.integrate._quadpack_py.quad", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.integrate._quadpack_py.quad"}, {"id": 4, "val": 10.23606797749979, "label": "scipy._lib._ccallback.LowLevelCallable", "mod": "scipy", "url": "/p/scipy/*/api/scipy._lib._ccallback.LowLevelCallable"}, {"id": 5, "val": 11.0, "label": "scipy.integrate._quadrature.fixed_quad", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.integrate._quadrature.fixed_quad"}, {"id": 7, "val": 11.0, "label": "scipy.integrate._quadrature.quadrature", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.integrate._quadrature.quadrature"}, {"id": 8, "val": 9.414213562373096, "label": "scipy.signal._czt.CZT.points", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._czt.CZT.points"}, {"id": 9, "val": 11.0, "label": "scipy.integrate._quadpack_py.tplquad", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.integrate._quadpack_py.tplquad"}], "links": [{"source": 4, "target": 3, "id": 4}, {"source": 7, "target": 9, "id": 11}, {"source": 7, "target": 2, "id": 12}, {"source": 7, "target": 3, "id": 13}, {"source": 7, "target": 5, "id": 15}, {"source": 9, "target": 7, "id": 20}, {"source": 9, "target": 2, "id": 24}, {"source": 9, "target": 3, "id": 26}, {"source": 9, "target": 5, "id": 28}, {"source": 2, "target": 7, "id": 29}, {"source": 2, "target": 9, "id": 33}, {"source": 2, "target": 3, "id": 35}, {"source": 2, "target": 5, "id": 37}, {"source": 3, "target": 7, "id": 38}, {"source": 3, "target": 9, "id": 43}, {"source": 3, "target": 2, "id": 44}, {"source": 3, "target": 5, "id": 49}, {"source": 5, "target": 7, "id": 50}, {"source": 5, "target": 9, "id": 54}, {"source": 5, "target": 2, "id": 55}, {"source": 5, "target": 3, "id": 57}, {"source": 1, "target": 3, "id": 75}]};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

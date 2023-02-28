@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.ndimage.html'>ndimage</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.ndimage._morphology.html'>_morphology</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._filters.html">_filters</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._fourier.html">_fourier</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._interpolation.html">_interpolation</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._measurements.html">_measurements</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._morphology.html">_morphology</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._nd_image.html">_nd_image</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._ni_docstrings.html">_ni_docstrings</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._ni_label.html">_ni_label</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._ni_support.html">_ni_support</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.filters.html">filters</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.fourier.html">fourier</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.interpolation.html">interpolation</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.measurements.html">measurements</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.morphology.html">morphology</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.ndimage._morphology.binary_opening.html'>binary_opening</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._morphology._binary_erosion.html">_binary_erosion</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._morphology._center_is_true.html">_center_is_true</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._morphology._distance_tranform_arg_check.html">_distance_tranform_arg_check</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._morphology.binary_closing.html">binary_closing</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._morphology.binary_dilation.html">binary_dilation</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._morphology.binary_erosion.html">binary_erosion</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._morphology.binary_fill_holes.html">binary_fill_holes</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._morphology.binary_hit_or_miss.html">binary_hit_or_miss</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._morphology.binary_opening.html">binary_opening</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._morphology.binary_propagation.html">binary_propagation</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._morphology.black_tophat.html">black_tophat</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._morphology.distance_transform_bf.html">distance_transform_bf</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._morphology.distance_transform_cdt.html">distance_transform_cdt</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._morphology.distance_transform_edt.html">distance_transform_edt</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._morphology.generate_binary_structure.html">generate_binary_structure</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._morphology.grey_closing.html">grey_closing</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._morphology.grey_dilation.html">grey_dilation</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._morphology.grey_erosion.html">grey_erosion</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._morphology.grey_opening.html">grey_opening</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._morphology.iterate_structure.html">iterate_structure</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._morphology.morphological_gradient.html">morphological_gradient</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._morphology.morphological_laplace.html">morphological_laplace</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage._morphology.white_tophat.html">white_tophat</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>binary_opening(input, structure=None, iterations=1, output=None, origin=0, mask=None, border_value=0, brute_force=False)</code><!-- rendering Extended Summary -->
+                                       <div id="87fb44d3d2f845c79068a62085833b98"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The "}, {"children": [{"type": "text", "value": "opening"}], "type": "emphasis"}, {"type": "text", "value": " of an input image by a structuring element is the "}, {"children": [{"type": "text", "value": "dilation"}], "type": "emphasis"}, {"type": "text", "value": " of the "}, {"children": [{"type": "text", "value": "erosion"}], "type": "emphasis"}, {"type": "text", "value": " of the image by the structuring element."}], "type": "paragraph"});
+            document.getElementById("87fb44d3d2f845c79068a62085833b98").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="31df7e150aa74dd9bf6b2c53c22ba148"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"children": [{"type": "text", "value": "Opening"}], "type": "emphasis"}, {"type": "text", "value": "  is a mathematical morphology operation  that consists in the succession of an erosion and a dilation of the input with the same structuring element. Opening, therefore, removes objects smaller than the structuring element."}], "type": "paragraph"});
+            document.getElementById("31df7e150aa74dd9bf6b2c53c22ba148").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="bace42e27219409abd4652d9d49c3040"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Together with "}, {"children": [{"type": "text", "value": "closing"}], "type": "emphasis"}, {"type": "text", "value": " ("}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.ndimage._morphology.binary_closing", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "binary_closing"}, {"type": "text", "value": "), opening can be used for noise removal."}], "type": "paragraph"});
+            document.getElementById("bace42e27219409abd4652d9d49c3040").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="input">input</a> : array_like</dt>
+<dd>
+                <div id="458e500000824166a0399f97de867ef0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Binary array_like to be opened. Non-zero (True) elements form the subset to be opened."}], "type": "paragraph"});
+            document.getElementById("458e500000824166a0399f97de867ef0").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="structure">structure</a> : array_like, optional</dt>
+<dd>
+                <div id="569e2b0a8fd74949a4a42d72e4f7c376"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Structuring element used for the opening. Non-zero elements are considered True. If no structuring element is provided an element is generated with a square connectivity equal to one (i.e., only nearest neighbors are connected to the center, diagonally-connected elements are not considered neighbors)."}], "type": "paragraph"});
+            document.getElementById("569e2b0a8fd74949a4a42d72e4f7c376").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="iterations">iterations</a> : int, optional</dt>
+<dd>
+                <div id="1a4d1a14e2274252b1fc92a21fbc2886"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The erosion step of the opening, then the dilation step are each repeated "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "iterations", "type": "RefInfo", "version": null}, "type": "Link", "value": "iterations"}, {"type": "text", "value": " times (one, by default). If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "iterations", "type": "RefInfo", "version": null}, "type": "Link", "value": "iterations"}, {"type": "text", "value": " is less than 1, each operation is repeated until the result does not change anymore. Only an integer of iterations is accepted."}], "type": "paragraph"});
+            document.getElementById("1a4d1a14e2274252b1fc92a21fbc2886").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="output">output</a> : ndarray, optional</dt>
+<dd>
+                <div id="6eca6aca62f4440cabdf8615514e07a4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Array of the same shape as input, into which the output is placed. By default, a new array is created."}], "type": "paragraph"});
+            document.getElementById("6eca6aca62f4440cabdf8615514e07a4").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="origin">origin</a> : int or tuple of ints, optional</dt>
+<dd>
+                <div id="8fc776e14ca943adac0c8d6e56ecf10c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Placement of the filter, by default 0."}], "type": "paragraph"});
+            document.getElementById("8fc776e14ca943adac0c8d6e56ecf10c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="mask">mask</a> : array_like, optional</dt>
+<dd>
+                <div id="d6e1b292b01e449ba36085c829fefd31"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If a mask is given, only those elements with a True value at the corresponding mask element are modified at each iteration."}], "type": "paragraph"});
+            document.getElementById("d6e1b292b01e449ba36085c829fefd31").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <div class='admonition'>
+    <div>versionadded 1.1.0</div>
+</div>
+
+
+</dd>
+<dt><a id="border_value">border_value</a> : int (cast to 0 or 1), optional</dt>
+<dd>
+                <div id="31fe06ef85914d80a338303c783bc6a7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Value at the border in the output array."}], "type": "paragraph"});
+            document.getElementById("31fe06ef85914d80a338303c783bc6a7").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <div class='admonition'>
+    <div>versionadded 1.1.0</div>
+</div>
+
+
+</dd>
+<dt><a id="brute_force">brute_force</a> : boolean, optional</dt>
+<dd>
+                <div id="388c1185b1cd474f8994348fcb339d24"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Memory condition: if False, only the pixels whose value was changed in the last iteration are tracked as candidates to be updated in the current iteration; if true all pixels are considered as candidates for update, regardless of what happened in the previous iteration. False by default."}], "type": "paragraph"});
+            document.getElementById("388c1185b1cd474f8994348fcb339d24").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <div class='admonition'>
+    <div>versionadded 1.1.0</div>
+</div>
+
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="binary_opening">binary_opening</a> : ndarray of bools</dt>
+<dd>
+                <div id="e66652780d62451194e5472b5e4c9eed"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Opening of the input by the structuring element."}], "type": "paragraph"});
+            document.getElementById("e66652780d62451194e5472b5e4c9eed").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="801e239437394692b1a7a06b247a3485"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Multidimensional binary opening with the given structuring element."}], "type": "paragraph"});
+            document.getElementById("801e239437394692b1a7a06b247a3485").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.ndimage._morphology.binary_closing.html" class='exists'>binary_closing</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.ndimage._morphology.binary_dilation.html" class='exists'>binary_dilation</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.ndimage._morphology.binary_erosion.html" class='exists'>binary_erosion</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.ndimage._morphology.generate_binary_structure.html" class='exists'>generate_binary_structure</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.ndimage._morphology.grey_opening.html" class='exists'>grey_opening</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">ndimage</span><br><span class='nsl'>...&nbsp;</span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="">a</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">zeros</span><span class="">(</span><span class="">(</span><span class="mi">5</span><span class="">,</span><span class="mi">5</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">dtype</span><span class="o">=</span><span class="nb">int</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">a</span><span class="">[</span><span class="mi">1</span><span class="">:</span><span class="mi">4</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">:</span><span class="mi">4</span><span class="">]</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="mi">1</span><span class="">;</span><span class=""> </span><span class="">a</span><span class="">[</span><span class="mi">4</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">]</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="mi">1</span><br><span class='nsl'>...&nbsp;</span><span class="">a</span>
+array([[0, 0, 0, 0, 0],
+       [0, 1, 1, 1, 0],
+       [0, 1, 1, 1, 0],
+       [0, 1, 1, 1, 0],
+       [0, 0, 0, 0, 1]])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="c1"># Opening removes small objects</span><br><span class='nsl'>...&nbsp;</span><span class="">ndimage</span><span class="o">.</span><span class="">binary_opening</span><span class="">(</span><span class="">a</span><span class="">,</span><span class=""> </span><span class="">structure</span><span class="o">=</span><span class="">np</span><span class="o">.</span><span class="">ones</span><span class="">(</span><span class="">(</span><span class="mi">3</span><span class="">,</span><span class="mi">3</span><span class="">)</span><span class="">)</span><span class="">)</span><span class="o">.</span><span class="">astype</span><span class="">(</span><span class="nb">int</span><span class="">)</span>
+array([[0, 0, 0, 0, 0],
+       [0, 1, 1, 1, 0],
+       [0, 1, 1, 1, 0],
+       [0, 1, 1, 1, 0],
+       [0, 0, 0, 0, 0]])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="c1"># Opening can also smooth corners</span><br><span class='nsl'>...&nbsp;</span><span class="">ndimage</span><span class="o">.</span><span class="">binary_opening</span><span class="">(</span><span class="">a</span><span class="">)</span><span class="o">.</span><span class="">astype</span><span class="">(</span><span class="nb">int</span><span class="">)</span>
+array([[0, 0, 0, 0, 0],
+       [0, 0, 1, 0, 0],
+       [0, 1, 1, 1, 0],
+       [0, 0, 1, 0, 0],
+       [0, 0, 0, 0, 0]])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="c1"># Opening is the dilation of the erosion of the input</span><br><span class='nsl'>...&nbsp;</span><span class="">ndimage</span><span class="o">.</span><span class="">binary_erosion</span><span class="">(</span><span class="">a</span><span class="">)</span><span class="o">.</span><span class="">astype</span><span class="">(</span><span class="nb">int</span><span class="">)</span>
+array([[0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0],
+       [0, 0, 1, 0, 0],
+       [0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0]])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">ndimage</span><span class="o">.</span><span class="">binary_dilation</span><span class="">(</span><span class="">ndimage</span><span class="o">.</span><span class="">binary_erosion</span><span class="">(</span><span class="">a</span><span class="">)</span><span class="">)</span><span class="o">.</span><span class="">astype</span><span class="">(</span><span class="nb">int</span><span class="">)</span>
+array([[0, 0, 0, 0, 0],
+       [0, 0, 1, 0, 0],
+       [0, 1, 1, 1, 0],
+       [0, 0, 1, 0, 0],
+       [0, 0, 0, 0, 0]])</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.ndimage._morphology.binary_dilation.html" class='exists'>scipy.ndimage._morphology.binary_dilation</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.ndimage._morphology.binary_closing.html" class='exists'>scipy.ndimage._morphology.binary_closing</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.ndimage._morphology.binary_erosion.html" class='exists'>scipy.ndimage._morphology.binary_erosion</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.ndimage._morphology.grey_opening.html" class='exists'>scipy.ndimage._morphology.grey_opening</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/ndimage/_morphology.py#L524'>/scipy/ndimage/_morphology.py#524</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 10.449489742783179, "label": "scipy.ndimage._morphology.binary_dilation", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.ndimage._morphology.binary_dilation"}, {"id": 2, "val": 11.16227766016838, "label": "scipy.ndimage._morphology.generate_binary_structure", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.ndimage._morphology.generate_binary_structure"}, {"id": 3, "val": 10.23606797749979, "label": "scipy.ndimage._morphology.grey_opening", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.ndimage._morphology.grey_opening"}, {"id": 4, "val": 10.449489742783179, "label": "scipy.ndimage._morphology.binary_erosion", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.ndimage._morphology.binary_erosion"}, {"id": 5, "val": 10.0, "label": "scipy.ndimage._morphology.binary_closing", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.ndimage._morphology.binary_closing"}], "links": [{"source": 1, "target": 2, "id": 1}, {"source": 1, "target": 5, "id": 2}, {"source": 1, "target": 4, "id": 5}, {"source": 2, "target": 3, "id": 6}, {"source": 2, "target": 5, "id": 8}, {"source": 2, "target": 1, "id": 11}, {"source": 2, "target": 4, "id": 14}, {"source": 5, "target": 1, "id": 16}, {"source": 5, "target": 4, "id": 19}, {"source": 4, "target": 2, "id": 20}, {"source": 4, "target": 5, "id": 21}, {"source": 4, "target": 1, "id": 23}]};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

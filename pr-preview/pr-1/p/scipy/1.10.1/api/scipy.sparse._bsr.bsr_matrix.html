@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.sparse.html'>sparse</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.sparse._bsr.html'>_bsr</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.sparse._arrays.html">_arrays</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._base.html">_base</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._bsr.html">_bsr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._compressed.html">_compressed</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._construct.html">_construct</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._coo.html">_coo</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._csc.html">_csc</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._csparsetools.html">_csparsetools</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._csr.html">_csr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._data.html">_data</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._dia.html">_dia</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._dok.html">_dok</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._extract.html">_extract</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._index.html">_index</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._lil.html">_lil</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._matrix_io.html">_matrix_io</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._sparsetools.html">_sparsetools</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._sputils.html">_sputils</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.base.html">base</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.bsr.html">bsr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.compressed.html">compressed</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.construct.html">construct</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.coo.html">coo</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csc.html">csc</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csgraph.html">csgraph</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.csr.html">csr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.data.html">data</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.dia.html">dia</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.dok.html">dok</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.extract.html">extract</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.lil.html">lil</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.sparsetools.html">sparsetools</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.sputils.html">sputils</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.sparse._bsr.bsr_matrix.html'>bsr_matrix</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.sparse._bsr.bsr_matrix.html">bsr_matrix</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._bsr.isspmatrix_bsr.html">isspmatrix_bsr</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" >+</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.sparse._bsr.bsr_matrix.__getitem__.html">__getitem__</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._bsr.bsr_matrix.__init__.html">__init__</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._bsr.bsr_matrix.__repr__.html">__repr__</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._bsr.bsr_matrix.__setitem__.html">__setitem__</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._bsr.bsr_matrix._add_dense.html">_add_dense</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._bsr.bsr_matrix._binopt.html">_binopt</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._bsr.bsr_matrix._get_blocksize.html">_get_blocksize</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._bsr.bsr_matrix._mul_multivector.html">_mul_multivector</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._bsr.bsr_matrix._mul_sparse_matrix.html">_mul_sparse_matrix</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._bsr.bsr_matrix._mul_vector.html">_mul_vector</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._bsr.bsr_matrix._with_data.html">_with_data</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._bsr.bsr_matrix.diagonal.html">diagonal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._bsr.bsr_matrix.eliminate_zeros.html">eliminate_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._bsr.bsr_matrix.getnnz.html">getnnz</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._bsr.bsr_matrix.prune.html">prune</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._bsr.bsr_matrix.sort_indices.html">sort_indices</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._bsr.bsr_matrix.sum_duplicates.html">sum_duplicates</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._bsr.bsr_matrix.toarray.html">toarray</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._bsr.bsr_matrix.tobsr.html">tobsr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._bsr.bsr_matrix.tocoo.html">tocoo</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._bsr.bsr_matrix.tocsc.html">tocsc</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._bsr.bsr_matrix.tocsr.html">tocsr</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse._bsr.bsr_matrix.transpose.html">transpose</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Attributes">Attributes</a><a href="#section-Notes">Notes</a>    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<h3 id="section-Attributes">Attributes</h3>
+<dl>
+<dt><a id="dtype">dtype</a> : dtype</dt>
+<dd>
+                <div id="62924565316e4c81be4fe003a48781bc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Data type of the matrix"}], "type": "paragraph"});
+            document.getElementById("62924565316e4c81be4fe003a48781bc").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="shape">shape</a> : 2-tuple</dt>
+<dd>
+                <div id="d02a3bb2e02f4eef8b1f79f61d332b9a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Shape of the matrix"}], "type": "paragraph"});
+            document.getElementById("d02a3bb2e02f4eef8b1f79f61d332b9a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="ndim">ndim</a> : int</dt>
+<dd>
+                <div id="2bb0ed0d6e1c42dfb8e0c54764138573"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Number of dimensions (this is always 2)"}], "type": "paragraph"});
+            document.getElementById("2bb0ed0d6e1c42dfb8e0c54764138573").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="nnz">nnz</a> : </dt>
+<dd>
+                <div id="e442512ca96f4cbea382b988907017b8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Number of stored values, including explicit zeros"}], "type": "paragraph"});
+            document.getElementById("e442512ca96f4cbea382b988907017b8").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="data">data</a> : </dt>
+<dd>
+                <div id="5087f5cffb024a50bf326b0ce1ffa76d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Data array of the matrix"}], "type": "paragraph"});
+            document.getElementById("5087f5cffb024a50bf326b0ce1ffa76d").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="indices">indices</a> : </dt>
+<dd>
+                <div id="36cb407a3f014e74bbc3192071edda8e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "BSR format index array"}], "type": "paragraph"});
+            document.getElementById("36cb407a3f014e74bbc3192071edda8e").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="indptr">indptr</a> : </dt>
+<dd>
+                <div id="2380741a9f734c89ae4f974efd4db790"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "BSR format index pointer array"}], "type": "paragraph"});
+            document.getElementById("2380741a9f734c89ae4f974efd4db790").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="blocksize">blocksize</a> : </dt>
+<dd>
+                <div id="704c03b83f0c4cd5bdf73b92ab52df44"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Block size of the matrix"}], "type": "paragraph"});
+            document.getElementById("704c03b83f0c4cd5bdf73b92ab52df44").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="has_sorted_indices">has_sorted_indices</a> : </dt>
+<dd>
+                <div id="d9d90e8def3c4f4db094d24857f6f253"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Whether indices are sorted"}], "type": "paragraph"});
+            document.getElementById("d9d90e8def3c4f4db094d24857f6f253").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Extended Summary -->
+                       <!-- deflist -->
+           <dl>
+               <dt>                <div id="885b1e40b60a40699f294eeb117f4cfb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This can be instantiated in several ways:"}], "type": "paragraph"});
+            document.getElementById("885b1e40b60a40699f294eeb117f4cfb").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd><!-- deflist -->
+           <dl>
+               <dt>                <div id="c4cfec69205e4858ace3206175060e9f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "bsr_matrix(D, [blocksize=(R,C)])"}], "type": "paragraph"});
+            document.getElementById("c4cfec69205e4858ace3206175060e9f").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="2a4abd3ae764422ba6e393b6bcc348b7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "where D is a dense matrix or 2-D ndarray."}], "type": "paragraph"});
+            document.getElementById("2a4abd3ae764422ba6e393b6bcc348b7").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="43618a8e4aa84cda87733566480c6fe4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "bsr_matrix(S, [blocksize=(R,C)])"}], "type": "paragraph"});
+            document.getElementById("43618a8e4aa84cda87733566480c6fe4").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="7fbec407ec1440278c3ff7d90a2a089a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "with another sparse matrix S (equivalent to S.tobsr())"}], "type": "paragraph"});
+            document.getElementById("7fbec407ec1440278c3ff7d90a2a089a").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="294e84531a2b4534a550266c70fb9f52"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "bsr_matrix((M, N), [blocksize=(R,C), dtype])"}], "type": "paragraph"});
+            document.getElementById("294e84531a2b4534a550266c70fb9f52").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="7a0408f896d944dfb82ca6d53840a6eb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "to construct an empty matrix with shape (M, N)         dtype is optional, defaulting to dtype=\u0027d\u0027."}], "type": "paragraph"});
+            document.getElementById("7a0408f896d944dfb82ca6d53840a6eb").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="56c217e7cd2046cd859ae7cb277983ef"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "bsr_matrix((data, ij), [blocksize=(R,C), shape=(M, N)])"}], "type": "paragraph"});
+            document.getElementById("56c217e7cd2046cd859ae7cb277983ef").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="9924ab2f99434eedb1a05914d952f23f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "where "}, {"type": "inlineCode", "value": "data"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "ij"}, {"type": "text", "value": " satisfy "}, {"type": "inlineCode", "value": "a[ij[0, k], ij[1, k]] = data[k]"}], "type": "paragraph"});
+            document.getElementById("9924ab2f99434eedb1a05914d952f23f").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="66ccd67c426c4f6f86e5c11bde6112b0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "bsr_matrix((data, indices, indptr), [shape=(M, N)])"}], "type": "paragraph"});
+            document.getElementById("66ccd67c426c4f6f86e5c11bde6112b0").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="4a6184debbb74cbbb8fd78211469b84e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "is the standard BSR representation where the block column         indices for row i are stored in "}, {"type": "inlineCode", "value": "indices[indptr[i]:indptr[i+1]]"}, {"type": "text", "value": "         and their corresponding block values are stored in         "}, {"type": "inlineCode", "value": "data[ indptr[i]: indptr[i+1] ]"}, {"type": "text", "value": ". If the shape parameter is not         supplied, the matrix dimensions are inferred from the index arrays."}], "type": "paragraph"});
+            document.getElementById("4a6184debbb74cbbb8fd78211469b84e").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+</dd>
+           </dl>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="34ae9c18fc0645de9c8f901eead1c74b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Sparse matrices can be used in arithmetic operations: they support addition, subtraction, multiplication, division, and matrix power."}], "type": "paragraph"});
+            document.getElementById("34ae9c18fc0645de9c8f901eead1c74b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="4fabe40280104a74825ae7fbe43b0cea"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"children": [{"type": "text", "value": "Summary of BSR format"}], "type": "strong"}], "type": "paragraph"});
+            document.getElementById("4fabe40280104a74825ae7fbe43b0cea").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="e0d087e1d37f4aad9fcd0ab9aba593e2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The Block Compressed Row (BSR) format is very similar to the Compressed Sparse Row (CSR) format. BSR is appropriate for sparse matrices with dense sub matrices like the last example below.  Block matrices often arise in vector-valued finite element discretizations. In such cases, BSR is considerably more efficient than CSR and CSC for many sparse arithmetic operations."}], "type": "paragraph"});
+            document.getElementById("e0d087e1d37f4aad9fcd0ab9aba593e2").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="d5b9eabc4b9d4d6ea80b1d159aade2f2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"children": [{"type": "text", "value": "Blocksize"}], "type": "strong"}], "type": "paragraph"});
+            document.getElementById("d5b9eabc4b9d4d6ea80b1d159aade2f2").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="69fd3f621c93483683903e0041d078f1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The blocksize (R,C) must evenly divide the shape of the matrix (M,N). That is, R and C must satisfy the relationship "}, {"type": "inlineCode", "value": "M % R = 0"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "N % C = 0"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("69fd3f621c93483683903e0041d078f1").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="df855beaa659437eb77e7afda9f250f4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If no blocksize is specified, a simple heuristic is applied to determine an appropriate blocksize."}], "type": "paragraph"});
+            document.getElementById("df855beaa659437eb77e7afda9f250f4").innerHTML = html;
+        }
+        init();
+    </script>
+
+<!-- rendering Summary -->
+                                       <div id="24fdfde175454d55a44e536a9afc6b25"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Block Sparse Row matrix"}], "type": "paragraph"});
+            document.getElementById("24fdfde175454d55a44e536a9afc6b25").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">sparse</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">bsr_matrix</span><br><span class='nsl'>...&nbsp;</span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="">bsr_matrix</span><span class="">(</span><span class="">(</span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">dtype</span><span class="o">=</span><span class="">np</span><span class="o">.</span><span class="">int8</span><span class="">)</span><span class="o">.</span><span class="">toarray</span><span class="">(</span><span class="">)</span>
+array([[0, 0, 0, 0],
+       [0, 0, 0, 0],
+       [0, 0, 0, 0]], dtype=int8)</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">row</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">col</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">data</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class=""> </span><span class="">,</span><span class="mi">4</span><span class="">,</span><span class=""> </span><span class="mi">5</span><span class="">,</span><span class=""> </span><span class="mi">6</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">bsr_matrix</span><span class="">(</span><span class="">(</span><span class="">data</span><span class="">,</span><span class=""> </span><span class="">(</span><span class="">row</span><span class="">,</span><span class=""> </span><span class="">col</span><span class="">)</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">shape</span><span class="o">=</span><span class="">(</span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">)</span><span class="">)</span><span class="o">.</span><span class="">toarray</span><span class="">(</span><span class="">)</span>
+array([[1, 0, 2],
+       [0, 0, 3],
+       [4, 5, 6]])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">indptr</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">6</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">indices</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">data</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">,</span><span class=""> </span><span class="mi">5</span><span class="">,</span><span class=""> </span><span class="mi">6</span><span class="">]</span><span class="">)</span><span class="o">.</span><span class="">repeat</span><span class="">(</span><span class="mi">4</span><span class="">)</span><span class="o">.</span><span class="">reshape</span><span class="">(</span><span class="mi">6</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">bsr_matrix</span><span class="">(</span><span class="">(</span><span class="">data</span><span class="">,</span><span class="">indices</span><span class="">,</span><span class="">indptr</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">shape</span><span class="o">=</span><span class="">(</span><span class="mi">6</span><span class="">,</span><span class=""> </span><span class="mi">6</span><span class="">)</span><span class="">)</span><span class="o">.</span><span class="">toarray</span><span class="">(</span><span class="">)</span>
+array([[1, 1, 0, 0, 2, 2],
+       [1, 1, 0, 0, 2, 2],
+       [0, 0, 0, 0, 3, 3],
+       [0, 0, 0, 0, 3, 3],
+       [4, 4, 5, 5, 6, 6],
+       [4, 4, 5, 5, 6, 6]])</pre>
+            
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/sparse/_bsr.py#L22'>/scipy/sparse/_bsr.py#22</a>
+<br/>
+
+type: &lt;class &#39;type&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

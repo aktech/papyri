@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats.html'>stats</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats._binned_statistic.html'>_binned_statistic</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.stats._axis_nan_policy.html">_axis_nan_policy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._biasedurn.html">_biasedurn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binned_statistic.html">_binned_statistic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binomtest.html">_binomtest</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._boost.html">_boost</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._common.html">_common</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._constants.html">_constants</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._continuous_distns.html">_continuous_distns</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._covariance.html">_covariance</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._crosstab.html">_crosstab</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._discrete_distns.html">_discrete_distns</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._distn_infrastructure.html">_distn_infrastructure</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._distr_params.html">_distr_params</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._entropy.html">_entropy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._fit.html">_fit</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.html">_hypotests</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._kde.html">_kde</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._ksstats.html">_ksstats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable.html">_levy_stable</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mannwhitneyu.html">_mannwhitneyu</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._morestats.html">_morestats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mstats_basic.html">_mstats_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mstats_extras.html">_mstats_extras</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._multivariate.html">_multivariate</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mvn.html">_mvn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._odds_ratio.html">_odds_ratio</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._page_trend_test.html">_page_trend_test</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.html">_qmc</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc_cy.html">_qmc_cy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._rcont.html">_rcont</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._relative_risk.html">_relative_risk</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling.html">_resampling</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._rvs_sampling.html">_rvs_sampling</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._sobol.html">_sobol</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._statlib.html">_statlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats.html">_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_mstats_common.html">_stats_mstats_common</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.html">_stats_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_pythran.html">_stats_pythran</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._tukeylambda_stats.html">_tukeylambda_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._variation.html">_variation</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._warnings_errors.html">_warnings_errors</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.biasedurn.html">biasedurn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.contingency.html">contingency</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.distributions.html">distributions</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.kde.html">kde</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.morestats.html">morestats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats.html">mstats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats_basic.html">mstats_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats_extras.html">mstats_extras</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mvn.html">mvn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.qmc.html">qmc</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.statlib.html">statlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats._binned_statistic.binned_statistic.html'>binned_statistic</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.stats._binned_statistic.BinnedStatistic2dResult.html">BinnedStatistic2dResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binned_statistic.BinnedStatisticResult.html">BinnedStatisticResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binned_statistic.BinnedStatisticddResult.html">BinnedStatisticddResult</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binned_statistic._bin_edges.html">_bin_edges</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binned_statistic._bin_numbers.html">_bin_numbers</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binned_statistic._bincount.html">_bincount</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binned_statistic._calc_binned_statistic.html">_calc_binned_statistic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binned_statistic._create_binned_data.html">_create_binned_data</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binned_statistic.binned_statistic.html">binned_statistic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binned_statistic.binned_statistic_2d.html">binned_statistic_2d</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binned_statistic.binned_statistic_dd.html">binned_statistic_dd</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>binned_statistic(x, values, statistic=&#39;mean&#39;, bins=10, range=None)</code><!-- rendering Extended Summary -->
+                                       <div id="ce7c64254c7649f0a017b0ccf5be357a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This is a generalization of a histogram function.  A histogram divides the space into bins, and returns the count of the number of points in each bin.  This function allows the computation of the sum, mean, median, or other statistic of the values (or set of values) within each bin."}], "type": "paragraph"});
+            document.getElementById("ce7c64254c7649f0a017b0ccf5be357a").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="772ac7bf63bf4b92ad89b57128e8ee94"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "All but the last (righthand-most) bin is half-open.  In other words, if "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "bins", "type": "RefInfo", "version": null}, "type": "Link", "value": "bins"}, {"type": "text", "value": " is "}, {"type": "inlineCode", "value": "[1, 2, 3, 4]"}, {"type": "text", "value": ", then the first bin is "}, {"type": "inlineCode", "value": "[1, 2)"}, {"type": "text", "value": " (including 1, but excluding 2) and the second "}, {"type": "inlineCode", "value": "[2, 3)"}, {"type": "text", "value": ".  The last bin, however, is "}, {"type": "inlineCode", "value": "[3, 4]"}, {"type": "text", "value": ", which "}, {"children": [{"type": "text", "value": "includes"}], "type": "emphasis"}, {"type": "text", "value": " 4."}], "type": "paragraph"});
+            document.getElementById("772ac7bf63bf4b92ad89b57128e8ee94").innerHTML = html;
+        }
+        init();
+    </script>
+
+                           <div class='admonition'>
+    <div>versionadded 0.11.0</div>
+</div>
+
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="x">x</a> : (N,) array_like</dt>
+<dd>
+                <div id="cc6f936d68b84d079d93d5683d5bc1a6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A sequence of values to be binned."}], "type": "paragraph"});
+            document.getElementById("cc6f936d68b84d079d93d5683d5bc1a6").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="values">values</a> : (N,) array_like or list of (N,) array_like</dt>
+<dd>
+                <div id="eb53a4285e9f41d198138006ec7a24a8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The data on which the statistic will be computed.  This must be the same shape as "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": ", or a set of sequences - each the same shape as "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": ".  If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "values", "type": "RefInfo", "version": null}, "type": "Link", "value": "values"}, {"type": "text", "value": " is a set of sequences, the statistic will be computed on each independently."}], "type": "paragraph"});
+            document.getElementById("eb53a4285e9f41d198138006ec7a24a8").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="statistic">statistic</a> : string or callable, optional</dt>
+<dd>
+                <div id="3e92aa1c8bb746f4b502ddb18acb69c6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The statistic to compute (default is \u0027mean\u0027). The following statistics are available:"}], "type": "paragraph"});
+            document.getElementById("3e92aa1c8bb746f4b502ddb18acb69c6").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="bins">bins</a> : int or sequence of scalars, optional</dt>
+<dd>
+                <div id="186c82d95e0f4d979323b968c3bb7815"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "bins", "type": "RefInfo", "version": null}, "type": "Link", "value": "bins"}, {"type": "text", "value": " is an int, it defines the number of equal-width bins in the given range (10 by default).  If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "bins", "type": "RefInfo", "version": null}, "type": "Link", "value": "bins"}, {"type": "text", "value": " is a sequence, it defines the bin edges, including the rightmost edge, allowing for non-uniform bin widths.  Values in "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": " that are smaller than lowest bin edge are assigned to bin number 0, values beyond the highest bin are assigned to "}, {"type": "inlineCode", "value": "bins[-1]"}, {"type": "text", "value": ".  If the bin edges are specified, the number of bins will be, (nx = len(bins)-1)."}], "type": "paragraph"});
+            document.getElementById("186c82d95e0f4d979323b968c3bb7815").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="range">range</a> : (float, float) or [(float, float)], optional</dt>
+<dd>
+                <div id="f710f53da703456595267ffeb327441b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The lower and upper range of the bins.  If not provided, range is simply "}, {"type": "inlineCode", "value": "(x.min(), x.max())"}, {"type": "text", "value": ".  Values outside the range are ignored."}], "type": "paragraph"});
+            document.getElementById("f710f53da703456595267ffeb327441b").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="statistic">statistic</a> : array</dt>
+<dd>
+                <div id="6dff2400db894949a4396b339080f51a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The values of the selected statistic in each bin."}], "type": "paragraph"});
+            document.getElementById("6dff2400db894949a4396b339080f51a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="bin_edges">bin_edges</a> : array of dtype float</dt>
+<dd>
+                <div id="72f93772c3b04b88a9343f1a80378364"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Return the bin edges "}, {"type": "inlineCode", "value": "(length(statistic)+1)"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("72f93772c3b04b88a9343f1a80378364").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt>binnumber: 1-D ndarray of ints</dt>
+<dd>
+                <div id="527cd6ba9682466d9b76da329b4c7e2c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Indices of the bins (corresponding to "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "bin_edges", "type": "RefInfo", "version": null}, "type": "Link", "value": "bin_edges"}, {"type": "text", "value": ") in which each value of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "x", "type": "RefInfo", "version": null}, "type": "Link", "value": "x"}, {"type": "text", "value": " belongs.  Same length as "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "values", "type": "RefInfo", "version": null}, "type": "Link", "value": "values"}, {"type": "text", "value": ".  A binnumber of "}, {"domain": null, "role": null, "type": "Directive", "value": "i"}, {"type": "text", "value": " means the corresponding value is between (bin_edges[i-1], bin_edges[i])."}], "type": "paragraph"});
+            document.getElementById("527cd6ba9682466d9b76da329b4c7e2c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="a977799a0044445f9f14f9fdfc56da67"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Compute a binned statistic for one or more sets of data."}], "type": "paragraph"});
+            document.getElementById("a977799a0044445f9f14f9fdfc56da67").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.stats._binned_statistic.binned_statistic_2d.html" class='exists'>binned_statistic_2d</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.stats._binned_statistic.binned_statistic_dd.html" class='exists'>binned_statistic_dd</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/current-module/current-version/to-resolve/numpy.digitize.html.html" class='exists'>numpy.digitize</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/current-module/current-version/to-resolve/numpy.histogram.html.html" class='exists'>numpy.histogram</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">stats</span><br><span class='nsl'>...&nbsp;</span><span class="kn">import</span><span class=""> </span><span class="nn">matplotlib</span><span class="nn">.</span><span class="nn">pyplot</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">plt</span>
+</pre>
+            
+                           First some basic examples:  
+            
+                           Create two evenly spaced bins in the range of the given sample, and sum the
+corresponding values in each of those bins:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">values</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">[</span><span class="mf">1.0</span><span class="">,</span><span class=""> </span><span class="mf">1.0</span><span class="">,</span><span class=""> </span><span class="mf">2.0</span><span class="">,</span><span class=""> </span><span class="mf">1.5</span><span class="">,</span><span class=""> </span><span class="mf">3.0</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">stats</span><span class="o">.</span><span class="">binned_statistic</span><span class="">(</span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">5</span><span class="">,</span><span class=""> </span><span class="mi">7</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">values</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">sum</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">bins</span><span class="o">=</span><span class="mi">2</span><span class="">)</span>
+BinnedStatisticResult(statistic=array([4. , 4.5]),
+        bin_edges=array([1., 4., 7.]), binnumber=array([1, 1, 1, 2, 2]))</pre>
+            
+                           Multiple arrays of values can also be passed.  The statistic is calculated
+on each set independently:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">values</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">[</span><span class="">[</span><span class="mf">1.0</span><span class="">,</span><span class=""> </span><span class="mf">1.0</span><span class="">,</span><span class=""> </span><span class="mf">2.0</span><span class="">,</span><span class=""> </span><span class="mf">1.5</span><span class="">,</span><span class=""> </span><span class="mf">3.0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mf">2.0</span><span class="">,</span><span class=""> </span><span class="mf">2.0</span><span class="">,</span><span class=""> </span><span class="mf">4.0</span><span class="">,</span><span class=""> </span><span class="mf">3.0</span><span class="">,</span><span class=""> </span><span class="mf">6.0</span><span class="">]</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">stats</span><span class="o">.</span><span class="">binned_statistic</span><span class="">(</span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">5</span><span class="">,</span><span class=""> </span><span class="mi">7</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">values</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">sum</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">bins</span><span class="o">=</span><span class="mi">2</span><span class="">)</span>
+BinnedStatisticResult(statistic=array([[4. , 4.5],
+       [8. , 9. ]]), bin_edges=array([1., 4., 7.]),
+       binnumber=array([1, 1, 1, 2, 2]))</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">stats</span><span class="o">.</span><span class="">binned_statistic</span><span class="">(</span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">4</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">arange</span><span class="">(</span><span class="mi">5</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">statistic</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">mean</span><span class="s1">&#39;</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                       </span><span class="">bins</span><span class="o">=</span><span class="mi">3</span><span class="">)</span>
+BinnedStatisticResult(statistic=array([1., 2., 4.]),
+        bin_edges=array([1., 2., 3., 4.]),
+        binnumber=array([1, 2, 1, 2, 3]))</pre>
+            
+                           As a second example, we now generate some random data of sailing boat speed
+as a function of wind speed, and then determine how fast our boat is for
+certain wind speeds:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">rng</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">random</span><span class="o">.</span><span class="">default_rng</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">windspeed</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="mi">8</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">rng</span><span class="o">.</span><span class="">random</span><span class="">(</span><span class="mi">500</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">boatspeed</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="mf">.3</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">windspeed</span><span class="o">*</span><span class="o">*</span><span class="mf">.5</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="mf">.2</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">rng</span><span class="o">.</span><span class="">random</span><span class="">(</span><span class="mi">500</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">bin_means</span><span class="">,</span><span class=""> </span><span class="">bin_edges</span><span class="">,</span><span class=""> </span><span class="">binnumber</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">binned_statistic</span><span class="">(</span><span class="">windspeed</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                </span><span class="">boatspeed</span><span class="">,</span><span class=""> </span><span class="">statistic</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">median</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">bins</span><span class="o">=</span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class="mi">2</span><span class="">,</span><span class="mi">3</span><span class="">,</span><span class="mi">4</span><span class="">,</span><span class="mi">5</span><span class="">,</span><span class="mi">6</span><span class="">,</span><span class="mi">7</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">figure</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">windspeed</span><span class="">,</span><span class=""> </span><span class="">boatspeed</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">b.</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">label</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">raw data</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">hlines</span><span class="">(</span><span class="">bin_means</span><span class="">,</span><span class=""> </span><span class="">bin_edges</span><span class="">[</span><span class="">:</span><span class="o">-</span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">bin_edges</span><span class="">[</span><span class="mi">1</span><span class="">:</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">colors</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">g</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">lw</span><span class="o">=</span><span class="mi">5</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">           </span><span class="">label</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">binned statistic of data</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">legend</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+                           Now we can use ``binnumber`` to select all datapoints with a windspeed
+below 1:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">low_boatspeed</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">boatspeed</span><span class="">[</span><span class="">binnumber</span><span class=""> </span><span class="o">==</span><span class=""> </span><span class="mi">0</span><span class="">]</span>
+</pre>
+            
+                           As a final example, we will use ``bin_edges`` and ``binnumber`` to make a
+plot of a distribution that shows the mean and distribution around that
+mean per bin, on top of a regular histogram and the probability
+distribution function:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">x</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">linspace</span><span class="">(</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">5</span><span class="">,</span><span class=""> </span><span class="">num</span><span class="o">=</span><span class="mi">500</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">x_pdf</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">maxwell</span><span class="o">.</span><span class="">pdf</span><span class="">(</span><span class="">x</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">samples</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">maxwell</span><span class="o">.</span><span class="">rvs</span><span class="">(</span><span class="">size</span><span class="o">=</span><span class="mi">10000</span><span class="">)</span>
+</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">bin_means</span><span class="">,</span><span class=""> </span><span class="">bin_edges</span><span class="">,</span><span class=""> </span><span class="">binnumber</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">stats</span><span class="o">.</span><span class="">binned_statistic</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">x_pdf</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">        </span><span class="">statistic</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">mean</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">bins</span><span class="o">=</span><span class="mi">25</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">bin_width</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">(</span><span class="">bin_edges</span><span class="">[</span><span class="mi">1</span><span class="">]</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="">bin_edges</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">bin_centers</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">bin_edges</span><span class="">[</span><span class="mi">1</span><span class="">:</span><span class="">]</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="">bin_width</span><span class="o">/</span><span class="mi">2</span>
+</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">plt</span><span class="o">.</span><span class="">figure</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">hist</span><span class="">(</span><span class="">samples</span><span class="">,</span><span class=""> </span><span class="">bins</span><span class="o">=</span><span class="mi">50</span><span class="">,</span><span class=""> </span><span class="">density</span><span class="o">=</span><span class="kc">True</span><span class="">,</span><span class=""> </span><span class="">histtype</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">stepfilled</span><span class="s1">&#39;</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">         </span><span class="">alpha</span><span class="o">=</span><span class="mf">0.2</span><span class="">,</span><span class=""> </span><span class="">label</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">histogram of data</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">x_pdf</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">r-</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">label</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">analytical pdf</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">hlines</span><span class="">(</span><span class="">bin_means</span><span class="">,</span><span class=""> </span><span class="">bin_edges</span><span class="">[</span><span class="">:</span><span class="o">-</span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">bin_edges</span><span class="">[</span><span class="mi">1</span><span class="">:</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">colors</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">g</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">lw</span><span class="o">=</span><span class="mi">2</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">           </span><span class="">label</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">binned statistic of data</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">(</span><span class="">binnumber</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="mf">0.5</span><span class="">)</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">bin_width</span><span class="">,</span><span class=""> </span><span class="">x_pdf</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">g.</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">legend</span><span class="">(</span><span class="">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">show</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.stats._binned_statistic.binned_statistic_2d.html" class='exists'>scipy.stats._binned_statistic.binned_statistic_2d</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.stats._binned_statistic.binned_statistic_dd.html" class='exists'>scipy.stats._binned_statistic.binned_statistic_dd</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/stats/_binned_statistic.py#L16'>/scipy/stats/_binned_statistic.py#16</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 10.64575131106459, "label": "numpy.digitize", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.digitize"}, {"id": 2, "val": 11.464101615137753, "label": "numpy.histogram", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.histogram"}, {"id": 3, "val": 9.414213562373096, "label": "scipy.stats._binned_statistic.binned_statistic_dd", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.stats._binned_statistic.binned_statistic_dd"}, {"id": 4, "val": 9.414213562373096, "label": "scipy.stats._binned_statistic.binned_statistic_2d", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.stats._binned_statistic.binned_statistic_2d"}], "links": [{"source": 2, "target": 1, "id": 10}, {"source": 4, "target": 3, "id": 13}, {"source": 1, "target": 4, "id": 15}, {"source": 1, "target": 3, "id": 16}, {"source": 1, "target": 2, "id": 20}, {"source": 3, "target": 4, "id": 22}]};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

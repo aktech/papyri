@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.linalg.html'>linalg</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.linalg._decomp_ldl.html'>_decomp_ldl</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.linalg._basic.html">_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._cythonized_array_utils.html">_cythonized_array_utils</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp.html">_decomp</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_cholesky.html">_decomp_cholesky</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_cossin.html">_decomp_cossin</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_ldl.html">_decomp_ldl</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_lu.html">_decomp_lu</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_polar.html">_decomp_polar</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_qr.html">_decomp_qr</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_qz.html">_decomp_qz</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_schur.html">_decomp_schur</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_svd.html">_decomp_svd</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_update.html">_decomp_update</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._expm_frechet.html">_expm_frechet</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._fblas.html">_fblas</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._flapack.html">_flapack</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._flinalg.html">_flinalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._flinalg_py.html">_flinalg_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative.html">_interpolative</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._interpolative_backend.html">_interpolative_backend</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs.html">_matfuncs</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs_expm.html">_matfuncs_expm</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs_sqrtm.html">_matfuncs_sqrtm</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._matfuncs_sqrtm_triu.html">_matfuncs_sqrtm_triu</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._misc.html">_misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._procrustes.html">_procrustes</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._sketches.html">_sketches</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._solve_toeplitz.html">_solve_toeplitz</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._solvers.html">_solvers</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._special_matrices.html">_special_matrices</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.basic.html">basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.blas.html">blas</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.cython_blas.html">cython_blas</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.cython_lapack.html">cython_lapack</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp.html">decomp</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_cholesky.html">decomp_cholesky</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_lu.html">decomp_lu</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_qr.html">decomp_qr</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_schur.html">decomp_schur</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.decomp_svd.html">decomp_svd</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.flinalg.html">flinalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.interpolative.html">interpolative</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.lapack.html">lapack</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.matfuncs.html">matfuncs</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.special_matrices.html">special_matrices</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.linalg._decomp_ldl.ldl.html'>ldl</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_ldl._ldl_construct_tri_factor.html">_ldl_construct_tri_factor</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_ldl._ldl_get_d_and_l.html">_ldl_get_d_and_l</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_ldl._ldl_sanitize_ipiv.html">_ldl_sanitize_ipiv</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_ldl.ldl.html">ldl</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Raises">Raises</a><a href="#section-Returns">Returns</a>    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>ldl(A, lower=True, hermitian=True, overwrite_a=False, check_finite=True)</code><!-- rendering Extended Summary -->
+                                       <div id="fa03900a2cac400cb5f77b0950cf4fa1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This function returns a block diagonal matrix D consisting blocks of size at most 2x2 and also a possibly permuted unit lower triangular matrix "}, {"type": "inlineCode", "value": "L"}, {"type": "text", "value": " such that the factorization "}, {"type": "inlineCode", "value": "A = L D L^H"}, {"type": "text", "value": " or "}, {"type": "inlineCode", "value": "A = L D L^T"}, {"type": "text", "value": " holds. If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "lower", "type": "RefInfo", "version": null}, "type": "Link", "value": "lower"}, {"type": "text", "value": " is False then (again possibly permuted) upper triangular matrices are returned as outer factors."}], "type": "paragraph"});
+            document.getElementById("fa03900a2cac400cb5f77b0950cf4fa1").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="b6beca5f03b449daa760459838d148a2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The permutation array can be used to triangularize the outer factors simply by a row shuffle, i.e., "}, {"type": "inlineCode", "value": "lu[perm, :]"}, {"type": "text", "value": " is an upper/lower triangular matrix. This is also equivalent to multiplication with a permutation matrix "}, {"type": "inlineCode", "value": "P.dot(lu)"}, {"type": "text", "value": ", where "}, {"type": "inlineCode", "value": "P"}, {"type": "text", "value": " is a column-permuted identity matrix "}, {"type": "inlineCode", "value": "I[:, perm]"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("b6beca5f03b449daa760459838d148a2").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="eba77d472a9840799c2e0ade55e70fab"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Depending on the value of the boolean "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "lower", "type": "RefInfo", "version": null}, "type": "Link", "value": "lower"}, {"type": "text", "value": ", only upper or lower triangular part of the input array is referenced. Hence, a triangular matrix on entry would give the same result as if the full matrix is supplied."}], "type": "paragraph"});
+            document.getElementById("eba77d472a9840799c2e0ade55e70fab").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="541c88f7999e40a6a9785fa4d7899609"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This function uses "}, {"type": "inlineCode", "value": "?SYTRF"}, {"type": "text", "value": " routines for symmetric matrices and "}, {"type": "inlineCode", "value": "?HETRF"}, {"type": "text", "value": " routines for Hermitian matrices from LAPACK. See  for the algorithm details."}], "type": "paragraph"});
+            document.getElementById("541c88f7999e40a6a9785fa4d7899609").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="aefb4236350045bc80aa514b400b9b7b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Depending on the "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "lower", "type": "RefInfo", "version": null}, "type": "Link", "value": "lower"}, {"type": "text", "value": " keyword value, only lower or upper triangular part of the input array is referenced. Moreover, this keyword also defines the structure of the outer factors of the factorization."}], "type": "paragraph"});
+            document.getElementById("aefb4236350045bc80aa514b400b9b7b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                           <div class='admonition'>
+    <div>versionadded 1.1.0</div>
+</div>
+
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="A">A</a> : array_like</dt>
+<dd>
+                <div id="d0afc2e4803340f8bf4e120509fb21a7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Square input array"}], "type": "paragraph"});
+            document.getElementById("d0afc2e4803340f8bf4e120509fb21a7").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="lower">lower</a> : bool, optional</dt>
+<dd>
+                <div id="c00b6200539c474aa4476ec939e8b9b8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This switches between the lower and upper triangular outer factors of the factorization. Lower triangular ("}, {"type": "inlineCode", "value": "lower=True"}, {"type": "text", "value": ") is the default."}], "type": "paragraph"});
+            document.getElementById("c00b6200539c474aa4476ec939e8b9b8").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="hermitian">hermitian</a> : bool, optional</dt>
+<dd>
+                <div id="0668397bc0a54b719413932a148ec066"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For complex-valued arrays, this defines whether "}, {"type": "inlineCode", "value": "A = A.conj().T"}, {"type": "text", "value": " or "}, {"type": "inlineCode", "value": "A = A.T"}, {"type": "text", "value": " is assumed. For real-valued arrays, this switch has no effect."}], "type": "paragraph"});
+            document.getElementById("0668397bc0a54b719413932a148ec066").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="overwrite_a">overwrite_a</a> : bool, optional</dt>
+<dd>
+                <div id="4438c13d9d1e4b6e90be4b9b221288d7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Allow overwriting data in "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "A", "type": "RefInfo", "version": null}, "type": "Link", "value": "A"}, {"type": "text", "value": " (may enhance performance). The default is False."}], "type": "paragraph"});
+            document.getElementById("4438c13d9d1e4b6e90be4b9b221288d7").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="check_finite">check_finite</a> : bool, optional</dt>
+<dd>
+                <div id="7f6912521c41444cac1c1c2b5c32c3ba"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Whether to check that the input matrices contain only finite numbers. Disabling may give a performance gain, but may result in problems (crashes, non-termination) if the inputs do contain infinities or NaNs."}], "type": "paragraph"});
+            document.getElementById("7f6912521c41444cac1c1c2b5c32c3ba").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Raises">Raises</h3>
+<dl>
+<dt>ValueError</dt>
+<dd>
+                <div id="70aaff3f2b52405ca70c07ffc1f5e25c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If input array is not square."}], "type": "paragraph"});
+            document.getElementById("70aaff3f2b52405ca70c07ffc1f5e25c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt>ComplexWarning</dt>
+<dd>
+                <div id="cf78056307364466977b18e34d9e1332"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If a complex-valued array with nonzero imaginary parts on the diagonal is given and hermitian is set to True."}], "type": "paragraph"});
+            document.getElementById("cf78056307364466977b18e34d9e1332").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="lu">lu</a> : ndarray</dt>
+<dd>
+                <div id="e8634645e8ea4862a28d2b2cfa3b784b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The (possibly) permuted upper/lower triangular outer factor of the factorization."}], "type": "paragraph"});
+            document.getElementById("e8634645e8ea4862a28d2b2cfa3b784b").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="d">d</a> : ndarray</dt>
+<dd>
+                <div id="d8963af8aab94127915f632949d8976f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The block diagonal multiplier of the factorization."}], "type": "paragraph"});
+            document.getElementById("d8963af8aab94127915f632949d8976f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="perm">perm</a> : ndarray</dt>
+<dd>
+                <div id="45a9d74141cd4c76adcc18f6a046dad0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The row-permutation index array that brings lu into triangular form."}], "type": "paragraph"});
+            document.getElementById("45a9d74141cd4c76adcc18f6a046dad0").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="1177c4915e2546f596c20a341af0f0fb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Computes the LDLt or Bunch-Kaufman factorization of a symmetric/ hermitian matrix."}], "type": "paragraph"});
+            document.getElementById("1177c4915e2546f596c20a341af0f0fb").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_cholesky.cholesky.html" class='exists'>cholesky</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.linalg._decomp_lu.lu.html" class='exists'>lu</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd></dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+                           Given an upper triangular array ``a`` that represents the full symmetric
+array with its entries, obtain ``l``, &#39;d&#39; and the permutation vector `perm`:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">linalg</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">ldl</span><br><span class='nsl'>...&nbsp;</span><span class="">a</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">array</span><span class="">(</span><span class="">[</span><span class="">[</span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">3</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">lu</span><span class="">,</span><span class=""> </span><span class="">d</span><span class="">,</span><span class=""> </span><span class="">perm</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">ldl</span><span class="">(</span><span class="">a</span><span class="">,</span><span class=""> </span><span class="">lower</span><span class="o">=</span><span class="mi">0</span><span class="">)</span><span class=""> </span><span class="c1"># Use the upper part</span><br><span class='nsl'>...&nbsp;</span><span class="">lu</span>
+array([[ 0. ,  0. ,  1. ],
+       [ 0. ,  1. , -0.5],
+       [ 1. ,  1. ,  1.5]])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">d</span>
+array([[-5. ,  0. ,  0. ],
+       [ 0. ,  1.5,  0. ],
+       [ 0. ,  0. ,  2. ]])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">perm</span>
+array([2, 1, 0])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">lu</span><span class="">[</span><span class="">perm</span><span class="">,</span><span class=""> </span><span class="">:</span><span class="">]</span>
+array([[ 1. ,  1. ,  1.5],
+       [ 0. ,  1. , -0.5],
+       [ 0. ,  0. ,  1. ]])</pre>
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">lu</span><span class="o">.</span><span class="">dot</span><span class="">(</span><span class="">d</span><span class="">)</span><span class="o">.</span><span class="">dot</span><span class="">(</span><span class="">lu</span><span class="o">.</span><span class="">T</span><span class="">)</span>
+array([[ 2., -1.,  3.],
+       [-1.,  2.,  0.],
+       [ 3.,  0.,  1.]])</pre>
+            
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/linalg/_decomp_ldl.py#L12'>/scipy/linalg/_decomp_ldl.py#12</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 9.414213562373096, "label": "scipy.linalg._decomp_cholesky.cholesky", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.linalg._decomp_cholesky.cholesky"}, {"id": 2, "val": 9.414213562373096, "label": "scipy.linalg._decomp_lu.lu", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.linalg._decomp_lu.lu"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

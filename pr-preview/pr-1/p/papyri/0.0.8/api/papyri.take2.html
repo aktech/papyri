@@ -66,7 +66,9 @@
                 <div class="dropdown">
                 <a href=papyri>papyri</a>&nbsp;/&nbsp;
                     <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
 <a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
                      </div>
                 </div>
                 <div class="dropdown">
@@ -201,150 +203,150 @@
 <!-- rendering Extended Summary -->
         <!-- rendering Notes -->
         <!-- rendering Summary -->
-                                       <div id="d7cb9769c8194d14afcd24df19875924"></div>
+                                       <div id="efa84b3cfe294281a4ade52a88302f0a"></div>
     <script>
         function init() {
             const myst = new MyST();
             const html = myst.renderMdast({"children": [{"type": "text", "value": "To remove in the future \u2013\u2013 papyri.take2"}], "type": "paragraph"});
-            document.getElementById("d7cb9769c8194d14afcd24df19875924").innerHTML = html;
+            document.getElementById("efa84b3cfe294281a4ade52a88302f0a").innerHTML = html;
         }
         init();
     </script>
 
-                               <div id="015f25b5b6244520a90b12fefdd45d88"></div>
+                               <div id="bad031f86f434636b880d7511f76c21a"></div>
     <script>
         function init() {
             const myst = new MyST();
             const html = myst.renderMdast({"children": [{"type": "text", "value": "Attempt at a multi-pass CST (concrete syntax tree) RST-ish parser."}], "type": "paragraph"});
-            document.getElementById("015f25b5b6244520a90b12fefdd45d88").innerHTML = html;
+            document.getElementById("bad031f86f434636b880d7511f76c21a").innerHTML = html;
         }
         init();
     </script>
 
-                               <div id="6ba34a86c6844ce88d2186a16e738e50"></div>
+                               <div id="b2966f7fa47843ee9145c5c8a9ee3331"></div>
     <script>
         function init() {
             const myst = new MyST();
             const html = myst.renderMdast({"children": [{"type": "text", "value": "This does not (and likely will not) support all of RST syntax, and may support syntax that is not in the rst spec, mostly to support Python docstrings."}], "type": "paragraph"});
-            document.getElementById("6ba34a86c6844ce88d2186a16e738e50").innerHTML = html;
+            document.getElementById("b2966f7fa47843ee9145c5c8a9ee3331").innerHTML = html;
         }
         init();
     </script>
 
 
 <h1>Goals</h1>
-                               <div id="dcf3466bdfb94ed49e29084e1030acaa"></div>
+                               <div id="b96e3ee5354045f7b0f16c03874fa973"></div>
     <script>
         function init() {
             const myst = new MyST();
             const html = myst.renderMdast({"children": [{"type": "text", "value": "The goal in here is to parse RST while keeping most of the original information available in order to be able to _fix_ some of them with minimal of no changes to the rest of the original input. This include but not limited to having consistent header markers, and whether examples are (or not) indented with respect to preceding paragraph."}], "type": "paragraph"});
-            document.getElementById("dcf3466bdfb94ed49e29084e1030acaa").innerHTML = html;
+            document.getElementById("b96e3ee5354045f7b0f16c03874fa973").innerHTML = html;
         }
         init();
     </script>
 
-                               <div id="852d890aa12e4fa58b824743a6e8a84c"></div>
+                               <div id="a38ddcbfe866404b8c43b3033a9fb02a"></div>
     <script>
         function init() {
             const myst = new MyST();
             const html = myst.renderMdast({"children": [{"type": "text", "value": "The second goal is flexibility of parsing rules on a per-section basis; Typically numpy doc strings have a different syntax depending on the section you are in (Examples, vs Returns, vs Parameters), in what looks like; but is not; definition list."}], "type": "paragraph"});
-            document.getElementById("852d890aa12e4fa58b824743a6e8a84c").innerHTML = html;
+            document.getElementById("a38ddcbfe866404b8c43b3033a9fb02a").innerHTML = html;
         }
         init();
     </script>
 
-                               <div id="93bc58347e9a4133bfb1ea1d50d57f2d"></div>
+                               <div id="5a77c4996ecd4d2ea7d59d80ab9ebdaa"></div>
     <script>
         function init() {
             const myst = new MyST();
             const html = myst.renderMdast({"children": [{"type": "text", "value": "This also should be able to parse and give you a ast/cst without knowing ahead of time the type of directive that are registered."}], "type": "paragraph"});
-            document.getElementById("93bc58347e9a4133bfb1ea1d50d57f2d").innerHTML = html;
+            document.getElementById("5a77c4996ecd4d2ea7d59d80ab9ebdaa").innerHTML = html;
         }
         init();
     </script>
 
-                               <div id="5dfd44e2b5764c44a1b69c1148879e88"></div>
+                               <div id="78694f8b1a16445cbf3c9233a8557257"></div>
     <script>
         function init() {
             const myst = new MyST();
             const html = myst.renderMdast({"children": [{"type": "text", "value": "This will likely be used in the project in two forms, a lenient form that try to guess as much as possible and suggest update to your style."}], "type": "paragraph"});
-            document.getElementById("5dfd44e2b5764c44a1b69c1148879e88").innerHTML = html;
+            document.getElementById("78694f8b1a16445cbf3c9233a8557257").innerHTML = html;
         }
         init();
     </script>
 
-                               <div id="d5fb37255f964ba7a182e905aebbbefb"></div>
+                               <div id="e22bb7bbc84741e6ae089667770d9135"></div>
     <script>
         function init() {
             const myst = new MyST();
             const html = myst.renderMdast({"children": [{"type": "text", "value": "A strict form that avoid guessing and give you more, structured data."}], "type": "paragraph"});
-            document.getElementById("d5fb37255f964ba7a182e905aebbbefb").innerHTML = html;
+            document.getElementById("e22bb7bbc84741e6ae089667770d9135").innerHTML = html;
         }
         init();
     </script>
 
 
 <h1>Implementation</h1>
-                               <div id="60760ba88280405c85ec7dcb6750e2dd"></div>
+                               <div id="887da7b9724f4804a1ff808bfba661d0"></div>
     <script>
         function init() {
             const myst = new MyST();
             const html = myst.renderMdast({"children": [{"type": "text", "value": "The implementation is not meant to be efficient but works in many multiple pass that refine the structure of the document in order to potentially swapped out for customisation."}], "type": "paragraph"});
-            document.getElementById("60760ba88280405c85ec7dcb6750e2dd").innerHTML = html;
+            document.getElementById("887da7b9724f4804a1ff808bfba661d0").innerHTML = html;
         }
         init();
     </script>
 
-                               <div id="61ad4e04ea0b4a7ea875224ad55d4b7e"></div>
+                               <div id="3f38a74d46864c128fdd197f52764b18"></div>
     <script>
         function init() {
             const myst = new MyST();
             const html = myst.renderMdast({"children": [{"type": "text", "value": "Most of the high level split in sections and block is line-based via the Line/lines objects that wrap a "}, {"type": "inlineCode", "value": "str"}, {"type": "text", "value": ", but keep track of the original line number and indent/dedent operations."}], "type": "paragraph"});
-            document.getElementById("61ad4e04ea0b4a7ea875224ad55d4b7e").innerHTML = html;
+            document.getElementById("3f38a74d46864c128fdd197f52764b18").innerHTML = html;
         }
         init();
     </script>
 
 
 <h1>Junk Code</h1>
-                               <div id="646bb50d807e4e3b9f63e2092706c310"></div>
+                               <div id="ed7e59ec740a486189e1f4a1a7cd867e"></div>
     <script>
         function init() {
             const myst = new MyST();
             const html = myst.renderMdast({"children": [{"type": "text", "value": "There is possibly a lot of junk code in there due to multiple experiments."}], "type": "paragraph"});
-            document.getElementById("646bb50d807e4e3b9f63e2092706c310").innerHTML = html;
+            document.getElementById("ed7e59ec740a486189e1f4a1a7cd867e").innerHTML = html;
         }
         init();
     </script>
 
 
 <h1>Correctness</h1>
-                               <div id="68348819d42949098eb3ec96dd9c33e0"></div>
+                               <div id="9828b0cad220404cb226c5755d8fc585"></div>
     <script>
         function init() {
             const myst = new MyST();
             const html = myst.renderMdast({"children": [{"type": "text", "value": "Yep, many things are probably wrong; or parsed incorrectly;"}], "type": "paragraph"});
-            document.getElementById("68348819d42949098eb3ec96dd9c33e0").innerHTML = html;
+            document.getElementById("9828b0cad220404cb226c5755d8fc585").innerHTML = html;
         }
         init();
     </script>
 
-                               <div id="79a7610724be4a159b93a50689dab447"></div>
+                               <div id="ca7e31e604124f8b847997827e003583"></div>
     <script>
         function init() {
             const myst = new MyST();
             const html = myst.renderMdast({"children": [{"type": "text", "value": "When possible if there is an alternative way in the source rst to change the format, it\u0027s likely the way to go."}], "type": "paragraph"});
-            document.getElementById("79a7610724be4a159b93a50689dab447").innerHTML = html;
+            document.getElementById("ca7e31e604124f8b847997827e003583").innerHTML = html;
         }
         init();
     </script>
 
-                               <div id="42df6c0156e348a4a86e9210c8ab6da3"></div>
+                               <div id="f69debeff9fe42b18246b6944132a661"></div>
     <script>
         function init() {
             const myst = new MyST();
             const html = myst.renderMdast({"children": [{"type": "text", "value": "Unless your use case is widely adopted it is likely not worse the complexity"}], "type": "paragraph"});
-            document.getElementById("42df6c0156e348a4a86e9210c8ab6da3").innerHTML = html;
+            document.getElementById("f69debeff9fe42b18246b6944132a661").innerHTML = html;
         }
         init();
     </script>

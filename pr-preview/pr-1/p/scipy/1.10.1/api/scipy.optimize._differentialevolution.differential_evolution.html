@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize.html'>optimize</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize._differentialevolution.html'>_differentialevolution</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.optimize.__nnls.html">__nnls</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._basinhopping.html">_basinhopping</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._bglu_dense.html">_bglu_dense</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._cobyla.html">_cobyla</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._cobyla_py.html">_cobyla_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._constraints.html">_constraints</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentiable_functions.html">_differentiable_functions</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentialevolution.html">_differentialevolution</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._direct.html">_direct</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._direct_py.html">_direct_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._dual_annealing.html">_dual_annealing</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._group_columns.html">_group_columns</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._hessian_update_strategy.html">_hessian_update_strategy</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._highs.html">_highs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lbfgsb.html">_lbfgsb</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lbfgsb_py.html">_lbfgsb_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linesearch.html">_linesearch</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog.html">_linprog</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_doc.html">_linprog_doc</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_highs.html">_linprog_highs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_ip.html">_linprog_ip</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_rs.html">_linprog_rs</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_simplex.html">_linprog_simplex</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._linprog_util.html">_linprog_util</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lsap.html">_lsap</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._lsq.html">_lsq</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._milp.html">_milp</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minimize.html">_minimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minpack.html">_minpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minpack2.html">_minpack2</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._minpack_py.html">_minpack_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._moduleTNC.html">_moduleTNC</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nnls.html">_nnls</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._nonlin.html">_nonlin</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._numdiff.html">_numdiff</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._optimize.html">_optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._qap.html">_qap</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._remove_redundancy.html">_remove_redundancy</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._root.html">_root</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._root_scalar.html">_root_scalar</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._shgo.html">_shgo</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._shgo_lib.html">_shgo_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._slsqp.html">_slsqp</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._slsqp_py.html">_slsqp_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._spectral.html">_spectral</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._tnc.html">_tnc</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trlib.html">_trlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion.html">_trustregion</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_constr.html">_trustregion_constr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_dogleg.html">_trustregion_dogleg</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_exact.html">_trustregion_exact</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_krylov.html">_trustregion_krylov</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._trustregion_ncg.html">_trustregion_ncg</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros.html">_zeros</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._zeros_py.html">_zeros_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.cobyla.html">cobyla</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.lbfgsb.html">lbfgsb</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.linesearch.html">linesearch</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.minpack.html">minpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.minpack2.html">minpack2</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.moduleTNC.html">moduleTNC</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.nonlin.html">nonlin</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.slsqp.html">slsqp</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.tnc.html">tnc</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.zeros.html">zeros</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.optimize._differentialevolution.differential_evolution.html'>differential_evolution</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentialevolution.DifferentialEvolutionSolver.html">DifferentialEvolutionSolver</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentialevolution._ConstraintWrapper.html">_ConstraintWrapper</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize._differentialevolution.differential_evolution.html">differential_evolution</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Notes">Notes</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>differential_evolution(func, bounds, args=(), strategy=&#39;best1bin&#39;, maxiter=1000, popsize=15, tol=0.01, mutation=(0.5, 1), recombination=0.7, seed=None, callback=None, disp=False, polish=True, init=&#39;latinhypercube&#39;, atol=0, updating=&#39;immediate&#39;, workers=1, constraints=(), x0=None, *, integrality=None, vectorized=False)</code><!-- rendering Extended Summary -->
+                                       <div id="8f75891ce82b41368913e0649fe9d64a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The differential evolution method  is stochastic in nature. It does not use gradient methods to find the minimum, and can search large areas of candidate space, but often requires larger numbers of function evaluations than conventional gradient-based techniques."}], "type": "paragraph"});
+            document.getElementById("8f75891ce82b41368913e0649fe9d64a").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="31929035ff5a4b789045023989e582b9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The algorithm is due to Storn and Price ."}], "type": "paragraph"});
+            document.getElementById("31929035ff5a4b789045023989e582b9").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Notes">Notes</h3>
+<!-- rendering Notes -->
+                                       <div id="ab43e0cdabd645b2a715f76d2d2eda98"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Differential evolution is a stochastic population based method that is useful for global optimization problems. At each pass through the population the algorithm mutates each candidate solution by mixing with other candidate solutions to create a trial candidate. There are several strategies  for creating trial candidates, which suit some problems more than others. The \u0027best1bin\u0027 strategy is a good starting point for many systems. In this strategy two members of the population are randomly chosen. Their difference is used to mutate the best member (the \u0027best\u0027 in \u0027best1bin\u0027), "}, {"type": "Math", "value": "b_0"}, {"type": "text", "value": ", so far:"}], "type": "paragraph"});
+            document.getElementById("ab43e0cdabd645b2a715f76d2d2eda98").innerHTML = html;
+        }
+        init();
+    </script>
+
+                       <span class="tex2jax_process">$$b&#39; = b_0 + mutation * (population[rand0] - population[rand1])$$</span>
+
+                               <div id="5f30b2072f274f3f926fde35a697e128"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A trial vector is then constructed. Starting with a randomly chosen ith parameter the trial is sequentially filled (in modulo) with parameters from "}, {"type": "inlineCode", "value": "b\u0027"}, {"type": "text", "value": " or the original candidate. The choice of whether to use "}, {"type": "inlineCode", "value": "b\u0027"}, {"type": "text", "value": " or the original candidate is made with a binomial distribution (the \u0027bin\u0027 in \u0027best1bin\u0027) - a random number in [0, 1) is generated. If this number is less than the "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "recombination", "type": "RefInfo", "version": null}, "type": "Link", "value": "recombination"}, {"type": "text", "value": " constant then the parameter is loaded from "}, {"type": "inlineCode", "value": "b\u0027"}, {"type": "text", "value": ", otherwise it is loaded from the original candidate. The final parameter is always loaded from "}, {"type": "inlineCode", "value": "b\u0027"}, {"type": "text", "value": ". Once the trial candidate is built its fitness is assessed. If the trial is better than the original candidate then it takes its place. If it is also better than the best overall candidate it also replaces that. To improve your chances of finding a global minimum use higher "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "popsize", "type": "RefInfo", "version": null}, "type": "Link", "value": "popsize"}, {"type": "text", "value": " values, with higher "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "mutation", "type": "RefInfo", "version": null}, "type": "Link", "value": "mutation"}, {"type": "text", "value": " and (dithering), but lower "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "recombination", "type": "RefInfo", "version": null}, "type": "Link", "value": "recombination"}, {"type": "text", "value": " values. This has the effect of widening the search radius, but slowing convergence. By default the best solution vector is updated continuously within a single iteration ("}, {"type": "inlineCode", "value": "updating=\u0027immediate\u0027"}, {"type": "text", "value": "). This is a modification  of the original differential evolution algorithm which can lead to faster convergence as trial vectors can immediately benefit from improved solutions. To use the original Storn and Price behaviour, updating the best solution once per iteration, set "}, {"type": "inlineCode", "value": "updating=\u0027deferred\u0027"}, {"type": "text", "value": ". The "}, {"type": "inlineCode", "value": "\u0027deferred\u0027"}, {"type": "text", "value": " approach is compatible with both parallelization and vectorization ("}, {"type": "inlineCode", "value": "\u0027workers\u0027"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "\u0027vectorized\u0027"}, {"type": "text", "value": " keywords). These may improve minimization speed by using computer resources more efficiently. The "}, {"type": "inlineCode", "value": "\u0027workers\u0027"}, {"type": "text", "value": " distribute calculations over multiple processors. By default the Python "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "multiprocessing", "path": "multiprocessing", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "multiprocessing"}, {"type": "text", "value": " module is used, but other approaches are also possible, such as the Message Passing Interface (MPI) used on clusters  . The overhead from these approaches (creating new Processes, etc) may be significant, meaning that computational speed doesn\u0027t necessarily scale with the number of processors used. Parallelization is best suited to computationally expensive objective functions. If the objective function is less expensive, then "}, {"type": "inlineCode", "value": "\u0027vectorized\u0027"}, {"type": "text", "value": " may aid by only calling the objective function once per iteration, rather than multiple times for all the population members; the interpreter overhead is reduced."}], "type": "paragraph"});
+            document.getElementById("5f30b2072f274f3f926fde35a697e128").innerHTML = html;
+        }
+        init();
+    </script>
+
+                           <div class='admonition'>
+    <div>versionadded 0.15.0</div>
+</div>
+
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="func">func</a> : callable</dt>
+<dd>
+                <div id="e7169d075c6b4e99b2315757dcedf075"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The objective function to be minimized. Must be in the form "}, {"type": "inlineCode", "value": "f(x, *args)"}, {"type": "text", "value": ", where "}, {"type": "inlineCode", "value": "x"}, {"type": "text", "value": " is the argument in the form of a 1-D array and "}, {"type": "inlineCode", "value": "args"}, {"type": "text", "value": " is a tuple of any additional fixed parameters needed to completely specify the function. The number of parameters, N, is equal to "}, {"type": "inlineCode", "value": "len(x)"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("e7169d075c6b4e99b2315757dcedf075").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="bounds">bounds</a> : sequence or `Bounds`</dt>
+<dd>
+                <div id="f25e9a5edc4f4b9a8ce89f20ba3db6e2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Bounds for variables. There are two ways to specify the bounds: 1. Instance of "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.optimize._constraints.Bounds", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "Bounds"}, {"type": "text", "value": " class. 2. "}, {"type": "inlineCode", "value": "(min, max)"}, {"type": "text", "value": " pairs for each element in "}, {"type": "inlineCode", "value": "x"}, {"type": "text", "value": ", defining the finite lower and upper bounds for the optimizing argument of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "func", "type": "RefInfo", "version": null}, "type": "Link", "value": "func"}, {"type": "text", "value": ". The total number of bounds is used to determine the number of parameters, N."}], "type": "paragraph"});
+            document.getElementById("f25e9a5edc4f4b9a8ce89f20ba3db6e2").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="args">args</a> : tuple, optional</dt>
+<dd>
+                <div id="0418709ddf9944909d864a70d711c550"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Any additional fixed parameters needed to completely specify the objective function."}], "type": "paragraph"});
+            document.getElementById("0418709ddf9944909d864a70d711c550").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="strategy">strategy</a> : str, optional</dt>
+<dd>
+                <div id="26a6cb22057d49c8a88794ef186c1035"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The differential evolution strategy to use. Should be one of:"}], "type": "paragraph"});
+            document.getElementById("26a6cb22057d49c8a88794ef186c1035").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <blockquote>           <ul>               <li>                               <div id="18e94d2c8569417ab193f1e3043de993"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027best1bin\u0027"}], "type": "paragraph"});
+            document.getElementById("18e94d2c8569417ab193f1e3043de993").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="429d1f1f8f9f42c3b1fab9c21ab96505"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027best1exp\u0027"}], "type": "paragraph"});
+            document.getElementById("429d1f1f8f9f42c3b1fab9c21ab96505").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="a8ba9e32c70f4e9b9f9b44378f386f68"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027rand1exp\u0027"}], "type": "paragraph"});
+            document.getElementById("a8ba9e32c70f4e9b9f9b44378f386f68").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="278c27d78da7464db23d3a1649f40e92"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027randtobest1exp\u0027"}], "type": "paragraph"});
+            document.getElementById("278c27d78da7464db23d3a1649f40e92").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="a2bd8642adf148b0a259155141c513e6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027currenttobest1exp\u0027"}], "type": "paragraph"});
+            document.getElementById("a2bd8642adf148b0a259155141c513e6").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="ee08bd84a5254b7786dfbe330ba5f3b5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027best2exp\u0027"}], "type": "paragraph"});
+            document.getElementById("ee08bd84a5254b7786dfbe330ba5f3b5").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="fb18a84252574f9da013daa0ba3ec20c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027rand2exp\u0027"}], "type": "paragraph"});
+            document.getElementById("fb18a84252574f9da013daa0ba3ec20c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="ceb1b0cc6d7543e0b6a360d34c710ef0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027randtobest1bin\u0027"}], "type": "paragraph"});
+            document.getElementById("ceb1b0cc6d7543e0b6a360d34c710ef0").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="e67c696b5bbe43f284eec30324a8c26c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027currenttobest1bin\u0027"}], "type": "paragraph"});
+            document.getElementById("e67c696b5bbe43f284eec30324a8c26c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="3204bc426e7d40338f2ea6a7e860eea4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027best2bin\u0027"}], "type": "paragraph"});
+            document.getElementById("3204bc426e7d40338f2ea6a7e860eea4").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="76fab06b354d4ead813b0685fc83c786"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027rand2bin\u0027"}], "type": "paragraph"});
+            document.getElementById("76fab06b354d4ead813b0685fc83c786").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="e575fe8e374a4c9cb63ee8fb29efb3a5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027rand1bin\u0027"}], "type": "paragraph"});
+            document.getElementById("e575fe8e374a4c9cb63ee8fb29efb3a5").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+</blockquote>
+
+                <div id="a4e2c760017f45fa95201d7aa71e71d1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The default is \u0027best1bin\u0027."}], "type": "paragraph"});
+            document.getElementById("a4e2c760017f45fa95201d7aa71e71d1").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="maxiter">maxiter</a> : int, optional</dt>
+<dd>
+                <div id="e0b51096b7c54e94ab1ba81d2bf592da"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The maximum number of generations over which the entire population is evolved. The maximum number of function evaluations (with no polishing) is: "}, {"type": "inlineCode", "value": "(maxiter + 1) * popsize * N"}], "type": "paragraph"});
+            document.getElementById("e0b51096b7c54e94ab1ba81d2bf592da").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="popsize">popsize</a> : int, optional</dt>
+<dd>
+                <div id="a5ed2359d55343a796296f0ea08cfb7d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A multiplier for setting the total population size. The population has "}, {"type": "inlineCode", "value": "popsize * N"}, {"type": "text", "value": " individuals. This keyword is overridden if an initial population is supplied via the "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "init", "type": "RefInfo", "version": null}, "type": "Link", "value": "init"}, {"type": "text", "value": " keyword. When using "}, {"type": "inlineCode", "value": "init=\u0027sobol\u0027"}, {"type": "text", "value": " the population size is calculated as the next power of 2 after "}, {"type": "inlineCode", "value": "popsize * N"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("a5ed2359d55343a796296f0ea08cfb7d").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="tol">tol</a> : float, optional</dt>
+<dd>
+                <div id="2017c7b29c0e465082eab5bc18cd3770"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Relative tolerance for convergence, the solving stops when "}, {"type": "inlineCode", "value": "np.std(pop) \u003c= atol + tol * np.abs(np.mean(population_energies))"}, {"type": "text", "value": ", where and "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "atol", "type": "RefInfo", "version": null}, "type": "Link", "value": "atol"}, {"type": "text", "value": " and "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "tol", "type": "RefInfo", "version": null}, "type": "Link", "value": "tol"}, {"type": "text", "value": " are the absolute and relative tolerance respectively."}], "type": "paragraph"});
+            document.getElementById("2017c7b29c0e465082eab5bc18cd3770").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="mutation">mutation</a> : float or tuple(float, float), optional</dt>
+<dd>
+                <div id="841dac0dcc9e42bda6348b58c3b44598"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The mutation constant. In the literature this is also known as differential weight, being denoted by F. If specified as a float it should be in the range [0, 2]. If specified as a tuple "}, {"type": "inlineCode", "value": "(min, max)"}, {"type": "text", "value": " dithering is employed. Dithering randomly changes the mutation constant on a generation by generation basis. The mutation constant for that generation is taken from "}, {"type": "inlineCode", "value": "U[min, max)"}, {"type": "text", "value": ". Dithering can help speed convergence significantly. Increasing the mutation constant increases the search radius, but will slow down convergence."}], "type": "paragraph"});
+            document.getElementById("841dac0dcc9e42bda6348b58c3b44598").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="recombination">recombination</a> : float, optional</dt>
+<dd>
+                <div id="8bd2631e7e5b4f829775f4cde11ed9da"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The recombination constant, should be in the range [0, 1]. In the literature this is also known as the crossover probability, being denoted by CR. Increasing this value allows a larger number of mutants to progress into the next generation, but at the risk of population stability."}], "type": "paragraph"});
+            document.getElementById("8bd2631e7e5b4f829775f4cde11ed9da").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="seed">seed</a> : {None, int, `numpy.random.Generator`, `numpy.random.RandomState`}, optional</dt>
+<dd>
+                <div id="0afa7c874f794fcfae3dc66705ba8c19"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "seed", "type": "RefInfo", "version": null}, "type": "Link", "value": "seed"}, {"type": "text", "value": " is None (or "}, {"domain": null, "role": null, "type": "Directive", "value": "np.random"}, {"type": "text", "value": "), the "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "numpy", "path": "numpy.random.mtrand.RandomState", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "numpy.random.RandomState"}, {"type": "text", "value": " singleton is used. If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "seed", "type": "RefInfo", "version": null}, "type": "Link", "value": "seed"}, {"type": "text", "value": " is an int, a new "}, {"type": "inlineCode", "value": "RandomState"}, {"type": "text", "value": " instance is used, seeded with "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "seed", "type": "RefInfo", "version": null}, "type": "Link", "value": "seed"}, {"type": "text", "value": ". If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "seed", "type": "RefInfo", "version": null}, "type": "Link", "value": "seed"}, {"type": "text", "value": " is already a "}, {"type": "inlineCode", "value": "Generator"}, {"type": "text", "value": " or "}, {"type": "inlineCode", "value": "RandomState"}, {"type": "text", "value": " instance then that instance is used. Specify "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "seed", "type": "RefInfo", "version": null}, "type": "Link", "value": "seed"}, {"type": "text", "value": " for repeatable minimizations."}], "type": "paragraph"});
+            document.getElementById("0afa7c874f794fcfae3dc66705ba8c19").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="disp">disp</a> : bool, optional</dt>
+<dd>
+                <div id="0ade1c7eba6b42a0bf39fa6010d63ed7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Prints the evaluated "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "func", "type": "RefInfo", "version": null}, "type": "Link", "value": "func"}, {"type": "text", "value": " at every iteration."}], "type": "paragraph"});
+            document.getElementById("0ade1c7eba6b42a0bf39fa6010d63ed7").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="callback">callback</a> : callable, `callback(xk, convergence=val)`, optional</dt>
+<dd>
+                <div id="a5009b9888bd4ca09e4bbb26f1b1da7c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A function to follow the progress of the minimization. "}, {"type": "inlineCode", "value": "xk"}, {"type": "text", "value": " is the best solution found so far. "}, {"type": "inlineCode", "value": "val"}, {"type": "text", "value": " represents the fractional value of the population convergence.  When "}, {"type": "inlineCode", "value": "val"}, {"type": "text", "value": " is greater than one the function halts. If callback returns "}, {"domain": null, "role": null, "type": "Directive", "value": "True"}, {"type": "text", "value": ", then the minimization is halted (any polishing is still carried out)."}], "type": "paragraph"});
+            document.getElementById("a5009b9888bd4ca09e4bbb26f1b1da7c").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="polish">polish</a> : bool, optional</dt>
+<dd>
+                <div id="dd580c4f94254f8198bd8fad8865f1d2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If True (default), then "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "scipy", "path": "scipy.optimize._minimize.minimize", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "scipy.optimize.minimize"}, {"type": "text", "value": " with the "}, {"domain": null, "role": null, "type": "Directive", "value": "L-BFGS-B"}, {"type": "text", "value": " method is used to polish the best population member at the end, which can improve the minimization slightly. If a constrained problem is being studied then the "}, {"domain": null, "role": null, "type": "Directive", "value": "trust-constr"}, {"type": "text", "value": " method is used instead. For large problems with many constraints, polishing can take a long time due to the Jacobian computations."}], "type": "paragraph"});
+            document.getElementById("dd580c4f94254f8198bd8fad8865f1d2").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="init">init</a> : str or array-like, optional</dt>
+<dd>
+                <div id="33b4ad9d76874f6e9615be68968f1cb4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Specify which type of population initialization is performed. Should be one of:"}], "type": "paragraph"});
+            document.getElementById("33b4ad9d76874f6e9615be68968f1cb4").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <blockquote>           <ul>               <li>                               <div id="c39702ff3ae64122bc61614926abd177"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027latinhypercube\u0027"}], "type": "paragraph"});
+            document.getElementById("c39702ff3ae64122bc61614926abd177").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="03a0c3e6e8a24ffe9ceb6b7eccde7b79"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027sobol\u0027"}], "type": "paragraph"});
+            document.getElementById("03a0c3e6e8a24ffe9ceb6b7eccde7b79").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="d5dc16b9c5b84051a31cb3aeed102905"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027halton\u0027"}], "type": "paragraph"});
+            document.getElementById("d5dc16b9c5b84051a31cb3aeed102905").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="519d6876b9464f13bdd5997b6e9f7502"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027random\u0027"}], "type": "paragraph"});
+            document.getElementById("519d6876b9464f13bdd5997b6e9f7502").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="54ac1fb3a29c423c8eb78d1d3af08e8d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "array specifying the initial population. The array should have       shape "}, {"type": "inlineCode", "value": "(S, N)"}, {"type": "text", "value": ", where S is the total population size and N is       the number of parameters.       "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "init", "type": "RefInfo", "version": null}, "type": "Link", "value": "init"}, {"type": "text", "value": " is clipped to "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "bounds", "type": "RefInfo", "version": null}, "type": "Link", "value": "bounds"}, {"type": "text", "value": " before use."}], "type": "paragraph"});
+            document.getElementById("54ac1fb3a29c423c8eb78d1d3af08e8d").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+</blockquote>
+
+                <div id="e83f0f9fb5a6455ab300f66723ea3985"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The default is \u0027latinhypercube\u0027. Latin Hypercube sampling tries to maximize coverage of the available parameter space."}], "type": "paragraph"});
+            document.getElementById("e83f0f9fb5a6455ab300f66723ea3985").innerHTML = html;
+        }
+        init();
+    </script>
+
+                <div id="fcf2bb995ed443c0a0d73694f6e07b16"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027sobol\u0027 and \u0027halton\u0027 are superior alternatives and maximize even more the parameter space. \u0027sobol\u0027 will enforce an initial population size which is calculated as the next power of 2 after "}, {"type": "inlineCode", "value": "popsize * N"}, {"type": "text", "value": ". \u0027halton\u0027 has no requirements but is a bit less efficient. See "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.stats.qmc", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "scipy.stats.qmc"}, {"type": "text", "value": " for more details."}], "type": "paragraph"});
+            document.getElementById("fcf2bb995ed443c0a0d73694f6e07b16").innerHTML = html;
+        }
+        init();
+    </script>
+
+                <div id="ee607eddc23d4233bceec1b9166960f7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "\u0027random\u0027 initializes the population randomly - this has the drawback that clustering can occur, preventing the whole of parameter space being covered. Use of an array to specify a population could be used, for example, to create a tight bunch of initial guesses in an location where the solution is known to exist, thereby reducing time for convergence."}], "type": "paragraph"});
+            document.getElementById("ee607eddc23d4233bceec1b9166960f7").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="atol">atol</a> : float, optional</dt>
+<dd>
+                <div id="302431727db143ba84767f859647a2ce"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Absolute tolerance for convergence, the solving stops when "}, {"type": "inlineCode", "value": "np.std(pop) \u003c= atol + tol * np.abs(np.mean(population_energies))"}, {"type": "text", "value": ", where and "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "atol", "type": "RefInfo", "version": null}, "type": "Link", "value": "atol"}, {"type": "text", "value": " and "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "tol", "type": "RefInfo", "version": null}, "type": "Link", "value": "tol"}, {"type": "text", "value": " are the absolute and relative tolerance respectively."}], "type": "paragraph"});
+            document.getElementById("302431727db143ba84767f859647a2ce").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="updating">updating</a> : {&#39;immediate&#39;, &#39;deferred&#39;}, optional</dt>
+<dd>
+                <div id="96751e3e468b4688add9527c56afb050"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"type": "inlineCode", "value": "\u0027immediate\u0027"}, {"type": "text", "value": ", the best solution vector is continuously updated within a single generation . This can lead to faster convergence as trial vectors can take advantage of continuous improvements in the best solution. With "}, {"type": "inlineCode", "value": "\u0027deferred\u0027"}, {"type": "text", "value": ", the best solution vector is updated once per generation. Only "}, {"type": "inlineCode", "value": "\u0027deferred\u0027"}, {"type": "text", "value": " is compatible with parallelization or vectorization, and the "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "workers", "type": "RefInfo", "version": null}, "type": "Link", "value": "workers"}, {"type": "text", "value": " and "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "vectorized", "type": "RefInfo", "version": null}, "type": "Link", "value": "vectorized"}, {"type": "text", "value": " keywords can over-ride this option."}], "type": "paragraph"});
+            document.getElementById("96751e3e468b4688add9527c56afb050").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <div class='admonition'>
+    <div>versionadded 1.2.0</div>
+</div>
+
+
+</dd>
+<dt><a id="workers">workers</a> : int or map-like callable, optional</dt>
+<dd>
+                <div id="1aadcefd8ec7446f85bc45239e19c205"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "workers", "type": "RefInfo", "version": null}, "type": "Link", "value": "workers"}, {"type": "text", "value": " is an int the population is subdivided into "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "workers", "type": "RefInfo", "version": null}, "type": "Link", "value": "workers"}, {"type": "text", "value": " sections and evaluated in parallel (uses "}, {"domain": null, "role": null, "type": "Directive", "value": "multiprocessing.Pool \u003cmultiprocessing\u003e"}, {"type": "text", "value": "). Supply -1 to use all available CPU cores. Alternatively supply a map-like callable, such as "}, {"domain": null, "role": null, "type": "Directive", "value": "multiprocessing.Pool.map"}, {"type": "text", "value": " for evaluating the population in parallel. This evaluation is carried out as "}, {"type": "inlineCode", "value": "workers(func, iterable)"}, {"type": "text", "value": ". This option will override the "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "updating", "type": "RefInfo", "version": null}, "type": "Link", "value": "updating"}, {"type": "text", "value": " keyword to "}, {"type": "inlineCode", "value": "updating=\u0027deferred\u0027"}, {"type": "text", "value": " if "}, {"type": "inlineCode", "value": "workers != 1"}, {"type": "text", "value": ". This option overrides the "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "vectorized", "type": "RefInfo", "version": null}, "type": "Link", "value": "vectorized"}, {"type": "text", "value": " keyword if "}, {"type": "inlineCode", "value": "workers != 1"}, {"type": "text", "value": ". Requires that "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "func", "type": "RefInfo", "version": null}, "type": "Link", "value": "func"}, {"type": "text", "value": " be pickleable."}], "type": "paragraph"});
+            document.getElementById("1aadcefd8ec7446f85bc45239e19c205").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <div class='admonition'>
+    <div>versionadded 1.2.0</div>
+</div>
+
+
+</dd>
+<dt><a id="constraints">constraints</a> : {NonLinearConstraint, LinearConstraint, Bounds}</dt>
+<dd>
+                <div id="649816ed141641508d67064c6cf4bfee"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Constraints on the solver, over and above those applied by the "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "bounds", "type": "RefInfo", "version": null}, "type": "Link", "value": "bounds"}, {"type": "text", "value": " kwd. Uses the approach by Lampinen ."}], "type": "paragraph"});
+            document.getElementById("649816ed141641508d67064c6cf4bfee").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <div class='admonition'>
+    <div>versionadded 1.4.0</div>
+</div>
+
+
+</dd>
+<dt><a id="x0">x0</a> : None or array-like, optional</dt>
+<dd>
+                <div id="4dbfd1bf24a44dab8cb0a4db18957af4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Provides an initial guess to the minimization. Once the population has been initialized this vector replaces the first (best) member. This replacement is done even if "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "init", "type": "RefInfo", "version": null}, "type": "Link", "value": "init"}, {"type": "text", "value": " is given an initial population. "}, {"type": "inlineCode", "value": "x0.shape == (N,)"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("4dbfd1bf24a44dab8cb0a4db18957af4").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <div class='admonition'>
+    <div>versionadded 1.7.0</div>
+</div>
+
+
+</dd>
+<dt><a id="integrality">integrality</a> : 1-D array, optional</dt>
+<dd>
+                <div id="7a5c3bdcc07a416e9a7e12fb39a69922"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For each decision variable, a boolean value indicating whether the decision variable is constrained to integer values. The array is broadcast to "}, {"type": "inlineCode", "value": "(N,)"}, {"type": "text", "value": ". If any decision variables are constrained to be integral, they will not be changed during polishing. Only integer values lying between the lower and upper bounds are used. If there are no integer values lying between the bounds then a "}, {"domain": null, "role": null, "type": "Directive", "value": "ValueError"}, {"type": "text", "value": " is raised."}], "type": "paragraph"});
+            document.getElementById("7a5c3bdcc07a416e9a7e12fb39a69922").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <div class='admonition'>
+    <div>versionadded 1.9.0</div>
+</div>
+
+
+</dd>
+<dt><a id="vectorized">vectorized</a> : bool, optional</dt>
+<dd>
+                <div id="f5bb88484bd1479b881a4bfd8fc86a50"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"type": "inlineCode", "value": "vectorized is True"}, {"type": "text", "value": ", "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "func", "type": "RefInfo", "version": null}, "type": "Link", "value": "func"}, {"type": "text", "value": " is sent an "}, {"domain": null, "role": null, "type": "Directive", "value": "x"}, {"type": "text", "value": " array with "}, {"type": "inlineCode", "value": "x.shape == (N, S)"}, {"type": "text", "value": ", and is expected to return an array of shape "}, {"type": "inlineCode", "value": "(S,)"}, {"type": "text", "value": ", where "}, {"domain": null, "role": null, "type": "Directive", "value": "S"}, {"type": "text", "value": " is the number of solution vectors to be calculated. If constraints are applied, each of the functions used to construct a "}, {"domain": null, "role": null, "type": "Directive", "value": "Constraint"}, {"type": "text", "value": " object should accept an "}, {"domain": null, "role": null, "type": "Directive", "value": "x"}, {"type": "text", "value": " array with "}, {"type": "inlineCode", "value": "x.shape == (N, S)"}, {"type": "text", "value": ", and return an array of shape "}, {"type": "inlineCode", "value": "(M, S)"}, {"type": "text", "value": ", where "}, {"domain": null, "role": null, "type": "Directive", "value": "M"}, {"type": "text", "value": " is the number of constraint components. This option is an alternative to the parallelization offered by "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "workers", "type": "RefInfo", "version": null}, "type": "Link", "value": "workers"}, {"type": "text", "value": ", and may help in optimization speed by reducing interpreter overhead from multiple function calls. This keyword is ignored if "}, {"type": "inlineCode", "value": "workers != 1"}, {"type": "text", "value": ". This option will override the "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "updating", "type": "RefInfo", "version": null}, "type": "Link", "value": "updating"}, {"type": "text", "value": " keyword to "}, {"type": "inlineCode", "value": "updating=\u0027deferred\u0027"}, {"type": "text", "value": ". See the notes section for further discussion on when to use "}, {"type": "inlineCode", "value": "\u0027vectorized\u0027"}, {"type": "text", "value": ", and when to use "}, {"type": "inlineCode", "value": "\u0027workers\u0027"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("f5bb88484bd1479b881a4bfd8fc86a50").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <div class='admonition'>
+    <div>versionadded 1.9.0</div>
+</div>
+
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="res">res</a> : OptimizeResult</dt>
+<dd>
+                <div id="845297c669bd46d896a77c195a6c1d8e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The optimization result represented as a "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.optimize._optimize.OptimizeResult", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "OptimizeResult"}, {"type": "text", "value": " object. Important attributes are: "}, {"type": "inlineCode", "value": "x"}, {"type": "text", "value": " the solution array, "}, {"type": "inlineCode", "value": "success"}, {"type": "text", "value": " a Boolean flag indicating if the optimizer exited successfully and "}, {"type": "inlineCode", "value": "message"}, {"type": "text", "value": " which describes the cause of the termination. See "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.optimize._optimize.OptimizeResult", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "OptimizeResult"}, {"type": "text", "value": " for a description of other attributes. If "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "polish", "type": "RefInfo", "version": null}, "type": "Link", "value": "polish"}, {"type": "text", "value": " was employed, and a lower minimum was obtained by the polishing, then OptimizeResult also contains the "}, {"type": "inlineCode", "value": "jac"}, {"type": "text", "value": " attribute. If the eventual solution does not satisfy the applied constraints "}, {"type": "inlineCode", "value": "success"}, {"type": "text", "value": " will be "}, {"domain": null, "role": null, "type": "Directive", "value": "False"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("845297c669bd46d896a77c195a6c1d8e").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="8d4f6b82a9ef437191f485e133e5940d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Finds the global minimum of a multivariate function."}], "type": "paragraph"});
+            document.getElementById("8d4f6b82a9ef437191f485e133e5940d").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+                           Let us consider the problem of minimizing the Rosenbrock function. This
+function is implemented in `rosen` in `scipy.optimize`.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">optimize</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">rosen</span><span class="">,</span><span class=""> </span><span class="">differential_evolution</span><br><span class='nsl'>...&nbsp;</span><span class="">bounds</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">[</span><span class="">(</span><span class="mi">0</span><span class="">,</span><span class="mi">2</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">(</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">(</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">(</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">(</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">2</span><span class="">)</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">result</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">differential_evolution</span><span class="">(</span><span class="">rosen</span><span class="">,</span><span class=""> </span><span class="">bounds</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">result</span><span class="o">.</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">result</span><span class="o">.</span><span class="">fun</span>
+(array([1., 1., 1., 1., 1.]), 1.9216496320061384e-19)</pre>
+            
+                           Now repeat, but with parallelization.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">result</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">differential_evolution</span><span class="">(</span><span class="">rosen</span><span class="">,</span><span class=""> </span><span class="">bounds</span><span class="">,</span><span class=""> </span><span class="">updating</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">deferred</span><span class="s1">&#39;</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                                </span><span class="">workers</span><span class="o">=</span><span class="mi">2</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">result</span><span class="o">.</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">result</span><span class="o">.</span><span class="">fun</span>
+(array([1., 1., 1., 1., 1.]), 1.9216496320061384e-19)</pre>
+            
+                           Let&#39;s do a constrained minimization.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">optimize</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">LinearConstraint</span><span class="">,</span><span class=""> </span><span class="">Bounds</span>
+</pre>
+            
+                           We add the constraint that the sum of ``x[0]`` and ``x[1]`` must be less
+than or equal to 1.9.  This is a linear constraint, which may be written
+``A @ x &lt;= 1.9``, where ``A = array([[1, 1]])``.  This can be encoded as
+a `LinearConstraint` instance:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">lc</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">LinearConstraint</span><span class="">(</span><span class="">[</span><span class="">[</span><span class="mi">1</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="">np</span><span class="o">.</span><span class="">inf</span><span class="">,</span><span class=""> </span><span class="mf">1.9</span><span class="">)</span>
+</pre>
+            
+                           Specify limits using a `Bounds` object.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">bounds</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">Bounds</span><span class="">(</span><span class="">[</span><span class="mf">0.</span><span class="">,</span><span class=""> </span><span class="mf">0.</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="">[</span><span class="mf">2.</span><span class="">,</span><span class=""> </span><span class="mf">2.</span><span class="">]</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">result</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">differential_evolution</span><span class="">(</span><span class="">rosen</span><span class="">,</span><span class=""> </span><span class="">bounds</span><span class="">,</span><span class=""> </span><span class="">constraints</span><span class="o">=</span><span class="">lc</span><span class="">,</span><br><span class='nsl'>...&nbsp;</span><span class="">                                </span><span class="">seed</span><span class="o">=</span><span class="mi">1</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">result</span><span class="o">.</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">result</span><span class="o">.</span><span class="">fun</span>
+(array([0.96632622, 0.93367155]), 0.0011352416852625719)</pre>
+            
+                           Next find the minimum of the Ackley function
+(https://en.wikipedia.org/wiki/Test_functions_for_optimization).  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="k">def</span><span class=""> </span><span class="nf">ackley</span><span class="">(</span><span class="">x</span><span class="">)</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="">arg1</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="o">-</span><span class="mf">0.2</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">sqrt</span><span class="">(</span><span class="mf">0.5</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">(</span><span class="">x</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class=""> </span><span class="o">*</span><span class="o">*</span><span class=""> </span><span class="mi">2</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="">x</span><span class="">[</span><span class="mi">1</span><span class="">]</span><span class=""> </span><span class="o">*</span><span class="o">*</span><span class=""> </span><span class="mi">2</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="">arg2</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="mf">0.5</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">(</span><span class="">np</span><span class="o">.</span><span class="">cos</span><span class="">(</span><span class="mf">2.</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">pi</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">x</span><span class="">[</span><span class="mi">0</span><span class="">]</span><span class="">)</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">cos</span><span class="">(</span><span class="mf">2.</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">pi</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">x</span><span class="">[</span><span class="mi">1</span><span class="">]</span><span class="">)</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="k">return</span><span class=""> </span><span class="o">-</span><span class="mf">20.</span><span class=""> </span><span class="o">*</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">exp</span><span class="">(</span><span class="">arg1</span><span class="">)</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">exp</span><span class="">(</span><span class="">arg2</span><span class="">)</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="mf">20.</span><span class=""> </span><span class="o">+</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">e</span><br><span class='nsl'>...&nbsp;</span><span class="">bounds</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">[</span><span class="">(</span><span class="o">-</span><span class="mi">5</span><span class="">,</span><span class=""> </span><span class="mi">5</span><span class="">)</span><span class="">,</span><span class=""> </span><span class="">(</span><span class="o">-</span><span class="mi">5</span><span class="">,</span><span class=""> </span><span class="mi">5</span><span class="">)</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">result</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">differential_evolution</span><span class="">(</span><span class="">ackley</span><span class="">,</span><span class=""> </span><span class="">bounds</span><span class="">,</span><span class=""> </span><span class="">seed</span><span class="o">=</span><span class="mi">1</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">result</span><span class="o">.</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">result</span><span class="o">.</span><span class="">fun</span>
+(array([0., 0.]), 4.440892098500626e-16)</pre>
+            
+                           The Ackley function is written in a vectorized manner, so the
+``&#39;vectorized&#39;`` keyword can be employed. Note the reduced number of
+function evaluations.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">result</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">differential_evolution</span><span class="">(</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="">ackley</span><span class="">,</span><span class=""> </span><span class="">bounds</span><span class="">,</span><span class=""> </span><span class="">vectorized</span><span class="o">=</span><span class="kc">True</span><span class="">,</span><span class=""> </span><span class="">updating</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">deferred</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">seed</span><span class="o">=</span><span class="mi">1</span><br><span class='nsl'>...&nbsp;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">result</span><span class="o">.</span><span class="">x</span><span class="">,</span><span class=""> </span><span class="">result</span><span class="o">.</span><span class="">fun</span>
+(array([0., 0.]), 4.440892098500626e-16)</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.optimize._optimize.brute.html" class='exists'>scipy.optimize._optimize.brute</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/optimize/_differentialevolution.py#L22'>/scipy/optimize/_differentialevolution.py#22</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 11.16227766016838, "label": "scipy.optimize._constraints.Bounds", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.optimize._constraints.Bounds"}, {"id": 2, "val": 14.782329983125269, "label": "numpy.random.mtrand.RandomState", "mod": "numpy", "url": "/p/numpy/1.24.2/api/numpy.random.mtrand.RandomState"}, {"id": 3, "val": 9.732050807568877, "label": "scipy.stats.qmc", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.stats.qmc"}, {"id": 4, "val": 9.0, "label": "scipy.optimize._optimize.brute", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.optimize._optimize.brute"}, {"id": 5, "val": 9.0, "label": "multiprocessing", "mod": "multiprocessing", "url": "/p/multiprocessing/*/api/multiprocessing"}, {"id": 6, "val": 12.242640687119284, "label": "scipy.optimize._optimize.OptimizeResult", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.optimize._optimize.OptimizeResult"}, {"id": 7, "val": 11.0, "label": "scipy.optimize._minimize.minimize", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.optimize._minimize.minimize"}], "links": [{"source": 6, "target": 7, "id": 3}, {"source": 6, "target": 4, "id": 4}, {"source": 1, "target": 7, "id": 76}]};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

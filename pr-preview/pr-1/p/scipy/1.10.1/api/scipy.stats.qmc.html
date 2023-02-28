@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats.html'>stats</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.stats.qmc.html'>qmc</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.stats._axis_nan_policy.html">_axis_nan_policy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._biasedurn.html">_biasedurn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binned_statistic.html">_binned_statistic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._binomtest.html">_binomtest</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._boost.html">_boost</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._common.html">_common</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._constants.html">_constants</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._continuous_distns.html">_continuous_distns</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._covariance.html">_covariance</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._crosstab.html">_crosstab</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._discrete_distns.html">_discrete_distns</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._distn_infrastructure.html">_distn_infrastructure</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._distr_params.html">_distr_params</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._entropy.html">_entropy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._fit.html">_fit</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._hypotests.html">_hypotests</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._kde.html">_kde</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._ksstats.html">_ksstats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._levy_stable.html">_levy_stable</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mannwhitneyu.html">_mannwhitneyu</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._morestats.html">_morestats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mstats_basic.html">_mstats_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mstats_extras.html">_mstats_extras</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._multivariate.html">_multivariate</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._mvn.html">_mvn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._odds_ratio.html">_odds_ratio</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._page_trend_test.html">_page_trend_test</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc.html">_qmc</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._qmc_cy.html">_qmc_cy</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._rcont.html">_rcont</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._relative_risk.html">_relative_risk</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._resampling.html">_resampling</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._rvs_sampling.html">_rvs_sampling</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._sobol.html">_sobol</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._statlib.html">_statlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats.html">_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_mstats_common.html">_stats_mstats_common</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_py.html">_stats_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._stats_pythran.html">_stats_pythran</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._tukeylambda_stats.html">_tukeylambda_stats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._variation.html">_variation</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats._warnings_errors.html">_warnings_errors</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.biasedurn.html">biasedurn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.contingency.html">contingency</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.distributions.html">distributions</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.kde.html">kde</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.morestats.html">morestats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats.html">mstats</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats_basic.html">mstats_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mstats_extras.html">mstats_extras</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.mvn.html">mvn</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.qmc.html">qmc</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.statlib.html">statlib</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<!-- rendering Extended Summary -->
+        <!-- rendering Notes -->
+        <!-- rendering Summary -->
+                                       <div id="1360f6cc4b7546639bca9be97d6e6f9f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "To remove in the future \u2013\u2013 scipy.stats.qmc"}], "type": "paragraph"});
+            document.getElementById("1360f6cc4b7546639bca9be97d6e6f9f").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h1>Quasi-Monte Carlo submodule (:mod:`scipy.stats.qmc`)</h1>
+               <pre class='not-implemented'>
+.. currentmodule:: scipy.stats.qmc
+    </pre>
+
+
+                               <div id="28451aa666d04a2ab49f7f039cc6c98b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "This module provides Quasi-Monte Carlo generators and associated helper functions."}], "type": "paragraph"});
+            document.getElementById("28451aa666d04a2ab49f7f039cc6c98b").innerHTML = html;
+        }
+        init();
+    </script>
+
+
+<h2>Quasi-Monte Carlo</h2>
+
+<h3>Engines</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    QMCEngine
+    Sobol
+    Halton
+    LatinHypercube
+    PoissonDisk
+    MultinomialQMC
+    MultivariateNormalQMC</pre>
+
+<h3>Helpers</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    discrepancy
+    update_discrepancy
+    scale</pre>
+
+<h2>Introduction to Quasi-Monte Carlo</h2>
+                               <div id="3258aac4f06f41f784ff2a30885fedb9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Quasi-Monte Carlo (QMC) methods , ,  provide an "}, {"type": "Math", "value": "n \\times d"}, {"type": "text", "value": " array of numbers in "}, {"type": "Math", "value": "[0,1]"}, {"type": "text", "value": ". They can be used in place of "}, {"type": "Math", "value": "n"}, {"type": "text", "value": " points from the "}, {"type": "Math", "value": "U[0,1]^{d}"}, {"type": "text", "value": " distribution. Compared to random points, QMC points are designed to have fewer gaps and clumps. This is quantified by discrepancy measures . From the Koksma-Hlawka inequality  we know that low discrepancy reduces a bound on integration error. Averaging a function "}, {"type": "Math", "value": "f"}, {"type": "text", "value": " over "}, {"type": "Math", "value": "n"}, {"type": "text", "value": " QMC points can achieve an integration error close to "}, {"type": "Math", "value": "O(n^{-1})"}, {"type": "text", "value": " for well behaved functions ."}], "type": "paragraph"});
+            document.getElementById("3258aac4f06f41f784ff2a30885fedb9").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="db46b2c1d1aa4b2fb7a4d2fec377c232"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Most QMC constructions are designed for special values of "}, {"type": "Math", "value": "n"}, {"type": "text", "value": " such as powers of 2 or large primes. Changing the sample size by even one can degrade their performance, even their rate of convergence . For instance "}, {"type": "Math", "value": "n=100"}, {"type": "text", "value": " points may give less accuracy than "}, {"type": "Math", "value": "n=64"}, {"type": "text", "value": " if the method was designed for "}, {"type": "Math", "value": "n=2^m"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("db46b2c1d1aa4b2fb7a4d2fec377c232").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="5e5e38d470ce40cbb7b2307ae7c3ca73"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Some QMC constructions are extensible in "}, {"type": "Math", "value": "n"}, {"type": "text", "value": ": we can find another special sample size "}, {"type": "Math", "value": "n\u0027 \u003e n"}, {"type": "text", "value": " and often an infinite sequence of increasing special sample sizes. Some QMC constructions are extensible in "}, {"type": "Math", "value": "d"}, {"type": "text", "value": ": we can increase the dimension, possibly to some upper bound, and typically without requiring special values of "}, {"type": "Math", "value": "d"}, {"type": "text", "value": ". Some QMC methods are extensible in both "}, {"type": "Math", "value": "n"}, {"type": "text", "value": " and "}, {"type": "Math", "value": "d"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("5e5e38d470ce40cbb7b2307ae7c3ca73").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="22a46cc9142242d184b5c71fb34e5959"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "QMC points are deterministic. That makes it hard to estimate the accuracy of integrals estimated by averages over QMC points. Randomized QMC (RQMC)  points are constructed so that each point is individually "}, {"type": "Math", "value": "U[0,1]^{d}"}, {"type": "text", "value": " while collectively the "}, {"type": "Math", "value": "n"}, {"type": "text", "value": " points retain their low discrepancy. One can make "}, {"type": "Math", "value": "R"}, {"type": "text", "value": " independent replications of RQMC points to see how stable a computation is. From "}, {"type": "Math", "value": "R"}, {"type": "text", "value": " independent values, a t-test (or bootstrap t-test ) then gives approximate confidence intervals on the mean value. Some RQMC methods produce a root mean squared error that is actually "}, {"type": "Math", "value": "o(1/n)"}, {"type": "text", "value": " and smaller than the rate seen in unrandomized QMC. An intuitive explanation is that the error is a sum of many small ones and random errors cancel in a way that deterministic ones do not. RQMC also has advantages on integrands that are singular or, for other reasons, fail to be Riemann integrable."}], "type": "paragraph"});
+            document.getElementById("22a46cc9142242d184b5c71fb34e5959").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="4685a758c5c5412ab119c719e2592f63"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "(R)QMC cannot beat Bahkvalov\u0027s curse of dimension (see ). For any random or deterministic method, there are worst case functions that will give it poor performance in high dimensions. A worst case function for QMC might be 0 at all n points but very large elsewhere. Worst case analyses get very pessimistic in high dimensions. (R)QMC can bring a great improvement over MC when the functions on which it is used are not worst case. For instance (R)QMC can be especially effective on integrands that are well approximated by sums of functions of some small number of their input variables at a time , . That property is often a surprising finding about those functions."}], "type": "paragraph"});
+            document.getElementById("4685a758c5c5412ab119c719e2592f63").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="38937bba3d634c459a89287b600d018b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Also, to see an improvement over IID MC, (R)QMC requires a bit of smoothness of the integrand, roughly the mixed first order derivative in each direction, "}, {"type": "Math", "value": "\\partial^d f/\\partial x_1 \\cdots \\partial x_d"}, {"type": "text", "value": ", must be integral. For instance, a function that is 1 inside the hypersphere and 0 outside of it has infinite variation in the sense of Hardy and Krause for any dimension "}, {"type": "Math", "value": "d = 2"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("38937bba3d634c459a89287b600d018b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="8111ddf209744328921eb1b1028673f5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Scrambled nets are a kind of RQMC that have some valuable robustness properties . If the integrand is square integrable, they give variance "}, {"type": "Math", "value": "var_{SNET} = o(1/n)"}, {"type": "text", "value": ". There is a finite upper bound on "}, {"type": "Math", "value": "var_{SNET} / var_{MC}"}, {"type": "text", "value": " that holds simultaneously for every square integrable integrand. Scrambled nets satisfy a strong law of large numbers for "}, {"type": "Math", "value": "f"}, {"type": "text", "value": " in "}, {"type": "Math", "value": "L^p"}, {"type": "text", "value": " when "}, {"type": "Math", "value": "p\u003e1"}, {"type": "text", "value": ". In some special cases there is a central limit theorem . For smooth enough integrands they can achieve RMSE nearly "}, {"type": "Math", "value": "O(n^{-3})"}, {"type": "text", "value": ". See  for references about these properties."}], "type": "paragraph"});
+            document.getElementById("8111ddf209744328921eb1b1028673f5").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="c331179781bf4b9aa85895af5c654f54"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The main kinds of QMC methods are lattice rules  and digital nets and sequences , . The theories meet up in polynomial lattice rules  which can produce digital nets. Lattice rules require some form of search for good constructions. For digital nets there are widely used default constructions."}], "type": "paragraph"});
+            document.getElementById("c331179781bf4b9aa85895af5c654f54").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="74a9e2f905434c1c88e7b4375f759fe2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The most widely used QMC methods are Sobol\u0027 sequences . These are digital nets. They are extensible in both "}, {"type": "Math", "value": "n"}, {"type": "text", "value": " and "}, {"type": "Math", "value": "d"}, {"type": "text", "value": ". They can be scrambled. The special sample sizes are powers of 2. Another popular method are Halton sequences . The constructions resemble those of digital nets. The earlier dimensions have much better equidistribution properties than later ones. There are essentially no special sample sizes. They are not thought to be as accurate as Sobol\u0027 sequences. They can be scrambled. The nets of Faure  are also widely used. All dimensions are equally good, but the special sample sizes grow rapidly with dimension "}, {"type": "Math", "value": "d"}, {"type": "text", "value": ". They can be scrambled. The nets of Niederreiter and Xing  have the best asymptotic properties but have not shown good empirical performance ."}], "type": "paragraph"});
+            document.getElementById("74a9e2f905434c1c88e7b4375f759fe2").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="2291c0184d7e400e8451598b9fcd66c8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Higher order digital nets are formed by a digit interleaving process in the digits of the constructed points. They can achieve higher levels of asymptotic accuracy given higher smoothness conditions on "}, {"type": "Math", "value": "f"}, {"type": "text", "value": " and they can be scrambled . There is little or no empirical work showing the improved rate to be attained."}], "type": "paragraph"});
+            document.getElementById("2291c0184d7e400e8451598b9fcd66c8").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="c2948088025848119182bbdeccf6b640"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Using QMC is like using the entire period of a small random number generator. The constructions are similar and so therefore are the computational costs ."}], "type": "paragraph"});
+            document.getElementById("c2948088025848119182bbdeccf6b640").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="2969b855832e4abb95cce919b2eea5d2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "(R)QMC is sometimes improved by passing the points through a baker\u0027s transformation (tent function) prior to using them. That function has the form "}, {"type": "Math", "value": "1-2|x-1/2|"}, {"type": "text", "value": ". As "}, {"type": "Math", "value": "x"}, {"type": "text", "value": " goes from 0 to 1, this function goes from 0 to 1 and then back. It is very useful to produce a periodic function for lattice rules , and sometimes it improves the convergence rate ."}], "type": "paragraph"});
+            document.getElementById("2969b855832e4abb95cce919b2eea5d2").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="b4a34d5db955449487efdb81ecc4c673"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "It is not straightforward to apply QMC methods to Markov chain Monte Carlo (MCMC).  We can think of MCMC as using "}, {"type": "Math", "value": "n=1"}, {"type": "text", "value": " point in "}, {"type": "Math", "value": "[0,1]^{d}"}, {"type": "text", "value": " for very large "}, {"type": "Math", "value": "d"}, {"type": "text", "value": ", with ergodic results corresponding to "}, {"type": "Math", "value": "d \\to \\infty"}, {"type": "text", "value": ". One proposal is in  and under strong conditions an improved rate of convergence has been shown ."}], "type": "paragraph"});
+            document.getElementById("b4a34d5db955449487efdb81ecc4c673").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="4c5754bdec9347cd9cb777895dacab5b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Returning to Sobol\u0027 points: there are many versions depending on what are called direction numbers. Those are the result of searches and are tabulated. A very widely used set of direction numbers come from . It is extensible in dimension up to "}, {"type": "Math", "value": "d=21201"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("4c5754bdec9347cd9cb777895dacab5b").innerHTML = html;
+        }
+        init();
+    </script>
+
+
+<h3>References</h3>
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [1] Owen, Art B. &#34;Monte Carlo Book: the Quasi-Monte Carlo parts.&#34; 2019.&#39;&gt;
+           </pre>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [2] Niederreiter, Harald. &#34;Random number generation and quasi-Monte Carlo\n   methods.&#34; Society for Industrial and Applied Mathematics, 1992.&#39;&gt;
+           </pre>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [3] Dick, Josef, Frances Y. Kuo, and Ian H. Sloan. &#34;High-dimensional\n   integration: the quasi-Monte Carlo way.&#34; Acta Numerica no. 22: 133, 2013.&#39;&gt;
+           </pre>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [4] Aho, A. V., C. Aistleitner, T. Anderson, K. Appel, V. Arnol\&#39;d, N.\n   Aronszajn, D. Asotsky et al. &#34;W. Chen et al.(eds.), &#34;A Panorama of\n   Discrepancy Theory&#34;, Sringer International Publishing,\n   Switzerland: 679, 2014.&#39;&gt;
+           </pre>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [5] Hickernell, Fred J. &#34;Koksma-Hlawka Inequality.&#34; Wiley StatsRef:\n   Statistics Reference Online, 2014.&#39;&gt;
+           </pre>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [6] Owen, Art B. &#34;On dropping the first Sobol\&#39; point.&#34; :arxiv:`2008.08051`,\n   2020.&#39;&gt;
+           </pre>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [7] L\&#39;Ecuyer, Pierre, and Christiane Lemieux. &#34;Recent advances in randomized\n   quasi-Monte Carlo methods.&#34; In Modeling uncertainty, pp. 419-474. Springer,\n   New York, NY, 2002.&#39;&gt;
+           </pre>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [8] DiCiccio, Thomas J., and Bradley Efron. &#34;Bootstrap confidence\n   intervals.&#34; Statistical science: 189-212, 1996.&#39;&gt;
+           </pre>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [9] Dimov, Ivan T. &#34;Monte Carlo methods for applied scientists.&#34; World\n   Scientific, 2008.&#39;&gt;
+           </pre>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [10] Caflisch, Russel E., William J. Morokoff, and Art B. Owen. &#34;Valuation\n   of mortgage backed securities using Brownian bridges to reduce effective\n   dimension.&#34; Journal of Computational Finance: no. 1 27-46, 1997.&#39;&gt;
+           </pre>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [11] Sloan, Ian H., and Henryk Wozniakowski. &#34;When are quasi-Monte Carlo\n   algorithms efficient for high dimensional integrals?.&#34; Journal of Complexity\n   14, no. 1 (1998): 1-33.&#39;&gt;
+           </pre>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [12] Owen, Art B., and Daniel Rudolf, &#34;A strong law of large numbers for\n   scrambled net integration.&#34; SIAM Review, to appear.&#39;&gt;
+           </pre>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [13] Loh, Wei-Liem. &#34;On the asymptotic distribution of scrambled net\n   quadrature.&#34; The Annals of Statistics 31, no. 4: 1282-1324, 2003.&#39;&gt;
+           </pre>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [14] Sloan, Ian H. and S. Joe. &#34;Lattice methods for multiple integration.&#34;\n   Oxford University Press, 1994.&#39;&gt;
+           </pre>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [15] Dick, Josef, and Friedrich Pillichshammer. &#34;Digital nets and sequences:\n   discrepancy theory and quasi-Monte Carlo integration.&#34; Cambridge University\n   Press, 2010.&#39;&gt;
+           </pre>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [16] Dick, Josef, F. Kuo, Friedrich Pillichshammer, and I. Sloan.\n   &#34;Construction algorithms for polynomial lattice rules for multivariate\n   integration.&#34; Mathematics of computation 74, no. 252: 1895-1921, 2005.&#39;&gt;
+           </pre>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [17] Sobol\&#39;, Il\&#39;ya Meerovich. &#34;On the distribution of points in a cube and\n   the approximate evaluation of integrals.&#34; Zhurnal Vychislitel\&#39;noi Matematiki\n   i Matematicheskoi Fiziki 7, no. 4: 784-802, 1967.&#39;&gt;
+           </pre>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [18] Halton, John H. &#34;On the efficiency of certain quasi-random sequences of\n   points in evaluating multi-dimensional integrals.&#34; Numerische Mathematik 2,\n   no. 1: 84-90, 1960.&#39;&gt;
+           </pre>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [19] Faure, Henri. &#34;Discrepance de suites associees a un systeme de\n   numeration (en dimension s).&#34; Acta arithmetica 41, no. 4: 337-351, 1982.&#39;&gt;
+           </pre>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [20] Niederreiter, Harold, and Chaoping Xing. &#34;Low-discrepancy sequences and\n   global function fields with many rational places.&#34; Finite Fields and their\n   applications 2, no. 3: 241-273, 1996.&#39;&gt;
+           </pre>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [21] Hong, Hee Sun, and Fred J. Hickernell. &#34;Algorithm 823: Implementing\n   scrambled digital sequences.&#34; ACM Transactions on Mathematical Software\n   (TOMS) 29, no. 2: 95-109, 2003.&#39;&gt;
+           </pre>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [22] Dick, Josef. &#34;Higher order scrambled digital nets achieve the optimal\n   rate of the root mean square error for smooth integrands.&#34; The Annals of\n   Statistics 39, no. 3: 1372-1398, 2011.&#39;&gt;
+           </pre>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [23] Niederreiter, Harald. &#34;Multidimensional numerical integration using\n   pseudorandom numbers.&#34; In Stochastic Programming 84 Part I, pp. 17-38.\n   Springer, Berlin, Heidelberg, 1986.&#39;&gt;
+           </pre>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [24] Hickernell, Fred J. &#34;Obtaining O (N-2+e) Convergence for Lattice\n   Quadrature Rules.&#34; In Monte Carlo and Quasi-Monte Carlo Methods 2000,\n   pp. 274-289. Springer, Berlin, Heidelberg, 2002.&#39;&gt;
+           </pre>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [25] Owen, Art B., and Seth D. Tribble. &#34;A quasi-Monte Carlo Metropolis\n   algorithm.&#34; Proceedings of the National Academy of Sciences 102,\n   no. 25: 8844-8849, 2005.&#39;&gt;
+           </pre>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [26] Chen, Su. &#34;Consistency and convergence rate of Markov chain quasi Monte\n   Carlo with examples.&#34; PhD diss., Stanford University, 2011.&#39;&gt;
+           </pre>
+
+                          <pre class='not-implemented'>
+            &lt;Unimplemented &#39;footnote&#39; &#39;.. [27] Joe, Stephen, and Frances Y. Kuo. &#34;Constructing Sobol sequences with\n   better two-dimensional projections.&#34; SIAM Journal on Scientific Computing\n   30, no. 5: 2635-2654, 2008.&#39;&gt;
+           </pre>
+
+
+<h3 id="section-Examples">Examples</h3>
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.optimize._differentialevolution.differential_evolution.html" class='exists'>scipy.optimize._differentialevolution.differential_evolution</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.optimize._differentialevolution.DifferentialEvolutionSolver.html" class='exists'>scipy.optimize._differentialevolution.DifferentialEvolutionSolver</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.optimize._shgo.shgo.html" class='exists'>scipy.optimize._shgo.shgo</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/stats/qmc.py#L0'>/scipy/stats/qmc.py#0</a>
+<br/>
+
+type: &lt;class &#39;module&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 8.0, "label": "scipy.optimize._differentialevolution.DifferentialEvolutionSolver", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.optimize._differentialevolution.DifferentialEvolutionSolver"}, {"id": 2, "val": 9.0, "label": "scipy.optimize._shgo.shgo", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.optimize._shgo.shgo"}, {"id": 3, "val": 9.0, "label": "scipy.optimize._differentialevolution.differential_evolution", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.optimize._differentialevolution.differential_evolution"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

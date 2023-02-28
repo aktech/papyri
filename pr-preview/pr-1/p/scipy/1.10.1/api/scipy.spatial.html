@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.spatial.html'>spatial</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" >+</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.spatial._ckdtree.html">_ckdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._distance_pybind.html">_distance_pybind</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._distance_wrap.html">_distance_wrap</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._geometric_slerp.html">_geometric_slerp</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._hausdorff.html">_hausdorff</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._kdtree.html">_kdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._plotutils.html">_plotutils</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._procrustes.html">_procrustes</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._qhull.html">_qhull</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._spherical_voronoi.html">_spherical_voronoi</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial._voronoi.html">_voronoi</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.ckdtree.html">ckdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.distance.html">distance</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.kdtree.html">kdtree</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.qhull.html">qhull</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.transform.html">transform</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<!-- rendering Extended Summary -->
+        <!-- rendering Notes -->
+        <!-- rendering Summary -->
+                                       <div id="192c056372a141c4b317046e57784c4a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "To remove in the future \u2013\u2013 scipy.spatial"}], "type": "paragraph"});
+            document.getElementById("192c056372a141c4b317046e57784c4a").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h1>Spatial algorithms and data structures (:mod:`scipy.spatial`)</h1>
+               <pre class='not-implemented'>
+.. currentmodule:: scipy.spatial
+    </pre>
+
+
+
+<h2>Spatial transformations</h2>
+                               <div id="b37cc1b3ad93423db2e0918f9b717c74"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "These are contained in the "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.spatial.transform", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "scipy.spatial.transform"}, {"type": "text", "value": " submodule."}], "type": "paragraph"});
+            document.getElementById("b37cc1b3ad93423db2e0918f9b717c74").innerHTML = html;
+        }
+        init();
+    </script>
+
+
+<h2>Nearest-neighbor queries</h2>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    KDTree      -- class for efficient nearest-neighbor queries
+    cKDTree     -- class for efficient nearest-neighbor queries (faster implementation)
+    Rectangle</pre>
+
+<h2>Distance metrics</h2>
+                               <div id="bbbfac8183554dc290a9de9a4eca15ac"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Distance metrics are contained in the "}, {"type": "Verbatim", "value": ["scipy.spatial.distance"]}, {"type": "text", "value": " submodule."}], "type": "paragraph"});
+            document.getElementById("bbbfac8183554dc290a9de9a4eca15ac").innerHTML = html;
+        }
+        init();
+    </script>
+
+
+<h2>Delaunay triangulation, convex hulls, and Voronoi diagrams</h2>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    Delaunay    -- compute Delaunay triangulation of input points
+    ConvexHull  -- compute a convex hull for input points
+    Voronoi     -- compute a Voronoi diagram hull from input points
+    SphericalVoronoi -- compute a Voronoi diagram from input points on the surface of a sphere
+    HalfspaceIntersection -- compute the intersection points of input halfspaces</pre>
+
+<h2>Plotting helpers</h2>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    delaunay_plot_2d     -- plot 2-D triangulation
+    convex_hull_plot_2d  -- plot 2-D convex hull
+    voronoi_plot_2d      -- plot 2-D Voronoi diagram</pre>
+               <pre class='not-implemented'>
+.. seealso:: :ref:`Tutorial &lt;qhulltutorial&gt;`
+    </pre>
+
+
+
+<h2>Simplex representation</h2>
+                               <div id="1745607472ce4e5ab484af5bcff0777b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The simplices (triangles, tetrahedra, etc.) appearing in the Delaunay tessellation (N-D simplices), convex hull facets, and Voronoi ridges (N-1-D simplices) are represented in the following scheme      "}], "type": "paragraph"});
+            document.getElementById("1745607472ce4e5ab484af5bcff0777b").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="8a7dd02eaf5446038ae525a5d394f53c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "tess = Delaunay(points)\nhull = ConvexHull(points)\nvoro = Voronoi(points)\n\n# coordinates of the jth vertex of the ith simplex\ntess.points[tess.simplices[i, j], :]        # tessellation element\nhull.points[hull.simplices[i, j], :]        # convex hull facet\nvoro.vertices[voro.ridge_vertices[i, j], :] # ridge between Voronoi cells"});
+            document.getElementById("8a7dd02eaf5446038ae525a5d394f53c").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="87a5657c8cd046949c01366ca39d8bfc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For Delaunay triangulations and convex hulls, the neighborhood structure of the simplices satisfies the condition: "}, {"type": "inlineCode", "value": "tess.neighbors[i,j]"}, {"type": "text", "value": " is the neighboring simplex of the ith simplex, opposite to the "}, {"type": "inlineCode", "value": "j"}, {"type": "text", "value": "-vertex. It is -1 in case of no neighbor."}], "type": "paragraph"});
+            document.getElementById("87a5657c8cd046949c01366ca39d8bfc").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="d74b6b47199443dda1ede4d2a25c8a17"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Convex hull facets also define a hyperplane equation      "}], "type": "paragraph"});
+            document.getElementById("d74b6b47199443dda1ede4d2a25c8a17").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="e90f5cf5d85b4e50a288533933aa7629"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "(hull.equations[i,:-1] * coord).sum() + hull.equations[i,-1] == 0"});
+            document.getElementById("e90f5cf5d85b4e50a288533933aa7629").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="1314f3f6753148beb854080b6bd5e9f5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Similar hyperplane equations for the Delaunay triangulation correspond to the convex hull facets on the corresponding N+1-D paraboloid."}], "type": "paragraph"});
+            document.getElementById("1314f3f6753148beb854080b6bd5e9f5").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="34d01766bcb4481db3e0c5e814c82e4d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The Delaunay triangulation objects offer a method for locating the simplex containing a given point, and barycentric coordinate computations."}], "type": "paragraph"});
+            document.getElementById("34d01766bcb4481db3e0c5e814c82e4d").innerHTML = html;
+        }
+        init();
+    </script>
+
+
+<h3>Functions</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    tsearch
+    distance_matrix
+    minkowski_distance
+    minkowski_distance_p
+    procrustes
+    geometric_slerp</pre>
+
+<h3>Warnings / Errors used in :mod:`scipy.spatial`</h3>
+               <pre>.. autosummary:: 
+    :toctree:generated/
+    QhullError</pre>
+
+<h3 id="section-Examples">Examples</h3>
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/spatial/__init__.py#L0'>/scipy/spatial/__init__.py#0</a>
+<br/>
+
+type: &lt;class &#39;module&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 9.0, "label": "scipy.spatial.transform", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.spatial.transform"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.fftpack.html'>fftpack</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.fftpack._pseudo_diffs.html'>_pseudo_diffs</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.fftpack._basic.html">_basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack._helper.html">_helper</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack._pseudo_diffs.html">_pseudo_diffs</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack._realtransforms.html">_realtransforms</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.basic.html">basic</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.convolve.html">convolve</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.helper.html">helper</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.pseudo_diffs.html">pseudo_diffs</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.realtransforms.html">realtransforms</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.fftpack._pseudo_diffs.itilbert.html'>itilbert</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.fftpack._pseudo_diffs.cc_diff.html">cc_diff</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack._pseudo_diffs.cs_diff.html">cs_diff</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack._pseudo_diffs.diff.html">diff</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack._pseudo_diffs.hilbert.html">hilbert</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack._pseudo_diffs.ihilbert.html">ihilbert</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack._pseudo_diffs.itilbert.html">itilbert</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack._pseudo_diffs.sc_diff.html">sc_diff</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack._pseudo_diffs.shift.html">shift</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack._pseudo_diffs.ss_diff.html">ss_diff</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack._pseudo_diffs.tilbert.html">tilbert</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>itilbert(x, h, period=None, _cache={})</code><!-- rendering Extended Summary -->
+                                       <div id="ab183681e1074852ade012f594b491b6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If "}, {"type": "inlineCode", "value": "x_j"}, {"type": "text", "value": " and "}, {"type": "inlineCode", "value": "y_j"}, {"type": "text", "value": " are Fourier coefficients of periodic functions x and y, respectively, then    "}], "type": "paragraph"});
+            document.getElementById("ab183681e1074852ade012f594b491b6").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="2e859d932345444d8aec285a1153ffc6"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "y_j = -sqrt(-1)*tanh(j*h*2*pi/period) * x_j\ny_0 = 0"});
+            document.getElementById("2e859d932345444d8aec285a1153ffc6").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="d7a67023216d4c6896421dc045890716"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "For more details, see "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "scipy", "path": "scipy.fftpack._pseudo_diffs.tilbert", "type": "RefInfo", "version": "1.10.1"}, "type": "Link", "value": "tilbert"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("d7a67023216d4c6896421dc045890716").innerHTML = html;
+        }
+        init();
+    </script>
+
+<!-- rendering Notes -->
+        <!-- rendering Summary -->
+                                       <div id="9547cf2f71c4458b9b0090f2b6e5bed3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Return inverse h-Tilbert transform of a periodic sequence x."}], "type": "paragraph"});
+            document.getElementById("9547cf2f71c4458b9b0090f2b6e5bed3").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3 id="section-Examples">Examples</h3>
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/fftpack/_pseudo_diffs.py#L153'>/scipy/fftpack/_pseudo_diffs.py#153</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 9.0, "label": "scipy.fftpack._pseudo_diffs.tilbert", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.fftpack._pseudo_diffs.tilbert"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

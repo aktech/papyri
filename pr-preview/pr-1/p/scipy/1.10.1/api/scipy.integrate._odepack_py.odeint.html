@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=scipy>scipy</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/numpy/1.24.2/api/numpy.html">numpy</a>
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+<a href="/p/scipy/1.10.1/api/scipy.html">scipy</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/scipy/1.10.1/api/scipy.html'>1.10.1</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.html">1.10.1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/scipy/1.10.1/api/scipy.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/scipy/1.10.1/api/scipy.html">API</a>
+                        <a href="/p/scipy/1.10.1/gallery">Gallery</a>
+                        <a href="/p/scipy/1.10.1/examples">Examples</a>
+                        <a href="/p/scipy/1.10.1/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.html'>scipy</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.integrate.html'>integrate</a>.                            <div class="dropdown-content">
+<a href="/p/?/?/?/scipy.__config__.html.html">__config__</a>
+<a href="/p/?/?/?/scipy._lib.html.html">_lib</a>
+<a href="/p/scipy/1.10.1/api/scipy.cluster.html">cluster</a>
+<a href="/p/scipy/1.10.1/api/scipy.datasets.html">datasets</a>
+<a href="/p/scipy/1.10.1/api/scipy.fft.html">fft</a>
+<a href="/p/scipy/1.10.1/api/scipy.fftpack.html">fftpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.html">integrate</a>
+<a href="/p/scipy/1.10.1/api/scipy.interpolate.html">interpolate</a>
+<a href="/p/scipy/1.10.1/api/scipy.io.html">io</a>
+<a href="/p/scipy/1.10.1/api/scipy.linalg.html">linalg</a>
+<a href="/p/scipy/1.10.1/api/scipy.misc.html">misc</a>
+<a href="/p/scipy/1.10.1/api/scipy.ndimage.html">ndimage</a>
+<a href="/p/scipy/1.10.1/api/scipy.odr.html">odr</a>
+<a href="/p/scipy/1.10.1/api/scipy.optimize.html">optimize</a>
+<a href="/p/scipy/1.10.1/api/scipy.signal.html">signal</a>
+<a href="/p/scipy/1.10.1/api/scipy.sparse.html">sparse</a>
+<a href="/p/scipy/1.10.1/api/scipy.spatial.html">spatial</a>
+<a href="/p/scipy/1.10.1/api/scipy.special.html">special</a>
+<a href="/p/scipy/1.10.1/api/scipy.stats.html">stats</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.integrate._odepack_py.html'>_odepack_py</a>.                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.integrate._bvp.html">_bvp</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._dop.html">_dop</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._ivp.html">_ivp</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._lsoda.html">_lsoda</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._ode.html">_ode</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._odepack.html">_odepack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._odepack_py.html">_odepack_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quad_vec.html">_quad_vec</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadpack.html">_quadpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadpack_py.html">_quadpack_py</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._quadrature.html">_quadrature</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._vode.html">_vode</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.dop.html">dop</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.lsoda.html">lsoda</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.odepack.html">odepack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.quadpack.html">quadpack</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate.vode.html">vode</a>
+                            </div>
+                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" href='scipy.integrate._odepack_py.odeint.html'>odeint</a>                            <div class="dropdown-content">
+<a href="/p/scipy/1.10.1/api/scipy.integrate._odepack_py.ODEintWarning.html">ODEintWarning</a>
+<a href="/p/scipy/1.10.1/api/scipy.integrate._odepack_py.odeint.html">odeint</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/scipy/1.10.1/img/scipy_logo.png"/>
+    <a href="#">scipy</a>
+    <a href="#">1.10.1</a>
+        <a class='external'  href="https://pypi.org/project/scipy">Pypi</a>
+        <a class='external' href="https://github.com/scipy/scipy">GitHub</a>
+        <a class='external' href="https://scipy.org/">Homepage</a>
+    <hr/>
+        <a class='external' href="https://docs.scipy.org/doc/scipy/">Other Docs</a>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+<a href="#section-Other Parameters">Other Parameters</a><a href="#section-Parameters">Parameters</a><a href="#section-Returns">Returns</a><a href="#section-backrefs">BackRef</a>
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<code class='signature'>odeint(func, y0, t, args=(), Dfun=None, col_deriv=0, full_output=0, ml=None, mu=None, rtol=None, atol=None, tcrit=None, h0=0.0, hmax=0.0, hmin=0.0, ixpr=0, mxstep=0, mxhnil=0, mxordn=12, mxords=5, printmessg=0, tfirst=False)</code><!-- rendering Extended Summary -->
+                                   <div class='admonition'>
+    <div>note For new code, use `scipy.integrate.solve_ivp` to solve a</div>
+                        <div id="4a57f9ee0aae4969861012d45b08e791"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "differential equation."}], "type": "paragraph"});
+            document.getElementById("4a57f9ee0aae4969861012d45b08e791").innerHTML = html;
+        }
+        init();
+    </script>
+
+</div>
+
+
+                               <div id="b923a436dd6547caaa62873f8ec979af"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Solve a system of ordinary differential equations using lsoda from the FORTRAN library odepack."}], "type": "paragraph"});
+            document.getElementById("b923a436dd6547caaa62873f8ec979af").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="0bdb8da3504e40a9993b6d1616f2f2a2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Solves the initial value problem for stiff or non-stiff systems of first order ode-s      "}], "type": "paragraph"});
+            document.getElementById("0bdb8da3504e40a9993b6d1616f2f2a2").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="792e44dd25d242a2a8e0f6e3bcdcb672"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "dy/dt = func(y, t, ...)  [or func(t, y, ...)]"});
+            document.getElementById("792e44dd25d242a2a8e0f6e3bcdcb672").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="5ded6c955ed94f668d88c69c41e2ad61"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "where y can be a vector."}], "type": "paragraph"});
+            document.getElementById("5ded6c955ed94f668d88c69c41e2ad61").innerHTML = html;
+        }
+        init();
+    </script>
+
+                           <div class='admonition'>
+    <div>note By default, the required order of the first two arguments of</div>
+                        <div id="30751c8a66124f95be33fbac78db344d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"domain": null, "role": null, "type": "Directive", "value": "func"}, {"type": "text", "value": " are in the opposite order of the arguments in the system definition function used by the "}, {"domain": null, "role": null, "type": "Directive", "value": "scipy.integrate.ode"}, {"type": "text", "value": " class and the function "}, {"domain": null, "role": null, "type": "Directive", "value": "scipy.integrate.solve_ivp"}, {"type": "text", "value": ". To use a function with the signature "}, {"type": "inlineCode", "value": "func(t, y, ...)"}, {"type": "text", "value": ", the argument "}, {"domain": null, "role": null, "type": "Directive", "value": "tfirst"}, {"type": "text", "value": " must be set to "}, {"type": "inlineCode", "value": "True"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("30751c8a66124f95be33fbac78db344d").innerHTML = html;
+        }
+        init();
+    </script>
+
+</div>
+
+
+<!-- rendering Notes -->
+        <h3 id="section-Other Parameters">Other Parameters</h3>
+<dl>
+<dt><a id="ml, mu">ml, mu</a> : int, optional</dt>
+<dd>
+                <div id="798a18f7f2ae4e128b8c1c1c5d972049"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If either of these are not None or non-negative, then the Jacobian is assumed to be banded. These give the number of lower and upper non-zero diagonals in this banded matrix. For the banded case, "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "Dfun", "type": "RefInfo", "version": null}, "type": "Link", "value": "Dfun"}, {"type": "text", "value": " should return a matrix whose rows contain the non-zero bands (starting with the lowest diagonal). Thus, the return matrix "}, {"domain": null, "role": null, "type": "Directive", "value": "jac"}, {"type": "text", "value": " from "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "Dfun", "type": "RefInfo", "version": null}, "type": "Link", "value": "Dfun"}, {"type": "text", "value": " should have shape "}, {"type": "inlineCode", "value": "(ml + mu + 1, len(y0))"}, {"type": "text", "value": " when "}, {"type": "inlineCode", "value": "ml \u003e=0"}, {"type": "text", "value": " or "}, {"type": "inlineCode", "value": "mu \u003e=0"}, {"type": "text", "value": ". The data in "}, {"domain": null, "role": null, "type": "Directive", "value": "jac"}, {"type": "text", "value": " must be stored such that "}, {"type": "inlineCode", "value": "jac[i - j + mu, j]"}, {"type": "text", "value": " holds the derivative of the "}, {"domain": null, "role": null, "type": "Directive", "value": "i\u0027th equation with respect to the \u0027j\u0027th\nstate variable.  If \u0027col_deriv"}, {"type": "text", "value": " is True, the transpose of this "}, {"domain": null, "role": null, "type": "Directive", "value": "jac"}, {"type": "text", "value": " must be returned."}], "type": "paragraph"});
+            document.getElementById("798a18f7f2ae4e128b8c1c1c5d972049").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="rtol, atol">rtol, atol</a> : float, optional</dt>
+<dd>
+                <div id="40c27d878d4d496c8def9722eb69cae4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The input parameters "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "rtol", "type": "RefInfo", "version": null}, "type": "Link", "value": "rtol"}, {"type": "text", "value": " and "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "atol", "type": "RefInfo", "version": null}, "type": "Link", "value": "atol"}, {"type": "text", "value": " determine the error control performed by the solver.  The solver will control the vector, e, of estimated local errors in y, according to an inequality of the form "}, {"type": "inlineCode", "value": "max-norm of (e / ewt) \u003c= 1"}, {"type": "text", "value": ", where ewt is a vector of positive error weights computed as "}, {"type": "inlineCode", "value": "ewt = rtol * abs(y) + atol"}, {"type": "text", "value": ". rtol and atol can be either vectors the same length as y or scalars. Defaults to 1.49012e-8."}], "type": "paragraph"});
+            document.getElementById("40c27d878d4d496c8def9722eb69cae4").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="tcrit">tcrit</a> : ndarray, optional</dt>
+<dd>
+                <div id="2b27e999d23b4a8a92be73685d2d9d15"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Vector of critical points (e.g., singularities) where integration care should be taken."}], "type": "paragraph"});
+            document.getElementById("2b27e999d23b4a8a92be73685d2d9d15").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="h0">h0</a> : float, (0: solver-determined), optional</dt>
+<dd>
+                <div id="f3682ec75c894bfdb37c0d52133add38"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The step size to be attempted on the first step."}], "type": "paragraph"});
+            document.getElementById("f3682ec75c894bfdb37c0d52133add38").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="hmax">hmax</a> : float, (0: solver-determined), optional</dt>
+<dd>
+                <div id="595b4764d0824e4894f2a9847b9651be"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The maximum absolute step size allowed."}], "type": "paragraph"});
+            document.getElementById("595b4764d0824e4894f2a9847b9651be").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="hmin">hmin</a> : float, (0: solver-determined), optional</dt>
+<dd>
+                <div id="6fb1c763886647a2a39174cbcd6932ab"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The minimum absolute step size allowed."}], "type": "paragraph"});
+            document.getElementById("6fb1c763886647a2a39174cbcd6932ab").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="ixpr">ixpr</a> : bool, optional</dt>
+<dd>
+                <div id="b572575f92eb49a8bb0ea53741084cd8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Whether to generate extra printing at method switches."}], "type": "paragraph"});
+            document.getElementById("b572575f92eb49a8bb0ea53741084cd8").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="mxstep">mxstep</a> : int, (0: solver-determined), optional</dt>
+<dd>
+                <div id="b4266cf35a3545e0b321248629d1eaef"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Maximum number of (internally defined) steps allowed for each integration point in t."}], "type": "paragraph"});
+            document.getElementById("b4266cf35a3545e0b321248629d1eaef").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="mxhnil">mxhnil</a> : int, (0: solver-determined), optional</dt>
+<dd>
+                <div id="f7aff72bbcf34357b5aacd36d8e48fcb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Maximum number of messages printed."}], "type": "paragraph"});
+            document.getElementById("f7aff72bbcf34357b5aacd36d8e48fcb").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="mxordn">mxordn</a> : int, (0: solver-determined), optional</dt>
+<dd>
+                <div id="df59b4c5e06d40ad901a1fa2c2741582"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Maximum order to be allowed for the non-stiff (Adams) method."}], "type": "paragraph"});
+            document.getElementById("df59b4c5e06d40ad901a1fa2c2741582").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="mxords">mxords</a> : int, (0: solver-determined), optional</dt>
+<dd>
+                <div id="42cc2c7b4d3e442c96a02123f0f489fe"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Maximum order to be allowed for the stiff (BDF) method."}], "type": "paragraph"});
+            document.getElementById("42cc2c7b4d3e442c96a02123f0f489fe").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<h3 id="section-Parameters">Parameters</h3>
+<dl>
+<dt><a id="func">func</a> : callable(y, t, ...) or callable(t, y, ...)</dt>
+<dd>
+                <div id="24ddb5493e5e446ba91a4fdee023fe6a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Computes the derivative of y at t. If the signature is "}, {"type": "inlineCode", "value": "callable(t, y, ...)"}, {"type": "text", "value": ", then the argument "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "tfirst", "type": "RefInfo", "version": null}, "type": "Link", "value": "tfirst"}, {"type": "text", "value": " must be set "}, {"type": "inlineCode", "value": "True"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("24ddb5493e5e446ba91a4fdee023fe6a").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="y0">y0</a> : array</dt>
+<dd>
+                <div id="c879f4ae4d7f4befaaff77a1d1653697"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Initial condition on y (can be a vector)."}], "type": "paragraph"});
+            document.getElementById("c879f4ae4d7f4befaaff77a1d1653697").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="t">t</a> : array</dt>
+<dd>
+                <div id="8c67935c76ce4e289f66f0b46ad01ac7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "A sequence of time points for which to solve for y. The initial value point should be the first element of this sequence. This sequence must be monotonically increasing or monotonically decreasing; repeated values are allowed."}], "type": "paragraph"});
+            document.getElementById("8c67935c76ce4e289f66f0b46ad01ac7").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="args">args</a> : tuple, optional</dt>
+<dd>
+                <div id="6f7477a59d49461ba7342667bce4da77"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Extra arguments to pass to function."}], "type": "paragraph"});
+            document.getElementById("6f7477a59d49461ba7342667bce4da77").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="Dfun">Dfun</a> : callable(y, t, ...) or callable(t, y, ...)</dt>
+<dd>
+                <div id="0f6757265be846db9f81dfb154c6ad92"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Gradient (Jacobian) of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "func", "type": "RefInfo", "version": null}, "type": "Link", "value": "func"}, {"type": "text", "value": ". If the signature is "}, {"type": "inlineCode", "value": "callable(t, y, ...)"}, {"type": "text", "value": ", then the argument "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "tfirst", "type": "RefInfo", "version": null}, "type": "Link", "value": "tfirst"}, {"type": "text", "value": " must be set "}, {"type": "inlineCode", "value": "True"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("0f6757265be846db9f81dfb154c6ad92").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="col_deriv">col_deriv</a> : bool, optional</dt>
+<dd>
+                <div id="7f3dae553b88463684af509c4ccf8de0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "True if "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "Dfun", "type": "RefInfo", "version": null}, "type": "Link", "value": "Dfun"}, {"type": "text", "value": " defines derivatives down columns (faster), otherwise "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "Dfun", "type": "RefInfo", "version": null}, "type": "Link", "value": "Dfun"}, {"type": "text", "value": " should define derivatives across rows."}], "type": "paragraph"});
+            document.getElementById("7f3dae553b88463684af509c4ccf8de0").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="full_output">full_output</a> : bool, optional</dt>
+<dd>
+                <div id="94288c9ecd9f43169157301c9589170e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "True if to return a dictionary of optional outputs as the second output"}], "type": "paragraph"});
+            document.getElementById("94288c9ecd9f43169157301c9589170e").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="printmessg">printmessg</a> : bool, optional</dt>
+<dd>
+                <div id="ad44576e3e6141c38c9bfe6fa5a77e8f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Whether to print the convergence message"}], "type": "paragraph"});
+            document.getElementById("ad44576e3e6141c38c9bfe6fa5a77e8f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="tfirst">tfirst</a> : bool, optional</dt>
+<dd>
+                <div id="b4ed98b62595466586a0dc72a6c7c102"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "If True, the first two arguments of "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "func", "type": "RefInfo", "version": null}, "type": "Link", "value": "func"}, {"type": "text", "value": " (and "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "Dfun", "type": "RefInfo", "version": null}, "type": "Link", "value": "Dfun"}, {"type": "text", "value": ", if given) must "}, {"type": "inlineCode", "value": "t, y"}, {"type": "text", "value": " instead of the default "}, {"type": "inlineCode", "value": "y, t"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("b4ed98b62595466586a0dc72a6c7c102").innerHTML = html;
+        }
+        init();
+    </script>
+
+            <div class='admonition'>
+    <div>versionadded 1.1.0</div>
+</div>
+
+
+</dd>
+</dl>
+
+<h3 id="section-Returns">Returns</h3>
+<dl>
+<dt><a id="y">y</a> : array, shape (len(t), len(y0))</dt>
+<dd>
+                <div id="6dd24e665cf84794bd9a43f11ab6b1ed"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Array containing the value of y for each desired time in t, with the initial value "}, {"anchor": null, "exists": true, "kind": "local", "reference": {"kind": "local", "module": null, "path": "y0", "type": "RefInfo", "version": null}, "type": "Link", "value": "y0"}, {"type": "text", "value": " in the first row."}], "type": "paragraph"});
+            document.getElementById("6dd24e665cf84794bd9a43f11ab6b1ed").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+<dt><a id="infodict">infodict</a> : dict, only returned if full_output == True</dt>
+<dd>
+                <div id="65f11f59bdff4e60898e82fddaa5af4d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Dictionary containing additional output information"}], "type": "paragraph"});
+            document.getElementById("65f11f59bdff4e60898e82fddaa5af4d").innerHTML = html;
+        }
+        init();
+    </script>
+
+                <div id="fa6f1bd9af7d457a8b6ae047781f1f7b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "=======  ============================================================ key      meaning =======  ============================================================ \u0027hu\u0027     vector of step sizes successfully used for each time step \u0027tcur\u0027   vector with the value of t reached for each time step          (will always be at least as large as the input times) \u0027tolsf\u0027  vector of tolerance scale factors, greater than 1.0,          computed when a request for too much accuracy was detected \u0027tsw\u0027    value of t at the time of the last method switch          (given for each time step) \u0027nst\u0027    cumulative number of time steps \u0027nfe\u0027    cumulative number of function evaluations for each time step \u0027nje\u0027    cumulative number of jacobian evaluations for each time step \u0027nqu\u0027    a vector of method orders for each successful step \u0027imxer\u0027  index of the component of largest magnitude in the          weighted local error vector (e / ewt) on an error return, -1          otherwise \u0027lenrw\u0027  the length of the double work array required \u0027leniw\u0027  the length of integer work array required \u0027mused\u0027  a vector of method indicators for each successful time step:          1: adams (nonstiff), 2: bdf (stiff) =======  ============================================================"}], "type": "paragraph"});
+            document.getElementById("fa6f1bd9af7d457a8b6ae047781f1f7b").innerHTML = html;
+        }
+        init();
+    </script>
+
+</dd>
+</dl>
+
+<!-- rendering Summary -->
+                                       <div id="d93bd5bd8af64f8db2f4e980cae11ded"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Integrate a system of ordinary differential equations."}], "type": "paragraph"});
+            document.getElementById("d93bd5bd8af64f8db2f4e980cae11ded").innerHTML = html;
+        }
+        init();
+    </script>
+
+<h3> See Also</h3>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.integrate._ode.ode.html" class='exists'>ode</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="50473eb3bdab49b795d2babce7782dbd"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "a more object-oriented integrator based on VODE"});
+            document.getElementById("50473eb3bdab49b795d2babce7782dbd").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.integrate._quadpack_py.quad.html" class='exists'>quad</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="7548a2d9a1d54d3a8a611248e2b1994b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "for finding the area under a curve"});
+            document.getElementById("7548a2d9a1d54d3a8a611248e2b1994b").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<dl>
+            <dt><code><a href="/p/scipy/1.10.1/api/scipy.integrate._ivp.ivp.solve_ivp.html" class='exists'>solve_ivp</a></code>
+</dt>
+            <!-- This See also will be incorrect as the SeeAlsoItems are improperly deserialised. -->
+            <dd>        <p>             <div id="bef44346cc254fc08b450d6931946c9c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "text", "value": "solve an initial value problem for a system of ODEs"});
+            document.getElementById("bef44346cc254fc08b450d6931946c9c").innerHTML = html;
+        }
+        init();
+    </script></p>
+</dd>
+        </dl>
+<h3 id="section-Examples">Examples</h3>
+                           The second order differential equation for the angle `theta` of a
+pendulum acted on by gravity with friction can be written::  
+            
+                               theta&#39;&#39;(t) + b*theta&#39;(t) + c*sin(theta(t)) = 0  
+            
+                           where `b` and `c` are positive constants, and a prime (&#39;) denotes a
+derivative. To solve this equation with `odeint`, we must first convert
+it to a system of first order equations. By defining the angular
+velocity ``omega(t) = theta&#39;(t)``, we obtain the system::  
+            
+                               theta&#39;(t) = omega(t)
+    omega&#39;(t) = -b*omega(t) - c*sin(theta(t))  
+            
+                           Let `y` be the vector [`theta`, `omega`]. We implement this system
+in Python as:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">numpy</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">np</span><br><span class='nsl'>...&nbsp;</span><span class="k">def</span><span class=""> </span><span class="nf">pend</span><span class="">(</span><span class="">y</span><span class="">,</span><span class=""> </span><span class="">t</span><span class="">,</span><span class=""> </span><span class="">b</span><span class="">,</span><span class=""> </span><span class="">c</span><span class="">)</span><span class="">:</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="">theta</span><span class="">,</span><span class=""> </span><span class="">omega</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">y</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="">dydt</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">[</span><span class="">omega</span><span class="">,</span><span class=""> </span><span class="o">-</span><span class="">b</span><span class="o">*</span><span class="">omega</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="">c</span><span class="o">*</span><span class="">np</span><span class="o">.</span><span class="">sin</span><span class="">(</span><span class="">theta</span><span class="">)</span><span class="">]</span><br><span class='nsl'>...&nbsp;</span><span class="">    </span><span class="k">return</span><span class=""> </span><span class="">dydt</span>
+...</pre>
+            
+                           We assume the constants are `b` = 0.25 and `c` = 5.0:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">b</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="mf">0.25</span><br><span class='nsl'>...&nbsp;</span><span class="">c</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="mf">5.0</span>
+</pre>
+            
+                           For initial conditions, we assume the pendulum is nearly vertical
+with `theta(0)` = `pi` - 0.1, and is initially at rest, so
+`omega(0)` = 0.  Then the vector of initial conditions is  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">y0</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">[</span><span class="">np</span><span class="o">.</span><span class="">pi</span><span class=""> </span><span class="o">-</span><span class=""> </span><span class="mf">0.1</span><span class="">,</span><span class=""> </span><span class="mf">0.0</span><span class="">]</span>
+</pre>
+            
+                           We will generate a solution at 101 evenly spaced samples in the interval
+0 &lt;= `t` &lt;= 10.  So our array of times is:  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="">t</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">np</span><span class="o">.</span><span class="">linspace</span><span class="">(</span><span class="mi">0</span><span class="">,</span><span class=""> </span><span class="mi">10</span><span class="">,</span><span class=""> </span><span class="mi">101</span><span class="">)</span>
+</pre>
+            
+                           Call `odeint` to generate the solution. To pass the parameters
+`b` and `c` to `pend`, we give them to `odeint` using the `args`
+argument.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">from</span><span class=""> </span><span class="nn">scipy</span><span class="nn">.</span><span class="nn">integrate</span><span class=""> </span><span class="kn">import</span><span class=""> </span><span class="">odeint</span><br><span class='nsl'>...&nbsp;</span><span class="">sol</span><span class=""> </span><span class="o">=</span><span class=""> </span><span class="">odeint</span><span class="">(</span><span class="">pend</span><span class="">,</span><span class=""> </span><span class="">y0</span><span class="">,</span><span class=""> </span><span class="">t</span><span class="">,</span><span class=""> </span><span class="">args</span><span class="o">=</span><span class="">(</span><span class="">b</span><span class="">,</span><span class=""> </span><span class="">c</span><span class="">)</span><span class="">)</span>
+</pre>
+            
+                           The solution is an array with shape (101, 2). The first column
+is `theta(t)`, and the second is `omega(t)`. The following code
+plots both components.  
+            
+<span class='note'>This example is valid syntax, but we were not able to check execution</span><pre class='highlight compiled'><span class='nsl'>&gt;&gt;&gt; </span><span class="kn">import</span><span class=""> </span><span class="nn">matplotlib</span><span class="nn">.</span><span class="nn">pyplot</span><span class=""> </span><span class="k">as</span><span class=""> </span><span class="nn">plt</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">t</span><span class="">,</span><span class=""> </span><span class="">sol</span><span class="">[</span><span class="">:</span><span class="">,</span><span class=""> </span><span class="mi">0</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">b</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">label</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">theta(t)</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">plot</span><span class="">(</span><span class="">t</span><span class="">,</span><span class=""> </span><span class="">sol</span><span class="">[</span><span class="">:</span><span class="">,</span><span class=""> </span><span class="mi">1</span><span class="">]</span><span class="">,</span><span class=""> </span><span class="s1">&#39;</span><span class="s1">g</span><span class="s1">&#39;</span><span class="">,</span><span class=""> </span><span class="">label</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">omega(t)</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">legend</span><span class="">(</span><span class="">loc</span><span class="o">=</span><span class="s1">&#39;</span><span class="s1">best</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">xlabel</span><span class="">(</span><span class="s1">&#39;</span><span class="s1">t</span><span class="s1">&#39;</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">grid</span><span class="">(</span><span class="">)</span><br><span class='nsl'>...&nbsp;</span><span class="">plt</span><span class="o">.</span><span class="">show</span><span class="">(</span><span class="">)</span>
+</pre>
+            
+         See :
+    
+
+    <h3 id='section-backrefs'>Back References</h3>
+    <p>The following pages refer to to this document either explicitly or contain code examples using this.</p>
+
+        <code><a link href="/p/scipy/1.10.1/api/scipy.integrate._ode.ode.html" class='exists'>scipy.integrate._ode.ode</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.signal._ltisys.step2.html" class='exists'>scipy.signal._ltisys.step2</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.signal._ltisys.lsim2.html" class='exists'>scipy.signal._ltisys.lsim2</a></code>
+        <code><a link href="/p/scipy/1.10.1/api/scipy.signal._ltisys.impulse2.html" class='exists'>scipy.signal._ltisys.impulse2</a></code>
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/scipy/scipy/blob/v1.8.0//scipy/integrate/_odepack_py.py#L28'>/scipy/integrate/_odepack_py.py#28</a>
+<br/>
+
+type: &lt;class &#39;function&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 11.464101615137753, "label": "scipy.integrate._ode.ode", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.integrate._ode.ode"}, {"id": 2, "val": 11.464101615137753, "label": "scipy.integrate._quadpack_py.quad", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.integrate._quadpack_py.quad"}, {"id": 3, "val": 9.0, "label": "scipy.signal._ltisys.impulse2", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._ltisys.impulse2"}, {"id": 4, "val": 9.414213562373096, "label": "scipy.signal._ltisys.step2", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._ltisys.step2"}, {"id": 5, "val": 9.732050807568877, "label": "scipy.signal._ltisys.lsim2", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.signal._ltisys.lsim2"}, {"id": 6, "val": 9.414213562373096, "label": "scipy.integrate._ivp.ivp.solve_ivp", "mod": "scipy", "url": "/p/scipy/1.10.1/api/scipy.integrate._ivp.ivp.solve_ivp"}], "links": [{"source": 2, "target": 1, "id": 13}, {"source": 5, "target": 4, "id": 17}, {"source": 5, "target": 3, "id": 19}, {"source": 1, "target": 2, "id": 29}]};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

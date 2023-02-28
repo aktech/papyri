@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script type="text/x-mathjax-config">
+      // this should process only math inside  span with tex2jax_process class
+      MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+          "HTML-CSS": { fonts: ["TeX"] }
+      });
+    </script>
+    <script src="https://unpkg.com/mystjs"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+    </script>
+    <link rel="stylesheet" href="/papyri.css">
+    <link rel="stylesheet" href="/pygments.css">
+<style>
+
+    header > brand {
+        /*border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;*/
+        margin-left: 15px;
+        padding: 0px;
+        display: inline-block; 
+        width: 67px;
+    }
+
+    brand > a {
+        text-decoration: None;
+
+    }
+    brand >a> img {
+            display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -10px;
+
+   }
+    .container {
+       max-width: 800px;
+       padding-left: 310px;
+       padding-top: 30px;
+    }
+</style>
+</head><body class="tex2jax_ignore">
+    <header>
+        <brand><a href='/'><img src='/favicon.ico'/></a></brand>
+        <nav> / <a href='/' >p</a>  &nbsp;/&nbsp; 
+                <div class="dropdown">
+                <a href=papyri>papyri</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/papyri/0.0.8/api/papyri.html">papyri</a>
+                     </div>
+                </div>
+                <div class="dropdown">
+                <a href='/p/papyri/0.0.8/api/papyri.html'>0.0.8</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+<a href="/p/papyri/0.0.8/api/papyri.html">0.0.8</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href='/p/papyri/0.0.8/api/papyri.html'>API</a>&nbsp;/&nbsp;
+                    <div class="dropdown-content">
+                        <a href="/p/papyri/0.0.8/api/papyri.html">API</a>
+                        <a href="/p/papyri/0.0.8/gallery">Gallery</a>
+                        <a href="/p/papyri/0.0.8/examples">Examples</a>
+                        <a href="/p/papyri/0.0.8/docs">Narrative</a>
+                     </div>
+                </div>
+
+                    <div class="dropdown">
+                            <a class="dropbtn" href='papyri.html'>papyri</a>.                    </div><!--end dropdown-->
+                    <div class="dropdown">
+                            <a class="dropbtn" >+</a>                            <div class="dropdown-content">
+<a href="/p/papyri/0.0.8/api/papyri._intro.html">_intro</a>
+<a href="/p/papyri/0.0.8/api/papyri.ascii.html">ascii</a>
+<a href="/p/papyri/0.0.8/api/papyri.bootstrap.html">bootstrap</a>
+<a href="/p/papyri/0.0.8/api/papyri.browse.html">browse</a>
+<a href="/p/papyri/0.0.8/api/papyri.build_parser.html">build_parser</a>
+<a href="/p/papyri/0.0.8/api/papyri.common_ast.html">common_ast</a>
+<a href="/p/papyri/0.0.8/api/papyri.errors.html">errors</a>
+<a href="/p/papyri/0.0.8/api/papyri.examples.html">examples</a>
+<a href="/p/papyri/0.0.8/api/papyri.gen.html">gen</a>
+<a href="/p/papyri/0.0.8/api/papyri.ingest.html">ingest</a>
+<a href="/p/papyri/0.0.8/api/papyri.install.html">install</a>
+<a href="/p/papyri/0.0.8/api/papyri.miniserde.html">miniserde</a>
+<a href="/p/papyri/0.0.8/api/papyri.miscs.html">miscs</a>
+<a href="/p/papyri/0.0.8/api/papyri.myst_ast.html">myst_ast</a>
+<a href="/p/papyri/0.0.8/api/papyri.myst_serialiser.html">myst_serialiser</a>
+<a href="/p/papyri/0.0.8/api/papyri.open.html">open</a>
+<a href="/p/papyri/0.0.8/api/papyri.relink.html">relink</a>
+<a href="/p/papyri/0.0.8/api/papyri.render.html">render</a>
+<a href="/p/papyri/0.0.8/api/papyri.serve.html">serve</a>
+<a href="/p/papyri/0.0.8/api/papyri.serve_static.html">serve_static</a>
+<a href="/p/papyri/0.0.8/api/papyri.take2.html">take2</a>
+<a href="/p/papyri/0.0.8/api/papyri.toc.html">toc</a>
+<a href="/p/papyri/0.0.8/api/papyri.tree.html">tree</a>
+<a href="/p/papyri/0.0.8/api/papyri.ts.html">ts</a>
+<a href="/p/papyri/0.0.8/api/papyri.utils.html">utils</a>
+<a href="/p/papyri/0.0.8/api/papyri.vref.html">vref</a>
+                            </div>
+                    </div><!--end dropdown-->
+</nav>
+    </header>
+    <div class='container'>
+
+    <div class="sidenav">
+        <img src="/p/papyri/0.0.8/img/papyri-logo.png"/>
+    <a href="#">papyri</a>
+    <a href="#">0.0.8</a>
+        <a class='external'  href="https://pypi.org/project/papyri">Pypi</a>
+        <a class='external' href="https://github.com/jupyter/papyri">GitHub</a>
+    <hr/>
+    <hr/>
+        <ul>
+        </ul>
+        <hr/>
+
+    </div><!--end sidenav-->
+
+
+
+
+
+
+
+<!-- rendering Extended Summary -->
+        <!-- rendering Notes -->
+        <!-- rendering Summary -->
+                                       <div id="825dbe7f89e84d9393b07220edf71ebb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "To remove in the future \u2013\u2013 papyri"}], "type": "paragraph"});
+            document.getElementById("825dbe7f89e84d9393b07220edf71ebb").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="e75d23bbe9b743519bd8c8a2b03f699d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Papyri \u2013 in progress"}], "type": "paragraph"});
+            document.getElementById("e75d23bbe9b743519bd8c8a2b03f699d").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="8d23d5b063144db4b044fa659ea827b3"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Here are a couple of documents, or docstrings that are of interest to see how papyri works, generally because they crashed papyri at some point during the development, and/or do not work yet.  You likely want to see the readme.md file for now which is kept up do date more often."}], "type": "paragraph"});
+            document.getElementById("8d23d5b063144db4b044fa659ea827b3").innerHTML = html;
+        }
+        init();
+    </script>
+
+
+<h1>Installation</h1>
+               <pre>pip install papyri</pre>
+
+<h1>dev install</h1>
+                               <div id="dbc665814df24753a88e95514363d210"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "You may need to get a modified version of numpydoc depending on the stage of development."}], "type": "paragraph"});
+            document.getElementById("dbc665814df24753a88e95514363d210").innerHTML = html;
+        }
+        init();
+    </script>
+
+                           <blockquote>                <div id="480d255300834f51af6cf13e84e2e5bc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "git clone https://github.com/jupyter/papyri     cd papyri     pip install -e ."}], "type": "paragraph"});
+            document.getElementById("480d255300834f51af6cf13e84e2e5bc").innerHTML = html;
+        }
+        init();
+    </script>
+</blockquote>
+
+                               <div id="7b62b625b9454601bdfb6862c3e548bb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Build the TreeSitter rst parser:"}], "type": "paragraph"});
+            document.getElementById("7b62b625b9454601bdfb6862c3e548bb").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="031230236f3f4ce286be434a67c2ecfb"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Some functionality require "}, {"type": "inlineCode", "value": "tree_sitter_rst"}, {"type": "text", "value": ", see run "}, {"type": "inlineCode", "value": "papyri build-parser"}, {"type": "text", "value": ", and CI config file on how to build the tree-sitter shared object locally      "}], "type": "paragraph"});
+            document.getElementById("031230236f3f4ce286be434a67c2ecfb").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="dc5aa19c5ba74e1eab73fe07f27bfee5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "git clone https://github.com/stsewd/tree-sitter-rst\npapyri build-parser"});
+            document.getElementById("dc5aa19c5ba74e1eab73fe07f27bfee5").innerHTML = html;
+        }
+        init();
+    </script>
+
+
+<h1>Usage</h1>
+                               <div id="085ee88a4e2b4118ac2198762f053ba7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "There are mostly 3 stages to run papyri, so far you need to do the 3 steps/roles on your local machine, but it will not be necessary once papyri is production ready. The three stages are:"}], "type": "paragraph"});
+            document.getElementById("085ee88a4e2b4118ac2198762f053ba7").innerHTML = html;
+        }
+        init();
+    </script>
+
+                          <ul>               <li>                               <div id="ee38b5ba792e4c2bab58a3afb825f42f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "As a library maintainer, generate and publish papyri IRD file."}], "type": "paragraph"});
+            document.getElementById("ee38b5ba792e4c2bab58a3afb825f42f").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="40965174c53d47c480fe5ca38c6d6bd9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "As a system operator, install IRD files on your system"}], "type": "paragraph"});
+            document.getElementById("40965174c53d47c480fe5ca38c6d6bd9").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+               <li>                               <div id="0224824c1c1a47bcb64b0bfdfab76406"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "As a user, view the documentation in your IDE, webbrowser... with your preferences."}], "type": "paragraph"});
+            document.getElementById("0224824c1c1a47bcb64b0bfdfab76406").innerHTML = html;
+        }
+        init();
+    </script>
+
+</li>
+            </ul>
+
+                               <div id="61ebdeb9e8ad4d8bb679457b3c23eb61"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "To generate IRD files    "}], "type": "paragraph"});
+            document.getElementById("61ebdeb9e8ad4d8bb679457b3c23eb61").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="c7a0d59488fe4fcaa1a7a0f912007959"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "$ papyri gen \u003cconfig file\u003e"});
+            document.getElementById("c7a0d59488fe4fcaa1a7a0f912007959").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="a5fa4e84acad416d9848f80431ca9f69"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "You can look in the "}, {"type": "inlineCode", "value": "examples"}, {"type": "text", "value": " folder to see some of these config files. Those will put IRD files in "}, {"type": "inlineCode", "value": "~/.papyri/data"}, {"type": "text", "value": " there is no upload mechanism yet."}], "type": "paragraph"});
+            document.getElementById("a5fa4e84acad416d9848f80431ca9f69").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="3639ba9309e24383ab00045c92569e30"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "To install those files    "}], "type": "paragraph"});
+            document.getElementById("3639ba9309e24383ab00045c92569e30").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="174add711afa4537a6df4e9476398fdd"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "$ papyri ingest ~/.papyri/data/library_version/"});
+            document.getElementById("174add711afa4537a6df4e9476398fdd").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="7f6dc07a2a8a4dbfa63aeabe5327840f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "And finally to view the docs, either follow your IED documentation or use some of the built-in renderer     "}], "type": "paragraph"});
+            document.getElementById("7f6dc07a2a8a4dbfa63aeabe5327840f").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="51fe16e4da574446899c89de09e098d8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": "$ papyri render\n\n$ papyri browse ....\n\n$ papyri serve"});
+            document.getElementById("51fe16e4da574446899c89de09e098d8").innerHTML = html;
+        }
+        init();
+    </script>
+
+
+<h1>Of Interest</h1>
+                               <div id="2bc4be3732774ab0aa4b9fd14aa8181b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Here are a couple of function that are of interest to explore what papyri can do and render."}], "type": "paragraph"});
+            document.getElementById("2bc4be3732774ab0aa4b9fd14aa8181b").innerHTML = html;
+        }
+        init();
+    </script>
+
+               <!-- deflist -->
+           <dl>
+               <dt>                <div id="5ea5ce05475c4e4db4c9962a62338b1b"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"domain": null, "role": null, "type": "Directive", "value": "dask.delayed"}], "type": "paragraph"});
+            document.getElementById("5ea5ce05475c4e4db4c9962a62338b1b").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="2fbf13ff03534740b628fc6fa34053e2"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "one of the parameter of the docstring has multiple paragraphs."}], "type": "paragraph"});
+            document.getElementById("2fbf13ff03534740b628fc6fa34053e2").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="3c7d402f118644db8a5bf42a5500dc28"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "IPython", "path": "IPython.core.display.Video.__init__", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "IPython.core.display.Video.__init__"}], "type": "paragraph"});
+            document.getElementById("3c7d402f118644db8a5bf42a5500dc28").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="216c9b9bd595436693ba176b80804ad1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Block Verbatim in params ?"}], "type": "paragraph"});
+            document.getElementById("216c9b9bd595436693ba176b80804ad1").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="e9d4397ced2e43809d1a5f12c9c40c0d"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "IPython", "path": "IPython.core.interactiveshell.InteractiveShell.complete", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "IPython.core.interactiveshell.InteractiveShell.complete"}], "type": "paragraph"});
+            document.getElementById("e9d4397ced2e43809d1a5f12c9c40c0d").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="5764061c7a914bc6ae0a0128ad393d07"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "contain a "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "module", "module": "papyri", "path": "papyri.take2.DefListItem", "type": "RefInfo", "version": "0.0.8"}, "type": "Link", "value": "DefListItem"}], "type": "paragraph"});
+            document.getElementById("5764061c7a914bc6ae0a0128ad393d07").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="a0cea04b558643d3a7fc2bb15c83aec5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "matplotlib", "path": "matplotlib.transforms.Bbox", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "matplotlib.transforms.Bbox"}], "type": "paragraph"});
+            document.getElementById("a0cea04b558643d3a7fc2bb15c83aec5").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="0eca142e410949368fa6f34cb8c1a8c8"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "parsing of example is completely incorrect."}], "type": "paragraph"});
+            document.getElementById("0eca142e410949368fa6f34cb8c1a8c8").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="76dd451886a5472780c6e680612d3c40"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "matplotlib", "path": "matplotlib.axes._axes.Axes.text", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "matplotlib.axes._axes.Axes.text"}], "type": "paragraph"});
+            document.getElementById("76dd451886a5472780c6e680612d3c40").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="56cd91a460db4fdcbb8b2826cdb0c309"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "misparse example as well."}], "type": "paragraph"});
+            document.getElementById("56cd91a460db4fdcbb8b2826cdb0c309").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="5c77b736915b475cb2a31d8b9d787654"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "IPython", "path": "IPython.core.completer.Completion", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "IPython.core.completer.Completion"}], "type": "paragraph"});
+            document.getElementById("5c77b736915b475cb2a31d8b9d787654").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="c7d6b25599ec4e6a8734e68a8b97f5e5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "item list"}], "type": "paragraph"});
+            document.getElementById("c7d6b25599ec4e6a8734e68a8b97f5e5").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="c23df5c96cae46c6a205ac77ba072f20"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "matplotlib", "path": "matplotlib.figure.FigureBase.add_subplot", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "matplotlib.figure.Figure.add_subplot"}], "type": "paragraph"});
+            document.getElementById("c23df5c96cae46c6a205ac77ba072f20").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="643a07fad0174016aca922feb5d91e67"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "custom double dot example"}], "type": "paragraph"});
+            document.getElementById("643a07fad0174016aca922feb5d91e67").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="e756b97475c14ae1ba78ce0910e91acc"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "matplotlib", "path": "matplotlib.colors", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "matplotlib.colors"}], "type": "paragraph"});
+            document.getElementById("e756b97475c14ae1ba78ce0910e91acc").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="bc2fa22cb5d74a589200053f39232b1a"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "unnumbered list with indent."}], "type": "paragraph"});
+            document.getElementById("bc2fa22cb5d74a589200053f39232b1a").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="4a5863a4f3884ac083d0ee8ac5be1b8f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "matplotlib", "path": "matplotlib.colors", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "matplotlib.colors"}], "type": "paragraph"});
+            document.getElementById("4a5863a4f3884ac083d0ee8ac5be1b8f").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="43abb0f77e9d4407b8c2af3a3d7a7854"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "contain a reference via "}, {"type": "inlineCode", "value": ".. _palettable: value"}, {"type": "text", "value": " and autolink "}, {"type": "inlineCode", "value": "paletable_"}, {"type": "text", "value": "."}], "type": "paragraph"});
+            document.getElementById("43abb0f77e9d4407b8c2af3a3d7a7854").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="6eab02f936694db3b486cb0491b50847"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "numpy", "path": "numpy.__getattr__.\u003clocals\u003e._expired", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "numpy.npv"}], "type": "paragraph"});
+            document.getElementById("6eab02f936694db3b486cb0491b50847").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="984dec62e20e4b17b9540cdbc55154a9"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "hase warning sections."}], "type": "paragraph"});
+            document.getElementById("984dec62e20e4b17b9540cdbc55154a9").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="1b3926932ef5456c84a7e0771316d4d0"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "scipy", "path": "scipy.signal._ltisys.bode", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "scipy.signal.ltisys.bode"}], "type": "paragraph"});
+            document.getElementById("1b3926932ef5456c84a7e0771316d4d0").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="811fbb3e50a540f285e0c8da7a9c6c2e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "contains multiple figure"}], "type": "paragraph"});
+            document.getElementById("811fbb3e50a540f285e0c8da7a9c6c2e").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="87d668401ace4e95995ee89ea940fe3c"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "scipy", "path": "scipy.signal.barthann", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "scipy.signal.barthann"}], "type": "paragraph"});
+            document.getElementById("87d668401ace4e95995ee89ea940fe3c").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="c005a941bdb04424a57f79fb15582942"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "multiple figures"}], "type": "paragraph"});
+            document.getElementById("c005a941bdb04424a57f79fb15582942").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="145429f785d748cfae1490391cba9de1"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "numpy", "path": "numpy.where", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "numpy.where"}], "type": "paragraph"});
+            document.getElementById("145429f785d748cfae1490391cba9de1").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="ffec012296eb4ba582ee792b295882dd"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The Parameter section have a pair of parameter separated with the coma in     the name field; and those parameter should be properly detected as local     references in the rest of the docstrings."}], "type": "paragraph"});
+            document.getElementById("ffec012296eb4ba582ee792b295882dd").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="5052f39144164a8f95f8b075c86f12ab"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "numpy", "path": "numpy.polynomial.laguerre.lagfit", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "numpy.polynomial.laguerre.lagfit"}], "type": "paragraph"});
+            document.getElementById("5052f39144164a8f95f8b075c86f12ab").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="fd400f2aefce4db9b42fd72431b9f08f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "should have plenty of math items"}], "type": "paragraph"});
+            document.getElementById("fd400f2aefce4db9b42fd72431b9f08f").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="51ee08c4e7f649b88bce01cd456d4d5f"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "numpy", "path": "numpy.polyfit", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "numpy.polyfit"}], "type": "paragraph"});
+            document.getElementById("51ee08c4e7f649b88bce01cd456d4d5f").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="563c8c6a0d444db59604bb9da41715d5"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "The see also section links to "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "scipy", "path": "scipy.interpolate._fitpack2.UnivariateSpline", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "scipy.interpolate.UnivariateSpline"}, {"type": "text", "value": " which     will not resolve (yet) as the fully qualified name is     "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "scipy", "path": "scipy.interpolate._fitpack2.UnivariateSpline", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "scipy.interpolate.fitpack2.UnivariateSpline"}, {"type": "text", "value": "; this should be fixed at some     points via aliases; in the intro one link as a "}, {"type": "inlineCode", "value": "name \u003cvalue\u003e"}, {"type": "text", "value": " syntax which     is also not yet recognized."}], "type": "paragraph"});
+            document.getElementById("563c8c6a0d444db59604bb9da41715d5").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="d95bf9ce53734a0ebcf5d1bb534f1597"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "scipy", "path": "scipy.signal._filter_design.zpk2sos", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "scipy.signal.filter_design.zpk2sos"}, {"type": "text", "value": ":"}], "type": "paragraph"});
+            document.getElementById("d95bf9ce53734a0ebcf5d1bb534f1597").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="6c9eb5473874489e9776ad0983784b4e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "multi blocks in enumerated list"}], "type": "paragraph"});
+            document.getElementById("6c9eb5473874489e9776ad0983784b4e").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="68d23a2e660545e8b1672a83bf0ea7ef"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "scipy", "path": "scipy.signal._filter_design.zpk2sos", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "scipy.signal.filter_design.zpk2sos"}, {"type": "text", "value": ":"}], "type": "paragraph"});
+            document.getElementById("68d23a2e660545e8b1672a83bf0ea7ef").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="648b2f3d411b42d89de4f2c935ddf70e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "blockquote insted of enumerate list (to fix upstream)"}], "type": "paragraph"});
+            document.getElementById("648b2f3d411b42d89de4f2c935ddf70e").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="ca5cce61b116418788f59de5c2550b15"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "scipy", "path": "scipy.optimize._lsq.trf", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "scipy.optimize._lsq.trf"}, {"type": "text", "value": ":"}], "type": "paragraph"});
+            document.getElementById("ca5cce61b116418788f59de5c2550b15").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="2b89947e39c44551b3f40021453a26c4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "has lineblocks, which I belive is wrong."}], "type": "paragraph"});
+            document.getElementById("2b89947e39c44551b3f40021453a26c4").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="6f8b0347a0a943fb92d648d14600a550"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "scipy", "path": "scipy.signal.exponential", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "scipy.signal.exponential"}, {"type": "text", "value": ":"}], "type": "paragraph"});
+            document.getElementById("6f8b0347a0a943fb92d648d14600a550").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="0d29d02a1c724b8dbad8d79dd5347bc7"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "multiple figures"}], "type": "paragraph"});
+            document.getElementById("0d29d02a1c724b8dbad8d79dd5347bc7").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+               <dt>                <div id="4143411eaa06485d9629c58c47d34e8e"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "numpy", "path": "numpy.einsum", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "numpy.einsum"}, {"type": "text", "value": ":"}], "type": "paragraph"});
+            document.getElementById("4143411eaa06485d9629c58c47d34e8e").innerHTML = html;
+        }
+        init();
+    </script>
+</dt>
+               <dd>                <div id="f1f2d09ade3c48648ce64ef1468665e4"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "one of the longest numpy docstring/document, or at least one of the longest to render, with     "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "scipy", "path": "scipy.signal.windows._windows.dpss", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "scipy.signal.windows.windows.dpss"}, {"type": "text", "value": " , "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "scipy", "path": "scipy.optimize._minimize.minimize", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "scipy.optimize._minimize.minimize"}, {"type": "text", "value": " and     "}, {"anchor": null, "exists": true, "kind": "module", "reference": {"kind": "api", "module": "scipy", "path": "scipy.optimize._basinhopping.basinhopping", "type": "RefInfo", "version": "*"}, "type": "Link", "value": "scipy.optimize._basinhopping.basinhopping"}], "type": "paragraph"});
+            document.getElementById("f1f2d09ade3c48648ce64ef1468665e4").innerHTML = html;
+        }
+        init();
+    </script>
+</dd>
+           </dl>
+
+
+<h1>Changes in behavior</h1>
+                               <div id="37d9e3770b084ec19d85b5a4acbc2949"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Papyri parsing might be a bit different from docutils/sphinx parsing. As docutils try to keep backward compatibility for historical reason, we may be a bit stricter on some of the syntax you use to. This allows us to catch more errors. Feel free to report differences in parsing, here we document the one we do on purpose."}], "type": "paragraph"});
+            document.getElementById("37d9e3770b084ec19d85b5a4acbc2949").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="76f45488a4c644cc9799e1a38fcde8fd"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"children": [{"type": "text", "value": "Directive must not have spaces before double colon      "}], "type": "paragraph"});
+            document.getElementById("76f45488a4c644cc9799e1a38fcde8fd").innerHTML = html;
+        }
+        init();
+    </script>
+
+                               <div id="4fc8298f0f464303b6d1e675c7138d03"></div>
+    <script>
+        function init() {
+            const myst = new MyST();
+            const html = myst.renderMdast({"type": "code", "value": ".. directive :: will be seen as a comment.\n        and thus this will not appear in final output.\n\n.. directive:: is the proper way to write block directive.\n        it will be properly interpreted."});
+            document.getElementById("4fc8298f0f464303b6d1e675c7138d03").innerHTML = html;
+        }
+        init();
+    </script>
+
+
+<h3 id="section-Examples">Examples</h3>
+         See :
+    
+
+
+<h3>Local connectivity graph</h3>
+<p>Hover to see nodes names; edges to Self not shown, Caped at 50 nodes.</p>
+
+<p> Using a canvas is more power efficient and can get hundred of nodes ; but does not allow hyperlinks; , arrows
+or text (beyond on hover) </p> 
+<canvas class='graph' width="800" height="500"></canvas>
+<p> SVG is more flexible but power hungry; and does not scale well to 50 + nodes. </p> 
+
+<svg class='graph' width="600" height="500"></svg>
+
+<p>All aboves nodes referred to, (or are referred from) current nodes; Edges from Self to other have been omitted
+(or all nodes would be connected to the central node "self" which is not useful). Nodes are colored by the library
+they belong to, and scaled with the number of references pointing them</p>
+
+<hr>
+
+    GitHub : <a class='external' href='https://github.com/jupyter/papyri/blob/{version}//work/papyri/papyri/papyri/__init__.py#L0'>/work/papyri/papyri/papyri/__init__.py#0</a>
+<br/>
+
+type: &lt;class &#39;module&#39;&gt; <br/>
+Commit: <br/>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <style type="text/css">
+        .node {};
+        .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; };
+    </style>
+<script>
+    window._data_graph = {"nodes": [{"id": 1, "val": 9.0, "label": "scipy.optimize._basinhopping.basinhopping", "mod": "scipy", "url": "/p/scipy/*/api/scipy.optimize._basinhopping.basinhopping"}, {"id": 2, "val": 9.0, "label": "matplotlib.transforms.Bbox", "mod": "matplotlib", "url": "/p/matplotlib/*/api/matplotlib.transforms.Bbox"}, {"id": 3, "val": 9.0, "label": "numpy.__getattr__.<locals>._expired", "mod": "numpy", "url": "/p/numpy/*/api/numpy.__getattr__.<locals>._expired"}, {"id": 4, "val": 9.0, "label": "scipy.signal.windows._windows.dpss", "mod": "scipy", "url": "/p/scipy/*/api/scipy.signal.windows._windows.dpss"}, {"id": 5, "val": 9.0, "label": "scipy.signal._filter_design.zpk2sos", "mod": "scipy", "url": "/p/scipy/*/api/scipy.signal._filter_design.zpk2sos"}, {"id": 6, "val": 9.414213562373096, "label": "scipy.interpolate._fitpack2.UnivariateSpline", "mod": "scipy", "url": "/p/scipy/*/api/scipy.interpolate._fitpack2.UnivariateSpline"}, {"id": 7, "val": 9.0, "label": "IPython.core.interactiveshell.InteractiveShell.complete", "mod": "IPython", "url": "/p/IPython/*/api/IPython.core.interactiveshell.InteractiveShell.complete"}, {"id": 8, "val": 9.0, "label": "papyri.take2.DefListItem", "mod": "papyri", "url": "/p/papyri/0.0.8/api/papyri.take2.DefListItem"}, {"id": 9, "val": 9.0, "label": "scipy.signal.barthann", "mod": "scipy", "url": "/p/scipy/*/api/scipy.signal.barthann"}, {"id": 10, "val": 9.0, "label": "matplotlib.colors", "mod": "matplotlib", "url": "/p/matplotlib/*/api/matplotlib.colors"}, {"id": 11, "val": 9.0, "label": "scipy.signal._ltisys.bode", "mod": "scipy", "url": "/p/scipy/*/api/scipy.signal._ltisys.bode"}, {"id": 12, "val": 9.0, "label": "IPython.core.completer.Completion", "mod": "IPython", "url": "/p/IPython/*/api/IPython.core.completer.Completion"}, {"id": 13, "val": 9.0, "label": "numpy.polynomial.laguerre.lagfit", "mod": "numpy", "url": "/p/numpy/*/api/numpy.polynomial.laguerre.lagfit"}, {"id": 14, "val": 9.0, "label": "numpy.where", "mod": "numpy", "url": "/p/numpy/*/api/numpy.where"}, {"id": 15, "val": 9.0, "label": "scipy.optimize._minimize.minimize", "mod": "scipy", "url": "/p/scipy/*/api/scipy.optimize._minimize.minimize"}, {"id": 16, "val": 9.0, "label": "matplotlib.axes._axes.Axes.text", "mod": "matplotlib", "url": "/p/matplotlib/*/api/matplotlib.axes._axes.Axes.text"}, {"id": 17, "val": 9.0, "label": "scipy.optimize._lsq.trf", "mod": "scipy", "url": "/p/scipy/*/api/scipy.optimize._lsq.trf"}, {"id": 18, "val": 9.0, "label": "numpy.einsum", "mod": "numpy", "url": "/p/numpy/*/api/numpy.einsum"}, {"id": 19, "val": 9.0, "label": "matplotlib.figure.FigureBase.add_subplot", "mod": "matplotlib", "url": "/p/matplotlib/*/api/matplotlib.figure.FigureBase.add_subplot"}, {"id": 20, "val": 9.0, "label": "numpy.polyfit", "mod": "numpy", "url": "/p/numpy/*/api/numpy.polyfit"}, {"id": 21, "val": 9.0, "label": "scipy.signal.exponential", "mod": "scipy", "url": "/p/scipy/*/api/scipy.signal.exponential"}, {"id": 22, "val": 9.0, "label": "IPython.core.display.Video.__init__", "mod": "IPython", "url": "/p/IPython/*/api/IPython.core.display.Video.__init__"}], "links": []};
+</script>
+<script type="text/javascript" src='/graph_canvas.js'></script>
+<script type="text/javascript" src='/graph_svg.js'></script>
+
+
+</div>
+</body>
+</html>

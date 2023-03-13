@@ -77,3 +77,13 @@ jobs:
         message: |
           ▲ Deployed preview to 👉 ${{ steps.vercel.outputs.VERCEL_URL }}
         pr_number: ${{ github.event.pull_request.number }}
+
+    - name: Update PR status with Deployment URL
+      uses: Sibz/github-status-action@v1
+      with:
+        authToken: ${{ github.token }}
+        context: 'Test run'
+        description: 'Passed'
+        state: 'success'
+        target_url: ${{ steps.vercel.outputs.VERCEL_URL }}
+        sha: ${{ github.event.pull_request.head.sha || github.sha }}

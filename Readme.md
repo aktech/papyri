@@ -11,6 +11,7 @@ Papyri allows:
 - proper math rendering (both in terminal and html),
 - and more.
 
+
 ## Motivation
 
 See some of the reasons behind the project on [this blog post](https://labs.quansight.org/blog/2021/05/rethinking-jupyter-documentation/).
